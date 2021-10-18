@@ -13,8 +13,8 @@ namespace Dictionary_Beta_1
     public partial class LookUp : Form
     {
         public static LookUp instance;
+        
         public string[] lines = System.IO.File.ReadAllLines(@"E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\CSDL.txt");
-        public TextBox tb;
         private readonly WordDatabase WordDB = WordDatabase.Instance;
         public LookUp()
         {

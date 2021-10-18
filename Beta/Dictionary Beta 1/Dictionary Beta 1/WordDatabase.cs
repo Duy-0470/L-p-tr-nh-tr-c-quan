@@ -46,11 +46,12 @@ namespace Dictionary_Beta_1
                     int j = i + 1;
                     while (lines[j] != "")
                     {
-                        result = result + lines[j] + "\n";
+                        result = result + lines[j] + "\n";                        
                         j++;
                     }
-                }               
+                }
             }
+            result = result.Replace('+', ':');
             return result;
         }
     }
