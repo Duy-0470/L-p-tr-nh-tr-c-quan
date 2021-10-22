@@ -50,6 +50,7 @@ namespace Dictionary_Beta_1
                         result = result + lines[j] + "\n";                        
                         j++;
                     }
+                    break;
                 }
             }
             result = result.Replace('+', ':');

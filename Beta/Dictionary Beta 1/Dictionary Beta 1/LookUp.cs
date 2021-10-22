@@ -16,7 +16,7 @@ namespace Dictionary_Beta_1
         public static LookUp instance;
 
         public static string path = System.IO.Directory.GetCurrentDirectory() + @"\CSDL.txt";
-        
+
         public static string[] lines = System.IO.File.ReadAllLines(path);
         public TextBox tb;
         
@@ -30,7 +30,11 @@ namespace Dictionary_Beta_1
         private void button1_Click(object sender, EventArgs e)
         {
             string user = textBox1.Text;
-            if (WordDB.Find(user, lines) == "")
+            if (user == "")
+            {
+                richTextBox1.Text = "Please input a word";
+            }
+            else if (WordDB.Find(user, lines) == "")
             {
                 richTextBox1.Text = "Word not found\nIt either means nothing or hasn't been supported.";
             }
