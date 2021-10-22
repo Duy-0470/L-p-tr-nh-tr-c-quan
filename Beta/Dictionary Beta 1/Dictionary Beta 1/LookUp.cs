@@ -14,12 +14,17 @@ namespace Dictionary_Beta_1
     public partial class LookUp : Form
     {
         public static LookUp instance;
+<<<<<<< HEAD
 
 
         public static string path = System.IO.Directory.GetCurrentDirectory() + @"\CSDL.txt";
         
         public static string[] lines = System.IO.File.ReadAllLines(path);
         public TextBox tb;
+=======
+        
+        public string[] lines = System.IO.File.ReadAllLines(@"E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\CSDL.txt");
+>>>>>>> 5fad25aaaf1e9eeadb2b9a1174b4f7b7b027fe06
         private readonly WordDatabase WordDB = WordDatabase.Instance;
         public LookUp()
         {
