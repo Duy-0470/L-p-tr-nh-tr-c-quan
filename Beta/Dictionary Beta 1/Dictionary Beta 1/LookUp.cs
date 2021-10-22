@@ -38,7 +38,10 @@ namespace Dictionary_Beta_1
             {
                 richTextBox1.Text = "Word not found\nIt either means nothing or hasn't been supported.";
             }
-            else richTextBox1.Text = textBox1.Text + "\n" + WordDB.Find(user, lines);
+            else
+            {
+                richTextBox1.Text = textBox1.Text + "\n" + WordDB.Find(user, lines);
+            }
         }
     }
 }
