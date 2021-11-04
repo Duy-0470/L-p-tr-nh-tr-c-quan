@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
 namespace Dictionary_Beta_1
 {
@@ -16,9 +15,8 @@ namespace Dictionary_Beta_1
             set => instance = value;
         }
 
-        public bool IsValid(string line, string user)
+        private bool IsWord(string line, string word)
         {
-            string t = "";
             if (line != "")
             {
                 if (line[0] == '@')
@@ -26,35 +24,45 @@ namespace Dictionary_Beta_1
                     for (int i = 1; i < line.Length; i++)
                     {
                         if (line[i] == '/')
-                        {
-                            t = line.Substring(1, i - 2);
-                            break;
-                        }
+                            if (line.Substring(1, i - 2) == word) return true;
                     }
-                    if (t == user) return true;
                 }
             }
             return false;
         }
 
-        public string Find(string user, string[] lines)
+        public string FindWordMeaning(string word, string[] lines)
         {
             string result = "";
             for (int i = 0; i < lines.Length; i++)
             {
-                if (IsValid(lines[i], user))
+                if (IsWord(lines[i], word))
                 {
                     int j = i + 1;
                     while (lines[j] != "")
                     {
-                        result = result + lines[j] + "\n";                        
+                        result = result + lines[j] + "\n";                
                         j++;
                     }
                     break;
                 }
             }
-            result = result.Replace('+', ':');
-            return result;
+            return result.Replace('+', ':');
         }
+
+        public string FindUrl(string word, string[] url)
+        {
+            for (int i = 0; i < url.Length; i++)
+            {
+                for (int j = 0; j < url[i].Length; j++)
+                {
+                    if (url[i].Substring(0, url[i].IndexOf("_")) == word)
+                        return url[i].Substring(url[i].IndexOf(word) + word.Length + 3);
+                }
+            }
+            return "";
+        }
+
+
     }
-}
+ }

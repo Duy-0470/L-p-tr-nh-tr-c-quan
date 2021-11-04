@@ -8,9 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-namespace Dictionary_Beta_1.Properties
-{
+namespace Dictionary_Beta_1.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -18,52 +19,105 @@ namespace Dictionary_Beta_1.Properties
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Dictionary_Beta_1.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1024px_Speaker_Icon_svg {
+            get {
+                object obj = ResourceManager.GetObject("_1024px_Speaker_Icon_svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a_1|https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/a__/a__gb/a__gb_2.mp3
+        ///a_2|https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/a_1/a_1_g/a_1_gb_1_abbr.mp3
+        ///a_3|https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/a_1/a_1_g/a_1_gb_1_abbr.mp3
+        ///a_4|https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/a_1/a_1_g/a_1_gb_1_abbr.mp3
+        ///a_5|https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/a__/a__1_/a__1_gb_1.mp3
+        ///aa_1|https://www.oxfordlear [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string british {
+            get {
+                return ResourceManager.GetString("british", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @a /ei, ə/
+        ///*  danh từ,  số nhiều as,  a&apos;s
+        ///- (thông tục) loại a, hạng nhất, hạng tốt nhất hạng rất tốt
+        ///=his health is a+ sức khoẻ anh ta vào loại a
+        ///- (âm nhạc) la
+        ///=a sharp+ la thăng
+        ///=a flat+ la giáng
+        ///- người giả định thứ nhất; trường hợp giả định thứ nhất
+        ///=from a to z+ từ đầu đến đuôi, tường tận
+        ///=not to know a from b+ không biết tí gì cả; một chữ bẻ đôi cũng không biết
+        ///*  mạo từ
+        ///- một; một (như kiểu); một (nào đó)
+        ///=a very cold day+ một ngày rất lạnh
+        ///=a dozen+ một tá
+        ///=a few+ một ít
+        ///=all of a si [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CSDL {
+            get {
+                return ResourceManager.GetString("CSDL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to abdomen_1|https://www.oxfordlearnersdictionaries.com/media/english/fullsize/i/ins/insec/insects.png
+        ///abseil_1|https://www.oxfordlearnersdictionaries.com/media/english/fullsize/s/spo/sport/sports_extreme.png
+        ///abseil_2|https://www.oxfordlearnersdictionaries.com/media/english/fullsize/s/spo/sport/sports_extreme.png
+        ///abseiling_1|https://www.oxfordlearnersdictionaries.com/media/english/fullsize/s/spo/sport/sports_extreme.png
+        ///accelerator_1|https://www.oxfordlearnersdictionaries.com/media/english/fullsize/c/car/car__ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string images {
+            get {
+                return ResourceManager.GetString("images", resourceCulture);
             }
         }
     }

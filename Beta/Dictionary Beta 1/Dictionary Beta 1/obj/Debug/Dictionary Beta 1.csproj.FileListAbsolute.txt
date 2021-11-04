@@ -1,11 +1,12 @@
-E:\VS Studio\Year 2\Visual Programming\Group 2 GIT\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\bin\Debug\Dictionary Beta 1.exe.config
-E:\VS Studio\Year 2\Visual Programming\Group 2 GIT\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\bin\Debug\Dictionary Beta 1.exe
-E:\VS Studio\Year 2\Visual Programming\Group 2 GIT\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\bin\Debug\Dictionary Beta 1.pdb
-E:\VS Studio\Year 2\Visual Programming\Group 2 GIT\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.AssemblyReference.cache
-E:\VS Studio\Year 2\Visual Programming\Group 2 GIT\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.g.resources
-E:\VS Studio\Year 2\Visual Programming\Group 2 GIT\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary_Beta_1.LookUp.resources
-E:\VS Studio\Year 2\Visual Programming\Group 2 GIT\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary_Beta_1.Properties.Resources.resources
-E:\VS Studio\Year 2\Visual Programming\Group 2 GIT\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.GenerateResource.cache
-E:\VS Studio\Year 2\Visual Programming\Group 2 GIT\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.CoreCompileInputs.cache
-E:\VS Studio\Year 2\Visual Programming\Group 2 GIT\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.exe
-E:\VS Studio\Year 2\Visual Programming\Group 2 GIT\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.pdb
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\bin\Debug\Dictionary Beta 1.exe.config
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\bin\Debug\Dictionary Beta 1.exe
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\bin\Debug\Dictionary Beta 1.pdb
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.AssemblyReference.cache
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary_Beta_1.LookUp.resources
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary_Beta_1.Properties.Resources.resources
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.GenerateResource.cache
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.CoreCompileInputs.cache
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.exe
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.pdb
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Interop.WMPLib.dll
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.ResolveComReference.cache
