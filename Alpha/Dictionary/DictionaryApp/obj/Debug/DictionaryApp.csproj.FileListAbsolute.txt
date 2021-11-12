@@ -1,0 +1,14 @@
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.csprojAssemblyReference.cache
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.Properties.Resources.resources
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.csproj.GenerateResource.cache
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.csproj.CoreCompileInputs.cache
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\DictionaryApp.exe.config
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\DictionaryApp.exe
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\DictionaryApp.pdb
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.exe
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.pdb
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\DictionaryDB.mdf
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\DictionaryDB_log.ldf
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.CustomControls.SensePanel.resources
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.CustomControls.WordDefinition.resources
+C:\Users\nghoa\Desktop\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.Form1.resources
