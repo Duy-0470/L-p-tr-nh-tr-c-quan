@@ -10,8 +10,8 @@ namespace Dictionary.Database
         
         public DatabaseHandle()
         {
-            sql
+            
         }
-        static 
+         
     }
 }

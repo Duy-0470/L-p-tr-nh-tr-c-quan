@@ -16,7 +16,7 @@ namespace Dictionary_Beta_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LookUp());
+            Application.Run(new Form_StartScreen());
         }
     }
 }

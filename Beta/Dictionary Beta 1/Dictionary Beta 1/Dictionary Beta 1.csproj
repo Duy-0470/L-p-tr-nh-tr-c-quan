@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form_Games.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Games.Designer.cs">
+      <DependentUpon>Form_Games.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Quizzes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Quizzes.Designer.cs">
+      <DependentUpon>Form_Quizzes.cs</DependentUpon>
+    </Compile>
     <Compile Include="LookUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,7 +67,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartScreen.Designer.cs">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="WordDatabase.cs" />
+    <EmbeddedResource Include="Form_Games.resx">
+      <DependentUpon>Form_Games.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Quizzes.resx">
+      <DependentUpon>Form_Quizzes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LookUp.resx">
       <DependentUpon>LookUp.cs</DependentUpon>
     </EmbeddedResource>
@@ -69,6 +93,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StartScreen.resx">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -104,6 +131,30 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collocation Answers.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collocation Quizzes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idiom Answers.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idiom Quizzes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phrasal Verbs Answers.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phrasal Verbs Quizzes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quiz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -77,5 +77,10 @@ namespace Dictionary_Beta_1
                 spell.controls.play(); 
             }
         }
+
+        private void button_Back_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
