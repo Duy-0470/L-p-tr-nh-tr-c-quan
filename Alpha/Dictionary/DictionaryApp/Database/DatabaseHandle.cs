@@ -202,13 +202,13 @@ namespace DictionaryApp.Database
 
 
             }
-
+            connection.Close();
             return shortcuts;
         }
         public DatabaseHandle()
         {
             connection = new SqlConnection();
-            connection.ConnectionString = "Data Source=(localdb)\\ProjectsV13;Initial Catalog=DictionaryDB;Integrated Security=True;Connect Timeout=30;" +
+            connection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Hoc_Ki_3\Lap_Trinh_Truc_Quan\Github2\Visual-Progamming\Alpha\Dictionary\DictionaryApp\DictionaryDB.mdf;Integrated Security=True;Connect Timeout=30;" +
                 "Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
 
