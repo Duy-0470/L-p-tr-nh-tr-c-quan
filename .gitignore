@@ -1,0 +1,15 @@
+Alpha/Dictionary/Dictionary/obj/**
+Alpha/Dictionary/DictionaryDB/obj/**
+Alpha/Dictionary/DictionaryApp/Database/Files/**
+Alpha/Dictionary/DictionaryApp/bin/**
+*.mdf
+*.ldf
+Alpha/Dictionary/DictionaryApp/obj/**
+Alpha/Dictionary/Dictionary/bin/**
+Alpha/Dictionary/DictionaryDB/bin/**
+Alpha/Dictionary/.vs/
+Beta/Dictionary Beta 1/Dictionary Beta 1/bin/**
+Beta/Dictionary Beta 1/Dictionary Beta 1/obj/**
+Beta/Dictionary Beta 1/Dictionary Beta 1/.vs/**
+**/bin
+**/obj
