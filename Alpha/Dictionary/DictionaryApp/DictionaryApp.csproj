@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6ED3C1C-C153-4A0F-B206-6FBBE735AE8F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DictionaryApp</RootNamespace>
+    <AssemblyName>DictionaryApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Example.cs" />
+    <Compile Include="Classes\SeeAlso.cs" />
+    <Compile Include="Classes\Sense.cs" />
+    <Compile Include="Classes\Shortcut.cs" />
+    <Compile Include="Classes\Word.cs" />
+    <Compile Include="Classes\WordForm.cs" />
+    <Compile Include="Classes\WordHeader.cs" />
+    <Compile Include="CustomControls\Component1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Component1.Designer.cs">
+      <DependentUpon>Component1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\DefintionHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\DefintionHeader.Designer.cs">
+      <DependentUpon>DefintionHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\SensePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\SensePanel.Designer.cs">
+      <DependentUpon>SensePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\WordDefinition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\WordDefinition.Designer.cs">
+      <DependentUpon>WordDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DatabaseHandle.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomControls\SensePanel.resx">
+      <DependentUpon>SensePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\WordDefinition.resx">
+      <DependentUpon>WordDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\Files\idioms\examples.txt" />
+    <Content Include="Database\Files\idioms\meanings.txt" />
+    <Content Include="Database\Files\idioms\phrases.txt" />
+    <Content Include="Database\Files\idioms\topics.txt" />
+    <Content Include="Database\Files\images\images.txt" />
+    <Content Include="Database\Files\images\images\_fullsize_a_acc_accor_accordion_concertina.png" />
+    <Content Include="Database\Files\images\images\_fullsize_a_air_airli_airliner.png" />
+    <Content Include="Database\Files\images\images\_fullsize_a_amm_ammon_ammonite.png" />
+    <Content Include="Database\Files\images\images\_fullsize_a_amp_amphi_amphibians.png" />
+    <Content Include="Database\Files\images\images\_fullsize_a_anc_ancho_anchor.png" />
+    <Content Include="Database\Files\images\images\_fullsize_a_ang_angle_angles.png" />
+    <Content Include="Database\Files\images\images\_fullsize_a_ank_ankh__ankh.png" />
+    <Content Include="Database\Files\images\images\_fullsize_a_aqu_aqual_aqualung.png" />
+    <Content Include="Database\Files\images\images\_fullsize_a_ara_arach_arachnids.png" />
+    <Content Include="Database\Files\images\images\_fullsize_a_arc_archi_architecture.png" />
+    <Content Include="Database\Files\images\images\_fullsize_a_axe_axes__axes.png" />
+    <Content Include="Database\Files\images\images\_fullsize_a_axi_axis__axis.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bal_balla_ballandsocketjoint.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bal_ballb_ballbearing.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bar_barbe_barbedwire.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bar_bars__bars.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bas_baske_baskets.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bat_bathr_bathroom.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bat_bathr_bathroom_objects.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bed_bedro_bedroom.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bed_beds__beds.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bel_bello_bellows.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bev_bevel_bevelled.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bin_binoc_binoculars_telescope.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bir_birds_birds.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bir_birds_birds_poultry.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bir_birds_birds_prey.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bir_birds_birds_seabirds.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bla_blade_blades.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_blo_block_blockandtackle.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bod_body__body.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bod_body__body_eye.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bod_body__body_face.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bod_body__body_hair.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bod_body__body_hand.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bod_body__body_skeleton.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bol_bolts_bolts.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bon_bonsa_bonsai.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_boo_boome_boomerang.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bow_bows__bows_1.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bow_bows__bows_2.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bri_bridg_bridge.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bri_bridg_bridges.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bro_broke_broken_chipped_cracked.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_bui_build_buildings.png" />
+    <Content Include="Database\Files\images\images\_fullsize_b_but_butto_buttons.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cab_cable_cablecar.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cal_calip_calipers.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_can_cande_candelabra.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_car_cards_cards.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_car_car___car.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cat_catap_catapult_slingshot.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cep_cepha_cephalopod.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cer_cerea_cereals.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cha_chair_chairs.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cha_chart_charts.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cir_circl_circles.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cit_city__city.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cla_class_classroom.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cle_clean_cleaning_1.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cle_clean_cleaning_2.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_clock_clocks_watches.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_cloth_clothes.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_cloth_clothes_bags.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_cloth_clothes_coats.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_cloth_clothes_dresses_skirts.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_cloth_clothes_fasteners.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_cloth_clothes_gloves.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_cloth_clothes_hats.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_cloth_clothes_misc.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_cloth_clothes_nightclothes.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_cloth_clothes_scarves.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_cloth_clothes_shoes.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_cloth_clothes_sports_casual.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_clo_cloth_clothes_sweaters.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_coa_coast_coast.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cog_cogwh_cogwheel.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_com_compa_compasses.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_con_conce_concentric.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_con_conic_conicsections.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_con_conve_convex_concave.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_coo_cooki_cooking.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cor_cord__cord.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cor_corru_corrugated.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cou_count_countryside.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cra_crack_crackers.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cro_croco_crocodileclip.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cru_crust_crustaceans.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cup_cups__cups.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cur_curta_curtains.png" />
+    <Content Include="Database\Files\images\images\_fullsize_c_cut_cutle_cutlery.png" />
+    <Content Include="Database\Files\images\images\_fullsize_d_dec_decan_decanter_egg_cup.png" />
+    <Content Include="Database\Files\images\images\_fullsize_d_dec_decor_decorating_diy.png" />
+    <Content Include="Database\Files\images\images\_fullsize_d_dho_dhow__dhow.png" />
+    <Content Include="Database\Files\images\images\_fullsize_d_dim_dimen_dimensions.png" />
+    <Content Include="Database\Files\images\images\_fullsize_d_din_dinin_diningroom.png" />
+    <Content Include="Database\Files\images\images\_fullsize_d_dol_dolls_dolls.png" />
+    <Content Include="Database\Files\images\images\_fullsize_d_dov_dovet_dovetail_mitre.png" />
+    <Content Include="Database\Files\images\images\_fullsize_e_edg_edge__edge_rim_border.png" />
+    <Content Include="Database\Files\images\images\_fullsize_e_env_envir_environment_1.png" />
+    <Content Include="Database\Files\images\images\_fullsize_e_env_envir_environment_2.png" />
+    <Content Include="Database\Files\images\images\_fullsize_e_epa_epaul_epaulette.png" />
+    <Content Include="Database\Files\images\images\_fullsize_e_exe_exerc_exercise_equipment.png" />
+    <Content Include="Database\Files\images\images\_fullsize_e_exe_exerc_exercise_fitness.png" />
+    <Content Include="Database\Files\images\images\_fullsize_e_exp_explo_explodeddiagram.png" />
+    <Content Include="Database\Files\images\images\_fullsize_f_fan_fans__fans.png" />
+    <Content Include="Database\Files\images\images\_fullsize_f_fed_fedor_fedora.png" />
+    <Content Include="Database\Files\images\images\_fullsize_f_fil_filte_filters.png" />
+    <Content Include="Database\Files\images\images\_fullsize_f_fis_fish__fish.png" />
+    <Content Include="Database\Files\images\images\_fullsize_f_flo_flowe_flowers.png" />
+    <Content Include="Database\Files\images\images\_fullsize_f_foo_food__food_preparation.png" />
+    <Content Include="Database\Files\images\images\_fullsize_f_fra_frame_frames.png" />
+    <Content Include="Database\Files\images\images\_fullsize_f_fro_froth_froth_foam_bubbles.png" />
+    <Content Include="Database\Files\images\images\_fullsize_f_fru_fruit_fruit_berries.png" />
+    <Content Include="Database\Files\images\images\_fullsize_f_fru_fruit_fruit_citrus.png" />
+    <Content Include="Database\Files\images\images\_fullsize_f_fru_fruit_fruit_misc.png" />
+    <Content Include="Database\Files\images\images\_fullsize_f_fru_fruit_fruit_tropical.png" />
+    <Content Include="Database\Files\images\images\_fullsize_g_gam_games_games.png" />
+    <Content Include="Database\Files\images\images\_fullsize_g_gar_garde_garden_chairs.png" />
+    <Content Include="Database\Files\images\images\_fullsize_g_gar_garde_garden_misc.png" />
+    <Content Include="Database\Files\images\images\_fullsize_g_gar_garde_garden_tools.png" />
+    <Content Include="Database\Files\images\images\_fullsize_g_gas_gastr_gastropods.png" />
+    <Content Include="Database\Files\images\images\_fullsize_g_gaz_gazeb_gazebos.png" />
+    <Content Include="Database\Files\images\images\_fullsize_g_gla_glass_glasses.png" />
+    <Content Include="Database\Files\images\images\_fullsize_g_gow_gowns_gowns.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_han_handl_handles.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hel_helic_helices.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_her_herbs_herbs.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_her_herri_herringbone.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hie_hiero_hieroglyphics.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hin_hinge_hinge.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hob_hobbi_hobbies_bowling.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hob_hobbi_hobbies_crafts.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hob_hobbi_hobbies_creative.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hob_hobbi_hobbies_darts_pool.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hob_hobbi_hobbies_diving_snorkelling.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hob_hobbi_hobbies_orienteering_caving.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hob_hobbi_hobbies_skating.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hob_hobbi_hobbies_yoga_running.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hom_homes_homes.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hoo_hooks_hooks.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hou_house_house_1.png" />
+    <Content Include="Database\Files\images\images\_fullsize_h_hou_house_house_2.png" />
+    <Content Include="Database\Files\images\images\_fullsize_i_ide_ideog_ideograms.png" />
+    <Content Include="Database\Files\images\images\_fullsize_i_ins_insec_insects.png" />
+    <Content Include="Database\Files\images\images\_fullsize_i_int_inter_internal_organs.png" />
+    <Content Include="Database\Files\images\images\_fullsize_i_iro_ironi_ironingboard.png" />
+    <Content Include="Database\Files\images\images\_fullsize_j_jew_jewel_jewellery.png" />
+    <Content Include="Database\Files\images\images\_fullsize_j_jew_jewel_jewellery_bracelets.png" />
+    <Content Include="Database\Files\images\images\_fullsize_j_jew_jewel_jewellery_earrings.png" />
+    <Content Include="Database\Files\images\images\_fullsize_j_jew_jewel_jewellery_necklaces.png" />
+    <Content Include="Database\Files\images\images\_fullsize_j_jew_jewel_jewellery_rings.png" />
+    <Content Include="Database\Files\images\images\_fullsize_j_jug_jug_p_jug_pitcher.png" />
+    <Content Include="Database\Files\images\images\_fullsize_k_key_keys__keys.png" />
+    <Content Include="Database\Files\images\images\_fullsize_k_kit_kitch_kitchen.png" />
+    <Content Include="Database\Files\images\images\_fullsize_k_kit_kitch_kitchen_appliances.png" />
+    <Content Include="Database\Files\images\images\_fullsize_k_kit_kitch_kitchen_baking.png" />
+    <Content Include="Database\Files\images\images\_fullsize_k_kit_kitch_kitchen_crushing_grating_squeezing.png" />
+    <Content Include="Database\Files\images\images\_fullsize_k_kit_kitch_kitchen_cutting.png" />
+    <Content Include="Database\Files\images\images\_fullsize_k_kit_kitch_kitchen_drinks.png" />
+    <Content Include="Database\Files\images\images\_fullsize_k_kit_kitch_kitchen_measuring.png" />
+    <Content Include="Database\Files\images\images\_fullsize_k_kit_kitch_kitchen_opening.png" />
+    <Content Include="Database\Files\images\images\_fullsize_k_kit_kitch_kitchen_utensils_misc.png" />
+    <Content Include="Database\Files\images\images\_fullsize_k_kno_knobs_knobs.png" />
+    <Content Include="Database\Files\images\images\_fullsize_k_kno_knot__knot_loop_coil_bow.png" />
+    <Content Include="Database\Files\images\images\_fullsize_l_lab_label_label_tag_ticket.png" />
+    <Content Include="Database\Files\images\images\_fullsize_l_lab_labor_laboratory_equipment.png" />
+    <Content Include="Database\Files\images\images\_fullsize_l_lat_latti_lattice.png" />
+    <Content Include="Database\Files\images\images\_fullsize_l_lea_leapf_leapfrog.png" />
+    <Content Include="Database\Files\images\images\_fullsize_l_lin_lines_lines.png" />
+    <Content Include="Database\Files\images\images\_fullsize_l_liv_livin_livingroom.png" />
+    <Content Include="Database\Files\images\images\_fullsize_l_lut_lute__lute_lyre.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mal_malle_mallet_hammer.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mam_mamma_mammals.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mam_mamma_mammals_cetaceans.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mam_mamma_mammals_marsupials.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mam_mamma_mammals_primates.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mam_mamma_mammals_rodents.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_map_maple_mapleleaf.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mas_masks_masks.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_med_medal_medal_shield_cup.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_meg_megap_megaphone.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_met_metro_metronome.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_min_minar_minaret.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mon_money_money.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mou_mount_mountains.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mus_music_musicalnotation.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mus_music_music_brass_instruments.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mus_music_music_groups_playing.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mus_music_music_other_string_instruments.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mus_music_music_percussion_instruments.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mus_music_music_pianos.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mus_music_music_string_instruments.png" />
+    <Content Include="Database\Files\images\images\_fullsize_m_mus_music_music_woodwind_instruments.png" />
+    <Content Include="Database\Files\images\images\_fullsize_n_nai_nail__nail_screw.png" />
+    <Content Include="Database\Files\images\images\_fullsize_n_nec_necks_necks.png" />
+    <Content Include="Database\Files\images\images\_fullsize_n_nor_norma_normaldistribution.png" />
+    <Content Include="Database\Files\images\images\_fullsize_n_nut_nuts__nuts.png" />
+    <Content Include="Database\Files\images\images\_fullsize_o_oca_ocari_ocarina.png" />
+    <Content Include="Database\Files\images\images\_fullsize_o_off_offic_office.png" />
+    <Content Include="Database\Files\images\images\_fullsize_o_opt_optic_opticalillusions.png" />
+    <Content Include="Database\Files\images\images\_fullsize_o_orb_orbit_orbit.png" />
+    <Content Include="Database\Files\images\images\_fullsize_o_ove_overa_overalls_dungarees.png" />
+    <Content Include="Database\Files\images\images\_fullsize_o_oxb_oxbow_oxbow.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_pac_packa_packaging.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_pad_padlo_padlock.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_par_parac_parachute.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_par_paral_parallelograms.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_peg_pegs__pegs.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_pen_penkn_penknife.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_pic_picto_pictographs.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_pip_pipes_pipes.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_pis_pisto_piston.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_pla_plant_plants.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_plu_plugs_plugs.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_pod_podiu_podium_rostrum_lectern.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_pol_polyg_polygons.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_pos_postb_postbox_frontdoor_mailbox.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_pre_pretz_pretzel.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_pus_pushc_pushchair_pram_carrycot.png" />
+    <Content Include="Database\Files\images\images\_fullsize_p_puz_puzzl_puzzles.png" />
+    <Content Include="Database\Files\images\images\_fullsize_r_rab_rabbi_rabbit_hare.png" />
+    <Content Include="Database\Files\images\images\_fullsize_r_rac_racks_racks.png" />
+    <Content Include="Database\Files\images\images\_fullsize_r_rat_ratch_ratchet.png" />
+    <Content Include="Database\Files\images\images\_fullsize_r_reb_rebus_rebus.png" />
+    <Content Include="Database\Files\images\images\_fullsize_r_rep_repti_reptiles.png" />
+    <Content Include="Database\Files\images\images\_fullsize_r_rev_revol_revolvingdoor.png" />
+    <Content Include="Database\Files\images\images\_fullsize_r_rin_rings_rings.png" />
+    <Content Include="Database\Files\images\images\_fullsize_r_rol_rolls_rolls.png" />
+    <Content Include="Database\Files\images\images\_fullsize_r_rop_rope__rope_thread_string.png" />
+    <Content Include="Database\Files\images\images\_fullsize_r_rou_round_roundabout_merrygoround.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_saw_saws__saws.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_sca_scale_scales.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_sci_sciss_scissors.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_sha_shade_shade_shadow.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_she_shell_shellfish.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_sle_sledg_sledge_sleigh.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_sol_solid_solids.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spi_spice_spices.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spi_spira_spiral.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spo_sport_sports_equestrian.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spo_sport_sports_extreme.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spo_sport_sports_field.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spo_sport_sports_misc.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spo_sport_sports_racket.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spo_sport_sports_team.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spo_sport_sports_track.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spo_sport_sports_water.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spo_sport_sports_winter.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spo_spotl_spotlight.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spr_sprin_spring.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_spr_sproc_sprocketwheel.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_squ_squee_squeeze_squash_crush.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_sta_stair_staircase.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_sta_stati_stationery.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_sti_stick_stickfigures.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_sti_stick_sticks.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_sti_stile_stile.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_sun_sundi_sundial.png" />
+    <Content Include="Database\Files\images\images\_fullsize_s_swo_sword_sword_spear_dagger.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_tas_tasse_tassel.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_ten_tent__tent.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_tog_toga__toga.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_too_toolb_toolbox.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_too_tools_tools_diy_1.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_too_tools_tools_diy_2.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_too_tools_tools_diy_3.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_toy_toys__toys.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_tra_tract_tractor.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_tra_trape_trapezium_trapezoid.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_tre_trees_trees_deciduous.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_tre_trees_trees_evergreen.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_tre_tree__tree.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_tri_trian_triangles.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_tru_trunk_trunks.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_tur_turba_turban.png" />
+    <Content Include="Database\Files\images\images\_fullsize_t_twi_twist_twisted_bent.png" />
+    <Content Include="Database\Files\images\images\_fullsize_u_uku_ukule_ukulele.png" />
+    <Content Include="Database\Files\images\images\_fullsize_u_uni_unico_unicorn.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_vau_vault_vault.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veg_veget_vegetables_misc.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veg_veget_vegetables_peas_beans.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veg_veget_vegetables_root.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veg_veget_vegetables_salad.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veg_veget_vegetables_squash.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veh_vehic_vehicles_aircraft.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veh_vehic_vehicles_boats_ships_1.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veh_vehic_vehicles_boats_ships_2.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veh_vehic_vehicles_buses.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veh_vehic_vehicles_caravan_camper.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veh_vehic_vehicles_cars.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veh_vehic_vehicles_construction.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veh_vehic_vehicles_cycles.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veh_vehic_vehicles_taxis.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veh_vehic_vehicles_trains.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_veh_vehic_vehicles_trucks.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_vic_vice__vice.png" />
+    <Content Include="Database\Files\images\images\_fullsize_v_vol_volca_volcano.png" />
+    <Content Include="Database\Files\images\images\_fullsize_w_wag_wagon_wagon.png" />
+    <Content Include="Database\Files\images\images\_fullsize_w_wap_wapit_wapiti_elk.png" />
+    <Content Include="Database\Files\images\images\_fullsize_w_wav_wavel_wavelength.png" />
+    <Content Include="Database\Files\images\images\_fullsize_w_wea_weath_weathercock.png" />
+    <Content Include="Database\Files\images\images\_fullsize_w_wic_wicke_wickerchair.png" />
+    <Content Include="Database\Files\words\examples.txt" />
+    <Content Include="Database\Files\words\extra_list.txt" />
+    <Content Include="Database\Files\words\see_also.txt" />
+    <Content Include="Database\Files\words\senses.txt" />
+    <Content Include="Database\Files\words\shortcuts.txt" />
+    <Content Include="Database\Files\words\words.txt" />
+    <Content Include="Database\Files\words\word_forms.txt" />
+    <Content Include="DictionaryDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DictionaryDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DictionaryDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
