@@ -2,6 +2,9 @@
 using DictionaryApp.Classes;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace DictionaryApp.CustomControls
 {
@@ -50,8 +53,8 @@ namespace DictionaryApp.CustomControls
             // OrderLabel
             // 
             this.OrderLabel.AutoSize = true;
-            this.OrderLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderLabel.Location = new System.Drawing.Point(7, 7);
+            this.OrderLabel.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OrderLabel.Location = new System.Drawing.Point(10, 7);
             this.OrderLabel.Name = "OrderLabel";
             this.OrderLabel.Size = new System.Drawing.Size(17, 19);
             this.OrderLabel.TabIndex = 0;
@@ -63,42 +66,53 @@ namespace DictionaryApp.CustomControls
                 // TypeHeader
                 // 
                 this.TypeHeader.Controls.Add(this.SenseTypeLabel);
+
                 this.TypeHeader.Controls.Add(this.SenseLevelLabel);
+
                 this.TypeHeader.Location = new System.Drawing.Point(30, 0);
                 this.TypeHeader.Name = "TypeHeader";
                 this.TypeHeader.Size = new System.Drawing.Size(429, 32);
                 this.TypeHeader.TabIndex = 1;
                 if (sense.level != "")
                 {
+                    // 
+                    // SenseLevelLabel
+                    // 
 
+                    this.SenseLevelLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(53)))), ((int)(((byte)(97)))));
+                    this.SenseLevelLabel.BorderColor = System.Drawing.Color.Transparent;
+                    this.SenseLevelLabel.BorderRadius = 20;
+                    this.SenseLevelLabel.BorderSize = 0;
+                    this.SenseLevelLabel.FlatAppearance.BorderSize = 0;
+                    this.SenseLevelLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+                    this.SenseLevelLabel.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    this.SenseLevelLabel.ForeColor = System.Drawing.Color.White;
+                    this.SenseLevelLabel.Location = new System.Drawing.Point(10, 3);
+                    this.SenseLevelLabel.Name = "SenseLevelLabel";
+                    this.SenseLevelLabel.Size = new System.Drawing.Size(40, 25);
+                    this.SenseLevelLabel.TabIndex = 0;
+                    this.SenseLevelLabel.Text = sense.level.ToUpper();
+                    this.SenseLevelLabel.TextColor = System.Drawing.Color.White;
+                    this.SenseLevelLabel.UseVisualStyleBackColor = false;
                 }
 
-                // 
-                // SenseLevelLabel
-                // 
-                this.SenseLevelLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(53)))), ((int)(((byte)(97)))));
-                this.SenseLevelLabel.BorderColor = System.Drawing.Color.Transparent;
-                this.SenseLevelLabel.BorderRadius = 20;
-                this.SenseLevelLabel.BorderSize = 0;
-                this.SenseLevelLabel.FlatAppearance.BorderSize = 0;
-                this.SenseLevelLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-                this.SenseLevelLabel.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                this.SenseLevelLabel.ForeColor = System.Drawing.Color.White;
-                this.SenseLevelLabel.Location = new System.Drawing.Point(0, 3);
-                this.SenseLevelLabel.Name = "SenseLevelLabel";
-                this.SenseLevelLabel.Size = new System.Drawing.Size(50, 25);
-                this.SenseLevelLabel.TabIndex = 0;
-                this.SenseLevelLabel.Text = sense.level.ToUpper();
-                this.SenseLevelLabel.TextColor = System.Drawing.Color.White;
-                this.SenseLevelLabel.UseVisualStyleBackColor = false;
+               
                 // 
                 // SenseTypeLabel
                 // 
                 this.SenseTypeLabel.AutoSize = true;
                 this.SenseTypeLabel.BackColor = System.Drawing.Color.White;
-                this.SenseTypeLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                this.SenseTypeLabel.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 this.SenseTypeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(111)))), ((int)(((byte)(111)))));
-                this.SenseTypeLabel.Location = new System.Drawing.Point(60, 7);
+                if (sense.level != "")
+                {
+                    this.SenseTypeLabel.Location = new System.Drawing.Point(this.SenseLevelLabel.Width + 20, 7);
+                }
+                else
+                {
+                    this.SenseTypeLabel.Location = new System.Drawing.Point(10, 7);
+
+                }
                 this.SenseTypeLabel.Name = "SenseTypeLabel";
                 this.SenseTypeLabel.Size = new System.Drawing.Size(48, 19);
                 this.SenseTypeLabel.TabIndex = 1;
@@ -119,14 +133,18 @@ namespace DictionaryApp.CustomControls
             // MeaningLabel
             // 
             this.MeaningLabel.AutoSize = true;
-            this.MeaningLabel.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.MeaningLabel.Location = new System.Drawing.Point(TypeHeader.Height+TypeHeader.Location.Y, 35);
-            this.MeaningLabel.MaximumSize = new System.Drawing.Size(600, 0);
+            this.MeaningLabel.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.MeaningLabel.Location = new System.Drawing.Point(40, TypeHeader.Height+TypeHeader.Location.Y);
+            this.MeaningLabel.MaximumSize = new System.Drawing.Size(648, 0);
             this.MeaningLabel.Name = "MeaningLabel";
             this.MeaningLabel.Size = new System.Drawing.Size(597, 57);
-            this.MeaningLabel.TabIndex = 2;
-            this.MeaningLabel.Text = resources.GetString("MeaningLabel.Text");
+            this.MeaningLabel.ForeColor = Color.Black;
+            this.MeaningLabel.MaximumSize = new System.Drawing.Size(400, 50);
 
+            this.MeaningLabel.TabIndex = 2;
+            this.MeaningLabel.Text = sense.meaning;
+/*            this.MeaningLabel.Text = resources.GetString("MeaningLabel.Text");
+*/
             System.Windows.Forms.Label exampleLabel;
             foreach (Example example in sense.examples)
             {
@@ -135,14 +153,20 @@ namespace DictionaryApp.CustomControls
                 // 
                 // ExampleLabel
                 // 
+                exampleLabel.Text = "~   " + example.sentence.Replace('\n', ' ');
+                exampleLabel.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                System.Drawing.Size textSize = TextRenderer.MeasureText(exampleLabel.Text, exampleLabel.Font);
+                Debug.WriteLine(textSize);
+                int extra_y = index == 0 ? MeaningLabel.Location.Y + 25 : (examples[index - 1].Location.Y + examples[index - 1].PreferredHeight+5);
                 exampleLabel.AutoSize = true;
-                exampleLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                exampleLabel.Location = new System.Drawing.Point(60,
-                    MeaningLabel.Location.Y + MeaningLabel.Height +
-                    index == 0 ? 5 : (examples[index - 1].Location.Y+ examples[index - 1].Height + 5));
+                exampleLabel.Location = new System.Drawing.Point(60,extra_y);
                 exampleLabel.Name = "ExampleLabel"+index;
-                exampleLabel.Size = new System.Drawing.Size(454, 19);
-                exampleLabel.Text = "~   " + example.sentence;
+                exampleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(111)))), ((int)(((byte)(111)))));
+                exampleLabel.Size = new System.Drawing.Size(380, 19);
+                
+                exampleLabel.AutoSize = true;
+                exampleLabel.MaximumSize = new System.Drawing.Size(400, 50);
+
 
                 examples.Add(exampleLabel);
             }
@@ -171,7 +195,7 @@ namespace DictionaryApp.CustomControls
                 // TopicLabel
                 // 
                 this.TopicLabel.AutoSize = true;
-                this.TopicLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                this.TopicLabel.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 this.TopicLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(53)))), ((int)(((byte)(97)))));
                 this.TopicLabel.Location = new System.Drawing.Point(3, 6);
                 this.TopicLabel.Name = "TopicLabel";
@@ -211,7 +235,7 @@ namespace DictionaryApp.CustomControls
                 // TopicLabel
                 // 
                 this.TopicLabel.AutoSize = true;
-                this.TopicLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                this.TopicLabel.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 this.TopicLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(53)))), ((int)(((byte)(97)))));
                 this.TopicLabel.Location = new System.Drawing.Point(3, 6);
                 this.TopicLabel.Name = "TopicLabel";
@@ -226,17 +250,17 @@ namespace DictionaryApp.CustomControls
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.OrderLabel);
+
             this.Controls.Add(this.TopicPanel);
-            this.Controls.Add(this.ExampleLabel);
             this.Controls.Add(this.MeaningLabel);
             this.Controls.Add(this.TypeHeader);
-            this.Controls.Add(this.OrderLabel);
             foreach(var e in examples)
             {
                 this.Controls.Add(e);
             }
             this.Name = "Sense";
-            this.Size = new System.Drawing.Size(648, this.TopicPanel.Height+this.TopicPanel.Location.Y+5);
+            this.Size = new System.Drawing.Size(648, this.TopicPanel.Location.Y+5);
             this.TypeHeader.ResumeLayout(false);
             this.TypeHeader.PerformLayout();
             this.TopicPanel.ResumeLayout(false);

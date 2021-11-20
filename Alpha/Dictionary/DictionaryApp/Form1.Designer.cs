@@ -1,6 +1,10 @@
 ﻿
+using DictionaryApp.Classes;
 using DictionaryApp.CustomControls;
 using DictionaryApp.Database;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace DictionaryApp
 {
@@ -64,8 +68,8 @@ namespace DictionaryApp
             this.engVietTypeButton = new System.Windows.Forms.Button();
             this.engEngTypeButton = new System.Windows.Forms.Button();
             this.TypePanelBorder = new System.Windows.Forms.Panel();
-            this.wordDefinition1 = new WordDefinition(DatabaseHandle.GetDataHandle().FindWord("kill_1"));
-
+            this.wordResultPanel = new DictionaryApp.CustomControls.WordResultPanel();
+            this.pictureCatalog1 = new DictionaryApp.CustomControls.PictureCatalog();
             this.topBar.SuspendLayout();
             this.rightTopBarPanel.SuspendLayout();
             this.appNamePanel.SuspendLayout();
@@ -91,7 +95,7 @@ namespace DictionaryApp
             this.topBar.Controls.Add(this.appNamePanel);
             this.topBar.Location = new System.Drawing.Point(0, 0);
             this.topBar.Name = "topBar";
-            this.topBar.Size = new System.Drawing.Size(904, 48);
+            this.topBar.Size = new System.Drawing.Size(1145, 48);
             this.topBar.TabIndex = 0;
             // 
             // rightTopBarPanel
@@ -101,7 +105,7 @@ namespace DictionaryApp
             this.rightTopBarPanel.Controls.Add(this.avatarButton);
             this.rightTopBarPanel.Controls.Add(this.helpButton);
             this.rightTopBarPanel.Controls.Add(this.signOutButton);
-            this.rightTopBarPanel.Location = new System.Drawing.Point(1209, 0);
+            this.rightTopBarPanel.Location = new System.Drawing.Point(1534, 0);
             this.rightTopBarPanel.Name = "rightTopBarPanel";
             this.rightTopBarPanel.Size = new System.Drawing.Size(245, 48);
             this.rightTopBarPanel.TabIndex = 1;
@@ -200,7 +204,7 @@ namespace DictionaryApp
             this.panel1.Controls.Add(this.DictionariesButton);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1575, 48);
+            this.panel1.Size = new System.Drawing.Size(1900, 48);
             this.panel1.TabIndex = 1;
             // 
             // PicturesButton
@@ -339,7 +343,7 @@ namespace DictionaryApp
             this.DictionariesHomeButton.MouseEnter += new System.EventHandler(this.OptionLabelGetsFocused);
             this.DictionariesHomeButton.MouseLeave += new System.EventHandler(this.OptionLabelLosesFocused);
             // 
-            // engengButton
+            // engengButtonfpi
             // 
             this.engengButton.BackColor = System.Drawing.Color.White;
             this.engengButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -376,7 +380,7 @@ namespace DictionaryApp
             this.ButtonBarBorder.Controls.Add(this.panel1);
             this.ButtonBarBorder.Location = new System.Drawing.Point(0, 48);
             this.ButtonBarBorder.Name = "ButtonBarBorder";
-            this.ButtonBarBorder.Size = new System.Drawing.Size(904, 50);
+            this.ButtonBarBorder.Size = new System.Drawing.Size(1145, 50);
             this.ButtonBarBorder.TabIndex = 4;
             // 
             // panel5
@@ -397,7 +401,7 @@ namespace DictionaryApp
             this.SearchBar.Controls.Add(this.TypeSelectionButton);
             this.SearchBar.Location = new System.Drawing.Point(0, 99);
             this.SearchBar.Name = "SearchBar";
-            this.SearchBar.Size = new System.Drawing.Size(904, 68);
+            this.SearchBar.Size = new System.Drawing.Size(1145, 68);
             this.SearchBar.TabIndex = 8;
             // 
             // GoButton
@@ -521,27 +525,38 @@ namespace DictionaryApp
             this.TypePanelBorder.Visible = false;
             this.TypePanelBorder.MouseLeave += new System.EventHandler(this.LeaveTypePanel);
             // 
-            // wordDefinition1
+            // wordResultPanel
             // 
-            this.wordDefinition1.AutoScroll = true;
-            this.wordDefinition1.AutoSize = true;
-            this.wordDefinition1.Location = new System.Drawing.Point(28, 250);
-            this.wordDefinition1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.wordDefinition1.MaximumSize = new System.Drawing.Size(648, 300);
-            this.wordDefinition1.Name = "wordDefinition1";
-            this.wordDefinition1.Size = new System.Drawing.Size(648, 300);
-            this.wordDefinition1.TabIndex = 11;
+            this.wordResultPanel.AutoScroll = true;
+            this.wordResultPanel.AutoSize = true;
+            this.wordResultPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.wordResultPanel.BackColor = System.Drawing.Color.White;
+            this.wordResultPanel.Location = new System.Drawing.Point(10, 180);
+            this.wordResultPanel.Name = "wordResultPanel";
+            this.wordResultPanel.Size = new System.Drawing.Size(931, 1469);
+            this.wordResultPanel.TabIndex = 0;
+            // 
+            // pictureCatalog1
+            // 
+            this.pictureCatalog1.Location = new System.Drawing.Point(79, 130);
+            this.pictureCatalog1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pictureCatalog1.Name = "pictureCatalog1";
+            this.pictureCatalog1.Size = new System.Drawing.Size(1081, 577);
+            this.pictureCatalog1.TabIndex = 11;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(791, 749);
-            this.Controls.Add(this.wordDefinition1);
+            this.Controls.Add(this.pictureCatalog1);
             this.Controls.Add(this.TypePanelBorder);
             this.Controls.Add(this.dictionariesOptionBorder);
             this.Controls.Add(this.SearchBar);
+            this.SearchBar.Visible = false;
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.ButtonBarBorder);
             this.Controls.Add(this.topBar);
@@ -567,7 +582,6 @@ namespace DictionaryApp
             this.TypePanel.ResumeLayout(false);
             this.TypePanelBorder.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -605,7 +619,8 @@ namespace DictionaryApp
         private System.Windows.Forms.Panel SearchInputArea;
         private System.Windows.Forms.TextBox SearchInput;
         private System.Windows.Forms.Button GoButton;
-        private WordDefinition wordDefinition1;
+        private WordResultPanel wordResultPanel;
+        private PictureCatalog pictureCatalog1;
     }
 }
 

@@ -346,9 +346,10 @@ namespace DictionaryApp.CustomControls
                 this.WordFormPanel.ForeColor = System.Drawing.Color.Black;
                 this.WordFormPanel.Location = new System.Drawing.Point(0, this.WordFormBar.Height+this.WordFormBar.Location.Y);
                 this.WordFormPanel.Name = "WordFormPanel";
-                /*this.WordFormPanel.Size = new System.Drawing.Size(648, 100);*/
+                this.WordFormPanel.Size = new System.Drawing.Size(648, 100);
                 this.WordFormPanel.TabIndex = 7;
                 this.WordFormPanel.AutoSize = true;
+                this.WordFormPanel.MaximumSize = new Size(648, 0);
 
             }
 

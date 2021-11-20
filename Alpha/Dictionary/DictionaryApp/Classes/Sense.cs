@@ -26,6 +26,10 @@ namespace DictionaryApp.Classes
             this.hash = ha;
             this.examples = exs;
             this.seeAlsos = s;
+            if (topic == "NA") topic = "";
+            if (level == "NA") level = "";
+            if (type1 == "NA") type1 = "";
+            if (type2 == "NA") type2 = "";
         }
     }
 }

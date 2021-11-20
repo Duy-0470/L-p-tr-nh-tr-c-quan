@@ -18,6 +18,7 @@ namespace DictionaryApp.Database
         static DatabaseHandle handle=null;
         public SqlConnection connection;
         public string DataDirectories = "";
+        public Dictionary<string, Image> images = new Dictionary<string, Image>();
         static public DatabaseHandle GetDataHandle()
         {
             if (handle == null)
@@ -66,6 +67,7 @@ namespace DictionaryApp.Database
                 List<WordForm> wordForms = this.GetWordForms(wid);
                 List<Shortcut> shortcuts = this.GetShortcuts(wid);
                 wordHeader.AddWordForms(wordForms);
+                connection.Close();
                 return new Word(wordHeader,
                                 wid,
                                 senses,
@@ -78,8 +80,73 @@ namespace DictionaryApp.Database
             
             }
 
-
         }
+        public Image GetImageGivenLinkandSize(string link, int width, int height)
+        {
+            Image im = GetImageGivenLink(link);
+            if (im == null) return null;
+            float iwth = (float)im.Width / im.Height;
+            float rwth = (float)width / height;
+            if (iwth > rwth)
+            {
+                return new Bitmap(im, new Size(width, Convert.ToInt32(width * iwth)));
+            }
+            else
+            {
+                return new Bitmap(im, new Size(Convert.ToInt32(height / iwth), height));
+
+            }
+        }
+        public Image GetImageGivenLink(string link)
+        {
+            Image image = null;
+
+            if (images.TryGetValue(link, out image))
+            {
+                return image;
+            }
+            string query = "SELECT image, link FROM Images WHERE " +
+                "link = '" + link + "'";// where Name='" + name + "'";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Close();
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                reader.Read();
+                byte[] bytes = (byte[])reader["image"];
+                using (MemoryStream memstr = new MemoryStream(bytes))
+                {
+                    image = Image.FromStream(memstr);
+                    if(image!=null)
+                        images.Add(link, image);
+                }
+            }
+            return image;
+        }
+        public List<MyImage> GetImageContaining(string name="l")
+        {
+            List<MyImage> images = new List<MyImage>();
+            string query = "SELECT image_link, word FROM Image_Word WHERE " +
+                "word LIKE '%"+name +"%'";// where Name='" + name + "'";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Close();
+            connection.Open();
+
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                MyImage myImage = new MyImage();
+                myImage.name = reader.GetString(1).Substring(0, reader.GetString(1).Length - 2).Replace('_', ' ');
+                myImage.link = reader.GetString(0);
+                images.Add(myImage);
+            }
+            Debug.WriteLine(images.Count);
+            connection.Close();
+            return images;
+        }
+
         public List<SeeAlso> GetSeeAlsos(string sid)
         {
             List<SeeAlso> seeAlsos = new List<SeeAlso>();
@@ -202,13 +269,13 @@ namespace DictionaryApp.Database
 
 
             }
-            connection.Close();
+
             return shortcuts;
         }
         public DatabaseHandle()
         {
             connection = new SqlConnection();
-            connection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Hoc_Ki_3\Lap_Trinh_Truc_Quan\Github2\Visual-Progamming\Alpha\Dictionary\DictionaryApp\DictionaryDB.mdf;Integrated Security=True;Connect Timeout=30;" +
+            connection.ConnectionString = "Data Source=(localdb)\\ProjectsV13;Initial Catalog=DictionaryDB;Integrated Security=True;Connect Timeout=30;" +
                 "Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
 
@@ -294,7 +361,7 @@ namespace DictionaryApp.Database
             command.CommandText = "SELECT COUNT(*) FROM Images";
             numRows = (Int32)command.ExecuteScalar();
             connection.Close();
-            if (numRows <= 1000)
+            if (numRows >= 400 || numRows == 0)
             {
                 Debug.WriteLine("Add words into Images table");
                 AddImages();
@@ -343,7 +410,225 @@ namespace DictionaryApp.Database
                 Debug.WriteLine("Add words into Idiom_Examples table");
                 AddIdiom_Examples();
             }
+            connection.Open();
+            command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "SELECT COUNT(*) FROM Quizzes";
+            numRows = (Int32)command.ExecuteScalar();
+            connection.Close();
+            if (numRows <= 500)
+            {
+                Debug.WriteLine("Add words into Quizzes table");
+                AddQuizzes();
+            }
+
+
             List<String> w = FindWordsMatchingSearch("account");
+        }
+        public List<Quizz> SelectNQuizzes(int number)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Quizzes";
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            List<Quizz> quizzs = new List<Quizz>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    quizzs.Add(new Quizz(reader.GetString(1), reader.GetString(2), reader.GetString(3),
+                    reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetInt32(7)));
+
+                }                
+                connection.Close();
+                var rnd = new Random();
+                quizzs = (List<Quizz>)quizzs.OrderBy(item => rnd.Next());
+            }
+            else
+            {
+                connection.Close();
+                return null;
+
+            }
+            if (number > quizzs.Count)
+            {
+                number = quizzs.Count;
+            }
+            return quizzs.GetRange(0, number);
+        }
+        public List<Quizz> SelectNIdiomQuizzes(int number)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Quizzes where topic= @topic";
+            command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = "Idiom";
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            List<Quizz> quizzs = new List<Quizz>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    quizzs.Add(new Quizz(reader.GetString(1), reader.GetString(2), reader.GetString(3),
+                    reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetInt32(7)));
+
+                }
+                connection.Close();
+                var rnd = new Random();
+                quizzs = (List<Quizz>)quizzs.OrderBy(item => rnd.Next());
+            }
+            else
+            {
+                connection.Close();
+                return null;
+
+            }
+            if (number > quizzs.Count)
+            {
+                number = quizzs.Count;
+            }
+            return quizzs.GetRange(0, number);
+        }
+        public List<Quizz> SelectNPhrasalVerbQuizzes(int number)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Quizzes where topic= @topic";
+            command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = "Phrasal-Verbs";
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            List<Quizz> quizzs = new List<Quizz>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    quizzs.Add(new Quizz(reader.GetString(1), reader.GetString(2), reader.GetString(3),
+                    reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetInt32(7)));
+
+                }
+                connection.Close();
+                var rnd = new Random();
+                quizzs = (List<Quizz>)quizzs.OrderBy(item => rnd.Next());
+            }
+            else
+            {
+                connection.Close();
+                return null;
+
+            }
+            if (number > quizzs.Count)
+            {
+                number = quizzs.Count;
+            }
+            return quizzs.GetRange(0, number);
+        }
+        public List<Quizz> SelectNCollocationQuizzes(int number)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Quizzes where topic= @topic";
+            command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = "Collocation";
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            List<Quizz> quizzs = new List<Quizz>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    quizzs.Add(new Quizz(reader.GetString(1), reader.GetString(2), reader.GetString(3),
+                    reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetInt32(7)));
+
+                }
+                connection.Close();
+                var rnd = new Random();
+                quizzs = (List<Quizz>)quizzs.OrderBy(item => rnd.Next());
+            }
+            else
+            {
+                connection.Close();
+                return null;
+
+            }
+            if (number > quizzs.Count)
+            {
+                number = quizzs.Count;
+            }
+            return quizzs.GetRange(0, number);
+        }
+        private void AddQuizzes()
+        {
+            connection.Open();
+
+            string[] tokens;
+            SqlCommand command;
+            List<string> topics = new List<string> { "Collocation", "Idiom", "Phrasal-Verbs" };
+            Dictionary<string, List<string>> quizzDictionary = new Dictionary<string, List<string>>();
+
+            foreach (string tp in topics)
+            {
+                // read files -Answers and -Quizzes
+                string ansFile = DataDirectories + "quizzes\\" + tp + "-Answers.txt";
+                string quzFile = DataDirectories + "quizzes\\" + tp + "-Quizzes.txt";
+
+
+                // read -Answer file first
+                foreach (string line in System.IO.File.ReadLines(ansFile))
+                {
+                    string qu = Convert.ToInt32(line.Substring(0, line.Length - 1))+tp;
+
+                    int an = line.Substring(line.Length - 1, 1) == "A"?1:
+                        line.Substring(line.Length - 1, 1) == "B"?2:
+                        line.Substring(line.Length - 1, 1) == "C"?3:4;
+
+                    quizzDictionary.Add(qu, new List<string> { Convert.ToString(an) });
+                }
+                
+                foreach (string line in System.IO.File.ReadLines(quzFile))
+                {
+                    
+                    tokens = line.Split('_');
+                    if (tokens.Length != 5)
+                    {
+                        continue;
+                    }
+                           
+                    string quNum = tokens[0].Substring(0, tokens[0].IndexOf(' ') -1) +tp;
+                    string quSen = tokens[0].Substring(tokens[0].IndexOf(" ") + 1).Replace('%', '_');
+
+                    string ansA = tokens[1].Substring(tokens[1].IndexOf(".")+1).Replace('\n', ' ');
+                    string ansB = tokens[2].Substring(tokens[2].IndexOf(".")+1).Replace('\n', ' ');
+                    string ansC = tokens[3].Substring(tokens[3].IndexOf(".")+1).Replace('\n', ' ');
+                    string ansD = tokens[4].Substring(tokens[4].IndexOf(".")+1).Replace('\n', ' ');
+
+                    quizzDictionary[quNum].AddRange(new List<string> {quSen, ansA, ansB, ansC, ansD});
+
+                }
+            }
+            foreach (string tp in topics)
+            {
+                foreach (string key in quizzDictionary.Keys.ToList())
+                {
+                    if (quizzDictionary[key].Count != 6 || key.Contains(tp))
+                    {
+                        continue;
+                    }
+                    command = new SqlCommand();
+                    command.Connection = connection;
+                    command.CommandText = @"INSERT INTO Quizzes (question, topic, ans1, ans2, ans3, ans4, rans) VALUES (@question, @topic, @ans1, @ans2, @ans3, @ans4, @rans)";
+                    command.Parameters.Add("@question", SqlDbType.NVarChar).Value = quizzDictionary[key][1];
+                    command.Parameters.Add("@topic", SqlDbType.NVarChar).Value = tp;
+                    command.Parameters.Add("@ans1", SqlDbType.NVarChar).Value = quizzDictionary[key][2];
+                    command.Parameters.Add("@ans2", SqlDbType.NVarChar).Value = quizzDictionary[key][3];
+                    command.Parameters.Add("@ans3", SqlDbType.NVarChar).Value = quizzDictionary[key][4];
+                    command.Parameters.Add("@ans4", SqlDbType.NVarChar).Value = quizzDictionary[key][5];
+                    command.Parameters.Add("@rans", SqlDbType.Int).Value = Convert.ToInt32(quizzDictionary[key][0]);
+                    command.ExecuteNonQuery();
+
+                }
+
+            }
+            connection.Close();
         }
         private void AddIdioms()
         {
@@ -525,8 +810,13 @@ namespace DictionaryApp.Database
         {
             connection.Open();
 
+            
             string[] tokens;
-            SqlCommand command;
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = @"DELETE FROM Images";
+            command.ExecuteNonQuery();
+            List<string> imagePaths = new List<string>();
 
             foreach (string line in System.IO.File.ReadLines(DataDirectories + @"images\images.txt"))
             {
@@ -534,16 +824,24 @@ namespace DictionaryApp.Database
                 tokens = line.Split('|');
 
                 string imagePath = DataDirectories + @"images\images\"+ tokens[1].Substring(56).Replace('/','_');
-
+                imagePaths.Add(imagePath);
 
                 command = new SqlCommand();
                 command.Connection = connection;
-                command.CommandText = @"INSERT INTO Images (image, word_id) VALUES (@image, @word_id)";
-                Debug.WriteLine(tokens[0]);
-                Debug.WriteLine(imagePath);
-                byte[] content = ImageToStream(imagePath);
+                command.CommandText = @"INSERT INTO Image_Word (image_link, word) VALUES (@image_link, @word)";
+                command.Parameters.Add("@image_link", SqlDbType.NVarChar).Value = imagePath;
+                command.Parameters.Add("@word", SqlDbType.NVarChar).Value = tokens[0];
+                command.ExecuteNonQuery();
+            }
+            imagePaths= imagePaths.Distinct().ToList();
+            foreach(string path in imagePaths)
+            {
+                command = new SqlCommand();
+                command.Connection = connection;
+                command.CommandText = @"INSERT INTO Images (image, link) VALUES (@image, @link)";
+                byte[] content = ImageToStream(path);
                 command.Parameters.Add("@image", content);
-                command.Parameters.Add("@word_id", SqlDbType.NVarChar).Value = tokens[0];
+                command.Parameters.Add("@link", SqlDbType.NVarChar).Value = path;
                 command.ExecuteNonQuery();
             }
             connection.Close();

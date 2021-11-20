@@ -17,5 +17,9 @@ namespace DictionaryApp.CustomControls
         {
             InitializeComponent(or, sense);
         }
+        public int GetHeight()
+        {
+            return this.TopicPanel.Location.Y + 5;
+        }
     }
 }

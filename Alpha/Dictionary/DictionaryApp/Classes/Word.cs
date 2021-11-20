@@ -21,5 +21,9 @@ namespace DictionaryApp.Classes
             this.wordForms = wf;
             this.shortcuts = sc;
         }
+        public Word()
+        {
+            this.wordHeader = new WordHeader();
+        }
     }
 }

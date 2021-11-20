@@ -25,6 +25,28 @@ namespace DictionaryApp.CustomControls
         {
             this.WordFormPanel.Visible = !this.WordFormPanel.Visible;
             this.WordFormSign.Text = this.WordFormSign.Text == "+" ? "-" : "+";
+            this.Size = new System.Drawing.Size(this.Size.Width, this.WordFormBar.Location.Y + this.WordFormBar.Size.Height);
+            (this.Parent as WordDefinition).ToggleWordFormPanel();
+        }
+        public int GetHeight()
+        {
+            if (WordFormPanel.Controls.Count != 0)
+            {
+                if(this.WordFormSign.Text == "+")
+                {
+                    return this.WordFormPanel.Location.Y + this.WordFormPanel.Size.Height;
+
+                }
+                else
+                {
+                    return this.WordFormBar.Location.Y + this.WordFormBar.Size.Height;
+                }
+            }
+            else
+            {
+                return this.NAButton.Location.Y + this.NAButton.Size.Height;
+
+            }
         }
     }
 }
