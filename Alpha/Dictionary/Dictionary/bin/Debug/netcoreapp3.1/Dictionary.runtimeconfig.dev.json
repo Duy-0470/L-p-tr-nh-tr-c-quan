@@ -1,0 +1,11 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\duyha\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\duyha\\.nuget\\packages",
+      "E:\\Program Files\\ComponentOne\\WPF Edition\\bin\\v5",
+      "E:\\Program Files\\ComponentOne\\WinForms Edition\\bin\\v5",
+      "E:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+    ]
+  }
+}

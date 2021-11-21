@@ -1,0 +1,16 @@
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.Form1.resources
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.Properties.Resources.resources
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.csproj.GenerateResource.cache
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.GeneratedMSBuildEditorConfig.editorconfig
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.AssemblyInfoInputs.cache
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.AssemblyInfo.cs
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.csproj.CoreCompileInputs.cache
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.exe
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.deps.json
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.runtimeconfig.json
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.runtimeconfig.dev.json
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.dll
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.pdb
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.dll
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.pdb
+E:\Spaghetti\GIT VP Project\Test6\phuc\Visual-Progamming\Alpha\Dictionary\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.genruntimeconfig.cache

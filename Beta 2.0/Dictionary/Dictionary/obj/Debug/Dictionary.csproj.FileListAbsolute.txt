@@ -1,0 +1,11 @@
+E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\bin\Debug\Dictionary.exe.config
+E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\bin\Debug\Dictionary.exe
+E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\bin\Debug\Dictionary.pdb
+E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.AssemblyReference.cache
+E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.SuggestedBindingRedirects.cache
+E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.MainMenu.resources
+E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.Properties.Resources.resources
+E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.GenerateResource.cache
+E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.CoreCompileInputs.cache
+E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.exe
+E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.pdb
