@@ -275,7 +275,7 @@ namespace DictionaryApp.Database
         public DatabaseHandle()
         {
             connection = new SqlConnection();
-            connection.ConnectionString = "Data Source=(localdb)\\ProjectsV13;Initial Catalog=DictionaryDB;Integrated Security=True;Connect Timeout=30;" +
+            connection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DictionaryDB.mdf;Integrated Security=True;Connect Timeout=30;" +
                 "Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
 
@@ -361,11 +361,11 @@ namespace DictionaryApp.Database
             command.CommandText = "SELECT COUNT(*) FROM Images";
             numRows = (Int32)command.ExecuteScalar();
             connection.Close();
-            if (numRows >= 400 || numRows == 0)
-            {
-                Debug.WriteLine("Add words into Images table");
-                AddImages();
-            }
+            //if (numRows >= 400 || numRows == 0)
+            //{
+            //    Debug.WriteLine("Add words into Images table");
+            //    AddImages();
+            //}
             connection.Open();
             command = new SqlCommand();
             command.Connection = connection;
