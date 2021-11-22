@@ -9,3 +9,15 @@ E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.Ge
 E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.CoreCompileInputs.cache
 E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.exe
 E:\Spaghetti\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.pdb
+E:\CODING\Dictionary 2.0\Dictionary\Dictionary\bin\Debug\Dictionary.exe.config
+E:\CODING\Dictionary 2.0\Dictionary\Dictionary\bin\Debug\Dictionary.exe
+E:\CODING\Dictionary 2.0\Dictionary\Dictionary\bin\Debug\Dictionary.pdb
+E:\CODING\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.AssemblyReference.cache
+E:\CODING\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.SuggestedBindingRedirects.cache
+E:\CODING\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.MainMenu.resources
+E:\CODING\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.Properties.Resources.resources
+E:\CODING\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.WordMeaning.resources
+E:\CODING\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.GenerateResource.cache
+E:\CODING\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.CoreCompileInputs.cache
+E:\CODING\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.exe
+E:\CODING\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.pdb
