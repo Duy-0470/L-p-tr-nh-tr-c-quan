@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h+7Hi9VY0W3IPQMHr4wyBl/IJci9Ua4hHO4SaJI7FTSXg9v5IhFh+UgFVSJX9wlrI+8R164d5ozqjaDOq+zicQ==",
+  "dgSpecHash": "HQWVcnxORWywKSPMr5mqUP/eHQtn+rmCUehHjGASKSu3/R/nDamEfVpVn7dGPaha0asrOx2w9F4njKHa8WlpAw==",
   "success": true,
-  "projectFilePath": "E:\\Spaghetti\\GIT VP Project\\Test6\\Test6.1\\Alpha\\Dictionary\\Dictionary\\Dictionary.csproj",
+  "projectFilePath": "E:\\CODING\\GIT VP Project\\HEAD\\main\\Visual-Progamming\\Alpha\\Dictionary\\Dictionary\\Dictionary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\duyha\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512",
     "C:\\Users\\duyha\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",

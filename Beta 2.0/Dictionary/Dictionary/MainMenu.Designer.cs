@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.TextBoxSearchInput = new System.Windows.Forms.TextBox();
             this.SearchBar = new System.Windows.Forms.Panel();
             this.ButtonGo = new System.Windows.Forms.Button();
@@ -36,18 +37,23 @@
             this.ComboBoxLanguage = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.PanelRandomWord = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.LabelSeeDefinition = new System.Windows.Forms.Label();
-            this.ButtonSpeak = new System.Windows.Forms.Button();
+            this.ButtonRMSpeak = new System.Windows.Forms.Button();
+            this.LabelRWSpelling = new System.Windows.Forms.Label();
+            this.LabelRandomizedWord = new System.Windows.Forms.Label();
+            this.LabelRandom = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripMenuItem();
             this.quizzesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wordPuzzleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.wordGamesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ToolTipMainMenu = new System.Windows.Forms.ToolTip(this.components);
+            this.ButtonGames = new System.Windows.Forms.Button();
+            this.ButtonRandom = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.ListViewHint = new System.Windows.Forms.ListView();
+            this.ColumnHint = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.favoritesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SearchBar.SuspendLayout();
             this.PanelSearchBar.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -154,78 +160,76 @@
             // 
             this.PanelRandomWord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PanelRandomWord.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanelRandomWord.Controls.Add(this.LabelSeeDefinition);
-            this.PanelRandomWord.Controls.Add(this.ButtonSpeak);
-            this.PanelRandomWord.Controls.Add(this.label4);
-            this.PanelRandomWord.Controls.Add(this.label3);
-            this.PanelRandomWord.Controls.Add(this.label2);
+            this.PanelRandomWord.Controls.Add(this.linkLabel1);
+            this.PanelRandomWord.Controls.Add(this.ButtonRMSpeak);
+            this.PanelRandomWord.Controls.Add(this.LabelRWSpelling);
+            this.PanelRandomWord.Controls.Add(this.LabelRandomizedWord);
+            this.PanelRandomWord.Controls.Add(this.LabelRandom);
             this.PanelRandomWord.Location = new System.Drawing.Point(1, 169);
             this.PanelRandomWord.Name = "PanelRandomWord";
             this.PanelRandomWord.Size = new System.Drawing.Size(639, 204);
             this.PanelRandomWord.TabIndex = 4;
             this.PanelRandomWord.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelRandomWord_Paint);
             // 
-            // label4
+            // ButtonRMSpeak
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(53, 106);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 16);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "/spelling here/";
+            this.ButtonRMSpeak.BackgroundImage = global::Dictionary.Properties.Resources.speaker;
+            this.ButtonRMSpeak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonRMSpeak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonRMSpeak.ForeColor = System.Drawing.Color.White;
+            this.ButtonRMSpeak.Location = new System.Drawing.Point(164, 103);
+            this.ButtonRMSpeak.Name = "ButtonRMSpeak";
+            this.ButtonRMSpeak.Size = new System.Drawing.Size(24, 23);
+            this.ButtonRMSpeak.TabIndex = 3;
+            this.ButtonRMSpeak.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // LabelRWSpelling
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(50, 55);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 36);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "word here";
+            this.LabelRWSpelling.AutoSize = true;
+            this.LabelRWSpelling.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelRWSpelling.Location = new System.Drawing.Point(53, 106);
+            this.LabelRWSpelling.Name = "LabelRWSpelling";
+            this.LabelRWSpelling.Size = new System.Drawing.Size(92, 16);
+            this.LabelRWSpelling.TabIndex = 2;
+            this.LabelRWSpelling.Text = "/spelling here/";
             // 
-            // label2
+            // LabelRandomizedWord
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(220, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "WORD YOU MAY WANT TO KNOW";
+            this.LabelRandomizedWord.AutoSize = true;
+            this.LabelRandomizedWord.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelRandomizedWord.Location = new System.Drawing.Point(50, 55);
+            this.LabelRandomizedWord.Name = "LabelRandomizedWord";
+            this.LabelRandomizedWord.Size = new System.Drawing.Size(153, 36);
+            this.LabelRandomizedWord.TabIndex = 1;
+            this.LabelRandomizedWord.Text = "word here";
             // 
-            // LabelSeeDefinition
+            // LabelRandom
             // 
-            this.LabelSeeDefinition.AutoSize = true;
-            this.LabelSeeDefinition.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelSeeDefinition.Location = new System.Drawing.Point(22, 157);
-            this.LabelSeeDefinition.Name = "LabelSeeDefinition";
-            this.LabelSeeDefinition.Size = new System.Drawing.Size(212, 16);
-            this.LabelSeeDefinition.TabIndex = 4;
-            this.LabelSeeDefinition.Text = "SEE DEFINITION AND EXAMPLES";
-            this.LabelSeeDefinition.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label5_MouseClick);
-            this.LabelSeeDefinition.MouseHover += new System.EventHandler(this.label5_MouseHover);
+            this.LabelRandom.AutoSize = true;
+            this.LabelRandom.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelRandom.Location = new System.Drawing.Point(22, 14);
+            this.LabelRandom.Name = "LabelRandom";
+            this.LabelRandom.Size = new System.Drawing.Size(220, 16);
+            this.LabelRandom.TabIndex = 0;
+            this.LabelRandom.Text = "WORD YOU MAY WANT TO KNOW";
             // 
-            // ButtonSpeak
+            // menuStrip1
             // 
-            this.ButtonSpeak.BackgroundImage = global::Dictionary.Properties.Resources.speaker;
-            this.ButtonSpeak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ButtonSpeak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonSpeak.ForeColor = System.Drawing.Color.White;
-            this.ButtonSpeak.Location = new System.Drawing.Point(164, 103);
-            this.ButtonSpeak.Name = "ButtonSpeak";
-            this.ButtonSpeak.Size = new System.Drawing.Size(24, 23);
-            this.ButtonSpeak.TabIndex = 3;
-            this.ButtonSpeak.UseVisualStyleBackColor = true;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(641, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.homeToolStripMenuItem,
-            this.toolStripComboBox1,
-            this.wordGamesToolStripMenuItem});
+            this.favoritesToolStripMenuItem,
+            this.toolStripComboBox1});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuToolStripMenuItem.Image = global::Dictionary.Properties.Resources.menu3;
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
@@ -234,6 +238,7 @@
             // 
             // homeToolStripMenuItem
             // 
+            this.homeToolStripMenuItem.Image = global::Dictionary.Properties.Resources.Home_16x;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             this.homeToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.homeToolStripMenuItem.Text = "Home";
@@ -244,6 +249,7 @@
             this.toolStripComboBox1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quizzesToolStripMenuItem,
             this.wordPuzzleToolStripMenuItem});
+            this.toolStripComboBox1.Image = global::Dictionary.Properties.Resources.games4;
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             this.toolStripComboBox1.Size = new System.Drawing.Size(147, 22);
             this.toolStripComboBox1.Text = "Word Games";
@@ -260,28 +266,84 @@
             this.wordPuzzleToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.wordPuzzleToolStripMenuItem.Text = "Word Puzzle";
             // 
-            // wordGamesToolStripMenuItem
+            // ButtonGames
             // 
-            this.wordGamesToolStripMenuItem.Name = "wordGamesToolStripMenuItem";
-            this.wordGamesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.wordGamesToolStripMenuItem.Text = "Word Games";
+            this.ButtonGames.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(234)))), ((int)(((byte)(118)))));
+            this.ButtonGames.BackgroundImage = global::Dictionary.Properties.Resources.games4;
+            this.ButtonGames.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ButtonGames.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonGames.ForeColor = System.Drawing.Color.White;
+            this.ButtonGames.Location = new System.Drawing.Point(374, 418);
+            this.ButtonGames.Name = "ButtonGames";
+            this.ButtonGames.Size = new System.Drawing.Size(50, 50);
+            this.ButtonGames.TabIndex = 6;
+            this.ButtonGames.UseVisualStyleBackColor = false;
+            this.ButtonGames.MouseHover += new System.EventHandler(this.ButtonGames_MouseHover);
             // 
-            // menuStrip1
+            // ButtonRandom
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(641, 24);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
+            this.ButtonRandom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(234)))), ((int)(((byte)(118)))));
+            this.ButtonRandom.BackgroundImage = global::Dictionary.Properties.Resources.randomize;
+            this.ButtonRandom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonRandom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonRandom.ForeColor = System.Drawing.Color.White;
+            this.ButtonRandom.Location = new System.Drawing.Point(217, 418);
+            this.ButtonRandom.Name = "ButtonRandom";
+            this.ButtonRandom.Size = new System.Drawing.Size(50, 50);
+            this.ButtonRandom.TabIndex = 6;
+            this.ButtonRandom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ButtonRandom.UseVisualStyleBackColor = false;
+            this.ButtonRandom.Click += new System.EventHandler(this.ButtonRandom_Click);
+            this.ButtonRandom.MouseHover += new System.EventHandler(this.ButtonRandom_MouseHover);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(22, 160);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(212, 16);
+            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "SEE DEFINITION AND EXAMPLES";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // ListViewHint
+            // 
+            this.ListViewHint.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ColumnHint});
+            this.ListViewHint.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListViewHint.FullRowSelect = true;
+            this.ListViewHint.HideSelection = false;
+            this.ListViewHint.Location = new System.Drawing.Point(217, 144);
+            this.ListViewHint.MultiSelect = false;
+            this.ListViewHint.Name = "ListViewHint";
+            this.ListViewHint.Size = new System.Drawing.Size(350, 268);
+            this.ListViewHint.TabIndex = 5;
+            this.ListViewHint.UseCompatibleStateImageBehavior = false;
+            this.ListViewHint.View = System.Windows.Forms.View.Details;
+            this.ListViewHint.Visible = false;
+            // 
+            // ColumnHint
+            // 
+            this.ColumnHint.Text = "";
+            // 
+            // favoritesToolStripMenuItem
+            // 
+            this.favoritesToolStripMenuItem.Image = global::Dictionary.Properties.Resources.marked;
+            this.favoritesToolStripMenuItem.Name = "favoritesToolStripMenuItem";
+            this.favoritesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.favoritesToolStripMenuItem.Text = "Favorites";
             // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(641, 544);
+            this.ClientSize = new System.Drawing.Size(641, 508);
+            this.Controls.Add(this.ListViewHint);
+            this.Controls.Add(this.ButtonGames);
+            this.Controls.Add(this.ButtonRandom);
             this.Controls.Add(this.PanelRandomWord);
             this.Controls.Add(this.PanelSearchBar);
             this.Controls.Add(this.label1);
@@ -290,6 +352,7 @@
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Click += new System.EventHandler(this.MainMenu_Click);
             this.SearchBar.ResumeLayout(false);
             this.SearchBar.PerformLayout();
             this.PanelSearchBar.ResumeLayout(false);
@@ -312,18 +375,23 @@
         private System.Windows.Forms.ComboBox ComboBoxLanguage;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel PanelRandomWord;
-        private System.Windows.Forms.Button ButtonSpeak;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label LabelSeeDefinition;
+        private System.Windows.Forms.Button ButtonRMSpeak;
+        private System.Windows.Forms.Label LabelRWSpelling;
+        private System.Windows.Forms.Label LabelRandomizedWord;
+        private System.Windows.Forms.Label LabelRandom;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripComboBox1;
         private System.Windows.Forms.ToolStripMenuItem quizzesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wordPuzzleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem wordGamesToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.Button ButtonRandom;
+        private System.Windows.Forms.Button ButtonGames;
+        private System.Windows.Forms.ToolTip ToolTipMainMenu;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.ListView ListViewHint;
+        private System.Windows.Forms.ColumnHeader ColumnHint;
+        private System.Windows.Forms.ToolStripMenuItem favoritesToolStripMenuItem;
     }
 }
 

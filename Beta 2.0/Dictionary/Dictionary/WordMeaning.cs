@@ -18,36 +18,7 @@ namespace Dictionary
             RichTextBoxWordInfo.BorderStyle = BorderStyle.None;
             ButtonSpeak.FlatAppearance.BorderSize = 0;
             ButtonMarkWord.FlatAppearance.BorderSize = 0;
-        }
-
-        private void LabelSeeAlso1_DoubleClick(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LabelSeeAlso2_DoubleClick(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LabelSeeAlso3_DoubleClick(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LabelSeeAlso1_MouseHover(object sender, EventArgs e)
-        {
-            LabelSeeAlso1.ForeColor = Color.Blue;
-        }
-
-        private void LabelSeeAlso2_MouseHover(object sender, EventArgs e)
-        {
-            LabelSeeAlso2.ForeColor = Color.Blue;
-        }
-
-        private void LabelSeeAlso3_MouseHover(object sender, EventArgs e)
-        {
-            LabelSeeAlso3.ForeColor = Color.Blue;
+            
         }
 
         private void ButtonSpeak_Click(object sender, EventArgs e)
@@ -81,6 +52,21 @@ namespace Dictionary
         {
             Close();
             MainMenu.instance.Show();
+        }
+
+        private void LinkLabelSeeAlso1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void LinkLabelSeeAlso2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void LinkLabelSeeAlso3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }
