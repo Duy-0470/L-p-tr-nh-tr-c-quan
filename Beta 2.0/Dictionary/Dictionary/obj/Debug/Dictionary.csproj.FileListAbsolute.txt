@@ -33,3 +33,4 @@ E:\CODING\GIT VP Project\HEAD\main\Visual-Progamming\Beta 2.0\Dictionary\Diction
 E:\CODING\GIT VP Project\HEAD\main\Visual-Progamming\Beta 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.csproj.CoreCompileInputs.cache
 E:\CODING\GIT VP Project\HEAD\main\Visual-Progamming\Beta 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.exe
 E:\CODING\GIT VP Project\HEAD\main\Visual-Progamming\Beta 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.pdb
+E:\CODING\Dictionary 2.0\Dictionary\Dictionary\obj\Debug\Dictionary.FormSearch.resources

@@ -35,16 +35,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ToolTipWordMeaning = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.LinkLabelSeeAlso1 = new System.Windows.Forms.LinkLabel();
+            this.LinkLabelSeeAlso2 = new System.Windows.Forms.LinkLabel();
+            this.LinkLabelSeeAlso3 = new System.Windows.Forms.LinkLabel();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemFavorites = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripMenuItem();
             this.quizzesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wordPuzzleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ButtonMarkWord = new System.Windows.Forms.Button();
             this.ButtonSpeak = new System.Windows.Forms.Button();
-            this.LinkLabelSeeAlso1 = new System.Windows.Forms.LinkLabel();
-            this.LinkLabelSeeAlso2 = new System.Windows.Forms.LinkLabel();
-            this.LinkLabelSeeAlso3 = new System.Windows.Forms.LinkLabel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,11 +105,48 @@
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // LinkLabelSeeAlso1
+            // 
+            this.LinkLabelSeeAlso1.AutoSize = true;
+            this.LinkLabelSeeAlso1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkLabelSeeAlso1.Location = new System.Drawing.Point(31, 655);
+            this.LinkLabelSeeAlso1.Name = "LinkLabelSeeAlso1";
+            this.LinkLabelSeeAlso1.Size = new System.Drawing.Size(47, 19);
+            this.LinkLabelSeeAlso1.TabIndex = 11;
+            this.LinkLabelSeeAlso1.TabStop = true;
+            this.LinkLabelSeeAlso1.Text = "extra1";
+            this.LinkLabelSeeAlso1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso1_LinkClicked);
+            // 
+            // LinkLabelSeeAlso2
+            // 
+            this.LinkLabelSeeAlso2.AutoSize = true;
+            this.LinkLabelSeeAlso2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkLabelSeeAlso2.Location = new System.Drawing.Point(31, 687);
+            this.LinkLabelSeeAlso2.Name = "LinkLabelSeeAlso2";
+            this.LinkLabelSeeAlso2.Size = new System.Drawing.Size(47, 19);
+            this.LinkLabelSeeAlso2.TabIndex = 11;
+            this.LinkLabelSeeAlso2.TabStop = true;
+            this.LinkLabelSeeAlso2.Text = "extra2";
+            this.LinkLabelSeeAlso2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso2_LinkClicked);
+            // 
+            // LinkLabelSeeAlso3
+            // 
+            this.LinkLabelSeeAlso3.AutoSize = true;
+            this.LinkLabelSeeAlso3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkLabelSeeAlso3.Location = new System.Drawing.Point(31, 716);
+            this.LinkLabelSeeAlso3.Name = "LinkLabelSeeAlso3";
+            this.LinkLabelSeeAlso3.Size = new System.Drawing.Size(47, 19);
+            this.LinkLabelSeeAlso3.TabIndex = 11;
+            this.LinkLabelSeeAlso3.TabStop = true;
+            this.LinkLabelSeeAlso3.Text = "extra3";
+            this.LinkLabelSeeAlso3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso3_LinkClicked);
+            // 
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.homeToolStripMenuItem,
+            this.ToolStripMenuItemFavorites,
             this.toolStripComboBox1});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuToolStripMenuItem.Image = global::Dictionary.Properties.Resources.menu3;
@@ -118,18 +156,27 @@
             // 
             // homeToolStripMenuItem
             // 
+            this.homeToolStripMenuItem.Image = global::Dictionary.Properties.Resources.Home_16x;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
+            // ToolStripMenuItemFavorites
+            // 
+            this.ToolStripMenuItemFavorites.Image = global::Dictionary.Properties.Resources.marked;
+            this.ToolStripMenuItemFavorites.Name = "ToolStripMenuItemFavorites";
+            this.ToolStripMenuItemFavorites.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemFavorites.Text = "Favorites";
+            // 
             // toolStripComboBox1
             // 
+            this.toolStripComboBox1.BackgroundImage = global::Dictionary.Properties.Resources.games4;
             this.toolStripComboBox1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quizzesToolStripMenuItem,
             this.wordPuzzleToolStripMenuItem});
             this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(147, 22);
+            this.toolStripComboBox1.Size = new System.Drawing.Size(180, 22);
             this.toolStripComboBox1.Text = "Word Games";
             // 
             // quizzesToolStripMenuItem
@@ -171,42 +218,6 @@
             this.ButtonSpeak.UseVisualStyleBackColor = true;
             this.ButtonSpeak.Click += new System.EventHandler(this.ButtonSpeak_Click);
             this.ButtonSpeak.MouseHover += new System.EventHandler(this.ButtonSpeak_MouseHover);
-            // 
-            // LinkLabelSeeAlso1
-            // 
-            this.LinkLabelSeeAlso1.AutoSize = true;
-            this.LinkLabelSeeAlso1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LinkLabelSeeAlso1.Location = new System.Drawing.Point(31, 655);
-            this.LinkLabelSeeAlso1.Name = "LinkLabelSeeAlso1";
-            this.LinkLabelSeeAlso1.Size = new System.Drawing.Size(47, 19);
-            this.LinkLabelSeeAlso1.TabIndex = 11;
-            this.LinkLabelSeeAlso1.TabStop = true;
-            this.LinkLabelSeeAlso1.Text = "extra1";
-            this.LinkLabelSeeAlso1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso1_LinkClicked);
-            // 
-            // LinkLabelSeeAlso2
-            // 
-            this.LinkLabelSeeAlso2.AutoSize = true;
-            this.LinkLabelSeeAlso2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LinkLabelSeeAlso2.Location = new System.Drawing.Point(31, 687);
-            this.LinkLabelSeeAlso2.Name = "LinkLabelSeeAlso2";
-            this.LinkLabelSeeAlso2.Size = new System.Drawing.Size(47, 19);
-            this.LinkLabelSeeAlso2.TabIndex = 11;
-            this.LinkLabelSeeAlso2.TabStop = true;
-            this.LinkLabelSeeAlso2.Text = "extra2";
-            this.LinkLabelSeeAlso2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso2_LinkClicked);
-            // 
-            // LinkLabelSeeAlso3
-            // 
-            this.LinkLabelSeeAlso3.AutoSize = true;
-            this.LinkLabelSeeAlso3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LinkLabelSeeAlso3.Location = new System.Drawing.Point(31, 716);
-            this.LinkLabelSeeAlso3.Name = "LinkLabelSeeAlso3";
-            this.LinkLabelSeeAlso3.Size = new System.Drawing.Size(47, 19);
-            this.LinkLabelSeeAlso3.TabIndex = 11;
-            this.LinkLabelSeeAlso3.TabStop = true;
-            this.LinkLabelSeeAlso3.Text = "extra3";
-            this.LinkLabelSeeAlso3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso3_LinkClicked);
             // 
             // WordMeaning
             // 
@@ -253,5 +264,6 @@
         private System.Windows.Forms.LinkLabel LinkLabelSeeAlso1;
         private System.Windows.Forms.LinkLabel LinkLabelSeeAlso2;
         private System.Windows.Forms.LinkLabel LinkLabelSeeAlso3;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemFavorites;
     }
 }

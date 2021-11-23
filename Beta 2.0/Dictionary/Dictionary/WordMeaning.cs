@@ -31,6 +31,7 @@ namespace Dictionary
             //ButtonMarkWord.Enabled = !ButtonMarkWord.Enabled;
             //if (!ButtonMarkWord.Enabled) ButtonMarkWord.BackgroundImage = Properties.Resources.marked2;
             //else ButtonMarkWord.BackgroundImage = Properties.Resources.unmarked;
+            // mark/unmark favorite word
         }
 
         private void WordMeaning_FormClosed(object sender, FormClosedEventArgs e)
