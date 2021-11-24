@@ -61,6 +61,325 @@ namespace Dictionary.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 1A
+        ///2C
+        ///3D
+        ///4C
+        ///5A
+        ///6D
+        ///7B
+        ///8A
+        ///9C
+        ///10A
+        ///11B
+        ///12C
+        ///13B
+        ///14C
+        ///15D
+        ///16C
+        ///17D
+        ///18D
+        ///19C
+        ///20D
+        ///21D
+        ///22A
+        ///23D
+        ///24A
+        ///25D
+        ///26A
+        ///27C
+        ///28D
+        ///29C
+        ///30C
+        ///31A
+        ///32A
+        ///33D
+        ///34C
+        ///35A
+        ///36B
+        ///37A
+        ///38C
+        ///39C
+        ///40D
+        ///41D
+        ///42D
+        ///43D
+        ///44C
+        ///45A
+        ///46B
+        ///47A
+        ///48D
+        ///49B
+        ///50D
+        ///51A
+        ///52C
+        ///53A
+        ///54B
+        ///55D
+        ///56A
+        ///57D
+        ///58D
+        ///59A
+        ///60A
+        ///61C
+        ///62B
+        ///63B
+        ///64C
+        ///65A
+        ///66C
+        ///67A
+        ///68C
+        ///69B
+        ///70D
+        ///71A
+        ///72C
+        ///73A
+        ///74C
+        ///75B
+        ///76A
+        ///77A
+        ///78D
+        ///79C
+        ///80A
+        ///81C
+        ///82D
+        ///83A
+        ///84B
+        ///85C
+        ///86B
+        ///87D
+        ///88C
+        ///89D
+        ///90A
+        ///91B
+        ///92D
+        ///93A
+        ///94B
+        ///95A
+        ///96B
+        ///97C
+        ///98A
+        ///99D
+        ///100C
+        ///101D
+        ///102C
+        ///103C
+        ///10 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Collocation_Answers {
+            get {
+                return ResourceManager.GetString("Collocation_Answers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1. He was late so I decided to _____ time by window shopping._A. kill_B. miss_C. spend_D. waste 
+        ///2. John felt a sharp _____ in his back._A. injury_B. wound_C. pain_D. ache 
+        ///3. The tomatoes we ate at their house were home-_____._A. made_B. produced_C. done_D. grown 
+        ///4. Turn up to page 24 to find out at a _____ which courses are available to you._A. look_B. stare_C. glance_D. glimpse 
+        ///5. The boys have gone on a fishing _____ with their father._A. trip_B. journey_C. trek_D. hike 
+        ///6. I like that photo very [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Collocation_Quizzes {
+            get {
+                return ResourceManager.GetString("Collocation_Quizzes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @a /ei, ə/
+        ///*  danh từ,  số nhiều as,  a&apos;s
+        ///- (thông tục) loại a, hạng nhất, hạng tốt nhất hạng rất tốt
+        ///=his health is a+ sức khoẻ anh ta vào loại a
+        ///- (âm nhạc) la
+        ///=a sharp+ la thăng
+        ///=a flat+ la giáng
+        ///- người giả định thứ nhất; trường hợp giả định thứ nhất
+        ///=from a to z+ từ đầu đến đuôi, tường tận
+        ///=not to know a from b+ không biết tí gì cả; một chữ bẻ đôi cũng không biết
+        ///*  mạo từ
+        ///- một; một (như kiểu); một (nào đó)
+        ///=a very cold day+ một ngày rất lạnh
+        ///=a dozen+ một tá
+        ///=a few+ một ít
+        ///=all of a si [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CSDL {
+            get {
+                return ResourceManager.GetString("CSDL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @a /ei, ə/
+        ///*  danh từ,  số nhiều as,  a&apos;s
+        ///- (thông tục) loại a, hạng nhất, hạng tốt nhất hạng rất tốt
+        ///=his health is a+ sức khoẻ anh ta vào loại a
+        ///- (âm nhạc) la
+        ///=a sharp+ la thăng
+        ///=a flat+ la giáng
+        ///- người giả định thứ nhất; trường hợp giả định thứ nhất
+        ///=from a to z+ từ đầu đến đuôi, tường tận
+        ///=not to know a from b+ không biết tí gì cả; một chữ bẻ đôi cũng không biết
+        ///*  mạo từ
+        ///- một; một (như kiểu); một (nào đó)
+        ///=a very cold day+ một ngày rất lạnh
+        ///=a dozen+ một tá
+        ///=a few+ một ít
+        ///=all of a si [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EngViet {
+            get {
+                return ResourceManager.GetString("EngViet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @a /ei, ə/
+        ///@a b c /&apos;eibi:&apos;si:/
+        ///@a b c - book /&apos;eibi:&apos;si:buk/
+        ///@a font /ɑ:&apos;fɜ:ɳ/
+        ///@a fortiori /&apos;ei,fɔ:ti&apos;ɔ:rai/
+        ///@a la carte /&apos;ɑ:lɑ:&apos;kɑ:t/
+        ///@a la mode /,ɑ:lə&apos;moud/
+        ///@a posteriori /&apos;eipɔs,teri&apos;ɔ:rai/
+        ///@a priori /&apos;eiprai&apos;ɔ:rai/
+        ///@a-bomb /&apos;ei&apos;bɔm/
+        ///@a-going /ə&apos;gouiɳ/
+        ///@a-plenty /ə&apos;plenti/
+        ///@a-power /&apos;ei&apos;pauə/
+        ///@a.d. /&apos;ei&apos;di:/
+        ///@a.m. /&apos;ei&apos;em/
+        ///@aard-wolf /&apos;ɑ:d,wulf/
+        ///@aasvogel /&apos;ɑ:sfougəl/
+        ///@aba /&apos;ɑ:bə/
+        ///@abaci /&apos;æbəkəs/
+        ///@aback /ə&apos;bæk/
+        ///@abacus /&apos;æbəkəs/
+        ///@abaddon /ə&apos;bædən/
+        ///@abaft /ə&apos;bɑ:ft/
+        ///@abalone /,æbə&apos;l [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVWordAndSpelling {
+            get {
+                return ResourceManager.GetString("EVWordAndSpelling", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a
+        ///a b c
+        ///a b c - book
+        ///a font
+        ///a fortiori
+        ///a la carte
+        ///a la mode
+        ///a posteriori
+        ///a priori
+        ///a-bomb
+        ///a-going
+        ///a-plenty
+        ///a-power
+        ///a.d.
+        ///a.m.
+        ///aard-wolf
+        ///aasvogel
+        ///aba
+        ///abaci
+        ///aback
+        ///abacus
+        ///abaddon
+        ///abaft
+        ///abalone
+        ///abandon
+        ///abandoned
+        ///abandoner
+        ///abandonment
+        ///abase
+        ///abasement
+        ///abash
+        ///abashment
+        ///abask
+        ///abatable
+        ///abate
+        ///abatement
+        ///abatis
+        ///abatised
+        ///abattoir
+        ///abb
+        ///abbacy
+        ///abbatial
+        ///abbess
+        ///abbey
+        ///abbot
+        ///abbreviate
+        ///abbreviated
+        ///abbreviation
+        ///abbreviator
+        ///abdicant
+        ///abdicate
+        ///abdication
+        ///abdicator
+        ///abdomen
+        ///abdomina [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVWordName {
+            get {
+                return ResourceManager.GetString("EVWordName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a_1|NA|37874951|NA|a man/horse/unit
+        ///a_1|NA|37874951|NA|an aunt/egg/hour/X-ray
+        ///a_1|NA|37874951|NA|I can only carry two at a time.
+        ///a_1|NA|37874951|NA|There&apos;s a visitor for you.
+        ///a_1|NA|37874951|NA|She&apos;s a friend of my father&apos;s (= one of my father&apos;s friends).
+        ///a_1|NA|83922891|NA|Their new car&apos;s a BMW.
+        ///a_1|NA|83922891|NA|She&apos;s a Buddhist.
+        ///a_1|NA|83922891|NA|He&apos;s a teacher.
+        ///a_1|NA|83922891|NA|Is that a Monet (= a painting by Monet)?
+        ///a_1|NA|40666782|NA|A lion is a dangerous animal.
+        ///a_1|NA|6086514|NA|a goo [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string examples {
+            get {
+                return ResourceManager.GetString("examples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a_2|A-frame
+        ///a_2|A level
+        ///a_2|A-road
+        ///aback_1|take somebody aback
+        ///abiding_1|law-abiding
+        ///ability_1|mixed-ability
+        ///ably_1|able (2)
+        ///abode_1|right of abode
+        ///above_2|(above and) beyond the call of duty
+        ///abraham_2|Gettysburg Address
+        ///abraham_2|Lincoln Memorial
+        ///abs_2|anti-lock
+        ///absolute_1|decree absolute
+        ///absorb_1|shock absorber
+        ///abuse_1|racket abuse
+        ///abuse_1|racquet abuse
+        ///abuse_1|solvent abuse
+        ///abuse_1|substance abuse
+        ///abuse_1|child abuse
+        ///abuse_1|elder abuse
+        ///abuse_1|self-abuse
+        ///accent_1|acute accent
+        ///acces [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string extra_list {
+            get {
+                return ResourceManager.GetString("extra_list", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap games {
@@ -117,6 +436,131 @@ namespace Dictionary.Properties {
             get {
                 object obj = ResourceManager.GetObject("Home_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1B
+        ///2D
+        ///3B
+        ///4B
+        ///5A
+        ///6D
+        ///7B
+        ///8C
+        ///9B
+        ///10C
+        ///11C
+        ///12B
+        ///13D
+        ///14B
+        ///15B
+        ///16C
+        ///17C
+        ///18A
+        ///19C
+        ///20B
+        ///21D
+        ///22D
+        ///23C
+        ///24D
+        ///25B
+        ///26A
+        ///27B
+        ///28C
+        ///29D
+        ///30B
+        ///31D
+        ///32C
+        ///33B
+        ///34B
+        ///35A
+        ///36D
+        ///37A
+        ///38A
+        ///39D
+        ///40C
+        ///41B
+        ///42C
+        ///43B
+        ///44A
+        ///45A
+        ///46C
+        ///47D
+        ///48C
+        ///49D
+        ///50B
+        ///51C
+        ///52B
+        ///53A
+        ///54D
+        ///55C
+        ///56C
+        ///57B
+        ///58C
+        ///59A
+        ///60D
+        ///61C
+        ///62D
+        ///63D
+        ///64D
+        ///65B
+        ///66B
+        ///67B
+        ///68C
+        ///69C
+        ///70B
+        ///71B
+        ///72C
+        ///73B
+        ///74D
+        ///75A
+        ///76B
+        ///77B
+        ///78B
+        ///79C
+        ///80C
+        ///81D
+        ///82D
+        ///83B
+        ///84A
+        ///85A
+        ///86A
+        ///87A
+        ///88D
+        ///89B
+        ///90D
+        ///91A
+        ///92A
+        ///93D
+        ///94B
+        ///95C
+        ///96B
+        ///97A
+        ///98D
+        ///99C
+        ///100A
+        ///101A
+        ///102C
+        ///103C
+        ///10 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Idiom_Answers {
+            get {
+                return ResourceManager.GetString("Idiom_Answers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1. It finally _____ home to me that it was time to buy a place of my own._A. arrived_B. came_C. hit_D. reached 
+        ///2. Well, it’s 7 p.m. I’d better hit the _____ if I want to get home before it’s dark_A. roof_B. headlines_C. newspaper_D. road 
+        ///3. She’s the type who can’t sit on holiday and is always _____ the move._A. in_B. on_C. at_D. by 
+        ///4. She had never been to Prague before, and she _____ in love with it straight away._A. dropped_B. fell_C. tripped_D. crashed 
+        ///5. He didn’t speak a word of French when he [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Idiom_Quizzes {
+            get {
+                return ResourceManager.GetString("Idiom_Quizzes", resourceCulture);
             }
         }
         
@@ -201,12 +645,204 @@ namespace Dictionary.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 1D
+        ///2C
+        ///3B
+        ///4A
+        ///5A
+        ///6C
+        ///7D
+        ///8D
+        ///9B
+        ///10B
+        ///11B
+        ///12C
+        ///13C
+        ///14C
+        ///15B
+        ///16B
+        ///17A
+        ///18B
+        ///19B
+        ///20A
+        ///21A
+        ///22B
+        ///23D
+        ///24C
+        ///25B
+        ///26A
+        ///27A
+        ///28A
+        ///29D
+        ///30C
+        ///31B
+        ///32A
+        ///33D
+        ///34B
+        ///35A
+        ///36D
+        ///37A
+        ///38A
+        ///39B
+        ///40D
+        ///41C
+        ///42D
+        ///43B
+        ///44C
+        ///45C
+        ///46D
+        ///47B
+        ///48C
+        ///49D
+        ///50C
+        ///51D
+        ///52A
+        ///53B
+        ///54C
+        ///55D
+        ///56C
+        ///57B
+        ///58B
+        ///59D
+        ///60C
+        ///61D
+        ///62C
+        ///63C
+        ///64D
+        ///65C
+        ///66A
+        ///67B
+        ///68B
+        ///69A
+        ///70C
+        ///71D
+        ///72D
+        ///73A
+        ///74D
+        ///75C
+        ///76A
+        ///77B
+        ///78C
+        ///79B
+        ///80B
+        ///81B
+        ///82C
+        ///83B
+        ///84B
+        ///85A
+        ///86B
+        ///87C
+        ///88B
+        ///89B
+        ///90C
+        ///91C
+        ///92A
+        ///93D
+        ///94D
+        ///95C
+        ///96A
+        ///97C
+        ///98C
+        ///99B
+        ///100A
+        ///101A
+        ///102A
+        ///103D
+        ///10 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Phrasal_Verbs_Answers {
+            get {
+                return ResourceManager.GetString("Phrasal_Verbs_Answers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1. We are _____ down too many trees all over the world._A. breaking_B. knocking_C. pushing_D. cutting 
+        ///2. She has not yet got _____ her recent illness._A. by_B. through_C. over_D. out of 
+        ///3. Everyone is going to take _____ in the game._A. place_B. part_C. participation_D. role 
+        ///4. John was tidying the living room while I was cleaning _____ the dirt from thr dishes._A. away_B. out_C. up_D. off 
+        ///5. “It takes about 2 hours, so we should _____ at about six o’clock.”_A. get in_B. get in it_C. get it in_D. ge [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Phrasal_Verbs_Quizzes {
+            get {
+                return ResourceManager.GetString("Phrasal_Verbs_Quizzes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap randomize {
             get {
                 object obj = ResourceManager.GetObject("randomize", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to abiding_1|NA|73977648|law-abiding
+        ///ability_1|NA|92718933|mixed-ability
+        ///ably_1|NA|9580683|able (2)
+        ///abode_1|NA|59875945|right of abode
+        ///abraham_2|NA|46342902|Gettysburg Address
+        ///abraham_2|NA|46342902|Lincoln Memorial
+        ///abs_2|NA|8540525|anti-lock
+        ///absolute_1|NA|67095304|decree absolute
+        ///absorb_1|NA|13607302|shock absorber
+        ///abuse_1|NA|79957152|racket abuse
+        ///abuse_1|NA|79957152|racquet abuse
+        ///abuse_1|NA|79957152|solvent abuse
+        ///abuse_1|NA|79957152|substance abuse
+        ///abuse_1|NA|88642875|child abuse
+        ///abuse_1|NA|8864 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string see_also {
+            get {
+                return ResourceManager.GetString("see_also", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a_1|NA|used before countable or singular nouns referring to people or things that have not already been mentioned|a1|NA|NA|37874951
+        ///a_1|NA|used to show that somebody/something is a member of a group or profession|a1|NA|NA|83922891
+        ///a_1|NA|any; every|a1|NA|NA|40666782
+        ///a_1|NA|used before uncountable nouns when these have an adjective in front of them, or phrase following them|b1|NA|NA|6086514
+        ///a_1|NA|used in front of two nouns that are seen as a single unit|NA|NA|NA|10333066
+        ///a_1|NA|used instead of one befo [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string senses {
+            get {
+                return ResourceManager.GetString("senses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to absorb_1|liquid/gas
+        ///absorb_1|heat/light/energy/sound
+        ///absorb_1|shock/impact
+        ///absorb_1|information
+        ///absorb_1|interest somebody
+        ///absorb_1|make part of something larger
+        ///absorb_1|money/time/changes
+        ///accept_1|offer/invitation
+        ///accept_1|agree
+        ///accept_1|payment
+        ///accept_1|responsibility
+        ///accept_1|difficult situation
+        ///accept_1|welcome
+        ///accept_1|believe
+        ///accept_1|allow somebody to join
+        ///account_1|at bank
+        ///account_1|computing
+        ///account_1|description
+        ///account_1|business records
+        ///account_1|with shop
+        ///account_1|bill
+        ///ac [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string shortcuts {
+            get {
+                return ResourceManager.GetString("shortcuts", resourceCulture);
             }
         }
         
@@ -227,6 +863,158 @@ namespace Dictionary.Properties {
             get {
                 object obj = ResourceManager.GetObject("unmarked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to abandon_1|present simple I / you / we / they|  abandon|/əˈbændən/|uk_pron/a/aba/aband/abandon__gb_2.mp3|/əˈbændən/|us_pron/a/aba/aband/abandon__us_2.mp3
+        ///abandon_1|he / she / it|  abandons|/əˈbændənz/|uk_pron/a/aba/aband/abandons__gb_1.mp3|/əˈbændənz/|us_pron/a/aba/aband/abandons__us_1.mp3
+        ///abandon_1|past simple|  abandoned|/əˈbændənd/|uk_pron/a/aba/aband/abandoned__gb_1.mp3|/əˈbændənd/|us_pron/a/aba/aband/abandoned__us_1.mp3
+        ///abandon_1|past participle|  abandoned|/əˈbændənd/|uk_pron/a/aba/aband/abandoned__ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string word_forms {
+            get {
+                return ResourceManager.GetString("word_forms", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1A
+        ///2C
+        ///3C
+        ///4B
+        ///5A
+        ///6C
+        ///7D
+        ///8C
+        ///9C
+        ///10A
+        ///11A
+        ///12D
+        ///13B
+        ///14B
+        ///15B
+        ///16A
+        ///17D
+        ///18C
+        ///19B
+        ///20D
+        ///21C
+        ///22D
+        ///23A
+        ///24A
+        ///25A
+        ///26A
+        ///27B
+        ///28B
+        ///29D
+        ///30B
+        ///31B
+        ///32D
+        ///33D
+        ///34B
+        ///35A
+        ///36B
+        ///37B
+        ///38D
+        ///39C
+        ///40C
+        ///41C
+        ///42B
+        ///43A
+        ///44B
+        ///45B
+        ///46A
+        ///47D
+        ///48B
+        ///49B
+        ///50A
+        ///51A
+        ///52A
+        ///53A
+        ///54C
+        ///55C
+        ///56B
+        ///57B
+        ///58A
+        ///59B
+        ///60B
+        ///61C
+        ///62A
+        ///63A
+        ///64C
+        ///65D
+        ///66B
+        ///67A
+        ///68D
+        ///69B
+        ///70D
+        ///71A
+        ///72B
+        ///73A
+        ///74B
+        ///75D
+        ///76B
+        ///77C
+        ///78C
+        ///79B
+        ///80B
+        ///81D
+        ///82D
+        ///83A
+        ///84B
+        ///85C
+        ///86A
+        ///87B
+        ///88D
+        ///89A
+        ///90C
+        ///91B
+        ///92B
+        ///93D
+        ///94C
+        ///95C
+        ///96C
+        ///9A7
+        ///98C
+        ///99A
+        ///100C
+        ///101B
+        ///102D
+        ///103A
+        ///10 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string WordForm_Answers {
+            get {
+                return ResourceManager.GetString("WordForm_Answers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1. Have you got a new job? You must be very _____._A.excited_B.excite_C.exciting_D.none is correct
+        ///2. “What _____ put salt in my coffee?” he exclaimed._A.stupid_B.foolish_C.fool_D.stupidity
+        ///3. Many people are interested in watching _____._A.wilderness_B.wilds_C.wildlife_D.wildly
+        ///4. Since the new chairman took over, the company has become increasingly _____._A.profit_B.profitable_C.profited_D.profiting
+        ///5. I think she’s _____. Her books are brilliant._A.a genius_B.. a genie_C.a genus_D.genial
+        ///6. America  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string WordForm_Quizzes {
+            get {
+                return ResourceManager.GetString("WordForm_Quizzes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a_1|a|indefinite article|/ə/|uk_pron/a/a__/a__gb/a__gb_2.mp3|/ə/|us_pron/a/a__/a__us/a__us_2_rr.mp3
+        ///a_2|A|noun|/eɪ/|uk_pron/a/a_1/a_1_g/a_1_gb_1_abbr.mp3|/eɪ/|us_pron/a/a__/a__us/a__us_1.mp3
+        ///a_3|A|symbol|/eɪ/|uk_pron/a/a_1/a_1_g/a_1_gb_1_abbr.mp3|/eɪ/|us_pron/a/a__/a__us/a__us_1.mp3
+        ///a_4|A|abbreviation|/eɪ/|uk_pron/a/a_1/a_1_g/a_1_gb_1_abbr.mp3|/eɪ/|us_pron/a/a__/a__us/a__us_1.mp3
+        ///a_5|a-|prefix|/eɪ/|uk_pron/a/a__/a__1_/a__1_gb_1.mp3|/eɪ/|us_pron/a/a__/a__1_/a__1_us_1.mp3
+        ///aa_1|AA|abbreviation|/ˌeɪ ˈeɪ/|u [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string words {
+            get {
+                return ResourceManager.GetString("words", resourceCulture);
             }
         }
     }

@@ -169,4 +169,61 @@
   <data name="history" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\history.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Collocation_Answers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Collocation-Answers.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Collocation_Quizzes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Collocation-Quizzes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CSDL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CSDL.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="examples" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\examples.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="extra_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\extra_list.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Idiom_Answers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Idiom-Answers.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Idiom_Quizzes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Idiom-Quizzes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Phrasal_Verbs_Answers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Phrasal-Verbs-Answers.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Phrasal_Verbs_Quizzes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Phrasal-Verbs-Quizzes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="see_also" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\see_also.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="senses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\senses.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="shortcuts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shortcuts.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="WordForm_Answers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WordForm-Answers.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="WordForm_Quizzes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WordForm-Quizzes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="words" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\words.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="word_forms" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\word_forms.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVWordName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVWordName.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EngViet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EngViet.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVWordAndSpelling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVWordAndSpelling.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
 </root>

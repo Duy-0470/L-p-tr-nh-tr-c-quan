@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Dictionary"
+    "\\Dictionary",
+    "\\Dictionary\\Resources"
   ],
-  "SelectedNode": "\\Dictionary\\FormSearch.cs",
+  "SelectedNode": "\\Dictionary\\Resources\\EVWordAndSpelling.txt",
   "PreviewInSolutionExplorer": false
 }

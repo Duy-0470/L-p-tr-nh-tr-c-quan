@@ -32,18 +32,19 @@
             this.LabelWord = new System.Windows.Forms.Label();
             this.LabelSpelling = new System.Windows.Forms.Label();
             this.RichTextBoxWordInfo = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LabelSeeAlso = new System.Windows.Forms.Label();
             this.ToolTipWordMeaning = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.recentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemFavorites = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.gamesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LinkLabelSeeAlso1 = new System.Windows.Forms.LinkLabel();
             this.LinkLabelSeeAlso2 = new System.Windows.Forms.LinkLabel();
             this.LinkLabelSeeAlso3 = new System.Windows.Forms.LinkLabel();
-            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItemFavorites = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.quizzesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.wordPuzzleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ButtonMarkWord = new System.Windows.Forms.Button();
             this.ButtonSpeak = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -85,15 +86,16 @@
             this.RichTextBoxWordInfo.TabStop = false;
             this.RichTextBoxWordInfo.Text = "Info here";
             // 
-            // label1
+            // LabelSeeAlso
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 629);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 16);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "SEE ALSO";
+            this.LabelSeeAlso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.LabelSeeAlso.AutoSize = true;
+            this.LabelSeeAlso.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelSeeAlso.Location = new System.Drawing.Point(16, 629);
+            this.LabelSeeAlso.Name = "LabelSeeAlso";
+            this.LabelSeeAlso.Size = new System.Drawing.Size(72, 16);
+            this.LabelSeeAlso.TabIndex = 4;
+            this.LabelSeeAlso.Text = "SEE ALSO";
             // 
             // menuStrip1
             // 
@@ -105,8 +107,67 @@
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.homeToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.recentToolStripMenuItem,
+            this.ToolStripMenuItemFavorites,
+            this.toolStripSeparator2,
+            this.gamesToolStripMenuItem});
+            this.menuToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuToolStripMenuItem.Image = global::Dictionary.Properties.Resources.menu3;
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.menuToolStripMenuItem.Text = "Menu";
+            // 
+            // homeToolStripMenuItem
+            // 
+            this.homeToolStripMenuItem.Image = global::Dictionary.Properties.Resources.Home_16x;
+            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.homeToolStripMenuItem.Text = "Home";
+            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(138, 6);
+            // 
+            // recentToolStripMenuItem
+            // 
+            this.recentToolStripMenuItem.Image = global::Dictionary.Properties.Resources.history;
+            this.recentToolStripMenuItem.Name = "recentToolStripMenuItem";
+            this.recentToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.recentToolStripMenuItem.Text = "Recent";
+            this.recentToolStripMenuItem.Click += new System.EventHandler(this.recentToolStripMenuItem_Click);
+            // 
+            // ToolStripMenuItemFavorites
+            // 
+            this.ToolStripMenuItemFavorites.Image = global::Dictionary.Properties.Resources.marked;
+            this.ToolStripMenuItemFavorites.Name = "ToolStripMenuItemFavorites";
+            this.ToolStripMenuItemFavorites.Size = new System.Drawing.Size(141, 22);
+            this.ToolStripMenuItemFavorites.Text = "Favorites";
+            this.ToolStripMenuItemFavorites.Click += new System.EventHandler(this.ToolStripMenuItemFavorites_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(138, 6);
+            // 
+            // gamesToolStripMenuItem
+            // 
+            this.gamesToolStripMenuItem.Image = global::Dictionary.Properties.Resources.games4;
+            this.gamesToolStripMenuItem.Name = "gamesToolStripMenuItem";
+            this.gamesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.gamesToolStripMenuItem.Text = "Word games";
+            this.gamesToolStripMenuItem.Click += new System.EventHandler(this.gamesToolStripMenuItem_Click);
+            // 
             // LinkLabelSeeAlso1
             // 
+            this.LinkLabelSeeAlso1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.LinkLabelSeeAlso1.AutoSize = true;
             this.LinkLabelSeeAlso1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkLabelSeeAlso1.Location = new System.Drawing.Point(31, 655);
@@ -119,6 +180,7 @@
             // 
             // LinkLabelSeeAlso2
             // 
+            this.LinkLabelSeeAlso2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.LinkLabelSeeAlso2.AutoSize = true;
             this.LinkLabelSeeAlso2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkLabelSeeAlso2.Location = new System.Drawing.Point(31, 687);
@@ -131,6 +193,7 @@
             // 
             // LinkLabelSeeAlso3
             // 
+            this.LinkLabelSeeAlso3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.LinkLabelSeeAlso3.AutoSize = true;
             this.LinkLabelSeeAlso3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkLabelSeeAlso3.Location = new System.Drawing.Point(31, 716);
@@ -141,63 +204,13 @@
             this.LinkLabelSeeAlso3.Text = "extra3";
             this.LinkLabelSeeAlso3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso3_LinkClicked);
             // 
-            // menuToolStripMenuItem
-            // 
-            this.menuToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.homeToolStripMenuItem,
-            this.ToolStripMenuItemFavorites,
-            this.toolStripComboBox1});
-            this.menuToolStripMenuItem.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuToolStripMenuItem.Image = global::Dictionary.Properties.Resources.menu3;
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.menuToolStripMenuItem.Text = "Menu";
-            // 
-            // homeToolStripMenuItem
-            // 
-            this.homeToolStripMenuItem.Image = global::Dictionary.Properties.Resources.Home_16x;
-            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.homeToolStripMenuItem.Text = "Home";
-            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
-            // 
-            // ToolStripMenuItemFavorites
-            // 
-            this.ToolStripMenuItemFavorites.Image = global::Dictionary.Properties.Resources.marked;
-            this.ToolStripMenuItemFavorites.Name = "ToolStripMenuItemFavorites";
-            this.ToolStripMenuItemFavorites.Size = new System.Drawing.Size(180, 22);
-            this.ToolStripMenuItemFavorites.Text = "Favorites";
-            // 
-            // toolStripComboBox1
-            // 
-            this.toolStripComboBox1.BackgroundImage = global::Dictionary.Properties.Resources.games4;
-            this.toolStripComboBox1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.quizzesToolStripMenuItem,
-            this.wordPuzzleToolStripMenuItem});
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(180, 22);
-            this.toolStripComboBox1.Text = "Word Games";
-            // 
-            // quizzesToolStripMenuItem
-            // 
-            this.quizzesToolStripMenuItem.Name = "quizzesToolStripMenuItem";
-            this.quizzesToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.quizzesToolStripMenuItem.Text = "Quizzes";
-            // 
-            // wordPuzzleToolStripMenuItem
-            // 
-            this.wordPuzzleToolStripMenuItem.Name = "wordPuzzleToolStripMenuItem";
-            this.wordPuzzleToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.wordPuzzleToolStripMenuItem.Text = "Word Puzzles";
-            // 
             // ButtonMarkWord
             // 
             this.ButtonMarkWord.BackgroundImage = global::Dictionary.Properties.Resources.unmarked;
             this.ButtonMarkWord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonMarkWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonMarkWord.ForeColor = System.Drawing.Color.White;
-            this.ButtonMarkWord.Location = new System.Drawing.Point(704, 63);
+            this.ButtonMarkWord.Location = new System.Drawing.Point(716, 24);
             this.ButtonMarkWord.Name = "ButtonMarkWord";
             this.ButtonMarkWord.Size = new System.Drawing.Size(30, 30);
             this.ButtonMarkWord.TabIndex = 9;
@@ -211,7 +224,7 @@
             this.ButtonSpeak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonSpeak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonSpeak.ForeColor = System.Drawing.Color.White;
-            this.ButtonSpeak.Location = new System.Drawing.Point(180, 68);
+            this.ButtonSpeak.Location = new System.Drawing.Point(262, 66);
             this.ButtonSpeak.Name = "ButtonSpeak";
             this.ButtonSpeak.Size = new System.Drawing.Size(25, 25);
             this.ButtonSpeak.TabIndex = 8;
@@ -231,14 +244,16 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.ButtonMarkWord);
             this.Controls.Add(this.ButtonSpeak);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LabelSeeAlso);
             this.Controls.Add(this.RichTextBoxWordInfo);
             this.Controls.Add(this.LabelSpelling);
             this.Controls.Add(this.LabelWord);
             this.Name = "WordMeaning";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "WordMeaning";
+            this.Text = "Dictionary";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.WordMeaning_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WordMeaning_FormClosed);
+            this.Load += new System.EventHandler(this.WordMeaning_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -251,19 +266,20 @@
         private System.Windows.Forms.Label LabelWord;
         private System.Windows.Forms.Label LabelSpelling;
         private System.Windows.Forms.RichTextBox RichTextBoxWordInfo;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LabelSeeAlso;
         private System.Windows.Forms.Button ButtonSpeak;
         private System.Windows.Forms.ToolTip ToolTipWordMeaning;
         private System.Windows.Forms.Button ButtonMarkWord;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripComboBox1;
-        private System.Windows.Forms.ToolStripMenuItem quizzesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem wordPuzzleToolStripMenuItem;
         private System.Windows.Forms.LinkLabel LinkLabelSeeAlso1;
         private System.Windows.Forms.LinkLabel LinkLabelSeeAlso2;
         private System.Windows.Forms.LinkLabel LinkLabelSeeAlso3;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemFavorites;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem recentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem gamesToolStripMenuItem;
     }
 }

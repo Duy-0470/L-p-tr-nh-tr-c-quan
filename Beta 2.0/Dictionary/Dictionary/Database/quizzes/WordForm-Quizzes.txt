@@ -1,5 +1,3 @@
-KEYS WORD FORMS
-
 1. Have you got a new job? You must be very _____._A.excited_B.excite_C.exciting_D.none is correct
 2. “What _____ put salt in my coffee?” he exclaimed._A.stupid_B.foolish_C.fool_D.stupidity
 3. Many people are interested in watching _____._A.wilderness_B.wilds_C.wildlife_D.wildly
@@ -249,4 +247,3 @@ KEYS WORD FORMS
 248. The website is not _____ for teenagers. It’s unusable._A.usage_B.using_C.use_D.used
 249. Their _____ is always good_A.communicate_B.communicative_C.communication_D.communications
 250. She is a _____ girl._A. communicate_B. communicative_C.communication_D.communications 
-
