@@ -1,0 +1,8399 @@
+a_2|A-frame
+a_2|A level
+a_2|A-road
+aback_1|take somebody aback
+abiding_1|law-abiding
+ability_1|mixed-ability
+ably_1|able (2)
+abode_1|right of abode
+above_2|(above and) beyond the call of duty
+abraham_2|Gettysburg Address
+abraham_2|Lincoln Memorial
+abs_2|anti-lock
+absolute_1|decree absolute
+absorb_1|shock absorber
+abuse_1|racket abuse
+abuse_1|racquet abuse
+abuse_1|solvent abuse
+abuse_1|substance abuse
+abuse_1|child abuse
+abuse_1|elder abuse
+abuse_1|self-abuse
+accent_1|acute accent
+access_1|multi-access
+access_1|open access
+access_1|public access
+access_1|self-access
+access_1|direct access
+access_1|random access
+access_1|remote access
+accordion_1|piano accordion
+account_1|bank account
+account_1|budget account
+account_1|checking account
+account_1|current account
+account_1|deposit account
+account_1|numbered account
+account_1|savings account
+account_1|expense account
+account_1|profit and loss account
+account_1|charge account
+account_1|credit account
+accountant_1|chartered accountant
+accountant_1|certified public accountant
+accounting_1|creative accounting
+ache_2|stomach ache
+acid_1|acetic acid
+acid_1|amino acid
+acid_1|boric acid
+acid_1|citric acid
+acid_1|fatty acid
+acid_1|folic acid
+acid_1|formic acid
+acid_1|hydrochloric acid
+acid_1|lactic acid
+acid_1|nitric acid
+acid_1|nucleic acid
+acid_1|sulphuric acid
+act_1|play-act
+act_2|balancing act
+act_2|speech act
+act_2|enabling act
+act_2|double act
+acting_1|method acting
+acting_1|play-acting
+action_1|affirmative action
+action_1|call to action
+action_1|climate action
+action_1|direct action
+action_1|job action
+action_1|industrial action
+action_1|class action
+action_1|legal action
+action_1|live action
+action_1|live-action
+action_1|bolt-action
+action_1|double-action
+action_1|pump-action
+activate_1|voice-activated
+activism_1|judicial activism
+activity_1|displacement activity
+actor_1|character actor
+actor_1|method actor
+ad_1|attack ad
+ad_1|banner ad
+adder_1|puff adder
+address_1|forwarding address
+address_1|return address
+address_1|IP address
+adhesive_2|self-adhesive
+adjust_1|well adjusted
+administration_1|business administration
+admiral_1|Fleet Admiral
+admiral_1|rear admiral
+admiral_1|red admiral
+admiral_1|vice admiral
+admission_1|general admission
+adverb_1|sentence adverb
+advertise_1|re-advertise
+advertisement_1|classified advertisement
+advise_1|ill-advised
+advise_1|well advised
+advisedly_1|ill-advisedly
+advocate_1|devil’s advocate
+advocate_1|the Lord Advocate
+advocate_1|solicitor advocate
+affair_1|current affairs
+affair_1|love affair
+affective_1|bipolar disorder
+affective_1|seasonal affective disorder
+affirm_1|life-affirming
+after_1|one after another/the other
+afternoon_1|good afternoon
+age_1|legal age
+age_1|mental age
+age_1|middle age
+age_1|old age
+age_1|school age
+age_1|third age
+age_1|Bronze Age
+age_1|golden age
+age_1|Iron Age
+age_1|New Age
+age_1|space-age
+age_1|Stone Age
+age_1|coming of age
+agency_1|credit agency
+agency_1|dating agency
+agency_1|employment agency
+agency_1|news agency
+agency_1|travel agency
+agenda_1|hidden agenda
+agent_1|estate agent
+agent_1|extension agent
+agent_1|land agent
+agent_1|real estate agent
+agent_1|station agent
+agent_1|travel agent
+agent_1|literary agent
+agent_1|press agent
+agent_1|double agent
+agent_1|special agent
+agent_1|nerve agent
+agent_1|free agent
+aggrandizement_1|self-aggrandizing
+aggression_1|non-aggression
+aggressive_1|passive-aggressive
+agreement_1|gentleman’s agreement
+agreement_1|prenuptial agreement
+aid_1|Christian Aid
+aid_1|financial aid
+aid_1|grant aid
+aid_1|grant-in-aid
+aid_1|legal aid
+aid_1|Live Aid
+aid_1|first aid
+aid_1|hearing aid
+aid_1|visual aid
+aid_1|Kool-Aid™
+air_1|sea air
+air_1|big air
+air_1|mid-air
+air_1|mid-air
+air_1|open air
+air_1|hot air
+aircraft_1|anti-aircraft
+aircraft_1|light aircraft
+aircraftman_1|leading aircraftman
+aircraftman_1|senior aircraftman
+aircraftwoman_1|leading aircraftwoman
+aircraftwoman_1|senior aircraftwoman
+al_2|-ally
+alarm_1|false alarm
+alarm_1|burglar alarm
+alarm_1|fire alarm
+alarm_1|smoke alarm
+alcohol_1|ethyl alcohol
+alcohol_1|rubbing alcohol
+alcohol_1|absolute alcohol
+alcoholic_1|soft drink
+ale_1|brown ale
+ale_1|ginger ale
+ale_1|light ale
+ale_1|pale ale
+ale_1|real ale
+alert_2|bomb alert
+alert_2|red alert
+alert_2|spoiler alert
+all_3|all-in
+alley_1|back alley
+alley_1|blind alley
+alley_1|bowling alley
+alley_1|back-alley
+allowance_1|Attendance Allowance
+alone_1|stand-alone
+alphabet_1|International Phonetic Alphabet
+alphabet_1|Roman alphabet
+alter_1|mind-altering
+ambassador_1|brand ambassador
+ambassador_1|goodwill ambassador
+ambulance_1|air ambulance
+amendment_1|Eighteenth Amendment
+american_1|African American
+american_1|Anglo-American
+american_1|Asian American
+american_1|Central American
+american_1|Native American
+american_2|all-American
+american_2|Asian-American
+american_2|Central American
+american_2|un-American
+ample_1|plenty (1)
+analysis_1|meta-analysis
+analyst_1|quantitative analyst
+analyst_1|systems analyst
+anasazi_1|pre-Columbian
+anemone_1|sea anemone
+angel_1|guardian angel
+angle_1|acute angle
+angle_1|adjacent angle
+angle_1|corresponding angles
+angle_1|oblique angle
+angle_1|obtuse angle
+angle_1|right angle
+angle_1|wide-angle lens
+any_1|in any case
+any_1|in any event
+any_1|at any rate
+animal_1|companion animal
+animal_1|dumb animal
+animal_1|higher animals
+animal_1|party animal
+animation_1|suspended animation
+another_1|one another
+answer_1|get back to somebody
+answer_2|get back to somebody
+ant_1|fire ant
+anthem_1|national anthem
+anxiety_1|eco-anxiety
+anxiety_1|separation anxiety
+app_1|in-app
+app_1|killer app
+appeal_1|sex appeal
+appeal_1|court of appeal
+appeasement_1|Neville Chamberlain
+appeasement_1|the Munich Agreement
+apple_1|Adam’s apple
+apple_1|Big Apple
+apple_1|cooking apple
+apple_1|crab apple
+apple_1|custard apple
+apple_1|eating apple
+apple_1|toffee apple
+application_1|killer app
+appropriation_1|cultural appropriation
+arc_1|arc lamp
+archaeology_1|industrial archaeology
+architect_1|landscape architect
+area_1|catchment area
+area_1|conservation area
+area_1|development area
+area_1|no-go area
+area_1|staging area
+area_1|rest area
+area_1|service area
+area_1|grey area
+argument_1|closing argument
+arms_1|small arms
+arranger_1|flower arranger
+arrest_2|citizen’s arrest
+arse_1|smart-arse
+art_1|clip art
+art_1|digital art
+art_1|fine art
+art_1|performing arts
+art_1|liberal arts
+artery_1|coronary artery
+arthritis_1|rheumatoid arthritis
+arthur_3|detective story
+articulated_1|tractor-trailer
+ascot_2|Royal Ascot
+aspect_1|perfect (7)
+aspect_1|progressive (3)
+assault_1|indecent assault
+assessment_1|risk assessment
+assessment_1|continuous assessment
+assistant_1|graduate assistant
+assistant_1|personal assistant
+assistant_1|physician's assistant
+assistant_1|teaching assistant
+assistant_1|voice assistant
+association_1|Football Association
+association_1|housing association
+association_1|freedom of association
+association_1|free associate
+assurance_1|quality assurance
+attack_1|counter-attack
+attack_1|heart attack
+attendant_1|flight attendant
+attorney_1|district attorney
+attorney_1|power of attorney
+auction_1|silent auction
+audit_1|green audit
+aunt_1|maiden aunt
+aunt_1|agony aunt
+australia_1|Botany Bay
+authority_1|local authority
+average_2|batting average
+average_2|grade point average
+avoidance_1|tax avoidance
+award_1|Academy Award™
+axe_1|ice axe
+b_1|B-road
+baby_1|fur baby
+baccalaureate_1|International Baccalaureate
+back_1|short back and sides
+back_1|full back
+back_1|half back
+back_1|back-to-back
+back_2|back-burner
+back_3|down to earth
+backup_1|back something up
+bacon_1|Canadian bacon
+bag_1|bin bag
+bag_1|body bag
+bag_1|brown-bag
+bag_1|carrier bag
+bag_1|clutch bag
+bag_1|cool bag
+bag_1|doggy bag
+bag_1|garment bag
+bag_1|goody bag
+bag_1|man bag
+bag_1|shopping bag
+bag_1|sick bag
+bag_1|carpet bag
+bag_1|duffel bag
+bag_1|Go bag™
+bag_1|sponge bag
+bag_1|toilet bag
+bag_1|grab bag
+bag_1|mixed bag
+bake_1|half-baked
+balance_1|work-life balance
+balcony_1|first balcony
+ball_1|bowling ball
+ball_1|exercise ball
+ball_1|stability ball
+ball_1|Swiss ball™
+ball_1|disco ball
+ball_1|air ball
+ball_1|long ball
+ballerina_1|prima ballerina
+balm_1|lip balm
+banana_1|second banana
+banana_1|top banana
+band_1|boy band
+band_1|garage band
+band_1|girl band
+band_1|big band
+band_1|brass band
+band_1|marching band
+band_1|one-man band
+band_1|rubber band
+bang_2|Big Bang
+bang_2|down to earth
+bank_1|central bank
+bank_1|commercial bank
+bank_1|investment bank
+bank_1|merchant bank
+bank_1|piggy bank
+bank_1|reserve bank
+bank_1|savings bank
+bank_1|food bank
+bank_1|vote bank
+bank_1|bottle bank
+bar_1|lounge bar
+bar_1|public bar
+bar_1|saloon bar
+bar_1|coffee bar
+bar_1|oxygen bar
+bar_1|raw bar
+bar_1|salad bar
+bar_1|snack bar
+bar_1|wine bar
+bar_1|wet bar
+bar_1|energy bar
+bar_1|Nanaimo bar
+bar_1|bull bars
+bar_1|monkey bars
+bar_1|roll bar
+bar_1|space bar
+bar_1|tow bar
+bar_1|address bar
+bar_1|menu bar
+bar_1|navigation bar
+bar_1|scroll bar
+bar_1|title bar
+bar_1|colour bar
+bargaining_1|collective bargaining
+bargaining_1|plea bargaining
+barn_1|Dutch barn
+baron_1|drug baron
+barrier_1|crash barrier
+barrier_1|crush barrier
+barrier_1|species barrier
+barrier_1|sound barrier
+base_1|customer base
+base_1|fan base
+base_1|power base
+base_1|first base
+base_1|second base
+base_1|third base
+based_1|broad-based
+based_1|plant-based
+basement_1|bargain basement
+basket_1|wastepaper basket
+bass_1|drum and bass
+bat_1|fruit bat
+bat_1|old bat
+bat_1|vampire bat
+bath_1|bubble bath
+bath_1|swimming bath
+bath_1|swimming pool
+bath_1|Turkish bath
+battery_1|dry battery
+battery_1|assault and battery
+battle_1|pitched battle
+be_1|go and do something
+beacon_1|Belisha beacon
+bead_1|worry beads
+beam_1|high beams
+beam_1|low beams
+bean_1|snap bean
+bean_1|jelly bean
+bear_2|grizzly bear
+bear_2|polar bear
+bear_2|teddy bear
+bearer_1|pall-bearer
+bearer_1|ring bearer
+bearer_1|standard-bearer
+bearer_1|stretcher-bearer
+bearing_1|ball bearing
+beater_1|world-beater
+beaver_1|eager beaver
+bed_1|camp bed
+bed_1|sofa bed
+bed_1|trundle bed
+bed_1|twin bed
+bed_1|raised bed
+bed_1|nail bed
+bee_1|killer bee
+bee_1|queen bee
+bee_1|spelling bee
+beech_1|copper beech
+beef_1|chipped beef
+beef_1|corned beef
+beer_1|craft beer
+beer_1|ginger beer
+beer_1|guest beer
+beer_1|keg beer
+beer_1|root beer
+beer_1|small beer
+beet_1|sugar beet
+beetle_1|deathwatch beetle
+being_1|well-being
+beyond_2|(above and) beyond the call of duty
+belly_1|beer belly
+belly_1|pot belly
+belt_1|black belt
+belt_1|seat belt
+belt_1|suspender belt
+belt_1|conveyor belt
+belt_1|fan belt
+belt_1|green belt
+belt_1|radiation belt
+belt_1|rust belt
+bench_1|back bench
+bench_1|front bench
+bend_2|hairpin bend
+benefit_1|fringe benefit
+benefit_1|child benefit
+benefit_1|housing benefit
+benefit_1|sickness benefit
+benefit_1|fringe benefit
+bent_1|hell-bent
+best_3|personal best
+betting_1|spread betting
+bias_1|unconscious bias
+big_1|big deal
+big_1|next big thing
+bike_1|dockless bike
+bike_1|mountain bike
+bike_1|quad bike
+bike_1|racing bike
+bike_1|road bike
+bill_1|Act of Parliament
+bill_1|Old Bill
+bin_1|green bin
+bin_1|litter bin
+bin_1|waste bin
+bin_1|wheelie bin
+bin_1|compost bin
+binary_1|gender binary
+binary_2|non-binary
+bind_2|double bind
+birch_1|silver birch
+bird_1|game bird
+bird_1|dolly bird
+biscuit_1|digestive biscuit
+biscuit_1|dog biscuit
+biscuit_1|tea biscuit
+bitch_1|son of a bitch
+bite_2|love bite
+bite_2|sound bite
+black_1|pitch-black
+bladder_1|gall bladder
+blade_1|razor blade
+blade_1|shoulder blade
+blank_1|point-blank
+blanket_1|electric blanket
+blanket_1|wet blanket
+blessing_1|mixed blessing
+blind_1|colour-blind (2)
+blind_1|need-blind
+blind_3|venetian blind
+bloc_1|en bloc
+block_1|breeze block
+block_1|building block
+block_1|chopping block (1)
+block_1|cinder block
+block_1|stumbling block
+block_1|writer’s block
+block_1|chopping block (2)
+blonde_1|dirty blonde
+blood_1|first blood
+blood_1|blue-blooded
+blood_1|hot-blooded
+blood_1|red-blooded
+blow_1|mind-blowing
+blow_2|body blow
+blower_1|whistle-blower
+blue_1|true-blue
+blue_2|navy blue
+blues_1|baby blues
+bluff_2|double bluff
+board_1|skirting board
+board_1|bulletin board
+board_1|emery board
+board_1|idiot board
+board_1|leader board
+board_1|message board
+board_1|mood board
+board_1|boogie board
+board_1|diving board
+board_1|on-board
+board_1|draft board
+board_1|school board
+board_1|bed and board
+board_1|full board
+board_1|half board
+board_1|above board
+board_1|mortar board
+boat_1|canal boat
+boat_1|gravy boat
+boat_1|sauce boat
+body_1|student body
+body_1|able-bodied
+boy_1|bad boy
+boy_1|frat boy
+boy_1|good old boy
+boy_1|mummy’s boy
+boy_1|old boy
+boy_1|toy boy
+boy_1|barrow boy
+boy_1|best boy
+boiler_1|double boiler
+bomb_1|atomic bomb
+bomb_1|cherry bomb
+bomb_1|dirty bomb
+bomb_1|pipe bomb
+bomb_1|F-bomb
+bomber_1|dive-bomber
+bond_1|junk bond
+bond_1|savings bond
+bonding_1|male bonding
+bone_1|raw-boned
+bonus_1|no-claims bonus
+book_1|address book
+book_1|colouring book
+book_1|guest book
+book_2|double-book
+boom_1|baby boom
+boom_1|sonic boom
+boot_1|cowboy boot
+boot_1|desert boot
+boot_1|football boot
+boot_1|car boot sale
+booth_1|photo booth
+borstal_1|youth custody
+boston_1|Boston Massacre
+boston_1|Boston Tea Party
+bounds_1|off-limits
+bourgeois_1|petit bourgeois
+bourgeois_2|petit bourgeois
+bowl_1|begging bowl
+bowl_1|goldfish bowl
+bowl_1|mixing bowl
+box_1|blue box
+box_1|juice box
+box_1|dialog box
+box_1|commentary box
+box_1|witness box
+box_1|PO box
+bracket_1|angle bracket
+brain_1|no-brainer
+brake_1|air brake
+brake_1|disc brake
+branch_1|olive branch
+branch_1|executive branch
+branch_1|judicial branch
+branch_1|legislative branch
+brand_1|own-brand
+branding_1|co-branding
+brass_1|brass rubbing
+bread_1|French bread
+bread_1|garlic bread
+break_2|comfort break
+break_2|spring break
+break_2|break point
+break_2|fast break
+breaker_1|circuit breaker
+breaker_1|record-breaker
+breaker_1|strike-breaker
+breakfast_1|bed and breakfast
+breakfast_1|continental breakfast
+breakfast_1|English breakfast
+breakfast_1|power breakfast
+breakfast_1|wedding breakfast
+breast_1|double-breasted
+breast_1|single-breasted
+breast_1|chimney breast
+breather_1|heavy breather
+breed_1|cross-breed
+breed_1|pure-bred
+breed_1|well bred
+breed_2|rare breed (1)
+breed_2|rare breed (2)
+brick_1|power brick
+brick_1|red-brick
+bridge_1|suspension bridge
+bridge_1|swing bridge
+bridge_1|air bridge
+bridge_1|land bridge
+bridge_1|contract bridge
+brigade_1|fire brigade
+britain_1|Great Britain
+britain_1|United Kingdom
+broadway_1|off-Broadway
+broken_1|broken heart
+broken_1|broken home
+broker_1|honest broker
+broker_1|power broker
+broth_1|Scotch broth
+brother_1|half-brother
+brush_2|scrubbing brush
+bubble_1|speech bubble
+bud_1|cotton bud
+bud_1|taste bud
+buff_1|blind man’s buff
+buffalo_1|water buffalo
+buggy_1|beach buggy
+buyer_1|first-time buyer
+build_2|new build
+building_1|listed building
+building_1|team building
+built_1|purpose-built
+built_1|well built
+bull_1|cock and bull story
+bullet_1|magic bullet
+bullet_1|plastic bullet
+bullet_1|rubber bullet
+bullet_1|silver bullet
+bump_2|elbow bump
+bump_2|down to earth
+bun_1|hot cross bun
+bundle_1|bundle of joy
+bunny_1|Easter bunny
+burden_1|beast of burden
+bureau_1|credit bureau
+burger_1|veggie burger
+burn_1|burn rate
+burner_1|Bunsen burner
+burner_1|back-burner
+bush_1|butterfly bush
+business_1|big business
+business_1|e-business
+business_1|show business
+buster_1|bunker buster
+butter_1|bread and butter
+butter_1|peanut butter
+butterfly_1|monarch butterfly
+button_1|push-button
+button_1|reset button
+button_1|rewind button
+c_2|middle C
+c_3|C of E
+c_3|C & W
+cab_1|black cab
+cabbage_1|Chinese cabbage
+cabbage_1|pak choi
+cabbage_1|skunk cabbage
+cabinet_1|filing cabinet
+cake_1|angel food cake
+cake_1|Christmas cake
+cake_1|fruit cake
+cake_1|sponge cake
+cake_1|wedding cake
+cake_1|cattle cake
+calendar_1|Advent calendar
+calendar_1|Gregorian calendar
+calendar_1|Julian calendar
+call_1|so-called
+call_1|cold-call
+call_2|alarm call
+call_2|blank call
+call_2|cold call
+call_2|conference call
+call_2|courtesy call
+call_2|nuisance call
+call_2|wake-up call
+call_2|cattle call
+call_2|clarion call
+call_2|curtain call
+call_2|roll call
+call_2|courtesy call
+call_2|house call
+call_2|port of call
+call_2|will-call
+call_2|judgement call
+call_2|on-call
+calm_2|traffic calming
+camp_1|base camp
+camp_1|holiday camp
+camp_1|squatter camp
+camp_1|training camp
+camp_1|day camp
+camp_1|fat camp
+camp_1|boot camp (2)
+camp_1|concentration camp
+camp_1|death camp
+camp_1|labour camp
+camp_1|prison camp
+camp_1|transit camp
+camp_1|boot camp (1)
+campaign_1|defiance campaign
+campaign_1|whispering campaign
+campanologist_1|bell-ringer
+can_2|watering can
+can_2|spray can
+can_2|garbage can
+can_2|trash can
+canada_1|John Cabot
+canada_1|Hudson's Bay Company
+canada_1|General James Wolfe
+canal_1|alimentary canal
+canal_1|ear canal
+canal_1|root canal
+candy_1|arm candy
+candy_1|brain candy
+candy_1|eye candy
+candy_1|hard candy
+candy_1|penny candy
+candy_1|rock candy
+candle_1|votive candle
+cane_1|candy cane
+cane_1|sugar cane
+cane_1|walking stick
+cannon_1|loose cannon
+cannon_1|snow cannon
+cannon_1|water cannon
+canterbury_1|Archbishop of Canterbury
+canto_1|bel canto
+cap_1|baseball cap
+cap_1|cloth cap
+cap_1|flat cap
+cap_1|mob cap
+cap_1|stocking cap
+cap_1|bathing cap
+cap_1|swimming cap
+cap_1|filler cap
+cap_1|rate cap
+cap_1|cradle cap
+cap_1|dunce’s cap
+cap_1|ice cap
+cap_1|thinking cap
+capacity_1|diminished capacity
+capacity_1|heat capacity
+capital_1|venture capital
+capital_1|working capital
+capital_1|human capital
+capital_1|political capital
+capital_1|social capital
+capitalization_1|market capitalization
+capsule_1|time capsule
+captain_1|sea captain
+captain_1|group captain
+caption_1|closed-captioned
+capture_2|carbon capture and storage
+capture_2|data capture
+car_1|company car
+car_1|in-car
+car_1|panda car
+car_1|race car
+car_1|sports car
+car_1|squad car
+car_1|stock car
+caramel_1|crème caramel
+carbon_1|low-carbon
+carbon_1|zero-carbon
+carbonate_1|calcium carbonate
+carbonate_1|sodium carbonate
+card_1|Christmas card
+card_1|e-card
+card_1|greetings card
+card_1|cue card
+card_1|draft card
+card_1|green card
+card_1|health card
+card_1|identity card
+card_1|index card
+card_1|loyalty card
+card_1|red card
+card_1|report card
+card_1|yellow card
+card_1|ATM card
+card_1|bank card
+card_1|cash card
+card_1|charge card
+card_1|chip card
+card_1|credit card
+card_1|debit card
+card_1|gift card
+card_1|Gold Card™
+card_1|smart card
+card_1|swipe card
+card_1|face card
+card_1|trump card
+card_1|wild card
+card_1|SD card
+card_1|SDHC card
+card_1|SIM card
+card_1|race card
+cardboard_1|cardboard cut-out
+care_1|community care
+care_1|critical care
+care_1|day care
+care_1|duty of care
+care_1|easy-care
+care_1|intensive care
+care_1|managed care
+care_1|primary care
+care_1|self-care
+carl_1|Birmingham Six
+carl_1|Guildford Four
+carl_1|Tottenham Three
+carotene_1|beta-carotene
+carpet_1|magic carpet
+carpet_1|Persian carpet
+carpet_1|red carpet
+carry_1|concealed carry
+carry_1|open carry
+carriage_1|baby carriage
+carriage_1|gun carriage
+carriage_1|hackney carriage
+carriageway_1|dual carriageway
+carrier_1|aircraft carrier
+carrier_1|armoured personnel carrier
+carrier_1|personnel carrier
+carrier_1|letter carrier
+carrier_1|mail carrier
+carrier_1|people carrier
+cart_1|golf cart
+case_1|edge case
+case_1|worst-case
+case_1|cold case
+case_1|test case
+case_1|open-and-shut case
+case_1|attaché case
+case_1|display case
+case_1|document case
+case_1|jewel case
+case_1|packing case
+case_1|pencil case
+case_1|vanity case
+case_1|basket case
+case_1|lower case
+case_1|upper case
+cash_1|cold cash
+cash_1|hard cash
+cash_1|petty cash
+cash_1|e-cash
+caste_1|scheduled caste
+caste_1|half-caste
+casting_1|central casting
+castle_1|bouncy castle
+casual_2|business casual
+casual_2|smart casual
+cat_1|the Cheshire Cat
+cat_1|Manx cat
+cat_1|marmalade cat
+cat_1|Persian cat
+cat_1|Siamese cat
+cat_1|fat cat
+catalogue_1|back catalogue
+catch_2|safety catch
+catching_1|eye-catching
+catering_1|self-catering
+catering_1|self-catering
+cattle_1|Highland cattle
+cause_1|probable cause
+cause_1|lost cause
+cave_1|Aladdin’s cave
+cave_1|man cave
+ceiling_1|debt ceiling
+ceiling_1|glass ceiling
+cell_1|stem cell
+cell_1|padded cell
+cellar_1|beer cellar
+cellar_1|salt cellar
+cent_1|per cent
+cent_1|red cent
+centre_1|town centre
+centre_1|control centre
+centre_1|cost centre
+centre_1|data centre
+centre_1|drop-in centre
+centre_1|fulfilment centre
+centred_1|self-centred
+centred_1|soft-centred
+certainty_1|racing certainty
+certificate_1|digital certificate
+certificate_1|film certificate
+certificate_1|gift certificate
+certificate_1|X certificate
+chain_1|choke chain
+chain_1|daisy chain
+chain_1|food chain
+chain_1|supply chain
+chair_1|bath chair
+chair_1|director’s chair
+chair_1|easy chair
+chair_1|electric chair
+chair_1|high chair
+chair_1|lawn chair
+chair_1|lounge chair
+chair_1|musical chairs
+chair_1|rocking chair
+chair_1|sedan chair
+chair_1|wing chair
+chamber_1|Chamber of Commerce
+chamber_1|decompression chamber
+chamber_1|gas chamber
+chamber_1|hyperbaric chamber
+chamber_1|echo chamber
+change_1|life-changing
+change_2|climate change
+change_2|sea change
+change_2|sex change
+change_2|step change
+change_2|bureau de change
+change_2|regime change
+change_2|bureau de change
+change_2|chump change
+changer_1|game changer
+channel_1|pay channel
+channel_1|public access channel
+channel_1|blue channel
+channel_1|the English Channel
+chant_1|Gregorian chant
+chanting_1|monkey chanting
+chapel_1|father of the chapel
+character_1|non-player character
+character_1|acquired characteristic
+charge_1|the community charge
+charge_1|congestion charge
+charge_1|cover charge
+charge_1|prescription charge
+charge_1|reverse-charge
+charge_1|service charge
+charge_1|depth charge
+charmer_1|snake charmer
+chart_1|bar chart
+chart_1|flip chart
+chart_1|flow chart
+chart_1|Gantt chart
+chart_1|organization chart
+chart_1|pie chart
+chase_2|wild goose chase
+chaser_1|ambulance chaser
+chat_2|fireside chat
+chat_2|chit-chat
+chat_2|web chat
+chattel_1|goods and chattels
+cheap_1|dirt cheap
+check_1|cross-check
+check_1|double-check
+check_2|cross-check
+check_2|double-check
+check_2|health check
+check_2|reality check
+check_2|spot check
+check_2|cashier's check
+check_2|personal check
+check_2|body check
+check_2|checks and balances
+checkout_1|self-checkout
+cheek_1|apple-cheeked
+cheese_1|American cheese
+cheese_1|blue cheese
+cheese_1|cauliflower cheese
+cheese_1|cottage cheese
+cheese_1|cream cheese
+cheese_1|curd cheese
+cheese_1|feta cheese
+cheese_1|goat cheese
+cheese_1|Jack cheese
+cheese_1|macaroni cheese
+cheese_1|pot cheese
+cheese_1|string cheese
+cheese_1|Swiss cheese
+chef_1|pastry chef
+chef_1|sous-chef
+cheque_1|blank cheque
+cheque_1|certified cheque
+cheque_1|pay cheque
+cheque_1|thirteenth cheque
+cheque_1|traveller’s cheque
+cherry_1|black cherry (2)
+cherry_1|black cherry (1)
+cherry_1|black cherry (3)
+chest_1|hope chest
+chest_1|ice chest
+chest_1|tea chest
+chest_1|war chest
+chestnut_1|horse chestnut
+chestnut_1|Spanish chestnut
+chestnut_1|sweet chestnut
+chestnut_1|water chestnut
+chic_1|eco-chic
+chic_1|radical chic
+chic_1|shabby chic
+chic_2|eco-chic
+chic_2|shabby chic
+chicken_1|spring chicken
+chicken_1|coronation chicken
+chief_1|editor-in-chief
+chief_2|Big Chief
+chief_2|editor-in-chief
+chief_2|fire chief
+child_1|latchkey kid
+child_1|poster child
+child_1|street child
+child_1|love child
+child_1|only child
+chill_1|wind chill
+chilling_1|spine-chilling
+chime_2|wind chimes
+chin_1|double chin
+china_1|bone china
+chip_1|fish and chips
+chip_1|corn chip
+chip_1|silicon chip
+chip_1|V-chip
+chip_1|paint chip
+chip_1|cow chip
+chip_1|paint chip
+chip_1|bargaining chip
+chip_1|blue-chip
+chloride_1|sodium chloride
+chocolate_1|dark chocolate
+chocolate_1|milk chocolate
+chocolate_1|white chocolate
+choice_1|anti-choice
+choice_1|pro-choice
+choice_1|Hobson’s choice
+choice_1|multiple-choice
+chorus_1|chorus line
+chorus_1|dawn chorus
+christmas_1|Boxing Day
+christmas_1|white Christmas
+chromosome_1|sex chromosome
+chromosome_1|X chromosome
+chromosome_1|Y chromosome
+church_1|community church
+church_1|Free Church
+church_1|High Church
+church_1|Low Church
+church_1|Reformed Church
+church_1|storefront church
+church_1|Unification Church
+cycle_1|carbon cycle
+cycle_1|life cycle
+cycle_1|lunar cycle
+cycle_1|nitrogen cycle
+cycle_1|water cycle
+cycle_1|song cycle
+cigarette_1|e-cigarette
+cigarette_1|electronic cigarette
+cinema_1|home cinema
+cypress_1|Leyland cypress
+circle_1|Antarctic Circle
+circle_1|Arctic Circle
+circle_1|striking circle
+circle_1|turning circle
+circle_1|crop circle
+circle_1|stone circle
+circle_1|dress circle
+circle_1|upper circle
+circle_1|charmed circle
+circle_1|inner circle
+circle_1|vicious circle
+circle_1|virtuous circle
+circuit_1|closed-circuit television
+circuit_1|integrated circuit
+circuit_1|logic circuit
+circuit_1|printed circuit
+circuit_1|ring circuit
+circuit_1|short circuit
+circuit_1|barbecue circuit
+circus_1|flea circus
+circus_1|three-ring circus
+city_1|edge city
+city_1|garden city
+city_1|inner city
+city_1|sister city
+city_1|cardboard city
+citizen_1|active citizen
+citizen_1|senior citizen
+civil_1|civil war
+civil_1|civil law
+clay_1|china clay
+class_1|middle class
+class_1|upper class
+class_1|working class
+class_1|business class
+class_1|cattle class
+class_1|economy class syndrome
+class_1|first class
+class_1|second class
+class_1|third class
+class_1|tourist class
+class_1|first-class
+class_1|high-class
+class_1|low-class
+class_1|second-class
+class_1|top-class
+class_1|word class
+class_1|world-class
+classroom_1|flipped classroom
+clause_1|coordinate clause
+clause_1|dependent clause
+clause_1|independent clause
+clause_1|final clause
+clause_1|main clause
+clause_1|subordinate clause
+clause_1|escape clause
+clause_1|grandfather clause
+claw_1|claw hammer
+clean_1|squeaky clean
+clean_2|deep-clean
+clean_2|dry-clean
+clean_2|spring-clean
+cleaner_1|window cleaner
+cleaner_1|pipe cleaner
+cleaning_1|deep-cleaning
+cleaning_1|dry-cleaning
+cleaning_1|spring cleaning
+cleanse_1|ethnic cleansing
+clear_2|clear away
+clerk_1|file clerk
+clerk_1|filing clerk
+clerk_1|clerk of works
+clerk_1|county clerk
+clerk_1|parish clerk
+click_1|double-click
+click_1|point-and-click
+click_1|right-click
+cliff_1|fiscal cliff
+climate_1|continental climate
+climber_1|mountain climber
+climber_1|social climber
+climbing_1|aid climbing
+climbing_1|free climbing
+climbing_1|rock climbing
+climbing_1|solo climbing
+clip_1|bicycle clip
+clip_1|Bulldog clip™
+clip_1|crocodile clip
+clip_1|paper clip
+clipper_1|nail clippers
+clock_1|24-hour clock
+clock_1|alarm clock
+clock_1|atomic clock
+clock_1|biological clock
+clock_1|body clock
+clock_1|carriage clock
+clock_1|cuckoo clock
+clock_1|grandfather clock
+clock_1|grandmother clock
+clock_1|time clock
+clock_1|water clock
+clock_1|clock-watcher
+close_3|close-range
+closet_1|broom closet
+closet_1|water closet
+closing_2|early closing
+cloth_1|oxford cloth
+cloth_1|drop cloth
+cloth_1|J-cloth™
+clothes_1|plain clothes
+clothes_1|street clothes
+clothes_1|swaddling clothes
+cloud_1|storm cloud
+cloud_1|mushroom cloud
+cloud_1|tag cloud
+club_1|fan club
+club_1|glee club
+club_1|youth club
+club_1|country club
+club_1|health club
+club_1|strip club
+club_1|book club
+club_1|billy club
+coaching_1|life coaching
+coaster_1|roller coaster
+coat_1|Afghan coat
+coat_1|car coat
+coat_1|duffel coat
+coat_1|pea coat
+coat_1|sport coat
+coat_1|trench coat
+coat_1|frock coat
+coat_1|morning coat
+coat_1|seed coat
+coat_2|sugar-coated
+cobweb_1|spider’s web
+cock_1|half-cock
+cocktail_1|Molotov cocktail
+code_1|area code
+code_1|colour code
+code_1|genetic code
+code_1|Morse code
+code_1|sort code
+code_1|QR code™
+code_1|zip code
+code_1|machine code
+code_1|object code
+code_1|source code
+code_1|honour code
+code_1|dress code
+code_1|Highway Code
+code_2|hard-code
+coded_1|colour-coded
+coffee_1|dandelion coffee
+coffee_1|Irish coffee
+coffee_1|Turkish coffee
+cola_1|Coca-Cola™
+cold_1|ice-cold
+cold_1|stone cold
+cold_1|cold cuts
+cold_1|cold-shoulder
+collar_1|blue-collar
+collar_1|dog collar
+collar_1|green-collar
+collar_1|mandarin collar
+collar_1|pink-collar
+collar_1|white-collar
+collar_1|wing collar
+collar_1|choke collar
+collect_2|stamp collecting
+collect_2|click and collect
+collector_1|debt collector
+college_1|college of further education
+college_1|college of higher education
+college_1|community college (1)
+college_1|sixth-form college
+college_1|technical college
+college_1|tertiary college
+college_1|community college (2)
+college_1|junior college
+college_1|electoral college
+collie_1|Border collie
+colorado_1|Pike's Peak
+colour_1|complementary colour
+colour_1|primary colour
+colour_1|full-colour
+colour_1|self-colour
+colour_1|oil colour
+colour_1|local colour
+coloured_1|light-coloured
+coloured_1|rose-coloured
+coloured_1|straw-coloured
+columbo_1|detective story
+column_1|advice column
+column_1|agony column
+column_1|gossip column
+column_1|personal column
+column_1|spinal column
+column_1|steering column
+column_1|fifth column
+columnist_1|advice columnist
+columnist_1|fifth columnist
+columnist_1|gossip columnist
+com_1|dot-com
+combat_1|single combat
+combustion_1|spontaneous combustion
+comedy_1|black (9)
+comedy_1|musical comedy
+comedy_1|stand-up (1)
+comfort_1|cold comfort
+comfort_1|creature comforts
+comma_1|inverted commas
+command_1|high command
+command_1|second in command
+commerce_1|Chamber of Commerce
+commerce_1|e-commerce
+commerce_1|m-commerce
+commission_1|European Commission
+commission_1|high commission
+commission_1|Royal Commission
+commission_1|commissioned officer
+commission_1|non-commissioned officer
+commissioner_1|High Commissioner
+commit_1|non-committal
+committee_1|conference committee
+committee_1|political action committee
+committee_1|select committee
+committee_1|selection committee
+committee_1|steering committee
+community_1|retirement community
+company_1|finance company
+company_1|holding company
+company_1|joint-stock company
+company_1|limited company
+company_1|livery company
+company_1|private company
+company_1|private limited company
+company_1|public company
+company_1|stock company
+companion_1|animal companion
+companion_1|stable companion
+companion_1|boon companion
+compartment_1|glove compartment
+compass_1|moral compass
+compensation_1|workers' compensation
+competence_1|communicative competence
+complex_2|Electra complex
+complex_2|inferiority complex
+complex_2|Oedipus complex
+complex_2|persecution complex
+complex_2|superiority complex
+computer_1|desktop computer
+computer_1|personal computer
+computing_1|cloud computing
+con_1|mod con
+conceal_1|ill-concealed
+concept_1|high-concept
+concept_1|proof of concept
+concert_1|promenade concert
+concert_1|subscription concert
+concord_2|Lexington and Concord
+concrete_2|reinforced concrete
+conditioning_1|air conditioning
+conduct_2|safe conduct
+conductor_1|lightning conductor
+cone_2|nose cone
+cone_2|snow cone
+conference_1|press conference
+confess_1|self-confessed
+confidence_1|consumer confidence
+confidence_1|vote of confidence
+confidence_1|vote of no confidence
+confidence_1|self-confidence
+confident_1|self-confident
+confinement_1|home confinement
+confinement_1|solitary confinement
+congo_1|Democratic Republic of the Congo
+congratulatory_1|self-congratulatory
+conjunction_1|coordinating conjunction
+conjunction_1|subordinating conjunction
+connected_1|well connected
+connecticut_1|Yale University
+conscience_1|social conscience
+conscience_1|prisoner of conscience
+conscious_1|self-conscious
+conscious_1|class-conscious
+conscious_1|fashion-conscious
+consciously_1|self-consciously
+consciousness_1|self-consciousness
+consciousness_1|stream of consciousness
+consent_1|age of consent
+consent_1|informed consent
+constable_1|chief constable
+constable_1|special constable
+consultant_1|management consultant
+consume_1|all-consuming
+consume_1|time-consuming
+consuming_1|all-consuming
+consuming_1|time-consuming
+consumption_1|conspicuous consumption
+contamination_1|cross-contamination
+contest_1|beauty contest
+contest_1|popularity contest
+contract_1|social contract
+contradictory_1|self-contradictory
+contribution_1|defined contribution
+control_1|self-control
+control_1|birth control
+control_1|climate control
+control_1|gun control
+control_1|parental control
+control_1|quality control
+control_1|cruise control
+control_1|dual controls
+control_1|remote control
+control_1|air traffic control
+control_1|ground control
+control_1|Mission Control
+controller_1|air traffic controller
+convenience_1|flag of convenience
+convenience_1|marriage of convenience
+convenience_1|public convenience
+cook_2|pastry cook
+cook_2|short-order cook
+cooker_1|pressure cooker
+cooker_1|slow cooker
+cooker_1|solar cooker
+cookie_1|fortune cookie
+cookie_1|tollhouse cookie
+cooler_1|air cooler
+cooler_1|water cooler
+cooler_1|wine cooler (2)
+cooler_1|wine cooler (1)
+copy_1|carbon copy
+copy_1|fair copy
+copy_1|hard copy
+copy_1|knocking copy
+cord_1|sash cord
+cord_1|spinal cord
+cord_1|umbilical cord
+cord_1|vocal cords
+core_1|Common Core
+core_1|hard core
+core_1|soft-core
+corn_1|seed corn
+corn_1|baby corn
+corn_1|corn on the cob
+corn_1|field corn
+corn_1|Indian corn
+corner_1|catty-corner(ed)
+corner_1|hole-and-corner
+corner_1|corner kick
+corporal_1|lance corporal
+corporal_1|master corporal
+corps_1|diplomatic corps
+corps_1|press corps
+corpus_1|habeas corpus
+correct_1|politically correct
+correctness_1|political correctness
+correlation_1|rank correlation
+corridor_1|air corridor
+cosy_1|tea cosy
+cost_1|low-cost
+cost_1|prime cost
+costume_1|national costume
+cough_2|hacking cough
+cough_2|whooping cough
+council_1|band council
+council_1|city council
+council_1|county council
+council_1|district council
+council_1|parish council
+council_1|the Medical Research Council
+council_1|research council
+council_1|school council
+council_1|student council
+council_1|works council
+council_1|Privy Council
+counsel_1|Queen’s Counsel
+counsellor_1|guidance counselor
+count_2|body count
+count_2|standing count
+count_2|blood count
+count_2|pollen count
+counter_1|bargaining counter
+counter_1|Geiger counter
+counter_1|bean counter
+counter_1|over-the-counter
+counter_1|under-the-counter
+county_1|Home Counties
+county_1|metropolitan county
+country_1|mother country
+country_1|north-country
+country_1|old country
+country_1|up-country
+country_1|cross-country
+coup_1|palace coup
+couple_1|happy couple
+couple_1|power couple
+couplet_1|elegiac couplet
+couplet_1|heroic couplet
+courage_1|Dutch courage
+course_1|access course
+course_1|correspondence course
+course_1|foundation course
+course_1|induction course
+course_1|refresher course
+course_1|sandwich course
+course_1|survey course
+course_1|assault course
+course_1|obstacle course
+course_1|damp course
+court_1|appeal court
+court_1|circuit court
+court_1|contempt of court
+court_1|county court
+court_1|Crown Court
+court_1|family court
+court_1|high court
+court_1|juvenile court
+court_1|moot court
+court_1|Supreme Court
+court_1|clay court
+court_1|grass court
+court_1|half-court
+court_1|hard court
+court_1|food court
+court_1|tout court
+cousin_1|country cousin
+cousin_1|second cousin
+cousin_1|kissing cousin
+couture_1|haute couture
+covenant_1|deed of covenant
+cover_2|dust cover
+cover_2|first-day cover
+cover_2|loose cover
+cover_2|ground cover
+covered_1|snow-covered
+covering_1|face covering
+covid_1|long Covid
+cow_1|sea cow
+cow_1|cash cow
+cow_1|milch cow
+cow_1|sacred cow
+cowboy_1|cowboys and Indians
+crab_1|hermit crab
+cracker_1|cream cracker
+cracker_1|graham cracker
+cracker_1|prawn cracker
+cracker_1|soda cracker
+craft_1|arts and crafts
+craft_1|landing craft
+cramp_1|writer’s cramp
+crane_1|blue crane
+crash_1|car crash
+crawl_2|pub crawl
+crawler_1|kerb-crawler
+crazy_1|stir-crazy
+cream_1|clotted cream
+cream_1|Cornish Cream
+cream_1|double cream
+cream_1|egg cream
+cream_1|full-cream
+cream_1|ice cream
+cream_1|salad cream
+cream_1|single cream
+cream_1|sour cream
+cream_1|whipping cream
+cream_1|cold cream
+cream_1|face cream
+cream_1|hand cream
+cream_1|sun cream
+creation_1|job creation
+credibility_1|street cred
+credit_1|consumer credit
+credit_1|line of credit
+credit_1|letter of credit
+credit_1|tax credit
+credit_1|Universal Credit
+credit_1|carbon credit
+creeper_1|Virginia creeper
+crescent_1|Red Crescent
+crew_1|cabin crew
+crew_1|flight crew
+crew_1|ground crew
+cry_2|war cry
+cricket_1|first-class cricket
+cricket_1|one-day cricket
+crime_1|hate crime
+crime_1|true crime
+crime_1|hate crime
+crime_1|scene-of-crime
+crime_1|war crime
+criminal_1|war criminal
+crisis_1|climate crisis
+crisis_1|midlife crisis
+crystal_1|rock crystal
+crystal_1|liquid crystal display
+critical_1|self-critical
+critical_1|mission-critical
+criticism_1|self-criticism
+crop_1|cash crop
+crop_1|catch crop
+cross_2|noughts and crosses
+cross_2|Red Cross
+crossing_1|level crossing
+crossing_1|pedestrian crossing
+crossing_1|pelican crossing
+crossing_1|railroad crossing
+crossing_1|zebra crossing
+crosswalk_1|zebra crossing
+crow_1|carrion crow
+crowd_1|in-crowd
+crown_1|half-crown
+cruise_1|booze cruise
+crunch_1|credit crunch
+crunch_2|number crunching
+crust_1|pie crust
+crust_1|upper crust
+crust_1|upper-crust
+cube_1|Rubik’s Cube™
+cube_1|bouillon cube
+cube_1|ice cube
+cube_1|stock cube
+cube_1|sugar cube
+cuckoo_1|cloud cuckoo land
+cucumber_1|sea cucumber
+cuisine_1|haute cuisine
+cuisine_1|nouvelle cuisine
+cult_1|personality cult
+cultivation_1|shifting cultivation
+cultural_1|cross-cultural
+culture_1|pop culture
+culture_1|cancel culture
+culture_1|canteen culture
+cup_1|Dixie Cup™
+cup_1|loving cup
+cup_1|sippy cup
+cup_1|measuring cup
+cup_1|fruit cup
+cupboard_1|airing cupboard
+cupboard_1|broom cupboard
+curd_1|lemon curd
+curdle_1|blood-curdling
+cure_1|dry-cure
+cure_2|rest cure
+curettage_1|dilatation and curettage
+curl_1|toe-curling
+currency_1|hard currency
+current_2|cross-current
+current_2|rip current
+current_2|alternating current
+current_2|direct current
+curricular_1|cross-curricular
+curtain_1|Iron Curtain
+curtain_1|drop curtain
+curtain_1|safety curtain
+curve_1|bell curve
+curve_1|learning curve
+cushion_1|scatter cushion
+cushion_1|whoopee cushion
+custard_1|confectioner’s custard
+custody_1|protective custody
+custody_1|youth custody
+cut_1|pre-cut
+cut_1|bias-cut
+cut_1|boot-cut
+cut_1|low-cut
+cut_1|director’s cut
+cut_2|power cut
+cut_2|buzz cut
+cut_2|bias-cut
+cut_2|boot-cut
+cut_2|low-cut
+cut_2|cold cuts
+cutting_1|cost-cutting
+d_2|D-Day
+daddy_1|big daddy
+daddy_1|sugar daddy
+dagger_1|cloak-and-dagger
+day_1|all-day
+day_1|Arbor Day
+day_1|big day
+day_1|D-Day
+day_1|duvet day
+day_1|feast day
+day_1|field day
+day_1|May Day
+day_1|off day
+day_1|PD day
+day_1|pyjama day
+day_1|red-letter day
+day_1|sick day
+day_1|snow day
+day_1|sports day
+day_1|school day (2)
+day_1|glory days
+day_1|present day
+dairy_1|non-dairy
+daisy_1|Michaelmas daisy
+dally_1|dilly-dally
+damage_1|collateral damage
+damage_1|criminal damage
+damage_1|punitive damages
+dame_1|grande dame
+damp_2|rising damp
+dance_1|belly dance
+dance_1|clog dance
+dance_1|country dance
+dance_1|folk dance
+dance_1|morris dance
+dance_1|rain dance
+dance_1|square dance
+dance_1|sword dance
+dance_1|tap dance
+dance_1|war dance
+dance_1|modern dance
+dance_1|barn dance
+dance_1|dinner dance
+dance_1|tea dance
+dancer_1|belly dancer
+dancer_1|exotic dancer
+dancer_1|ice dancer
+dancer_1|morris dancer
+dancer_1|pole dancer
+dancer_1|tap dancer
+dancer_1|taxi dancer
+dancing_1|all-singing, all-dancing
+dancing_1|ballroom dancing
+dancing_1|belly dancing
+dancing_1|country dancing
+dancing_1|formation dancing
+dancing_1|ice dancing
+dancing_1|lap dancing
+dancing_1|line dancing
+dancing_1|morris dancing
+dancing_1|pole dancing
+dancing_1|Scottish country dancing
+dancing_1|table dancing
+dancing_1|tap-dancing
+dandy_2|handy-dandy
+dark_1|pitch-dark
+darwinism_1|social Darwinism
+dash_1|swung dash
+dash_1|pebble-dash
+data_1|big data
+database_1|relational database
+date_1|best-before date
+date_1|closing date
+date_1|due date
+date_1|expiry date
+date_1|expiration date
+date_1|pull date
+date_1|rain date
+date_1|sell-by date
+date_1|play date
+date_1|blind date
+date_1|double date
+date_1|out of date
+date_1|up to date
+date_2|post-date
+date_2|post-date
+date_2|double-date
+daughter_1|god-daughter
+dawn_1|false dawn
+dead_1|stone dead
+dead_2|living dead
+deaf_1|stone deaf
+deaf_1|tone-deaf
+deal_2|big deal
+dealer_1|broker-dealer
+dealer_1|double-dealer
+dealer_1|wheeler-dealer
+dealer_1|drug dealer
+dealing_1|fair dealing
+dear_3|old dear
+death_1|brain death
+death_1|cot death
+death_1|crib death
+death_1|sudden death
+death_1|living death
+death_1|brain death
+death_1|sudden death
+debit_1|direct debit
+debt_1|carbon debt
+debt_1|national debt
+debt_1|sovereign debt
+debt_1|bad debt
+decay_1|beta decay
+decimal_2|recurring decimal
+decimal_2|repeating decimal
+deck_1|double-decker
+deck_1|flight deck
+deck_1|single-decker
+deck_1|sun deck
+deck_1|void deck
+decomposition_1|double decomposition
+decomposition_1|thermal decomposition
+decoration_1|interior decoration
+deed_2|title deed
+deer_1|fallow deer
+deer_1|red deer
+deer_1|roe deer
+deer_1|white-tailed deer
+defence_1|civil defence
+defence_1|self-defence
+defender_1|public defender
+defy_1|death-defying
+deficit_1|trade deficit
+definition_1|high-definition
+degree_1|Associate's degree
+degree_1|bachelor's degree
+degree_1|first degree
+degree_1|joint degree
+degree_1|higher degree
+degree_1|master’s degree
+degree_1|second-degree
+degree_1|third degree
+delight_1|Turkish delight
+delinquency_1|juvenile delinquency
+delinquent_1|juvenile delinquent
+delivery_1|general delivery
+delivery_1|recorded delivery
+delivery_1|special delivery
+demand_1|print on demand
+demand_1|supply and demand
+demand_1|on-demand
+dementia_1|senile dementia
+democracy_1|social democracy
+democrat_1|social democrat
+democrat_1|social democracy
+denial_1|climate denial
+denominator_1|lowest common denominator
+density_1|relative density
+density_1|packing density
+department_1|police department
+department_1|State Department
+dependency_1|Crown Dependency
+deposit_1|security deposit
+deposit_1|direct deposit
+depository_1|night depository
+deprecating_1|self-deprecating
+depression_1|postnatal depression
+depression_1|post-partum depression
+depressor_1|tongue depressor
+depth_1|in-depth
+derby_1|demolition derby
+derby_1|donkey derby
+design_1|interior design
+designer_1|interior designer
+desist_1|cease-and-desist
+desk_1|hot-desk
+desk_1|mixing desk
+desk_1|roll-top desk
+desk_1|writing desk
+desk_1|cash desk
+desk_1|front desk
+desk_1|help desk
+desk_1|city desk
+desk_1|news desk
+destroy_1|soul-destroying
+destruction_1|self-destruction
+destruction_1|weapon of mass destruction
+destructive_1|self-destructive
+detective_1|store detective
+detective_1|private detective
+detector_1|lie detector
+detector_1|metal detector
+detector_1|mine detector
+detergent_1|dishwashing detergent
+determination_1|self-determination
+deterrent_1|nuclear deterrent
+develop_1|developed (1)
+developed_1|well developed
+development_1|self-development
+development_1|research and development
+development_1|ribbon development
+deviation_1|standard deviation
+device_1|intrauterine device
+device_1|pointing device
+device_1|mobile device
+devil_1|she-devil
+devil_1|dust devil
+devolution_1|West Lothian Question
+diagram_2|block diagram
+diagram_2|scatter diagram
+diagram_2|tree diagram
+diagram_2|Venn diagram
+dial_1|speed dial
+diamond_1|black diamond
+diamond_1|conflict diamond
+diamond_1|rough diamond
+diary_1|video diary
+dick_1|clever Dick
+dick_1|spotted dick
+dictum_1|obiter dictum
+die_1|do-or-die
+dye_1|tie-dye
+diet_1|staple diet (1)
+diet_1|the Atkins Diet™
+diet_1|Hay diet
+diet_1|staple diet (2)
+difference_1|goal difference
+difficulty_1|learning difficulties
+digger_1|gold-digger
+digit_1|double-digit
+dying_1|assisted dying
+diligence_1|due diligence
+dime_1|five-and-dime
+dime_1|nickel-and-dime
+dimension_1|fourth dimension
+dimensional_2|four-dimensional
+dimensional_2|one-dimensional
+dimensional_2|three-dimensional
+dimensional_2|two-dimensional
+dinghy_1|rubber dinghy
+dinkum_1|fair dinkum
+dinner_1|TV dinner
+dinner_1|rehearsal dinner
+dinner_1|dinner party
+dioxide_1|carbon dioxide
+dioxide_1|nitrogen dioxide
+dioxide_1|sulphur dioxide
+dip_1|double-dip
+dip_2|sheep dip
+dip_2|double-dip
+dip_2|lucky dip
+diplomacy_1|gunboat diplomacy
+diplomacy_1|shuttle diplomacy
+diplomat_1|Chief Diplomat
+dipper_1|big dipper
+direction_1|stage direction
+director_1|executive director
+director_1|managing director
+directory_1|root directory
+disaster_1|natural disaster
+disc_1|tax disc
+disc_1|Blu-ray Disc™
+disc_1|gold disc
+disc_1|platinum disc
+disc_1|silver disc
+disc_1|herniated disc
+disc_1|slipped disc
+discharge_2|conditional discharge
+disciplinary_1|cross-disciplinary
+discipline_1|self-discipline
+discrimination_1|positive discrimination
+discrimination_1|reverse discrimination
+dysentery_1|amoebic dysentery
+dish_1|chafing dish
+dish_1|side dish
+dish_1|evaporating dish
+dish_1|Petri dish
+dish_1|satellite dish
+disk_1|hard disk
+dismissal_1|constructive dismissal
+disobedience_1|civil disobedience
+disorder_1|attention deficit disorder
+disorder_1|autism spectrum disorder
+disorder_1|bipolar disorder
+disorder_1|body dysmorphic disorder
+disorder_1|borderline personality disorder
+disorder_1|multiple personality disorder
+disorder_1|obsessive compulsive disorder
+disorder_1|personality disorder
+disorder_1|post-traumatic stress disorder
+disorder_1|seasonal affective disorder
+disorder_1|split personality disorder
+dysphoria_1|gender dysphoria
+display_1|pay and display
+display_2|head-mounted display
+display_2|liquid crystal display
+disposal_1|bomb disposal
+disposed_1|ill-disposed
+disposed_1|well disposed
+dissonance_1|cognitive dissonance
+distance_1|long-distance
+distance_1|middle distance
+distance_1|social distance
+distance_2|social distancing
+distillation_1|fractional distillation
+distribution_1|normal distribution
+district_1|red-light district
+district_1|congressional district
+district_1|postal district
+district_1|school district
+dystrophy_1|muscular dystrophy
+dive_1|crash-dive
+dive_2|swallow dive
+dive_2|swan dive
+diver_1|skin-diver
+divide_2|digital divide
+divide_2|North-South Divide
+dividend_1|peace dividend
+diving_1|scuba diving
+diving_1|skin diving
+division_1|long division
+dock_1|dry dock
+dock_1|wet dock
+docklands_1|Docklands Light Railway
+doctor_1|flying doctor
+doctor_1|junior doctor
+doctor_1|witch doctor
+doctor_1|spin doctor
+dodge_2|tax dodge
+dodger_1|draft dodger
+dodger_1|tax dodger
+doer_1|evil-doer
+dog_1|assistance dog
+dog_1|bird dog
+dog_1|guard dog
+dog_1|guide dog
+dog_1|gun dog
+dog_1|hearing dog
+dog_1|prairie dog
+dog_1|pye-dog
+dog_1|sniffer dog
+dog_1|tracker dog
+dog_1|chili dog
+dog_1|corn dog
+dog_1|hot dog
+dog_1|shaggy-dog story
+dog_1|top dog
+doll_1|baby-doll
+doll_1|Barbie doll™
+doll_1|cornhusk doll
+doll_1|Kewpie doll™
+doll_1|paper doll
+doll_1|Russian doll
+doll_1|voodoo doll
+dollar_1|silver dollar
+dollar_1|top dollar
+dolly_1|corn dolly
+domain_1|public domain
+domain_1|eminent domain
+dome_1|geodesic dome
+dome_1|onion dome
+done_1|well done
+door_1|back-door
+door_1|cat door
+door_1|Dutch door
+door_1|fire door
+door_1|French door
+door_1|front door
+door_1|open door
+door_1|patio door
+door_1|revolving door
+door_1|screen door
+door_1|sliding door
+door_1|stable door
+door_1|stage door
+door_1|storm door
+door_1|swing door
+door_1|next door
+dot_1|polka dot
+doubt_1|self-doubt
+dove_1|turtle dove
+dozen_1|baker’s dozen
+drag_1|drag on
+drag_2|main drag
+drain_2|brain drain
+drake_1|ducks and drakes
+dramatics_1|amateur dramatics
+draw_1|draw/cast lots (for something/to do something)
+drawer_1|app drawer
+drawer_1|bottom drawer
+drawer_1|chest of drawers
+drawer_1|top drawer
+drawing_1|life drawing (2)
+drawing_1|line drawing
+drawing_1|technical drawing (1)
+drawing_1|life drawing (1)
+drawing_1|technical drawing (2)
+dream_1|wet dream
+dream_1|pipe dream
+dress_1|coat dress
+dress_1|cocktail dress
+dress_1|evening dress
+dress_1|little black dress
+dress_1|wedding dress
+dress_1|wrap dress
+dress_1|evening dress
+dress_1|fancy dress
+dress_1|Highland dress
+dress_1|morning dress
+dresser_1|cross-dresser
+dressing_1|French dressing
+dressing_1|ranch dressing
+dressing_1|Thousand Island dressing
+dressing_1|cross-dressing
+dressing_1|power dressing
+dressing_1|window dressing
+dry_1|bone dry
+dry_2|air-dry
+dry_2|blow-dry
+dry_2|drip-dry
+dry_2|spin-dry
+dry_2|tumble-dry
+dryer_1|spin dryer
+dryer_1|tumble dryer
+dryer_1|washer-dryer
+drift_2|longshore drift
+drift_2|North Atlantic Drift
+drift_2|continental drift
+drill_1|hammer drill
+drill_1|percussion drill
+drill_1|pneumatic drill
+drill_1|pack drill
+drink_1|energy drink
+drink_1|soft drink
+drink_1|sports drink
+drink_1|long drink
+drive_1|fly-drive
+drive_2|belt drive
+drive_2|blood drive
+drive_2|disk drive
+driven_1|command-driven
+driven_1|data-driven
+driver_1|back-seat driver
+driver_1|cab driver
+driver_1|co-driver
+driver_1|designated driver
+driver_1|drink-driver
+driver_1|drunk driver
+driver_1|engine driver
+driver_1|learner driver
+driver_1|slave-driver
+driving_1|drink-driving
+driving_1|drunk driving
+drop_1|name-drop
+drop_1|drop-dead
+drop_2|mail drop
+drop_2|mic drop
+drop_2|acid drop
+drug_1|class A drug
+drug_1|recreational drug
+drug_1|truth drug
+drug_1|designer drug
+drum_1|bass drum
+drum_1|kick drum
+drum_1|side drum
+drum_1|snare drum
+drum_1|steel drum
+drum_1|talking drum
+drunk_1|punch-drunk
+dual_1|dual-purpose
+duck_1|eider duck
+duck_1|rubber duck
+duck_1|Bombay duck
+duck_1|Peking duck
+duck_1|lame duck
+duck_1|sitting duck
+duckling_1|ugly duckling
+duct_1|bile duct
+duct_1|tear duct
+duke_1|grand duke
+dummy_1|crash-test dummy
+dump_2|screen dump
+dunk_1|slam-dunk
+durable_1|consumer durables
+dust_1|cosmic dust
+dust_1|angel dust
+dust_1|gold dust
+duster_1|feather duster
+dutch_1|double Dutch
+duty_1|active duty
+duty_1|jury duty
+duty_1|night duty
+duty_1|point duty
+duty_1|tour of duty
+duty_1|heavy-duty
+duty_1|death duty
+duty_1|stamp duty
+duty_1|off-duty
+dwarf_1|brown dwarf
+dwarf_1|red dwarf
+dwarf_1|white dwarf
+e_1|E-number
+e_3|E-fit™
+eagle_1|American eagle
+eagle_1|bald eagle
+eagle_1|golden eagle
+eagle_1|legal eagle
+ear_1|cauliflower ear
+ear_1|external ear
+ear_1|glue ear
+ear_1|inner ear
+ear_1|middle ear
+early_1|early night
+earn_1|hard-earned
+earn_1|hard-earned
+earn_1|well earned
+earner_1|wage earner
+earth_1|scorched earth policy
+earth_1|fuller’s earth
+earth_1|rare earth
+earth_1|down to earth
+eating_1|clean eating
+eating_1|comfort eating
+eating_1|man-eating
+eco_1|eco-warrior
+economy_1|black economy
+economy_1|command economy
+economy_1|consumer economy
+economy_1|controlled economy
+economy_1|gig economy
+economy_1|market economy
+economy_1|mixed economy
+economy_1|planned economy
+economy_1|political economy
+economy_1|sharing economy
+economy_1|tiger economy
+economy_1|underground economy
+economic_1|socio-economic
+economic_1|economy (1)
+economic_1|economy (3)
+economical_1|economy (1)
+economical_1|economy (3)
+economics_1|home economics
+edge_1|bleeding edge
+edge_1|cutting edge
+edge_1|leading edge
+edge_1|straight edge
+edge_1|trailing edge
+edge_1|knife-edge
+edge_1|gilt-edged
+edinburgh_1|Auld Reekie
+edinburgh_1|Edinburgh Festival
+edit_2|copy-edit
+edition_1|first edition
+edition_1|special edition
+edition_1|limited edition
+editor_1|city editor
+editor_1|copy editor
+editor_1|managing editor
+editor_1|story editor
+editor_1|text editor
+educate_1|re-educate
+educated_1|self-educated
+education_1|adult education
+education_1|co-education
+education_1|conductive education
+education_1|continuing education
+education_1|distance education
+education_1|further education
+education_1|higher education
+education_1|physical education
+education_1|progressive education
+education_1|public education (1)
+education_1|re-education
+education_1|secondary education
+education_1|special education
+education_1|state education
+education_1|tertiary education
+education_1|public education (2)
+educational_1|co-educational
+eel_1|electric eel
+efface_1|self-effacing
+effect_1|after-effect
+effect_1|butterfly effect
+effect_1|domino effect
+effect_1|Doppler effect
+effect_1|greenhouse effect
+effect_1|knock-on
+effect_1|network effect
+effect_1|ripple effect
+effect_1|side effect
+effective_1|cost-effective
+effectively_1|cost-effective
+effectiveness_1|cost-effectiveness
+efficient_1|cost-efficient
+egg_1|Easter egg
+egg_1|Scotch egg
+egg_1|garden egg
+egg_1|goose egg
+egg_1|nest egg
+ego_1|alter ego
+eye_1|black eye
+eye_1|compound eye
+eye_1|googly-eyed
+eye_1|lazy eye
+eye_1|shut-eye
+eye_1|doe-eyed
+eye_1|eagle eye
+eye_1|evil eye
+eye_1|red-eye
+eye_1|rib-eye
+eight_1|figure of eight
+eight_1|piece of eight
+elect_2|president-elect
+election_1|by-election
+election_1|general election
+election_1|re-election
+election_1|by-election
+election_1|general election
+electric_1|electric shock
+electric_1|electrical storm
+electricity_1|static electricity
+electronic_1|e-
+electronics_1|consumer electronics
+elephant_1|white elephant
+elm_1|Dutch elm disease
+emerge_1|re-emerge
+emergency_1|accident and emergency
+emergency_1|climate emergency
+emission_1|zero-emission
+employ_1|self-employed
+empowerment_1|black empowerment
+enable_1|Web-enabled
+enabled_1|Web-enabled
+enact_1|re-enact
+enactment_1|re-enactment
+end_1|back end (1)
+end_1|front end (3)
+end_1|big end
+end_1|business end (1)
+end_1|dead end
+end_1|East End
+end_1|front end (1)
+end_1|rear end
+end_1|split end
+end_1|tail end
+end_1|business end (2)
+end_1|front end (2)
+end_1|bin-end
+end_1|dog-end
+end_1|fag end
+end_1|loose end
+end_1|odds and ends
+end_1|tight end
+end_1|front-end
+end_1|high-end
+end_1|low-end
+end_1|rear-end
+end_1|top-end
+ending_1|Hollywood ending
+energy_1|alternative energy
+energy_1|atomic energy
+energy_1|nuclear energy
+energy_1|potential energy
+engine_1|internal combustion engine
+engine_1|jet engine
+engine_1|traction engine
+engine_1|tank engine
+engine_1|traction engine
+engine_1|fire engine
+engine_1|search engine
+engineer_1|chemical engineer
+engineer_1|civil engineer
+engineer_1|electrical engineer
+engineer_1|lighting engineer
+engineer_1|mechanical engineer
+engineer_1|recording engineer
+engineer_1|software engineer
+engineer_1|sound engineer
+engineer_1|structural engineer
+engineering_1|language engineering
+engineering_1|reverse engineering
+engineering_1|chemical engineering
+engineering_1|civil engineering
+engineering_1|electrical engineering
+engineering_1|genetic engineering
+engineering_1|mechanical engineering
+engineering_1|social engineering
+english_1|Basic English
+english_1|BBC English
+english_1|British English
+english_1|Estuary English
+english_1|King’s English
+english_1|Middle English
+english_1|modern English
+english_1|Old English
+english_1|Queen’s English
+english_1|world English
+enquiry_1|directory enquiries
+enterprise_1|free enterprise
+enterprise_1|private enterprise
+entertainment_1|home entertainment
+entry_1|forced entry
+entry_1|re-entry
+envelope_1|pay envelope
+environmental_1|Environmental Health Officer
+equalizer_1|graphic equalizer
+equation_1|differential equation
+equation_1|wave equation
+equipment_1|personal protective equipment
+equity_1|private equity
+equity_1|negative equity
+equity_1|employment equity
+era_1|Christian era
+era_1|Common Era
+erotic_1|auto-erotic
+errand_1|fool’s errand
+errant_1|knight errant
+error_1|hard error
+error_1|human error
+error_1|margin of error
+error_1|sampling error
+error_1|soft error
+error_1|standard error
+escape_2|fire escape
+espionage_1|counter-espionage
+essence_1|coffee essence
+established_1|old-established
+established_1|well established
+estate_1|council estate
+estate_1|housing estate
+estate_1|industrial estate
+estate_1|trading estate
+estate_1|fourth estate
+estate_1|real estate
+esteem_1|self-esteem
+ethic_1|Protestant ethic
+ethic_1|work ethic
+ethnic_1|multi-ethnic
+etymology_1|folk etymology
+european_1|Indo-European
+european_1|Middle-European
+european_1|Proto-Indo-European
+evaluate_1|re-evaluate
+evaluation_1|re-evaluation
+evasion_1|tax evasion
+evening_1|good evening
+event_1|non-event
+event_1|field event
+event_1|track event
+ever_1|first-ever
+evidence_1|King’s evidence
+evidence_1|Queen’s evidence
+evidence_1|state’s evidence
+evident_1|self-evident
+evidently_1|self-evidently
+exam_1|exit exam
+examination_1|cross-examination
+examination_1|re-examination
+examination_1|self-examination
+examine_1|re-examine
+examine_1|cross-examine
+examiner_1|medical examiner
+excellence_1|par excellence
+exchange_1|bill of exchange
+exchange_1|gas exchange
+exchange_1|part exchange
+exchange_1|foreign exchange
+exchange_1|corn exchange
+exchange_1|stock exchange
+exchange_2|part-exchange
+exchequer_1|Chancellor of the Exchequer
+exclusion_1|social exclusion
+executive_1|account executive
+executive_1|chief executive
+executive_2|non-executive
+exempt_2|tax-exempt
+exemption_1|matric exemption
+exemption_1|personal exemption
+exhaustion_1|heat exhaustion
+exile_1|tax exile
+exist_1|pre-exist
+existent_1|pre-existent
+expectancy_1|life expectancy
+expedition_1|fishing expedition
+experience_1|work experience
+experience_1|near-death experience
+experience_1|out-of-body experience
+experience_1|user experience
+experiment_1|controlled experiment
+explanatory_1|self-explanatory
+explosive_2|high explosive
+explosive_2|plastic explosive
+exposure_1|auto-exposure
+exposure_1|time exposure
+exposure_1|indecent exposure
+expression_1|gender expression
+expression_1|self-expression
+expressionism_1|abstract expressionism
+expressionist_1|abstract expressionist
+expressionist_2|abstract expressionist
+extra_1|extra time
+extract_1|yeast extract
+extramural_1|extension (8)
+f_2|F-word
+fa_2|sweet FA
+face_1|full face
+face_1|game face
+face_1|poker face
+face_1|baby-faced
+face_1|fresh-faced
+face_1|hard-faced
+face_1|red-faced
+face_1|sour-faced
+face_1|stony-faced
+face_1|straight-faced
+face_1|rock face
+face_1|in-your-face
+face_1|volte-face
+face_1|straight-faced
+fact_1|matter-of-fact
+factor_1|wow factor
+factor_1|X factor
+factor_1|highest common factor
+factor_1|chill factor
+factor_1|clotting factor
+factor_1|rhesus factor
+fair_3|trade fair
+fair_3|science fair
+fairy_1|tooth fairy
+faith_1|multi-faith
+fallacy_1|pathetic fallacy
+family_1|blended family
+family_1|nuclear family
+family_1|extended family
+family_1|first family
+family_1|joint family
+family_1|the royal family
+family_1|word family
+famous_1|world-famous
+fan_1|fan mail
+fantasy_1|fantasy football
+fare_1|bill of fare
+farm_1|battery farm
+farm_1|collective farm
+farm_1|factory farm
+farm_1|fish farm
+farm_1|funny farm
+farm_1|health farm
+farm_1|server farm
+farm_1|sewage farm
+farm_1|solar farm
+farm_1|truck farm
+farm_1|wind farm
+farm_1|wine farm
+farmer_1|dirt farmer
+farmer_1|gold farmer
+farmer_1|truck farmer
+farming_1|battery farming
+farming_1|dryland farming
+farming_1|factory farming
+farming_1|gold farming
+farming_1|mixed farming
+farming_1|strip-farming
+farming_1|truck farming
+farthing_1|penny-farthing
+fascism_1|body fascism
+fashion_1|Bristol fashion
+fashion_1|parrot-fashion
+fast_1|fast lane
+fast_1|colour fast
+fat_2|baby fat
+fat_2|puppy fat
+fat_2|full-fat
+fat_2|low-fat
+fat_2|monounsaturated fat
+fat_2|polyunsaturated fat
+fat_2|saturated fat
+fat_2|unsaturated fat
+father_1|founding father
+father_1|city father
+father_1|Holy Father
+fault_1|no-fault
+fault_1|double fault
+fault_1|double-fault
+fault_1|foot fault
+favour_1|grace and favour
+fbi_1|J Edgar Hoover
+feast_1|movable feast
+feature_1|water feature
+fee_1|contingency fee
+fee_1|user fee
+feed_1|bottle-feed
+feed_1|force-feed
+feed_1|feed on/off something
+feed_1|drip-feed
+feed_1|spoon-feed
+feed_2|foliar feed
+feed_2|live feed
+feed_2|chicken feed
+feed_2|drip feed
+feeder_1|bird feeder
+feeder_1|bottom feeder
+feeling_1|fellow feeling
+femme_1|bonne femme
+fence_1|chain-link fence
+fence_1|electric fence
+fence_1|ring fence
+fertilization_1|cross-fertilizationcross-fertilisation
+fertilize_1|cross-fertilize
+festival_1|harvest festival
+festival_1|Lantern Festival
+festival_1|Moon Festival
+fever_1|breakbone fever
+fever_1|East Coast Fever
+fever_1|glandular fever
+fever_1|hay fever
+fever_1|Lassa fever
+fever_1|rheumatic fever
+fever_1|scarlet fever
+fever_1|swamp fever
+fever_1|trench fever
+fever_1|yellow fever
+fever_1|spring fever
+fibre_1|glass fibre
+fibre_1|moral fibre
+fibre_1|optical fibre
+fiction_1|airport (2)
+fiction_1|fan fiction
+fiction_1|pulp fiction
+fiction_1|science fiction
+fidelity_1|high fidelity
+field_1|ice field
+field_1|centre field
+field_1|left field
+field_1|on-field
+field_1|playing field
+field_1|track and field
+field_1|field trip
+field_1|force field
+field_1|magnetic field
+fielder_1|right fielder
+fighter_1|cage fighter
+fighter_1|freedom fighter
+fighting_1|cage fighting
+fighting_1|extreme fighting
+fighting_1|Ultimate Fighting™
+figure_1|double-figure
+figure_1|double figures
+figure_1|single figures
+figure_1|six-figure
+figure_1|significant figure
+figure_1|father figure
+figure_1|mother figure
+figure_1|matchstick figure
+figure_1|stick figure
+figure_1|action figure
+file_1|zip file
+file_1|nail file
+file_1|rank and file
+filler_1|stocking filler
+film_1|feature film
+film_1|cling film
+final_2|cup final
+final_2|quarter-final
+final_2|semi-final
+finale_1|season finale
+finding_1|fact-finding
+finding_1|fault-finding
+finger_1|fat finger
+finger_1|green fingers
+finger_1|index finger
+finger_1|little finger
+finger_1|middle finger
+finger_1|pointer finger
+finger_1|ring finger
+finger_1|light-fingered
+finger_1|fish finger
+finger_1|V-sign
+fingerprint_1|DNA fingerprint
+fingerprint_1|genetic fingerprint
+fingerprinting_1|genetic fingerprinting
+finish_2|blanket finish
+finish_2|grandstand finish
+finish_2|photo finish
+fire_1|bush fire
+fire_1|friendly fire
+firebreak_1|fire line
+fiscal_1|procurator fiscal
+fiscally_1|procurator fiscal
+fish_1|coarse fish
+fish_1|flying fish
+fish_1|game fish
+fish_1|sea fish
+fish_1|wet fish
+fish_1|salt fish
+fish_1|white fish
+fishing_1|coarse fishing
+fishing_1|fly fishing
+fist_1|ham-fisted
+fist_1|tight-fisted
+fit_2|keep-fit
+fit_3|hissy fit
+fitting_1|close-fitting
+fitting_1|form-fitting
+fitting_1|ill-fitting
+fitting_1|tight-fitting
+five_1|high five
+fizz_2|Buck’s Fizz
+flag_1|black flag
+flag_1|blue flag
+flag_1|chequered flag
+flag_1|red flag
+flag_1|white flag
+flag_1|yellow flag
+flake_1|soap flakes
+flame_1|old flame
+flap_1|cat flap
+flare_1|solar flare
+flat_1|council flat
+flat_1|granny flat
+flat_2|flat-footed
+flat_3|flat-out
+fledged_1|fully fledged
+fly_2|crane fly
+fly_2|fruit fly
+fly_2|tsetse fly
+fly_2|pop fly
+flick_2|chick flick
+flier_1|frequent flyer
+flyer_1|frequent flyer
+flyer_1|high-flyer
+flyer_1|yogic flyer
+flight_1|in-flight
+flight_1|test flight
+flight_1|charter flight
+flight_1|scheduled flight
+flight_1|white flight
+flight_1|top-flight
+fling_1|far-flung
+fling_2|Highland fling
+flip_1|flip over
+float_2|milk float
+flood_1|flash flood
+floor_1|first floor
+floor_1|ground floor
+floor_1|dance floor
+floor_1|factory floor
+floor_1|shop floor
+floor_1|trading floor
+floor_1|pelvic floor
+flop_1|flip-flop
+flop_2|flip-flop
+flour_1|all-purpose flour
+flour_1|plain flour
+flour_1|self-raising flour
+flour_1|self-rising flour
+flour_1|white flour
+flour_1|gram flour
+flow_1|cash flow
+flu_1|bird flu
+flu_1|chicken flu
+flu_1|gastric flu
+flu_1|man flu
+flu_1|swine flu
+fluid_1|amber fluid
+fluid_1|amniotic fluid
+fluid_1|brake fluid
+fluid_1|correction fluid
+fluid_2|gender-fluid
+flush_2|hot flush
+flush_2|royal flush
+flute_1|nose flute
+foam_1|shaving foam
+focus_2|soft focus
+fodder_1|cannon fodder
+fold_1|fold-up
+follower_1|camp follower
+food_1|comfort food
+food_1|convenience food
+food_1|fast food
+food_1|finger food
+food_1|functional food
+food_1|health food
+food_1|junk food
+food_1|soul food
+food_1|slow food
+fool_1|April Fool
+foot_1|athlete’s foot
+foot_1|club foot
+foot_1|splay-foot
+foot_1|trench foot
+foot_1|flat-footed
+foot_1|sure-footed
+foot_2|first-foot
+foot_2|side-foot
+foot_2|wrong-foot
+football_1|fantasy football
+football_1|Gaelic football
+football_1|table football
+football_1|flag football
+football_1|touch football
+footer_1|first-footer
+footpath_1|long-distance footpath
+footpath_1|public footpath
+footprint_1|carbon footprint
+footprint_1|digital footprint
+force_1|labour force
+force_1|task force (2)
+force_1|air force
+force_1|police force
+force_1|security forces
+force_1|strike force
+force_1|task force (1)
+force_1|armed forces
+force_1|centrifugal force
+force_1|centripetal force
+force_1|strong force
+force_1|weak force
+force_1|tour de force
+force_1|life force
+forecast_1|shipping forecast
+forecast_1|weather forecast
+forest_1|cloud forest
+forgo_1|a foregone conclusion
+fork_1|toasting fork
+fork_1|tuning fork
+form_1|art form
+form_1|base form
+form_1|bound form
+form_1|canonical form
+form_1|combining form
+form_1|free form
+form_1|pro-form
+form_1|1040 form
+form_1|I-9 form
+form_1|order form
+form_1|W-2 form
+form_1|sixth form
+form_1|sixth-former
+former_1|sixth-former
+forty_1|Top 40
+fortitude_1|intestinal fortitude
+fortune_1|soldier of fortune
+forum_1|discussion forum (2)
+forum_1|discussion forum (1)
+forward_1|flash-forward
+forward_2|fashion-forward
+forward_3|fast-forward
+forward_4|centre forward
+forward_4|full forward
+forward_4|loose forward
+foul_3|professional foul
+foul_3|technical foul
+found_1|ill-founded
+found_1|well founded
+fountain_1|drinking fountain
+fountain_1|soda fountain
+four_1|Final Four
+fowl_1|guinea fowl
+fox_1|flying fox
+fraction_1|common fraction
+fraction_1|proper fraction
+fraction_1|vulgar fraction
+fracture_1|compound fracture
+fracture_1|greenstick fracture
+fracture_1|simple fracture
+frame_1|A-frame
+frame_1|climbing frame
+frame_1|time frame
+frame_1|freeze-frame
+frame_1|Zimmer frame™
+fraternity_1|Phi Beta Kappa
+fraud_1|wire fraud
+freak_1|control freak
+free_1|duty-free
+free_1|fat-free
+free_1|interest-free
+free_1|lead-free
+free_1|nuclear-free
+free_1|post-free
+free_1|rent-free
+free_1|smoke-free
+free_1|sugar-free
+free_1|tax-free
+free_2|scot-free
+freeze_1|freeze-frame
+freeze_2|brain freeze
+freezer_1|chest freezer
+freezer_1|fridge-freezer
+frenzy_1|feeding frenzy
+fresco_1|al fresco
+freshen_1|top something up
+freshener_1|air freshener
+fry_1|deep-fry
+fry_1|pan-fry
+fry_1|stir-fry
+fry_2|small fry
+fry_2|home fries
+friday_1|Black Friday
+friday_1|Good Friday
+friday_1|girl Friday
+friday_1|man Friday
+friend_1|bosom friend
+friend_1|fair-weather
+friend_1|false friend
+friend_1|four-legged friend
+friend_1|McKenzie friend
+friend_1|school friend
+friend_1|e-friend
+friend_1|flexible friend
+friendly_1|eco-friendly
+friendly_1|environmentally friendly
+friendly_1|family-friendly
+friendly_1|ozone-friendly
+friendly_1|user-friendly
+friendliness_1|user-friendliness
+fright_1|stage fright
+frill_1|no-frills
+fringe_1|Beyond the Fringe
+frog_1|tree frog
+front_1|shirt front
+front_1|Y-Fronts™
+front_1|front line
+front_1|home front
+front_1|popular front
+frost_1|Jack Frost
+frost_1|hoar frost
+fruit_1|dried fruit
+fruit_1|first fruit
+fruit_1|kiwi fruit
+fruit_1|low-hanging fruit
+fruit_1|sharon fruit
+fruit_1|soft fruit
+fruit_1|star fruit
+fuck_2|F-word
+fuel_1|alternative fuel
+fuel_1|fossil fuel
+fuel_1|nuclear fuel
+fulfilling_1|self-fulfilling
+full_1|full moon
+fund_1|slush fund
+fund_1|social fund
+fund_1|trust fund
+fund_1|hedge fund
+fund_1|mutual fund
+funk_1|jazz funk
+fur_1|fun fur
+furnace_1|blast furnace
+furnishings_1|soft furnishings
+furniture_1|door furniture
+furniture_1|street furniture
+fusion_1|cold fusion
+g_3|G and T
+g_3|G-string
+gag_2|gagging order
+gain_2|capital gain
+gallery_1|art gallery
+gallery_1|press gallery
+gallery_1|peanut gallery
+gallery_1|shooting gallery
+game_1|board game
+game_1|card game
+game_1|computer game
+game_1|panel game
+game_1|parlour game
+game_1|shell game
+game_1|video game
+game_1|war game
+game_1|ball game
+game_1|bowl game
+game_1|waiting game
+game_1|mind game
+game_1|big game
+game_1|fair game
+gaming_1|social gaming
+gaming_1|war gaming
+gang_1|chain gang
+gang_1|press gang
+gap_1|gender gap
+gap_1|generation gap
+gap_1|pay gap
+gap_1|wage gap
+garage_1|parking garage
+garden_1|community garden
+garden_1|kitchen garden
+garden_1|market garden
+garden_1|roof garden
+garden_1|beer garden
+garden_1|botanical garden
+garden_1|zoological garden
+gardener_1|landscape gardener
+gardener_1|market gardener
+gas_1|greenhouse gas
+gas_1|marsh gas
+gas_1|noble gas
+gas_1|Calor gas™
+gas_1|coal gas
+gas_1|natural gas
+gas_1|shale gas
+gas_1|CS gas
+gas_1|mustard gas
+gas_1|nerve gas
+gas_1|tear gas
+gas_1|gas station (1)
+gasp_2|last-gasp
+gate_1|starting gate
+gate_1|toll gate
+gate_1|wicket gate
+gateau_1|Black Forest gateau
+gatherer_1|hunter-gatherer
+gauge_1|narrow gauge
+gear_1|high gear
+gear_1|top gear
+gear_1|riot gear
+gear_1|riot gear
+gear_1|landing gear
+gearing_1|negative gearing
+geek_1|alpha geek
+gel_1|hand gel
+gel_1|silica gel
+gender_1|third gender
+general_1|adjutant general
+general_1|attorney general
+general_1|director general
+general_1|governor general
+general_1|secretary general
+general_1|solicitor general
+general_1|Surgeon General
+general_2|brigadier general
+general_2|captain general
+general_2|major general
+generation_1|first generation
+generation_1|first-generation
+generation_1|second-generation
+generation_1|beat generation
+generation_1|the lost generation
+generation_1|the me generation
+generation_1|third-generation
+generation_1|fourth-generation
+generation_1|next-generation
+gent_1|city gent
+geography_1|human geography
+geography_1|physical geography (1)
+giant_2|gas giant
+giant_2|red giant
+gym_1|jungle gym
+gin_1|pink gin
+gin_1|sloe gin
+girdle_1|panty girdle
+girl_1|day girl
+girl_1|flower girl
+girl_1|head girl
+girl_1|poster child
+girl_1|bachelor girl
+girl_1|Valley Girl
+girl_1|call girl
+girl_1|chorus girl
+girl_1|cover girl
+girl_1|office girl
+girl_1|paper girl
+girl_1|stable girl
+girl_1|working girl
+girl_1|old girl
+given_1|God-given
+gland_1|adrenal gland
+glass_1|cut glass
+glass_1|plate glass
+glass_1|safety glass
+glass_1|smoked glass
+glass_1|stained glass
+glass_1|straight glass
+glass_1|wine glass
+glass_1|dark glasses
+glass_1|magnifying glass
+glass_1|bell glass
+glass_1|looking glass
+glaze_1|double glazing
+glaze_1|double-glaze
+glider_1|hang-glider
+gliding_1|hang-gliding
+glory_1|reflected glory
+gloucester_1|Double Gloucester
+glove_1|oven glove
+go_1|no-go area
+go_2|get-up-and-go
+goal_1|drop goal
+goal_1|field goal
+goal_1|golden goal
+goal_1|own goal
+goat_1|billy goat
+goat_1|nanny goat
+god_1|honest-to-goodness
+godmother_1|fairy godmother
+goer_1|party-goer
+goggles_1|beer goggles
+going_2|easy-going
+going_2|ocean-going
+gold_1|fool’s gold
+golf_1|crazy golf
+goliath_1|David and Goliath
+gonorrhoea_1|venereal disease
+good_1|no-good
+good_1|feel-good
+good_2|do-gooder
+goodness_1|honest-to-goodness
+goodness_1|honest-to-goodness
+goods_1|baked goods
+goods_1|brown goods
+goods_1|capital goods
+goods_1|consumer goods
+goods_1|dry goods
+goods_1|durable goods
+goods_1|soft goods
+goods_1|white goods
+goods_1|damaged goods
+goose_1|barnacle goose
+goose_1|Canada goose
+goose_1|golden goose
+goose_1|wild goose chase
+governing_1|self-governing
+government_1|central government
+government_1|federal government
+government_1|local government
+government_1|minority government
+government_1|self-government
+government_1|student government
+government_1|big government
+gown_1|town and gown
+gown_1|dressing gown
+grab_2|land grab
+grab_2|power grab
+grab_2|smash-and-grab
+grabber_1|land grabber
+grace_1|saving grace
+grace_1|coup de grâce
+grace_1|saving grace
+grade_1|O grade
+grade_1|Standard Grade
+grade_1|high-grade
+grade_1|low-grade
+grammar_1|functional grammar
+grammar_1|generative grammar
+grammar_1|transformational grammar
+grammar_1|universal grammar
+grand_2|baby grand
+grand_2|concert grand
+graph_1|bar graph
+graph_1|line graph
+gratin_1|au gratin
+gravity_1|centre of gravity
+gravity_1|zero gravity
+grazing_1|zero grazing
+grease_1|elbow grease
+green_1|bottle-green
+green_1|lime-green
+green_1|pea-green
+green_1|sea-green
+green_2|bottle green
+green_2|lime green
+green_2|pea green
+green_2|sea green
+green_2|bowling green
+green_2|putting green
+greet_1|meet-and-greet
+greet_1|meet and greet
+grey_1|dapple grey
+grey_1|iron-grey
+grey_1|slate-grey
+grey_2|dapple grey
+grenade_1|fragmentation grenade
+grenade_1|hand grenade
+grenade_1|stun grenade
+grid_1|cattle grid
+grid_1|national grid
+grid_1|off-the-grid
+grill_1|mixed grill
+grinder_1|angle grinder
+grinder_1|organ grinder
+grip_1|key grip
+gritty_1|nitty-gritty
+groomed_1|well groomed
+ground_1|breeding ground
+ground_1|burial ground
+ground_1|dumping ground
+ground_1|home ground
+ground_1|hunting ground
+ground_1|parade ground
+ground_1|recreation ground
+ground_1|stamping ground
+ground_1|testing ground
+ground_1|training ground
+ground_1|common ground
+ground_1|high ground
+ground_1|middle ground
+ground_3|hamburger (2)
+grounded_1|well grounded
+group_1|age group
+group_1|blood group
+group_1|food group
+group_1|peer group
+group_1|action group
+group_1|advocacy group
+group_1|affinity group
+group_1|book group
+group_1|buzz group
+group_1|consumer group
+group_1|focus group
+group_1|ginger group
+group_1|in-group
+group_1|out-group
+group_1|user group
+grow_1|home-grown
+grown_1|full-grown
+grown_1|home-grown
+grubber_1|money-grubber
+guarantee_2|money-back guarantee
+guard_1|land guard
+guard_1|security guard
+guard_1|advance guard
+guard_1|the Home Guard
+guard_1|National Guard
+guard_1|old guard
+guard_1|shin guard
+guard_1|point guard
+guard_1|shooting guard
+guard_1|pulling guard
+guard_1|color guard
+guardian_1|property guardian
+guess_1|second-guess
+guest_1|house guest
+guest_1|paying guest
+guy_1|fall guy
+guy_1|Mr Nice Guy
+guy_1|wise guy
+guy_3|fall guy
+guy_3|Mr Nice Guy
+guy_3|wise guy
+guidance_1|marriage guidance
+guide_1|audio guide
+guignol_1|Grand Guignol
+guitar_1|air guitar
+guitar_1|lead guitar
+guitar_1|rhythm guitar
+gull_1|herring gull
+gum_1|xanthan gum
+gum_1|spirit gum
+gum_1|fruit gum
+gum_1|wine gum
+gun_1|BB gun
+gun_1|machine gun
+gun_1|ray gun
+gun_1|stun gun
+gun_1|sub-machine gun
+gun_1|tommy gun
+gun_1|zip gun
+gun_1|grease gun
+gun_1|snow gun
+gun_1|spray gun
+gun_1|big gun
+gun_1|laser gun
+gun_1|son of a gun
+guzzler_1|gas guzzler
+ha_1|funny ha-ha
+ha_1|hoo-ha
+hacker_1|phone hacker
+hacking_1|phone hacking
+hag_1|fag hag
+hair_1|big hair
+hair_1|camel hair
+hair_1|angel hair
+hair_1|cross hairs
+half_1|scrum half
+half_1|double time
+halfpenny_1|shove-halfpenny
+hall_1|entrance hall
+hall_1|city hall
+hall_1|dance hall
+hall_1|food hall
+hall_1|lecture hall
+hall_1|medical hall
+hall_1|music hall
+hall_1|study hall
+hall_1|town hall
+halloween_1|trick or treat
+hammer_1|claw hammer
+hand_1|hot hand
+hand_1|left-hand
+hand_1|right-hand
+hand_1|hour hand
+hand_1|minute hand
+hand_1|second hand
+hand_1|hired hand
+hand_1|nap hand
+hand_1|dab hand
+hand_1|hot hand
+hand_1|old hand
+hand_1|second-hand
+hand_1|hands-down
+hand_1|hand-to-mouth
+hand_1|hand-wringing
+handcuffs_1|golden handcuffs
+handicapped_1|mentally handicapped
+handle_2|love handles
+handlebar_1|drop handlebars
+handout_1|press release
+handset_1|remote control
+handshake_1|golden handshake
+harassment_1|sexual harassment
+hard_2|hard up
+hardy_1|half-hardy
+hare_1|jugged hare
+harlem_1|Cotton Club
+harm_1|actual bodily harm
+harm_1|grievous bodily harm
+harm_1|self-harm
+harm_2|self-harm
+harmony_1|close harmony
+harp_1|Celtic harp
+harp_1|Jew’s harp
+hat_1|bowler (2)
+hat_1|bobble hat
+hat_1|cowboy hat
+hat_1|hard hat
+hat_1|hat tip
+hat_1|pork-pie hat
+hat_1|sun hat
+hat_1|ten-gallon hat
+hat_1|top hat
+hat_1|cocked hat
+hat_1|hi-hat
+hat_1|old hat
+haul_2|long haul
+haul_2|short-haul
+have_1|have (got) something on somebody
+haven_1|safe haven
+haven_1|tax haven
+hawk_1|red-tailed hawk
+hazard_1|moral hazard
+head_1|death’s head
+head_1|big-head
+head_1|cross head
+head_1|loose head
+head_1|tight head
+headache_1|sick headache
+headed_1|big-headed
+headed_1|clear-headed
+headed_1|cool-headed
+headed_1|empty-headed
+headed_1|hard-headed
+headed_1|hot-headed
+headed_1|level-headed
+headed_1|light-headed
+headed_1|muddle-headed
+headed_1|pig-headed
+headed_1|red-headed
+headed_1|shock-headed
+headed_1|wrong-headed
+header_1|double-header
+headline_1|banner headline
+headquarters_1|general headquarters
+healer_1|faith healer
+healing_1|faith healing
+health_1|ill health
+heap_1|compost heap
+heap_1|slag heap
+hearing_1|hard of hearing
+heart_1|open-heart surgery
+heart_1|broken heart
+heart_1|big-hearted
+heart_1|bleeding heart
+heart_1|cold-hearted
+heart_1|faint-hearted
+heart_1|good-hearted
+heart_1|hard-hearted
+heart_1|kind-hearted
+heart_1|light-hearted
+heart_1|soft-hearted
+heart_1|stony-hearted
+heart_1|stout-hearted
+heart_1|tender-hearted
+heart_1|warm-hearted
+heart_1|Purple Heart
+heat_1|white heat
+heat_1|blood heat
+heat_1|prickly heat
+heat_1|dead heat
+heater_1|immersion heater
+heater_1|space heater
+heater_1|storage heater
+heating_1|central heating
+heating_1|district heating
+heavy_1|top-heavy
+heavyweight_1|light heavyweight
+heel_1|back-heel
+heel_1|Cuban heel
+heel_1|spike heel
+heel_1|well heeled
+heel_1|kitten heels
+heel_1|Achilles heel
+heel_1|down at heel
+helix_1|double helix
+hell_1|living hell
+hello_1|golden hello
+helmet_1|blue helmet
+helmet_1|crash helmet
+helmet_1|pith helmet
+help_2|self-help
+help_2|home help
+hen_1|mother hen
+hernia_1|hiatus hernia
+hero_1|folk hero
+hero_1|anti-hero
+herring_1|red herring
+high_1|high court
+high_1|high tide
+high_3|junior high school
+highness_1|Royal Highness
+hypothesis_1|null hypothesis
+hypothesis_1|Sapir-Whorf hypothesis
+hippy_1|flower power
+history_1|natural history
+history_1|oral history
+history_1|case history
+history_1|life history
+hit_1|king-hit
+hit_1|pinch-hit
+hit_2|king-hit
+hitch_2|technical hitch
+hitch_2|half hitch
+hitter_1|designated hitter
+hitter_1|no-hitter
+hitter_1|switch-hitter
+hitter_1|big hitter
+ho_1|ho ho
+hockey_1|street hockey
+hog_1|road hog
+hold_2|scissor hold
+holder_1|office-holder
+holder_1|record holder
+holder_1|title-holder
+holder_1|cigarette holder
+hole_1|f-hole
+hole_1|swallow hole
+hole_1|black hole
+hole_1|ozone hole
+hole_1|hidey-hole
+hole_1|priest’s hole
+hole_1|toad-in-the-hole
+hole_1|watering hole
+hole_1|Wookey Hole
+hole_1|plot hole
+hole_1|security hole
+hole_1|top-hole
+holy_1|holier-than-thou
+holiday_1|busman’s holiday
+holiday_1|package holiday
+holiday_1|August Bank Holiday
+holiday_1|bank holiday
+holiday_1|civic holiday
+holiday_1|legal holiday
+holiday_1|public holiday
+holiday_1|Spring Bank Holiday
+holiday_1|statutory holiday
+holiday_1|Summer Bank Holiday
+home_1|at-home
+home_1|forever home
+home_1|stay-at-home
+home_1|mobile home
+home_1|second home
+home_1|stately home
+home_1|broken home
+home_1|care home
+home_1|nursing home
+home_1|rest home
+homicide_1|justifiable homicide
+hon_1|Rt Hon
+honest_1|honest-to-goodness
+honour_1|maid of honour
+honour_1|matron of honour
+honour_1|roll of honour
+hoof_1|cloven hoof
+hook_1|fish hook
+hop_1|bunny-hop
+hop_1|bar-hop
+hop_1|channel-hop
+hop_2|bunny-hop
+hop_2|hip-hop
+hop_2|trip hop
+hope_2|white hope
+horn_1|basset horn
+horror_1|horror story
+horror_1|shock-horror
+horse_1|Quarter Horse
+horse_1|shire horse
+horse_1|pommel horse
+horse_1|vaulting horse
+horse_1|charley horse
+horse_1|clothes horse
+horse_1|hobby horse
+horse_1|rocking horse
+horse_1|saddle horse
+horse_1|stalking horse
+horse_1|Trojan horse
+horse_1|white horses
+horseback_1|devils on horseback
+horsebox_1|horse trailer
+hose_1|fire hose
+hose_1|pressure hose
+hospital_1|community hospital
+hospital_1|cottage hospital
+hospital_1|teaching hospital
+hostel_1|youth hostel
+hostess_1|air hostess
+hot_1|boiling hot
+hot_1|piping hot
+hot_1|red-hot
+hot_1|white-hot
+hot_1|hot stuff
+hotel_1|apartment hotel
+hotpot_1|Lancashire hotpot
+hound_1|Afghan hound
+hour_1|half hour
+hour_1|kilowatt-hour
+hour_1|man-hour
+hour_1|happy hour
+hour_1|lunch hour
+hour_1|rush hour
+hour_1|after-hours
+hour_1|zero-hours
+hour_1|witching hour
+hour_1|zero hour
+hourly_1|half-hourly
+hourly_2|half-hourly
+house_1|Buck House
+house_1|frame house
+house_1|mews house
+house_1|row house
+house_1|safe house
+house_1|show house
+house_1|halfway house
+house_1|oast house
+house_1|rest house
+house_1|Bush House
+house_1|clearing house
+house_1|in-house
+house_1|free house
+house_1|tied house
+house_1|lower house
+house_1|upper house
+house_1|front of house
+house_1|full house
+house_1|acid house
+house_1|art house
+house_1|open house
+household_1|the royal household
+housing_1|affordable housing
+housing_1|public housing
+housing_1|sheltered housing
+housing_1|social housing
+hug_2|bear hug
+hug_2|group hug
+huh_1|uh-huh
+humour_1|gallows humour
+humour_1|good humour
+humour_1|good-humoured
+humour_1|ill humour
+humour_1|ill-humoured
+humour_1|aqueous humour
+humour_1|vitreous humour
+hump_1|speed hump
+hunt_1|job-hunt
+hunt_2|Easter egg hunt
+hunt_2|scavenger hunt
+hunt_2|treasure hunt
+hunt_2|witch-hunt
+hunt_2|fox hunt
+hunter_1|fortune hunter
+hunter_1|bargain hunter
+hunter_1|house-hunter
+hunting_1|bargain hunting
+hunting_1|house-hunting
+husband_1|house husband
+hustle_2|side hustle
+hut_1|Nissen hut
+hut_1|Quonset hut™
+y_1|Y chromosome
+y_1|Y-Fronts™
+yard_1|backyard (1)
+yard_1|backyard (2)
+yard_1|knacker’s yard
+yard_1|marshalling yard
+yard_1|salvage yard
+yard_1|timber yard
+yard_1|Elegy Written in a Country Church Yard
+yard_1|New Scotland Yard
+yard_1|Scotland Yard
+yard_1|The Yard
+ice_1|black ice
+ice_1|dry ice
+ice_1|choc ice
+ice_1|icebreaker (2)
+ice_2|de-ice
+icing_1|royal icing
+id_2|caller ID
+identification_1|self-identification
+identity_1|mistaken identity
+identity_1|gender identity
+identity_1|self-identity
+idiot_1|village idiot
+idle_1|bone idle
+idol_1|matinee idol
+year_1|leap year
+year_1|new year
+year_1|gap year
+year_1|light year
+year_1|off year
+year_1|academic year
+year_1|financial year
+ill_1|ill health
+ill_1|ill will
+illusion_1|optical illusion
+image_1|graven image
+image_1|mirror image
+image_1|after-image
+image_1|body image
+image_1|self-image
+image_1|spitting image
+imaging_1|thermal imaging
+immigrant_1|digital immigrant
+immigrant_1|landed immigrant
+immolation_1|self-immolation
+immunity_1|herd immunity
+immunity_1|diplomatic immunity
+impact_1|low-impact
+importance_1|self-importance
+important_1|all-important
+important_1|self-important
+importantly_1|self-importantly
+impossible_1|mission impossible
+imprisonment_1|false imprisonment
+improvement_1|self-improvement
+improvement_1|home improvement
+improvisation_1|contact improvisation
+in_3|in-joke
+inch_1|column inch
+inclusion_1|social exclusion
+inclusive_1|all-inclusive
+incorrect_1|politically correct
+index_1|thumb index
+index_1|consumer price index
+index_1|Dow Jones Index
+index_1|FTSE index™
+index_1|Hang Seng Index
+index_1|Nikkei index
+index_1|price index
+index_1|retail price index
+index_1|share index
+index_1|stock index
+index_1|body mass index
+index_1|glycaemic index
+index_1|heat index
+index_1|refractive index
+indian_1|Anglo-Indian
+indian_1|Red Indian
+indian_1|West Indian
+indian_2|Anglo-Indian
+indian_2|West Indian
+indulgence_1|self-indulgence
+indulgent_1|self-indulgent
+industry_1|captain of industry
+industry_1|heavy industry
+industry_1|light industry
+industry_1|agro-industry
+industry_1|captain of industry
+industry_1|cottage industry
+industry_1|primary industry
+industry_1|secondary industry
+industry_1|service industry
+industry_1|smokestack industry
+industry_1|sunrise industry
+industry_1|sunset industry
+industry_1|tertiary industry
+industrial_1|agro-industrial
+industrial_1|post-industrial
+infection_1|cross-infection
+infection_1|yeast infection
+infinitive_1|split infinitive
+inflammatory_1|anti-inflammatory
+information_1|black information
+information_1|freedom of information
+informed_1|ill-informed
+informed_1|well informed
+injection_1|fuel injection
+injury_1|personal injury
+ink_1|Indian ink
+ink_1|pen-and-ink
+inn_1|coaching inn
+inn_1|motor inn
+inquisition_1|Spanish Inquisition
+insect_1|stick insect
+insecurity_1|food insecurity
+insemination_1|artificial insemination
+inspector_1|chief inspector
+inspiring_1|awe-inspiring
+instinct_1|herd instinct
+instinct_1|killer instinct
+institute_1|collegiate institute
+instrument_1|stringed instrument
+instrument_1|wind instrument
+instrument_1|blunt instrument (1)
+instrument_1|blunt instrument (2)
+instrument_1|statutory instrument
+insurance_1|employment insurance
+insurance_1|life insurance
+insurance_1|National Insurance
+insurance_1|third-party insurance
+insurgency_1|counter-insurgency
+integration_1|vertical integration
+intelligence_1|artificial intelligence
+intelligence_1|emotional intelligence
+intelligence_1|counter-intelligence
+intensive_1|capital-intensive
+intensive_1|labour-intensive
+intention_1|well intentioned
+interest_1|human interest
+interest_1|love interest
+interest_1|compound interest
+interest_1|simple interest
+interest_1|self-interest
+interest_1|vested interest
+interest_1|controlling interest
+interest_1|vested interest
+interface_1|application programming interface
+interface_1|user interface
+internal_1|internal market
+intervention_1|non-intervention
+interventionism_1|non-interventionism
+interventionist_2|non-interventionist
+intoxicated_1|driving while intoxicated
+intuitive_1|counter-intuitive
+intuitively_1|counter-intuitively
+invasion_1|pitch invasion
+investment_1|foreign direct investment
+investment_1|inward investment
+investor_1|angel (4)
+involved_1|self-involved
+iron_1|cast iron
+iron_1|pig iron
+iron_1|wrought iron
+iron_1|branding iron
+iron_1|grappling iron
+iron_1|soldering iron
+iron_1|tire iron
+irony_1|dramatic irony
+irony_1|tragic irony
+islam_1|Five Pillars of Islam
+island_1|desert island
+island_1|safety island
+isle_1|Emerald Isle
+isolate_1|self-isolate
+isolation_1|self-isolation
+issue_1|side issue
+issue_1|wedge issue
+issue_1|non-issue
+issue_1|back issue
+issue_1|standard issue
+issue_1|rights issue
+itch_2|jock itch
+item_1|line item
+item_1|collector’s item
+ivy_1|poison ivy
+jack_1|jumping jack
+jack_1|Union Jack
+jacket_1|bomber jacket
+jacket_1|dinner jacket
+jacket_1|donkey jacket
+jacket_1|flak jacket
+jacket_1|flight jacket
+jacket_1|flying jacket
+jacket_1|life jacket
+jacket_1|smoking jacket
+jacket_1|sports jacket
+jam_1|traffic jam
+jam_2|jam-packed
+jar_1|jam jar
+jar_1|Kilner jar™
+jar_1|Mason jar
+jar_1|cookie jar
+jar_1|bell jar
+jaw_1|lantern-jawed
+jaw_1|slack-jawed
+jaw_1|open-jaw
+jazz_1|acid jazz
+jeans_1|blue jeans
+jelly_1|KY jelly™
+jelly_1|petroleum jelly
+jelly_1|royal jelly
+jeopardy_1|double jeopardy
+jerome_1|George Gershwin
+jet_1|jump jet
+jewel_1|crown jewels
+jewellery_1|costume jewellery
+jim_2|Sesame Street
+job_1|day job
+job_1|desk job
+job_1|blow job
+job_1|nose job
+job_1|paint job
+job_1|hatchet job
+job_1|put-up job
+job_1|snow job
+jockey_1|champion jockey
+jockey_1|disc jockey
+jockey_1|radio jockey
+jockey_1|video jockey
+joint_2|ball-and-socket joint
+joint_2|hip joint
+joint_2|clip joint
+joint_2|juke joint
+jointed_1|double-jointed
+joke_1|in-joke
+joke_1|knock-knock joke
+joke_1|practical joke
+journalism_1|chequebook journalism
+journalism_1|citizen journalism
+journalism_1|gonzo journalism
+journalism_1|yellow journalism
+journalist_1|citizen journalist
+jubilee_1|diamond jubilee
+jubilee_1|golden jubilee
+jubilee_1|silver jubilee
+judge_1|touch judge
+judgement_1|value judgement
+judgemental_1|non-judgemental
+jump_2|broad jump
+jump_2|bungee jump
+jump_2|high jump
+jump_2|long jump
+jump_2|ski jump
+jump_2|triple jump
+jump_2|water jump
+junction_1|box junction
+junction_1|T-junction
+jungle_1|concrete jungle
+jury_1|grand jury
+justice_1|poetic justice
+justice_1|rough justice
+justice_1|social justice
+justice_1|restorative justice
+justice_1|miscarriage of justice
+justice_1|chief justice
+kansas_1|Kansas-Nebraska Act
+kappa_1|Phi Beta Kappa
+kart_1|go-kart
+kebab_1|doner kebab
+keeping_1|safe keeping
+keg_1|powder keg
+key_1|Allen key™
+key_1|key card
+key_1|master key
+key_1|pass key
+key_1|Alt key
+key_1|hot key
+key_1|soft key
+key_1|tab key
+key_1|off-key
+key_1|low-key
+kennel_1|boarding kennel
+kent_1|Man of Kent
+kick_1|drop-kick
+kick_1|fly-kick
+kick_2|corner kick
+kick_2|drop kick
+kick_2|fly kick
+kick_2|free kick
+kick_2|goal kick
+kick_2|high kick
+kick_2|penalty kick
+kid_1|boomerang kid
+kid_1|whizz-kid
+kiddie_1|script kiddie
+killer_1|giant-killer
+killer_1|killer instinct
+killer_1|serial killer
+killing_1|honour killing
+killing_1|mercy killing
+killing_1|unlawful killing
+kin_1|next of kin
+king_2|pearly king
+kiss_1|air-kiss
+kiss_2|air kiss
+kiss_2|French kiss
+kiss_3|KISS principle
+kit_1|mess kit
+kitchen_1|soup kitchen
+kite_1|box kite
+knickers_1|French knickers
+knife_1|bowie knife
+knife_1|butter knife
+knife_1|carving knife
+knife_1|craft knife
+knife_1|fish knife
+knife_1|flick knife
+knife_1|palette knife
+knife_1|paring knife
+knife_1|sheath knife
+knife_1|Stanley knife™
+knife_1|Swiss Army knife™
+knight_1|black knight
+knight_1|white knight
+knit_1|close-knit
+knit_1|tight-knit
+knot_1|granny knot
+knot_1|Gordian knot
+knot_1|reef knot
+knot_1|slip knot
+knot_1|square knot
+knot_1|Windsor knot
+know_1|well known (2)
+know_1|need-to-know
+know_1|don’t-know
+know_1|well known (1)
+knowledge_1|carnal knowledge
+knowledge_1|general knowledge
+knowledge_1|self-knowledge
+known_1|well known
+knuckle_1|bare-knuckle
+korea_1|North Korea
+korea_1|South Korea
+l_2|L-plate
+la_1|à la
+lab_1|crime lab
+label_1|off-label
+label_1|own-label
+label_1|white label
+labor_1|day labor
+laboratory_1|language laboratory
+labour_1|bonded labour
+labour_1|forced labour
+labour_1|hard labour
+labour_1|slave labour
+labour_1|child labour
+labourer_1|bonded labourer
+labourer_1|day labourer
+lace_2|lace-up
+ladder_1|rope ladder
+lady_3|Peeping Tom
+lady_4|bag lady
+lady_4|cleaning lady
+lady_4|dinner lady
+lady_4|First Lady
+lady_4|dragon lady
+lady_4|leading lady (1)
+lady_4|lollipop lady
+lady_4|lunch lady
+lady_4|old lady
+lady_4|painted lady
+lady_4|White Lady
+lag_2|jet lag
+lag_2|old lag
+lake_1|Erie Canal
+lake_3|ribbon lake
+lake_3|soda lake
+lamb_1|baa-lamb
+lamp_1|arc lamp
+lamp_1|Davy lamp
+lamp_1|floor lamp
+lamp_1|fog lamp
+lamp_1|gas lamp
+lamp_1|hurricane lamp
+lamp_1|lava lamp
+lamp_1|safety lamp
+lamp_1|spirit lamp
+lamp_1|standard lamp
+lamp_1|table lamp
+land_1|dry land
+land_1|common land
+land_1|no man’s land
+land_1|cloud cuckoo land
+land_1|la-la land
+land_1|never-never land
+land_1|Promised Land
+land_2|crash-land
+landing_1|crash landing
+landing_1|forced landing
+landlord_1|absentee landlord
+landmark_1|listed building
+lane_1|memory lane
+lane_1|bicycle lane
+lane_1|bike lane
+lane_1|breakdown lane
+lane_1|bus lane
+lane_1|cycle lane
+lane_1|fast lane
+lane_1|HOV lane
+lane_1|outside lane
+lane_1|passing lane
+lane_1|slow lane
+lane_1|air lane
+lane_1|sea lane
+language_1|first language
+language_1|heritage language
+language_1|modern language
+language_1|object language
+language_1|second language
+language_1|target language
+language_1|tone language
+language_1|artificial language
+language_1|auxiliary language
+language_1|natural language
+language_1|world language
+language_1|bad language
+language_1|body language
+language_1|sign language
+language_1|assembly language
+language_1|command language
+language_1|query language
+lantern_1|Chinese lantern
+lantern_1|magic lantern
+lapse_1|time-lapse
+lashing_1|tongue-lashing
+last_1|last-gasp
+lasting_1|long-lasting
+late_1|late night
+latin_1|vulgar Latin
+laugh_2|belly laugh
+launder_1|money laundering
+laureate_1|Poet Laureate
+law_1|blue law
+law_1|by-law
+law_1|lemon law
+law_1|licensing laws
+law_1|martial law
+law_1|natural law
+law_1|canon law
+law_1|case law
+law_1|civil law
+law_1|common law
+law_1|criminal law
+law_1|private law
+law_1|statute law
+law_1|Murphy’s Law
+law_1|Parkinson’s law
+law_1|Sod’s Law
+lead_2|extension lead
+lead_2|jump lead
+lead_3|white lead
+leader_1|floor leader
+leader_1|majority leader
+leader_1|minority leader
+leader_1|squadron leader
+leader_1|thought leader
+leader_1|loss-leader
+leader_1|market leader
+leadership_1|thought leadership
+leaf_1|bay leaf
+leaf_1|curry leaf
+leaf_1|fig leaf
+leaf_1|maple leaf
+leaf_1|tea leaf
+leaf_1|loose-leaf
+league_1|big league
+league_1|Little League
+league_1|major league
+league_1|Major League Baseball
+league_1|minor league
+league_1|Premier League
+league_1|Rugby League
+league_1|bush-league
+league_1|Ivy League
+leap_2|quantum leap
+learned_1|friend (6)
+learning_1|blended learning
+learning_1|community language learning
+learning_1|distance learning
+learning_1|e-learning
+learning_1|machine learning
+learning_1|m-learning
+learning_1|mobile learning
+learning_1|programmed learning
+learning_1|remote learning
+learning_1|book learning
+leather_1|chamois (2)
+leather_1|patent leather
+leave_2|compassionate leave
+leave_2|family leave
+leave_2|maternity leave
+leave_2|parental leave
+leave_2|paternity leave
+leave_2|sick leave
+ledge_1|window ledge
+left_3|hard left
+leg_1|bow legs
+leg_1|daddy-long-legs
+leg_1|dead leg
+leg_1|inside leg
+leg_1|peg leg
+leg_1|sea legs
+leg_1|cross-legged
+leg_1|dog-leg
+lemon_1|bitter lemon
+lender_1|payday lender
+lending_1|payday lending
+lending_1|predatory lending
+length_1|focal length
+length_1|feature-length
+length_1|full-length
+length_1|knee-length
+length_1|shoulder-length
+lens_1|telephoto lens
+lens_1|wide-angle lens
+lens_1|zoom lens
+lentigo_1|liver spot
+lesbian_2|lipstick lesbian
+lesson_1|object lesson
+let_1|buy-to-let
+letter_1|air letter
+letter_1|chain letter
+letter_1|covering letter
+letter_1|dead letter
+letter_1|Dear John letter
+letter_1|French letter
+letter_1|love letter
+letter_1|open letter
+letter_1|capital letter
+lettuce_1|cos lettuce
+lettuce_1|iceberg lettuce
+lettuce_1|lamb’s lettuce
+level_1|eye level
+level_1|sea level
+level_1|water level
+level_1|split-level
+level_1|A level
+level_1|entry-level
+level_1|O level
+level_1|high-level
+level_1|top-level
+lever_1|gear lever
+liability_1|limited liability
+lib_1|ad lib
+lib_1|ad-lib
+liberty_1|civil liberty
+library_1|copyright library
+library_1|lending library
+library_1|mobile library
+library_1|reference library
+licence_1|driving licence
+licence_1|marriage licence
+licence_1|off-licence
+licence_1|provisional licence
+licence_1|special licence
+licence_1|television licence
+licence_1|TV licence
+license_2|driver’s license
+licking_1|arse-licking
+licking_1|ass-licking
+lid_1|skid lid
+lie_4|white lie
+lieutenant_1|first lieutenant
+lieutenant_1|flight lieutenant
+lieutenant_1|second lieutenant
+lieutenant_1|sub lieutenant
+lieutenant_1|Lord Lieutenant
+life_1|pro-life
+life_1|change of life
+life_1|half-life
+life_1|long-life
+life_1|shelf life
+life_1|real-life
+life_1|true-life
+life_1|good life
+life_1|high life
+life_1|low life
+life_1|low-life
+life_1|love life
+life_1|sex life
+life_1|still life
+lift_2|button lift
+lift_2|forklift truck
+lift_2|ski lift
+light_1|fill light
+light_1|first light
+light_1|half-light
+light_1|black light
+light_1|Northern Lights
+light_1|backup light
+light_1|brake light
+light_1|city lights
+light_1|fairy lights
+light_1|green light
+light_1|hazard lights
+light_1|key light
+light_1|leading light
+light_1|red light
+light_1|stop light
+light_1|street light
+light_1|tail light
+light_1|traffic light
+light_1|tube light
+light_1|Very light
+lighting_1|strip lighting
+lighting_1|track lighting
+lightning_1|forked lightning
+lightning_1|heat lightning
+lightning_1|sheet lightning
+lily_1|arum lily
+lily_1|calla lily
+lily_1|water lily
+lime_1|slaked lime
+lime_1|soda lime
+limit_1|age limit
+limit_1|speed limit
+limit_1|time limit
+limit_1|off-limits
+limitation_1|damage limitation
+limitation_1|statute of limitations
+limiting_1|life-limiting
+limousine_1|stretch limo
+line_1|bar line
+line_1|dotted line
+line_1|in-line
+line_1|load line
+line_1|finishing line
+line_1|fire line
+line_1|foul line
+line_1|goal line
+line_1|chorus line
+line_1|defensive line
+line_1|offensive line (1)
+line_1|picket line
+line_1|fixed-line
+line_1|open line
+line_1|main line
+line_1|bottom line
+line_1|command line
+line_1|subject line
+line_1|top line
+line_1|clothes line
+line_1|fishing line
+line_1|washing line
+line_1|zip line
+line_1|power line
+line_1|dividing line (2)
+line_1|fault line (1)
+line_1|International Date Line
+line_1|state line
+line_1|dividing line (1)
+line_1|fault line (2)
+line_1|poverty line
+line_1|red line
+line_1|hard line
+line_1|hard-line
+line_1|party line
+line_1|first-line
+line_1|line manager
+line_1|A-line
+line_1|bikini line
+line_1|assembly line
+line_1|production line
+line_1|front line
+linen_1|bed linen
+linen_1|table linen
+liner_1|bin liner
+liner_1|lip liner
+linguistics_1|applied linguistics
+linguistics_1|comparative linguistics
+linguistics_1|computational linguistics
+linguistics_1|historical linguistics
+linguistics_1|structural linguistics
+link_1|missing link
+lion_1|ant lion
+lion_1|mountain lion
+lion_1|sea lion
+lip_1|cleft lip
+lip_1|tight-lipped
+liquid_1|washing-up liquid
+liquor_1|malt liquor
+list_1|A-list
+list_1|active list
+list_1|B-list
+list_1|bucket list
+list_1|dean’s list
+list_1|disabled list
+list_1|hit list
+list_1|laundry list
+list_1|mailing list
+list_1|reading list
+list_1|shopping list
+list_1|to-do list
+list_1|waiting list
+list_1|wait list
+list_1|wine list
+list_1|wish list
+list_1|word list
+list_1|Z-list
+literacy_1|computer literacy
+literate_1|computer-literate
+literature_1|comparative literature
+live_1|hand-to-mouth
+liverpool_1|the Mersey beat
+lizard_1|lounge lizard
+load_2|front-load
+loaf_1|cottage loaf
+loaf_1|French loaf
+loaf_1|meat loaf
+loaf_1|nut loaf
+loathing_1|self-loathing
+lobby_1|division lobby
+lobe_1|frontal lobe
+lobster_1|Norway lobster
+locative_1|instrumental (2)
+lock_2|combination lock
+lock_2|mortise lock
+lock_2|Yale lock™
+lock_2|D-lock
+lock_2|time lock
+lock_2|anti-lock
+loco_1|in loco parentis
+loft_1|organ loft
+log_1|yule log
+long_1|age-long
+long_1|week-long
+long_1|year-long
+long_3|longed-for
+look_1|forward-looking
+look_1|good-looking
+look_2|good-looking
+look_2|wet look
+lord_1|Sea Lord
+lord_1|drug lord
+lord_1|the Law Lords
+loss_1|capital loss
+loss_1|dead loss
+lost_1|long-lost
+lot_4|job lot
+lot_4|parking lot
+lottery_1|postcode lottery
+lou_2|‘Babe’ Ruth
+loudspeaker_1|public address system
+lounge_1|sun lounge
+lout_1|lager lout
+lout_1|litter lout
+love_1|self-love
+love_1|tough love
+love_1|tug of love
+love_1|courtly love
+love_1|free love
+love_1|puppy love
+loving_1|fun-loving
+loving_1|peace-loving
+low_1|low-cut
+luck_1|beginner’s luck
+luck_1|hard-luck story
+lucky_2|happy-go-lucky
+luggage_1|hand luggage
+luggage_1|left luggage office
+lunch_1|bag lunch
+lunch_1|box lunch
+lunch_1|packed lunch
+lunch_1|ploughman’s lunch
+lung_1|black lung
+mac_1|Big Mac™
+mac_1|whisky mac
+machine_1|answering machine
+machine_1|cash machine
+machine_1|coffee machine
+machine_1|drum machine
+machine_1|flying machine
+machine_1|fruit machine
+machine_1|gaming machine
+machine_1|kidney machine
+machine_1|rowing machine
+machine_1|sewing machine
+machine_1|slot machine
+machine_1|time machine
+machine_1|vending machine
+machine_1|voting machine
+machine_1|war machine (2)
+machine_1|wave machine
+machine_1|wind machine
+machine_1|war machine (1)
+mackerel_1|horse mackerel
+mad_1|barking mad
+made_1|custom-made
+made_1|machine-made
+made_1|ready-made
+made_1|self-made
+made_1|tailor-made
+madness_1|March Madness™
+magic_1|black magic
+magnet_1|babe magnet
+magnitude_1|order of magnitude
+magnitude_1|absolute magnitude
+magnitude_1|apparent magnitude
+maid_1|old maid
+mail_1|certified mail
+mail_1|snail mail
+mail_1|V-mail™
+mail_1|direct mail
+mail_1|fan mail
+mail_1|hate mail
+mail_1|junk mail
+mail_1|return mail
+mail_1|surface mail
+mail_1|electronic mail
+main_2|ring main
+main_2|rising main
+main_2|water main
+maintenance_1|high-maintenance
+maintenance_1|low-maintenance
+maintenance_1|child maintenance
+maize_1|corn on the cob
+major_2|drum major
+major_2|sergeant major
+majority_1|moral majority
+majority_1|silent majority
+majority_1|absolute majority
+majority_1|overall majority
+maker_1|coffee maker
+maker_1|decision-maker
+maker_1|film-maker
+making_1|cringe-making
+making_1|decision-making
+making_1|epoch-making
+making_1|film-making
+making_1|loss-making
+making_1|mischief-making
+making_1|non-profit
+making_1|profit-making
+making_1|sick-making
+male_2|alpha male
+male_2|dead white male
+mall_1|strip mall
+man_1|best man
+man_1|dirty old man
+man_1|Green Man
+man_1|ladies’ man
+man_1|leading man
+man_1|men’s room
+man_1|new man
+man_1|straw man
+man_1|family man
+man_1|god-man
+man_1|one-man
+man_1|G-man
+man_1|right-hand man
+man_1|yes-man
+man_1|fancy man
+man_1|old man
+man_1|he-man
+man_1|main man
+manage_1|stage-manage
+management_1|event management
+management_1|self-management
+manager_1|actor-manager
+manager_1|event manager
+manager_1|floor manager
+manager_1|fund manager
+manager_1|line manager
+manager_1|middle manager
+manager_1|stage manager
+manatee_1|sea cow
+maniac_2|sex maniac
+manner_1|table manners
+manner_1|bedside manner
+manner_1|comedy of manners
+mannered_1|ill-mannered
+mannered_1|mild-mannered
+mannered_1|well mannered
+map_1|Ordnance Survey
+map_1|relief map
+map_1|road map
+map_1|heat map
+map_1|mind map
+maple_1|sugar maple
+march_2|forced march
+march_2|route march
+march_2|wedding march
+margin_1|margin of error
+marie_2|Frederick Ashton
+mark_2|exclamation mark
+mark_2|expression mark
+mark_2|punctuation mark
+mark_2|question mark
+mark_2|quotation marks
+mark_2|stress mark
+mark_2|black mark
+mark_2|scorch mark
+mark_2|beauty mark
+mark_2|scent mark
+mark_2|low-water mark
+mark_4|Huckleberry Finn
+mark_4|Tom Sawyer
+marker_1|discourse marker
+marker_1|Magic Marker™
+market_1|farmers’ market
+market_1|flea market
+market_1|meat market
+market_1|wet market
+market_1|labour market
+market_1|common market
+market_1|market research
+market_1|mass-market
+market_1|black market
+market_1|free market
+market_1|grey market
+market_1|market forces
+market_1|open market
+market_1|bear market
+market_1|bull market
+market_1|capital market
+market_1|money market
+marketeer_1|black marketeer
+marketing_1|direct marketing
+marketing_1|viral marketing
+marriage_1|arranged marriage
+marriage_1|civil marriage
+marriage_1|equal marriage
+marriage_1|open marriage
+marsh_1|salt marsh
+marshal_1|air chief marshal
+marshal_1|air marshal
+marshal_1|air vice-marshal
+marshal_1|field marshal
+marshal_1|sky marshal
+masculinity_1|toxic masculinity
+mash_1|bangers and mash
+mask_1|face mask (1)
+mask_1|gas mask
+mask_1|oxygen mask
+mask_1|death mask
+mass_1|body mass index
+mass_1|centre of mass
+mass_1|critical mass
+mass_1|land mass
+mass_1|relative atomic mass
+mass_2|mass-market
+mass_2|mass media
+mass_2|weapon of mass destruction
+mass_4|black mass
+mast_1|half mast
+master_1|harbour master
+master_1|question master
+master_1|wardrobe master
+master_1|puppet master
+master_1|past master
+master_1|old master
+mastiff_1|bull mastiff
+mat_1|bath mat
+mat_1|mouse mat
+mat_1|prayer mat
+mat_1|welcome mat
+mat_1|beer mat
+mat_1|place mat
+mat_1|table mat
+match_1|return match
+match_1|shooting match
+match_1|shouting match
+match_1|slanging match
+match_1|Test match
+match_1|safety match
+match_1|love match
+mate_1|age-mate
+mate_1|running mate
+mate_1|first mate
+mater_1|alma mater
+material_1|raw material
+materialism_1|dialectical materialism
+matrix_1|dot matrix printer
+matter_1|matter-of-fact
+matter_1|dark matter
+matter_1|grey matter
+matter_1|subject matter
+matter_1|matter-of-fact
+matting_1|coconut matting
+mattress_1|air mattress
+meadow_1|salt marsh
+meadow_1|water meadow
+meal_1|ready meal
+meal_1|barium meal
+meal_1|mealie meal
+mean_3|geometric mean
+meaning_1|lexical meaning
+meaning_2|well meaning
+measles_1|German measles
+measure_2|half measures
+measure_2|safety measure
+measure_2|customary measure
+measure_2|tape measure
+meat_1|dark meat
+meat_1|lunch meat
+meat_1|luncheon meat
+meat_1|red meat
+meat_1|sausage meat
+meat_1|white meat
+mechanic_1|quantum mechanics
+mechanism_1|the ERM
+mechanism_1|defence mechanism
+med_1|pre-med
+medal_1|bronze medal
+medal_1|gold medal
+medal_1|silver medal
+medallist_1|bronze medallist
+medallist_1|gold medallist
+medallist_1|silver medallist
+media_1|mainstream media
+media_1|mass media
+media_1|new media
+media_1|social media
+media_1|magnetic media
+media_1|mixed media
+medicate_1|self-medicate
+medicine_1|alternative medicine
+medicine_1|Ayurvedic medicine
+medicine_1|complementary medicine
+medicine_1|defensive medicine
+medicine_1|family medicine
+medicine_1|fringe medicine
+medicine_1|internal medicine
+medicine_1|socialized medicine
+medicine_1|sports medicine
+medicine_1|traditional medicine
+medicine_1|cough medicine
+meditation_1|transcendental meditation
+medium_2|mass media
+medium_2|mixed media
+meet_2|swap meet
+meeting_1|annual general meeting
+meeting_1|town meeting
+meeting_1|race meeting
+meeting_1|prayer meeting
+melon_1|honeydew melon
+member_1|charter member
+member_1|founder member
+member_1|service member
+member_1|Assembly Member
+member_1|private member
+member_1|regional member
+membrane_1|mucous membrane
+memory_1|muscle memory
+memory_1|photographic memory
+memory_1|folk memory
+memory_1|false memory
+memory_1|flash memory
+memory_1|random-access memory
+memory_1|read-only memory
+memory_1|virtual memory
+mend_1|fence-mending
+menopause_1|male menopause
+mentality_1|siege mentality
+mention_1|above-mentioned
+menu_1|tasting menu
+menu_1|drop-down menu
+merchant_1|builders’ merchant
+mess_1|hot mess
+message_1|voice message
+message_1|error message
+message_1|direct message
+message_1|instant message
+message_1|text message
+message_1|mixed message
+message_2|text-message
+messaging_1|instant messaging
+messaging_1|picture messaging
+messaging_1|text-messaging
+messenger_1|instant messenger
+metal_1|base metal
+metal_1|heavy metal
+metal_1|noble metal
+metal_1|precious metal
+metal_1|transition metal
+metal_1|nu metal
+meteor_1|shooting star
+meter_1|light meter
+meter_1|exposure meter
+meter_1|postage meter
+method_1|barrier method
+method_1|direct method
+method_1|grammar translation method
+method_1|rhythm method
+mezzanine_1|dress circle
+miami_1|the Miami Herald
+microscope_1|electron microscope
+middle_1|monkey in the middle
+middle_1|piggy in the middle
+middle_1|middle-of-the-road
+midterm_1|long-term
+midterm_1|short-term
+midterm_1|half-term
+migrant_1|economic migrant
+mike_1|open mic
+mile_1|Air Miles™
+mile_1|country mile
+mile_1|food mile
+mile_1|nautical mile
+mile_1|sea mile
+milk_1|condensed milk
+milk_1|dry milk
+milk_1|evaporated milk
+milk_1|malted milk
+milk_1|moose milk
+milk_1|powdered milk
+milk_1|skimmed milk
+milk_1|mother’s milk
+milk_1|soya milk
+mill_1|content mill
+mill_1|rolling mill
+mill_1|rumour mill
+mill_1|run-of-the-mill
+mind_1|frame of mind
+mind_1|presence of mind
+mind_1|one-track mind
+mind_1|mind-blowing
+minded_1|absent-minded
+minded_1|bloody-minded
+minded_1|broad-minded
+minded_1|fair-minded
+minded_1|feeble-minded
+minded_1|high-minded
+minded_1|like-minded
+minded_1|narrow-minded
+minded_1|open-minded
+minded_1|right-minded
+minded_1|single-minded
+minded_1|small-minded
+minded_1|strong-minded
+minded_1|tough-minded
+mine_2|coal mine
+mine_2|gold mine
+mine_2|limpet mine
+miner_1|coal miner
+mining_1|data mining
+mining_1|placer mining
+mining_1|strip mining
+minister_1|first minister
+minister_1|prime minister
+minority_1|ethnic minority
+minority_1|visible minority
+minute_1|last-minute
+minute_1|up-to-the-minute
+mirror_1|rear-view mirror
+mirror_1|two-way mirror
+mirror_1|wing mirror
+miss_2|near miss
+missile_1|ballistic missile
+missile_1|cruise missile
+missile_1|guided missile
+mist_1|red mist
+mist_1|Scotch mist
+mistress_1|wardrobe mistress (1)
+mite_1|dust mite
+myth_1|urban myth
+mix_2|Bombay mix
+mixed_1|ready-mixed
+mixed_1|mixed-race
+mixer_1|cement mixer
+mixture_1|dolly mixture
+mixture_1|cough mixture
+mo_1|slo-mo
+mob_1|lynch mob
+mobile_1|upwardly mobile
+mobility_1|upward mobility
+moccasin_1|water moccasin
+mode_1|safe mode
+mode_1|sleep mode
+mode_1|à la mode
+model_1|role model
+model_1|glamour model
+modem_1|cable modem
+modify_1|genetically modified
+mold_1|leaf mould
+mom_1|soccer mom
+moment_1|senior moment
+moment_1|aha moment
+moment_1|eureka moment
+monarchy_1|constitutional monarchy
+monday_1|Black Monday
+monday_1|blue Monday
+monday_1|Cyber Monday
+monday_1|Easter Monday
+monday_1|Whit Monday
+money_1|beer money
+money_1|blood money
+money_1|danger money
+money_1|even money
+money_1|gate money
+money_1|hush money
+money_1|pin money
+money_1|pocket money
+money_1|seed money
+money_1|ship money
+money_1|soft money
+money_1|spending money
+money_1|folding money
+money_1|funny money
+money_1|Maundy money
+money_1|paper money
+money_1|ready money
+money_1|new money
+money_1|old money
+monkey_1|rhesus monkey
+monkey_1|spider monkey
+monkey_1|grease monkey
+monogamy_1|serial monogamy
+monologue_1|dramatic monologue
+monologue_1|interior monologue
+monster_1|green-eyed monster
+montgomery_1|Rosa Parks
+month_1|calendar month
+month_1|lunar month
+monument_1|ancient monument
+moon_1|full moon
+moon_1|half-moon
+moon_1|harvest moon
+moon_1|new moon
+mop_1|squeegee (2)
+more_2|any more
+morning_1|coffee morning
+morning_1|good morning
+mortality_1|infant mortality
+mortar_1|bricks and mortar
+mortgage_1|endowment mortgage
+mortgage_1|repayment mortgage
+moss_1|peat moss
+moss_1|Spanish moss
+moth_1|gypsy moth
+moth_1|silk moth
+mother_1|birth mother
+mother_1|den mother
+mother_1|earth mother
+mother_1|queen mother
+mother_1|surrogate mother
+mother_1|tiger mother
+mother_1|Mother Superior
+motion_1|Brownian motion
+motion_1|perpetual motion
+motion_1|slow motion
+motion_1|stop-motion
+motivated_1|self-motivated
+motor_1|outboard motor
+mould_1|leaf mould
+moulding_1|injection moulding
+mounted_1|wall-mounted
+mouse_1|field mouse
+moustache_1|handlebar moustache
+moustache_1|toothbrush moustache
+moustache_1|walrus moustache
+mouth_1|foot-and-mouth disease
+mouth_1|open-mouthed
+mouth_1|foul-mouthed
+mouth_1|mealy-mouthed
+mouth_1|potty-mouthed
+mouth_1|hand-to-mouth
+move_2|false move
+movement_1|pincer movement
+movement_1|civil rights movement
+mover_1|prime mover
+mover_1|earth mover
+movie_1|action movie
+movie_1|B-movie
+movie_1|buddy movie
+movie_1|road movie
+movie_1|snuff movie
+mp_1|Euro-MP
+mud_1|mud-slinging
+mulatto_1|mixed-race
+multiple_2|least common multiple
+multiple_2|lowest common multiple
+multiracial_1|mixed-race
+mummy_1|yummy mummy
+muscle_1|abductor (2)
+muscle_1|ciliary muscle
+muscle_1|skeletal muscle
+muscle_1|smooth muscle
+museum_1|folk museum
+mushroom_1|button mushroom
+mushroom_1|magic mushroom
+mushroom_1|oyster mushroom
+music_1|absolute music
+music_1|chamber music
+music_1|classical music
+music_1|country music
+music_1|dance music
+music_1|early music
+music_1|folk music
+music_1|gospel music
+music_1|house music
+music_1|indie music
+music_1|mood music
+music_1|piped music
+music_1|programme music
+music_1|theme music
+music_1|world music
+music_1|sheet music
+muslim_2|Black Muslim
+mute_2|deaf mute
+mutilation_1|self-mutilation
+naked_1|buck naked
+name_1|assumed name
+name_1|brand name
+name_1|code name
+name_1|domain name
+name_1|family name
+name_1|first name
+name_1|given name
+name_1|household name
+name_1|last name
+name_1|maiden name
+name_1|middle name
+name_1|pen name
+name_1|pet name
+name_1|place name
+name_1|screen name
+name_1|stage name
+name_1|trade name
+name_1|good name
+name_1|household name
+name_1|no-name (2)
+name_1|no-name (1)
+nap_1|power nap
+nap_2|power-nap
+nasty_1|video nasty
+nation_1|rainbow nation
+nation_1|most favoured nation
+nation_1|First Nation
+native_1|native speaker
+native_1|non-native
+nature_1|Mother Nature
+nature_1|good nature
+nature_1|human nature
+nature_1|second nature
+nausea_1|ad nauseam
+navy_1|merchant navy
+navy_1|the Royal Navy
+neck_1|cowl neck
+neck_1|crew neck
+neck_1|polo neck
+neck_1|roll-neck
+neck_1|V-neck
+neck_1|open-necked
+neck_1|stiff-necked
+neck_1|horse’s neck
+need_2|special needs
+needle_1|pins and needles
+negative_1|double negative
+negative_2|double negative
+neighbour_1|beggar-my-neighbour
+nest_1|empty nest
+net_1|drift net
+net_1|mosquito net
+net_1|safety net
+network_1|social network (2)
+network_1|local area network
+network_1|neural network
+network_1|social network (1)
+neuron_1|motor neurone disease
+neutral_1|gender-neutral
+neutrality_1|net neutrality
+new_1|brand new
+news_1|fake news
+news_1|hard news
+news_1|shipping news
+news_1|the shipping news
+newsdealer_1|news stand
+newspaper_1|quality newspaper
+nice_1|Mr Nice Guy
+nigh_1|well-nigh
+night_1|early night
+night_1|late night
+night_1|stag night
+no_2|no one
+noir_1|film noir
+noir_1|Nordic noir
+noise_1|white noise
+nonsense_1|no-nonsense
+noon_1|high noon
+north_1|magnetic north
+north_1|true north
+nose_1|Grecian nose
+nose_1|parson’s nose
+nose_1|Roman nose
+nose_1|hard-nosed
+nose_1|toffee-nosed
+notch_1|top-notch
+note_1|suicide note
+note_1|liner note
+note_1|side note
+note_1|blue note
+note_1|half note
+note_1|whole note
+note_1|credit note
+note_1|promissory note
+nothing_1|do-nothing
+noun_1|abstract noun
+noun_1|agent noun
+noun_1|collective noun
+noun_1|common noun
+noun_1|count noun
+noun_1|mass noun
+noun_1|proper noun
+noun_1|uncount noun
+novel_1|dime novel
+novel_1|Gothic novel
+novel_1|graphic novel
+novel_1|the great American novel
+number_1|atomic number
+number_1|cardinal (2)
+number_1|complex number
+number_1|magic number
+number_1|mass number
+number_1|prime number
+number_1|real number
+number_1|registration number
+number_1|R number
+number_1|serial number
+number_1|whole number
+number_1|800 number
+number_1|900 number
+number_1|box number
+number_1|E-number
+number_1|registration number
+number_1|serial number
+numeral_1|Arabic numeral
+numeral_1|Roman numeral
+nurse_1|charge nurse
+nurse_1|district nurse
+nurse_1|practical nurse
+nurse_1|registered nurse
+nurse_1|scrub nurse
+nurse_1|staff nurse
+nurse_1|theatre nurse
+nurse_1|visiting nurse
+nurse_1|nursery nurse
+nurse_1|wet nurse
+nut_1|betel nut
+nut_1|cola nut
+nut_1|monkey nut
+nut_1|pine nut
+nut_1|lug nut
+nut_1|wing nut
+nut_1|ginger nut
+o_1|O grade
+o_1|O level
+oak_1|poison oak
+object_1|sex object
+object_1|learning object
+objector_1|conscientious objector
+obsess_1|self-obsessed
+occupied_1|owner-occupied
+occupier_1|owner-occupier
+ochre_1|burnt ochre
+odour_1|body odour
+off_1|badly off
+offence_1|statutory offence
+offender_1|first offender
+offender_1|sex offender
+offender_1|young offender
+offering_1|burnt offering
+offering_1|peace offering
+office_1|back office
+office_1|head office
+office_1|home office
+office_1|Assay Office
+office_1|booking office
+office_1|box office
+office_1|front office
+office_1|post office
+office_1|press office
+office_1|registry office
+office_1|sorting office
+office_1|tourist office
+office_1|land office
+officer_1|air officer
+officer_1|commissioned officer
+officer_1|duty officer
+officer_1|first officer
+officer_1|flight officer
+officer_1|flying officer
+officer_1|petty officer
+officer_1|pilot officer
+officer_1|staff officer
+officer_1|warrant officer
+officer_1|peace officer
+officer_1|chief executive officer
+officer_1|chief financial officer
+officer_1|field officer
+officer_1|house officer
+officer_1|liaison officer
+officer_1|medical officer
+officer_1|nursing officer
+officer_1|presiding officer
+officer_1|press officer
+officer_1|probation officer
+officer_1|returning officer
+official_2|fourth official
+offset_2|carbon offset
+oil_1|peak oil
+oil_1|gas oil
+oil_1|corn oil
+oil_1|olive oil
+oil_1|palm oil
+oil_1|baby oil
+oil_1|essential oil
+oil_1|oil paint
+oil_1|castor oil
+oil_1|cod liver oil
+oil_1|linseed oil
+oil_1|snake oil
+old_1|old school
+oldie_1|golden oldie
+omnibus_1|Clapham omnibus
+one_1|all-in-one
+onion_1|spring onion
+onion_1|Spanish onion
+only_2|read-only
+online_2|be, come, etc. on line
+opencast_1|strip mining
+opener_1|eye-opener
+opener_1|letter opener
+opener_1|tin opener
+opera_1|soap opera
+operation_3|holding operation
+operation_3|special operation
+operative_2|post-operative
+operator_1|camera operator
+operator_1|system operator
+operator_1|Boolean operator
+opinion_1|public opinion
+opportunity_1|equal opportunities
+opportunity_1|photo opportunity
+optics_1|fibre optics
+option_1|nuclear option
+option_1|share option
+option_1|stock option
+opus_1|magnum opus
+orange_1|blood orange
+orange_1|navel orange
+orange_1|Seville orange
+orange_1|Agent Orange
+orangeman_1|marching season
+orchestra_1|chamber orchestra
+orchestra_1|symphony orchestra
+order_1|running order
+order_1|law and order
+order_1|point of order
+order_1|last orders
+order_1|side order
+order_1|back order
+order_1|mail order
+order_1|order book
+order_1|pre-order
+order_1|community order
+order_1|court order
+order_1|exclusion order
+order_1|executive order
+order_1|gagging order
+order_1|preservation order
+order_1|protection order
+order_1|restraining order
+order_1|supervision order
+order_1|banker’s order
+order_1|court order
+order_1|money order
+order_1|postal order
+order_1|standing order
+order_2|back-order
+order_2|pre-order
+organ_1|Hammond organ
+organ_1|barrel organ
+organ_1|mouth organ
+organ_1|house organ
+organization_1|preferred provider organization
+organizer_1|community organizer
+organizer_1|personal organizer
+ounce_1|fluid ounce
+out_1|all-out
+oven_1|convection oven
+oven_1|fan oven
+overbridge_1|foot overbridge
+owl_1|barn owl
+owl_1|eagle owl
+owl_1|little owl
+owl_1|night owl
+owl_1|tawny owl
+p_1|p. and p.
+p_1|p. and h.
+pack_1|packed out
+pack_2|blister pack
+pack_2|bubble pack
+pack_2|flat-pack
+pack_2|power pack
+pack_2|six-pack
+pack_2|fanny pack
+pack_2|rat pack
+pack_2|face pack
+pack_2|ice pack
+pack_2|mud pack
+packed_1|action-packed
+packed_1|jam-packed
+packed_1|pre-packed
+packet_1|pay packet
+pact_1|suicide pact
+pad_1|legal pad
+pad_1|scratch pad
+pad_1|Brillo pad™
+pad_1|SOS pad™
+pad_1|launch pad
+pad_1|shin pad
+pad_1|shoulder pad
+pad_1|lily pad
+pad_1|bachelor pad
+pad_1|crash pad
+pad_1|ink pad
+pad_1|brake pad
+pad_1|drum pad
+paddle_1|dog-paddle
+page_1|front page
+page_1|full-page
+page_1|title page
+page_1|Yellow Pages™
+page_1|home page
+page_1|landing page
+page_1|web page
+pay_1|low-paid
+pay_1|well paid
+pay_2|hazard pay
+pay_2|sick pay
+paid_1|low-paid
+paid_1|well paid
+paid_1|post-paid
+payment_1|non-payment
+payment_1|balance of payments
+payment_1|down payment
+pain_1|growing pains
+pains_1|growing pains
+paint_1|face paint
+paint_1|oil paint
+paint_1|poster paint
+paint_1|spray paint
+painting_1|cave painting
+painting_1|oil painting
+painting_1|wall painting
+painting_1|action painting
+painting_1|face painting
+painting_1|finger-painting
+painting_1|genre painting
+pair_1|au pair
+pair_1|minimal pair
+pal_1|pen pal
+palate_1|cleft palate
+palsy_1|cerebral palsy
+pan_1|frying pan
+pan_1|salt pan
+pan_1|warming pan
+panel_1|solar panel
+pantry_1|food pantry
+pants_1|capri pants
+pants_1|cargo pants
+pants_1|half pants
+pants_1|hot pants
+pants_1|palazzo pants
+pants_1|ski pants
+pants_1|stirrup pants
+paper_1|ballot paper
+paper_1|blotting paper
+paper_1|bond paper
+paper_1|carbon paper
+paper_1|cartridge paper
+paper_1|cigarette paper
+paper_1|crêpe paper
+paper_1|graph paper
+paper_1|greaseproof paper
+paper_1|rice paper
+paper_1|scratch paper
+paper_1|silver paper
+paper_1|tissue paper
+paper_1|toilet paper
+paper_1|tracing paper
+paper_1|waste paper
+paper_1|wax paper
+paper_1|wrapping paper
+paper_1|writing paper
+paper_1|free paper
+paper_1|walking papers
+paper_1|working papers
+paper_1|Green Paper
+paper_1|Order Paper
+paper_1|position paper
+paper_1|White Paper
+paper_1|working paper
+paper_1|term paper
+parachute_1|golden parachute
+parade_1|ticker-tape parade
+parade_1|identification parade
+paradise_1|fool’s paradise
+paradise_1|bird of paradise
+pardon_3|I beg your pardon
+pare_1|paring knife
+parent_1|co-parent
+parent_1|one-parent family
+parent_1|single parent
+parent_1|step-parent
+parenting_1|co-parenting
+park_1|country park
+park_1|forest park
+park_1|national park
+park_1|royal park
+park_1|amusement park
+park_1|business park
+park_1|car park
+park_1|industrial park
+park_1|national park
+park_1|retail park
+park_1|safari park
+park_1|science park
+park_1|theme park
+park_1|water park
+park_1|motor park
+park_2|double-park
+park_2|parallel parking
+parking_1|valet parking
+parliament_1|European Parliament
+parliament_1|Houses of Parliament
+parlour_1|funeral parlour
+parlour_1|massage parlour
+parsley_1|cow parsley
+part_1|private parts
+party_1|after-party
+party_1|bachelor party
+party_1|bachelorette party
+party_1|block party
+party_1|bottle party
+party_1|cocktail party
+party_1|costume party
+party_1|dinner party
+party_1|garden party
+party_1|hen party
+party_1|house party
+party_1|kitty party
+party_1|office party
+party_1|slumber party
+party_1|stag party
+party_1|street party
+party_1|tailgate party
+party_1|tea party
+party_1|all-party
+party_1|colour party
+party_1|search party
+party_1|working party
+party_1|injured party
+party_1|third party
+participle_1|dangling participle
+participle_1|past participle
+participle_1|present participle
+particle_1|alpha particle
+particle_1|beta particle
+particle_1|elementary particle
+particle_1|subatomic particle
+particle_1|adverbial particle
+partner_1|birth partner
+partner_1|sparring partner
+partner_1|civil partner
+partner_1|domestic partner
+partner_1|silent partner
+partner_1|sleeping partner
+partnership_1|civil partnership
+pass_2|bus pass
+passage_1|back passage
+passage_1|the middle passage
+passage_1|bird of passage
+passage_1|rite of passage
+past_4|fly-past
+past_4|march-past
+pasty_1|Cornish pasty
+pastry_1|choux pastry
+pastry_1|filo pastry
+pastry_1|puff pastry
+pastry_1|shortcrust pastry
+pastry_1|Danish pastry
+patch_1|purple patch
+path_1|bridle path
+path_1|cycle path
+path_1|critical path
+path_1|flight path
+patient_1|private patient
+pattern_1|holding pattern
+pattern_1|willow pattern
+paul_4|Old North Church
+paving_1|crazy paving
+pea_1|black-eyed pea
+pea_1|marrowfat pea
+pea_1|mushy peas
+pea_1|snow pea
+pea_1|split pea
+pea_1|sweet pea
+peace_1|Justice of the Peace
+pear_1|alligator pear
+pear_1|prickly pear
+pearl_1|seed pearl
+peck_1|hunt-and-peck
+pedal_1|gas pedal
+pedal_2|back-pedal
+pedal_2|soft-pedal
+peek_1|sneak peek
+peer_1|hereditary peer
+peer_1|life peer
+pen_1|ballpoint pen
+pen_1|felt-tip pen
+pen_1|fountain pen
+pen_1|light pen
+penalty_1|death penalty
+pencil_1|eyebrow pencil
+pencil_1|mechanical pencil
+pencil_1|propelling pencil
+pension_1|old-age pension
+pensioner_1|old-age pensioner
+pensioner_1|senior citizen
+people_1|little people
+people_1|boat people
+people_1|street people
+pepper_1|black pepper
+pepper_1|white pepper
+perfect_1|letter-perfect
+perfect_1|picture-perfect
+perfect_1|word-perfect
+perfect_1|future perfect
+perfect_1|past perfect
+perfect_1|present perfect
+perfect_3|future perfect
+perfect_3|past perfect
+perfect_3|present perfect
+performance_1|command performance
+period_1|cooling-off period
+period_1|safe period
+permission_1|planning permission
+permit_2|learner’s permit
+permit_2|work permit
+persimmon_1|sharon fruit
+person_1|little person
+person_1|people person
+person_1|business person
+person_1|displaced person
+person_1|missing person
+person_1|non-person
+person_1|young person
+person_1|in-person
+persona_1|dramatis personae
+pet_3|pet name
+philosophy_1|moral philosophy
+philosophy_1|natural philosophy
+philosophy_1|cracker-barrel philosophy
+physicist_1|nuclear physicist
+physics_1|nuclear physics
+physics_1|particle physics
+physics_1|quantum physics
+phone_1|car phone
+phone_1|cell phone
+phone_1|feature phone
+phone_1|flip phone
+phone_1|mobile phone
+phrase_1|set phrase
+phrase_1|noun phrase
+piano_1|grand piano
+piano_1|player piano
+piano_1|thumb piano
+piano_1|upright piano
+pick_1|hand-picked
+pick_2|ice pick
+picket_1|flying picket
+picture_1|motion picture
+pie_1|apple pie
+pie_1|banoffi pie
+pie_1|cottage pie
+pie_1|cow pie
+pie_1|custard pie
+pie_1|Key lime pie
+pie_1|mince pie
+pie_1|mud pie
+pie_1|pork pie
+pie_1|pot pie
+pie_1|shepherd’s pie
+pie_1|shoofly pie
+piece_1|one-piece
+piece_1|two-piece
+piece_1|three-piece
+piece_1|chimney piece
+piece_1|conversation piece
+piece_1|museum piece
+piece_1|party piece
+piece_1|period piece
+piece_1|puff piece
+piece_1|hit piece
+piece_1|set piece
+pig_1|suckling pig
+pig_1|guinea pig
+pigeon_1|carrier pigeon
+pigeon_1|clay pigeon
+pigeon_1|homing pigeon
+pigeon_1|stool pigeon
+pigeon_1|wood pigeon
+pill_1|chill pill
+pill_1|pep pill
+pill_1|poison pill
+pill_1|sleeping pill
+pill_1|mini-pill
+pill_1|morning-after pill
+pillar_1|Five Pillars of Islam
+pillow_1|throw pillow
+pilot_1|automatic pilot
+pilot_1|co-pilot
+pilot_1|test pilot
+pimple_1|goose pimples
+pin_1|bobby pin
+pin_1|cotter pin
+pin_1|drawing pin
+pin_1|pins and needles
+pin_1|safety pin
+pin_1|rolling pin
+pin_3|chip and PIN
+pink_1|hot pink
+pink_1|salmon pink
+pink_1|shocking pink
+pink_2|hot pink
+pipe_1|soil pipe
+pipe_1|waste pipe
+pipe_1|water pipe
+pipe_1|peace pipe
+pipe_1|pan pipes
+pipe_1|pitch pipe
+piste_1|off-piste
+pistol_1|air pistol
+pistol_1|starting pistol
+pistol_1|water pistol
+pit_1|snake pit
+pit_1|open-pit
+pit_1|pit stop
+pit_1|mosh pit
+pitch_1|perfect pitch
+pitch_1|fever pitch
+pitch_2|high-pitched
+pitch_2|low-pitched
+place_1|happy place
+place_1|watering place
+place_1|dwelling place
+place_1|hiding place
+place_1|meeting place
+place_1|meeting place
+place_1|resting place
+place_1|decimal place
+placed_1|well placed
+placement_1|Advanced Placement™
+placement_1|product placement
+play_1|role-play
+play_2|morality play
+play_2|mystery play
+play_2|Passion play
+play_2|soft play
+play_2|cross-play
+play_2|fair play
+play_2|foul play
+play_2|force play
+play_2|pass play
+play_2|run play
+player_1|franchise player
+player_1|team player
+playground_1|adventure playground
+plan_1|business plan
+plan_1|game plan
+plan_1|master plan
+plan_1|floor plan
+plan_1|installment plan
+plan_1|pension plan
+plan_1|American plan
+plan_1|open-plan
+planner_1|certified financial planner
+planner_1|event planner
+planning_1|event planning
+planning_1|family planning
+planning_1|succession planning
+plant_1|air plant
+plant_1|bedding plant
+plant_1|rubber plant
+plant_1|specimen plant
+plant_1|power plant
+plant_1|sewage plant
+plaque_1|blue plaque
+plate_1|paper plate
+plate_1|side plate
+plate_1|GB plate
+plate_1|L-plate
+plate_1|license plate
+plate_1|number plate
+plate_1|vanity plate
+plate_1|gold plate
+plate_1|silver plate
+plate_1|plate tectonics
+plate_2|gold-plated
+plate_2|silver-plated
+plate_2|armour-plated
+plaza_1|toll plaza
+pleading_1|special pleading
+pleat_1|French pleat
+plenty_3|horn of plenty
+plug_2|jack plug
+plume_1|nom de plume
+po_1|PO box
+pocket_1|breast pocket
+pocket_1|hip pocket
+pocket_1|deep pockets
+pocket_1|air pocket
+point_1|talking point
+point_1|action point
+point_1|data point
+point_1|selling point
+point_1|end point
+point_1|high point
+point_1|low point
+point_1|pain point
+point_1|pinch point
+point_1|saturation point
+point_1|starting point
+point_1|sticking point
+point_1|tipping point
+point_1|turning point
+point_1|entry point
+point_1|focal point
+point_1|jumping-off point
+point_1|pressure point
+point_1|rallying point
+point_1|three-point turn
+point_1|touch point
+point_1|trig point
+point_1|vanishing point
+point_1|vantage point
+point_1|cardinal points
+point_1|break point
+point_1|brownie point
+point_1|experience points
+point_1|game point
+point_1|match point
+point_1|penalty point
+point_1|set point
+point_1|boiling point
+point_1|freezing point
+point_1|grade point average
+point_1|melting point
+point_1|price point
+point_1|bullet point
+point_1|full stop
+poisoning_1|blood poisoning
+poisoning_1|food poisoning
+pole_1|barber’s pole
+pole_1|ski pole
+pole_1|telegraph pole
+pole_1|telephone pole
+pole_1|totem pole
+pole_1|magnetic pole (1)
+pole_1|magnetic pole (2)
+police_1|kitchen police
+police_1|military police
+police_1|riot police
+police_1|secret police
+police_1|thought police
+polish_1|French polish
+polish_1|nail polish
+polish_2|French polish
+politic_1|body politic
+politics_1|party politics
+politics_1|identity politics
+poll_1|deed poll
+poll_1|exit poll
+poll_1|push poll
+poll_1|straw poll
+polo_1|water polo
+pony_1|Shetland pony
+pony_1|one-trick pony
+pool_1|infinity pool
+pool_1|paddling pool
+pool_1|plunge pool
+pool_1|wading pool
+pool_1|rock pool
+pool_1|tide pool
+pool_1|car pool
+pool_1|gene pool
+pool_1|motor pool
+poor_1|dirt poor
+poor_1|working poor
+poor_1|piss-poor
+poor_1|time-poor
+pop_1|K-pop
+pop_1|synth-pop
+poppy_1|tall poppy syndrome
+pork_1|pulled pork
+porn_1|hard porn
+porn_1|soft porn
+port_1|free port
+port_1|tawny port
+port_1|parallel port
+port_1|serial port
+porter_1|kitchen porter
+portrait_1|self-portrait
+position_1|lotus position
+position_1|missionary position
+position_1|recovery position
+position_1|pole position
+positivism_1|logical positivism
+possession_1|vacant possession
+post_2|parcel post
+post_2|blog post
+post_2|command post
+post_2|last post
+post_2|staging post
+post_2|trading post
+post_2|lamp post
+post_2|first-past-the-post
+post_2|winning post
+post_3|cross post
+post_3|fly-post
+postcard_1|picture postcard
+postcode_1|zip code
+pot_1|chamber pot
+pot_1|chimney pot
+pot_1|lobster pot
+pot_1|melting pot
+pot_1|pepper pot
+pot_1|pint pot
+pot_1|plant pot
+pot_1|pension pot
+potato_1|baked potato
+potato_1|couch potato
+potato_1|hot potato
+potato_1|mashed potato
+potato_1|meat and potatoes
+potato_1|meat-and-potatoes
+potato_1|mouse potato
+potato_1|small potatoes
+potato_1|sweet potato
+pouch_1|diplomatic pouch
+pouch_1|posing pouch
+poverty_1|fuel poverty
+powder_1|baking powder
+powder_1|curry powder
+powder_1|custard powder
+powder_1|milk powder
+powder_1|soap powder
+powder_1|talcum powder
+powder_1|washing powder
+powder_1|face powder
+power_1|balance of power
+power_1|staying power
+power_1|power of attorney
+power_1|bargaining power
+power_1|hard power
+power_1|soft power
+power_1|Black Power
+power_1|girl power
+power_1|people power
+power_1|flower power
+powered_1|high-powered
+practice_1|teaching practice
+practice_1|best practice
+practice_1|code of practice
+practice_1|restrictive practices
+practice_1|family practice
+practice_1|general practice
+practice_1|group practice
+practice_1|private practice
+practitioner_1|family practitioner
+practitioner_1|general practitioner
+practitioner_1|nurse practitioner
+prayer_1|Lord’s Prayer
+precious_1|precious metal
+precious_1|precious stone
+precious_1|semi-precious
+pregnancy_1|ectopic pregnancy
+premiere_1|season premiere
+prepared_1|ill-prepared
+present_1|present day
+preservation_1|self-preservation
+preserver_1|life preserver
+president_1|vice-president (1)
+president_1|vice-president (2)
+press_1|gutter press
+press_1|printing press
+press_1|stop press
+press_1|French press™
+press_1|garlic press
+press_1|bench press
+press_1|body press
+pressed_1|hard-pressed
+pressure_1|peer pressure
+pressure_1|blood pressure
+pressure_1|high pressure
+pressure_1|low pressure
+presumptive_1|heir presumptive
+preview_1|sneak preview
+price_1|asking price
+price_1|closing price
+price_1|cost price
+price_1|cut-price
+price_1|half-price
+price_1|hammer price
+price_1|market price
+price_1|list price
+price_1|purchase price
+price_1|selling price
+price_1|sticker price
+price_1|starting price
+pricing_1|predatory pricing
+pricing_1|road pricing
+pride_1|gay pride
+priest_1|high priest
+prince_1|crown prince
+princess_2|crown princess
+print_2|fine print
+print_2|small print
+print_2|screen print
+printer_1|bubblejet printer
+printer_1|dot matrix printer
+printer_1|inkjet printer
+printer_1|laser printer
+printer_1|line printer
+printer_1|3D printer
+prison_1|open prison
+privilege_1|executive privilege
+privilege_1|parliamentary privilege
+prize_1|booby prize
+prize_1|consolation prize
+prize_1|door prize
+prize_1|Nobel Prize
+problem_1|attitude problem
+problem_1|First World problem
+problem_1|teething problems
+procedural_1|police procedural
+process_1|peace process
+process_1|four-colour process
+process_1|due process of law
+processing_1|batch processing
+processing_1|central processing unit
+processing_1|data processing
+processing_1|natural language processing
+processing_1|parallel processing
+processing_1|word processing
+processor_1|food processor
+processor_1|raster image processor
+processor_1|word processor
+produce_1|mass-produce
+product_1|end product
+product_1|by-product
+product_1|waste product
+production_1|mass production
+professional_2|health professional
+profiling_1|racial profiling
+profit_1|non-profit
+profit_1|not-for-profit
+profit_1|with-profit
+program_1|object program
+program_1|source program
+programming_1|application programming interface
+programming_1|neurolinguistic programming
+progress_1|work in progress
+progression_1|arithmetic progression
+progression_1|geometric progression
+projector_1|data projector
+projector_1|overhead projector
+projector_1|slide projector
+promotion_1|cross-promotion
+prone_1|accident-prone
+pronoun_1|impersonal pronoun
+pronoun_1|indefinite pronoun
+pronoun_1|personal pronoun
+pronoun_1|preferred pronoun
+proof_1|burden of proof
+proof_1|page proof
+property_1|intellectual property
+property_1|lost property
+property_1|public property
+property_1|community property
+prosecutor_1|special prosecutor
+prosecutor_1|Crown prosecutor
+protective_1|personal protective equipment
+protector_1|surge protector
+protein_1|textured vegetable protein
+protestant_1|the Reformation
+protestant_2|the Reformation
+proud_1|house-proud
+provider_1|content provider
+provider_1|preferred provider organization
+provider_1|primary care provider
+provider_1|service provider
+provost_1|Lord Provost
+psychology_1|social psychology
+psychologist_1|social psychologist
+public_2|general public
+publishing_1|desktop publishing
+publishing_1|digital publishing
+publishing_1|electronic publishing
+pudding_1|bread pudding
+pudding_1|bread-and-butter pudding
+pudding_1|cabinet pudding
+pudding_1|Christmas pudding
+pudding_1|milk pudding
+pudding_1|plum pudding
+pudding_1|queen of puddings
+pudding_1|rice pudding
+pudding_1|sponge pudding
+pudding_1|summer pudding
+pudding_1|blood pudding
+pudding_1|pease pudding
+pudding_1|steak and kidney pudding
+pudding_1|black pudding
+pudding_1|Yorkshire pudding
+puff_1|puffed out
+puff_2|cream puff
+puff_2|powder puff
+pull_2|ring pull
+pump_2|air pump
+pump_2|breast pump
+pump_2|heat pump
+pump_2|stomach pump
+pump_2|fist pump
+pump_2|parish-pump
+punch_2|rabbit punch
+punch_2|sucker punch
+punch_2|Sunday punch
+punch_2|milk punch
+punch_2|planter’s punch
+punch_2|Suffolk Punch
+puncture_1|lumbar puncture
+punishment_1|capital punishment
+punishment_1|corporal punishment
+pupil_1|day pupil
+puppet_1|glove puppet
+puppet_1|hand puppet
+puppet_1|sock puppet
+purchase_2|compulsory purchase
+purchase_2|hire purchase
+pure_1|pure-bred
+purpose_1|cross purposes
+purse_1|privy purse
+pusher_1|paper-pusher
+pusher_1|pen-pusher
+pusher_1|pencil pusher
+q_1|Q-tip™
+qua_1|sine qua non
+quality_1|air quality
+quality_1|total quality management
+quarantine_1|self-quarantine
+quarantine_2|self-quarantine
+queen_1|drama queen
+queen_1|beauty queen
+queen_1|pearly queen
+queen_1|drag queen
+question_1|indirect question
+question_1|leading question
+question_1|question tag
+question_1|wh-question
+question_1|yes-no question
+question_2|cross-question
+quick_1|double quick
+quick_1|quick-tempered
+quick_1|short-tempered
+quilt_1|crazy quilt
+quiz_1|pop quiz
+quotient_1|intelligence quotient
+r_2|A & R
+r_2|R & R
+r_3|R & B
+r_3|R & D
+race_1|drag race
+race_1|egg-and-spoon race
+race_1|horse race
+race_1|obstacle race
+race_1|pancake race
+race_1|sack race
+race_1|three-legged race
+race_1|arms race
+race_1|rat race
+race_1|space race
+race_1|human race
+race_1|master race
+racer_1|boy racer
+racing_1|flat racing
+racing_1|greyhound racing
+racing_1|drag racing
+racing_1|greyhound racing
+racing_1|motor racing
+racing_1|stock-car racing
+rack_1|luggage rack
+rack_1|roof rack
+radiation_1|alpha radiation
+radiation_1|gamma radiation
+radical_2|free radical
+radio_1|local radio
+radio_1|public radio
+radio_1|talk radio
+radio_1|clock radio
+rag_1|glad rags
+rage_1|air rage
+rage_1|road rage
+ray_1|Blu-ray
+ray_1|cathode ray tube
+ray_1|cosmic rays
+ray_1|gamma rays
+ray_1|X-ray
+ray_4|Blu-ray
+ray_4|cathode ray tube
+ray_4|cosmic rays
+ray_4|gamma rays
+ray_4|X-ray
+raid_1|air raid
+raid_1|ram-raid
+raid_1|ram-raiding
+raid_2|ram-raid
+raider_1|ram-raider
+rail_1|guard rail
+rail_1|picture rail
+rail_1|towel rail
+rail_1|dado rail
+railway_1|light railway
+raymond_1|Robert Altman
+raymond_2|detective story
+rain_1|acid rain
+raise_1|curtain-raiser
+raise_1|fire-raiser
+rally_1|pep rally
+ram_2|battering ram
+ramp_1|off-ramp
+ramp_1|on-ramp
+ranch_1|dude ranch
+range_1|mid-range
+range_1|top of the range
+range_1|close-range
+range_1|long-range
+range_1|short-range
+range_1|driving range
+range_1|rifle range
+range_1|free-range
+range_1|close-range
+range_2|wide-ranging
+rank_1|taxi rank
+ranking_2|high-ranking
+ranking_2|low-ranking
+ranking_2|middle-ranking
+ranking_2|top-ranking
+rap_1|hip-hop
+rape_1|acquaintance rape
+rape_1|date rape
+rape_1|gang rape
+rape_1|statutory rape
+rape_2|gang-rape
+rash_1|diaper rash
+rash_1|nappy rash
+rat_1|brown rat
+rat_1|bush rat
+rat_1|cane rat
+rat_1|pack rat
+rate_1|burn rate
+rate_1|heart rate
+rate_1|birth rate
+rate_1|bounce rate
+rate_1|churn rate
+rate_1|click rate
+rate_1|death rate
+rate_1|bank rate
+rate_1|base rate
+rate_1|flat rate
+rate_1|lending rate
+rate_1|peak rate
+rate_1|piece rate
+rate_1|prime rate
+rate_1|rack rate
+rate_1|savings rate
+rate_1|first-rate
+rate_1|second-rate
+rate_1|third-rate
+rate_2|X-rated
+rate_2|zero-rated
+rating_1|credit rating
+rating_1|movie rating
+rattle_1|sabre-rattling
+rattle_2|death rattle
+razor_1|cut-throat razor
+razor_1|electric razor
+razor_1|safety razor
+razor_1|straight razor
+reach_1|far-reaching
+reaction_1|addition reaction
+reaction_1|chain reaction
+reaction_1|elimination reaction
+read_1|sight-read
+read_1|speed-read
+read_1|lip-read
+read_3|well read
+readable_1|machine-readable
+reader_1|sight-reader
+reader_1|card reader
+reader_1|e-reader
+reader_1|feed reader
+reader_1|mind reader
+ready_1|rough and ready
+realism_1|magic realism
+realism_1|socialist realism
+reality_1|virtual reality
+reaper_1|Grim Reaper
+reborn_2|born-again
+receiver_1|wide receiver
+recession_1|double-dip recession
+reclaim_1|baggage reclaim
+recluse_1|brown recluse
+recognition_1|name recognition
+record_1|track record
+record_1|vinyl (2)
+record_1|album (2)
+record_2|pre-record
+record_2|tape-record
+recorder_1|video cassette recorder
+recorder_1|descant recorder
+recorder_1|soprano recorder
+recording_1|digital recording
+recording_1|tape recording
+red_1|red deer
+redundancy_1|lay-off
+reef_1|barrier reef
+reel_1|inertia reel
+reel_1|reel-to-reel
+referee_1|assistant referee
+reference_1|point of reference
+reference_1|cross reference
+reference_1|frame of reference
+reference_1|terms of reference
+reference_2|cross-reference
+reflection_1|self-reflection
+reformation_1|Act of Supremacy
+reformation_1|Dissolution of the Monasteries
+refusal_1|first refusal
+regard_2|self-regard
+reggae_1|dance-hall reggae
+register_2|electoral register
+register_2|parish register
+regulation_1|self-regulation
+rehearsal_1|dress rehearsal
+relation_1|industrial relations
+relation_1|public relations
+relation_1|race relations
+relation_1|blood relation
+relation_1|poor relation
+relationship_1|love-hate relationship
+release_2|day release
+release_2|work release
+release_2|time-release
+release_2|press release
+release_2|shutter release
+reliant_1|self-reliant
+relief_1|debt relief
+relief_1|bas-relief
+relief_1|haut-relief
+remover_1|staple remover
+rend_1|heart-rending
+rent_1|ground rent
+rent_1|peppercorn rent
+replacement_1|hormone replacement therapy
+replay_1|action replay
+replay_1|instant replay
+reply_1|get back to somebody
+reply_2|get back to somebody
+report_1|self-report
+report_1|minority report
+report_2|self-report
+reporter_1|court reporter
+reporter_1|cub reporter
+representation_1|proportional representation
+republic_1|banana republic
+request_1|friend request
+research_1|action research
+research_1|market research
+research_1|operational research
+reservation_1|central reservation
+reserve_1|gold reserve
+reserve_1|game reserve
+reserve_1|nature reserve
+residence_1|hall of residence
+resident_1|permanent resident
+resistance_1|passive resistance
+resistance_1|pièce de résistance
+resistant_1|heat-resistant
+resistant_1|water-resistant
+resolution_1|joint resolution
+resolution_1|high-resolution
+resolution_1|low-resolution
+resource_1|human resources
+respect_1|self-respect
+respiration_1|artificial respiration
+respond_1|get back to somebody
+respondent_1|co-respondent
+response_1|total physical response
+response_1|immune response
+response_1|rapid-response
+responsibility_1|diminished responsibility
+responsibility_1|corporate responsibility
+rest_1|bed rest
+rest_1|chapel of rest
+resuscitation_1|mouth-to-mouth resuscitation
+retriever_1|golden retriever
+return_2|tax return
+return_2|day return
+reveal_1|fail (2)
+reveal_2|gender reveal
+revenue_1|Inland Revenue
+reverend_1|Right Reverend
+review_1|rave review
+review_1|judicial review
+review_1|performance review
+review_1|peer review
+revolution_1|counter-revolution
+revolution_1|agrarian revolution
+revolution_1|Industrial Revolution
+rex_2|detective story
+rhyme_1|double rhyme
+rhyme_1|feminine rhyme
+rhyme_1|masculine rhyme
+rhyme_1|nursery rhyme
+rhyme_1|internal rhyme
+rhythm_1|delta rhythm
+rib_1|floating rib
+rib_1|prime rib
+rib_1|short ribs
+rib_1|spare rib
+rice_1|jollof rice
+rice_1|parched rice
+rich_1|cash-rich
+rickshaw_1|cycle rickshaw
+ridden_1|angst-ridden
+ride_1|park and ride
+ride_2|thrill ride
+ride_2|white-knuckle ride
+rider_2|boundary rider
+rider_2|dispatch rider
+riding_1|trials riding
+rifle_1|air rifle
+rig_1|jury-rig
+right_1|Mr Right
+right_1|right-wing
+right_1|all right
+right_1|right-on
+right_3|animal rights
+right_3|civil rights
+right_3|divine right
+right_3|human right
+right_3|women's rights
+right_3|alt-right
+right_3|centre-right
+right_3|hard right
+righteous_1|self-righteous
+rim_1|horn-rimmed
+ring_1|engagement ring
+ring_1|nose ring
+ring_1|signet ring
+ring_1|wedding ring
+ring_1|key ring
+ring_1|onion ring
+ring_1|gas ring
+ringing_2|bell-ringing
+rise_2|high-rise
+rise_2|low-rise
+risk_1|high-risk
+risk_1|low-risk
+risk_1|security risk
+risk_1|high-risk
+risk_1|low-risk
+rite_1|last rites
+rival_1|arch-rival
+road_1|access road
+road_1|A-road
+road_1|B-road
+road_1|dirt road
+road_1|link road
+road_1|off-road
+road_1|relief road
+road_1|ring road
+road_1|side road
+road_1|slip road
+road_1|toll road
+road_1|high road
+roaring_1|rip-roaring
+roast_1|pot-roast
+roast_1|spit-roast
+roast_2|nut roast
+roast_2|pot roast
+roast_2|Sunday roast
+robber_1|grave robber
+robin_1|round robin
+rock_1|acid rock
+rock_1|alt-rock
+rock_1|folk rock
+rock_1|garage rock
+rock_1|glam rock
+rock_1|hard rock
+rock_1|math rock
+rock_1|prog rock
+rock_1|Edinburgh rock
+rod_1|lightning rod
+rod_1|dowsing rod
+rod_1|fuel rod
+rod_1|hot rod
+role_1|thematic role
+roll_2|egg roll
+roll_2|jelly roll
+roll_2|sausage roll
+roll_2|spring roll
+roll_2|Swiss roll
+roll_2|toilet roll
+roll_2|drum roll
+roller_1|foam roller
+roller_1|high roller
+ronald_1|INF Treaty
+roof_1|green roof
+roof_1|living roof
+room_1|auction room
+room_1|back room
+room_1|box room
+room_1|changing room
+room_1|chat room
+room_1|day room
+room_1|drawing room
+room_1|dressing room
+room_1|emergency room
+room_1|family room
+room_1|fitting room
+room_1|front room
+room_1|green room
+room_1|guest room
+room_1|locker room
+room_1|men’s room
+room_1|panic room
+room_1|post room
+room_1|pump room
+room_1|rec room
+room_1|safe room
+room_1|scrub room
+room_1|spin room
+room_1|tea room
+room_1|wet room
+room_1|elbow room
+room_1|standing room
+root_1|cube root
+root_1|square root
+rope_1|skipping rope
+rope_1|tow rope
+rose_1|musk rose
+rose_1|English rose
+rot_2|dry rot
+rot_2|wet rot
+roulette_1|Russian roulette
+round_1|round-eyed
+round_1|round-table
+round_1|year-round
+round_2|merry-go-round
+round_4|milk round
+round_4|paper round
+round_4|whip-round
+round_4|theatre-in-the-round
+roundabout_1|mini-roundabout
+rounded_1|well rounded
+rousing_1|rabble-rousing
+route_1|en route
+route_1|rural route
+route_1|trade route
+row_1|death row
+row_1|skid row
+rubber_1|foam rubberfoam
+rubber_1|India rubber
+rubbing_1|brass rubbing
+rule_1|gag rule
+rule_1|ground rule
+rule_1|golden rule
+rule_1|home rule
+rule_1|self-rule
+rule_1|slide rule
+rule_1|work-to-rule
+run_1|runner (1)
+run_1|rat run
+run_1|running (2)
+run_2|fun run
+run_2|milk run
+run_2|rat run
+run_2|school run
+run_2|home run
+run_2|dry run
+run_2|dummy run
+run_2|trial run
+runner_1|front runner
+running_2|long-running
+rush_2|sugar rush
+rush_2|gold rush
+rutted_1|rut (1)
+rutting_1|rut (3)
+s_1|S-bend
+s_2|M & S
+s_2|s and h
+saddle_1|side-saddle
+safe_1|fail-safe
+safe_2|night safe
+say_2|say your piece
+saint_1|patron saint
+saint_1|plaster saint
+salad_1|Caesar salad
+salad_1|chef’s salad
+salad_1|garden salad
+salad_1|Greek salad
+salad_1|green salad
+salad_1|side salad
+salad_1|tossed salad
+salad_1|fruit salad
+salad_1|Russian salad
+salad_1|Waldorf salad
+sale_1|bill of sale
+sale_1|off-sale
+sale_1|point of sale
+sale_1|fire sale
+sale_1|flash sale
+sale_1|seat sale
+sale_1|bake sale
+sale_1|bring-and-buy sale
+sale_1|car boot sale
+sale_1|estate sale
+sale_1|garage sale
+sale_1|jumble sale
+sale_1|rummage sale
+sale_1|tag sale
+sale_1|yard sale
+salon_1|beauty salon
+salt_1|rock salt
+salt_1|sea salt
+salt_1|acid salt
+salt_1|Epsom salts
+salt_1|smelling salts
+salve_1|lip salve
+sandwich_1|club sandwich
+sandwich_1|open sandwich
+sandwich_1|open-faced sandwich
+sandwich_1|Reuben sandwich
+sandwich_1|knuckle sandwich
+sanitize_1|hand sanitizer
+sauce_1|apple sauce
+sauce_1|barbecue sauce
+sauce_1|Béarnaise sauce
+sauce_1|bread sauce
+sauce_1|brown sauce
+sauce_1|hollandaise sauce
+sauce_1|oyster sauce
+sauce_1|soy sauce
+sauce_1|tartare sauce
+sauce_1|white sauce
+sauce_1|Worcestershire sauce
+saucer_1|flying saucer
+sausage_1|blood sausage
+sausage_1|Cumberland sausage
+sausage_1|liver sausage
+savage_2|noble savage
+savant_1|idiot savant
+saver_1|screen saver
+saving_1|daylight saving time
+saving_1|face-saving
+saving_1|life-saving
+saving_1|money-saving
+saving_1|time-saving
+savvy_2|media-savvy
+savvy_2|tech-savvy
+saw_1|buzz saw
+saw_1|circular saw
+saw_1|coping saw
+saw_1|musical saw
+saw_1|tenon saw
+saxon_2|Anglo-Saxon
+scale_1|full-scale
+scale_1|large-scale
+scale_1|small-scale
+scale_1|Richter scale
+scale_1|sliding scale
+scan_2|CAT scan
+scanner_1|body scanner
+scanner_1|pen scanner
+scanner_1|flatbed scanner
+scare_2|bomb scare
+scared_1|shit-scared
+scene_1|crime scene
+scheme_1|pension scheme
+scheme_1|pyramid scheme
+scheme_1|colour scheme
+school_1|church school
+school_1|community school
+school_1|day school
+school_1|elementary school
+school_1|faith school
+school_1|first school
+school_1|free school
+school_1|grade school
+school_1|high school
+school_1|lower school
+school_1|night school
+school_1|nursery school
+school_1|preparatory school
+school_1|primary school
+school_1|private school
+school_1|Rugby School
+school_1|secondary school
+school_1|state school
+school_1|charm school
+school_1|trade school
+school_1|graduate school
+school_1|party school
+school_1|business school
+school_1|law school
+school_1|medical school
+school_1|old school
+school_1|old school
+science_1|hard science
+science_1|junk science
+science_1|computer science
+science_1|domestic science
+science_1|earth science
+science_1|food science
+science_1|information science
+science_1|life science
+science_1|natural science
+science_1|physical science
+science_1|political science
+science_1|rocket science
+science_1|social science
+science_1|soil science
+science_1|Christian Science
+science_1|creation science
+scientist_1|Christian Scientist
+scientist_1|computer scientist
+scientist_1|earth scientist
+scientist_1|political scientist
+scientist_1|rocket scientist
+scientist_1|social scientist
+scissors_1|nail scissors
+sclerosis_1|amyotrophic lateral sclerosis
+sclerosis_1|multiple sclerosis
+scooter_1|mobility scooter
+score_2|credit score
+scout_1|Beaver Scout
+scout_1|Boy Scout
+scout_1|Eagle Scout
+scout_1|Explorer Scout
+scout_1|Girl Scout
+scout_1|Venturer Scout
+screen_1|flat-screen
+screen_1|on-screen
+screen_1|second screen
+screen_1|big screen
+screen_1|off-screen
+screen_1|silver screen
+screen_1|small screen
+screen_1|home screen
+screen_1|fire screen
+screen_1|rood screen
+screen_1|silk screen
+screw_1|screwed-up
+screw_2|Allen screw™
+screwdriver_1|Phillips™ screwdriver
+scrimmage_1|line of scrimmage
+sea_1|deep-sea
+sea_1|high seas
+seal_2|elephant seal
+seal_2|harp seal
+seaman_1|able seaman
+seaman_1|leading seaman
+seaman_1|master seaman
+seaman_1|ordinary seaman
+search_1|word search
+search_1|body search
+search_1|strip search
+search_2|strip-search
+search_2|soul-searching
+season_1|growing season
+season_1|close season
+season_1|high season
+season_1|low season
+season_1|marching season
+season_1|off season
+season_1|open season
+season_1|silly season
+seat_1|back seat
+seat_1|booster seat
+seat_1|box seat
+seat_1|bucket seat
+seat_1|car seat
+seat_1|ejector seat
+seat_1|hot seat
+seat_1|love seat
+seat_1|passenger seat
+seat_1|window seat
+seat_1|safe seat
+second_3|split second
+secret_1|top secret
+secret_2|official secret
+secret_2|trade secret
+secretary_1|executive secretary
+secretary_1|private secretary
+secretary_1|general secretary
+secretary_1|social secretary
+secretary_1|Foreign Secretary
+secretary_1|Home Secretary
+secretary_1|parliamentary secretary
+secretary_1|parliamentary private secretary
+secretary_1|press secretary
+section_1|conic section
+section_1|golden section
+section_1|rhythm section
+section_1|cross section
+sector_1|private sector
+sector_1|public sector
+sector_1|third sector
+security_1|high-security
+security_1|minimum security prison
+security_1|food security
+security_1|information security
+security_1|job security
+security_1|old age security
+security_1|social security
+seek_1|heat-seeking
+seek_1|hide-and-seek
+seek_1|rent-seeking
+seek_1|self-seeking
+seeker_1|asylum seeker
+selection_1|self-selection
+selection_1|natural selection
+sell_2|hard sell
+seminole_1|the Trail of Tears
+sense_1|road sense
+sense_1|common sense
+sense_1|good sense
+sense_1|sixth sense
+sensitive_1|touch-sensitive
+sensitive_1|case-sensitive
+sentence_1|cleft sentence
+sentence_1|run-on sentence
+sentence_1|community sentence
+sentence_1|death sentence
+sentence_1|life sentence
+sentence_1|suspended sentence
+separation_1|colour separation
+sergeant_2|chief master sergeant
+sergeant_2|colour sergeant
+sergeant_2|company sergeant major
+sergeant_2|first sergeant
+sergeant_2|flight sergeant
+sergeant_2|gunnery sergeant
+sergeant_2|lance sergeant
+sergeant_2|master sergeant
+sergeant_2|master gunnery sergeant
+sergeant_2|senior master sergeant
+sergeant_2|staff sergeant
+sergeant_2|technical sergeant
+servant_1|civil servant
+servant_1|public servant
+server_1|client-server
+server_1|proxy server
+server_1|time-server
+service_1|emergency services
+service_1|postal service
+service_1|public service
+service_1|civil service
+service_1|Diplomatic Service
+service_1|health service
+service_1|Internal Revenue Service
+service_1|National Health Service
+service_1|secret service
+service_1|Security Service
+service_1|social services
+service_1|wire service
+service_1|customer service
+service_1|room service
+service_1|self-service
+service_1|community service
+service_1|jury service
+service_1|active service
+service_1|military service
+service_1|national service
+service_1|after-sales service
+service_1|service area
+service_1|service station
+service_1|dinner service
+service_1|lip service
+sesame_1|open sesame
+session_1|bull session
+session_1|jam session
+session_1|Court of Session
+session_1|quarter sessions
+set_2|box set
+set_2|tea set
+set_2|chemistry set
+set_2|swing set
+set_2|train set
+set_2|jet set
+set_3|set book
+setter_1|jet-setter
+settlement_1|informal settlement
+sex_1|fair sex
+sex_1|same-sex
+sex_1|safe sex
+sex_1|sexual intercourse
+shadow_1|5 o'clock shadow
+shadow_1|five o’clock shadow
+shake_2|protein shake
+shame_1|flight shame
+shaped_1|pear-shaped
+share_1|job-sharing
+share_1|power-sharing
+share_3|job-share
+share_3|market share
+share_3|ordinary share
+shark_1|basking shark
+shark_1|great white shark
+shark_1|loan shark
+sharp_1|razor-sharp
+sharp_3|card sharp
+shaven_1|clean-shaven
+shears_1|pinking shears
+shears_1|pruning shears
+shed_2|potting shed
+sheep_1|black sheep
+sheepdog_1|Old English sheepdog
+sheet_1|dust sheet
+sheet_1|balance sheet
+sheet_1|cheat sheet
+sheet_1|fact sheet
+sheet_1|free sheet
+sheet_1|rap sheet
+sheet_1|score sheet
+sheet_1|style sheet
+sheet_1|baking sheet
+sheet_1|ice sheet
+shelf_1|top-shelf
+shelf_1|continental shelf
+shelf_1|ice shelf
+shelf_1|off-the-shelf
+shell_1|razor shell
+shelter_1|bus shelter
+shelter_1|tax shelter
+shy_1|gun-shy
+shy_2|coconut shy
+shield_1|human shield
+shift_1|graveyard shift
+shift_1|night shift
+shift_1|split shift
+shift_1|swing shift
+shift_1|paradigm shift
+shift_1|Doppler shift
+shift_1|sound shift
+shift_1|stick shift
+shifter_1|scene-shifter
+shifter_1|shape-shifter
+ship_1|factory ship
+ship_1|sailing ship
+shirt_1|aloha shirt
+shirt_1|dress shirt
+shirt_1|hair shirt
+shirt_1|Hawaiian shirt
+shirt_1|polo shirt
+shirt_1|stuffed shirt
+shirt_1|T-shirt
+shock_1|culture shock
+shock_1|sticker shock
+shock_1|shell shock
+shock_1|toxic shock syndrome
+shock_1|shock-horror
+shoe_1|court shoe
+shoe_1|deck shoe
+shoe_1|gym shoe
+shoe_1|skate shoe
+shoe_1|tennis shoe
+shoe_1|track shoe
+shoe_1|hot shoe
+shoot_2|photo shoot
+shoot_2|turkey shoot
+shooter_1|pea-shooter
+shooter_1|six-shooter
+shooter_1|straight shooter
+shooting_1|clay pigeon shooting
+shop_1|betting shop
+shop_1|bucket shop
+shop_1|charity shop
+shop_1|chip shop
+shop_1|coffee shop
+shop_1|corner shop
+shop_1|factory shop
+shop_1|farm shop
+shop_1|fish and chip shop
+shop_1|gift shop
+shop_1|junk shop
+shop_1|pro shop
+shop_1|smoke shop
+shop_1|body shop
+shop_1|machine shop
+shop_1|closed shop
+shop_1|cop shop
+shop_1|open shop
+shop_2|comparison-shop
+shopper_1|mystery shopper
+shopper_1|personal shopper
+shopping_1|comparison shopping
+shopping_1|window shopping
+short_1|quick-tempered
+short_1|short-tempered
+shorts_1|board shorts
+shot_1|hook shot
+shot_1|jump shot
+shot_1|set shot
+shot_1|chip shot
+shot_1|drop shot
+shot_1|passing shot
+shot_1|parting shot
+shot_1|a long shot
+shot_1|one-shot
+shotgun_1|sawn-off shotgun
+shoulder_1|round-shouldered
+shoulder_1|hard shoulder
+shoulder_1|soft shoulder
+shoulder_1|cold-shoulder
+show_1|show up
+show_2|chat show
+show_2|game show
+show_2|quiz show
+show_2|talk show
+show_2|floor show
+show_2|gang show
+show_2|ice show
+show_2|light show
+show_2|talent show
+show_2|air show
+show_2|fashion show
+show_2|freak show
+show_2|horse show
+show_2|peep show
+show_2|slide show
+show_2|no-show
+shower_1|power shower
+sickle_1|hammer and sickle
+sickness_1|altitude sickness
+sickness_1|decompression sickness
+sickness_1|motion sickness
+sickness_1|sleeping sickness
+sickness_1|morning sickness
+side_1|A-side
+side_1|B-side
+side_1|double-sided
+side_1|flip side
+side_1|sunny side
+side_1|no side
+sight_1|line of sight
+sight_1|short sight
+sight_1|second sight
+sign_1|lawn sign
+sign_1|road sign
+sign_1|V-sign
+sign_1|call sign
+sign_1|dollar sign
+sign_1|equals sign
+sign_1|pound sign
+signal_1|smoke signal
+signal_1|turn signal
+signal_1|time signal
+signal_2|virtue signalling
+signature_1|e-signature
+signature_1|electronic signature
+signature_1|digital signature
+signature_1|key signature
+signature_1|time signature
+silence_1|two-minute silence
+silk_1|watered silk
+silk_1|wild silk
+silver_1|sterling silver
+symbol_1|sex symbol
+symbol_1|status symbol
+simulator_1|flight simulator
+sin_1|deadly sin
+sin_1|mortal sin
+sin_1|original sin
+sin_1|cardinal sin
+sync_2|lip-sync
+sync_2|post-sync
+syndrome_1|Asperger’s syndrome
+syndrome_1|carpal tunnel syndrome
+syndrome_1|chronic fatigue syndrome
+syndrome_1|Down’s syndrome
+syndrome_1|economy class syndrome
+syndrome_1|fetal alcohol syndrome
+syndrome_1|Gulf War Syndrome
+syndrome_1|irritable bowel syndrome
+syndrome_1|locked-in syndrome
+syndrome_1|Munchausen’s syndrome
+syndrome_1|postviral syndrome
+syndrome_1|sick building syndrome
+syndrome_1|Tourette’s syndrome
+syndrome_1|toxic shock syndrome
+syndrome_1|tall poppy syndrome
+singer_1|carol singer
+singer_1|folk singer
+singer_1|playback singer
+singer_1|praise singer
+singer_1|torch singer
+single_1|single bed
+single_1|single parent
+synthesis_1|speech synthesis
+siphon_1|soda siphon
+syrup_1|corn syrup
+syrup_1|golden syrup
+syrup_1|maple syrup
+system_1|honor system
+system_1|imperial (2)
+system_1|metric system
+system_1|quota system
+system_1|value system
+system_1|Copernican system
+system_1|midi system
+system_1|Ptolemaic system
+system_1|public address system
+system_1|solar system
+system_1|sound system
+system_1|distributed system
+system_1|expert system
+system_1|operating system
+system_1|central nervous system
+system_1|digestive system
+system_1|immune system
+system_1|limbic system
+system_1|nervous system
+system_1|the spoils system
+sister_1|cousin sister
+sister_1|half-sister
+sister_1|charge nurse
+sit_1|sit down
+sit_1|house-sit
+site_1|building site
+site_1|construction site
+site_1|World Heritage Site
+site_1|bomb site
+site_1|comparison site
+site_1|fan site
+site_1|mirror site
+sitter_1|house sitter
+sitter_1|pet sitter
+size_1|plus size
+size_1|full-size
+size_1|king-size
+size_1|legal-size
+size_1|letter-size
+size_1|life-size
+size_1|man-sized
+size_1|pint-sized
+size_1|plus-size
+size_1|queen-size
+skate_1|ice-skate
+skate_1|roller skate
+skate_2|in-line skate
+skater_1|ice skater
+skater_1|pond skater
+skating_1|figure skating
+skating_1|speed skating
+sketch_1|thumbnail sketch
+sky_1|blue-sky
+skiing_1|Alpine skiing
+skiing_1|cross-country skiing
+skiing_1|heli-skiing
+skiing_1|jet-skiing
+skiing_1|Nordic skiing
+skill_1|life skill
+skill_1|people skills
+skilled_1|semi-skilled
+skin_1|thick-skinned
+skin_1|thin-skinned
+skin_1|banana skin
+skin_1|thick-skinned
+skin_1|thin-skinned
+skirt_1|grass skirt
+skirt_1|pencil skirt
+skirt_1|rah-rah skirt
+slam_2|body slam
+slam_2|grand slam
+slam_2|spoken word (2)
+slang_1|back slang
+slang_1|rhyming slang
+slap_1|happy slapping
+slash_2|forward slash
+slave_1|wage slave
+slavery_1|modern slavery
+sleeper_1|rough sleeper
+sleeve_1|puff sleeve
+slice_1|fish slice
+slice_2|salami slicing
+slicker_1|city slicker
+sling_1|mud-slinging
+sling_2|gin sling
+sling_2|Singapore sling
+slip_2|Freudian slip
+slip_2|compliments slip
+slip_2|pink slip
+slip_2|sales slip
+slipper_1|carpet slipper
+slot_1|mail slot
+slow_3|go-slow
+smear_2|cervical smear
+smear_2|Pap smear
+smoke_1|second-hand smoke
+smoke_2|chain-smoke
+smoker_1|chain-smoker
+smoking_1|passive smoking
+smuggler_1|people smuggler
+smuggling_1|people smuggling
+snake_1|coral snake
+snake_1|garter snake
+snake_1|grass snake
+snake_1|hognose snake
+snap_2|brandy snap
+snap_2|cold snap
+snap_2|sugar snap
+sniff_1|glue-sniffing
+snobbery_1|inverted snobbery
+soap_1|soft soap
+soap_1|sugar soap
+soap_1|toilet soap
+soap_2|soft-soap
+socialist_2|champagne socialist
+society_1|building society
+society_1|friendly society
+sock_1|ankle sock
+soda_1|cream soda
+soda_1|baking soda
+soda_1|bicarbonate of soda
+soda_1|caustic soda
+soda_1|sodium bicarbonate
+soda_1|sodium carbonate
+soda_1|washing soda
+software_1|social software
+soho_1|Wardour Street
+soil_1|potting soil
+soil_2|shop-soiled
+soldier_1|foot soldier
+soldier_1|private soldier
+sole_2|lemon sole
+solid_1|rock solid
+soluble_1|water-soluble
+song_1|folk song
+song_1|sing-song
+song_1|torch song
+sore_1|saddle sore
+sore_2|canker sore
+sore_2|cold sore
+sore_2|running sore
+sort_2|sort something  out
+sort_2|sort something out
+sound_1|surround sound
+soup_1|alphabet soup
+soup_1|bird’s nest soup
+soup_1|mock turtle soup
+soup_1|duck soup
+sour_1|sweet-and-sour
+source_1|primary source
+source_1|secondary source
+south_1|Deep South
+space_1|safe space
+space_1|breathing space
+spangle_1|Star-Spangled Banner
+speaker_1|native speaker
+speaker_1|smart speaker
+speech_1|direct speech
+speech_1|freedom of speech
+speech_1|hate speech
+speech_1|indirect speech
+speech_1|reported speech
+speech_1|text-to-speech
+speech_1|caretaker speech
+speech_1|figure of speech
+speech_1|part of speech
+speed_1|ground speed
+speed_1|warp speed
+speed_1|clock speed
+spell_2|dry spell
+spending_1|deficit spending 
+spending_1|public spending
+spending_1|public spending round
+spider_1|money spider
+spike_1|spike heel
+spin_2|flat spin
+spinner_1|fidget spinner
+spiral_1|death spiral
+spirit_1|free spirit
+spirit_1|public spirit
+spirit_1|team spirit
+spirit_1|party spirit
+spirit_1|Holy Spirit
+spirit_1|methylated spirit
+spirit_1|surgical spirit
+spirit_1|white spirit
+spirited_1|free-spirited
+spirited_1|high-spirited
+spirited_1|public-spirited
+spiritual_2|gospel music
+split_1|split somebody up
+split_1|split something up
+split_1|split up (with somebody)
+split_2|banana split
+spoiler_1|spoiler alert
+spoken_1|plain-spoken
+spoken_1|soft-spoken
+spoken_1|well spoken
+sponge_1|Victoria sponge
+spoon_1|egg-and-spoon race
+spoon_1|greasy spoon
+spoon_1|measuring spoon
+spoon_1|slotted spoon
+spoon_1|wooden spoon
+sport_1|blood sport
+sport_1|contact sport
+sport_1|e-sport
+sport_1|extreme sport
+sport_1|field sports
+sport_1|non-contact sport
+sport_1|spectator sport
+sport_1|winter sports
+spot_1|beauty spot
+spot_1|liver spot
+spot_1|beauty spot (1)
+spot_1|black spot
+spot_1|blind spot
+spot_1|penalty spot
+spot_1|sweet spot
+spot_1|trouble spot
+spot_1|G spot
+spot_1|high spot
+spray_1|pepper spray
+spread_1|pinch (3)
+spread_2|community spread
+spread_2|middle-age spread
+spread_2|centre spread
+spring_1|box spring
+squad_1|flying squad
+squad_1|fraud squad
+squad_1|snatch squad
+squad_1|vice squad
+squad_1|taxi squad
+squad_1|firing squad
+squad_1|death squad
+squad_1|hit squad
+squad_1|awkward squad
+squad_1|God squad
+square_1|four-square
+square_2|set square
+square_2|T-square
+squeak_2|bubble and squeak
+squirrel_1|flying squirrel
+squirrel_1|ground squirrel
+stable_2|livery stable
+stack_1|chimney stack
+staff_1|ground staff
+staff_1|chief of staff
+staff_1|general staff
+staff_2|short-staffed
+stage_1|end-stage
+stage_1|sound stage
+stage_1|centre stage
+stage_1|committee stage
+stage_1|report stage
+stage_1|landing stage
+stay_2|long-stay
+stay_2|short-stay
+stain_2|port wine stain
+stained_1|tear-stained
+staircase_1|spiral staircase
+stamp_1|food stamp
+stamp_1|rubber stamp
+stamp_2|rubber-stamp
+stamp_2|stamp something on something
+stand_2|news stand
+stand_2|music stand
+stand_2|bus stand
+stand_2|one-night stand
+standard_1|standard of living
+standard_1|double standard
+standard_1|gold standard
+standard_2|bog-standard
+standing_1|free-standing
+standing_2|long-standing
+star_1|dark star
+star_1|falling star
+star_1|Pole Star
+star_1|shooting star
+star_1|all-star
+star_1|co-star (1)
+star_1|film star
+star_1|star turn
+star_2|co-star
+start_1|jump-start
+start_1|kick-start
+start_1|push-start
+start_2|false start
+start_2|kick-start
+start_2|push-start
+start_2|running start
+start_2|head start
+starter_1|self-starter
+starter_1|fire starter
+starve_1|cash-starved
+state_1|chief of state
+state_1|city state
+state_1|client state
+state_1|failed state
+state_1|Gulf States (1)
+state_1|head of state
+state_1|nation state
+state_1|police state
+state_1|welfare state
+state_1|Gulf States (2)
+state_1|slave state
+state_1|swing state
+state_1|lying-in-state
+statement_1|autumn statement
+statement_1|mission statement
+statement_1|personal statement
+statement_1|spring statement
+statement_1|bank statement
+statement_1|fashion statement
+station_1|bus station
+station_1|earth station
+station_1|fire station
+station_1|polling station
+station_1|power station
+station_1|service station
+station_1|space station
+station_1|weather station
+station_1|docking station
+station_1|muster station
+station_1|action stations
+station_1|hill station
+station_1|way station
+statistic_1|vital statistics
+steak_1|chicken-fried steak
+steamer_1|paddle steamer
+steel_1|chrome steel
+steel_1|chromium steel
+steel_1|mild steel
+steel_1|stainless steel
+steeplechase_1|greyhound racing
+steering_1|power steering
+step_1|baby step
+step_1|goose-step
+step_1|naughty step
+step_1|two-step
+step_1|half step
+step_1|whole step
+steward_1|shop steward
+stick_1|V-sign
+stick_2|shooting stick
+stick_2|white stick
+stick_2|crab stick
+stick_2|fish stick
+stick_2|French stick
+stick_2|cocktail stick
+stick_2|joss stick
+stick_2|Memory Stick™
+stick_2|selfie stick
+stick_2|gear lever
+stick_2|stick shift
+stick_2|non-stick
+sticker_1|bumper sticker
+style_1|family-style
+style_1|old-style
+still_2|stock-still
+stock_1|summer stock
+stock_1|laughing stock
+stock_1|rolling stock
+stocking_1|body stocking
+stone_1|drystone wall
+stone_1|philosopher’s stone
+stone_1|foundation stone
+stone_1|paving stone
+stone_1|standing stone
+stone_1|stepping stone
+stop_2|bus stop
+stop_2|pit stop
+stop_2|request stop
+stop_2|rest stop
+stop_2|truck stop
+stop_2|non-stop
+stop_2|whistle-stop
+stop_2|glottal stop
+stop_2|tab stop
+stopper_1|barbecue stopper
+stopper_1|conversation stopper
+stopper_1|show-stopper
+storage_1|cold storage
+storage_1|self-storage
+store_1|bottle store
+store_1|chain store
+store_1|department store
+store_1|liquor store
+store_1|variety store
+store_1|consignment shop
+store_1|convenience store
+store_1|dime store
+store_1|general store
+store_1|hardware store
+store_1|package store
+store_1|cold store
+store_1|backing store
+storey_1|multi-storey
+story_1|detective story
+story_1|fairy story
+story_1|ghost story
+story_1|horror story (1)
+story_1|short story
+story_1|cock and bull story
+story_1|cover story (2)
+story_1|hard-luck story
+story_1|horror story (2)
+story_1|life story
+story_1|shaggy-dog story
+story_1|sob story
+story_1|success story
+story_1|tall story
+story_1|cover story (1)
+story_1|lead story
+storm_1|dust storm
+storm_1|electrical storm
+storm_1|magnetic storm
+storm_1|perfect storm
+stove_1|potbelly stove
+straight_2|straight-faced
+straight_3|home straight
+strategy_1|exit strategy
+stream_1|Gulf Stream
+stream_1|jet stream
+stream_1|revenue stream
+street_1|cross street
+street_1|high street
+street_1|main street
+street_1|side street
+street_1|stop street
+street_1|Civvy Street
+street_1|Grub Street
+strength_1|industrial-strength
+stress_1|post-traumatic stress disorder
+stress_1|primary stress
+stress_1|secondary stress
+stretch_2|home stretch
+stricken_1|conscience-stricken
+stricken_1|grief-stricken
+stricken_1|horror-stricken
+stricken_1|panic-stricken
+stricken_1|poverty-stricken
+stricken_1|terror-stricken
+strike_2|climate strike
+strike_2|general strike
+strike_2|hunger strike
+strike_2|air strike
+strike_2|first strike
+strike_2|bird strike
+string_1|G-string
+string_1|purse strings
+string_2|highly strung
+strip_1|magnetic strip
+strip_1|Möbius strip
+strip_1|rumble strip
+strip_1|landing strip
+strip_1|nature strip
+stripe_1|Stars and Stripes
+strong_1|strong-minded
+strong_1|strong-willed
+stud_1|press stud
+studded_1|star-studded
+student_1|mature student
+student_1|summer student
+student_1|transfer student
+student_1|A student
+student_1|day student
+study_1|self-study
+study_1|gender studies
+study_1|case study
+study_1|time-and-motion study
+stuff_1|hot stuff
+suburb_1|garden suburb
+sufficient_1|self-sufficient
+sugar_1|barley sugar
+sugar_1|brown sugar
+sugar_1|cane sugar
+sugar_1|caster sugar
+sugar_1|granulated sugar
+sugar_1|icing sugar
+sugar_1|maple sugar
+sugar_1|spun sugar
+sugar_1|blood sugar
+suicide_1|assisted suicide
+suit_1|dinner suit
+suit_1|jogging suit
+suit_1|leisure suit
+suit_1|lounge suit
+suit_1|morning suit
+suit_1|safari suit
+suit_1|penguin suit
+suit_1|sailor suit
+suit_1|shell suit
+suit_1|trouser suit
+suit_1|zoot suit
+suit_1|bathing suit
+suit_1|boiler suit
+suit_1|flying suit
+suit_1|hazmat suit
+suit_1|pressure suit
+suit_1|paternity suit
+suite_1|edit suite
+suite_1|en suite
+suited_1|ill-suited
+sum_1|capital sum
+sum_1|lump sum
+sum_1|dim sum
+summary_1|executive summary
+summary_1|management summary
+summer_1|Indian summer
+sunglasses_1|dark glasses
+supply_1|money supply
+supply_1|water supply
+support_2|air support
+support_2|child support
+support_2|income support
+support_2|life support
+support_2|life support machine
+support_2|moral support
+support_2|victim support
+support_2|tech support
+support_2|technical support
+supporter_1|athletic supporter
+supremacy_1|white supremacy
+supremacist_1|white supremacist
+surface_1|work surface
+surfer_1|silver surfer
+surfing_1|sky surfing
+surfing_1|ego-surfing
+surfing_1|shoulder surfing
+surge_1|storm surge
+surgeon_1|dental surgeon
+surgeon_1|oral surgeon
+surgeon_1|plastic surgeon
+surgeon_1|tree surgeon
+surgeon_1|veterinary surgeon
+surgery_1|brain surgery
+surgery_1|keyhole surgery
+surgery_1|open-heart surgery
+surgery_1|plastic surgery
+surgery_1|tree surgery
+surplus_1|army surplus
+surplus_1|trade surplus
+surveyor_1|quantity surveyor
+swab_1|cotton swab
+swat_1|fly swatter
+sweat_1|cold sweat
+sweet_1|semi-sweet
+sweet_2|boiled sweet
+swipe_2|card swipe
+switch_2|dimmer switch
+switch_2|dip switch
+switch_2|kill switch
+switch_2|rocker switch
+switch_2|time switch
+switch_2|toggle switch
+t_1|T-bone steak
+t_1|T-junction
+t_1|T-shirt
+t_1|T-square
+table_1|bird table
+table_1|card table
+table_1|changing table
+table_1|coffee table
+table_1|dining table
+table_1|dinner table
+table_1|head table
+table_1|high table
+table_1|top table
+table_1|round-table
+table_1|periodic table
+table_1|league table
+table_1|water table
+tablet_1|graphics tablet
+tabloid_1|red-top
+tabloid_2|red-top
+tack_1|Blu-tack™
+tackle_2|nose tackle
+tackle_2|block and tackle
+tackle_2|fishing tackle
+tackle_2|wedding tackle
+tactical_1|tactical voting
+tag_1|dog tag
+tag_1|name tag
+tag_1|price tag
+tag_1|question tag
+tag_1|phone tag
+tag_2|electronic tagging
+tail_1|tail end
+tail_1|coat-tails
+tail_1|shirt tail
+take_2|double take
+taker_1|hostage taker
+tale_1|fairy tale
+tale_1|folk tale
+talk_2|chalk talk
+talk_2|baby talk
+talk_2|back talk
+talk_2|pep talk
+talk_2|sales talk
+talk_2|shop talk
+talk_2|small talk
+talk_2|sweet talk
+talk_2|trash talk
+talkie_1|walkie-talkie
+tan_2|spray tan
+tan_2|black and tan
+tank_1|flotation tank
+tank_1|septic tank
+tank_1|think tank
+tank_1|drunk tank
+tap_2|tap water
+tap_2|spinal tap
+tape_1|duct tape
+tape_1|friction tape
+tape_1|gaffer tape
+tape_1|insulating tape
+tape_1|masking tape
+tape_1|Scotch tape™
+tape_1|sticky tape
+tape_1|audio tape
+tape_1|magnetic tape
+tape_1|name tape
+tape_1|red tape
+tape_1|ticker tape
+tape_1|measuring tape
+tar_1|coal tar
+tar_1|Jack Tar
+tart_1|Bakewell tart
+tart_1|butter tart
+tat_1|tit for tat
+tax_1|car tax
+tax_1|corporation tax
+tax_1|council tax
+tax_1|direct tax
+tax_1|estate tax
+tax_1|Harmonized Sales Tax
+tax_1|income tax
+tax_1|indirect tax
+tax_1|inheritance tax
+tax_1|payroll tax
+tax_1|poll tax
+tax_1|pre-tax
+tax_1|road tax
+tax_1|sales tax
+tax_1|stealth tax
+tax_1|value added tax
+tax_1|withholding tax
+tea_1|green tea
+tea_1|bubble tea
+tea_1|beef tea
+tea_1|afternoon tea
+tea_1|cream tea
+tea_1|high tea
+tea_1|Rich Tea™
+team_1|A-team
+team_1|dream team
+team_1|farm team
+team_1|tag team
+team_1|crash team
+team_1|SWAT team
+tear_1|war-torn
+teaser_1|brain-teaser
+teaser_1|cock-teaser
+teaser_1|eve-teaser
+teaser_1|prick-teaser
+tech_1|high-tech
+tech_1|low-tech
+technician_1|chief technician
+technician_1|junior technician
+technology_1|information technology
+technology_1|push technology
+technology_1|high technology
+technology_1|intermediate technology
+tectonic_1|plate tectonics
+telephone_1|radio-telephone
+telescope_1|radio telescope
+telescope_1|reflecting telescope
+television_1|breakfast television
+television_1|public television
+television_1|cable television
+television_1|closed-circuit television
+television_1|digital television
+teller_1|fortune teller
+temper_1|quick-tempered
+temper_1|short-tempered
+temperature_1|absolute temperature
+temperature_1|room temperature
+tender_2|legal tender
+tennessee_1|Tennessee Valley Authority
+tennis_1|court tennis
+tennis_1|deck tennis
+tennis_1|lawn tennis
+tennis_1|real tennis
+tennis_1|royal tennis
+tennis_1|table tennis
+tension_1|surface tension
+tent_1|beer tent
+tent_1|dome tent
+tent_1|frame tent
+tent_1|oxygen tent
+tent_1|pup tent
+tent_1|ridge tent
+tent_1|wall tent
+tent_1|big tent
+term_1|search term
+term_1|half-term
+term_1|Hilary term
+term_1|Michaelmas term
+term_1|term time
+term_1|Trinity term
+term_1|fixed-term
+term_1|full-term
+term_1|long-term
+term_1|medium-term
+term_1|short-term
+terminal_1|air terminal
+terminal_1|data terminal
+terrain_1|all-terrain
+terrier_1|bull terrier
+terrier_1|cairn terrier
+terrier_1|fox terrier
+terrier_1|Lakeland terrier
+terrier_1|pit bull terrier
+terrier_1|Scottish terrier
+terrier_1|Skye terrier
+terrier_1|Yorkshire terrier
+terror_1|reign of terror
+test_1|cloze test
+test_1|driving test
+test_1|blood test
+test_1|breath test
+test_1|acid test
+test_1|alpha test
+test_1|bench test
+test_1|beta test
+test_1|blind test
+test_1|field test
+test_1|means test
+test_1|road test
+test_2|alpha-test
+test_2|bench-test
+test_2|beta-test
+test_2|field-test
+test_2|road-test
+testament_1|New Testament
+testament_1|Old Testament
+text_1|plain text
+text_1|set text
+thanks_1|thank you
+thanks_2|vote of thanks
+that_3|given that
+theatre_1|community theater (2)
+theatre_1|lecture theatre
+theatre_1|coup de théâtre
+theatre_1|fringe theatre
+theatre_1|street theatre
+theatre_1|community theater (1)
+theft_1|grand theft
+theft_1|identity theft
+they_1|preferred pronoun
+their_1|preferred pronoun
+theology_1|liberation theology
+theory_1|atomic theory
+theory_1|binding theory
+theory_1|catastrophe theory
+theory_1|chaos theory
+theory_1|critical theory
+theory_1|decision theory
+theory_1|game theory
+theory_1|government and binding theory
+theory_1|grand unified theory
+theory_1|information theory
+theory_1|quantum theory
+theory_1|conspiracy theory
+theorist_1|conspiracy theorist
+therapy_1|gene therapy
+therapy_1|hormone replacement therapy
+therapy_1|occupational therapy
+therapy_1|physical therapy
+therapy_1|speech therapy
+therapy_1|art therapy
+therapy_1|aversion therapy
+therapy_1|cognitive behavioural therapy
+therapy_1|electroconvulsive therapy
+therapy_1|electroshock therapy
+therapy_1|group therapy
+therapy_1|retail therapy
+therapy_1|shock therapy
+therapist_1|occupational therapist
+therapist_1|physical therapist
+thick_1|thick-skinned
+thin_1|paper-thin
+thin_1|razor-thin
+thin_1|wafer-thin
+thin_1|pencil-thin
+thin_1|thin-skinned
+thing_1|internet of things
+thing_1|next big thing
+thing_1|bright young thing
+thing_1|young thing
+think_1|well thought of
+thinking_1|critical thinking
+thinking_1|lateral thinking
+thinking_1|wishful thinking
+thomas_1|Tom Brown's Schooldays
+thread_1|golden thread
+throat_1|strep throat
+throat_1|cut-throat
+throb_2|heart-throb
+thrombosis_1|coronary thrombosis
+thrombosis_1|deep vein thrombosis
+thumb_1|green thumb
+thumb_2|well thumbed
+thump_1|tub-thumping
+ticket_1|all-ticket
+ticket_1|e-ticket
+ticket_1|meal ticket
+ticket_1|return ticket
+ticket_1|season ticket
+ticket_1|golden ticket
+ticket_1|big-ticket
+ticket_1|parking ticket
+ticket_1|dream ticket
+ticket_1|split ticket
+ticket_1|straight ticket
+tide_1|flood tide
+tide_1|high tide
+tide_1|low tide
+tide_1|neap tide
+tide_1|rip tide
+tide_1|spring tide
+tie_1|tongue-tied
+tie_2|black tie
+tie_2|bolo tie
+tie_2|bow tie
+tie_2|kipper tie
+tie_2|old school tie
+tie_2|white tie
+tie_2|twist tie
+tie_2|cup tie
+tiger_1|paper tiger
+tight_1|tight-knit
+tight_1|high and tight
+timbered_1|half-timbered
+time_1|Father Time
+time_1|standard time
+time_1|summer time
+time_1|any time
+time_1|closing time
+time_1|crunch time
+time_1|drive time
+time_1|game-time
+time_1|night-time
+time_1|opening time
+time_1|reaction time
+time_1|response time
+time_1|screen time
+time_1|old-time
+time_1|big time
+time_1|small-time
+time_1|all-time
+time_1|double time
+time_2|ill-timed
+time_2|well timed
+timer_1|egg timer
+timer_1|self-timer
+timer_1|first-timer
+timer_1|full-timer
+timer_1|old-timer
+timer_1|part-timer
+timer_1|two-timer
+tin_1|mess tin
+tip_1|felt-tip pen
+tip_1|filter tip
+tip_1|Q-tip™
+tip_1|hat tip
+tip_2|fly-tip
+typing_1|sex typing
+tire_2|balloon tyre
+tire_2|spare tyre
+tyre_1|balloon tyre
+tyre_1|spare tyre
+tired_1|dog-tired
+tissue_1|soft tissue
+tit_1|blue tit
+title_1|working title
+titled_1|self-titled
+to_3|toing and froing
+toast_1|French toast
+toe_1|pigeon-toed
+toe_1|toe-curling
+toy_1|plush toy
+toy_1|soft toy
+toy_1|boy toy
+tolerance_1|zero tolerance
+toll_1|e-toll
+toll_1|death toll
+tomato_1|cherry tomato
+tomato_1|plum tomato
+tone_1|earth tone
+tongue_1|mother tongue
+tongue_1|silver tongue
+too_1|me-too
+tool_1|machine tool
+tool_1|power tool
+tooth_1|buck teeth
+tooth_1|false teeth
+tooth_1|milk tooth
+tooth_1|wisdom tooth
+tooth_1|fine-tooth comb
+top_1|desktop (2)
+top_1|flat-top
+top_1|roll-top desk
+top_1|soft-top
+top_1|crop top
+top_1|tank top
+top_1|big top
+top_1|red-top
+total_2|grand total
+total_2|running total
+total_2|sum total
+total_3|write off
+touch_2|finishing touch
+touch_2|Midas touch
+tour_1|grand tour
+tour_1|package tour
+tour_1|whistle-stop
+tourism_1|health tourism
+tourism_1|medical tourism
+towel_1|paper towel
+towel_1|roller towel
+towel_1|sanitary towel
+towel_1|tea towel
+tower_1|clock tower
+tower_1|conning tower
+tower_1|control tower
+tower_1|cooling tower
+tower_1|ivory tower
+tower_1|Martello tower
+tower_1|the Twin Towers
+tower_1|water tower
+town_1|Bean Town
+town_1|boom town
+town_1|company town
+town_1|county town
+town_1|dormitory town
+town_1|ghost town
+town_1|new town
+town_1|shanty town
+town_1|small-town
+town_1|twin town
+town_1|Our Town
+town_1|out-of-town (1)
+town_1|out-of-town (2)
+trace_1|contact tracing
+tracer_1|contact tracer
+track_1|dirt track (2)
+track_1|cart track
+track_1|fast track
+track_1|mommy track
+track_1|one-track mind
+track_1|laugh track
+track_1|Caterpillar track™
+track_1|inside track
+track_2|fast-track
+tracker_1|fitness tracker
+trade_1|balance of trade
+trade_1|cap and trade
+trade_1|fair trade
+trade_1|free trade
+trade_1|rag trade
+trade_1|slave trade
+trade_1|stock-in-trade
+trading_1|carbon trading
+trading_1|day trading
+trading_1|emissions trading
+trading_1|horse-trading
+trading_1|insider trading
+trading_1|Sunday trading
+traffic_1|air traffic control
+trafficker_1|human trafficker
+trafficker_1|people trafficker
+trafficking_1|human trafficking
+trafficking_1|people trafficking
+tray_1|hospitality tray
+tray_1|baking tray
+tray_1|in tray
+tray_1|out tray
+trail_1|vapour trail
+trail_1|national trail
+trail_1|nature trail
+trail_1|audit trail
+trail_1|paper trail
+trailer_1|horse trailer
+trailer_1|semi-trailer
+trailer_1|tractor-trailer
+train_1|boat train
+train_1|bullet train
+train_1|freight train
+train_1|ghost train
+train_1|goods train
+train_1|gravy train
+train_1|road train
+train_1|stopping train
+train_1|wagon train
+train_2|potty-train
+train_2|toilet-train
+trainer_1|cross trainer
+trainer_1|personal trainer
+trainer_1|teacher trainer
+training_1|high-intensity interval training
+training_1|interval training
+training_1|spring training
+transfer_2|cash transfer
+transfer_2|credit transfer
+transfer_2|money transfer
+transfer_2|language transfer
+transmission_1|community transmission
+transmission_1|automatic transmission
+transport_1|public transport
+trap_1|gin trap
+trap_1|booby trap
+trap_1|radar trap
+trap_1|speed trap
+trap_1|tourist trap
+trap_1|death trap
+trap_1|fire trap
+trap_1|poverty trap
+trash_1|trailer trash
+trash_1|white trash
+traumatic_1|post-traumatic stress disorder
+traveller_1|commercial traveller
+traveller_1|fellow traveller
+tree_1|bay tree
+tree_1|bread tree
+tree_1|Christmas tree
+tree_1|clothes tree
+tree_1|family tree
+tree_1|gum tree
+tree_1|maidenhair tree
+tree_1|phone tree
+tree_1|plane tree
+tree_1|sausage tree
+tree_1|shade tree
+tree_1|shoe tree
+tree_1|tea tree
+trek_2|pony-trekking
+trend_1|on-trend
+trial_1|show trial
+trial_1|clinical trial
+trial_1|time trial
+triangle_1|equilateral triangle
+triangle_1|isosceles triangle
+triangle_1|right-angled triangle
+triangle_1|right triangle
+triangle_1|scalene triangle
+triangle_1|warning triangle
+triangle_1|eternal triangle
+triangle_1|love triangle
+tribunal_1|employment tribunal
+trick_1|confidence trick
+trick_1|dirty trick
+trick_1|hat-trick
+trick_1|one-trick pony
+trick_1|three-card trick
+trip_1|day trip
+trip_1|ego trip
+trip_1|field trip
+trip_1|power trip
+trip_1|road trip
+trip_1|round trip
+trolley_1|tea trolley
+trolley_1|trackless trolley
+trouble_1|teething troubles
+trouble_1|foul trouble
+truant_2|bunk off
+truck_1|trailer truck
+truck_1|breakdown truck
+truck_1|dump truck
+truck_1|dumper truck
+truck_1|fire truck
+truck_1|forklift truck
+truck_1|garbage truck
+truck_1|monster truck
+truck_1|pickup truck
+truck_1|salt truck
+truck_1|tow truck
+trust_1|blind trust
+trust_1|unit trust
+trust_1|hospital trust
+truth_1|post-truth
+truth_1|half-truth
+truth_1|home truth
+tub_1|bran tub
+tub_1|hot tub
+tube_1|cathode ray tube
+tube_1|test tube
+tube_1|inner tube
+tube_1|fallopian tube
+tucker_1|bush tucker
+tudor_1|half-timbered
+tumble_2|rough and tumble
+tummy_1|gippy tummy
+tune_1|signature tune
+tune_1|theme tune
+tunnel_1|wind tunnel
+turbine_1|wind turbine
+turf_1|surf and turf
+turf_1|surf ’n’ turf
+turkey_1|cold turkey
+turn_1|turn over
+turn_1|turn something over
+turn_2|three-point turn
+turn_2|U-turn
+turn_2|about-turn
+turn_2|star turn
+turtle_1|snapping turtle
+tv_1|pay TV
+tweet_2|live-tweet
+twin_1|conjoined twin
+twin_1|dizygotic twin
+twin_1|fraternal twin
+twin_1|identical twin
+twin_1|monozygotic twin
+twin_1|non-identical twin
+twin_1|Siamese twin
+u_1|U-boat
+u_1|U-turn
+ulcer_1|mouth ulcer
+ulcer_1|peptic ulcer
+ulna_1|radius (3)
+ulster_1|Six Counties
+unction_1|extreme unction
+underground_3|London Underground
+unicorn_1|the lion and the unicorn
+uniform_1|dress uniform
+uniform_1|school uniform
+union_1|credit union
+union_1|students’ union (2)
+union_1|customs union
+university_1|deemed university
+university_1|state university
+unlisted_1|ex-directory
+unsecured_1|security (6)
+use_2|point of use
+use_2|single-use
+use_2|fair use
+user_1|end user
+user_1|multi-user
+user_1|power user
+uterine_1|intrauterine device
+utility_1|public utility
+utility_2|sport utility vehicle
+v_2|V-chip
+v_2|V-neck
+v_2|V-sign
+vaccine_1|anti-vaccine
+valley_1|hanging valley
+valley_1|lily of the valley
+valley_1|rift valley
+value_1|face value
+value_1|fair market value
+value_1|market value
+value_1|street value
+value_1|surrender value
+value_1|nuisance value
+value_1|replay value
+value_1|family values
+value_1|production values
+van_2|conversion van
+van_2|moving van
+van_2|panel van
+van_2|removal van
+van_2|white-van man
+van_2|guard’s van
+van_2|luggage van
+varnish_1|nail varnish
+vault_1|pole vault
+vault_2|pole vault
+vegetable_1|green vegetable
+vegetable_1|textured vegetable protein
+vegetarian_1|lacto-ovo-vegetarian
+vegetarian_1|lacto-vegetarian
+vegetarian_1|non-vegetarian
+vegetative_1|persistent vegetative state
+vein_1|deep vein thrombosis
+vein_1|portal vein
+vein_1|thread vein
+vein_1|varicose vein
+venture_1|joint venture
+verb_1|linking verb
+verb_1|main verb
+verb_1|phrasal verb
+verb_1|pro-verb
+verb_1|reciprocal verb
+verdict_1|majority verdict
+verdict_1|open verdict
+verse_1|blank verse
+verse_1|free verse
+version_1|alpha version
+version_1|beta version
+version_1|Authorized Version
+version_1|cover version
+vessel_1|blood vessel
+vet_2|extreme vetting
+vet_2|positive vetting
+veto_1|line-item veto
+victim_1|fashion victim
+victory_1|moral victory
+victory_1|Pyrrhic victory
+view_1|side view
+view_1|rear-view mirror
+view_1|point of view
+view_1|10 000-foot view
+view_1|helicopter view
+view_1|world view
+view_1|private view
+view_1|page view
+view_1|pay-per-view
+viewpoint_1|point of view
+village_1|global village
+village_1|model village
+vinegar_1|balsamic vinegar
+vinegar_1|malt vinegar
+vinegar_1|wine vinegar
+virgin_2|extra virgin
+virus_1|Ebola virus
+visa_1|exit visa
+visibility_1|high-visibility
+vision_1|double vision
+vision_1|field of vision
+vision_1|line of vision
+vision_1|tunnel vision
+vision_1|twenty-twenty vision
+visit_2|conjugal visit
+visit_2|flying visit
+visit_2|return visit
+visitor_1|health visitor
+visitor_1|prison visitor
+vocabulary_1|defining vocabulary
+vole_1|water vole
+volley_1|half-volley
+volley_1|stop volley
+volleyball_1|beach volleyball
+vote_1|alternative vote
+vote_1|block vote
+vote_1|casting vote
+vote_1|electoral vote
+vote_1|popular vote (1)
+vote_1|postal vote
+vote_1|protest vote (1)
+vote_1|single transferable vote
+vote_1|swing vote
+vote_1|free vote
+vote_1|the popular vote
+vote_1|protest vote (2)
+voter_1|floating voter
+voter_1|swing voter
+voucher_1|luncheon voucher
+vowel_1|cardinal vowel
+wage_1|living wage
+wage_1|minimum wage
+wagon_1|Conestoga wagon
+wagon_1|covered wagon
+wagon_1|chuck wagon
+wagon_1|mammy-wagon
+wagon_1|paddy wagon
+wagon_1|patrol wagon
+wagon_1|station wagon
+way_1|third way
+way_1|right of way
+way_1|each way
+way_1|one-way
+way_1|three-way
+way_1|two-way
+way_1|out-of-the-way
+waiter_1|dumb waiter
+waiting_1|call waiting
+waiting_1|lady-in-waiting
+waitress_1|cocktail waitress
+walk_2|perp walk
+walker_2|dog walker
+walking_1|dog walking
+walking_1|Nordic walking
+walking_1|power walking
+wall_1|drystone wall
+wall_1|green wall
+wall_1|living wall
+wall_1|sea wall
+wall_1|cavity wall
+wall_1|climbing wall
+wall_1|party wall
+wall_1|fourth wall
+war_1|civil war
+war_1|cold war
+war_1|council of war
+war_1|phoney war
+war_1|post-war
+war_1|pre-war
+war_1|prisoner of war
+war_1|proxy war
+war_1|world war
+war_1|class war
+war_1|price war
+war_1|turf war
+warden_1|dog warden
+warden_1|game warden
+warden_1|traffic warden
+warehousing_1|data warehousing
+warfare_1|biological warfare
+warfare_1|chemical warfare
+warfare_1|germ warfare
+warfare_1|class warfare
+warfare_1|psychological warfare
+warm_2|global warming
+warm_2|house-warming
+warmer_1|leg warmer
+warming_1|global warming
+warning_1|early warning
+warning_1|government health warning
+warning_1|profit warning
+warning_1|trigger warning
+warp_2|time warp
+warrant_1|death warrant
+warrant_1|search warrant
+warrior_1|class warrior
+warrior_1|culture warrior
+warrior_1|eco-warrior
+warrior_1|keyboard warrior
+warrior_1|road warrior
+warrior_1|urban warrior
+warrior_1|weekend warrior
+wash_2|car wash
+waste_1|nuclear waste
+watch_1|clock-watcher
+watch_2|neighbourhood watch
+watcher_1|clock-watcher
+water_1|holy water
+water_1|ice water
+water_1|iced water
+water_1|lime water
+water_1|rose water
+water_1|salt water
+water_1|soda water
+water_1|tap water
+water_1|deep-water
+water_1|low water
+water_1|high water
+water_1|standing water
+water_1|territorial waters
+watermark_1|high-water mark
+watermark_1|low-water mark
+wave_1|tidal wave
+wave_1|long wave
+wave_1|medium wave
+wave_1|radio wave
+wave_1|shock wave
+wave_1|short wave
+wave_1|sound wave
+wave_1|crime wave
+wave_1|new wave
+wave_1|permanent wave
+wax_1|paraffin wax
+wax_1|sealing wax
+we_1|royal ‘we’
+weapon_1|biological weapon
+weapon_1|chemical weapon
+web_1|Dark Web
+web_1|Deep Web
+web_1|Semantic Web
+wedding_1|diamond wedding
+wedding_1|golden wedding
+wedding_1|shotgun wedding
+wedding_1|silver wedding
+wedding_1|white wedding
+week_1|working week
+weekend_1|dirty weekend
+weekend_1|long weekend
+weight_1|dead weight
+welfare_1|corporate welfare
+west_1|Wild West
+west_2|east-west
+western_1|country and western
+western_2|spaghetti western
+whale_1|blue whale
+whale_1|killer whale
+whale_1|pilot whale
+whale_1|sperm whale
+wheel_1|paddle wheel
+wheel_1|steering wheel
+wheel_1|Catherine wheel
+wheel_1|Ferris wheel
+wheel_1|mill wheel
+wheel_1|spinning wheel
+whip_2|majority whip
+whip_2|three-line whip
+whisper_2|stage whisper
+whistle_1|dog whistle
+whistle_1|tin whistle
+whistle_1|wolf whistle
+whit_2|Whit Monday
+white_2|flat white
+who_1|who’s who
+widow_1|black widow
+widow_1|grass widow
+wife_1|trophy wife
+will_4|free will
+will_4|ill will
+will_4|living will
+willow_1|pussy willow
+win_1|no-win
+win_1|win-win
+wind_1|trade winds
+wind_1|second wind
+wind_2|long-winded
+wind_4|wind-up
+window_1|bay window
+window_1|dormer window
+window_1|French window
+window_1|picture window
+window_1|rose window
+window_1|sash window
+wine_1|blush wine
+wine_1|dessert wine
+wine_1|red wine
+wine_1|table wine
+wine_1|white wine
+wing_1|Buffalo wings
+wing_1|left wing
+wing_1|right wing
+wing_1|left wing
+wing_1|right wing
+wink_2|forty winks
+wipe_2|wet wipe
+wire_1|barbed wire
+wire_1|chicken wire
+wire_1|high wire
+wire_1|razor wire
+wire_1|zip wire
+wire_1|fuse wire
+wire_1|hot-wire
+wish_2|death wish
+witness_1|hostile witness
+witness_1|Jehovah’s Witness
+woman_1|fallen woman
+woman_1|kept woman
+woman_1|other woman
+wood_1|dead wood
+wool_1|cotton wool
+wool_1|dyed in the wool
+wool_1|steel wool
+word_1|code word
+word_1|four-letter word
+word_1|household word
+word_1|spoken word
+word_1|swear word
+work_2|social work
+work_2|detective work
+work_2|donkey work
+work_2|work of art
+work_2|public works
+worker_1|guest worker
+worker_1|sanitation worker
+worker_1|sex worker
+worker_1|social worker
+working_1|hard-working
+working_1|working men's club
+world_1|First World
+world_1|New World
+world_1|Old World
+world_1|Third World
+world_1|olde worlde
+world_1|old-world
+worm_1|glow-worm
+worn_1|well worn
+worship_1|hero worship
+worshipper_1|sun worshipper
+wound_1|exit wound
+wound_1|flesh wound
+wrap_1|gift-wrap
+wrap_1|shrink-wrapped
+wrap_2|plastic wrap
+wrench_1|gut-wrenching
+wring_1|hand-wringing
+writ_1|Holy Writ
+writer_1|staff writer
+x_1|X chromosome
+x_1|X-rated
+x_1|X-ray
+zero_1|net-zero
+zero_1|patient zero
+zone_1|danger zone
+zone_1|hot zone
+zone_1|no-fly zone
+zone_1|red zone
+zone_1|time zone
+zone_1|crumple zone
+zone_1|comfort zone

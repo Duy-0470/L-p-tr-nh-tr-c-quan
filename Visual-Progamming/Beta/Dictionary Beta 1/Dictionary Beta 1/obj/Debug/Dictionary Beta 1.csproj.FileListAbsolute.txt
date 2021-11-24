@@ -1,0 +1,28 @@
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\bin\Debug\Dictionary Beta 1.exe.config
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\bin\Debug\Dictionary Beta 1.exe
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\bin\Debug\Dictionary Beta 1.pdb
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.AssemblyReference.cache
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary_Beta_1.LookUp.resources
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary_Beta_1.Properties.Resources.resources
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.GenerateResource.cache
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.CoreCompileInputs.cache
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.exe
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.pdb
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Interop.WMPLib.dll
+E:\VS Studio\Year 2\Visual Programming\Dictionary Betas\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.ResolveComReference.cache
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\bin\Debug\Dictionary Beta 1.exe.config
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\bin\Debug\Dictionary Beta 1.exe
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\bin\Debug\Dictionary Beta 1.pdb
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.AssemblyReference.cache
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.SuggestedBindingRedirects.cache
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Interop.WMPLib.dll
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.ResolveComReference.cache
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary_Beta_1.Form_Games.resources
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary_Beta_1.Form_Quizzes.resources
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary_Beta_1.LookUp.resources
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary_Beta_1.Properties.Resources.resources
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary_Beta_1.Form_StartScreen.resources
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.GenerateResource.cache
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.csproj.CoreCompileInputs.cache
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.exe
+E:\Spaghetti\GIT VP Project\main\Visual-Progamming\Beta\Dictionary Beta 1\Dictionary Beta 1\obj\Debug\Dictionary Beta 1.pdb
