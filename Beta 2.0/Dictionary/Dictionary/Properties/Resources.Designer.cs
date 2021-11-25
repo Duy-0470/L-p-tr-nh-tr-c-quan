@@ -61,6 +61,20 @@ namespace Dictionary.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to a_1|https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/a__/a__gb/a__gb_2.mp3
+        ///a_2|https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/a_1/a_1_g/a_1_gb_1_abbr.mp3
+        ///a_3|https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/a_1/a_1_g/a_1_gb_1_abbr.mp3
+        ///a_4|https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/a_1/a_1_g/a_1_gb_1_abbr.mp3
+        ///a_5|https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/a__/a__1_/a__1_gb_1.mp3
+        ///aa_1|https://www.oxfordlear [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string british {
+            get {
+                return ResourceManager.GetString("british", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 1A
         ///2C
         ///3D
@@ -211,6 +225,109 @@ namespace Dictionary.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to a|/ə/
+        ///aa|/ˌeɪ ˈeɪ/
+        ///aaa|/ˌtrɪpl ˈeɪ/
+        ///aardvark|/ˈɑːdvɑːk/
+        ///aargh|/ɑː(r)/
+        ///aaron|/ˈeərən/
+        ///aba|/ˌeɪ biː ˈeɪ/
+        ///aback|/əˈbæk/
+        ///abacus|/ˈæbəkəs/
+        ///abaft|/əˈbɑːft/
+        ///abalone|/ˌæbəˈləʊni/
+        ///abandon|/əˈbændən/
+        ///abandoned|/əˈbændənd/
+        ///abandonment|/əˈbændənmənt/
+        ///abase|/əˈbeɪs/
+        ///abasement|/əˈbeɪsmənt/
+        ///abashed|/əˈbæʃt/
+        ///abate|/əˈbeɪt/
+        ///abatement|/əˈbeɪtmənt/
+        ///abattoir|/ˈæbətwɑː(r)/
+        ///abba|/əˈbɑː/
+        ///abbey|/ˈæbi/
+        ///abbess|/ˈæbes/
+        ///abbie|/ˈæbi/
+        ///abbot|/ˈæbət/
+        ///abbreviate|/əˈbriːvieɪt/
+        ///abbreviated|/əˈbriːvieɪtɪd/
+        ///abbreviat [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EEWordAndSpelling {
+            get {
+                return ResourceManager.GetString("EEWordAndSpelling", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a
+        ///aa
+        ///aaa
+        ///aardvark
+        ///aargh
+        ///aaron
+        ///aba
+        ///aback
+        ///abacus
+        ///abaft
+        ///abalone
+        ///abandon
+        ///abandoned
+        ///abandonment
+        ///abase
+        ///abasement
+        ///abashed
+        ///abate
+        ///abatement
+        ///abattoir
+        ///abba
+        ///abbey
+        ///abbess
+        ///abbie
+        ///abbot
+        ///abbreviate
+        ///abbreviated
+        ///abbreviation
+        ///abc
+        ///abd
+        ///abdicate
+        ///abdication
+        ///abdomen
+        ///abdominal
+        ///abduct
+        ///abduction
+        ///abductor
+        ///abe
+        ///abed
+        ///abeyance
+        ///aberdeen
+        ///aberdonian
+        ///aberrant
+        ///aberration
+        ///abet
+        ///abhor
+        ///abhorrence
+        ///abhorrent
+        ///abide
+        ///abiding
+        ///abigail
+        ///ability
+        ///abiotic
+        ///abysmal
+        ///abysmally
+        ///abyss
+        ///abyssal
+        ///abject
+        ///abjectly        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EEWordList {
+            get {
+                return ResourceManager.GetString("EEWordList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to @a /ei, ə/
         ///*  danh từ,  số nhiều as,  a&apos;s
         ///- (thông tục) loại a, hạng nhất, hạng tốt nhất hạng rất tốt
@@ -231,6 +348,1401 @@ namespace Dictionary.Properties {
         internal static string EngViet {
             get {
                 return ResourceManager.GetString("EngViet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a
+        ///a b c
+        ///a b c - book
+        ///a font
+        ///a fortiori
+        ///a la carte
+        ///a la mode
+        ///a posteriori
+        ///a priori
+        ///a-bomb
+        ///a-going
+        ///a-plenty
+        ///a-power
+        ///a.d.
+        ///a.m.
+        ///aard-wolf
+        ///aasvogel
+        ///aba
+        ///abaci
+        ///aback
+        ///abacus
+        ///abaddon
+        ///abaft
+        ///abalone
+        ///abandon
+        ///abandoned
+        ///abandoner
+        ///abandonment
+        ///abase
+        ///abasement
+        ///abash
+        ///abashment
+        ///abask
+        ///abatable
+        ///abate
+        ///abatement
+        ///abatis
+        ///abatised
+        ///abattoir
+        ///abb
+        ///abbacy
+        ///abbatial
+        ///abbess
+        ///abbey
+        ///abbot
+        ///abbreviate
+        ///abbreviated
+        ///abbreviation
+        ///abbreviator
+        ///abdicant
+        ///abdicate
+        ///abdication
+        ///abdicator
+        ///abdomen
+        ///abdomina [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVa {
+            get {
+                return ResourceManager.GetString("EVa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to b
+        ///b.a.
+        ///b.b.c
+        ///b.c
+        ///baa
+        ///baa-lamb
+        ///babbit-metal
+        ///babble
+        ///babblement
+        ///babbler
+        ///babe
+        ///babel
+        ///babittry
+        ///baboon
+        ///babouche
+        ///baby
+        ///baby buggy
+        ///baby-farm
+        ///baby-farmer
+        ///baby-farming
+        ///baby-jumper
+        ///baby-sit
+        ///baby-sitter
+        ///babyhood
+        ///babyish
+        ///babyishness
+        ///babyism
+        ///baccalaureate
+        ///baccarat
+        ///bacchanal
+        ///bacchanalia
+        ///bacchanalian
+        ///bacchant
+        ///bacchic
+        ///bacchus
+        ///bacciferous
+        ///bacciform
+        ///baccivorous
+        ///baccy
+        ///bachelor
+        ///bachelorhood
+        ///bachelorship
+        ///bacillary
+        ///bacilli
+        ///bacilliform
+        ///bacillus
+        ///back
+        ///back bench
+        ///back door
+        ///back number
+        ///b [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVb {
+            get {
+                return ResourceManager.GetString("EVb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to c
+        ///c.o.d.
+        ///ca&apos;canny
+        ///cab
+        ///cab-rank
+        ///cab-runner
+        ///cab-stand
+        ///cab-tout
+        ///cabal
+        ///cabala
+        ///cabalism
+        ///cabalistic
+        ///caballer
+        ///cabaret
+        ///cabaret show
+        ///cabbage
+        ///cabbage-head
+        ///cabbala
+        ///cabbalism
+        ///cabbalistic
+        ///cabby
+        ///caber
+        ///cabin
+        ///cabin-boy
+        ///cabin-class
+        ///cabinet
+        ///cabinet-maker
+        ///cabinet-making
+        ///cabinet-work
+        ///cable
+        ///cable-car
+        ///cablegram
+        ///cablerailway
+        ///cabman
+        ///caboodle
+        ///caboose
+        ///cabotage
+        ///cabriolet
+        ///cacao
+        ///cacao-tree
+        ///cachalot
+        ///cache
+        ///cachet
+        ///cachetic
+        ///cachexy
+        ///cachinnate
+        ///cachinnation
+        ///cachou
+        ///cack
+        ///cackle
+        ///cacodylate
+        ///caco [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVc {
+            get {
+                return ResourceManager.GetString("EVc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to d
+        ///d&apos;ye
+        ///d-day
+        ///d.ration
+        ///da
+        ///dab
+        ///dabber
+        ///dabble
+        ///dabbler
+        ///dabchick
+        ///dabster
+        ///dace
+        ///dachshund
+        ///dacoit
+        ///dacoity
+        ///dactyl
+        ///dactylic
+        ///dactylogram
+        ///dactylography
+        ///dactylogy
+        ///dad
+        ///daddy
+        ///dado
+        ///dady-long-legs
+        ///daedal
+        ///daedalian
+        ///daemon
+        ///daemonic
+        ///daff
+        ///daffadowndilly
+        ///daffodil
+        ///daffodilly
+        ///daffy
+        ///daft
+        ///dagger
+        ///daggle
+        ///dago
+        ///daguerreotype
+        ///dahlia
+        ///daily
+        ///daintiness
+        ///dainty
+        ///dairy
+        ///dairy cattle
+        ///dairy-farm
+        ///dairying
+        ///dairymaid
+        ///dairyman
+        ///dais
+        ///daisied
+        ///daisy
+        ///daisy-chain
+        ///daisy-cutter
+        ///dale
+        ///dalesman
+        ///dalliance
+        ///da [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVd {
+            get {
+                return ResourceManager.GetString("EVd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to e
+        ///e&apos;en
+        ///e&apos;er
+        ///e-boat
+        ///e.g
+        ///each
+        ///eager
+        ///eagerness
+        ///eagle
+        ///eagle-eyed
+        ///eaglet
+        ///eagre
+        ///ear
+        ///ear-ache
+        ///ear-drop
+        ///ear-drops
+        ///ear-drum
+        ///ear-hole
+        ///ear-phone
+        ///ear-pick
+        ///ear-ring
+        ///ear-splitting
+        ///ear-tab
+        ///ear-trumpet
+        ///ear-wax
+        ///earing
+        ///earl
+        ///earldom
+        ///earless
+        ///earliness
+        ///early
+        ///early bird
+        ///earmark
+        ///earmuffs
+        ///earn
+        ///earnest
+        ///earnestness
+        ///earnings
+        ///earser
+        ///earshot
+        ///earsure
+        ///earth
+        ///earth-bed
+        ///earth-born
+        ///earth-bound
+        ///earth-flax
+        ///earth-light
+        ///earth-nut
+        ///earth-shine
+        ///earth-worm
+        ///earthen
+        ///earthenware
+        ///earthiness
+        ///earthlines [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVe {
+            get {
+                return ResourceManager.GetString("EVe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to f
+        ///f.o.
+        ///fa
+        ///fabian
+        ///fable
+        ///fabled
+        ///fabler
+        ///fabric
+        ///fabricant
+        ///fabricate
+        ///fabricated
+        ///fabrication
+        ///fabricator
+        ///fabulist
+        ///fabulosity
+        ///facade
+        ///face
+        ///face value
+        ///face-ache
+        ///face-card
+        ///face-guard
+        ///face-lift
+        ///face-lifting
+        ///facer
+        ///facet
+        ///faceted
+        ///facetiae
+        ///facetious
+        ///facetiousness
+        ///facia
+        ///facial
+        ///facile
+        ///facilitate
+        ///facility
+        ///facing
+        ///facsimile
+        ///fact
+        ///fact-finding
+        ///faction
+        ///factional
+        ///factionalism
+        ///factious
+        ///factiousness
+        ///factitious
+        ///factitiousness
+        ///factitive
+        ///factor
+        ///factorage
+        ///factorial
+        ///factory
+        ///factotum
+        ///factu [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVf {
+            get {
+                return ResourceManager.GetString("EVf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to g
+        ///g.i.
+        ///g.man
+        ///gab
+        ///gabardine
+        ///gabber
+        ///gabble
+        ///gabbler
+        ///gabbro
+        ///gabby
+        ///gaberdine
+        ///gabion
+        ///gabionade
+        ///gable
+        ///gabled
+        ///gaby
+        ///gad
+        ///gad-fly
+        ///gadabout
+        ///gadder
+        ///gadget
+        ///gadoid
+        ///gadwall
+        ///gael
+        ///gaelic
+        ///gaff
+        ///gaffe
+        ///gaffer
+        ///gag
+        ///gag-man
+        ///gaga
+        ///gage
+        ///gaggle
+        ///gaiety
+        ///gaily
+        ///gain
+        ///gainer
+        ///gainful
+        ///gainings
+        ///gainly
+        ///gainsaid
+        ///gainsay
+        ///gainst
+        ///gait
+        ///gaiter
+        ///gal
+        ///gala
+        ///galactose
+        ///galantine
+        ///galanty show
+        ///galatic
+        ///galaxy
+        ///gale
+        ///galeate
+        ///galeeny
+        ///galen
+        ///galena
+        ///galenic
+        ///galenical
+        ///galimatias
+        ///galingale
+        ///galiot
+        ///galipot
+        ///gal [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVg {
+            get {
+                return ResourceManager.GetString("EVg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to h
+        ///h-bomb
+        ///h-hour
+        ///ha
+        ///ha ha
+        ///ha&apos;p&apos;orth
+        ///ha-ha
+        ///haaf
+        ///habanera
+        ///habeas corpus
+        ///haberdasher
+        ///haberdashery
+        ///habergeon
+        ///habile
+        ///habiliment
+        ///habilitate
+        ///habilitation
+        ///habit
+        ///habitability
+        ///habitable
+        ///habitableness
+        ///habitant
+        ///habitat
+        ///habitation
+        ///habitual
+        ///habitude
+        ///habitué
+        ///hachure
+        ///hacienda
+        ///hack
+        ///hack-hammer
+        ///hack-saw
+        ///hack-work
+        ///hackberry
+        ///hackbut
+        ///hackery
+        ///hacking
+        ///hackle
+        ///hackly
+        ///hackmatack
+        ///hackney
+        ///hackney-carriage
+        ///hackney-coach
+        ///hackneyed
+        ///hackstand
+        ///had
+        ///haddock
+        ///hade
+        ///hades
+        ///hadn&apos;t
+        ///haemal
+        ///haematic
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVh {
+            get {
+                return ResourceManager.GetString("EVh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to i
+        ///i&apos;d
+        ///i&apos;ll
+        ///i&apos;m
+        ///i&apos;ve
+        ///i-beam
+        ///i.e.
+        ///i.q.
+        ///iamb
+        ///iambi
+        ///iambic
+        ///iambus
+        ///iberian
+        ///ibex
+        ///ibices
+        ///ibidem
+        ///ibis
+        ///ice
+        ///ice cube
+        ///ice water
+        ///ice-age
+        ///ice-axe
+        ///ice-bag
+        ///ice-boat
+        ///ice-bound
+        ///ice-box
+        ///ice-breaker
+        ///ice-cap
+        ///ice-cold
+        ///ice-cream
+        ///ice-cream cone
+        ///ice-drift
+        ///ice-fall
+        ///ice-field
+        ///ice-fishing
+        ///ice-floe
+        ///ice-free
+        ///ice-hockey
+        ///ice-house
+        ///ice-pack
+        ///ice-pick
+        ///ice-plant
+        ///ice-pudding
+        ///ice-rain
+        ///ice-run
+        ///ice-sheet
+        ///ice-skate
+        ///ice-wool
+        ///ice-yacht
+        ///iceberg
+        ///iceblink
+        ///iced
+        ///icelander
+        ///icelandic
+        ///iceman
+        ///ichneumon        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVi {
+            get {
+                return ResourceManager.GetString("EVi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to j
+        ///jaal-goat
+        ///jab
+        ///jabber
+        ///jaborandi
+        ///jabot
+        ///jacinth
+        ///jack
+        ///jack frost
+        ///jack ketch
+        ///jack light
+        ///jack pudding
+        ///jack rabbit
+        ///jack sprat
+        ///jack tar
+        ///jack-a-dandy
+        ///jack-horse
+        ///jack-in-the-box
+        ///jack-knife
+        ///jack-o&apos;-lantern
+        ///jack-plane
+        ///jack-priest
+        ///jack-rafter
+        ///jack-screw
+        ///jack-snipe
+        ///jack-staff
+        ///jack-straw
+        ///jack-towel
+        ///jackal
+        ///jackanapes
+        ///jackaroo
+        ///jackass
+        ///jackboot
+        ///jackdaw
+        ///jacket
+        ///jackhammer
+        ///jackpot
+        ///jacob&apos;s ladder
+        ///jacob&apos;s staff
+        ///jacobean
+        ///jacobin
+        ///jacobinic
+        ///jacobinical
+        ///jacobinism
+        ///jaconet
+        ///jacquard loom
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVj {
+            get {
+                return ResourceManager.GetString("EVj", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to k
+        ///k-ration
+        ///kaama
+        ///kabbalah
+        ///kadi
+        ///kaff
+        ///kaftan
+        ///kago
+        ///kaiak
+        ///kail
+        ///kailyard
+        ///kaingin
+        ///kainite
+        ///kaiser
+        ///kaka
+        ///kakemono
+        ///kala-azar
+        ///kale
+        ///kaleidoscope
+        ///kaleidoscopic
+        ///kaleidoscopical
+        ///kalends
+        ///kaleyard
+        ///kali
+        ///kalium
+        ///kalong
+        ///kampometer
+        ///kampong
+        ///kanaka
+        ///kangaroo
+        ///kantian
+        ///kantianism
+        ///kaoliang
+        ///kaolin
+        ///kaolinise
+        ///kaolinization
+        ///kaolinize
+        ///kapellmeister
+        ///kapok
+        ///kaput
+        ///karakul
+        ///karma
+        ///karoo
+        ///kaross
+        ///kartel
+        ///kartell
+        ///karyokinesis
+        ///karyoplasm
+        ///katabatic
+        ///katabolism
+        ///katamorphic
+        ///katamorphism
+        ///kathode
+        ///kation
+        ///ka [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVk {
+            get {
+                return ResourceManager.GetString("EVk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to l
+        ///l-bar
+        ///l.s.d
+        ///la
+        ///la-breaker
+        ///la-di-da
+        ///laager
+        ///lab
+        ///labefaction
+        ///label
+        ///labeller
+        ///labia
+        ///labial
+        ///labialization
+        ///labialize
+        ///labiate
+        ///labile
+        ///lability
+        ///labiodental
+        ///labium
+        ///labor
+        ///labor day
+        ///laboratorial
+        ///laboratorian
+        ///laboratory
+        ///laboratory school
+        ///laborious
+        ///labour
+        ///labour exchange
+        ///labour force
+        ///labour leader
+        ///labour movement
+        ///labour of love
+        ///labour party
+        ///labour relations
+        ///labour-market
+        ///labour-saving
+        ///laboured
+        ///labourer
+        ///labouring
+        ///labourist
+        ///labourite
+        ///labra
+        ///labrum
+        ///laburnum
+        ///labyrinth
+        ///labyrinthia [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVl {
+            get {
+                return ResourceManager.GetString("EVl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to m
+        ///m-day
+        ///m.a
+        ///m.d.
+        ///m.p.
+        ///ma
+        ///ma&apos;am
+        ///macabre
+        ///macaco
+        ///macadam
+        ///macadamise
+        ///macadamization
+        ///macadamize
+        ///macaroni
+        ///macaroon
+        ///macaw
+        ///maccabaw
+        ///maccaboy
+        ///mace
+        ///macerate
+        ///maceration
+        ///macerative
+        ///macerator
+        ///mach number
+        ///machete
+        ///machiavel
+        ///machiavelli
+        ///machiavellian
+        ///machiavellianism
+        ///machiavellism
+        ///machicolate
+        ///machicolation
+        ///machicoulis
+        ///machinability
+        ///machinable
+        ///machinate
+        ///machination
+        ///machinator
+        ///machine
+        ///machine-gun
+        ///machine-gunner
+        ///machine-made
+        ///machine-shop
+        ///machine-tool
+        ///machinery
+        ///machinist
+        ///mackerel
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVm {
+            get {
+                return ResourceManager.GetString("EVm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to n
+        ///n&apos;t
+        ///nab
+        ///nabob
+        ///nacarat
+        ///nacelle
+        ///nacreous
+        ///nacrous
+        ///nadir
+        ///nadiral
+        ///naevi
+        ///naevus
+        ///nag
+        ///nagger
+        ///nagging
+        ///naggish
+        ///naggy
+        ///naiad
+        ///naif
+        ///nail
+        ///nail drawer
+        ///nail-biting
+        ///nail-brush
+        ///nail-file
+        ///nail-head
+        ///nail-polish
+        ///nail-scissors
+        ///nailer
+        ///nailery
+        ///nainsook
+        ///naive
+        ///naivety
+        ///naja
+        ///naked
+        ///nakedness
+        ///namby-pambiness
+        ///namby-pamby
+        ///namby-pambyism
+        ///name
+        ///name-caller
+        ///name-calling
+        ///name-child
+        ///name-day
+        ///name-part
+        ///name-plate
+        ///nameless
+        ///namely
+        ///namesake
+        ///nance
+        ///nancy
+        ///nandu
+        ///nanism
+        ///nankeen
+        ///nanny
+        ///nanny-goat
+        ///nap [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVn {
+            get {
+                return ResourceManager.GetString("EVn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to o
+        ///o yes
+        ///o&apos;
+        ///o&apos;clock
+        ///o&apos;er
+        ///o.k.
+        ///o.pip
+        ///oaf
+        ///oafish
+        ///oak
+        ///oak-apple
+        ///oak-fig
+        ///oak-gall
+        ///oak-nut
+        ///oak-wood
+        ///oaken
+        ///oaklet
+        ///oakling
+        ///oakum
+        ///oar
+        ///oar-lock
+        ///oarage
+        ///oared
+        ///oarer
+        ///oarless
+        ///oarsman
+        ///oarsmanship
+        ///oary
+        ///oases
+        ///oasis
+        ///oast
+        ///oast-house
+        ///oat
+        ///oatcake
+        ///oaten
+        ///oath
+        ///oath-breaker
+        ///oath-breaking
+        ///oatmeal
+        ///oaves
+        ///ob.
+        ///obbligato
+        ///obconical
+        ///obcordate
+        ///obduracy
+        ///obdurate
+        ///obeah
+        ///obedience
+        ///obedient
+        ///obedientiary
+        ///obeisance
+        ///obeisant
+        ///obeli
+        ///obelisk
+        ///obelize
+        ///obelus
+        ///obese
+        ///obesity
+        ///obey
+        ///obfuscate
+        ///obfusca [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVo {
+            get {
+                return ResourceManager.GetString("EVo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to p
+        ///p.m.
+        ///pa
+        ///pabulum
+        ///pace
+        ///pace-maker
+        ///pacer
+        ///pacha
+        ///pachyderm
+        ///pachydermatous
+        ///pacific
+        ///pacification
+        ///pacificator
+        ///pacificatory
+        ///pacificism
+        ///pacificist
+        ///pacifier
+        ///pacifism
+        ///pacifist
+        ///pacify
+        ///pack
+        ///pack-animal
+        ///pack-drill
+        ///pack-horse
+        ///pack-ice
+        ///pack-saddle
+        ///package
+        ///package deal
+        ///packer
+        ///packet
+        ///packet-boat
+        ///packing
+        ///packing-case
+        ///packing-needle
+        ///packing-paper
+        ///packing-sheet
+        ///packman
+        ///packpaper
+        ///packthread
+        ///pact
+        ///pad
+        ///padding
+        ///paddle
+        ///paddle board
+        ///paddle-box
+        ///paddle-wheel
+        ///paddlefish
+        ///paddock
+        ///paddy
+        ///padd [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVp {
+            get {
+                return ResourceManager.GetString("EVp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to q
+        ///q-boat
+        ///q-ship
+        ///qu.
+        ///qua
+        ///quacdragesima
+        ///quacdragesimal
+        ///quack
+        ///quack-quack
+        ///quackery
+        ///quackish
+        ///quacksalver
+        ///quad
+        ///quadragenarian
+        ///quadrangle
+        ///quadrangular
+        ///quadrant
+        ///quadrat
+        ///quadrate
+        ///quadratic
+        ///quadrature
+        ///quadrennial
+        ///quadric
+        ///quadriga
+        ///quadrigae
+        ///quadrilateral
+        ///quadrilingual
+        ///quadrille
+        ///quadrillion
+        ///quadripartite
+        ///quadripole
+        ///quadrisyllabic
+        ///quadrisyllable
+        ///quadrivalence
+        ///quadrivalency
+        ///quadrivalent
+        ///quadroon
+        ///quadrumanous
+        ///quadruped
+        ///quadrupedal
+        ///quadruple
+        ///quadruplet
+        ///quadruplicate
+        ///quadruplicati [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVq {
+            get {
+                return ResourceManager.GetString("EVq", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to r
+        ///rabbet
+        ///rabbi
+        ///rabbin
+        ///rabbit
+        ///rabbit-fever
+        ///rabbit-hole
+        ///rabbit-hutch
+        ///rabbit-punch
+        ///rabbit-warren
+        ///rabbitry
+        ///rabbity
+        ///rabble
+        ///rabble rouser
+        ///rabid
+        ///rabidity
+        ///rabidness
+        ///rabies
+        ///raccoon
+        ///race
+        ///race riot
+        ///race-card
+        ///race-meeting
+        ///race-way
+        ///racecourse
+        ///racehorse
+        ///raceme
+        ///racemose
+        ///racer
+        ///racetrack
+        ///rachitis
+        ///racial
+        ///racialism
+        ///racialist
+        ///raciness
+        ///racism
+        ///racist
+        ///rack
+        ///rack-rail
+        ///rack-railway
+        ///rack-rent
+        ///rack-renter
+        ///rack-wheel
+        ///racket
+        ///racketeer
+        ///raconteur
+        ///racoon
+        ///racquet
+        ///racy
+        ///radar
+        ///raddle
+        ///raddled
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVr {
+            get {
+                return ResourceManager.GetString("EVr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to s
+        ///s o s
+        ///s-o-b
+        ///sabaean
+        ///sabaism
+        ///sabbatarian
+        ///sabbath
+        ///sabbatic
+        ///sabbatise
+        ///sabbatize
+        ///sabean
+        ///saber
+        ///sabicu
+        ///sable
+        ///sabot
+        ///sabotage
+        ///saboteur
+        ///sabre
+        ///sabretache
+        ///sabreur
+        ///sabulous
+        ///sac
+        ///saccate
+        ///saccharate
+        ///saccharic
+        ///saccharide
+        ///sacchariferous
+        ///saccharification
+        ///saccharify
+        ///saccharimeter
+        ///saccharimetry
+        ///saccharin
+        ///saccharine
+        ///saccharoid
+        ///saccharometer
+        ///saccharose
+        ///sacciform
+        ///saccule
+        ///sacerdocy
+        ///sacerdotage
+        ///sacerdotal
+        ///sacerdotalism
+        ///sachem
+        ///sachet
+        ///sack
+        ///sack-coat
+        ///sack-race
+        ///sackbut
+        ///sackcloth
+        ///sacker [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVs {
+            get {
+                return ResourceManager.GetString("EVs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to t
+        ///t&apos;other
+        ///t-shirt
+        ///ta
+        ///ta-ta
+        ///tab
+        ///tabard
+        ///tabaret
+        ///tabby
+        ///tabefaction
+        ///tabernacle
+        ///tabes
+        ///tabescence
+        ///tabetic
+        ///table
+        ///table d&apos;hôte
+        ///table-cloth
+        ///table-companion
+        ///table-cover
+        ///table-diamond
+        ///table-flap
+        ///table-fork
+        ///table-knife
+        ///table-leaf
+        ///table-linen
+        ///table-spoon
+        ///table-spoonful
+        ///table-tomb
+        ///table-ware
+        ///table-water
+        ///tableau
+        ///tableaux
+        ///tableful
+        ///tableland
+        ///tablet
+        ///tablet tennis
+        ///tablet-talk
+        ///tabloid
+        ///taboo
+        ///tabor
+        ///taboret
+        ///tabouret
+        ///tabu
+        ///tabular
+        ///tabulate
+        ///tabulating machine
+        ///tabulation
+        ///tabulator
+        ///tacfu [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVt {
+            get {
+                return ResourceManager.GetString("EVt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to u
+        ///u-boat
+        ///u-turn
+        ///u.p.
+        ///ubiety
+        ///ubiquitous
+        ///ubiquitousness
+        ///ubiquity
+        ///udder
+        ///uddered
+        ///udometer
+        ///ugh
+        ///uglification
+        ///uglify
+        ///ugliness
+        ///ugly
+        ///uhlan
+        ///ukase
+        ///ukrainian
+        ///ukulele
+        ///ulcer
+        ///ulcerate
+        ///ulcerated
+        ///ulceration
+        ///ulcerative
+        ///ulcered
+        ///ulcerous
+        ///ulex
+        ///uliginal
+        ///uliginose
+        ///uliginous
+        ///ullage
+        ///ullaged
+        ///ulna
+        ///ulnae
+        ///ulnar
+        ///ulster
+        ///ult.
+        ///ulterior
+        ///ultima
+        ///ultimate
+        ///ultimately
+        ///ultimatum
+        ///ultimo
+        ///ultimogeniture
+        ///ultra
+        ///ultra vires
+        ///ultra-rapid
+        ///ultra-short
+        ///ultra-sound
+        ///ultra-violet
+        ///ultraconservative
+        ///ultraism
+        ///u [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVu {
+            get {
+                return ResourceManager.GetString("EVu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to v
+        ///v-day
+        ///v-e day
+        ///v-j day
+        ///vac
+        ///vacancy
+        ///vacant
+        ///vacate
+        ///vacation
+        ///vacationist
+        ///vaccilation
+        ///vaccinal
+        ///vaccinate
+        ///vaccination
+        ///vaccinator
+        ///vaccine
+        ///vaccinia
+        ///vacillate
+        ///vacillating
+        ///vacillatory
+        ///vacoular
+        ///vacoulate
+        ///vacoulated
+        ///vacoule
+        ///vacua
+        ///vacuity
+        ///vacuous
+        ///vacuum
+        ///vacuum bottle
+        ///vacuum brake
+        ///vacuum cleaner
+        ///vacuum desiccator
+        ///vacuum drier
+        ///vacuum fan
+        ///vacuum filter
+        ///vacuum flask
+        ///vacuum-clean
+        ///vacuum-gauge
+        ///vacuum-pump
+        ///vacuum-tube
+        ///vacuum-valve 
+        ///vagabond
+        ///vagabondage
+        ///vagabondism
+        ///vagabondize
+        ///vaga [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVv {
+            get {
+                return ResourceManager.GetString("EVv", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to w
+        ///w.c.
+        ///wabble
+        ///wabbly
+        ///wacky
+        ///wad
+        ///wadding
+        ///waddle
+        ///waddling
+        ///waddy
+        ///wade
+        ///wader
+        ///wadi
+        ///wading bird
+        ///wafer
+        ///waffle
+        ///waffle-iron
+        ///waft
+        ///wag
+        ///wage
+        ///wage hike
+        ///wage-earner
+        ///wage-freeze
+        ///wage-fund
+        ///wage-rise
+        ///wage-scale
+        ///wage-sheet
+        ///wager
+        ///wagerer
+        ///wages-fund
+        ///waggery
+        ///waggish
+        ///waggishness
+        ///waggle
+        ///waggly
+        ///waggon
+        ///waggoner
+        ///waggonette
+        ///wagon
+        ///wagon-lit
+        ///wagoner
+        ///wagonette
+        ///wagtail
+        ///waif
+        ///wail
+        ///wailful
+        ///wainscot
+        ///wainscoting
+        ///waist
+        ///waist-band
+        ///waist-deep
+        ///waist-line
+        ///waistcoat
+        ///wait
+        ///wait-and-see
+        ///waiter
+        ///wai [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVw {
+            get {
+                return ResourceManager.GetString("EVw", resourceCulture);
             }
         }
         
@@ -323,9 +1835,271 @@ namespace Dictionary.Properties {
         ///abdomen
         ///abdomina [rest of string was truncated]&quot;;.
         /// </summary>
+        internal static string EVWordList {
+            get {
+                return ResourceManager.GetString("EVWordList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a
+        ///a b c
+        ///a b c - book
+        ///a font
+        ///a fortiori
+        ///a la carte
+        ///a la mode
+        ///a posteriori
+        ///a priori
+        ///a-bomb
+        ///a-going
+        ///a-plenty
+        ///a-power
+        ///a.d.
+        ///a.m.
+        ///aard-wolf
+        ///aasvogel
+        ///aba
+        ///abaci
+        ///aback
+        ///abacus
+        ///abaddon
+        ///abaft
+        ///abalone
+        ///abandon
+        ///abandoned
+        ///abandoner
+        ///abandonment
+        ///abase
+        ///abasement
+        ///abash
+        ///abashment
+        ///abask
+        ///abatable
+        ///abate
+        ///abatement
+        ///abatis
+        ///abatised
+        ///abattoir
+        ///abb
+        ///abbacy
+        ///abbatial
+        ///abbess
+        ///abbey
+        ///abbot
+        ///abbreviate
+        ///abbreviated
+        ///abbreviation
+        ///abbreviator
+        ///abdicant
+        ///abdicate
+        ///abdication
+        ///abdicator
+        ///abdomen
+        ///abdomina [rest of string was truncated]&quot;;.
+        /// </summary>
         internal static string EVWordName {
             get {
                 return ResourceManager.GetString("EVWordName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to x
+        ///x-axis
+        ///x-ray
+        ///xanthate
+        ///xanthic
+        ///xanthine
+        ///xanthippe
+        ///xanthophyll
+        ///xanthous
+        ///xebec
+        ///xenogamy
+        ///xenomorphic
+        ///xenon
+        ///xenophobe
+        ///xenophobia
+        ///xerophilous
+        ///xerophthalmia
+        ///xerophyte
+        ///xiphoid
+        ///xmas
+        ///xylem
+        ///xylocarp
+        ///xylocarpous
+        ///xylograph
+        ///xylographer
+        ///xylography
+        ///xylonite
+        ///xylophagous
+        ///xylophone
+        ///xyster
+        ///x-rated
+        ///xbase
+        ///xcmd
+        ///xcnf
+        ///xenix
+        ///xenophilia
+        ///xenophilous
+        ///xenophobic
+        ///xerophagy
+        ///xerox
+        ///xga
+        ///xhosa
+        ///xia
+        ///xin
+        ///xl
+        ///xmodem
+        ///xms
+        ///xo
+        ///xx
+        ///xylen
+        ///xyloid
+        ///xi
+        ///x-rays
+        ///.
+        /// </summary>
+        internal static string EVx {
+            get {
+                return ResourceManager.GetString("EVx", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to y
+        ///y-axis
+        ///y-shaped
+        ///yacht
+        ///yacht-club
+        ///yachting
+        ///yachtsman
+        ///yachtsmanship
+        ///yaffil
+        ///yaffle
+        ///yah
+        ///yahoo
+        ///yak
+        ///yale lock
+        ///yam
+        ///yammer
+        ///yank
+        ///yankee
+        ///yankeefied
+        ///yankeeism
+        ///yaourt
+        ///yap
+        ///yard
+        ///yard-master
+        ///yard-wand
+        ///yardage
+        ///yardman
+        ///yardstick
+        ///yarn
+        ///yarn-beam
+        ///yarovization
+        ///yarovize
+        ///yarrow
+        ///yashmak
+        ///yaw
+        ///yawing
+        ///yawl
+        ///yawn
+        ///yawner
+        ///yawningly
+        ///yawny
+        ///yaws
+        ///yclept
+        ///ye
+        ///yea
+        ///yean
+        ///yeanling
+        ///year
+        ///year&apos;s mind
+        ///yearling
+        ///yearlong
+        ///yearly
+        ///yearn
+        ///yearning
+        ///yeast
+        ///yeastiness
+        ///yeasty
+        ///yegg
+        ///yeggman
+        ///yeld
+        ///yelk
+        ///yell [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVy {
+            get {
+                return ResourceManager.GetString("EVy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to z
+        ///z-day
+        ///zaffer
+        ///zambo
+        ///zany
+        ///zeal
+        ///zealot
+        ///zealotism
+        ///zealotry
+        ///zealous
+        ///zealousness
+        ///zebra
+        ///zebra markings
+        ///zebu
+        ///zed
+        ///zee
+        ///zemindar
+        ///zenana
+        ///zenith
+        ///zenithal
+        ///zeolite
+        ///zephyr
+        ///zepp
+        ///zeppelin
+        ///zero
+        ///zest
+        ///zeus
+        ///zibet
+        ///zigzag
+        ///zigzagging
+        ///zigzaggy
+        ///zinc
+        ///zinc-block
+        ///zinciferous
+        ///zinco
+        ///zincograph
+        ///zincographer
+        ///zincographic
+        ///zincography
+        ///zingiberaceous
+        ///zinnia
+        ///zionism
+        ///zionist
+        ///zip
+        ///zip-fastener
+        ///zipper
+        ///zircon
+        ///zirconium
+        ///zither
+        ///zithern
+        ///zloty
+        ///zodiac
+        ///zodiacal
+        ///zoic
+        ///zollverein
+        ///zonal
+        ///zonate
+        ///zone
+        ///z [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EVz {
+            get {
+                return ResourceManager.GetString("EVz", resourceCulture);
             }
         }
         

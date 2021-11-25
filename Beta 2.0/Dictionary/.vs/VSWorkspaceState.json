@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Dictionary",
-    "\\Dictionary\\Resources"
+    "\\Dictionary\\Database",
+    "\\Dictionary\\Database\\words",
+    "\\Dictionary\\Database\\words\\EnglishEnglish"
   ],
-  "SelectedNode": "\\Dictionary\\Resources\\EVWordAndSpelling.txt",
+  "SelectedNode": "\\Dictionary\\Database\\words\\EnglishEnglish\\EEWordList.txt",
   "PreviewInSolutionExplorer": false
 }

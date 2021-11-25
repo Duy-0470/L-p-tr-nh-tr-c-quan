@@ -226,4 +226,94 @@
   <data name="EVWordAndSpelling" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EVWordAndSpelling.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="EEWordList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EEWordList.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="EVa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVa.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVb.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVc.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVd.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVe.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVf.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVg.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVh.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVi.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVj.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVk.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="EVl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVl.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVn.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVo.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVp.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVq.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVr.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVs.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVu.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="EVv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVv.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVw.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="EVWordList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVWordList.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EVx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVx.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="EVy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVy.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="EVz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVz.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="british" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\british.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="EEWordAndSpelling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EEWordAndSpelling.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
 </root>

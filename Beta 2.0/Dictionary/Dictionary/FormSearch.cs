@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,12 +15,12 @@ namespace Dictionary
     public partial class FormSearch : Form
     {
         public static string search = "";
-        public static string[] hints = MainMenu.ReadAllResourceLines(Properties.Resources.EVWordName);
+        private readonly string DataDirectories = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Database\\";
 
         public FormSearch()
         {
             InitializeComponent();
-            ButtonGo.FlatAppearance.BorderSize = 0;            
+            ButtonGo.FlatAppearance.BorderSize = 0;        
         }
 
         private bool AreControlsValid(Control.ControlCollection controls)
@@ -88,29 +89,38 @@ namespace Dictionary
         private void TextBoxSearchInput_TextChanged(object sender, EventArgs e)
         {
             ListViewHint.Items.Clear();
-            int j = 0, i = 0;
-            
             ButtonGo.Enabled = AreControlsValid(Controls);
+
             if (TextBoxSearchInput.Text != "")
             {
-                while (i < hints.Count() && j < 19)
+                int j = 0;
+                if (MainMenu.current_language == "English - Vietnamese")
                 {
-                    bool flag = false;
-                    for (int k = 0; k < TextBoxSearchInput.Text.Length; k++)
+                    string[] hnt = File.ReadAllLines(DataDirectories + "words\\EnglishVietnamese\\list\\EV" + TextBoxSearchInput.Text[0] + ".txt");
+                    for (int i = 0; i < hnt.Length; i++)
                     {
-                        if (hints[i].Length < TextBoxSearchInput.Text.Length || hints[i][k] != TextBoxSearchInput.Text[k])
+                        if (hnt[i].StartsWith(TextBoxSearchInput.Text))
                         {
-                            flag = true;
-                            break;
+                            ListViewHint.Items.Add(hnt[i]);
+                            j++;
                         }
+                        if (j > 19)
+                            break;
                     }
-                    if (!flag && hints[i] != "")
-                    { 
-                        if (ListViewHint.FindItemWithText(hints[i]) == null)
-                            ListViewHint.Items.Add(hints[i]);
-                        j++;
+                }
+                else if (MainMenu.current_language == "English - English")
+                {
+                    string[] hnt = File.ReadAllLines(DataDirectories + "words\\EnglishEnglish\\list\\EE" + TextBoxSearchInput.Text[0] + ".txt");
+                    for (int i = 0; i < hnt.Length; i++)
+                    {
+                        if (hnt[i].StartsWith(TextBoxSearchInput.Text))
+                        {
+                            ListViewHint.Items.Add(hnt[i]);
+                            j++;
+                        }
+                        if (j > 19)
+                            break;
                     }
-                    i++;
                 }
             }
         }

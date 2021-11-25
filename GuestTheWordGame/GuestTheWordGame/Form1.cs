@@ -25,7 +25,7 @@ namespace GuestTheWordGame
         }
         public void Init()
         {
-            word = "word";
+            word = "reconcile";
             sences = "sences";
             label2.Text = "0";
             richTextBox1.Text = sences;

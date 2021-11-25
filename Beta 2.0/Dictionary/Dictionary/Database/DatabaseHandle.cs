@@ -10,15 +10,13 @@ namespace Dictionary.Database
 {
     public class DatabaseHandle
     {
-        private string DataDirectories = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Database\\";
-
+        private readonly string DataDirectories = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Database\\";
+        
         public DatabaseHandle()
         {
             
         }
-
         
-
         private bool IsInEVData(string line, string word)
         {
             if (line != "")
@@ -94,14 +92,143 @@ namespace Dictionary.Database
             return result;
         }
 
-        public EngEngWord FindEEWordMeaning(string word, string[] data)
+        public bool IsInEEData(string word)
         {
-            //EngEngWord result = new EngEngWord();
-            //string[] tokens_words = word.Split('|');
-            //result.Name = tokens_words[0];
-            //result.Spelling = tokens_words[3];
-            //result.WordClass = tokens_words[1];
+            string[] line = File.ReadAllLines(DataDirectories + "words\\EnglishEnglish\\list\\EE" + word[0] + ".txt");
+            for (int i = 0; i < line.Length; i++)
+            {
+                if (line[i] == word)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
+        public EngEngWord FindEEWordMeaning(string word, string[] data)
+        {
+            EngEngWord result = new EngEngWord();
+            bool flag = false;
+
+            for (int i = 0; i < data.Length; i++)
+            {
+                if (IsInEEData(word))
+                {
+                    result.Name = word;
+                    for (int j = 0; j < MainMenu.randomizer.Length; j++)
+                    {
+                        if (word == MainMenu.randomizer[j].Substring(0, MainMenu.randomizer[j].IndexOf('|')))
+                        {
+                            result.Spelling = MainMenu.randomizer[j].Substring(MainMenu.randomizer[j].IndexOf('|') + 1);
+                            break;
+                        }
+                    }
+
+                    foreach (string line in File.ReadLines(DataDirectories + "words\\EnglishEnglish\\words.txt"))
+                    {
+                        if (line.Substring(0, line.IndexOf('|') - 2) == word)
+                        { 
+                            flag = true;
+                            string[] tokens_w = line.Split('|');
+                            if (result.Meaning.Contains(tokens_w[2]))
+                                continue;
+                            result.Meaning = result.Meaning + tokens_w[2] + ": " + tokens_w[1] + " " + tokens_w[3] + "\n";
+                        }
+                        if (flag && line.Substring(0, line.IndexOf('|') - 2) != word)
+                            break;
+                    }
+                    result.Meaning += "\n";
+
+                    flag = false;
+                    foreach (string line in File.ReadLines(DataDirectories + "words\\EnglishEnglish\\word_forms.txt"))
+                    {
+                        if (line.Substring(0, line.IndexOf('|') - 2) == word)
+                        {
+                            flag = true;
+                            string[] tokens_wf = line.Split('|');
+                            if (result.Spelling == "")
+                                result.Spelling += tokens_wf[3];
+                            result.Meaning = result.Meaning + "- " + tokens_wf[1] + " " + tokens_wf[2] + "\n";                     
+                        }
+                        if (flag && line.Substring(0, line.IndexOf('|') - 2) != word)
+                            break;
+                    }
+                    result.Meaning += "\n";
+
+                    flag = false;
+                    foreach (string line in File.ReadAllLines(DataDirectories + "words\\EnglishEnglish\\shortcuts.txt"))
+                    {
+                        if (line.Substring(0, line.IndexOf('|') - 2) == word)
+                        {
+                            flag = true;
+                            string[] tokens_sc = line.Split('|');
+                            result.Meaning = result.Meaning + "- " + tokens_sc[1] + "\n";                           
+                        }
+                        if (flag && line.Substring(0, line.IndexOf('|') - 2) != word)
+                            break;
+                    }
+                    result.Meaning += "\n";
+
+                    flag = false;
+                    foreach (string line in File.ReadAllLines(DataDirectories + "words\\EnglishEnglish\\senses.txt"))
+                    {                       
+                        if (line.Substring(0, line.IndexOf('|') - 2) == word)
+                        {
+                            flag = true;
+                            string[] tokens_sc = line.Split('|');
+                            result.Meaning = result.Meaning + "- " + (tokens_sc[1] != "NA" ? tokens_sc[1] + " " : "") + tokens_sc[2] + " " + (tokens_sc[4] != "NA" ? tokens_sc[4] : "")
+                                + " " + (tokens_sc[5] != "NA" ? tokens_sc[5] : "") + "\n";
+                        }
+                        if (flag && line.Substring(0, line.IndexOf('|') - 2) != word)
+                            break;
+                    }
+                    result.Meaning += "\n";
+
+                    flag = false;
+                    foreach (string line in File.ReadAllLines(DataDirectories + "words\\EnglishEnglish\\extra_list.txt"))
+                    {
+                        if (line.Substring(0, line.IndexOf('|') - 2) == word)
+                        {
+                            flag = true;
+                            string[] tokens_el = line.Split('|');
+                            result.Meaning = result.Meaning + "- " + tokens_el[1] + "\n";                           
+                        }
+                        if (flag && line.Substring(0, line.IndexOf('|') - 2) != word)
+                            break;
+                    }
+                    result.Meaning += "\n";
+
+                    flag = false;
+                    foreach (string line in File.ReadAllLines(DataDirectories + "words\\EnglishEnglish\\examples.txt"))
+                    {
+                        if (line.Substring(0, line.IndexOf('|') - 2) == word)
+                        {
+                            flag = true;
+                            string[] tokens_ex = line.Split('|');
+                            result.Meaning = result.Meaning + tokens_ex[4] + "\n";
+                        }
+                        if (flag && line.Substring(0, line.IndexOf('|') - 2) != word)
+                            break;
+                    }
+                    result.Meaning += "\n";
+
+                    flag = false;
+                    foreach (string line in File.ReadAllLines(DataDirectories + "words\\EnglishEnglish\\see_also.txt"))
+                    {
+                        if (line.Substring(0, line.IndexOf('|') - 2) == word)
+                        {
+                            string[] tokens_sa = line.Split('|');
+                            result.SeeAlso += tokens_sa[3] + "|";
+                        }
+                        if (flag && line.Substring(0, line.IndexOf('|') - 2) != word)
+                            break;
+                    }
+                    result.Meaning += "\n";
+
+                    break;
+                }
+            }
+            return result;
+        }
     }
 }

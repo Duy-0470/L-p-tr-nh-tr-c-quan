@@ -8,3 +8,14 @@ F:\Test\GuestTheWordGame\GuestTheWordGame\obj\Debug\GuestTheWordGame.csproj.Core
 F:\Test\GuestTheWordGame\GuestTheWordGame\obj\Debug\GuestTheWordGame.exe
 F:\Test\GuestTheWordGame\GuestTheWordGame\obj\Debug\GuestTheWordGame.pdb
 F:\Test\GuestTheWordGame\GuestTheWordGame\obj\Debug\GuestTheWordGame.Form1.resources
+E:\CODING\GIT VP Project\HEAD\main3\Visual-Progamming\GuestTheWordGame\GuestTheWordGame\bin\Debug\GuestTheWordGame.exe.config
+E:\CODING\GIT VP Project\HEAD\main3\Visual-Progamming\GuestTheWordGame\GuestTheWordGame\bin\Debug\GuestTheWordGame.exe
+E:\CODING\GIT VP Project\HEAD\main3\Visual-Progamming\GuestTheWordGame\GuestTheWordGame\bin\Debug\GuestTheWordGame.pdb
+E:\CODING\GIT VP Project\HEAD\main3\Visual-Progamming\GuestTheWordGame\GuestTheWordGame\obj\Debug\GuestTheWordGame.csproj.AssemblyReference.cache
+E:\CODING\GIT VP Project\HEAD\main3\Visual-Progamming\GuestTheWordGame\GuestTheWordGame\obj\Debug\GuestTheWordGame.csproj.SuggestedBindingRedirects.cache
+E:\CODING\GIT VP Project\HEAD\main3\Visual-Progamming\GuestTheWordGame\GuestTheWordGame\obj\Debug\GuestTheWordGame.Form1.resources
+E:\CODING\GIT VP Project\HEAD\main3\Visual-Progamming\GuestTheWordGame\GuestTheWordGame\obj\Debug\GuestTheWordGame.Properties.Resources.resources
+E:\CODING\GIT VP Project\HEAD\main3\Visual-Progamming\GuestTheWordGame\GuestTheWordGame\obj\Debug\GuestTheWordGame.csproj.GenerateResource.cache
+E:\CODING\GIT VP Project\HEAD\main3\Visual-Progamming\GuestTheWordGame\GuestTheWordGame\obj\Debug\GuestTheWordGame.csproj.CoreCompileInputs.cache
+E:\CODING\GIT VP Project\HEAD\main3\Visual-Progamming\GuestTheWordGame\GuestTheWordGame\obj\Debug\GuestTheWordGame.exe
+E:\CODING\GIT VP Project\HEAD\main3\Visual-Progamming\GuestTheWordGame\GuestTheWordGame\obj\Debug\GuestTheWordGame.pdb

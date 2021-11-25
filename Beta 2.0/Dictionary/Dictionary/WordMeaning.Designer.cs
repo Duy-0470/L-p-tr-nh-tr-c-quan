@@ -32,7 +32,6 @@
             this.LabelWord = new System.Windows.Forms.Label();
             this.LabelSpelling = new System.Windows.Forms.Label();
             this.RichTextBoxWordInfo = new System.Windows.Forms.RichTextBox();
-            this.LabelSeeAlso = new System.Windows.Forms.Label();
             this.ToolTipWordMeaning = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,11 +41,12 @@
             this.ToolStripMenuItemFavorites = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.gamesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ButtonMarkWord = new System.Windows.Forms.Button();
+            this.ButtonSpeak = new System.Windows.Forms.Button();
+            this.LabelMore = new System.Windows.Forms.Label();
             this.LinkLabelSeeAlso1 = new System.Windows.Forms.LinkLabel();
             this.LinkLabelSeeAlso2 = new System.Windows.Forms.LinkLabel();
             this.LinkLabelSeeAlso3 = new System.Windows.Forms.LinkLabel();
-            this.ButtonMarkWord = new System.Windows.Forms.Button();
-            this.ButtonSpeak = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,25 +77,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RichTextBoxWordInfo.BackColor = System.Drawing.Color.White;
             this.RichTextBoxWordInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RichTextBoxWordInfo.DetectUrls = false;
             this.RichTextBoxWordInfo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RichTextBoxWordInfo.Location = new System.Drawing.Point(17, 105);
             this.RichTextBoxWordInfo.Name = "RichTextBoxWordInfo";
             this.RichTextBoxWordInfo.ReadOnly = true;
-            this.RichTextBoxWordInfo.Size = new System.Drawing.Size(717, 509);
+            this.RichTextBoxWordInfo.Size = new System.Drawing.Size(717, 449);
             this.RichTextBoxWordInfo.TabIndex = 3;
             this.RichTextBoxWordInfo.TabStop = false;
             this.RichTextBoxWordInfo.Text = "Info here";
-            // 
-            // LabelSeeAlso
-            // 
-            this.LabelSeeAlso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.LabelSeeAlso.AutoSize = true;
-            this.LabelSeeAlso.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelSeeAlso.Location = new System.Drawing.Point(16, 629);
-            this.LabelSeeAlso.Name = "LabelSeeAlso";
-            this.LabelSeeAlso.Size = new System.Drawing.Size(72, 16);
-            this.LabelSeeAlso.TabIndex = 4;
-            this.LabelSeeAlso.Text = "SEE ALSO";
             // 
             // menuStrip1
             // 
@@ -165,47 +155,9 @@
             this.gamesToolStripMenuItem.Text = "Word games";
             this.gamesToolStripMenuItem.Click += new System.EventHandler(this.gamesToolStripMenuItem_Click);
             // 
-            // LinkLabelSeeAlso1
-            // 
-            this.LinkLabelSeeAlso1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.LinkLabelSeeAlso1.AutoSize = true;
-            this.LinkLabelSeeAlso1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LinkLabelSeeAlso1.Location = new System.Drawing.Point(31, 655);
-            this.LinkLabelSeeAlso1.Name = "LinkLabelSeeAlso1";
-            this.LinkLabelSeeAlso1.Size = new System.Drawing.Size(47, 19);
-            this.LinkLabelSeeAlso1.TabIndex = 11;
-            this.LinkLabelSeeAlso1.TabStop = true;
-            this.LinkLabelSeeAlso1.Text = "extra1";
-            this.LinkLabelSeeAlso1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso1_LinkClicked);
-            // 
-            // LinkLabelSeeAlso2
-            // 
-            this.LinkLabelSeeAlso2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.LinkLabelSeeAlso2.AutoSize = true;
-            this.LinkLabelSeeAlso2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LinkLabelSeeAlso2.Location = new System.Drawing.Point(31, 687);
-            this.LinkLabelSeeAlso2.Name = "LinkLabelSeeAlso2";
-            this.LinkLabelSeeAlso2.Size = new System.Drawing.Size(47, 19);
-            this.LinkLabelSeeAlso2.TabIndex = 11;
-            this.LinkLabelSeeAlso2.TabStop = true;
-            this.LinkLabelSeeAlso2.Text = "extra2";
-            this.LinkLabelSeeAlso2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso2_LinkClicked);
-            // 
-            // LinkLabelSeeAlso3
-            // 
-            this.LinkLabelSeeAlso3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.LinkLabelSeeAlso3.AutoSize = true;
-            this.LinkLabelSeeAlso3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LinkLabelSeeAlso3.Location = new System.Drawing.Point(31, 716);
-            this.LinkLabelSeeAlso3.Name = "LinkLabelSeeAlso3";
-            this.LinkLabelSeeAlso3.Size = new System.Drawing.Size(47, 19);
-            this.LinkLabelSeeAlso3.TabIndex = 11;
-            this.LinkLabelSeeAlso3.TabStop = true;
-            this.LinkLabelSeeAlso3.Text = "extra3";
-            this.LinkLabelSeeAlso3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso3_LinkClicked);
-            // 
             // ButtonMarkWord
             // 
+            this.ButtonMarkWord.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ButtonMarkWord.BackgroundImage = global::Dictionary.Properties.Resources.unmarked;
             this.ButtonMarkWord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonMarkWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -224,7 +176,7 @@
             this.ButtonSpeak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonSpeak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonSpeak.ForeColor = System.Drawing.Color.White;
-            this.ButtonSpeak.Location = new System.Drawing.Point(262, 66);
+            this.ButtonSpeak.Location = new System.Drawing.Point(337, 66);
             this.ButtonSpeak.Name = "ButtonSpeak";
             this.ButtonSpeak.Size = new System.Drawing.Size(25, 25);
             this.ButtonSpeak.TabIndex = 8;
@@ -232,19 +184,65 @@
             this.ButtonSpeak.Click += new System.EventHandler(this.ButtonSpeak_Click);
             this.ButtonSpeak.MouseHover += new System.EventHandler(this.ButtonSpeak_MouseHover);
             // 
+            // LabelMore
+            // 
+            this.LabelMore.AutoSize = true;
+            this.LabelMore.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelMore.Location = new System.Drawing.Point(31, 602);
+            this.LabelMore.Name = "LabelMore";
+            this.LabelMore.Size = new System.Drawing.Size(55, 18);
+            this.LabelMore.TabIndex = 11;
+            this.LabelMore.Text = "MORE";
+            // 
+            // LinkLabelSeeAlso1
+            // 
+            this.LinkLabelSeeAlso1.AutoSize = true;
+            this.LinkLabelSeeAlso1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkLabelSeeAlso1.Location = new System.Drawing.Point(30, 635);
+            this.LinkLabelSeeAlso1.Name = "LinkLabelSeeAlso1";
+            this.LinkLabelSeeAlso1.Size = new System.Drawing.Size(72, 19);
+            this.LinkLabelSeeAlso1.TabIndex = 12;
+            this.LinkLabelSeeAlso1.TabStop = true;
+            this.LinkLabelSeeAlso1.Text = "linkLabel1";
+            this.LinkLabelSeeAlso1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso1_LinkClicked);
+            // 
+            // LinkLabelSeeAlso2
+            // 
+            this.LinkLabelSeeAlso2.AutoSize = true;
+            this.LinkLabelSeeAlso2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkLabelSeeAlso2.Location = new System.Drawing.Point(30, 669);
+            this.LinkLabelSeeAlso2.Name = "LinkLabelSeeAlso2";
+            this.LinkLabelSeeAlso2.Size = new System.Drawing.Size(72, 19);
+            this.LinkLabelSeeAlso2.TabIndex = 12;
+            this.LinkLabelSeeAlso2.TabStop = true;
+            this.LinkLabelSeeAlso2.Text = "linkLabel1";
+            this.LinkLabelSeeAlso2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso2_LinkClicked);
+            // 
+            // LinkLabelSeeAlso3
+            // 
+            this.LinkLabelSeeAlso3.AutoSize = true;
+            this.LinkLabelSeeAlso3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkLabelSeeAlso3.Location = new System.Drawing.Point(30, 700);
+            this.LinkLabelSeeAlso3.Name = "LinkLabelSeeAlso3";
+            this.LinkLabelSeeAlso3.Size = new System.Drawing.Size(72, 19);
+            this.LinkLabelSeeAlso3.TabIndex = 12;
+            this.LinkLabelSeeAlso3.TabStop = true;
+            this.LinkLabelSeeAlso3.Text = "linkLabel1";
+            this.LinkLabelSeeAlso3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso3_LinkClicked);
+            // 
             // WordMeaning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(758, 749);
-            this.Controls.Add(this.LinkLabelSeeAlso2);
             this.Controls.Add(this.LinkLabelSeeAlso3);
+            this.Controls.Add(this.LinkLabelSeeAlso2);
             this.Controls.Add(this.LinkLabelSeeAlso1);
+            this.Controls.Add(this.LabelMore);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.ButtonMarkWord);
             this.Controls.Add(this.ButtonSpeak);
-            this.Controls.Add(this.LabelSeeAlso);
             this.Controls.Add(this.RichTextBoxWordInfo);
             this.Controls.Add(this.LabelSpelling);
             this.Controls.Add(this.LabelWord);
@@ -266,20 +264,20 @@
         private System.Windows.Forms.Label LabelWord;
         private System.Windows.Forms.Label LabelSpelling;
         private System.Windows.Forms.RichTextBox RichTextBoxWordInfo;
-        private System.Windows.Forms.Label LabelSeeAlso;
         private System.Windows.Forms.Button ButtonSpeak;
         private System.Windows.Forms.ToolTip ToolTipWordMeaning;
         private System.Windows.Forms.Button ButtonMarkWord;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
-        private System.Windows.Forms.LinkLabel LinkLabelSeeAlso1;
-        private System.Windows.Forms.LinkLabel LinkLabelSeeAlso2;
-        private System.Windows.Forms.LinkLabel LinkLabelSeeAlso3;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemFavorites;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem recentToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem gamesToolStripMenuItem;
+        private System.Windows.Forms.Label LabelMore;
+        private System.Windows.Forms.LinkLabel LinkLabelSeeAlso1;
+        private System.Windows.Forms.LinkLabel LinkLabelSeeAlso2;
+        private System.Windows.Forms.LinkLabel LinkLabelSeeAlso3;
     }
 }

@@ -23,53 +23,88 @@ namespace Dictionary
             InitializeComponent();
             RichTextBoxWordInfo.BorderStyle = BorderStyle.None;
             ButtonSpeak.FlatAppearance.BorderSize = 0;
-            ButtonMarkWord.FlatAppearance.BorderSize = 0;
-            
+            ButtonMarkWord.FlatAppearance.BorderSize = 0;          
         }
 
         private void WordMeaning_Load(object sender, EventArgs e)
         {
-            EngVietWord engVietWord = databaseHandle.FindEVWordMeaning(FormSearch.search, MainMenu.data);
-            if (engVietWord.Name != "" && engVietWord.Meaning != "")
+            if (MainMenu.current_language == "English - Vietnamese")
             {
-                LabelWord.Text = engVietWord.Name;
-                LabelSpelling.Text = engVietWord.Spelling;
-                RichTextBoxWordInfo.Text = engVietWord.Meaning;
-
-                while (r1 == r2 && r2 == r3 && r1 == r3 && !FormSearch.hints[r1].Contains('=') && !FormSearch.hints[r2].Contains('=') && !FormSearch.hints[r3].Contains('='))
+                EngVietWord engVietWord = databaseHandle.FindEVWordMeaning(FormSearch.search, MainMenu.data);
+                if (engVietWord.Name != "" && engVietWord.Meaning != "")
                 {
-                    r1 = rand.Next(0, FormSearch.hints.Length);
-                    r2 = rand.Next(0, FormSearch.hints.Length);
-                    r3 = rand.Next(0, FormSearch.hints.Length);
+                    LabelWord.Text = engVietWord.Name;
+                    LabelSpelling.Text = engVietWord.Spelling;
+                    RichTextBoxWordInfo.Text = engVietWord.Meaning;
+
+                    while (r1 == r2 && r2 == r3 && r1 == r3 && !MainMenu.hints[r1].Contains('=') && !MainMenu.hints[r2].Contains('=') && !MainMenu.hints[r3].Contains('='))
+                    {
+                        r1 = rand.Next(0, MainMenu.hints.Length);
+                        r2 = rand.Next(0, MainMenu.hints.Length);
+                        r3 = rand.Next(0, MainMenu.hints.Length);
+                    }
+
+                    if (MainMenu.hints[r1].Contains('/'))
+                        LinkLabelSeeAlso1.Text = MainMenu.hints[r1].Substring(0, MainMenu.hints[r1].IndexOf('/') - 1).Replace('@', ' ').Trim();
+                    else
+                        LinkLabelSeeAlso1.Text = MainMenu.hints[r1].Replace('@', ' ').Trim();
+
+                    if (MainMenu.hints[r2].Contains('/'))
+                        LinkLabelSeeAlso2.Text = MainMenu.hints[r2].Substring(0, MainMenu.hints[r1].IndexOf('/') - 1).Replace('@', ' ').Trim();
+                    else
+                        LinkLabelSeeAlso2.Text = MainMenu.hints[r2].Replace('@', ' ').Trim();
+
+                    if (MainMenu.hints[r3].Contains('/'))
+                        LinkLabelSeeAlso3.Text = MainMenu.hints[r3].Substring(0, MainMenu.hints[r3].IndexOf('/') - 1).Replace('@', ' ').Trim();
+                    else
+                        LinkLabelSeeAlso3.Text = MainMenu.hints[r3].Replace('@', ' ').Trim();
                 }
-
-                if (FormSearch.hints[r1].Contains('/'))
-                    LinkLabelSeeAlso1.Text = FormSearch.hints[r1].Substring(0, FormSearch.hints[r1].IndexOf('/') - 1).Replace('@', ' ').Trim();
                 else
-                    LinkLabelSeeAlso1.Text = FormSearch.hints[r1].Replace('@', ' ').Trim();
-
-                if (FormSearch.hints[r2].Contains('/'))
-                    LinkLabelSeeAlso2.Text = FormSearch.hints[r2].Substring(0, FormSearch.hints[r1].IndexOf('/') - 1).Replace('@', ' ').Trim();
-                else
-                    LinkLabelSeeAlso2.Text = FormSearch.hints[r2].Replace('@', ' ').Trim();
-
-                if (FormSearch.hints[r3].Contains('/'))
-                    LinkLabelSeeAlso3.Text = FormSearch.hints[r3].Substring(0, FormSearch.hints[r3].IndexOf('/') - 1).Replace('@', ' ').Trim();
-                else
-                    LinkLabelSeeAlso3.Text = FormSearch.hints[r3].Replace('@', ' ').Trim();
+                {
+                    LabelWord.Text = "";
+                    LabelSpelling.Text = "";
+                    ButtonMarkWord.Visible = false;
+                    ButtonSpeak.Visible = false;
+                    RichTextBoxWordInfo.Text = "We can't find what you're looking for :(";
+                    LabelMore.Visible = false;
+                    LinkLabelSeeAlso1.Visible = false;
+                    LinkLabelSeeAlso2.Visible = false;
+                    LinkLabelSeeAlso3.Visible = false;
+                }
             }
-            else
+            else if (MainMenu.current_language == "English - English")
             {
-                LabelWord.Text = "";
-                LabelSpelling.Text = "";
-                ButtonMarkWord.Visible = false;
-                ButtonSpeak.Visible = false;
-                RichTextBoxWordInfo.Text = "We can't find what you're looking for :(";
-                LabelSeeAlso.Visible = false;
-                LinkLabelSeeAlso1.Visible = false;
-                LinkLabelSeeAlso2.Visible = false;
-                LinkLabelSeeAlso3.Visible = false;
+                EngEngWord engEngWord = databaseHandle.FindEEWordMeaning(FormSearch.search, MainMenu.data);
+                if (engEngWord.Name != "" && engEngWord.Meaning != "")
+                {
+                    LabelWord.Text = engEngWord.Name;
+                    LabelSpelling.Text = engEngWord.Spelling;
+                    RichTextBoxWordInfo.Text = engEngWord.Meaning;
+                    while (r1 == r2 && r2 == r3 && r1 == r3)
+                    {
+                        r1 = rand.Next(0, MainMenu.hints.Length);
+                        r2 = rand.Next(0, MainMenu.hints.Length);
+                        r3 = rand.Next(0, MainMenu.hints.Length);
+                    }
+                    LinkLabelSeeAlso1.Text = MainMenu.hints[r1];
+                    LinkLabelSeeAlso2.Text = MainMenu.hints[r2];
+                    LinkLabelSeeAlso3.Text = MainMenu.hints[r3];
+                }
+                else
+                {
+                    LabelWord.Text = "";
+                    LabelSpelling.Text = "";
+                    ButtonMarkWord.Visible = false;
+                    ButtonSpeak.Visible = false;
+                    RichTextBoxWordInfo.Text = "We can't find what you're looking for :(";
+                    LabelMore.Visible = false;
+                    LinkLabelSeeAlso1.Visible = false;
+                    LinkLabelSeeAlso2.Visible = false;
+                    LinkLabelSeeAlso3.Visible = false;
+                }
             }
+
+
         }
 
         private void ButtonSpeak_Click(object sender, EventArgs e)
@@ -102,6 +137,21 @@ namespace Dictionary
             Close();
         }
 
+        private void WordMeaning_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
+
+        private void recentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void ToolStripMenuItemFavorites_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         private void LinkLabelSeeAlso1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FormSearch.search = LinkLabelSeeAlso1.Text;
@@ -117,21 +167,6 @@ namespace Dictionary
         private void LinkLabelSeeAlso3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FormSearch.search = LinkLabelSeeAlso3.Text;
-            Close();
-        }
-
-        private void WordMeaning_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        }
-
-        private void recentToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void ToolStripMenuItemFavorites_Click(object sender, EventArgs e)
-        {
             Close();
         }
 

@@ -8,7 +8,7 @@ namespace Dictionary
 {
     public class EngEngWord
     {
-        private string name, spelling, wordclass, wordforms, shortcuts, senses, examples, extras, see_also;
+        private string name, spelling, meaning, seealso;
         public string Name
         {
             get => name;
@@ -19,44 +19,19 @@ namespace Dictionary
             get => spelling;
             set => spelling = value;
         }
-        public string WordClass
+        public string Meaning
         {
-            get => wordclass;
-            set => wordclass = value;
-        }
-        public string WordForms
-        {
-            get => wordforms;
-            set => wordforms = value;
-        }
-        public string Shortcuts
-        {
-            get => shortcuts;
-            set => shortcuts = value;
-        }
-        public string Senses
-        {
-            get => senses;
-            set => senses = value;
-        }
-        public string Examples
-        {
-            get => examples;
-            set => examples = value;
-        }
-        public string Extras
-        {
-            get => extras;
-            set => extras = value;
+            get => meaning;
+            set => meaning = value;
         }
         public string SeeAlso
         {
-            get => see_also;
-            set => see_also = value;
+            get => seealso;
+            set => seealso = value;
         }
-        public EngEngWord(string n = "", string wf = "", string sh = "", string se = "", string exa = "", string ext = "", string sa = "")
+        public EngEngWord(string n = "", string sp = "", string m = "", string sa = "")
         {
-            Name = n; WordForms = wf; Shortcuts = sh; Shortcuts = se; Examples = exa; Extras = ext; SeeAlso = sa;
+            Name = n; Spelling = sp; Meaning = m; SeeAlso = sa;
         }
     }
 }
