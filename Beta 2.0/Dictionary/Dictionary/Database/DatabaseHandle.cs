@@ -10,7 +10,7 @@ namespace Dictionary.Database
 {
     public class DatabaseHandle
     {
-        private readonly string DataDirectories = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Database\\";
+        public static readonly string DataDirectories = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Database\\";
         
         public DatabaseHandle()
         {

@@ -60,6 +60,11 @@ namespace Dictionary
                 FormSearch fs = new FormSearch();
                 fs.Show();
             }
+            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "browseToolStripMenuItem_Click"))
+            {
+                FormBrowse fb = new FormBrowse();
+                fb.Show();
+            }
             else
                 MainMenu.instance.Show();
         }
@@ -67,6 +72,11 @@ namespace Dictionary
         private void ListViewFavorites_SelectedIndexChanged(object sender, EventArgs e)
         {
             FormSearch.search = ListViewFavorites.SelectedItems[0].Text;
+            Close();
+        }
+
+        private void browseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             Close();
         }
     }

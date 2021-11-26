@@ -20,7 +20,7 @@ namespace Dictionary
         public static string[] data, randomizer, hints;
         public Random rand = new Random();
         public int index;
-        public static string[] sound = ReadAllResourceLines(Properties.Resources.british);
+        public static string[] sound = ReadAllResourceLines(Properties.Resources.words);
 
         public static IEnumerable<string> EnumerateLines(TextReader reader)
         {
@@ -211,6 +211,17 @@ namespace Dictionary
                 LabelRandomizedWord.Text = tokens[0];
                 LabelRWSpelling.Text = tokens[1];
             }
+            for (int i = 0; i < sound.Length; i++)
+            {
+                string[] tokens = sound[i].Split('|');
+                if (tokens[0].Substring(0, tokens[0].IndexOf('|') - 2) == LabelRandomizedWord.Text)
+                {
+                    ButtonRMSpeak.Visible = true;
+                    break;
+                }
+                else
+                    ButtonRMSpeak.Visible = false;
+            }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -234,7 +245,21 @@ namespace Dictionary
 
         private void ButtonRMSpeak_Click(object sender, EventArgs e)
         {
+            try
+            {
+                
+            }
+            catch (Exception)
+            {
 
+            }
+        }
+
+        private void browseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormBrowse fb = new FormBrowse();
+            fb.Show();
         }
 
         private void MainMenu_FormClosing(object sender, FormClosingEventArgs e)

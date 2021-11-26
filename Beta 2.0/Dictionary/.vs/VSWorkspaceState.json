@@ -4,8 +4,9 @@
     "\\Dictionary",
     "\\Dictionary\\Database",
     "\\Dictionary\\Database\\words",
-    "\\Dictionary\\Database\\words\\EnglishEnglish"
+    "\\Dictionary\\Database\\words\\EnglishEnglish",
+    "\\Dictionary\\Database\\words\\EnglishVietnamese"
   ],
-  "SelectedNode": "\\Dictionary\\Database\\words\\EnglishEnglish\\EEWordList.txt",
+  "SelectedNode": "\\Dictionary.sln",
   "PreviewInSolutionExplorer": false
 }

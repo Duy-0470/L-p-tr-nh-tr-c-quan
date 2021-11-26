@@ -15,7 +15,7 @@ namespace Dictionary
     public partial class WordMeaning : Form
     {
         public Database.DatabaseHandle databaseHandle = new Database.DatabaseHandle();
-        private Random rand = new Random();
+        private readonly Random rand = new Random();
         private int r1, r2, r3;
 
         public WordMeaning()
@@ -154,19 +154,27 @@ namespace Dictionary
 
         private void LinkLabelSeeAlso1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Debug.WriteLine(LinkLabelSeeAlso1.Text);
             FormSearch.search = LinkLabelSeeAlso1.Text;
             Close();
         }
 
         private void LinkLabelSeeAlso2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Debug.WriteLine(LinkLabelSeeAlso2.Text);
             FormSearch.search = LinkLabelSeeAlso2.Text;
             Close();
         }
 
         private void LinkLabelSeeAlso3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Debug.WriteLine(LinkLabelSeeAlso3.Text);
             FormSearch.search = LinkLabelSeeAlso3.Text;
+            Close();
+        }
+
+        private void browseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             Close();
         }
 
@@ -182,15 +190,15 @@ namespace Dictionary
                 FormRecent fr = new FormRecent();
                 fr.Show();
             }
-            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "toolStripMenuItem1_Click"))
+            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ToolStripMenuItemFavorites_Click"))
             {
                 FormFavorites ff = new FormFavorites();
                 ff.Show();
             }
-            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ToolStripMenuItemFavorites_Click"))
+            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "browseToolStripMenuItem_Click"))
             {
-                FormGames fg = new FormGames();
-                fg.Show();
+                FormBrowse fb = new FormBrowse();
+                fb.Show();
             }
             else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "homeToolStripMenuItem_Click"))
             {
@@ -209,6 +217,5 @@ namespace Dictionary
                 fs.Show();
             }
         }
-
     }
 }

@@ -75,6 +75,16 @@ namespace Dictionary.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BrowseDefinition_16x {
+            get {
+                object obj = ResourceManager.GetObject("BrowseDefinition_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 1A
         ///2C
         ///3D
@@ -2617,6 +2627,26 @@ namespace Dictionary.Properties {
         internal static string shortcuts {
             get {
                 return ResourceManager.GetString("shortcuts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a_1|uk_pron_a_a__a__gb_a__gb_2.mp3
+        ///a_2|uk_pron_a_a_1_a_1_g_a_1_gb_1_abbr.mp3
+        ///a_3|uk_pron_a_a_1_a_1_g_a_1_gb_1_abbr.mp3
+        ///a_4|uk_pron_a_a_1_a_1_g_a_1_gb_1_abbr.mp3
+        ///a_5|uk_pron_a_a__a__1__a__1_gb_1.mp3
+        ///aa_1|uk_pron_a_a_a_a_a__a_a__1_gb_1_abbr.mp3
+        ///aaa_1|uk_pron_t_tri_tripl_triple_a_1_gb_1.mp3
+        ///aardvark_1|uk_pron_a_aar_aardv_aardvark__gb_1.mp3
+        ///aargh_1|uk_pron_a_aar_aargh_aargh__gb_1.mp3
+        ///aaron_1|uk_pron_a_aar_aaron_aaron__gb_2.mp3
+        ///aba_1|uk_pron_a_aba_aba__aba__gb_1.mp3
+        ///aback_1|uk_pron_a_aba_aback_aback__ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string soundpath {
+            get {
+                return ResourceManager.GetString("soundpath", resourceCulture);
             }
         }
         

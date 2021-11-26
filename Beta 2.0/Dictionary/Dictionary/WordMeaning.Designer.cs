@@ -47,6 +47,7 @@
             this.LinkLabelSeeAlso1 = new System.Windows.Forms.LinkLabel();
             this.LinkLabelSeeAlso2 = new System.Windows.Forms.LinkLabel();
             this.LinkLabelSeeAlso3 = new System.Windows.Forms.LinkLabel();
+            this.browseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,6 +106,7 @@
             this.toolStripSeparator1,
             this.recentToolStripMenuItem,
             this.ToolStripMenuItemFavorites,
+            this.browseToolStripMenuItem,
             this.toolStripSeparator2,
             this.gamesToolStripMenuItem});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -117,20 +119,20 @@
             // 
             this.homeToolStripMenuItem.Image = global::Dictionary.Properties.Resources.Home_16x;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(138, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // recentToolStripMenuItem
             // 
             this.recentToolStripMenuItem.Image = global::Dictionary.Properties.Resources.history;
             this.recentToolStripMenuItem.Name = "recentToolStripMenuItem";
-            this.recentToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.recentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.recentToolStripMenuItem.Text = "Recent";
             this.recentToolStripMenuItem.Click += new System.EventHandler(this.recentToolStripMenuItem_Click);
             // 
@@ -138,20 +140,20 @@
             // 
             this.ToolStripMenuItemFavorites.Image = global::Dictionary.Properties.Resources.marked;
             this.ToolStripMenuItemFavorites.Name = "ToolStripMenuItemFavorites";
-            this.ToolStripMenuItemFavorites.Size = new System.Drawing.Size(141, 22);
+            this.ToolStripMenuItemFavorites.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItemFavorites.Text = "Favorites";
             this.ToolStripMenuItemFavorites.Click += new System.EventHandler(this.ToolStripMenuItemFavorites_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(138, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // gamesToolStripMenuItem
             // 
             this.gamesToolStripMenuItem.Image = global::Dictionary.Properties.Resources.games4;
             this.gamesToolStripMenuItem.Name = "gamesToolStripMenuItem";
-            this.gamesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.gamesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gamesToolStripMenuItem.Text = "Word games";
             this.gamesToolStripMenuItem.Click += new System.EventHandler(this.gamesToolStripMenuItem_Click);
             // 
@@ -230,6 +232,14 @@
             this.LinkLabelSeeAlso3.Text = "linkLabel1";
             this.LinkLabelSeeAlso3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso3_LinkClicked);
             // 
+            // browseToolStripMenuItem
+            // 
+            this.browseToolStripMenuItem.Image = global::Dictionary.Properties.Resources.BrowseDefinition_16x;
+            this.browseToolStripMenuItem.Name = "browseToolStripMenuItem";
+            this.browseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.browseToolStripMenuItem.Text = "Browse";
+            this.browseToolStripMenuItem.Click += new System.EventHandler(this.browseToolStripMenuItem_Click);
+            // 
             // WordMeaning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -279,5 +289,6 @@
         private System.Windows.Forms.LinkLabel LinkLabelSeeAlso1;
         private System.Windows.Forms.LinkLabel LinkLabelSeeAlso2;
         private System.Windows.Forms.LinkLabel LinkLabelSeeAlso3;
+        private System.Windows.Forms.ToolStripMenuItem browseToolStripMenuItem;
     }
 }

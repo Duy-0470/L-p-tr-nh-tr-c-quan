@@ -148,6 +148,11 @@ namespace Dictionary
                 WordMeaning wm = new WordMeaning();
                 wm.Show();
             }
+            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "browseToolStripMenuItem_Click"))
+            {
+                FormBrowse fb = new FormBrowse();
+                fb.Show();
+            }
             else
                 MainMenu.instance.Show();
         }
@@ -155,6 +160,11 @@ namespace Dictionary
         private void ListViewHint_SelectedIndexChanged(object sender, EventArgs e)
         {
             search = ListViewHint.SelectedItems[0].Text;
+            Close();
+        }
+
+        private void browseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             Close();
         }
     }

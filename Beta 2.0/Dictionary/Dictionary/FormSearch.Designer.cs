@@ -42,6 +42,7 @@
             this.wordGamesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ListViewHint = new System.Windows.Forms.ListView();
             this.ColumnHint = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.browseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PanelSearchBar.SuspendLayout();
             this.SearchBar.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -121,6 +122,7 @@
             this.toolStripSeparator1,
             this.recentToolStripMenuItem,
             this.ToolStripMenuItemFavorites,
+            this.browseToolStripMenuItem,
             this.toolStripSeparator2,
             this.wordGamesToolStripMenuItem});
             this.menuToolStripMenuItem.Image = global::Dictionary.Properties.Resources.menu3;
@@ -132,20 +134,20 @@
             // 
             this.homeToolStripMenuItem.Image = global::Dictionary.Properties.Resources.Home_16x;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(139, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // recentToolStripMenuItem
             // 
             this.recentToolStripMenuItem.Image = global::Dictionary.Properties.Resources.history;
             this.recentToolStripMenuItem.Name = "recentToolStripMenuItem";
-            this.recentToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.recentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.recentToolStripMenuItem.Text = "Recent";
             this.recentToolStripMenuItem.Click += new System.EventHandler(this.recentToolStripMenuItem_Click);
             // 
@@ -153,20 +155,20 @@
             // 
             this.ToolStripMenuItemFavorites.Image = global::Dictionary.Properties.Resources.marked2;
             this.ToolStripMenuItemFavorites.Name = "ToolStripMenuItemFavorites";
-            this.ToolStripMenuItemFavorites.Size = new System.Drawing.Size(142, 22);
+            this.ToolStripMenuItemFavorites.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItemFavorites.Text = "Favorites";
             this.ToolStripMenuItemFavorites.Click += new System.EventHandler(this.ToolStripMenuItemFavorites_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(139, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // wordGamesToolStripMenuItem
             // 
             this.wordGamesToolStripMenuItem.Image = global::Dictionary.Properties.Resources.games4;
             this.wordGamesToolStripMenuItem.Name = "wordGamesToolStripMenuItem";
-            this.wordGamesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.wordGamesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.wordGamesToolStripMenuItem.Text = "Word Games";
             this.wordGamesToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -194,6 +196,14 @@
             // 
             this.ColumnHint.Text = "";
             this.ColumnHint.Width = 350;
+            // 
+            // browseToolStripMenuItem
+            // 
+            this.browseToolStripMenuItem.Image = global::Dictionary.Properties.Resources.BrowseDefinition_16x;
+            this.browseToolStripMenuItem.Name = "browseToolStripMenuItem";
+            this.browseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.browseToolStripMenuItem.Text = "Browse";
+            this.browseToolStripMenuItem.Click += new System.EventHandler(this.browseToolStripMenuItem_Click);
             // 
             // FormSearch
             // 
@@ -236,5 +246,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem recentToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem browseToolStripMenuItem;
     }
 }

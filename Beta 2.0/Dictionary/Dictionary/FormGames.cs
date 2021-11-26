@@ -55,8 +55,18 @@ namespace Dictionary
                 FormFavorites ff = new FormFavorites();
                 ff.Show();
             }
+            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "browseToolStripMenuItem_Click"))
+            {
+                FormBrowse fb = new FormBrowse();
+                fb.Show();
+            }
             else
                 MainMenu.instance.Show();
+        }
+
+        private void browseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

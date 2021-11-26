@@ -41,6 +41,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.recentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.favoritesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.browseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.wordGamesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolTipMainMenu = new System.Windows.Forms.ToolTip(this.components);
@@ -160,6 +161,7 @@
             this.toolStripSeparator1,
             this.recentToolStripMenuItem,
             this.favoritesToolStripMenuItem,
+            this.browseToolStripMenuItem,
             this.toolStripSeparator2,
             this.wordGamesToolStripMenuItem});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -197,6 +199,14 @@
             this.favoritesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.favoritesToolStripMenuItem.Text = "Favorites";
             this.favoritesToolStripMenuItem.Click += new System.EventHandler(this.favoritesToolStripMenuItem_Click);
+            // 
+            // browseToolStripMenuItem
+            // 
+            this.browseToolStripMenuItem.Image = global::Dictionary.Properties.Resources.BrowseDefinition_16x;
+            this.browseToolStripMenuItem.Name = "browseToolStripMenuItem";
+            this.browseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.browseToolStripMenuItem.Text = "Browse";
+            this.browseToolStripMenuItem.Click += new System.EventHandler(this.browseToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -262,7 +272,7 @@
             // 
             this.LabelRandom.AutoSize = true;
             this.LabelRandom.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelRandom.Location = new System.Drawing.Point(22, 14);
+            this.LabelRandom.Location = new System.Drawing.Point(22, 27);
             this.LabelRandom.Name = "LabelRandom";
             this.LabelRandom.Size = new System.Drawing.Size(175, 16);
             this.LabelRandom.TabIndex = 0;
@@ -272,7 +282,7 @@
             // 
             this.LabelRandomizedWord.AutoSize = true;
             this.LabelRandomizedWord.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelRandomizedWord.Location = new System.Drawing.Point(50, 50);
+            this.LabelRandomizedWord.Location = new System.Drawing.Point(50, 63);
             this.LabelRandomizedWord.Name = "LabelRandomizedWord";
             this.LabelRandomizedWord.Size = new System.Drawing.Size(153, 36);
             this.LabelRandomizedWord.TabIndex = 1;
@@ -282,7 +292,7 @@
             // 
             this.LabelRWSpelling.AutoSize = true;
             this.LabelRWSpelling.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelRWSpelling.Location = new System.Drawing.Point(53, 106);
+            this.LabelRWSpelling.Location = new System.Drawing.Point(53, 119);
             this.LabelRWSpelling.Name = "LabelRWSpelling";
             this.LabelRWSpelling.Size = new System.Drawing.Size(92, 16);
             this.LabelRWSpelling.TabIndex = 2;
@@ -294,7 +304,7 @@
             this.ButtonRMSpeak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonRMSpeak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonRMSpeak.ForeColor = System.Drawing.Color.White;
-            this.ButtonRMSpeak.Location = new System.Drawing.Point(215, 99);
+            this.ButtonRMSpeak.Location = new System.Drawing.Point(240, 112);
             this.ButtonRMSpeak.Name = "ButtonRMSpeak";
             this.ButtonRMSpeak.Size = new System.Drawing.Size(24, 23);
             this.ButtonRMSpeak.TabIndex = 3;
@@ -305,7 +315,7 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(22, 160);
+            this.linkLabel1.Location = new System.Drawing.Point(22, 173);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(212, 16);
             this.linkLabel1.TabIndex = 7;
@@ -389,6 +399,7 @@
         private System.Windows.Forms.Button ButtonRMSpeak;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Panel PanelRandomWord;
+        private System.Windows.Forms.ToolStripMenuItem browseToolStripMenuItem;
     }
 }
 
