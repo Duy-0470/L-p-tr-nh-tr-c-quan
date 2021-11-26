@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dictionary.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,11 +17,11 @@ namespace Dictionary
     public partial class MainMenu : Form
     {
         public static MainMenu instance;
-        public static string search = "", current_language = "";
+        public static string search = "", current_language = "", soundpath = "";
         public static string[] data, randomizer, hints;
         public Random rand = new Random();
         public int index;
-        public static string[] sound = ReadAllResourceLines(Properties.Resources.words);
+        public static string[] sound = ReadAllResourceLines(Resources.words);
 
         public static IEnumerable<string> EnumerateLines(TextReader reader)
         {
@@ -42,8 +43,7 @@ namespace Dictionary
         public MainMenu()
         {
             InitializeComponent();
-            instance = this;
-            ComboBoxLanguage.SelectedIndex = 0;
+            instance = this;           
             ComboBoxLanguage.SelectionChangeCommitted += ComboBoxLanguage_SelectionChangeCommitted;        
             TextBoxSearchInput.LostFocus += TextBoxSearchInput_LostFocus;
         }
@@ -55,26 +55,26 @@ namespace Dictionary
             switch (current_language)
             {
                 case "English - Vietnamese":
-
-                    data = ReadAllResourceLines(Properties.Resources.EngViet);
-                    hints = ReadAllResourceLines(Properties.Resources.EVWordList);
-                    randomizer = ReadAllResourceLines(Properties.Resources.EVWordAndSpelling);
+                    data = ReadAllResourceLines(Resources.EngViet);
+                    hints = ReadAllResourceLines(Resources.EVWordList);
+                    randomizer = ReadAllResourceLines(Resources.EVWordAndSpelling);
                     break;
                 case "English - English":
-                    data = ReadAllResourceLines(Properties.Resources.words);
-                    hints = ReadAllResourceLines(Properties.Resources.EEWordList);
-                    randomizer = ReadAllResourceLines(Properties.Resources.EEWordAndSpelling);
+                    data = ReadAllResourceLines(Resources.words);
+                    hints = ReadAllResourceLines(Resources.EEWordList);
+                    randomizer = ReadAllResourceLines(Resources.EEWordAndSpelling);
                     break;
                 default:
                     break;
             }
+            Settings.Default["Language"] = ComboBoxLanguage.SelectedItem.ToString();
+            Settings.Default.Save();
             WordRandomizer();
         }
 
         private void TextBoxSearchInput_LostFocus(object sender, EventArgs e)
         {
-            //TextBoxSearchInput.ForeColor = Color.FromArgb(Convert.ToInt32("d9d9d9", 16));
-            //TextBoxSearchInput.Text = "Search";
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -124,10 +124,40 @@ namespace Dictionary
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            current_language = ComboBoxLanguage.SelectedItem.ToString();
-            data = ReadAllResourceLines(Properties.Resources.EngViet);
-            hints = ReadAllResourceLines(Properties.Resources.EVWordName);
-            randomizer = ReadAllResourceLines(Properties.Resources.EVWordAndSpelling);
+            switch (Settings.Default["Language"])
+            {
+                case null:
+                    ComboBoxLanguage.SelectedIndex = 0;
+                    current_language = "English - Vietnamese";
+                    break;
+                case "":
+                    ComboBoxLanguage.SelectedIndex = 0;
+                    current_language = "English - Vietnamese";
+                    break;
+                default:
+                    ComboBoxLanguage.SelectedItem = Settings.Default["Language"].ToString();
+                    current_language = Settings.Default["Language"].ToString();
+                    Settings.Default.Save();
+                    break;
+            }
+
+            switch (current_language)
+            {
+                case "English - Vietnamese":
+                    data = ReadAllResourceLines(Resources.EngViet);
+                    hints = ReadAllResourceLines(Resources.EVWordList);
+                    randomizer = ReadAllResourceLines(Resources.EVWordAndSpelling);
+                    break;
+                case "English - English":
+                    data = ReadAllResourceLines(Resources.words);
+                    hints = ReadAllResourceLines(Resources.EEWordList);
+                    randomizer = ReadAllResourceLines(Resources.EEWordAndSpelling);
+                    break;
+                default:
+                    break;
+            }
+
+            WordRandomizer();
         }
 
         private void ButtonGames_Click(object sender, EventArgs e)
@@ -185,6 +215,7 @@ namespace Dictionary
 
         public void WordRandomizer()
         {
+            LabelSoundError.Visible = false;
             index = rand.Next(0, randomizer.Length);
             if (current_language == "English - Vietnamese")
             {
@@ -212,16 +243,20 @@ namespace Dictionary
                 LabelRWSpelling.Text = tokens[1];
             }
             for (int i = 0; i < sound.Length; i++)
-            {
-                string[] tokens = sound[i].Split('|');
-                if (tokens[0].Substring(0, tokens[0].IndexOf('|') - 2) == LabelRandomizedWord.Text)
+            {               
+                if (sound[i].Substring(0, sound[i].IndexOf('|') - 2) == LabelRandomizedWord.Text)
                 {
-                    ButtonRMSpeak.Visible = true;
+                    string[] tokens = sound[i].Split('|');
+                    if (File.Exists(Database.DatabaseHandle.DataDirectories + "sound\\" + tokens[0] + ".mp3"))
+                    {
+                        ButtonRMSpeak.Visible = true;
+                        soundpath = Database.DatabaseHandle.DataDirectories + "sound\\" + tokens[0] + ".mp3";
+                    }
                     break;
                 }
                 else
                     ButtonRMSpeak.Visible = false;
-            }
+            }            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -247,11 +282,15 @@ namespace Dictionary
         {
             try
             {
-                
+                WindowsMediaPlayer wmp = new WindowsMediaPlayer()
+                {
+                    URL = soundpath
+                };
+                wmp.controls.play();
             }
             catch (Exception)
             {
-
+                LabelSoundError.Visible = true;
             }
         }
 

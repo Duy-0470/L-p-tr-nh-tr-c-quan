@@ -39,6 +39,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.recentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemFavorites = new System.Windows.Forms.ToolStripMenuItem();
+            this.browseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.gamesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ButtonMarkWord = new System.Windows.Forms.Button();
@@ -47,7 +48,7 @@
             this.LinkLabelSeeAlso1 = new System.Windows.Forms.LinkLabel();
             this.LinkLabelSeeAlso2 = new System.Windows.Forms.LinkLabel();
             this.LinkLabelSeeAlso3 = new System.Windows.Forms.LinkLabel();
-            this.browseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LabelSoundError = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,20 +120,20 @@
             // 
             this.homeToolStripMenuItem.Image = global::Dictionary.Properties.Resources.Home_16x;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(138, 6);
             // 
             // recentToolStripMenuItem
             // 
             this.recentToolStripMenuItem.Image = global::Dictionary.Properties.Resources.history;
             this.recentToolStripMenuItem.Name = "recentToolStripMenuItem";
-            this.recentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.recentToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.recentToolStripMenuItem.Text = "Recent";
             this.recentToolStripMenuItem.Click += new System.EventHandler(this.recentToolStripMenuItem_Click);
             // 
@@ -140,20 +141,28 @@
             // 
             this.ToolStripMenuItemFavorites.Image = global::Dictionary.Properties.Resources.marked;
             this.ToolStripMenuItemFavorites.Name = "ToolStripMenuItemFavorites";
-            this.ToolStripMenuItemFavorites.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemFavorites.Size = new System.Drawing.Size(141, 22);
             this.ToolStripMenuItemFavorites.Text = "Favorites";
             this.ToolStripMenuItemFavorites.Click += new System.EventHandler(this.ToolStripMenuItemFavorites_Click);
+            // 
+            // browseToolStripMenuItem
+            // 
+            this.browseToolStripMenuItem.Image = global::Dictionary.Properties.Resources.BrowseDefinition_16x;
+            this.browseToolStripMenuItem.Name = "browseToolStripMenuItem";
+            this.browseToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.browseToolStripMenuItem.Text = "Browse";
+            this.browseToolStripMenuItem.Click += new System.EventHandler(this.browseToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(138, 6);
             // 
             // gamesToolStripMenuItem
             // 
             this.gamesToolStripMenuItem.Image = global::Dictionary.Properties.Resources.games4;
             this.gamesToolStripMenuItem.Name = "gamesToolStripMenuItem";
-            this.gamesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gamesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.gamesToolStripMenuItem.Text = "Word games";
             this.gamesToolStripMenuItem.Click += new System.EventHandler(this.gamesToolStripMenuItem_Click);
             // 
@@ -232,13 +241,17 @@
             this.LinkLabelSeeAlso3.Text = "linkLabel1";
             this.LinkLabelSeeAlso3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSeeAlso3_LinkClicked);
             // 
-            // browseToolStripMenuItem
+            // LabelSoundError
             // 
-            this.browseToolStripMenuItem.Image = global::Dictionary.Properties.Resources.BrowseDefinition_16x;
-            this.browseToolStripMenuItem.Name = "browseToolStripMenuItem";
-            this.browseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.browseToolStripMenuItem.Text = "Browse";
-            this.browseToolStripMenuItem.Click += new System.EventHandler(this.browseToolStripMenuItem_Click);
+            this.LabelSoundError.AutoSize = true;
+            this.LabelSoundError.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelSoundError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LabelSoundError.Location = new System.Drawing.Point(386, 72);
+            this.LabelSoundError.Name = "LabelSoundError";
+            this.LabelSoundError.Size = new System.Drawing.Size(214, 14);
+            this.LabelSoundError.TabIndex = 13;
+            this.LabelSoundError.Text = "Error occured when playing the sound T_T";
+            this.LabelSoundError.Visible = false;
             // 
             // WordMeaning
             // 
@@ -246,6 +259,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(758, 749);
+            this.Controls.Add(this.LabelSoundError);
             this.Controls.Add(this.LinkLabelSeeAlso3);
             this.Controls.Add(this.LinkLabelSeeAlso2);
             this.Controls.Add(this.LinkLabelSeeAlso1);
@@ -290,5 +304,6 @@
         private System.Windows.Forms.LinkLabel LinkLabelSeeAlso2;
         private System.Windows.Forms.LinkLabel LinkLabelSeeAlso3;
         private System.Windows.Forms.ToolStripMenuItem browseToolStripMenuItem;
+        private System.Windows.Forms.Label LabelSoundError;
     }
 }

@@ -54,6 +54,7 @@
             this.ButtonRMSpeak = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.PanelRandomWord = new System.Windows.Forms.Panel();
+            this.LabelSoundError = new System.Windows.Forms.Label();
             this.SearchBar.SuspendLayout();
             this.PanelSearchBar.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -174,21 +175,21 @@
             // 
             this.homeToolStripMenuItem.Image = global::Dictionary.Properties.Resources.Home_16x;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(138, 6);
             // 
             // recentToolStripMenuItem
             // 
             this.recentToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.recentToolStripMenuItem.Image = global::Dictionary.Properties.Resources.history;
             this.recentToolStripMenuItem.Name = "recentToolStripMenuItem";
-            this.recentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.recentToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.recentToolStripMenuItem.Text = "Recent";
             this.recentToolStripMenuItem.Click += new System.EventHandler(this.recentToolStripMenuItem_Click);
             // 
@@ -196,7 +197,7 @@
             // 
             this.favoritesToolStripMenuItem.Image = global::Dictionary.Properties.Resources.marked;
             this.favoritesToolStripMenuItem.Name = "favoritesToolStripMenuItem";
-            this.favoritesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.favoritesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.favoritesToolStripMenuItem.Text = "Favorites";
             this.favoritesToolStripMenuItem.Click += new System.EventHandler(this.favoritesToolStripMenuItem_Click);
             // 
@@ -204,20 +205,20 @@
             // 
             this.browseToolStripMenuItem.Image = global::Dictionary.Properties.Resources.BrowseDefinition_16x;
             this.browseToolStripMenuItem.Name = "browseToolStripMenuItem";
-            this.browseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.browseToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.browseToolStripMenuItem.Text = "Browse";
             this.browseToolStripMenuItem.Click += new System.EventHandler(this.browseToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(138, 6);
             // 
             // wordGamesToolStripMenuItem
             // 
             this.wordGamesToolStripMenuItem.Image = global::Dictionary.Properties.Resources.games4;
             this.wordGamesToolStripMenuItem.Name = "wordGamesToolStripMenuItem";
-            this.wordGamesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.wordGamesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.wordGamesToolStripMenuItem.Text = "Word games";
             this.wordGamesToolStripMenuItem.Click += new System.EventHandler(this.wordGamesToolStripMenuItem_Click);
             // 
@@ -329,6 +330,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelRandomWord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PanelRandomWord.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelRandomWord.Controls.Add(this.LabelSoundError);
             this.PanelRandomWord.Controls.Add(this.linkLabel1);
             this.PanelRandomWord.Controls.Add(this.ButtonRMSpeak);
             this.PanelRandomWord.Controls.Add(this.LabelRWSpelling);
@@ -339,6 +341,18 @@
             this.PanelRandomWord.Size = new System.Drawing.Size(646, 229);
             this.PanelRandomWord.TabIndex = 4;
             this.PanelRandomWord.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelRandomWord_Paint);
+            // 
+            // LabelSoundError
+            // 
+            this.LabelSoundError.AutoSize = true;
+            this.LabelSoundError.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelSoundError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LabelSoundError.Location = new System.Drawing.Point(280, 117);
+            this.LabelSoundError.Name = "LabelSoundError";
+            this.LabelSoundError.Size = new System.Drawing.Size(214, 14);
+            this.LabelSoundError.TabIndex = 8;
+            this.LabelSoundError.Text = "Error occured when playing the sound T_T";
+            this.LabelSoundError.Visible = false;
             // 
             // MainMenu
             // 
@@ -400,6 +414,7 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Panel PanelRandomWord;
         private System.Windows.Forms.ToolStripMenuItem browseToolStripMenuItem;
+        private System.Windows.Forms.Label LabelSoundError;
     }
 }
 

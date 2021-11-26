@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace Dictionary
         public Database.DatabaseHandle databaseHandle = new Database.DatabaseHandle();
         private readonly Random rand = new Random();
         private int r1, r2, r3;
+        private string soundpath = "";
 
         public WordMeaning()
         {
@@ -104,12 +106,37 @@ namespace Dictionary
                 }
             }
 
-
+            for (int i = 0; i < MainMenu.sound.Length; i++)
+            {
+                string[] tokens = MainMenu.sound[i].Split('|');
+                if (MainMenu.sound[i].Substring(0, MainMenu.sound[i].IndexOf('|') - 2) == FormSearch.search)
+                {
+                    if (File.Exists(Database.DatabaseHandle.DataDirectories + "sound\\" + tokens[0] + ".mp3"))
+                    {
+                        ButtonSpeak.Visible = true;
+                        soundpath = Database.DatabaseHandle.DataDirectories + "sound\\" + tokens[0] + ".mp3";
+                    }
+                    break;
+                }
+                else
+                    ButtonSpeak.Visible = false;
+            }
         }
 
         private void ButtonSpeak_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                WindowsMediaPlayer wmp = new WindowsMediaPlayer()
+                {
+                    URL = soundpath
+                };
+                wmp.controls.play();
+            }
+            catch (Exception)
+            {
+                LabelSoundError.Visible = true;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
