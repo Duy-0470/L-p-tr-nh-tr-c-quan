@@ -14,9 +14,11 @@ namespace DictionaryApp
 {
     public partial class Form1 : Form
     {
+        public static Form1 instance;
         public Form1()
         {
             InitializeComponent();
+            instance = this;
             DatabaseHandle.GetDataHandle();
         }
 
@@ -129,6 +131,13 @@ namespace DictionaryApp
         {
             this.SearchInput.ForeColor = Color.FromArgb(Convert.ToInt32("d9d9d9", 16));
             this.SearchInput.Text = "Search";
+        }
+
+        private void ReviewButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormGamesSelect fgs = new FormGamesSelect();
+            fgs.Show();
         }
     }
 }

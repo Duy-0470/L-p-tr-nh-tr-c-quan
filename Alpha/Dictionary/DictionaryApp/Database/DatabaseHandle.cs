@@ -476,7 +476,7 @@ namespace DictionaryApp.Database
                 }
                 connection.Close();
                 var rnd = new Random();
-                quizzs = (List<Quizz>)quizzs.OrderBy(item => rnd.Next());
+                quizzs = quizzs.OrderBy(item => rnd.Next()).ToList();
             }
             else
             {
@@ -509,7 +509,7 @@ namespace DictionaryApp.Database
                 }
                 connection.Close();
                 var rnd = new Random();
-                quizzs = (List<Quizz>)quizzs.OrderBy(item => rnd.Next());
+                quizzs = quizzs.OrderBy(item => rnd.Next()).ToList();
             }
             else
             {
@@ -542,7 +542,73 @@ namespace DictionaryApp.Database
                 }
                 connection.Close();
                 var rnd = new Random();
-                quizzs = (List<Quizz>)quizzs.OrderBy(item => rnd.Next());
+                quizzs = quizzs.OrderBy(item => rnd.Next()).ToList();
+            }
+            else
+            {
+                connection.Close();
+                return null;
+
+            }
+            if (number > quizzs.Count)
+            {
+                number = quizzs.Count;
+            }
+            return quizzs.GetRange(0, number);
+        }
+        public List<Quizz> SelectNWordMeaningQuizzes(int number)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Quizzes where topic= @topic";
+            command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = "Word-Meaning";
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            List<Quizz> quizzs = new List<Quizz>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    quizzs.Add(new Quizz(reader.GetString(1), reader.GetString(2), reader.GetString(3),
+                    reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetInt32(7)));
+
+                }
+                connection.Close();
+                var rnd = new Random();
+                quizzs = quizzs.OrderBy(item => rnd.Next()).ToList();
+            }
+            else
+            {
+                connection.Close();
+                return null;
+
+            }
+            if (number > quizzs.Count)
+            {
+                number = quizzs.Count;
+            }
+            return quizzs.GetRange(0, number);
+        }
+        public List<Quizz> SelectNWordFormQuizzes(int number)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Quizzes where topic= @topic";
+            command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = "Word-Form";
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            List<Quizz> quizzs = new List<Quizz>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    quizzs.Add(new Quizz(reader.GetString(1), reader.GetString(2), reader.GetString(3),
+                    reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetInt32(7)));
+
+                }
+                connection.Close();
+                var rnd = new Random();
+                quizzs = quizzs.OrderBy(item => rnd.Next()).ToList();
             }
             else
             {
@@ -562,7 +628,7 @@ namespace DictionaryApp.Database
 
             string[] tokens;
             SqlCommand command;
-            List<string> topics = new List<string> { "Collocation", "Idiom", "Phrasal-Verbs" };
+            List<string> topics = new List<string> { "Collocation", "Idiom", "Phrasal-Verbs", "Word-Meaning", "Word-Form" };
             Dictionary<string, List<string>> quizzDictionary = new Dictionary<string, List<string>>();
 
             foreach (string tp in topics)
@@ -587,14 +653,14 @@ namespace DictionaryApp.Database
                 foreach (string line in System.IO.File.ReadLines(quzFile))
                 {
                     
-                    tokens = line.Split('_');
+                    tokens = line.Split('|');
                     if (tokens.Length != 5)
                     {
                         continue;
                     }
                            
                     string quNum = tokens[0].Substring(0, tokens[0].IndexOf(' ') -1) +tp;
-                    string quSen = tokens[0].Substring(tokens[0].IndexOf(" ") + 1).Replace('%', '_');
+                    string quSen = tokens[0].Substring(tokens[0].IndexOf(" ") + 1)/*.Replace('%', '_')*/;
 
                     string ansA = tokens[1].Substring(tokens[1].IndexOf(".")+1).Replace('\n', ' ');
                     string ansB = tokens[2].Substring(tokens[2].IndexOf(".")+1).Replace('\n', ' ');
