@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace DictionaryApp.CustomControls
 {
-    partial class WordResultPanel
+    partial class Review
     {
         /// <summary> 
         /// Required designer variable.
@@ -25,19 +25,15 @@ namespace DictionaryApp.CustomControls
 
         #region Component Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.otherResultsPanel = new DictionaryApp.CustomControls.OtherResultsPanel(mw, mm, saw);
+            this.otherResultsPanel = new DictionaryApp.CustomControls.ReviewSelection(mw, mm);
             this.SuspendLayout();
             // 
             // otherResultsPanel
             // 
             this.otherResultsPanel.BackColor = System.Drawing.Color.White;
-            this.otherResultsPanel.Location = new System.Drawing.Point(510, 3);
+            this.otherResultsPanel.Location = new System.Drawing.Point(0, 3);
             this.otherResultsPanel.Name = "otherResultsPanel";
             this.otherResultsPanel.Size = new System.Drawing.Size(270, 500);
             this.otherResultsPanel.TabIndex = 0;
@@ -49,7 +45,7 @@ namespace DictionaryApp.CustomControls
                 this.wordDefinition = new DictionaryApp.CustomControls.WordDefinition(w);
                 this.wordDefinition.AutoSize = true;
                 this.wordDefinition.BackColor = System.Drawing.Color.White;
-                this.wordDefinition.Location = new System.Drawing.Point(0, 0);
+                this.wordDefinition.Location = new System.Drawing.Point(300, 0);
                 this.wordDefinition.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
                 this.wordDefinition.MaximumSize = new System.Drawing.Size(648, 0);
                 this.wordDefinition.Name = "wordDefinition";
@@ -63,7 +59,7 @@ namespace DictionaryApp.CustomControls
             {
                 this.text = new System.Windows.Forms.TextBox();
                 this.text.BackColor = System.Drawing.Color.White;
-                this.text.Location = new System.Drawing.Point(0, 80);
+                this.text.Location = new System.Drawing.Point(300, 80);
                 this.text.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
                 this.text.Name = "wordDefinition";
                 this.text.Size = new System.Drawing.Size(500, 200);
@@ -72,7 +68,7 @@ namespace DictionaryApp.CustomControls
                 this.text.BorderStyle = System.Windows.Forms.BorderStyle.None;
                 this.text.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 this.text.TabIndex = 11;
-                this.text.Text = "Oops, no suitable word is found";
+                this.text.Text = "Oops, no tracked word is found";
                 this.text.ForeColor = Color.FromArgb(150, 150, 150);
                 this.Controls.Add(this.text);
             }
@@ -99,9 +95,8 @@ namespace DictionaryApp.CustomControls
 
         #endregion
 
-        private OtherResultsPanel otherResultsPanel;
+        private ReviewSelection otherResultsPanel;
         private WordDefinition wordDefinition;
         private System.Windows.Forms.TextBox text;
-
     }
 }

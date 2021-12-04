@@ -15,10 +15,13 @@ namespace DictionaryApp.Database
 {
     class DatabaseHandle
     {
-        static DatabaseHandle handle=null;
+        static DatabaseHandle handle = null;
+        static Dictionary<string, List<string>> imageTopics = new Dictionary<string, List<string>>();
         public SqlConnection connection;
         public string DataDirectories = "";
         public Dictionary<string, Image> images = new Dictionary<string, Image>();
+        public List<string> otherTopics = new List<string>();
+        public List<string> words = new List<string>();
         static public DatabaseHandle GetDataHandle()
         {
             if (handle == null)
@@ -30,11 +33,12 @@ namespace DictionaryApp.Database
         public List<String> FindWordsMatchingSearch(string search)
         {
             SqlCommand command = new SqlCommand();
+
             List<String> matches = new List<String>();
             command.Connection = connection;
-            command.CommandText = "select * from Vocabulary where id LIKE '%' + @id + '%'";
+            command.CommandText = "select * from Vocabulary where id LIKE '%@id%'";
             command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = search;
-            connection.Open();
+            connection.Close();connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             if (reader.HasRows)
             {
@@ -46,23 +50,350 @@ namespace DictionaryApp.Database
             connection.Close();
             return matches;
         }
+        public Word FindGivenId(string search, ref List<Word> mw, ref List<string> mm, ref List<string> saw)
+        {
+            SqlCommand command = new SqlCommand();
+            Debug.WriteLine(search.ToLower().Replace(" ", "_"));
+
+            Word theW = null;
+            mm.Clear();
+            command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Vocabulary where id = @id";
+            command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = search.ToLower().Replace(" ", "_");
+            connection.Close(); connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            // Debug.WriteLine(search.ToLower().Replace(" ", "_") + "_");
+            if (reader.HasRows)
+            {
+                reader.Read();
+                string wid = reader.GetString(0);
+                WordHeader wordHeader = new WordHeader(reader.GetString(1), reader.GetString(2), "a1",
+                    reader.GetString(3), reader.GetString(5), reader.GetString(4), reader.GetString(6), reader.GetInt32(7), reader.GetString(0));
+
+                connection.Close();
+                Debug.WriteLine(wid);
+
+                List<Sense> senses = this.GetSenses(wid);
+                List<WordForm> wordForms = this.GetWordForms(wid);
+                List<Shortcut> shortcuts = this.GetShortcuts(wid);
+                wordHeader.AddWordForms(wordForms);
+                connection.Close();
+                mm = shortcuts.Select(s => s.shortcut).ToList();
+                theW = new Word(wordHeader,
+                                wid,
+                                senses,
+                                wordForms,
+                                shortcuts);
+                this.AddToHistory(wordHeader.id, wordHeader.word, wordHeader.type, DateTime.Now.ToString());
+            }
+            else
+            {
+                connection.Close();
+                theW = null;
+
+            }
+            /* foreach(string s in mm)
+             {
+                 Debug.WriteLine(s);
+             }*/
+            saw.Clear();
+            // Debug.WriteLine("find seealso");
+
+            if (theW != null)
+            {
+                mw.Clear();
+                command = new SqlCommand();
+                command.Connection = connection;
+                command.CommandText = "select * from Vocabulary where id LIKE @id + '%'";
+                command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = theW.wordHeader.word.ToLower();
+                connection.Close(); connection.Open();
+                reader = command.ExecuteReader();
+                Debug.WriteLine("find also matching");
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        string wid = reader.GetString(0);
+                        WordHeader wordHeader = new WordHeader(reader.GetString(1), reader.GetString(2), "a1",
+                            reader.GetString(3), reader.GetString(5), reader.GetString(4), reader.GetString(6), reader.GetInt32(7), reader.GetString(0));
+
+
+                        mw.Add(new Word(wordHeader,
+                                        wid,
+                                        null,
+                                        null,
+                                        null));
+                    }
+                }
+                connection.Close();
+
+                command = new SqlCommand();
+                command.Connection = connection;
+                command.CommandText = "select word from SeeAlso where word_id = @id";
+                command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = theW.id;
+                connection.Close(); connection.Open();
+                reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        saw.Add(reader.GetString(0));
+                        Debug.WriteLine(reader.GetString(0));
+
+                    }
+                }
+            }
+            connection.Close();
+            return theW;
+
+        }
+        public bool MarkWord(string id)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "UPDATE Vocabulary SET starred = 1 WHERE id = @id";
+            command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value =id;
+            connection.Close(); connection.Open();
+            command.ExecuteNonQuery();
+            return true;
+        }
+        public bool UnmarkWord(string id)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "UPDATE Vocabulary SET starred = 0 WHERE id = @id";
+            command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = id;
+            connection.Close(); connection.Open();
+            command.ExecuteNonQuery();
+            return true;
+        }
+        public void AddToHistory(string id, string w, string t, string ti)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            connection.Close(); connection.Open();
+
+            command.CommandText = @"INSERT INTO History (word_id, word, word_type, time) VALUES (@word_id, @word, @word_type, @time)";
+            command.Parameters.Add("@word_type", SqlDbType.NVarChar).Value = t;
+            command.Parameters.Add("@word", SqlDbType.NVarChar).Value = w;
+            command.Parameters.Add("@word_id", SqlDbType.NVarChar).Value = id;
+            command.Parameters.Add("@time", SqlDbType.NVarChar).Value = ti;
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+        public List<FoundWord> LoadHistory()
+        {
+            List<FoundWord> mw = new List<FoundWord>();
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from History";
+
+            connection.Close(); connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    mw.Add(new FoundWord(reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4)));
+                }
+            }
+            Debug.WriteLine(mw.Count);
+            return mw;
+        }
+        public void ClearHistory()
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "DELETE from History";
+
+            connection.Close(); connection.Open();
+            command.ExecuteNonQuery();
+        }
+        public List<WordHeader> GetMarkedWord()
+        {
+            List<WordHeader> mw = new List<WordHeader>();
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Vocabulary where starred = 1";
+
+            connection.Close(); connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    string wid = reader.GetString(0);
+                    WordHeader wordHeader = new WordHeader(reader.GetString(1), reader.GetString(2), "a1",
+                        reader.GetString(3), reader.GetString(5), reader.GetString(4), reader.GetString(6), reader.GetInt32(7), reader.GetString(0));
+
+
+                    mw.Add(wordHeader);
+                }
+            }
+            connection.Close();
+            return mw;
+
+        }
+        public Word GetWordGivenId(string id)
+        {
+            Word theW = null;
+
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Vocabulary where id = @id ";
+            command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = id;
+            connection.Close(); connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            if (reader.HasRows)
+            {
+                reader.Read();
+                string wid = reader.GetString(0);
+                WordHeader wordHeader = new WordHeader(reader.GetString(1), reader.GetString(2), "a1",
+                    reader.GetString(3), reader.GetString(5), reader.GetString(4), reader.GetString(6), reader.GetInt32(7), reader.GetString(0));
+
+                connection.Close();
+                Debug.WriteLine(wid);
+
+                List<Sense> senses = this.GetSenses(wid);
+                List<WordForm> wordForms = this.GetWordForms(wid);
+                List<Shortcut> shortcuts = this.GetShortcuts(wid);
+                wordHeader.AddWordForms(wordForms);
+                connection.Close();
+                theW = new Word(wordHeader,
+                                wid,
+                                senses,
+                                wordForms,
+                                shortcuts);
+
+            }
+            else
+            {
+                connection.Close();
+                theW = null;
+
+            }
+            return theW;
+        }
+        public Word Find(string search, ref List<Word> mw, ref List<string> mm, ref List<string> saw)
+        {
+            Debug.WriteLine(search.ToLower().Replace(" ", "/_"));
+            mw.Clear();
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Vocabulary where id LIKE @id + '%'";
+            command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = search.ToLower().Replace(" ", "/_");
+            connection.Close(); connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            Debug.WriteLine("find also matching");
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    string wid = reader.GetString(0);
+                    WordHeader wordHeader = new WordHeader(reader.GetString(1), reader.GetString(2), "a1",
+                        reader.GetString(3), reader.GetString(5), reader.GetString(4), reader.GetString(6), reader.GetInt32(7), reader.GetString(0));
+
+
+                    mw.Add(new Word(wordHeader,
+                                    wid,
+                                    null,
+                                    null,
+                                    null));
+                }
+            }
+            connection.Close();
+
+            Word theW=null;
+            mm.Clear();
+            command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Vocabulary where id LIKE @id+'%' ESCAPE '/' OR id LIKE @id1+'%' ESCAPE '/' ";
+            Debug.WriteLine(search.ToLower().Replace(" ", "/_") + "/_");
+            command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = search.ToLower().Replace(" ", "/_") + "/_";
+            command.Parameters.Add("@id1", System.Data.SqlDbType.NVarChar).Value = search.ToLower().Replace(" ", "/_");
+            connection.Close(); connection.Open();
+            reader = command.ExecuteReader();
+            // Debug.WriteLine(search.ToLower().Replace(" ", "_") + "_");
+            if (reader.HasRows)
+            {
+                reader.Read();
+                string wid = reader.GetString(0);
+                WordHeader wordHeader = new WordHeader(reader.GetString(1), reader.GetString(2), "a1",
+                    reader.GetString(3), reader.GetString(5), reader.GetString(4), reader.GetString(6), reader.GetInt32(7), reader.GetString(0));
+
+                connection.Close();
+                Debug.WriteLine(wid);
+
+                List<Sense> senses = this.GetSenses(wid);
+                List<WordForm> wordForms = this.GetWordForms(wid);
+                List<Shortcut> shortcuts = this.GetShortcuts(wid);
+                wordHeader.AddWordForms(wordForms);
+                connection.Close();
+                mm = shortcuts.Select(s => s.shortcut).ToList();
+                theW= new Word(wordHeader,
+                                wid,
+                                senses,
+                                wordForms,
+                                shortcuts);
+                this.AddToHistory(wordHeader.id, wordHeader.word, wordHeader.type, DateTime.Now.ToString());
+
+            }
+            else
+            {
+                connection.Close();
+                theW= null;
+
+            }
+           /* foreach(string s in mm)
+            {
+                Debug.WriteLine(s);
+            }*/
+            saw.Clear();
+            // Debug.WriteLine("find seealso");
+
+            if (theW != null)
+            {
+                command = new SqlCommand();
+                command.Connection = connection;
+                command.CommandText = "select word from SeeAlso where word_id = @id";
+                command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = theW.id;
+                connection.Close(); connection.Open();
+                reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        saw.Add(reader.GetString(0));
+                        Debug.WriteLine(reader.GetString(0));
+
+                    }
+                }
+            }
+            connection.Close();
+            return theW;
+            
+        }
         public Word FindWord(string wid)
         {
             SqlCommand command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "select * from Vocabulary where id= @id";
             command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = wid;
-            connection.Open();
+            connection.Close();connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             if (reader.HasRows)
             {
                 reader.Read();
                 string id = reader.GetString(1);
-                WordHeader wordHeader = new WordHeader(reader.GetString(1), reader.GetString(2), "a1", 
-                    reader.GetString(3), reader.GetString(5), reader.GetString(4), reader.GetString(6));
+                WordHeader wordHeader = new WordHeader(reader.GetString(1), reader.GetString(2), "a1",
+                    reader.GetString(3), reader.GetString(5), reader.GetString(4), reader.GetString(6), reader.GetInt32(7), reader.GetString(0));
 
                 connection.Close();
-                
+
                 List<Sense> senses = this.GetSenses(wid);
                 List<WordForm> wordForms = this.GetWordForms(wid);
                 List<Shortcut> shortcuts = this.GetShortcuts(wid);
@@ -73,11 +404,13 @@ namespace DictionaryApp.Database
                                 senses,
                                 wordForms,
                                 shortcuts);
+                this.AddToHistory(wordHeader.id, wordHeader.word, wordHeader.type, DateTime.Now.ToString());
+
             }
             else {
                 connection.Close();
-                return null; 
-            
+                return null;
+
             }
 
         }
@@ -89,13 +422,18 @@ namespace DictionaryApp.Database
             float rwth = (float)width / height;
             if (iwth > rwth)
             {
-                return new Bitmap(im, new Size(width, Convert.ToInt32(width * iwth)));
+                im = new Bitmap(im, new Size(width, Convert.ToInt32(width / iwth)));
             }
             else
             {
-                return new Bitmap(im, new Size(Convert.ToInt32(height / iwth), height));
+                im = new Bitmap(im, new Size(Convert.ToInt32(height * iwth), height));
 
             }
+            if (im.Width != width && im.Height != height)
+            {
+                im = im;
+            }
+            return im;
         }
         public Image GetImageGivenLink(string link)
         {
@@ -109,7 +447,7 @@ namespace DictionaryApp.Database
                 "link = '" + link + "'";// where Name='" + name + "'";
             SqlCommand command = new SqlCommand(query, connection);
             connection.Close();
-            connection.Open();
+            connection.Close();connection.Open();
             SqlDataReader reader = command.ExecuteReader();
 
             if (reader.HasRows)
@@ -119,31 +457,86 @@ namespace DictionaryApp.Database
                 using (MemoryStream memstr = new MemoryStream(bytes))
                 {
                     image = Image.FromStream(memstr);
-                    if(image!=null)
+                    if (image != null)
                         images.Add(link, image);
                 }
             }
             return image;
         }
-        public List<MyImage> GetImageContaining(string name="l")
+        public List<MyImage> GetImageGivenLetter(string letter)
         {
             List<MyImage> images = new List<MyImage>();
             string query = "SELECT image_link, word FROM Image_Word WHERE " +
-                "word LIKE '%"+name +"%'";// where Name='" + name + "'";
+                "word LIKE '" + letter + "%'";// where Name='" + name + "'";
             SqlCommand command = new SqlCommand(query, connection);
             connection.Close();
-            connection.Open();
-
+            connection.Close(); connection.Open();
+            List<string> added = new List<string>();
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
                 MyImage myImage = new MyImage();
                 myImage.name = reader.GetString(1).Substring(0, reader.GetString(1).Length - 2).Replace('_', ' ');
                 myImage.link = reader.GetString(0);
-                images.Add(myImage);
+                if (!added.Contains(myImage.name))
+                {
+                    images.Add(myImage);
+                    added.Add(myImage.name);
+                }
             }
             Debug.WriteLine(images.Count);
             connection.Close();
+            images.Distinct();
+            return images;
+        }
+        public List<string> GetAllImageWords()
+        {
+            if (words.Count == 0)
+            {
+                /* string query = "SELECT word FROM Image_Word";
+                 SqlCommand command = new SqlCommand(query, connection);
+                 connection.Close();
+                 connection.Close();connection.Open();
+                 List<string> added = new List<string>();
+                 SqlDataReader reader = command.ExecuteReader();
+                 while (reader.Read())
+                 {
+                     words.Add(reader.GetString(0).Replace("_", " "));
+                 }
+                 connection.Close();*/
+                for (int i = 0; i < 26; i++)
+                {
+                    words.Add(Convert.ToChar(i + 65).ToString());
+                }
+                words.Distinct();
+            }
+           
+            return words;
+        }
+        public List<MyImage> GetImageContaining(string name = "l")
+        {
+            List<MyImage> images = new List<MyImage>();
+            string query = "SELECT image_link, word FROM Image_Word WHERE " +
+                "word LIKE '%" + name + "%'";// where Name='" + name + "'";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Close();
+            connection.Close();connection.Open();
+            List<string> added = new List<string>();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                MyImage myImage = new MyImage();
+                myImage.name = reader.GetString(1).Substring(0, reader.GetString(1).Length - 2).Replace('_', ' ');
+                myImage.link = reader.GetString(0);
+                if (!added.Contains(myImage.name))
+                {
+                    images.Add(myImage);
+                    added.Add(myImage.name);
+                }
+            }
+            Debug.WriteLine(images.Count);
+            connection.Close();
+            images.Distinct();
             return images;
         }
 
@@ -154,8 +547,8 @@ namespace DictionaryApp.Database
             command.Connection = connection;
             command.CommandText = "select * from SeeAlso where sense_hash=@sense_hash";
             command.Parameters.AddWithValue("@sense_hash", sid);
-            
-            connection.Open();
+
+            connection.Close();connection.Open();
 
             SqlDataReader reader = command.ExecuteReader();
             if (reader.HasRows)
@@ -171,7 +564,7 @@ namespace DictionaryApp.Database
             }
             connection.Close();
             return seeAlsos;
-                    
+
         }
         public List<Example> GetExamples(string sid)
         {
@@ -180,7 +573,7 @@ namespace DictionaryApp.Database
             command.Connection = connection;
             command.CommandText = "select * from Examples where sense_hash=@sense_hash";
             command.Parameters.AddWithValue("@sense_hash", sid);
-            connection.Open();
+            connection.Close();connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             if (reader.HasRows)
             {
@@ -198,13 +591,13 @@ namespace DictionaryApp.Database
 
         }
         public List<Sense> GetSenses(string wid)
-        { 
+        {
             List<Sense> senses = new List<Sense>();
             SqlCommand command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "select * from Senses where word_id=@word_id";
             command.Parameters.AddWithValue("@word_id", wid);
-            connection.Open();
+            connection.Close();connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             if (reader.HasRows)
             {
@@ -214,7 +607,7 @@ namespace DictionaryApp.Database
                         reader.GetString(5), reader.GetString(6), reader.GetString(7), null, null));
                 }
                 connection.Close();
-                foreach(Sense s in senses)
+                foreach (Sense s in senses)
                 {
                     s.seeAlsos = this.GetSeeAlsos(s.hash);
                     s.examples = this.GetExamples(s.hash);
@@ -236,7 +629,7 @@ namespace DictionaryApp.Database
             command.Connection = connection;
             command.CommandText = "select * from WordForms where word_id=@word_id";
             command.Parameters.AddWithValue("@word_id", wid);
-            connection.Open();
+            connection.Close();connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             if (reader.HasRows)
             {
@@ -245,7 +638,7 @@ namespace DictionaryApp.Database
                     wordForms.Add(new WordForm(reader.GetString(2), reader.GetString(3), reader.GetString(4),
                                 reader.GetString(5), reader.GetString(7), reader.GetString(6), reader.GetString(8)));
                 }
-                
+
 
             }
             connection.Close();
@@ -258,7 +651,7 @@ namespace DictionaryApp.Database
             command.Connection = connection;
             command.CommandText = "select * from Shortcuts where word_id=@word_id";
             command.Parameters.AddWithValue("@word_id", wid);
-            connection.Open();
+            connection.Close();connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             if (reader.HasRows)
             {
@@ -272,6 +665,150 @@ namespace DictionaryApp.Database
 
             return shortcuts;
         }
+        public void AddImageTopics()
+        {
+            imageTopics.Add("Vehicles (2)", new List<string>() { "car", "airliner" });
+            imageTopics.Add("Vehicles (1)", new List<string>(){ "trucks", "trains", "taxis", "cycles", "construction", "cars",
+                                "caravan_camper", "buses", "boats_ships_1", "boats_ships_2" , "aircraft"});
+            imageTopics.Add("Vegetables", new List<string>() { "squash", "salad", "root", "beans", "vegetables_misc" });
+            imageTopics.Add("Trees", new List<string>() { "evergreen", "deciduous", "_tree" });
+            imageTopics.Add("Tools", new List<string>() { "diy_1", "diy_2", "diy_3", "toolbox" });
+            imageTopics.Add("Sports", new List<string>() { "winter", "water", "track", "team", "racket", "sports_misc",
+                                "field", "extreme", "equestrian" });
+            imageTopics.Add("Cooking", new List<string>() { "spices", "cooking", "food_preparation" });
+            imageTopics.Add("Office", new List<string>() { "office", "stationery", "classroom", "laboratory" });
+            imageTopics.Add("Music", new List<string>() { "musicalnotation", "woodwind_instruments", "string_instruments", "pianos",
+                                "percussion_instruments", "groups_playing", "brass_instruments", "other_string_instruments" });
+            imageTopics.Add("Mammals", new List<string>() { "rodents", "primates", "marsupials", "cetaceans" });
+            imageTopics.Add("Animal (1)", new List<string>() { "insects", "amphibians", "arachnids", "reptiles", "shellfish" });
+            imageTopics.Add("Animal (2)", new List<string>() { "_mammals", "arachnids", "_fish", });
+            imageTopics.Add("Rooms", new List<string>() { "livingroom", "diningroom", "bedroom", "bathroom", "kitchen" });
+            imageTopics.Add("Kitchen", new List<string>() { "utensils_misc", "opening", "measuring", "drinks", "cutting",
+                                "crushing_grating_squeezing", "baking", "appliances", "kitchen" });
+            imageTopics.Add("Jewellery", new List<string>() { "rings", "necklaces", "earrings", "bracelets", "jewellery" });
+            imageTopics.Add("House", new List<string>() { "house_1", "house_2" });
+            imageTopics.Add("Buildings", new List<string>() { "homes", "buildings", "architecture", "bridges" });
+            imageTopics.Add("Hobbies", new List<string>() { "running", "skating", "orienteering_caving", "diving_snorkelling",
+                                "darts_pool", "creative", "crafts", "bowling" });
+            imageTopics.Add("Plants", new List<string>() { "herbs", "flowers", "cereals", "plants" });
+            imageTopics.Add("Fruit", new List<string>() { "tropical", "fruit_misc", "citrus", "berries" });
+            imageTopics.Add("Excercise", new List<string>() { "fitness", "equipment" });
+            imageTopics.Add("Garden", new List<string>() { "tools", "garden_misc", "chairs" });
+            imageTopics.Add("Environment", new List<string>() { "environment_1", "environment_2" });
+            imageTopics.Add("Sights", new List<string>() { "countryside", "coast", "city", "mountains" });
+            imageTopics.Add("Clothes", new List<string>() { "sweaters", "sports_casual", "shoes", "scarves", "nightclothes", "clothes_misc",
+                                "hats", "gloves", "fasteners", "dresses_skirts", "coats", "bags", "clothes" });
+            imageTopics.Add("Cleaning", new List<string>() { "cleaning_1", "cleaning_2" });
+            imageTopics.Add("Body", new List<string>() { "skeleton", "hand", "face", "eye", "body", "internal_organs" });
+            imageTopics.Add("Birds", new List<string>() { "seabirds", "prey", "poultry", "birds" });
+            
+        }
+        public List<string> GetImageTopics()
+        {
+            return imageTopics.Keys.ToList();
+        }
+        public List<MyImage> GetImageGivenTopic(string topic){
+            List<string> names = new List<string>();
+            imageTopics.TryGetValue(topic, out names);
+            Debug.WriteLine(topic);
+            Debug.WriteLine(names);
+
+            List<MyImage> images = new List<MyImage>();
+            foreach (string name in names)
+            {
+                connection.Close();connection.Open();
+                SqlCommand command;
+                command = new SqlCommand();
+                command.Connection = connection;
+                command.CommandText = "SELECT DISTINCT link FROM Images WHERE link LIKE '%" + "_" + name + "%'";
+
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    reader.Read();
+                    string l = reader.GetString(0);
+                    MyImage myImage = new MyImage();
+                    myImage.name = l.Substring(123).Replace("_", " ").Replace(".png", " ").ToUpper();
+                    myImage.link = l;
+                    images.Add(myImage);
+                }
+            }
+            return images;
+        }
+        public List<MyImage> GetAllTopicImages()
+        {
+            List<string> names = imageTopics.Values.ToList().SelectMany(x => x).ToList();
+            List<MyImage> images = new List<MyImage>();
+            foreach (string name in names)
+            {
+                connection.Close();
+                connection.Close();connection.Open();
+                SqlCommand command;
+                command = new SqlCommand();
+                command.Connection = connection;
+                command.CommandText = "SELECT DISTINCT link FROM Images WHERE link LIKE '%" + "_" + name + "%'";
+
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    reader.Read();
+                    string l = reader.GetString(0);
+                    MyImage myImage = new MyImage();
+                    myImage.name = l.Substring(123).Replace("_", " ").Replace(".png", " ").ToUpper();
+                    myImage.link = l;
+                    images.Add(myImage);
+                }
+            }
+            connection.Close();
+
+            return images;
+
+        }
+        public List<MyImage> GetOtherImages()
+        {
+            List<MyImage> images = GetAllImages();
+            List<string> t_images = GetAllTopicImages().Select(i => i.link).ToList();
+            images = images.Where(i => !t_images.Contains(i.link)).ToList();
+            return images;
+        }
+        public List<MyImage> GetOtherTopics()
+        {
+            return GetOtherImages().Distinct().ToList();
+        }
+        public List<MyImage> GetAllImages()
+        {
+            connection.Close();connection.Open();
+            SqlCommand command;
+            command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "SELECT DISTINCT link FROM Images";
+            SqlDataReader reader = command.ExecuteReader();
+            // List<string> topics = new List<string>();
+            List<MyImage> images = new List<MyImage>();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                
+                    string l = reader.GetString(0);
+                    /*                    Debug.WriteLine(l.Substring(123));
+                    */
+                    MyImage myImage = new MyImage();
+                    myImage.name = l.Substring(123).Replace("_", " ").Replace(".png", " ").ToUpper();
+                    myImage.link = l;
+                    images.Add(myImage);
+                    // topics.Add(l);
+                
+
+                }
+
+            }
+
+            connection.Close();
+
+            return images;
+        }
         public DatabaseHandle()
         {
             connection = new SqlConnection();
@@ -281,10 +818,11 @@ namespace DictionaryApp.Database
 
             string pa = Directory.GetCurrentDirectory();
             DataDirectories =  pa.Substring(0, pa.Length - 9) + "Database\\Files\\";
-            Debug.WriteLine(DataDirectories);
+
+
             // AddVocabulary();
 
-            connection.Open();
+            connection.Close();connection.Open();
             SqlCommand command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "SELECT COUNT(*) FROM Vocabulary";
@@ -296,7 +834,7 @@ namespace DictionaryApp.Database
                 AddVocabulary();
             }
 
-            connection.Open();
+            connection.Close();connection.Open();
             command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "SELECT COUNT(*) FROM WordForms";
@@ -308,7 +846,9 @@ namespace DictionaryApp.Database
                 AddWordForms();
             }
 
-            connection.Open();
+            AddImageTopics();
+
+            connection.Close();connection.Open();
             command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "SELECT COUNT(*) FROM Shortcuts";
@@ -320,7 +860,7 @@ namespace DictionaryApp.Database
                 AddShortcuts();
             }
 
-            connection.Open();
+            connection.Close();connection.Open();
             command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "SELECT COUNT(*) FROM Senses";
@@ -332,7 +872,7 @@ namespace DictionaryApp.Database
                 AddSenses();
             }
 
-            connection.Open();
+            connection.Close();connection.Open();
             command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "SELECT COUNT(*) FROM SeeAlso";
@@ -344,7 +884,7 @@ namespace DictionaryApp.Database
                 AddSeealsos();
             }
 
-            connection.Open();
+            connection.Close();connection.Open();
             command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "SELECT COUNT(*) FROM Examples";
@@ -355,7 +895,7 @@ namespace DictionaryApp.Database
                 Debug.WriteLine("Add words into Examples table");
                 AddExamples();
             }
-            connection.Open();
+            connection.Close();connection.Open();
             command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "SELECT COUNT(*) FROM Images";
@@ -366,7 +906,7 @@ namespace DictionaryApp.Database
                 Debug.WriteLine("Add words into Images table");
                 AddImages();
             }
-            connection.Open();
+            connection.Close();connection.Open();
             command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "SELECT COUNT(*) FROM Idiom_Topic";
@@ -377,7 +917,7 @@ namespace DictionaryApp.Database
                 Debug.WriteLine("Add words into Idiom_Topic table");
                 AddIdiom_Topics();
             }
-            connection.Open();
+            connection.Close();connection.Open();
             command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "SELECT COUNT(*) FROM Idioms";
@@ -388,7 +928,7 @@ namespace DictionaryApp.Database
                 Debug.WriteLine("Add words into Idioms table");
                 AddIdioms();
             }
-            connection.Open();
+            connection.Close();connection.Open();
             command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "SELECT COUNT(*) FROM Idiom_Meanings";
@@ -399,7 +939,7 @@ namespace DictionaryApp.Database
                 Debug.WriteLine("Add words into Idiom_Meanings table");
                 AddIdiom_Meaning();
             }
-            connection.Open();
+            connection.Close();connection.Open();
             command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "SELECT COUNT(*) FROM Idiom_Examples";
@@ -410,7 +950,7 @@ namespace DictionaryApp.Database
                 Debug.WriteLine("Add words into Idiom_Examples table");
                 AddIdiom_Examples();
             }
-            connection.Open();
+            connection.Close();connection.Open();
             command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "SELECT COUNT(*) FROM Quizzes";
@@ -424,13 +964,14 @@ namespace DictionaryApp.Database
 
 
             List<String> w = FindWordsMatchingSearch("account");
+            GetAllImageWords();
         }
         public List<Quizz> SelectNQuizzes(int number)
         {
             SqlCommand command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "select * from Quizzes";
-            connection.Open();
+            connection.Close();connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             List<Quizz> quizzs = new List<Quizz>();
             if (reader.HasRows)
@@ -463,7 +1004,7 @@ namespace DictionaryApp.Database
             command.Connection = connection;
             command.CommandText = "select * from Quizzes where topic= @topic";
             command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = "Idiom";
-            connection.Open();
+            connection.Close();connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             List<Quizz> quizzs = new List<Quizz>();
             if (reader.HasRows)
@@ -496,7 +1037,7 @@ namespace DictionaryApp.Database
             command.Connection = connection;
             command.CommandText = "select * from Quizzes where topic= @topic";
             command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = "Phrasal-Verbs";
-            connection.Open();
+            connection.Close();connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             List<Quizz> quizzs = new List<Quizz>();
             if (reader.HasRows)
@@ -529,7 +1070,7 @@ namespace DictionaryApp.Database
             command.Connection = connection;
             command.CommandText = "select * from Quizzes where topic= @topic";
             command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = "Collocation";
-            connection.Open();
+            connection.Close();connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             List<Quizz> quizzs = new List<Quizz>();
             if (reader.HasRows)
@@ -558,7 +1099,7 @@ namespace DictionaryApp.Database
         }
         private void AddQuizzes()
         {
-            connection.Open();
+            connection.Close();connection.Open();
 
             string[] tokens;
             SqlCommand command;
@@ -632,7 +1173,7 @@ namespace DictionaryApp.Database
         }
         private void AddIdioms()
         {
-            connection.Open();
+            connection.Close();connection.Open();
 
             string[] tokens;
             SqlCommand command;
@@ -655,7 +1196,7 @@ namespace DictionaryApp.Database
         }
         private void AddIdiom_Meaning()
         {
-            connection.Open();
+            connection.Close();connection.Open();
 
             string[] tokens;
             SqlCommand command;
@@ -681,7 +1222,7 @@ namespace DictionaryApp.Database
         }
         private void AddIdiom_Examples()
         {
-            connection.Open();
+            connection.Close();connection.Open();
 
             string[] tokens;
             SqlCommand command;
@@ -706,7 +1247,7 @@ namespace DictionaryApp.Database
         }
         private void AddIdiom_Topics()
         {
-            connection.Open();
+            connection.Close();connection.Open();
 
             string[] tokens;
             SqlCommand command;
@@ -732,7 +1273,7 @@ namespace DictionaryApp.Database
         }
         private void AddVocabulary()
         {
-            connection.Open();
+            connection.Close();connection.Open();
 
             string[] tokens;
             SqlCommand command;
@@ -759,7 +1300,7 @@ namespace DictionaryApp.Database
         }
         private void AddSenses()
         {
-            connection.Open();
+            connection.Close();connection.Open();
 
             string[] tokens;
             SqlCommand command;
@@ -786,7 +1327,7 @@ namespace DictionaryApp.Database
         }
         private void AddShortcuts()
         {
-            connection.Open();
+            connection.Close();connection.Open();
 
             string[] tokens;
             SqlCommand command;
@@ -808,7 +1349,7 @@ namespace DictionaryApp.Database
         }
         private void AddImages()
         {
-            connection.Open();
+            connection.Close();connection.Open();
 
             
             string[] tokens;
@@ -866,7 +1407,7 @@ namespace DictionaryApp.Database
 
         private void AddSeealsos()
         {
-            connection.Open();
+            connection.Close();connection.Open();
 
             string[] tokens;
             SqlCommand command;
@@ -889,7 +1430,7 @@ namespace DictionaryApp.Database
         }
         private void AddExamples()
         {
-            connection.Open();
+            connection.Close();connection.Open();
 
             string[] tokens;
             SqlCommand command;
@@ -913,7 +1454,7 @@ namespace DictionaryApp.Database
         }
         private void AddWordForms()
         {
-            connection.Open();
+            connection.Close();connection.Open();
 
             string[] tokens;
             SqlCommand command;

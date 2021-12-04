@@ -27,6 +27,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,6 +50,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WMPLib.1.0.0\lib\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WMPLib.1.0.0\lib\Interop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NAudio.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Core.2.0.0\lib\netstandard2.0\NAudio.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Lame, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Lame.2.0.0\lib\netstandard2.0\NAudio.Lame.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -62,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Example.cs" />
+    <Compile Include="Classes\FoundWord.cs" />
     <Compile Include="Classes\MyImage.cs" />
     <Compile Include="Classes\Quizz.cs" />
     <Compile Include="Classes\SeeAlso.cs" />
@@ -82,6 +98,24 @@
     <Compile Include="CustomControls\DefintionHeader.Designer.cs">
       <DependentUpon>DefintionHeader.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\ImageSelectionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\ImageSelectionPanel.Designer.cs">
+      <DependentUpon>ImageSelectionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\Review.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Review.Designer.cs">
+      <DependentUpon>Review.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\ReviewSelection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\ReviewSelection.Designer.cs">
+      <DependentUpon>ReviewSelection.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\OtherResultsPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,6 +133,18 @@
     </Compile>
     <Compile Include="CustomControls\PicturePanel.Designer.cs">
       <DependentUpon>PicturePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\PicturesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\PicturesView.Designer.cs">
+      <DependentUpon>PicturesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\PictureZoomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\PictureZoomer.Designer.cs">
+      <DependentUpon>PictureZoomer.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\RoundButton.cs">
       <SubType>Component</SubType>
@@ -133,6 +179,15 @@
     <EmbeddedResource Include="CustomControls\PictureCatalog.resx">
       <DependentUpon>PictureCatalog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\PicturesView.resx">
+      <DependentUpon>PicturesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\PictureZoomer.resx">
+      <DependentUpon>PictureZoomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\Review.resx">
+      <DependentUpon>Review.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\SensePanel.resx">
       <DependentUpon>SensePanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +209,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -184,6 +240,9 @@
     <Content Include="Database\Files\idioms\meanings.txt" />
     <Content Include="Database\Files\idioms\phrases.txt" />
     <Content Include="Database\Files\idioms\topics.txt" />
+    <Content Include="Database\Files\images\close.png" />
+    <Content Include="Database\Files\images\delete.png" />
+    <Content Include="Database\Files\images\eraser.png" />
     <Content Include="Database\Files\images\images.txt" />
     <Content Include="Database\Files\images\images\_fullsize_a_acc_accor_accordion_concertina.png" />
     <Content Include="Database\Files\images\images\_fullsize_a_air_airli_airliner.png" />
@@ -488,6 +547,10 @@
     <Content Include="Database\Files\images\images\_fullsize_w_wav_wavel_wavelength.png" />
     <Content Include="Database\Files\images\images\_fullsize_w_wea_weath_weathercock.png" />
     <Content Include="Database\Files\images\images\_fullsize_w_wic_wicke_wickerchair.png" />
+    <Content Include="Database\Files\images\marked.png" />
+    <Content Include="Database\Files\images\sort.png" />
+    <Content Include="Database\Files\images\two-arrows.png" />
+    <Content Include="Database\Files\images\unmarked.png" />
     <Content Include="Database\Files\words\examples.txt" />
     <Content Include="Database\Files\words\extra_list.txt" />
     <Content Include="Database\Files\words\see_also.txt" />
@@ -504,4 +567,11 @@
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\NAudio.Lame.2.0.0\build\NAudio.Lame.targets" Condition="Exists('..\packages\NAudio.Lame.2.0.0\build\NAudio.Lame.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NAudio.Lame.2.0.0\build\NAudio.Lame.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NAudio.Lame.2.0.0\build\NAudio.Lame.targets'))" />
+  </Target>
 </Project>

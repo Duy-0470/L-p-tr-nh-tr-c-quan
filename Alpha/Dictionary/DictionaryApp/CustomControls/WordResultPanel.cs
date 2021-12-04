@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DictionaryApp.Classes;
+using DictionaryApp.Database;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,8 +15,28 @@ namespace DictionaryApp.CustomControls
 {
     public partial class WordResultPanel : UserControl
     {
+        Word w = null;
+        List<Word> mw = new List<Word>();
+        List<string> mm = new List<string>(), saw = new List<string>();
         public WordResultPanel()
         {
+            InitializeComponent();
+        }
+        public WordResultPanel(Word word, List<Word> mw, List<string> mm, List<string> saw)
+        {
+            this.w = word;
+            this.mw = mw;
+            this.saw = saw;
+            this.mm = mm;
+            InitializeComponent();
+        }
+        public void SetPanel(Word word, List<Word> mw, List<string> mm, List<string> saw)
+        {
+            this.w = word;
+            this.mw = mw;
+            this.saw = saw;
+            this.mm = mm;
+            this.Controls.Clear();
             InitializeComponent();
         }
         private void ScrollPanel(object sender, EventArgs eventArgs)
@@ -22,6 +44,7 @@ namespace DictionaryApp.CustomControls
             this.Refresh();
 
             MouseEventArgs args = eventArgs as MouseEventArgs;
+            if (w == null) return;
            /* int inc = args.Delta *this.VerticalScroll.SmallChange;
             this.AutoScrollPosition = new Point(
                 this.AutoScrollPosition.X,
