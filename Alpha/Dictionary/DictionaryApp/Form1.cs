@@ -1,4 +1,5 @@
-﻿using DictionaryApp.Database;
+﻿using DictionaryApp.Classes;
+using DictionaryApp.Database;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,10 +15,61 @@ namespace DictionaryApp
 {
     public partial class Form1 : Form
     {
+        private static Form1 instance;
+        public static Form1 GetInstance()
+        {
+            return instance;
+        }
         public Form1()
         {
             InitializeComponent();
+            
             DatabaseHandle.GetDataHandle();
+            instance = this;
+
+            this.WindowState = FormWindowState.Normal;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Bounds = Screen.PrimaryScreen.Bounds;
+
+            this.TypeSelectionButton.Location = new Point((int)(this.Size.Width - (
+                                            this.TypeSelectionButton.Size.Width + this.SearchInputBorder.Size.Width + this.GoButton.Size.Width)) / 2, 10);
+            
+            this.SearchInputBorder.Location = new Point(this.TypeSelectionButton.Location.X+this.TypeSelectionButton.Size.Width, 10);
+            this.GoButton.Location = new Point(this.SearchInputBorder.Location.X+ this.SearchInputBorder.Size.Width, 10);
+            this.picturesView.Location = new Point((int)(this.Size.Width - this.picturesView.PreferredSize.Width) / 2, 130);
+            this.wordResultPanel.Location = new Point((int)(this.Size.Width - this.wordResultPanel.PreferredSize.Width) / 2, 180);
+            this.review1.Location = new Point((int)(this.Size.Width - this.review1.PreferredSize.Width) / 2, 150);
+
+            this.PicturesButton.Click += PicturesButton_Click;
+            this.review1.Visible = false;
+        }
+
+        private void PicturesButton_Click(object sender, EventArgs e)
+        {
+            this.SearchBar.Visible = false;
+            this.wordResultPanel.Visible = false;
+            this.review1.Visible = false;
+            this.picturesView.Visible = true;
+        }
+
+        private void EngengButton_Click(object sender, System.EventArgs e)
+        {
+            this.SearchBar.Visible = true;
+            this.wordResultPanel.Visible = true;
+            this.review1.Visible = false;
+            Debug.WriteLine("eng click");
+            this.picturesView.Visible = false;
+        }
+
+        private void ReviewButton_Click(object sender, System.EventArgs e)
+        {
+            this.SearchBar.Visible = false;
+            this.wordResultPanel.Visible = false;
+            this.picturesView.Visible = false;
+            this.review1.Visible = true;
+            this.review1.SetPanel(null, DatabaseHandle.GetDataHandle().GetMarkedWord(), DatabaseHandle.GetDataHandle().LoadHistory());
+            this.review1.Location = new Point((int)(this.Size.Width - this.review1.PreferredSize.Width) / 2, 150);
+
         }
 
         private void dictionaryOptionLabel_Click(object sender, EventArgs e)
@@ -125,8 +177,55 @@ namespace DictionaryApp
             this.SearchInput.Focus();
 
         }
+        public void SetWordResultPanelGivenWord(string word)
+        {
+            List<Word> mw = new List<Word>();
+            List<string> mm = new List<string>(), saw = new List<string>();
+            Word w = DatabaseHandle.GetDataHandle().Find(word.ToLower(), ref mw, ref mm, ref saw);
+            Debug.WriteLine(w);
+            Debug.WriteLine(mw);
+            Debug.WriteLine(mm);
+            Debug.WriteLine(saw);
+            if (w != null)
+            {
+                this.wordResultPanel.SetPanel(w, mw, mm, saw);
+                this.wordResultPanel.Location = new Point((int)(this.Size.Width - this.wordResultPanel.PreferredSize.Width) / 2, 180);
+
+            }
+        }
+        public void SetWordResultPanelGivenId(string id)
+        {
+            List<Word> mw = new List<Word>();
+            List<string> mm = new List<string>(), saw = new List<string>();
+            Word w = DatabaseHandle.GetDataHandle().FindGivenId(id.ToLower(), ref mw, ref mm, ref saw);
+            Debug.WriteLine(w);
+            Debug.WriteLine(mw);
+            Debug.WriteLine(mm);
+            Debug.WriteLine(saw);
+            if (w != null)
+            {
+                
+            }
+            this.wordResultPanel.SetPanel(w, mw, mm, saw);
+            this.wordResultPanel.Location = new Point((int)(this.Size.Width - this.wordResultPanel.PreferredSize.Width) / 2, 180);
+
+        }
         private void ClickAtGoButton(object sender, EventArgs e)
         {
+            if(this.SearchInput.ForeColor!= Color.FromArgb(Convert.ToInt32("d9d9d9", 16)) && this.SearchInput.Text != "")
+            {
+                List<Word> mw = new List<Word>();
+                List<string> mm = new List<string>(), saw = new List<string>();
+                Word w = DatabaseHandle.GetDataHandle().Find(this.SearchInput.Text.Replace(' ', '-'), ref mw, ref mm, ref saw);
+                Debug.WriteLine(w);
+                Debug.WriteLine(mw);
+                Debug.WriteLine(mm);
+                Debug.WriteLine(saw);
+                this.wordResultPanel.SetPanel(w, mw, mm, saw);
+            }
+
+            this.wordResultPanel.Location = new Point((int)(this.Size.Width - this.wordResultPanel.PreferredSize.Width) / 2, 180);
+
             this.SearchInput.ForeColor = Color.FromArgb(Convert.ToInt32("d9d9d9", 16));
             this.SearchInput.Text = "Search";
         }

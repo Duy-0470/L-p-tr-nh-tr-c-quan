@@ -177,6 +177,8 @@ namespace DictionaryApp.CustomControls
                     wl.MouseEnter += new System.EventHandler(this.OnMouseEnterButton);
                     wl.MouseLeave += new System.EventHandler(this.OnMouseLeaveButton);
                     p.Controls.Add(wl);
+                    wl.Click +=MW_Click;
+
                     this.allMatchesPanel.Controls.Add(p);
                 }
 
@@ -324,7 +326,7 @@ namespace DictionaryApp.CustomControls
 
             if (seeAlsoButton.Text == "+")
             {
-                foreach (Word word in seeAlsoWords)
+                foreach (string word in seeAlsoWords)
                 {
                     Panel p = new Panel();
                     p.BackColor = Color.White;
@@ -338,43 +340,15 @@ namespace DictionaryApp.CustomControls
                     wl.ForeColor = System.Drawing.Color.Black;
                     wl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     wl.Location = new System.Drawing.Point(20, 8);
-                    wl.Text = word.wordHeader.word;
-                    wl.Name = word.id;
-                    if (word.wordHeader.type == "noun")
-                    {
-                        wl.Text = wl.Text + "   (n)";
-                    }
-                    else if (word.wordHeader.type == "verb")
-                    {
-                        wl.Text = wl.Text + "   (v)";
-                    }
-                    else if (word.wordHeader.type == "adjective")
-                    {
-                        wl.Text = wl.Text + "   (adj)";
-                    }
-                    else if (word.wordHeader.type == "adverb")
-                    {
-                        wl.Text = wl.Text + "   (adv)";
-                    }
-                    else if (word.wordHeader.type == "preposition")
-                    {
-                        wl.Text = wl.Text + "   (prep)";
-                    }
-                    else if (word.wordHeader.type == "NA")
-                    {
-                        wl.Text = wl.Text + "";
-                    }
-                    else
-                    {
-                        wl.Text = wl.Text + "   (" + word.wordHeader.type.Substring(0,
-                            3 > word.wordHeader.type.Length ? word.wordHeader.type.Length : 3) + ")";
-                    }
+                    wl.Text = word;
                     wl.BackColor = Color.Transparent;
                     p.MouseEnter += new System.EventHandler(this.OnMouseEnterButton);
                     p.MouseLeave += new System.EventHandler(this.OnMouseLeaveButton);
                     wl.MouseEnter += new System.EventHandler(this.OnMouseEnterButton);
                     wl.MouseLeave += new System.EventHandler(this.OnMouseLeaveButton);
                     p.Controls.Add(wl);
+                    wl.Click += SA_Click;
+
                     this.seeAlsoPanel.Controls.Add(p);
                 }
             }

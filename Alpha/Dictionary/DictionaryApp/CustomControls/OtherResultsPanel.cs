@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,38 +15,53 @@ namespace DictionaryApp.CustomControls
     public partial class OtherResultsPanel : UserControl
     {
         static Word w = new Word();
-        public List<Word> seeAlsoWords = new List<Word>() { w, w, w, w, w, w, w, w };
+        public List<string> seeAlsoWords = new List<string>() { "2" };
         public List<string> mainMeanings = new List<string> { "1231231", "1231231", "1231231", "1231231", "1231231" };
         public List<Word> matchingWords = new List<Word>() { w, w, w, w, w, w, w, w };
-
+        
         public OtherResultsPanel()
         {
             InitializeComponent();
-            this.seeAlsoButton.Click += new System.EventHandler(this.OpenOrHidePanels);
-            this.mainMeaningsButton.Click += new System.EventHandler(this.OpenOrHidePanels);
-            this.allMatchesButton.Click += new System.EventHandler(this.OpenOrHidePanels);
+            this.seeAlsoHeaderPanel.Click += new System.EventHandler(this.OpenOrHidePanels);
+            this.mainMeaningsHeaderPanel.Click += new System.EventHandler(this.OpenOrHidePanels);
+            this.allMatchesHeaderPanel.Click += new System.EventHandler(this.OpenOrHidePanels);
         }
-        public void SetLists(List<Word> mw, List<string> mm, List<Word> saw)
+        public OtherResultsPanel(List<Word> mw, List<string> mm, List<string> saw)
         {
+
             this.seeAlsoWords = saw;
             this.matchingWords = mw;
             this.mainMeanings = mm;
+            foreach(string s in mm)
+            {
+                Debug.WriteLine(s);
+            }
+            foreach (Word s in mw)
+            {
+                Debug.WriteLine(s.id);
+            }
+            InitializeComponent();
+
+            this.seeAlsoHeaderPanel.Click += new System.EventHandler(this.OpenOrHidePanels);
+            this.mainMeaningsHeaderPanel.Click += new System.EventHandler(this.OpenOrHidePanels);
+            this.allMatchesHeaderPanel.Click += new System.EventHandler(this.OpenOrHidePanels);
         }
         public void OpenOrHidePanels(object sender, EventArgs eventArgs)
         {
-            if((sender as Label).Name.ToLower().Contains("seealso"))
+            Debug.WriteLine("Hello");
+            if((sender as Panel).Name.Contains("seeAlsoHeaderPanel"))
             {
                 
                 this.seeAlsoButton.Text = this.seeAlsoButton.Text == "+" ? "-" : "+";
                 this.mainMeaningsButton.Text = "-";
                 this.allMatchesButton.Text = "-";
-            }else if ((sender as Label).Name.ToLower().Contains("mainmeanings"))
+            }else if ((sender as Panel).Name.Contains("mainMeaningsHeaderPanel"))
             {
                 this.mainMeaningsButton.Text = this.mainMeaningsButton.Text == "+" ? "-" : "+";
                 this.seeAlsoButton.Text = "-";
                 this.allMatchesButton.Text = "-";
             }
-            else if ((sender as Label).Name.ToLower().Contains("allmatches"))
+            else if ((sender as Panel).Name.Contains("allMatchesHeaderPanel"))
             {
                 this.allMatchesButton.Text = this.allMatchesButton.Text == "+" ? "-" : "+";
                 this.seeAlsoButton.Text = "-";
@@ -132,6 +148,7 @@ namespace DictionaryApp.CustomControls
                     wl.MouseEnter += new System.EventHandler(this.OnMouseEnterButton);
                     wl.MouseLeave += new System.EventHandler(this.OnMouseLeaveButton);
                     p.Controls.Add(wl);
+                    wl.Click += MW_Click;
                     this.allMatchesPanel.Controls.Add(p);
                 }
 
@@ -171,7 +188,7 @@ namespace DictionaryApp.CustomControls
             this.seeAlsoPanel.Location = new System.Drawing.Point(this.topHorizonBar.Location.X, this.seeAlsoHeaderPanel.Height + this.seeAlsoHeaderPanel.Location.Y);
             if (this.seeAlsoButton.Text == "+")
             {
-                foreach (Word word in seeAlsoWords)
+                foreach (string word in seeAlsoWords)
                 {
                     Panel p = new Panel();
                     p.BackColor = Color.White;
@@ -185,47 +202,27 @@ namespace DictionaryApp.CustomControls
                     wl.ForeColor = System.Drawing.Color.Black;
                     wl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     wl.Location = new System.Drawing.Point(20, 8);
-                    wl.Text = word.wordHeader.word;
-                    wl.Name = word.id;
-                    if (word.wordHeader.type == "noun")
-                    {
-                        wl.Text = wl.Text + "   (n)";
-                    }
-                    else if (word.wordHeader.type == "verb")
-                    {
-                        wl.Text = wl.Text + "   (v)";
-                    }
-                    else if (word.wordHeader.type == "adjective")
-                    {
-                        wl.Text = wl.Text + "   (adj)";
-                    }
-                    else if (word.wordHeader.type == "adverb")
-                    {
-                        wl.Text = wl.Text + "   (adv)";
-                    }
-                    else if (word.wordHeader.type == "preposition")
-                    {
-                        wl.Text = wl.Text + "   (prep)";
-                    }
-                    else if (word.wordHeader.type == "NA")
-                    {
-                        wl.Text = wl.Text + "";
-                    }
-                    else
-                    {
-                        wl.Text = wl.Text + "   (" + word.wordHeader.type.Substring(0,
-                            3 > word.wordHeader.type.Length ? word.wordHeader.type.Length : 3) + ")";
-                    }
+                    wl.Text = word;
                     wl.BackColor = Color.Transparent;
                     p.MouseEnter += new System.EventHandler(this.OnMouseEnterButton);
                     p.MouseLeave += new System.EventHandler(this.OnMouseLeaveButton);
                     wl.MouseEnter += new System.EventHandler(this.OnMouseEnterButton);
                     wl.MouseLeave += new System.EventHandler(this.OnMouseLeaveButton);
                     p.Controls.Add(wl);
+                    wl.Click += SA_Click;
                     this.seeAlsoPanel.Controls.Add(p);
                 }
             }
-            
+        }
+
+        private void SA_Click(object sender, EventArgs e)
+        {
+            Form1.GetInstance().SetWordResultPanelGivenWord((sender as Label).Text.Trim(new char[]{ '(', '1', '2', ')'}).Replace(' ', '-'));
+        }
+
+        private void MW_Click(object sender, EventArgs e)
+        {
+            Form1.GetInstance().SetWordResultPanelGivenId((sender as Label).Name);
         }
     }
 }

@@ -157,7 +157,7 @@ namespace DictionaryApp.CustomControls
                 exampleLabel.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 System.Drawing.Size textSize = TextRenderer.MeasureText(exampleLabel.Text, exampleLabel.Font);
                 Debug.WriteLine(textSize);
-                int extra_y = index == 0 ? MeaningLabel.Location.Y + 25 : (examples[index - 1].Location.Y + examples[index - 1].PreferredHeight+5);
+                int extra_y = index == 0 ? MeaningLabel.Location.Y +  MeaningLabel.PreferredHeight/*25*/ : (examples[index - 1].Location.Y + examples[index - 1].PreferredHeight+5);
                 exampleLabel.AutoSize = true;
                 exampleLabel.Location = new System.Drawing.Point(60,extra_y);
                 exampleLabel.Name = "ExampleLabel"+index;
