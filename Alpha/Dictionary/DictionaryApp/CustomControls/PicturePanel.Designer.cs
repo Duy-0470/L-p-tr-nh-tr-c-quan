@@ -57,16 +57,16 @@ namespace DictionaryApp.CustomControls
             // pictureBox2
             // 
             this.BackColor = Color.Black;
-            this.picture.Location = new System.Drawing.Point(19, 19);
+            this.picture.Location = new System.Drawing.Point(0, 0);
             this.picture.Name = "pictureBox2";
-            this.picture.Size = new System.Drawing.Size(140, 140);
+            this.picture.Size = new System.Drawing.Size(172, 172);
             this.picture.TabIndex = 0;
             this.picture.TabStop = false;
 
-            this.panel.Location = new System.Drawing.Point(2, 2);
-            this.panel.Controls.Add(this.picture);
-            this.panel.Size = new System.Drawing.Size(174, 178);
             this.panel.BackColor = Color.White;
+            this.panel.Location = new System.Drawing.Point(4, 4);
+            this.panel.Controls.Add(this.picture);
+            this.panel.Size = new System.Drawing.Size(172, 174);
 
             this.BackColor = Color.FromArgb(236, 236, 236);
             this.title.BackColor = Color.FromArgb(236, 236, 236);

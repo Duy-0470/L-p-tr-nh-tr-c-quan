@@ -31,8 +31,7 @@ namespace DictionaryApp.CustomControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.otherResultsPanel = new DictionaryApp.CustomControls.OtherResultsPanel();
-            this.wordDefinition = new DictionaryApp.CustomControls.WordDefinition();
+            this.otherResultsPanel = new DictionaryApp.CustomControls.OtherResultsPanel(mw, mm, saw);
             this.SuspendLayout();
             // 
             // otherResultsPanel
@@ -45,15 +44,38 @@ namespace DictionaryApp.CustomControls
             // 
             // wordDefinition
             // 
-            this.wordDefinition.AutoSize = true;
-            this.wordDefinition.BackColor = System.Drawing.Color.White;
-            this.wordDefinition.Location = new System.Drawing.Point(0, 0);
-            this.wordDefinition.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.wordDefinition.MaximumSize = new System.Drawing.Size(648, 0);
-            this.wordDefinition.Name = "wordDefinition";
-            this.wordDefinition.Size = new System.Drawing.Size(500, 1466);
-            this.wordDefinition.MaximumSize = new System.Drawing.Size(500, 0);
-            this.wordDefinition.TabIndex = 11;
+            if (w != null)
+            {
+                this.wordDefinition = new DictionaryApp.CustomControls.WordDefinition(w);
+                this.wordDefinition.AutoSize = true;
+                this.wordDefinition.BackColor = System.Drawing.Color.White;
+                this.wordDefinition.Location = new System.Drawing.Point(0, 0);
+                this.wordDefinition.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+                this.wordDefinition.MaximumSize = new System.Drawing.Size(648, 0);
+                this.wordDefinition.Name = "wordDefinition";
+                this.wordDefinition.Size = new System.Drawing.Size(500, 1466);
+                this.wordDefinition.MaximumSize = new System.Drawing.Size(500, 0);
+                this.wordDefinition.TabIndex = 11;
+                this.Controls.Add(this.wordDefinition);
+
+            }
+            else
+            {
+                this.text = new System.Windows.Forms.TextBox();
+                this.text.BackColor = System.Drawing.Color.White;
+                this.text.Location = new System.Drawing.Point(0, 80);
+                this.text.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+                this.text.Name = "wordDefinition";
+                this.text.Size = new System.Drawing.Size(500, 200);
+                this.text.AutoSize = false;
+                this.text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+                this.text.BorderStyle = System.Windows.Forms.BorderStyle.None;
+                this.text.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                this.text.TabIndex = 11;
+                this.text.Text = "Oops, no suitable word is found";
+                this.text.ForeColor = Color.FromArgb(150, 150, 150);
+                this.Controls.Add(this.text);
+            }
             // 
             // WordResultPanel
             // 
@@ -68,7 +90,6 @@ namespace DictionaryApp.CustomControls
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Controls.Add(this.otherResultsPanel);
-            this.Controls.Add(this.wordDefinition);
             this.Name = "WordResultPanel";
             this.Size = new System.Drawing.Size(931, 1469);
             this.ResumeLayout(false);
@@ -80,6 +101,7 @@ namespace DictionaryApp.CustomControls
 
         private OtherResultsPanel otherResultsPanel;
         private WordDefinition wordDefinition;
+        private System.Windows.Forms.TextBox text;
 
     }
 }

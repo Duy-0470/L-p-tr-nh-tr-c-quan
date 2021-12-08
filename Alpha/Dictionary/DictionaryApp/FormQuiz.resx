@@ -118,16 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="LabelRules.Text" xml:space="preserve">
-    <value>
-- Pick ONE correct answer according to the question above
-- You have 30 seconds for each question
-- Each correct answer earns you 1 point
-- The game stops when you have answered 20 questions or your time is out</value>
+    <value>Pick ONE correct answer according to the question above
+You have 30 seconds for each question
+Each correct answer earns you 1 point
+The game stops when you have answered 20 questions or your time is out</value>
   </data>
   <metadata name="TimeLimit.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+    <value>16, 32</value>
   </metadata>
   <metadata name="Timer1sec.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>122, 17</value>
+    <value>121, 32</value>
+  </metadata>
+  <metadata name="TimerReady.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>227, 32</value>
   </metadata>
 </root>

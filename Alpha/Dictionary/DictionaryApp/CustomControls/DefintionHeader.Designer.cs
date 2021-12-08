@@ -28,6 +28,7 @@ namespace DictionaryApp.CustomControls
         private System.Windows.Forms.Label WordFormSign;
         private System.Windows.Forms.Panel WordFormPanel;
 
+        private System.Windows.Forms.PictureBox pictureBox;
         private List<Panel> forms;
         /// <summary> 
         /// Clean up any resources being used.
@@ -64,6 +65,8 @@ namespace DictionaryApp.CustomControls
             this.WordForm = new System.Windows.Forms.Label();
             this.WordFormSign = new System.Windows.Forms.Label();
             this.WordFormPanel = new System.Windows.Forms.Panel();
+
+            pictureBox = new PictureBox();
             // 
             // Word
             // 
@@ -76,11 +79,36 @@ namespace DictionaryApp.CustomControls
             this.Word.TabIndex = 0;
             this.Word.Text = header.word;
             this.Word.AutoSize = true;
-            
+
+            this.pictureBox.Location = new System.Drawing.Point(430, 10);
+            this.pictureBox.Name = "pictureBox2";
+            this.pictureBox.Size = new System.Drawing.Size(172, 172);
+            this.pictureBox.TabIndex = 0;
+            this.pictureBox.TabStop = false;
+
+            string path;
+            if (header.starred == 1)
+            {
+                path = System.IO.Directory.GetCurrentDirectory().Substring(0, 71) + "\\Database\\Files\\images\\marked.png";
+            }
+            else
+            {
+                path = System.IO.Directory.GetCurrentDirectory().Substring(0, 71) + "\\Database\\Files\\images\\unmarked.png";
+
+            }
+            Bitmap picture = new Bitmap(new Bitmap(path), new Size(50,50));
+            if (this.pictureBox.Image != null)
+                this.pictureBox.Image.Dispose();
+            if (picture != null)
+            {
+                int w = 175, h = 175;
+                this.pictureBox.Image = picture;
+            }
+            this.pictureBox.Click += PictureBox_Click;
             // 
             // WordType
             // 
-            
+
             this.WordType.AutoSize = true;
             this.WordType.Font = new System.Drawing.Font("Times New Roman", 17F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.WordType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
@@ -143,7 +171,8 @@ namespace DictionaryApp.CustomControls
                     this.BEButton.Location = new System.Drawing.Point(0,
                        this.Word.Size.Height + this.Word.Location.Y + 18);
                 }
-                this.BEButton.Name = "BEButton";
+                this.BEButton.Name = header.br_link;
+                this.BEButton.Click += this.Sound;
                 this.BEButton.Size = new System.Drawing.Size(30, 30);
                 this.BEButton.TabIndex = 3;
                 this.BEButton.Text = "BrE";
@@ -171,7 +200,9 @@ namespace DictionaryApp.CustomControls
                 this.NAButton.ForeColor = System.Drawing.Color.White;
                 this.NAButton.Location = new System.Drawing.Point(0,
                         this.BEButton.Size.Height + this.BEButton.Location.Y + 6);
-                this.NAButton.Name = "NAButton";
+                this.NAButton.Name = header.na_link;
+                this.NAButton.Click += this.Sound;
+
                 this.NAButton.Size = new System.Drawing.Size(30, 30);
                 this.NAButton.TabIndex = 4;
                 this.NAButton.Text = "NAE";
@@ -263,11 +294,13 @@ namespace DictionaryApp.CustomControls
                     nAButtonSmall.Font = new System.Drawing.Font("Times New Roman", 5F, System.Drawing.FontStyle.Bold);
                     nAButtonSmall.ForeColor = System.Drawing.Color.White;
                     nAButtonSmall.Location = new System.Drawing.Point(277, 38);
-                    nAButtonSmall.Name = "NAButtonSmall";
+                    nAButtonSmall.Name = fms.na_link;
                     nAButtonSmall.Size = new System.Drawing.Size(25, 25);
                     nAButtonSmall.TabIndex = 10;
                     nAButtonSmall.Text = "BrE";
                     nAButtonSmall.UseVisualStyleBackColor = false;
+                    nAButtonSmall.Click += this.Sound;
+
                     // 
                     // BEPronSmall
                     // 
@@ -299,11 +332,13 @@ namespace DictionaryApp.CustomControls
                     bEButtonSmall.Font = new System.Drawing.Font("Times New Roman", 5F, System.Drawing.FontStyle.Bold);
                     bEButtonSmall.ForeColor = System.Drawing.Color.White;
                     bEButtonSmall.Location = new System.Drawing.Point(135, 38);
-                    bEButtonSmall.Name = "BEButtonSmall";
+                    bEButtonSmall.Name = fms.br_link;
                     bEButtonSmall.Size = new System.Drawing.Size(25, 25);
                     bEButtonSmall.TabIndex = 8;
                     bEButtonSmall.Text = "BrE";
                     bEButtonSmall.UseVisualStyleBackColor = false;
+                    bEButtonSmall.Click += this.Sound;
+
                     // 
                     // SubjectOfForm
                     // 
@@ -353,7 +388,7 @@ namespace DictionaryApp.CustomControls
 
             }
 
-
+            this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.Word);
 /*            this.Controls.Add(this.WordLevel);
 */            this.Controls.Add(this.WordType);
@@ -363,6 +398,7 @@ namespace DictionaryApp.CustomControls
             this.Controls.Add(this.NAPron);
             this.Controls.Add(this.WordFormBar);
             this.Controls.Add(this.WordFormPanel);
+
             /*foreach(Panel wf in forms)
             {
                 this.Controls.Add(wf);

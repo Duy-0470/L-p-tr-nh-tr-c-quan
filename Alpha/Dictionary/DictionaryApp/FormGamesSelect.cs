@@ -16,6 +16,7 @@ namespace DictionaryApp
         public FormGamesSelect()
         {
             InitializeComponent();
+            ButtonHome.FlatAppearance.BorderSize = 0;
         }
 
         private void panel1_MouseClick(object sender, MouseEventArgs e)
@@ -32,12 +33,22 @@ namespace DictionaryApp
 
         private void label2_Click(object sender, EventArgs e)
         {
-            
+            //if (e.Button == MouseButtons.Left)
+            //{
+            //    Hide();
+            //    FormQuizTopic fqt = new FormQuizTopic();
+            //    fqt.Show();
+            //}
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+            //if (e.Button == MouseButtons.Left)
+            //{
+            //    Hide();
+            //    FormQuizTopic fqt = new FormQuizTopic();
+            //    fqt.Show();
+            //}
         }
 
         private void PanelQuizzes_Click(object sender, EventArgs e)
@@ -65,14 +76,33 @@ namespace DictionaryApp
 
         private void FormGamesSelect_FormClosed(object sender, FormClosedEventArgs e)
         {
+            
+        }
+
+        private void ButtonHome_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void FormGamesSelect_FormClosing(object sender, FormClosingEventArgs e)
+        {
             if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "panel1_MouseClick" || x.GetMethod().Name == "PanelQuizzesBorder_MouseClick"
                 || x.GetMethod().Name == "label2_MouseClick" || x.GetMethod().Name == "pictureBox1_MouseClick" || x.GetMethod().Name == "label3_MouseClick"))
             {
-                FormQuizTopic fqt = new FormQuizTopic();
-                fqt.Show();
+                FormQuiz fq = new FormQuiz();
+                fq.Show();
+            }
+            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ButtonHome_Click"))
+            {
+                Form1.GetInstance().Show();
             }
             else
-                Form1.instance.Show();
+            {
+                //if (MessageBox.Show("Quit the app now?", "Alert", MessageBoxButtons.YesNo) == DialogResult.No)
+                //    e.Cancel = true;
+                //else
+                    Application.Exit();
+            }
         }
     }
 }

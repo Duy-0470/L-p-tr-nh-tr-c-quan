@@ -68,6 +68,12 @@ namespace DictionaryApp
             this.engVietTypeButton = new System.Windows.Forms.Button();
             this.engEngTypeButton = new System.Windows.Forms.Button();
             this.TypePanelBorder = new System.Windows.Forms.Panel();
+            this.wordResultPanel = new DictionaryApp.CustomControls.WordResultPanel();
+            this.picturesView = new DictionaryApp.CustomControls.PicturesView();
+            this.wordResultPanel1 = new DictionaryApp.CustomControls.WordResultPanel();
+            this.review1 = new DictionaryApp.CustomControls.Review();
+            this.ButtonGames = new System.Windows.Forms.Button();
+            this.PanelSplit3 = new System.Windows.Forms.Panel();
             this.topBar.SuspendLayout();
             this.rightTopBarPanel.SuspendLayout();
             this.appNamePanel.SuspendLayout();
@@ -93,7 +99,7 @@ namespace DictionaryApp
             this.topBar.Controls.Add(this.appNamePanel);
             this.topBar.Location = new System.Drawing.Point(0, 0);
             this.topBar.Name = "topBar";
-            this.topBar.Size = new System.Drawing.Size(1146, 48);
+            this.topBar.Size = new System.Drawing.Size(1990, 48);
             this.topBar.TabIndex = 0;
             // 
             // rightTopBarPanel
@@ -103,7 +109,7 @@ namespace DictionaryApp
             this.rightTopBarPanel.Controls.Add(this.avatarButton);
             this.rightTopBarPanel.Controls.Add(this.helpButton);
             this.rightTopBarPanel.Controls.Add(this.signOutButton);
-            this.rightTopBarPanel.Location = new System.Drawing.Point(1535, 0);
+            this.rightTopBarPanel.Location = new System.Drawing.Point(2466, 0);
             this.rightTopBarPanel.Name = "rightTopBarPanel";
             this.rightTopBarPanel.Size = new System.Drawing.Size(245, 48);
             this.rightTopBarPanel.TabIndex = 1;
@@ -192,17 +198,19 @@ namespace DictionaryApp
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.PanelSplit3);
             this.panel1.Controls.Add(this.PicturesButton);
+            this.panel1.Controls.Add(this.ButtonGames);
             this.panel1.Controls.Add(this.ReviewButton);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.RightBorderOfDictionaries);
             this.panel1.Controls.Add(this.DictionariesButton);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1901, 48);
+            this.panel1.Size = new System.Drawing.Size(3341, 48);
             this.panel1.TabIndex = 1;
             // 
             // PicturesButton
@@ -238,9 +246,9 @@ namespace DictionaryApp
             this.ReviewButton.Text = "Review";
             this.ReviewButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ReviewButton.UseVisualStyleBackColor = false;
-            this.ReviewButton.Click += new System.EventHandler(this.ReviewButton_Click);
             this.ReviewButton.MouseEnter += new System.EventHandler(this.TopBarButtonGetsFocus);
             this.ReviewButton.MouseLeave += new System.EventHandler(this.TopBarButtonLosesFocus);
+            this.ReviewButton.Click += ReviewButton_Click;
             // 
             // panel3
             // 
@@ -359,6 +367,7 @@ namespace DictionaryApp
             this.engengButton.UseVisualStyleBackColor = false;
             this.engengButton.MouseEnter += new System.EventHandler(this.OptionLabelGetsFocused);
             this.engengButton.MouseLeave += new System.EventHandler(this.OptionLabelLosesFocused);
+            this.engengButton.Click += EngengButton_Click;
             // 
             // dictionariesOptionBorder
             // 
@@ -368,8 +377,8 @@ namespace DictionaryApp
             this.dictionariesOptionBorder.Name = "dictionariesOptionBorder";
             this.dictionariesOptionBorder.Size = new System.Drawing.Size(252, 151);
             this.dictionariesOptionBorder.TabIndex = 3;
-            this.dictionariesOptionBorder.Visible = false;
             this.dictionariesOptionBorder.MouseLeave += new System.EventHandler(this.LeaveOptionPanel);
+            this.dictionariesOptionBorder.Visible = false;
             // 
             // ButtonBarBorder
             // 
@@ -379,7 +388,7 @@ namespace DictionaryApp
             this.ButtonBarBorder.Controls.Add(this.panel1);
             this.ButtonBarBorder.Location = new System.Drawing.Point(0, 48);
             this.ButtonBarBorder.Name = "ButtonBarBorder";
-            this.ButtonBarBorder.Size = new System.Drawing.Size(1146, 50);
+            this.ButtonBarBorder.Size = new System.Drawing.Size(1990, 50);
             this.ButtonBarBorder.TabIndex = 4;
             // 
             // panel5
@@ -400,9 +409,8 @@ namespace DictionaryApp
             this.SearchBar.Controls.Add(this.TypeSelectionButton);
             this.SearchBar.Location = new System.Drawing.Point(0, 99);
             this.SearchBar.Name = "SearchBar";
-            this.SearchBar.Size = new System.Drawing.Size(1146, 68);
+            this.SearchBar.Size = new System.Drawing.Size(1990, 68);
             this.SearchBar.TabIndex = 8;
-            this.SearchBar.Visible = false;
             // 
             // GoButton
             // 
@@ -522,8 +530,81 @@ namespace DictionaryApp
             this.TypePanelBorder.Name = "TypePanelBorder";
             this.TypePanelBorder.Size = new System.Drawing.Size(220, 122);
             this.TypePanelBorder.TabIndex = 10;
-            this.TypePanelBorder.Visible = false;
             this.TypePanelBorder.MouseLeave += new System.EventHandler(this.LeaveTypePanel);
+            this.TypePanelBorder.Visible = false;
+            // 
+            // PanelSplit3
+            // 
+            this.PanelSplit3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.PanelSplit3.Location = new System.Drawing.Point(319, 0);
+            this.PanelSplit3.Name = "PanelSplit3";
+            this.PanelSplit3.Size = new System.Drawing.Size(1, 48);
+            this.PanelSplit3.TabIndex = 6;
+            // 
+            // ButtonGames
+            // 
+            this.ButtonGames.BackColor = System.Drawing.Color.White;
+            this.ButtonGames.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ButtonGames.FlatAppearance.BorderSize = 0;
+            this.ButtonGames.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonGames.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.ButtonGames.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.ButtonGames.Location = new System.Drawing.Point(319, 0);
+            this.ButtonGames.Name = "ButtonGames";
+            this.ButtonGames.Size = new System.Drawing.Size(85, 48);
+            this.ButtonGames.TabIndex = 5;
+            this.ButtonGames.Text = "Games";
+            this.ButtonGames.UseVisualStyleBackColor = false;
+            this.ButtonGames.Click += new System.EventHandler(this.ButtonGames_Click);
+            this.ButtonGames.MouseEnter += new System.EventHandler(this.TopBarButtonGetsFocus);
+            this.ButtonGames.MouseLeave += new System.EventHandler(this.TopBarButtonLosesFocus);
+            // 
+            // wordResultPanel
+            // 
+            this.wordResultPanel.AutoScroll = true;
+            this.wordResultPanel.AutoSize = true;
+            this.wordResultPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.wordResultPanel.BackColor = System.Drawing.Color.White;
+            this.wordResultPanel.Location = new System.Drawing.Point(10, 180);
+            this.wordResultPanel.Name = "wordResultPanel";
+            this.wordResultPanel.Size = new System.Drawing.Size(1044, 583);
+            this.wordResultPanel.TabIndex = 0;
+            // 
+            // picturesView
+            // 
+            this.picturesView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picturesView.Location = new System.Drawing.Point(0, 130);
+            this.picturesView.MaximumSize = new System.Drawing.Size(1200, 600);
+            this.picturesView.MinimumSize = new System.Drawing.Size(1200, 600);
+            this.picturesView.Name = "picturesView";
+            this.picturesView.Size = new System.Drawing.Size(1200, 600);
+            this.picturesView.TabIndex = 0;
+            this.picturesView.Visible = false;
+            // 
+            // wordResultPanel1
+            // 
+            this.wordResultPanel1.AutoScroll = true;
+            this.wordResultPanel1.AutoSize = true;
+            this.wordResultPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.wordResultPanel1.BackColor = System.Drawing.Color.White;
+            this.wordResultPanel1.Location = new System.Drawing.Point(0, 0);
+            this.wordResultPanel1.Name = "wordResultPanel1";
+            this.wordResultPanel1.Size = new System.Drawing.Size(931, 1469);
+            this.wordResultPanel1.TabIndex = 0;
+            // 
+            // review1
+            // 
+            this.review1.AutoScroll = false;
+            this.review1.AutoSize = true;
+            this.review1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.review1.BackColor = System.Drawing.Color.White;
+            this.review1.Location = new System.Drawing.Point(10, 150);
+            this.review1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.review1.Name = "review1";
+            this.review1.Size = new System.Drawing.Size(1044, 583);
+            this.review1.TabIndex = 11;
             // 
             // Form1
             // 
@@ -532,13 +613,18 @@ namespace DictionaryApp
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(791, 766);
+            this.ClientSize = new System.Drawing.Size(791, 749);
             this.Controls.Add(this.TypePanelBorder);
             this.Controls.Add(this.dictionariesOptionBorder);
             this.Controls.Add(this.SearchBar);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.ButtonBarBorder);
             this.Controls.Add(this.topBar);
+
+            this.Controls.Add(this.review1);
+            this.Controls.Add(this.wordResultPanel);
+            this.Controls.Add(this.picturesView);
+
             this.Font = new System.Drawing.Font("Segoe UI Black", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Name = "Form1";
@@ -561,8 +647,10 @@ namespace DictionaryApp
             this.TypePanel.ResumeLayout(false);
             this.TypePanelBorder.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
+
 
         #endregion
 
@@ -599,7 +687,11 @@ namespace DictionaryApp
         private System.Windows.Forms.TextBox SearchInput;
         private System.Windows.Forms.Button GoButton;
         private WordResultPanel wordResultPanel;
-        private PictureCatalog pictureCatalog1;
+        private PicturesView picturesView;
+        private WordResultPanel wordResultPanel1;
+        private Review review1;
+        private Button ButtonGames;
+        private Panel PanelSplit3;
     }
 }
 
