@@ -1,4 +1,5 @@
 ﻿using DictionaryApp.Classes;
+using DictionaryApp.Database;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,27 +13,22 @@ using System.Windows.Forms;
 
 namespace DictionaryApp.CustomControls
 {
-    public partial class Review : UserControl
+    public partial class Topics : UserControl
     {
-        Word w = null;
-        List<WordHeader> mw = new List<WordHeader>();
-        List<FoundWord> mm = new List<FoundWord>();
-        public Review()
+        Word w;
+
+        public Topics()
         {
             InitializeComponent();
         }
-        public Review(Word word, List<WordHeader> mw, List<FoundWord> mm)
+        public Topics(Word word)
         {
             this.w = word;
-            this.mw = mw;
-            this.mm = mm;
             InitializeComponent();
         }
-        public void SetPanel(Word word, List<WordHeader> mw, List<FoundWord> mm)
+        public void SetPanel(Word word)
         {
             this.w = word;
-            this.mw = mw;
-            this.mm = mm;
             this.Controls.Clear();
             InitializeComponent();
         }
@@ -79,7 +75,11 @@ namespace DictionaryApp.CustomControls
 
 
         }
-
+        public void SetWordList(List<WordHeader> words)
+        {
+            this.wordsPanel.mainMeanings = words;
+            this.wordsPanel.RefreshPanels();
+        }
         public void SetWordPanel(Word word)
         {
             this.w = word;
@@ -90,7 +90,7 @@ namespace DictionaryApp.CustomControls
                 this.wordDefinition = new DictionaryApp.CustomControls.WordDefinition(w);
                 this.wordDefinition.AutoSize = true;
                 this.wordDefinition.BackColor = System.Drawing.Color.White;
-                this.wordDefinition.Location = new System.Drawing.Point(300, 0);
+                this.wordDefinition.Location = new System.Drawing.Point(230, 0);
                 this.wordDefinition.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
                 this.wordDefinition.MaximumSize = new System.Drawing.Size(648, 0);
                 this.wordDefinition.Name = "wordDefinition";
@@ -107,7 +107,7 @@ namespace DictionaryApp.CustomControls
             {
                 this.text = new System.Windows.Forms.TextBox();
                 this.text.BackColor = System.Drawing.Color.White;
-                this.text.Location = new System.Drawing.Point(300, 80);
+                this.text.Location = new System.Drawing.Point(230, 80);
                 this.text.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
                 this.text.Name = "wordDefinition";
                 this.text.Size = new System.Drawing.Size(500, 200);

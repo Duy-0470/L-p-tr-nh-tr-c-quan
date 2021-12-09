@@ -31,5 +31,19 @@ namespace DictionaryApp.Classes
             if (type1 == "NA") type1 = "";
             if (type2 == "NA") type2 = "";
         }
+        public Sense(string t, string m, string l, string t1, string t2, string ha, List<Example> exs)
+        {
+            this.topic = t;
+            this.meaning = m;
+            this.level = l;
+            this.type1 = t1;
+            this.type2 = t2;
+            this.hash = ha;
+            this.examples = exs;
+            if (topic == "NA") topic = "";
+            if (level == "NA") level = "";
+            if (type1 == "NA") type1 = "";
+            if (type2 == "NA") type2 = "";
+        }
     }
 }

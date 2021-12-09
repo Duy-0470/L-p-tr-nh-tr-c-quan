@@ -1,12 +1,13 @@
 ﻿
 using DictionaryApp.Classes;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
 namespace DictionaryApp.CustomControls
 {
-    partial class WordDefinition
+    partial class IdiomDefinition
     {
         /// <summary> 
         /// Required designer variable.
@@ -32,10 +33,10 @@ namespace DictionaryApp.CustomControls
         /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent(Word word)
+        private void InitializeComponent(Idiom word)
         {
             this.components = new System.ComponentModel.Container();
-            this.defintionHeader1 = new DictionaryApp.CustomControls.DefintionHeader(this.components, word.wordHeader);
+            this.defintionHeader1 = new IdiomHeaderPanel(this.components, word.wordHeader);
             this.sensePanel = new Panel();
             this.SuspendLayout();
             // 
@@ -48,22 +49,33 @@ namespace DictionaryApp.CustomControls
             this.defintionHeader1.MaximumSize = new System.Drawing.Size(648, 0);
 
             this.sensePanel.BackColor = System.Drawing.Color.White;
-            this.sensePanel.Location = new System.Drawing.Point(0, defintionHeader1.Location.Y+defintionHeader1.GetHeight()+20);
+            this.sensePanel.Location = new System.Drawing.Point(0, defintionHeader1.Location.Y+defintionHeader1.PreferredSize.Height+10);
             List<Control> c = new List<Control>();
+            Debug.WriteLine(word.senses.Count);
             foreach(Sense sense in word.senses)
             {
                 SensePanel s = new SensePanel(word.senses.IndexOf(sense) + 1, sense);
                 s.Location = new System.Drawing.Point(0,
-                                this.sensePanel.Controls.Count == 0 ? 0 :(
-                                this.sensePanel.Controls[word.senses.IndexOf(sense) - 1].Location.Y +
-                                this.sensePanel.Controls[word.senses.IndexOf(sense) - 1].PreferredSize.Height -30));
-/*                s.MaximumSize = new System.Drawing.Size(648, 600);
-*/                this.sensePanel.Controls.Add(s);
+                                c.Count == 0 ? 0 :(
+                                c[word.senses.IndexOf(sense) - 1].Location.Y +
+                                c[word.senses.IndexOf(sense) - 1].PreferredSize.Height -30));
+                /*                s.MaximumSize = new System.Drawing.Size(648, 600);
+                */
+                // s.BackColor = Color.Green;
+
+                s.AutoSize = true;
+                c.Add(s);
+            }
+            for(int i = c.Count - 1; i > -1; i--)
+            {
+                this.sensePanel.Controls.Add(c[i]);
+
             }
             this.sensePanel.Name = "rightTopBarPanel";
             this.sensePanel.Size = new System.Drawing.Size(648, 48);
             this.sensePanel.TabIndex = 1;
             this.sensePanel.AutoSize = true;
+            // this.sensePanel.BackColor = Color.Pink;
             this.sensePanel.MaximumSize = new System.Drawing.Size(648, 0);
             // 
             // UserControl1
@@ -86,7 +98,7 @@ namespace DictionaryApp.CustomControls
 
         #endregion
 
-        private DefintionHeader defintionHeader1;
+        private IdiomHeaderPanel defintionHeader1;
         private Panel sensePanel;
     }
 }

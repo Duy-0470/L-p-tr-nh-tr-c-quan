@@ -22,6 +22,13 @@ namespace DictionaryApp.Classes
             id = "";
         }
 
+        public WordHeader(string id, string w, string l)
+        {
+            word = w;
+            this.id = id;
+            level =l;
+        }
+
         public WordHeader(string w, string t, string l, string b, string n, string bl, string nl, int st, string id)
         {
             word = w;

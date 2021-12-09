@@ -377,6 +377,7 @@ namespace DictionaryApp.Database
             return theW;
             
         }
+
         public Word FindWord(string wid)
         {
             SqlCommand command = new SqlCommand();
@@ -771,6 +772,121 @@ namespace DictionaryApp.Database
             images = images.Where(i => !t_images.Contains(i.link)).ToList();
             return images;
         }
+        public List<Idiom> GetIdiomsGivenWord(string word)
+        {
+            string w = word.Trim().Replace(" ", "-");
+            List<Idiom> idioms = new List<Idiom>();
+            foreach(string id in new List<string> { "_1", "_2", "_3", "_4", "_5" })
+            {
+                idioms = GetIdiomsGivenWordId(w + id);
+                if (idioms.Count != 0)
+                    return idioms;
+            }
+            return idioms;
+        }
+        public List<string> GetAlspMatchingIdioms(string w)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select DISTINCT word_id from Idioms where word_id like '"+w.Trim().Replace(" ","-")+"%'";
+            connection.Close(); connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            List<string> headers = new List<string>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    headers.Add(reader.GetString(0));
+                }
+            }
+            connection.Close();
+            return headers;
+
+        }
+        public List<Idiom> GetIdiomsGivenWordId(string wid)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Idioms where word_id= @id";
+            command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = wid;
+            connection.Close(); connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            List<IdiomHeader> headers = new List<IdiomHeader>();
+            List<Idiom> idioms = new List<Idiom>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    headers.Add(new IdiomHeader(
+                        Convert.ToString( reader.GetInt32(0)), reader.GetString(1), reader.GetString(2), reader.GetString(3)
+                        ));
+                }
+                foreach(IdiomHeader header in headers)
+                {
+                    SqlCommand scommand = new SqlCommand();
+                    scommand.Connection = connection;
+                    scommand.CommandText = "select * from Idiom_Meanings where idiom= @id";
+                    scommand.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = header.phrase;
+
+                    connection.Close(); connection.Open();
+                    SqlDataReader sreader = scommand.ExecuteReader();
+                    List<Sense> s = new List<Sense>();
+                    List<string> m = new List<string>();
+                    if (sreader.HasRows)
+                    {
+                        while (sreader.Read())
+                        {
+                            if (!m.Contains(sreader.GetString(6)))
+                            {
+
+                                s.Add(new Sense(
+                                        "", sreader.GetString(6), sreader.GetString(4), sreader.GetString(2), sreader.GetString(5), sreader.GetString(7), null));
+                                m.Add(sreader.GetString(6));
+                            }
+                           
+                        }
+                    }
+                    // Debug.WriteLine(headers.Count);
+
+                    foreach (Sense sense in s)
+                    {
+/*                        Debug.WriteLine(sense.meaning);
+*/                        SqlCommand xcommand = new SqlCommand();
+                        xcommand.Connection = connection;
+                        xcommand.CommandText = "select sentence from Idiom_Examples where hash= @id";
+                        xcommand.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = sense.hash;
+
+                        connection.Close(); connection.Open();
+                        SqlDataReader xreader = xcommand.ExecuteReader();
+                        List<Example> examples = new List<Example>();
+                        List<string> x = new List<string>();
+                        if (xreader.HasRows)
+                        {
+                            while (xreader.Read())
+                            {
+                                if (!x.Contains(xreader.GetString(0))){
+                                    examples.Add(new Example(xreader.GetString(0)));
+                                    x.Add(xreader.GetString(0));
+                                }
+                               
+                            }
+                        }
+                        sense.examples = examples;
+                    }
+
+                    idioms.Add(new Idiom(header, header.id, s));
+                }
+                connection.Close();
+
+            }
+            else
+            {
+                connection.Close();
+
+            }
+            return idioms;
+
+        }
         public List<MyImage> GetOtherTopics()
         {
             return GetOtherImages().Distinct().ToList();
@@ -961,10 +1077,114 @@ namespace DictionaryApp.Database
                 Debug.WriteLine("Add words into Quizzes table");
                 AddQuizzes();
             }
+            connection.Close(); connection.Open();
+            command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "SELECT COUNT(*) FROM Topics";
+            numRows = (Int32)command.ExecuteScalar();
+            connection.Close();
+            if (numRows <= 500)
+            {
+                Debug.WriteLine("Add topics into Topics table");
+                AddTopics();
+            }
 
 
             List<String> w = FindWordsMatchingSearch("account");
             GetAllImageWords();
+        }
+        public List<string> GetTopics()
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select DISTINCT topic from Topics";
+            connection.Close(); connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            List<string> topic = new List<string>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    topic.Add(reader.GetString(0));
+                }
+            }
+            connection.Close();
+            return topic;
+        }
+        public List<string> GetSubTopics(string t)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select DISTINCT subtopic from Topics WHERE topic = @topic";
+            connection.Close(); connection.Open();
+            command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = t;
+            SqlDataReader reader = command.ExecuteReader();
+            List<string> topic = new List<string>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    topic.Add(reader.GetString(0));
+                }
+            }
+            connection.Close();
+            return topic;
+        }
+        public List<string> GetSubsubTopics(string t, string s)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select DISTINCT subsubtopic from Topics WHERE topic = @topic and subtopic = @subtopic";
+            connection.Close(); connection.Open();
+            command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = t;
+            command.Parameters.Add("@subtopic", System.Data.SqlDbType.NVarChar).Value = s;
+            SqlDataReader reader = command.ExecuteReader();
+            List<string> topic = new List<string>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    topic.Add(reader.GetString(0));
+                }
+            }
+            connection.Close();
+            return topic;
+        }
+        public List<WordHeader> GetWordsGivenTopic(string t, string s, string ss)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select DISTINCT level, word, word_id from Topics WHERE topic = @topic and subtopic = @subtopic and subsubtopic = @subsubtopic";
+            connection.Close(); connection.Open();
+            command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = t;
+            command.Parameters.Add("@subtopic", System.Data.SqlDbType.NVarChar).Value = s;
+            command.Parameters.Add("@subsubtopic", System.Data.SqlDbType.NVarChar).Value = ss;
+            SqlDataReader reader = command.ExecuteReader();
+            List<WordHeader> words = new List<WordHeader>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    words.Add(new WordHeader(reader.GetString(2), reader.GetString(1), reader.GetString(0)));
+                }
+            }
+            connection.Close();
+            return words;
+        } 
+        public bool CheckTopicandSubtopic(string t, string s)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select COUNT(*) from Topics WHERE topic = @topic and subtopic = @subtopic";
+            connection.Close(); connection.Open();
+
+            command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = t;
+            command.Parameters.Add("@subtopic", System.Data.SqlDbType.NVarChar).Value = s;
+            int numRows = (Int32)command.ExecuteScalar();
+            connection.Close();
+            if (numRows == 0) { return false; }
+            return true;
+            connection.Close();
         }
         public List<Quizz> SelectNQuizzes(int number)
         {
@@ -1208,14 +1428,15 @@ namespace DictionaryApp.Database
 
                 command = new SqlCommand();
                 command.Connection = connection;
-                command.CommandText = @"INSERT INTO Idiom_Meanings (idiom, type1, word, level, type2, hash) VALUES (@idiom, @type1, @word, @level, @type2, @hash)";
+                command.CommandText = @"INSERT INTO Idiom_Meanings (idiom, type1, word, level, type2, meaning, hash) VALUES (@idiom, @type1, @word, @level, @type2, @meaning, @hash)";
                 Debug.WriteLine(tokens[0]);
                 command.Parameters.Add("@idiom", SqlDbType.NVarChar).Value = tokens[0];
                 command.Parameters.Add("@type1", SqlDbType.NVarChar).Value = tokens[1];
                 command.Parameters.Add("@word", SqlDbType.NVarChar).Value = tokens[2];
                 command.Parameters.Add("@level", SqlDbType.NVarChar).Value = tokens[3];
                 command.Parameters.Add("@type2", SqlDbType.NVarChar).Value = tokens[4];
-                command.Parameters.Add("@hash", SqlDbType.NVarChar).Value = tokens[5];
+                command.Parameters.Add("@meaning", SqlDbType.NVarChar).Value = tokens[5];
+                command.Parameters.Add("@hash", SqlDbType.NVarChar).Value = tokens[6];
                 command.ExecuteNonQuery();
             }
             connection.Close();
@@ -1297,6 +1518,32 @@ namespace DictionaryApp.Database
                 command.ExecuteNonQuery();
             }
             connection.Close();
+        }
+        private void AddTopics()
+        {
+            connection.Close(); connection.Open();
+
+            string[] tokens;
+            SqlCommand command;
+
+            foreach (string line in System.IO.File.ReadLines(DataDirectories + @"\topics.txt"))
+            {
+                tokens = line.Split('|');
+
+                command = new SqlCommand();
+                command.Connection = connection;
+                command.CommandText = @"INSERT INTO Topics (topic, subtopic, subsubtopic, level, word, word_id) VALUES (@topic, @subtopic, @subsubtopic, @level, @word, @word_id)";
+                Debug.WriteLine(tokens[0]);
+                command.Parameters.Add("@topic", SqlDbType.NVarChar).Value = tokens[0];
+                command.Parameters.Add("@subtopic", SqlDbType.NVarChar).Value = tokens[1];
+                command.Parameters.Add("@subsubtopic", SqlDbType.NVarChar).Value = tokens[2];
+                command.Parameters.Add("@level", SqlDbType.NVarChar).Value = tokens[3];
+                command.Parameters.Add("@word", SqlDbType.NVarChar).Value = tokens[4];
+                command.Parameters.Add("@word_id", SqlDbType.NVarChar).Value = tokens[5];
+                command.ExecuteNonQuery();
+            }
+            connection.Close();
+
         }
         private void AddSenses()
         {
