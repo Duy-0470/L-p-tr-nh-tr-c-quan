@@ -510,7 +510,7 @@
             this.MaximizeBox = false;
             this.Name = "FormQuiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormQuiz";
+            this.Text = "Your Dictionaries";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormQuiz_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormQuiz_FormClosed);
             this.Load += new System.EventHandler(this.FormQuiz_Load);

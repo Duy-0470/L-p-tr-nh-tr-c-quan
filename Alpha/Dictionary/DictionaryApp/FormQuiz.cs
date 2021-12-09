@@ -50,23 +50,18 @@ namespace DictionaryApp
             switch (q_topic)
             {
                 case QuizTopic.Collocation:
-                    Text = "Collocation";
                     quizzes = databaseHandle.SelectNCollocationQuizzes(20);
                     break;
                 case QuizTopic.Phrasal_Verb:
-                    Text = "Phrasal Verbs";
                     quizzes = databaseHandle.SelectNPhrasalVerbQuizzes(20);
                     break;
                 case QuizTopic.Idiom:
-                    Text = "Idioms";
                     quizzes = databaseHandle.SelectNIdiomQuizzes(20);
                     break;
                 case QuizTopic.Word_Meaning:
-                    Text = "Word Meaning";
                     quizzes = databaseHandle.SelectNWordMeaningQuizzes(20);
                     break;
                 case QuizTopic.Word_Form:
-                    Text = "Word Forms";
                     quizzes = databaseHandle.SelectNWordFormQuizzes(20);
                     break;
                 default:

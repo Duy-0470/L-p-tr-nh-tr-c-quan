@@ -22,6 +22,7 @@ namespace DictionaryApp
         {
             LabelScore.Text = "Your score: " + FormQuiz.score.ToString() + " / 20";
             LabelAvgTime.Text += " " + (FormQuiz.avg_time / 1000 / 20).ToString() + " seconds";
+            LabelTopic.Text = FormQuiz.q_topic.ToString();
             // more to be added
         }
 

@@ -32,6 +32,7 @@
             this.LabelAvgTime = new System.Windows.Forms.Label();
             this.ButtonRetry = new System.Windows.Forms.Button();
             this.ButtonBackToGames = new System.Windows.Forms.Button();
+            this.LabelTopic = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LabelScore
@@ -39,7 +40,7 @@
             this.LabelScore.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelScore.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelScore.Location = new System.Drawing.Point(12, 9);
+            this.LabelScore.Location = new System.Drawing.Point(11, 68);
             this.LabelScore.Name = "LabelScore";
             this.LabelScore.Size = new System.Drawing.Size(814, 56);
             this.LabelScore.TabIndex = 0;
@@ -51,7 +52,7 @@
             this.LabelAvgTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelAvgTime.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelAvgTime.Location = new System.Drawing.Point(13, 90);
+            this.LabelAvgTime.Location = new System.Drawing.Point(13, 152);
             this.LabelAvgTime.Name = "LabelAvgTime";
             this.LabelAvgTime.Size = new System.Drawing.Size(813, 36);
             this.LabelAvgTime.TabIndex = 0;
@@ -80,6 +81,19 @@
             this.ButtonBackToGames.UseVisualStyleBackColor = true;
             this.ButtonBackToGames.Click += new System.EventHandler(this.ButtonBackToGames_Click);
             // 
+            // LabelTopic
+            // 
+            this.LabelTopic.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelTopic.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTopic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(174)))));
+            this.LabelTopic.Location = new System.Drawing.Point(12, 9);
+            this.LabelTopic.Name = "LabelTopic";
+            this.LabelTopic.Size = new System.Drawing.Size(813, 36);
+            this.LabelTopic.TabIndex = 0;
+            this.LabelTopic.Text = "Topic";
+            this.LabelTopic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // FormGameResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -87,6 +101,7 @@
             this.ClientSize = new System.Drawing.Size(838, 481);
             this.Controls.Add(this.ButtonBackToGames);
             this.Controls.Add(this.ButtonRetry);
+            this.Controls.Add(this.LabelTopic);
             this.Controls.Add(this.LabelAvgTime);
             this.Controls.Add(this.LabelScore);
             this.Name = "FormGameResult";
@@ -104,5 +119,6 @@
         private System.Windows.Forms.Label LabelAvgTime;
         private System.Windows.Forms.Button ButtonRetry;
         private System.Windows.Forms.Button ButtonBackToGames;
+        private System.Windows.Forms.Label LabelTopic;
     }
 }

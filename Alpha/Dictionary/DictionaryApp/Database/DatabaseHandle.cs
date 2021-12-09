@@ -1211,7 +1211,7 @@ namespace DictionaryApp.Database
                     }
                            
                     string quNum = tokens[0].Substring(0, tokens[0].IndexOf(' ') -1) +tp;
-                    string quSen = tokens[0].Substring(tokens[0].IndexOf(" ") + 1).Replace('%', '_');
+                    string quSen = tokens[0].Substring(tokens[0].IndexOf(" ") + 1)/*.Replace('%', '_')*/;
 
                     string ansA = tokens[1].Substring(tokens[1].IndexOf(".")+1).Replace('\n', ' ');
                     string ansB = tokens[2].Substring(tokens[2].IndexOf(".")+1).Replace('\n', ' ');
