@@ -23,7 +23,8 @@ namespace DictionaryApp
         public Form1()
         {
             InitializeComponent();
-            
+            Text = "Your Dictionaries";
+
             DatabaseHandle.GetDataHandle();
             instance = this;
 
@@ -69,7 +70,6 @@ namespace DictionaryApp
             this.review1.Visible = true;
             this.review1.SetPanel(null, DatabaseHandle.GetDataHandle().GetMarkedWord(), DatabaseHandle.GetDataHandle().LoadHistory());
             this.review1.Location = new Point((int)(this.Size.Width - this.review1.PreferredSize.Width) / 2, 150);
-
         }
 
         private void dictionaryOptionLabel_Click(object sender, EventArgs e)
@@ -212,7 +212,7 @@ namespace DictionaryApp
         }
         private void ClickAtGoButton(object sender, EventArgs e)
         {
-            if(this.SearchInput.ForeColor!= Color.FromArgb(Convert.ToInt32("d9d9d9", 16)) && this.SearchInput.Text != "")
+            if (this.SearchInput.ForeColor!= Color.FromArgb(Convert.ToInt32("d9d9d9", 16)) && this.SearchInput.Text != "")
             {
                 List<Word> mw = new List<Word>();
                 List<string> mm = new List<string>(), saw = new List<string>();
@@ -228,6 +228,13 @@ namespace DictionaryApp
 
             this.SearchInput.ForeColor = Color.FromArgb(Convert.ToInt32("d9d9d9", 16));
             this.SearchInput.Text = "Search";
+        }
+
+        private void ButtonGames_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormGamesSelect fgs = new FormGamesSelect();
+            fgs.Show();
         }
     }
 }

@@ -82,8 +82,9 @@ namespace DictionaryApp.CustomControls
             this.markedWordsHeaderPanel.TabIndex = 2;
 
             PictureBox pictureBox3 = new PictureBox();
-            string pa = System.IO.Directory.GetCurrentDirectory().Substring(0, 71) + "\\Database\\Files\\images\\sort.png";
-            Bitmap picture = new Bitmap(new Bitmap(pa), new Size(20, 20));
+            string pa = System.IO.Directory.GetCurrentDirectory();
+            //string pa = System.IO.Directory.GetCurrentDirectory().Substring(0, 71) + "\\Database\\Files\\images\\sort.png";
+            Bitmap picture = new Bitmap(new Bitmap(pa.Substring(0, pa.Length - 9) + "Database\\Files\\images\\sort.png"), new Size(20, 20));
             if (pictureBox3.Image != null)
                 pictureBox3.Image.Dispose();
             if (picture != null)
@@ -224,7 +225,7 @@ namespace DictionaryApp.CustomControls
 
             PictureBox pictureBox1 = new PictureBox();
             string path;
-            path = System.IO.Directory.GetCurrentDirectory().Substring(0, 71) + "\\Database\\Files\\images\\close.png";
+            path = System.IO.Directory.GetCurrentDirectory().Substring(0, System.IO.Directory.GetCurrentDirectory().Length - 9) + "\\Database\\Files\\images\\close.png";
             picture = new Bitmap(new Bitmap(path), new Size(20, 20));
             if (pictureBox1.Image != null)
                 pictureBox1.Image.Dispose();
@@ -236,7 +237,7 @@ namespace DictionaryApp.CustomControls
             pictureBox1.Click += ClearHistory;
 
             PictureBox pictureBox2 = new PictureBox();
-            path = System.IO.Directory.GetCurrentDirectory().Substring(0, 71) + "\\Database\\Files\\images\\sort.png";
+            path = path = System.IO.Directory.GetCurrentDirectory().Substring(0, System.IO.Directory.GetCurrentDirectory().Length - 9) + "\\Database\\Files\\images\\sort.png";
             picture = new Bitmap(new Bitmap(path), new Size(20, 20));
             if (pictureBox2.Image != null)
                 pictureBox2.Image.Dispose();

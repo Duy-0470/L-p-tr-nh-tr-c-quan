@@ -72,6 +72,8 @@ namespace DictionaryApp
             this.picturesView = new DictionaryApp.CustomControls.PicturesView();
             this.wordResultPanel1 = new DictionaryApp.CustomControls.WordResultPanel();
             this.review1 = new DictionaryApp.CustomControls.Review();
+            this.ButtonGames = new System.Windows.Forms.Button();
+            this.PanelSplit3 = new System.Windows.Forms.Panel();
             this.topBar.SuspendLayout();
             this.rightTopBarPanel.SuspendLayout();
             this.appNamePanel.SuspendLayout();
@@ -196,17 +198,19 @@ namespace DictionaryApp
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.PanelSplit3);
             this.panel1.Controls.Add(this.PicturesButton);
+            this.panel1.Controls.Add(this.ButtonGames);
             this.panel1.Controls.Add(this.ReviewButton);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.RightBorderOfDictionaries);
             this.panel1.Controls.Add(this.DictionariesButton);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2832, 48);
+            this.panel1.Size = new System.Drawing.Size(3341, 48);
             this.panel1.TabIndex = 1;
             // 
             // PicturesButton
@@ -529,6 +533,32 @@ namespace DictionaryApp
             this.TypePanelBorder.MouseLeave += new System.EventHandler(this.LeaveTypePanel);
             this.TypePanelBorder.Visible = false;
             // 
+            // PanelSplit3
+            // 
+            this.PanelSplit3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.PanelSplit3.Location = new System.Drawing.Point(319, 0);
+            this.PanelSplit3.Name = "PanelSplit3";
+            this.PanelSplit3.Size = new System.Drawing.Size(1, 48);
+            this.PanelSplit3.TabIndex = 6;
+            // 
+            // ButtonGames
+            // 
+            this.ButtonGames.BackColor = System.Drawing.Color.White;
+            this.ButtonGames.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ButtonGames.FlatAppearance.BorderSize = 0;
+            this.ButtonGames.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonGames.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.ButtonGames.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.ButtonGames.Location = new System.Drawing.Point(319, 0);
+            this.ButtonGames.Name = "ButtonGames";
+            this.ButtonGames.Size = new System.Drawing.Size(85, 48);
+            this.ButtonGames.TabIndex = 5;
+            this.ButtonGames.Text = "Games";
+            this.ButtonGames.UseVisualStyleBackColor = false;
+            this.ButtonGames.Click += new System.EventHandler(this.ButtonGames_Click);
+            this.ButtonGames.MouseEnter += new System.EventHandler(this.TopBarButtonGetsFocus);
+            this.ButtonGames.MouseLeave += new System.EventHandler(this.TopBarButtonLosesFocus);
+            // 
             // wordResultPanel
             // 
             this.wordResultPanel.AutoScroll = true;
@@ -660,6 +690,8 @@ namespace DictionaryApp
         private PicturesView picturesView;
         private WordResultPanel wordResultPanel1;
         private Review review1;
+        private Button ButtonGames;
+        private Panel PanelSplit3;
     }
 }
 

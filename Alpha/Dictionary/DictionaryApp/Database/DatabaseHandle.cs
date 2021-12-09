@@ -399,13 +399,12 @@ namespace DictionaryApp.Database
                 List<Shortcut> shortcuts = this.GetShortcuts(wid);
                 wordHeader.AddWordForms(wordForms);
                 connection.Close();
+                this.AddToHistory(wordHeader.id, wordHeader.word, wordHeader.type, DateTime.Now.ToString());
                 return new Word(wordHeader,
                                 wid,
                                 senses,
                                 wordForms,
-                                shortcuts);
-                this.AddToHistory(wordHeader.id, wordHeader.word, wordHeader.type, DateTime.Now.ToString());
-
+                                shortcuts);               
             }
             else {
                 connection.Close();
@@ -667,40 +666,47 @@ namespace DictionaryApp.Database
         }
         public void AddImageTopics()
         {
-            imageTopics.Add("Vehicles (2)", new List<string>() { "car", "airliner" });
-            imageTopics.Add("Vehicles (1)", new List<string>(){ "trucks", "trains", "taxis", "cycles", "construction", "cars",
+            try
+            {
+                imageTopics.Add("Vehicles (2)", new List<string>() { "car", "airliner" });
+                imageTopics.Add("Vehicles (1)", new List<string>(){ "trucks", "trains", "taxis", "cycles", "construction", "cars",
                                 "caravan_camper", "buses", "boats_ships_1", "boats_ships_2" , "aircraft"});
-            imageTopics.Add("Vegetables", new List<string>() { "squash", "salad", "root", "beans", "vegetables_misc" });
-            imageTopics.Add("Trees", new List<string>() { "evergreen", "deciduous", "_tree" });
-            imageTopics.Add("Tools", new List<string>() { "diy_1", "diy_2", "diy_3", "toolbox" });
-            imageTopics.Add("Sports", new List<string>() { "winter", "water", "track", "team", "racket", "sports_misc",
+                imageTopics.Add("Vegetables", new List<string>() { "squash", "salad", "root", "beans", "vegetables_misc" });
+                imageTopics.Add("Trees", new List<string>() { "evergreen", "deciduous", "_tree" });
+                imageTopics.Add("Tools", new List<string>() { "diy_1", "diy_2", "diy_3", "toolbox" });
+                imageTopics.Add("Sports", new List<string>() { "winter", "water", "track", "team", "racket", "sports_misc",
                                 "field", "extreme", "equestrian" });
-            imageTopics.Add("Cooking", new List<string>() { "spices", "cooking", "food_preparation" });
-            imageTopics.Add("Office", new List<string>() { "office", "stationery", "classroom", "laboratory" });
-            imageTopics.Add("Music", new List<string>() { "musicalnotation", "woodwind_instruments", "string_instruments", "pianos",
+                imageTopics.Add("Cooking", new List<string>() { "spices", "cooking", "food_preparation" });
+                imageTopics.Add("Office", new List<string>() { "office", "stationery", "classroom", "laboratory" });
+                imageTopics.Add("Music", new List<string>() { "musicalnotation", "woodwind_instruments", "string_instruments", "pianos",
                                 "percussion_instruments", "groups_playing", "brass_instruments", "other_string_instruments" });
-            imageTopics.Add("Mammals", new List<string>() { "rodents", "primates", "marsupials", "cetaceans" });
-            imageTopics.Add("Animal (1)", new List<string>() { "insects", "amphibians", "arachnids", "reptiles", "shellfish" });
-            imageTopics.Add("Animal (2)", new List<string>() { "_mammals", "arachnids", "_fish", });
-            imageTopics.Add("Rooms", new List<string>() { "livingroom", "diningroom", "bedroom", "bathroom", "kitchen" });
-            imageTopics.Add("Kitchen", new List<string>() { "utensils_misc", "opening", "measuring", "drinks", "cutting",
+                imageTopics.Add("Mammals", new List<string>() { "rodents", "primates", "marsupials", "cetaceans" });
+                imageTopics.Add("Animal (1)", new List<string>() { "insects", "amphibians", "arachnids", "reptiles", "shellfish" });
+                imageTopics.Add("Animal (2)", new List<string>() { "_mammals", "arachnids", "_fish", });
+                imageTopics.Add("Rooms", new List<string>() { "livingroom", "diningroom", "bedroom", "bathroom", "kitchen" });
+                imageTopics.Add("Kitchen", new List<string>() { "utensils_misc", "opening", "measuring", "drinks", "cutting",
                                 "crushing_grating_squeezing", "baking", "appliances", "kitchen" });
-            imageTopics.Add("Jewellery", new List<string>() { "rings", "necklaces", "earrings", "bracelets", "jewellery" });
-            imageTopics.Add("House", new List<string>() { "house_1", "house_2" });
-            imageTopics.Add("Buildings", new List<string>() { "homes", "buildings", "architecture", "bridges" });
-            imageTopics.Add("Hobbies", new List<string>() { "running", "skating", "orienteering_caving", "diving_snorkelling",
+                imageTopics.Add("Jewellery", new List<string>() { "rings", "necklaces", "earrings", "bracelets", "jewellery" });
+                imageTopics.Add("House", new List<string>() { "house_1", "house_2" });
+                imageTopics.Add("Buildings", new List<string>() { "homes", "buildings", "architecture", "bridges" });
+                imageTopics.Add("Hobbies", new List<string>() { "running", "skating", "orienteering_caving", "diving_snorkelling",
                                 "darts_pool", "creative", "crafts", "bowling" });
-            imageTopics.Add("Plants", new List<string>() { "herbs", "flowers", "cereals", "plants" });
-            imageTopics.Add("Fruit", new List<string>() { "tropical", "fruit_misc", "citrus", "berries" });
-            imageTopics.Add("Excercise", new List<string>() { "fitness", "equipment" });
-            imageTopics.Add("Garden", new List<string>() { "tools", "garden_misc", "chairs" });
-            imageTopics.Add("Environment", new List<string>() { "environment_1", "environment_2" });
-            imageTopics.Add("Sights", new List<string>() { "countryside", "coast", "city", "mountains" });
-            imageTopics.Add("Clothes", new List<string>() { "sweaters", "sports_casual", "shoes", "scarves", "nightclothes", "clothes_misc",
+                imageTopics.Add("Plants", new List<string>() { "herbs", "flowers", "cereals", "plants" });
+                imageTopics.Add("Fruit", new List<string>() { "tropical", "fruit_misc", "citrus", "berries" });
+                imageTopics.Add("Excercise", new List<string>() { "fitness", "equipment" });
+                imageTopics.Add("Garden", new List<string>() { "tools", "garden_misc", "chairs" });
+                imageTopics.Add("Environment", new List<string>() { "environment_1", "environment_2" });
+                imageTopics.Add("Sights", new List<string>() { "countryside", "coast", "city", "mountains" });
+                imageTopics.Add("Clothes", new List<string>() { "sweaters", "sports_casual", "shoes", "scarves", "nightclothes", "clothes_misc",
                                 "hats", "gloves", "fasteners", "dresses_skirts", "coats", "bags", "clothes" });
-            imageTopics.Add("Cleaning", new List<string>() { "cleaning_1", "cleaning_2" });
-            imageTopics.Add("Body", new List<string>() { "skeleton", "hand", "face", "eye", "body", "internal_organs" });
-            imageTopics.Add("Birds", new List<string>() { "seabirds", "prey", "poultry", "birds" });
+                imageTopics.Add("Cleaning", new List<string>() { "cleaning_1", "cleaning_2" });
+                imageTopics.Add("Body", new List<string>() { "skeleton", "hand", "face", "eye", "body", "internal_organs" });
+                imageTopics.Add("Birds", new List<string>() { "seabirds", "prey", "poultry", "birds" });
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message + "at DatabaseHandle.AddImageTopics");
+            }
             
         }
         public List<string> GetImageTopics()
@@ -812,7 +818,7 @@ namespace DictionaryApp.Database
         public DatabaseHandle()
         {
             connection = new SqlConnection();
-            connection.ConnectionString = "Data Source=(localdb)\\ProjectsV13;Initial Catalog=DictionaryDB;Integrated Security=True;Connect Timeout=30;" +
+            connection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DictionaryDB.mdf;Integrated Security=True;Connect Timeout=30;" +
                 "Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
 
@@ -971,7 +977,7 @@ namespace DictionaryApp.Database
             SqlCommand command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "select * from Quizzes";
-            connection.Close();connection.Open();
+            connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             List<Quizz> quizzs = new List<Quizz>();
             if (reader.HasRows)
@@ -981,7 +987,7 @@ namespace DictionaryApp.Database
                     quizzs.Add(new Quizz(reader.GetString(1), reader.GetString(2), reader.GetString(3),
                     reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetInt32(7)));
 
-                }                
+                }
                 connection.Close();
                 var rnd = new Random();
                 quizzs = (List<Quizz>)quizzs.OrderBy(item => rnd.Next());
@@ -1004,7 +1010,7 @@ namespace DictionaryApp.Database
             command.Connection = connection;
             command.CommandText = "select * from Quizzes where topic= @topic";
             command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = "Idiom";
-            connection.Close();connection.Open();
+            connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             List<Quizz> quizzs = new List<Quizz>();
             if (reader.HasRows)
@@ -1017,7 +1023,7 @@ namespace DictionaryApp.Database
                 }
                 connection.Close();
                 var rnd = new Random();
-                quizzs = (List<Quizz>)quizzs.OrderBy(item => rnd.Next());
+                quizzs = quizzs.OrderBy(item => rnd.Next()).ToList();
             }
             else
             {
@@ -1031,13 +1037,14 @@ namespace DictionaryApp.Database
             }
             return quizzs.GetRange(0, number);
         }
+
         public List<Quizz> SelectNPhrasalVerbQuizzes(int number)
         {
             SqlCommand command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "select * from Quizzes where topic= @topic";
             command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = "Phrasal-Verbs";
-            connection.Close();connection.Open();
+            connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             List<Quizz> quizzs = new List<Quizz>();
             if (reader.HasRows)
@@ -1050,7 +1057,7 @@ namespace DictionaryApp.Database
                 }
                 connection.Close();
                 var rnd = new Random();
-                quizzs = (List<Quizz>)quizzs.OrderBy(item => rnd.Next());
+                quizzs = quizzs.OrderBy(item => rnd.Next()).ToList();
             }
             else
             {
@@ -1064,13 +1071,14 @@ namespace DictionaryApp.Database
             }
             return quizzs.GetRange(0, number);
         }
+
         public List<Quizz> SelectNCollocationQuizzes(int number)
         {
             SqlCommand command = new SqlCommand();
             command.Connection = connection;
             command.CommandText = "select * from Quizzes where topic= @topic";
             command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = "Collocation";
-            connection.Close();connection.Open();
+            connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             List<Quizz> quizzs = new List<Quizz>();
             if (reader.HasRows)
@@ -1083,7 +1091,75 @@ namespace DictionaryApp.Database
                 }
                 connection.Close();
                 var rnd = new Random();
-                quizzs = (List<Quizz>)quizzs.OrderBy(item => rnd.Next());
+                quizzs = quizzs.OrderBy(item => rnd.Next()).ToList();
+            }
+            else
+            {
+                connection.Close();
+                return null;
+
+            }
+            if (number > quizzs.Count)
+            {
+                number = quizzs.Count;
+            }
+            return quizzs.GetRange(0, number);
+        }
+
+        public List<Quizz> SelectNWordMeaningQuizzes(int number)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Quizzes where topic= @topic";
+            command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = "Word-Meaning";
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            List<Quizz> quizzs = new List<Quizz>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    quizzs.Add(new Quizz(reader.GetString(1), reader.GetString(2), reader.GetString(3),
+                    reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetInt32(7)));
+
+                }
+                connection.Close();
+                var rnd = new Random();
+                quizzs = quizzs.OrderBy(item => rnd.Next()).ToList();
+            }
+            else
+            {
+                connection.Close();
+                return null;
+
+            }
+            if (number > quizzs.Count)
+            {
+                number = quizzs.Count;
+            }
+            return quizzs.GetRange(0, number);
+        }
+
+        public List<Quizz> SelectNWordFormQuizzes(int number)
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Quizzes where topic= @topic";
+            command.Parameters.Add("@topic", System.Data.SqlDbType.NVarChar).Value = "Word-Form";
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            List<Quizz> quizzs = new List<Quizz>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    quizzs.Add(new Quizz(reader.GetString(1), reader.GetString(2), reader.GetString(3),
+                    reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetInt32(7)));
+
+                }
+                connection.Close();
+                var rnd = new Random();
+                quizzs = quizzs.OrderBy(item => rnd.Next()).ToList();
             }
             else
             {
@@ -1103,7 +1179,7 @@ namespace DictionaryApp.Database
 
             string[] tokens;
             SqlCommand command;
-            List<string> topics = new List<string> { "Collocation", "Idiom", "Phrasal-Verbs" };
+            List<string> topics = new List<string> { "Collocation", "Idiom", "Phrasal-Verbs", "Word-Meaning", "Word-Form" };
             Dictionary<string, List<string>> quizzDictionary = new Dictionary<string, List<string>>();
 
             foreach (string tp in topics)
@@ -1128,7 +1204,7 @@ namespace DictionaryApp.Database
                 foreach (string line in System.IO.File.ReadLines(quzFile))
                 {
                     
-                    tokens = line.Split('_');
+                    tokens = line.Split('|');
                     if (tokens.Length != 5)
                     {
                         continue;
