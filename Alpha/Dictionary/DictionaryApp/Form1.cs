@@ -39,27 +39,57 @@ namespace DictionaryApp
             this.GoButton.Location = new Point(this.SearchInputBorder.Location.X+ this.SearchInputBorder.Size.Width, 10);
             this.picturesView.Location = new Point((int)(this.Size.Width - this.picturesView.PreferredSize.Width) / 2, 130);
             this.wordResultPanel.Location = new Point((int)(this.Size.Width - this.wordResultPanel.PreferredSize.Width) / 2, 180);
+            this.idiomResultPanel.Location = new Point((int)(this.Size.Width - this.idiomResultPanel.PreferredSize.Width) / 2, 180);
             this.review1.Location = new Point((int)(this.Size.Width - this.review1.PreferredSize.Width) / 2, 150);
+            this.topics.Location = new Point((int)(this.Size.Width - this.topics.PreferredSize.Width) / 2-20, 130);
 
-            this.PicturesButton.Click += PicturesButton_Click;
+            this.PicturesButton.Click += TopicsButton_Click;
             this.review1.Visible = false;
+            this.idiomResultPanel.Visible = false;
         }
+        private void TopicsButton_Click(object sender, EventArgs e)
+        {
+            this.SearchBar.Visible = false;
+            this.wordResultPanel.Visible = false;
+            this.review1.Visible = false;
+            this.picturesView.Visible = false;
+            this.idiomResultPanel.Visible = false;
+            this.topics.Visible = true;
 
+        }
         private void PicturesButton_Click(object sender, EventArgs e)
         {
             this.SearchBar.Visible = false;
             this.wordResultPanel.Visible = false;
             this.review1.Visible = false;
             this.picturesView.Visible = true;
+            this.idiomResultPanel.Visible = false;
+            this.topics.Visible = false;
+
         }
 
+        private void idiomButton_Click(object sender, System.EventArgs e)
+        {
+            this.SearchBar.Visible = true;
+            this.wordResultPanel.Visible = false;
+            this.review1.Visible = false;
+            this.picturesView.Visible = false;
+            this.idiomResultPanel.Visible = true;
+            this.TypeSelectionButton.Text = "Idioms ...";
+            this.topics.Visible = false;
+
+
+        }
         private void EngengButton_Click(object sender, System.EventArgs e)
         {
             this.SearchBar.Visible = true;
             this.wordResultPanel.Visible = true;
             this.review1.Visible = false;
-            Debug.WriteLine("eng click");
             this.picturesView.Visible = false;
+            this.idiomResultPanel.Visible = false;
+            this.TypeSelectionButton.Text = "English - English ...";
+            this.topics.Visible = false;
+
         }
 
         private void ReviewButton_Click(object sender, System.EventArgs e)
@@ -70,6 +100,8 @@ namespace DictionaryApp
             this.review1.Visible = true;
             this.review1.SetPanel(null, DatabaseHandle.GetDataHandle().GetMarkedWord(), DatabaseHandle.GetDataHandle().LoadHistory());
             this.review1.Location = new Point((int)(this.Size.Width - this.review1.PreferredSize.Width) / 2, 150);
+            this.topics.Visible = false;
+
         }
 
         private void dictionaryOptionLabel_Click(object sender, EventArgs e)
@@ -84,7 +116,10 @@ namespace DictionaryApp
 
         private void ClickAtDictionaries(object sender, EventArgs e)
         {
+            Debug.WriteLine( this.VerticalScroll.Value);
             dictionariesOptionBorder.Visible = !dictionariesOptionBorder.Visible;
+            Debug.WriteLine(this.VerticalScroll.Value);
+
         }
         private void TopBarButtonGetsFocus(object sender, EventArgs e)
         {
@@ -166,6 +201,15 @@ namespace DictionaryApp
         {
             this.TypePanelBorder.Visible = false;
             this.TypeSelectionButton.Text = (sender as Button).Text + " ...";
+            if(this.TypeSelectionButton.Text.Contains("English")){
+                this.wordResultPanel.Visible = true;
+                this.idiomResultPanel.Visible = false;
+            }
+            else
+            {
+                this.wordResultPanel.Visible = false;
+                this.idiomResultPanel.Visible = true;
+            }
         }
         private void ClickAtSearchArea(object sender, EventArgs e)
         {
@@ -210,26 +254,58 @@ namespace DictionaryApp
             this.wordResultPanel.Location = new Point((int)(this.Size.Width - this.wordResultPanel.PreferredSize.Width) / 2, 180);
 
         }
+        public void SetIdiomResultPanelGivenId(string id)
+        {
+            
+            this.idiomResultPanel.SetPanel(
+                        DatabaseHandle.GetDataHandle().GetIdiomsGivenWordId(id),
+                        DatabaseHandle.GetDataHandle().GetAlspMatchingIdioms(id.Replace("_", "").Replace("4", "").Replace("3", "").Replace("2", "").Replace("1", "")));
+            this.idiomResultPanel.Location = new Point((int)(this.Size.Width - this.wordResultPanel.PreferredSize.Width) / 2, 180);
+
+        }
+        public void SetTopicResultPanelGivenId(string id)
+        {
+
+            this.topics.SetWordPanel(DatabaseHandle.GetDataHandle().GetWordGivenId(id));
+            this.topics.Location = new Point((int)(this.Size.Width - this.topics.PreferredSize.Width) / 2 - 20, 130);
+
+        }
         private void ClickAtGoButton(object sender, EventArgs e)
         {
-            if (this.SearchInput.ForeColor!= Color.FromArgb(Convert.ToInt32("d9d9d9", 16)) && this.SearchInput.Text != "")
+            if (this.TypeSelectionButton.Text.Contains("English"))
             {
-                List<Word> mw = new List<Word>();
-                List<string> mm = new List<string>(), saw = new List<string>();
-                Word w = DatabaseHandle.GetDataHandle().Find(this.SearchInput.Text.Replace(' ', '-'), ref mw, ref mm, ref saw);
-                Debug.WriteLine(w);
-                Debug.WriteLine(mw);
-                Debug.WriteLine(mm);
-                Debug.WriteLine(saw);
-                this.wordResultPanel.SetPanel(w, mw, mm, saw);
+                if (this.SearchInput.ForeColor != Color.FromArgb(Convert.ToInt32("d9d9d9", 16)) && this.SearchInput.Text != "")
+                {
+                    List<Word> mw = new List<Word>();
+                    List<string> mm = new List<string>(), saw = new List<string>();
+                    Word w = DatabaseHandle.GetDataHandle().Find(this.SearchInput.Text.Replace(' ', '-'), ref mw, ref mm, ref saw);
+                    Debug.WriteLine(w);
+                    Debug.WriteLine(mw);
+                    Debug.WriteLine(mm);
+                    Debug.WriteLine(saw);
+                    this.wordResultPanel.SetPanel(w, mw, mm, saw);
+                }
+
+                this.wordResultPanel.Location = new Point((int)(this.Size.Width - this.wordResultPanel.PreferredSize.Width) / 2, 180);
+
+                this.SearchInput.ForeColor = Color.FromArgb(Convert.ToInt32("d9d9d9", 16));
+                this.SearchInput.Text = "Search";
             }
+            else
+            {
+                if (this.SearchInput.ForeColor != Color.FromArgb(Convert.ToInt32("d9d9d9", 16)) && this.SearchInput.Text != "")
+                {
+                    this.idiomResultPanel.SetPanel(
+                        DatabaseHandle.GetDataHandle().GetIdiomsGivenWord(this.SearchInput.Text.Replace(' ', '-')),
+                        DatabaseHandle.GetDataHandle().GetAlspMatchingIdioms(this.SearchInput.Text.Replace(' ', '-')));
+                }
 
-            this.wordResultPanel.Location = new Point((int)(this.Size.Width - this.wordResultPanel.PreferredSize.Width) / 2, 180);
+                this.idiomResultPanel.Location = new Point((int)(this.Size.Width - this.idiomResultPanel.PreferredSize.Width) / 2, 180);
 
-            this.SearchInput.ForeColor = Color.FromArgb(Convert.ToInt32("d9d9d9", 16));
-            this.SearchInput.Text = "Search";
+                this.SearchInput.ForeColor = Color.FromArgb(Convert.ToInt32("d9d9d9", 16));
+                this.SearchInput.Text = "Search";
+            }
         }
-
         private void ButtonGames_Click(object sender, EventArgs e)
         {
             Hide();

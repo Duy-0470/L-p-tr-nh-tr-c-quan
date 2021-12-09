@@ -15,5 +15,9 @@ namespace DictionaryApp.Classes
             this.topic = t;
             this.sentence = s;
         }
+        public Example(string s)
+        {
+            this.sentence = s;
+        }
     }
 }

@@ -56,7 +56,7 @@ namespace DictionaryApp.CustomControls
                 s.Location = new System.Drawing.Point(0,
                                 this.sensePanel.Controls.Count == 0 ? 0 :(
                                 this.sensePanel.Controls[word.senses.IndexOf(sense) - 1].Location.Y +
-                                this.sensePanel.Controls[word.senses.IndexOf(sense) - 1].PreferredSize.Height -20));
+                                this.sensePanel.Controls[word.senses.IndexOf(sense) - 1].PreferredSize.Height -30));
 /*                s.MaximumSize = new System.Drawing.Size(648, 600);
 */                this.sensePanel.Controls.Add(s);
             }

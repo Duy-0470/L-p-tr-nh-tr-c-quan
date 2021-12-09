@@ -69,9 +69,11 @@ namespace DictionaryApp
             this.engEngTypeButton = new System.Windows.Forms.Button();
             this.TypePanelBorder = new System.Windows.Forms.Panel();
             this.wordResultPanel = new DictionaryApp.CustomControls.WordResultPanel();
+            this.idiomResultPanel = new DictionaryApp.CustomControls.IdiomResultPanel();
             this.picturesView = new DictionaryApp.CustomControls.PicturesView();
             this.wordResultPanel1 = new DictionaryApp.CustomControls.WordResultPanel();
             this.review1 = new DictionaryApp.CustomControls.Review();
+            this.topics = new DictionaryApp.CustomControls.Topics();
             this.ButtonGames = new System.Windows.Forms.Button();
             this.PanelSplit3 = new System.Windows.Forms.Panel();
             this.topBar.SuspendLayout();
@@ -225,7 +227,7 @@ namespace DictionaryApp
             this.PicturesButton.Name = "PicturesButton";
             this.PicturesButton.Size = new System.Drawing.Size(88, 48);
             this.PicturesButton.TabIndex = 6;
-            this.PicturesButton.Text = "Pictures";
+            this.PicturesButton.Text = "Topics";
             this.PicturesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PicturesButton.UseVisualStyleBackColor = false;
             this.PicturesButton.MouseEnter += new System.EventHandler(this.TopBarButtonGetsFocus);
@@ -323,14 +325,18 @@ namespace DictionaryApp
             this.engVietButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic);
             this.engVietButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(172)))));
             this.engVietButton.Location = new System.Drawing.Point(15, 95);
+            this.engVietButton.Location = new System.Drawing.Point(15, 55);
+
             this.engVietButton.Name = "engVietButton";
             this.engVietButton.Size = new System.Drawing.Size(220, 40);
             this.engVietButton.TabIndex = 6;
-            this.engVietButton.Text = "   English - Vietnamese";
+            this.engVietButton.Text = "   Idioms";
             this.engVietButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.engVietButton.UseVisualStyleBackColor = false;
             this.engVietButton.MouseEnter += new System.EventHandler(this.OptionLabelGetsFocused);
             this.engVietButton.MouseLeave += new System.EventHandler(this.OptionLabelLosesFocused);
+            this.engVietButton.Click += idiomButton_Click;
+
             // 
             // DictionariesHomeButton
             // 
@@ -341,14 +347,17 @@ namespace DictionaryApp
             this.DictionariesHomeButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic);
             this.DictionariesHomeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(172)))));
             this.DictionariesHomeButton.Location = new System.Drawing.Point(15, 15);
+            this.DictionariesHomeButton.Location = new System.Drawing.Point(15, 95);
+
             this.DictionariesHomeButton.Name = "DictionariesHomeButton";
             this.DictionariesHomeButton.Size = new System.Drawing.Size(220, 40);
             this.DictionariesHomeButton.TabIndex = 4;
-            this.DictionariesHomeButton.Text = "   Dictionaries Home";
+            this.DictionariesHomeButton.Text = "   Pictures";
             this.DictionariesHomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DictionariesHomeButton.UseVisualStyleBackColor = false;
             this.DictionariesHomeButton.MouseEnter += new System.EventHandler(this.OptionLabelGetsFocused);
             this.DictionariesHomeButton.MouseLeave += new System.EventHandler(this.OptionLabelLosesFocused);
+            this.DictionariesHomeButton.Click += PicturesButton_Click;
             // 
             // engengButton
             // 
@@ -359,6 +368,8 @@ namespace DictionaryApp
             this.engengButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic);
             this.engengButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(172)))));
             this.engengButton.Location = new System.Drawing.Point(15, 55);
+            this.engengButton.Location = new System.Drawing.Point(15, 15);
+
             this.engengButton.Name = "engengButton";
             this.engengButton.Size = new System.Drawing.Size(220, 40);
             this.engengButton.TabIndex = 5;
@@ -501,7 +512,7 @@ namespace DictionaryApp
             this.engVietTypeButton.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.engVietTypeButton.Size = new System.Drawing.Size(204, 48);
             this.engVietTypeButton.TabIndex = 1;
-            this.engVietTypeButton.Text = "English - Vietnamese";
+            this.engVietTypeButton.Text = "Idioms";
             this.engVietTypeButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.engVietTypeButton.UseVisualStyleBackColor = false;
             this.engVietTypeButton.Click += new System.EventHandler(this.ChooseType);
@@ -570,6 +581,17 @@ namespace DictionaryApp
             this.wordResultPanel.Size = new System.Drawing.Size(1044, 583);
             this.wordResultPanel.TabIndex = 0;
             // 
+            // idiomResultPanel
+            // 
+            this.idiomResultPanel.AutoScroll = true;
+            this.idiomResultPanel.AutoSize = true;
+            this.idiomResultPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.idiomResultPanel.BackColor = System.Drawing.Color.White;
+            this.idiomResultPanel.Location = new System.Drawing.Point(10, 180);
+            this.idiomResultPanel.Name = "wordResultPanel";
+            this.idiomResultPanel.Size = new System.Drawing.Size(1044, 583);
+            this.idiomResultPanel.TabIndex = 0;
+            // 
             // picturesView
             // 
             this.picturesView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -606,22 +628,38 @@ namespace DictionaryApp
             this.review1.Size = new System.Drawing.Size(1044, 583);
             this.review1.TabIndex = 11;
             // 
+            // review1
+            // 
+            this.topics.AutoScroll = false;
+            this.topics.AutoSize = true;
+            this.topics.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.topics.BackColor = System.Drawing.Color.White;
+            this.topics.Location = new System.Drawing.Point(0, 150);
+            this.topics.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.topics.Name = "review1";
+            this.topics.Size = new System.Drawing.Size(1044, 583);
+            this.topics.TabIndex = 11;
+            this.topics.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(791, 749);
+
             this.Controls.Add(this.TypePanelBorder);
             this.Controls.Add(this.dictionariesOptionBorder);
             this.Controls.Add(this.SearchBar);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.ButtonBarBorder);
             this.Controls.Add(this.topBar);
+            this.Controls.Add(this.topics);
 
             this.Controls.Add(this.review1);
+            this.Controls.Add(this.idiomResultPanel);
             this.Controls.Add(this.wordResultPanel);
             this.Controls.Add(this.picturesView);
 
@@ -687,9 +725,11 @@ namespace DictionaryApp
         private System.Windows.Forms.TextBox SearchInput;
         private System.Windows.Forms.Button GoButton;
         private WordResultPanel wordResultPanel;
+        private IdiomResultPanel idiomResultPanel;
         private PicturesView picturesView;
         private WordResultPanel wordResultPanel1;
         private Review review1;
+        private Topics topics;
         private Button ButtonGames;
         private Panel PanelSplit3;
     }

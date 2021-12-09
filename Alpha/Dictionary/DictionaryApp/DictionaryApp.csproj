@@ -82,6 +82,9 @@
   <ItemGroup>
     <Compile Include="Classes\Example.cs" />
     <Compile Include="Classes\FoundWord.cs" />
+    <Compile Include="Classes\Idiom.cs" />
+    <Compile Include="Classes\IdiomDefinitionPanel.cs" />
+    <Compile Include="Classes\IdiomHeader.cs" />
     <Compile Include="Classes\MyImage.cs" />
     <Compile Include="Classes\Quizz.cs" />
     <Compile Include="Classes\SeeAlso.cs" />
@@ -96,6 +99,12 @@
     <Compile Include="CustomControls\Component1.Designer.cs">
       <DependentUpon>Component1.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\IdiomHeaderPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\IdiomHeaderPanel.Designer.cs">
+      <DependentUpon>IdiomHeaderPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\DefintionHeader.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -107,6 +116,30 @@
     </Compile>
     <Compile Include="CustomControls\ImageSelectionPanel.Designer.cs">
       <DependentUpon>ImageSelectionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\OtherIdiomResultsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\OtherIdiomResultsPanel.Designer.cs">
+      <DependentUpon>OtherIdiomResultsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\Topics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Topics.Designer.cs">
+      <DependentUpon>Topics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\TopicWordsSelectionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TopicWordsSelectionPanel.Designer.cs">
+      <DependentUpon>TopicWordsSelectionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\TopicsSelectionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TopicsSelectionPanel.Designer.cs">
+      <DependentUpon>TopicsSelectionPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\Review.cs">
       <SubType>UserControl</SubType>
@@ -159,11 +192,23 @@
     <Compile Include="CustomControls\SensePanel.Designer.cs">
       <DependentUpon>SensePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\IdiomDefinition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\IdiomDefinition.Designer.cs">
+      <DependentUpon>IdiomDefinition.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\WordDefinition.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CustomControls\WordDefinition.Designer.cs">
       <DependentUpon>WordDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\IdiomResultPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\IdiomResultPanel.Designer.cs">
+      <DependentUpon>IdiomResultPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\WordResultPanel.cs">
       <SubType>UserControl</SubType>
@@ -207,14 +252,23 @@
     <EmbeddedResource Include="CustomControls\PictureZoomer.resx">
       <DependentUpon>PictureZoomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\Topics.resx">
+      <DependentUpon>Topics.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\Review.resx">
       <DependentUpon>Review.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\SensePanel.resx">
       <DependentUpon>SensePanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\IdiomDefinition.resx">
+      <DependentUpon>IdiomDefinition.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\WordDefinition.resx">
       <DependentUpon>WordDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\IdiomResultPanel.resx">
+      <DependentUpon>IdiomResultPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\WordResultPanel.resx">
       <DependentUpon>WordResultPanel.cs</DependentUpon>
@@ -584,6 +638,7 @@
     <Content Include="Database\Files\images\sort.png" />
     <Content Include="Database\Files\images\two-arrows.png" />
     <Content Include="Database\Files\images\unmarked.png" />
+    <Content Include="Database\Files\topics.txt" />
     <Content Include="Database\Files\words\examples.txt" />
     <Content Include="Database\Files\words\extra_list.txt" />
     <Content Include="Database\Files\words\see_also.txt" />

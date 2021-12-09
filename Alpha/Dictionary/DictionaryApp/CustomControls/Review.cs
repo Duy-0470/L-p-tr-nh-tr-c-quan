@@ -84,7 +84,7 @@ namespace DictionaryApp.CustomControls
         {
             this.w = word;
             this.Controls.Remove(this.wordDefinition);
-            Debug.WriteLine(word.id);
+            // Debug.WriteLine(word.id);
             if (w != null)
             {
                 this.wordDefinition = new DictionaryApp.CustomControls.WordDefinition(w);

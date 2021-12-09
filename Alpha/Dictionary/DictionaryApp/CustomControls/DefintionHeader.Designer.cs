@@ -285,6 +285,7 @@ namespace DictionaryApp.CustomControls
                     nAPronSmall.Size = new System.Drawing.Size(56, 19);
                     nAPronSmall.TabIndex = 11;
                     nAPronSmall.Text = fms.na;
+
                     // 
                     // NAButtonSmall
                     // 
@@ -312,6 +313,7 @@ namespace DictionaryApp.CustomControls
                     bEPronSmall.Size = new System.Drawing.Size(48, 19);
                     bEPronSmall.TabIndex = 9;
                     bEPronSmall.Text = fms.br;
+
                     // 
                     // FormedWord
                     // 
@@ -323,6 +325,7 @@ namespace DictionaryApp.CustomControls
                     formedWord.Size = new System.Drawing.Size(37, 20);
                     formedWord.TabIndex = 2;
                     formedWord.Text = fms.form;
+
                     // 
                     // BEButtonSmall
                     // 
@@ -362,7 +365,6 @@ namespace DictionaryApp.CustomControls
                     form.Size = new System.Drawing.Size(120, 25);
                     form.TabIndex = 0;
                     form.Text = fms.tense;
-                    form.UseVisualStyleBackColor = false;
 
                     formPanel.Controls.Add(formedWord);
                     formPanel.Controls.Add(nAPronSmall);
@@ -375,6 +377,9 @@ namespace DictionaryApp.CustomControls
                     formPanel.Name = "FormPanel"+ind;
                     formPanel.Size = new System.Drawing.Size(648, 67);
                     formPanel.TabIndex = 12;
+                    formPanel.AutoSize = false;
+                    // formPanel.MaximumSize = new Size(425, 500);
+
                     this.WordFormPanel.Controls.Add(formPanel);
                 }
                 this.WordFormPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(243)))), ((int)(((byte)(240)))));
@@ -384,7 +389,7 @@ namespace DictionaryApp.CustomControls
                 this.WordFormPanel.Size = new System.Drawing.Size(648, 100);
                 this.WordFormPanel.TabIndex = 7;
                 this.WordFormPanel.AutoSize = true;
-                this.WordFormPanel.MaximumSize = new Size(648, 0);
+                this.WordFormPanel.MaximumSize = new Size(430, 0);
 
             }
 

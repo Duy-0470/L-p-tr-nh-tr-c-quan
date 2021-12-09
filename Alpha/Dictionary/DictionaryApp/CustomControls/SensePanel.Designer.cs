@@ -117,6 +117,7 @@ namespace DictionaryApp.CustomControls
                 this.SenseTypeLabel.Size = new System.Drawing.Size(48, 19);
                 this.SenseTypeLabel.TabIndex = 1;
                 this.SenseTypeLabel.Text = sense.type1 + " " + sense.type2;
+                this.SenseTypeLabel.FlatStyle = FlatStyle.Flat;
             }
             else
             {
@@ -158,15 +159,15 @@ namespace DictionaryApp.CustomControls
                 System.Drawing.Size textSize = TextRenderer.MeasureText(exampleLabel.Text, exampleLabel.Font);
                 Debug.WriteLine(textSize);
                 int extra_y = index == 0 ? MeaningLabel.Location.Y +  MeaningLabel.PreferredHeight/*25*/ : (examples[index - 1].Location.Y + examples[index - 1].PreferredHeight+5);
-                exampleLabel.AutoSize = true;
                 exampleLabel.Location = new System.Drawing.Point(60,extra_y);
                 exampleLabel.Name = "ExampleLabel"+index;
                 exampleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(111)))), ((int)(((byte)(111)))));
-                exampleLabel.Size = new System.Drawing.Size(380, 19);
+                exampleLabel.Size = new System.Drawing.Size(380, 50);
                 
                 exampleLabel.AutoSize = true;
-                exampleLabel.MaximumSize = new System.Drawing.Size(400, 50);
-
+                
+                exampleLabel.MaximumSize = new System.Drawing.Size(400, 100);
+                // exampleLabel.BackColor = Color.AliceBlue;
 
                 examples.Add(exampleLabel);
             }
@@ -251,7 +252,7 @@ namespace DictionaryApp.CustomControls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.OrderLabel);
-
+            
             this.Controls.Add(this.TopicPanel);
             this.Controls.Add(this.MeaningLabel);
             this.Controls.Add(this.TypeHeader);
@@ -260,7 +261,7 @@ namespace DictionaryApp.CustomControls
                 this.Controls.Add(e);
             }
             this.Name = "Sense";
-            this.Size = new System.Drawing.Size(648, this.TopicPanel.Location.Y+5);
+            this.Size = new System.Drawing.Size(648, this.TopicPanel.Location.Y);
             this.TypeHeader.ResumeLayout(false);
             this.TypeHeader.PerformLayout();
             this.TopicPanel.ResumeLayout(false);
