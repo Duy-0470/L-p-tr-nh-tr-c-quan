@@ -1,6 +1,7 @@
 Alpha/Dictionary/Dictionary/obj/**
 Alpha/Dictionary/DictionaryDB/obj/**
-Alpha/Dictionary/DictionaryApp/Database/Files/**
+Alpha/Dictionary/DictionaryApp/Database/Files/sounds/british/**
+Alpha/Dictionary/DictionaryApp/Database/Files/sounds/north_america/**
 Alpha/Dictionary/DictionaryApp/bin/**
 *.mdf
 *.ldf
