@@ -646,6 +646,15 @@
     <Content Include="Database\Files\words\shortcuts.txt" />
     <Content Include="Database\Files\words\words.txt" />
     <Content Include="Database\Files\words\word_forms.txt" />
+    <Content Include="Database\Files\words\_examples.txt" />
+    <Content Include="Database\Files\words\_meanings.txt" />
+    <Content Include="Database\Files\words\_phrases.txt" />
+    <Content Include="Database\Files\words\_see_also.txt" />
+    <Content Include="Database\Files\words\_senses.txt" />
+    <Content Include="Database\Files\words\_shortcuts.txt" />
+    <Content Include="Database\Files\words\_topics.txt" />
+    <Content Include="Database\Files\words\_words.txt" />
+    <Content Include="Database\Files\words\_word_forms.txt" />
     <Content Include="DictionaryDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

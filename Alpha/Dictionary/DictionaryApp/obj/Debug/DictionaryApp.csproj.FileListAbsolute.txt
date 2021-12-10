@@ -103,3 +103,6 @@ E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\Dictionar
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.csproj.CopyComplete
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.exe
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.pdb
+E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.CustomControls.Topics.resources
+E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.CustomControls.IdiomDefinition.resources
+E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.CustomControls.IdiomResultPanel.resources

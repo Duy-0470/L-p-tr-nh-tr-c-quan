@@ -106,7 +106,7 @@
             this.Controls.Add(this.LabelScore);
             this.Name = "FormGameResult";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormGameResult";
+            this.Text = "Your Dictionaries";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormGameResult_FormClosing);
             this.Load += new System.EventHandler(this.FormGameResult_Load);
             this.ResumeLayout(false);

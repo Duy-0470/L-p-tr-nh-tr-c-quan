@@ -89,14 +89,14 @@ namespace DictionaryApp.CustomControls
             string path;
             if (header.starred == 1)
             {
-                path = System.IO.Directory.GetCurrentDirectory().Substring(0, 71) + "\\Database\\Files\\images\\marked.png";
+                path = System.IO.Directory.GetCurrentDirectory().Substring(0, 71) + "Database\\Files\\images\\marked.png";
             }
             else
             {
-                path = System.IO.Directory.GetCurrentDirectory().Substring(0, 71) + "\\Database\\Files\\images\\unmarked.png";
+                path = System.IO.Directory.GetCurrentDirectory().Substring(0, 71) + "Database\\Files\\images\\unmarked.png";
 
             }
-            Bitmap picture = new Bitmap(new Bitmap(path), new Size(50,50));
+            Bitmap picture = new Bitmap(new Bitmap(path), new Size(50, 50));
             if (this.pictureBox.Image != null)
                 this.pictureBox.Image.Dispose();
             if (picture != null)
