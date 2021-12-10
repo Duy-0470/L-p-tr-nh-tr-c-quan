@@ -1,0 +1,27 @@
+be on a tear|NA|tear1_2|Success|c2|22452579
+a following wind|NA|wind1_1|Transport by water|c2|46674523
+sail close to the wind|NA|wind1_1|Danger|c2|42246499
+be in the can|NA|can2_1|Film and theatre|c2|70533408
+have the last laugh|NA|last1_1|Success|c2|98565802
+a week yesterday, last Monday, etc.|NA|last1_1|Time|c1|61830031
+have one foot in the grave|NA|grave1_1|Health problems|c2|88061667
+dos and don’ts|NA|dos-and-don-ts_1|Permission and obligation|c1|95376665
+on/off (the) air|NA|on-air_1|TV, radio and news|c2|31949794
+put in your two penn'orth|(both British English)|penn-orth_1|Opinion and argument|c2|98634796
+close its doors | close shop|NA|close1_1|Business|c2|8261804
+go down like a lead balloon|NA|lead2_1|Difficulty and failure|c2|89459526
+close, but no cigar|NA|close2_1|Doubt, guessing and certainty|c2|70291371
+a close thing|NA|close2_1|Success|c2|59191883
+(not) get/have a look-in|NA|look-in_2|Success|c2|30790314
+be close to/near the mark|NA|close2_2|Doubt, guessing and certainty|c2|83633103
+run somebody/something close|NA|close2_2|Difficulty and failure|c2|17690381
+sail close to the wind|NA|close2_2|Danger|c2|42246499
+the brass ring|NA|ring1_1|Success|c2|30345767
+the brass ring|NA|ring2_2|Success|c2|30345767
+give somebody a ring|NA|ring2_2|Phones, email and the internet|b2|67012575
+a flash in the pan|NA|pan1_1|Success|c2|52649470
+a live wire|NA|live2_1|Personal qualities|c2|92235088
+(as) like as not|NA|like_7|Doubt, guessing and certainty|c2|79104467
+hit/strike pay dirt|NA|pay-dirt_1|Success|c2|76133904
+the blind leading the blind|NA|lead1_1|Suggestions and advice|c2|36756494
+lead (somebody) nowhere|NA|lead1_1|Difficulty and failure|c2|84209757

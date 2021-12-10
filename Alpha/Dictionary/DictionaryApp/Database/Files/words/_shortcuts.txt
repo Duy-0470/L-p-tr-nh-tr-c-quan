@@ -1,0 +1,104 @@
+ring2_1|telephone
+ring2_1|bell
+ring2_1|with sound
+ring2_1|with quality
+ring2_1|of ears
+double_6|person/thing
+double_6|bedroom
+double_6|alcoholic drink
+double_6|in sport
+minute1_1|part of hour
+minute1_1|very short time
+minute1_1|exact moment
+minute1_1|angles
+minute1_1|record of meeting
+minute1_1|short note
+close1_1|window/door, etc.
+close1_1|book/umbrella, etc.
+close1_1|shop/store/business, etc.
+close1_1|end
+close1_1|computers
+close1_1|finance
+close1_1|distance/difference
+close1_1|cover and hold
+close1_1|electrical circuit
+close2_1|near
+close2_1|relationship
+close2_1|careful
+close2_1|almost/likely
+close2_1|similar
+close2_1|competition/election, etc.
+close2_1|almost bad result
+close2_1|without space
+close2_1|cut short
+close2_1|guarded
+close2_1|weather/room
+close2_1|private
+close2_1|mean
+close2_1|phonetics
+tear1_1|damage
+tear1_1|remove from something/somebody
+tear1_1|injure muscle
+tear1_1|move quickly
+tear1_1|-torn
+lead1_2|first place
+lead1_2|example
+lead1_2|information
+lead1_2|in business
+lead1_2|actor/musician
+lead1_2|person in charge
+lead1_2|news
+lead1_2|for dog
+lead1_2|for electricity
+ring1_1|jewellery
+ring1_1|circle
+ring1_1|for performance/competition
+ring1_1|for cooking
+ring1_1|group of people
+ring2_2|of bell
+ring2_2|sound
+ring2_2|quality
+entrance1_1|door/gate
+entrance1_1|going in
+entrance1_1|becoming involved
+entrance1_1|to club/institution
+do1_1|action
+do1_1|behave
+do1_1|succeed/progress
+do1_1|task/activity
+do1_1|job
+do1_1|study
+do1_1|solve
+do1_1|make
+do1_1|be suitable/enough
+do1_1|perform
+do1_1|copy somebody
+do1_1|finish
+do1_1|travel
+do1_1|speed
+do1_1|visit
+do1_1|spend time
+do1_1|deal with
+do1_1|cook
+do1_1|cheat
+do1_1|punish
+do1_1|steal
+do1_1|take drugs
+do1_1|have sex
+live2_1|not dead
+live2_1|not recorded
+live2_1|electricity
+live2_1|bullets/matches
+live2_1|coals
+live2_1|yogurt
+live2_1|question/subject
+live2_1|internet
+lead1_1|show the way
+lead1_1|connect two things
+lead1_1|of road/path/door
+lead1_1|cause
+lead1_1|be in control
+lead1_1|be best/first
+lead1_1|life
+lead1_1|process
+lead1_1|in card games

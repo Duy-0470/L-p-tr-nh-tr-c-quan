@@ -1,0 +1,409 @@
+lash_1|present simple I / you / we / they|  lash|/læʃ/|uk_pron/l/las/lash_/lash__gb_1.mp3|/læʃ/|us_pron/l/las/lash_/lash__us_1.mp3
+lash_1|he / she / it|  lashes|/ˈlæʃɪz/|uk_pron/l/las/lashe/lashes__gb_1.mp3|/ˈlæʃɪz/|us_pron/l/las/lashe/lashes__us_1.mp3
+lash_1|past simple|  lashed|/læʃt/|uk_pron/l/las/lashe/lashed__gb_1.mp3|/læʃt/|us_pron/l/las/lashe/lashed__us_1.mp3
+lash_1|past participle|  lashed|/læʃt/|uk_pron/l/las/lashe/lashed__gb_1.mp3|/læʃt/|us_pron/l/las/lashe/lashed__us_1.mp3
+lash_1|-ing form|  lashing|/ˈlæʃɪŋ/|uk_pron/l/las/lashi/lashing__gb_2.mp3|/ˈlæʃɪŋ/|us_pron/l/las/lashi/lashing__us_2.mp3
+inhibit_1|present simple I / you / we / they|  inhibit|/ɪnˈhɪbɪt/|uk_pron/i/inh/inhib/inhibit__gb_1.mp3|/ɪnˈhɪbɪt/|us_pron/i/inh/inhib/inhibit__us_1.mp3
+inhibit_1|he / she / it|  inhibits|/ɪnˈhɪbɪts/|uk_pron/i/inh/inhib/inhibits__gb_1.mp3|/ɪnˈhɪbɪts/|us_pron/i/inh/inhib/inhibits__us_1.mp3
+inhibit_1|past simple|  inhibited|/ɪnˈhɪbɪtɪd/|uk_pron/i/inh/inhib/inhibited__gb_1.mp3|/ɪnˈhɪbɪtɪd/|us_pron/i/inh/inhib/inhibited__us_1.mp3
+inhibit_1|past participle|  inhibited|/ɪnˈhɪbɪtɪd/|uk_pron/i/inh/inhib/inhibited__gb_1.mp3|/ɪnˈhɪbɪtɪd/|us_pron/i/inh/inhib/inhibited__us_1.mp3
+inhibit_1|-ing form|  inhibiting|/ɪnˈhɪbɪtɪŋ/|uk_pron/i/inh/inhib/inhibiting__gb_1.mp3|/ɪnˈhɪbɪtɪŋ/|us_pron/i/inh/inhib/inhibiting__us_1.mp3
+pluralize_1|present simple I / you / we / they|  pluralize|/ˈplʊərəlaɪz/|uk_pron/p/plu/plura/pluralize__gb_1.mp3|/ˈplʊrəlaɪz/|us_pron/p/plu/plura/pluralize__us_1.mp3
+pluralize_1|he / she / it|  pluralizes|/ˈplʊərəlaɪzɪz/|uk_pron/p/plu/plura/pluralizes__gb_1.mp3|/ˈplʊrəlaɪzɪz/|us_pron/p/plu/plura/pluralizes__us_1.mp3
+pluralize_1|past simple|  pluralized|/ˈplʊərəlaɪzd/|uk_pron/p/plu/plura/pluralized__gb_1.mp3|/ˈplʊrəlaɪzd/|us_pron/p/plu/plura/pluralized__us_1.mp3
+pluralize_1|past participle|  pluralized|/ˈplʊərəlaɪzd/|uk_pron/p/plu/plura/pluralized__gb_1.mp3|/ˈplʊrəlaɪzd/|us_pron/p/plu/plura/pluralized__us_1.mp3
+pluralize_1|-ing form|  pluralizing|/ˈplʊərəlaɪzɪŋ/|uk_pron/p/plu/plura/pluralizing__gb_1.mp3|/ˈplʊrəlaɪzɪŋ/|us_pron/p/plu/plura/pluralizing__us_1.mp3
+last1_4|present simple I / you / we / they|  last|/lɑːst/|uk_pron/l/las/last_/last__gb_6.mp3|/læst/|us_pron/l/las/last_/last__us_1.mp3
+last1_4|he / she / it|  lasts|/lɑːsts/|uk_pron/l/las/lasts/lasts__gb_1.mp3|/læsts/|us_pron/l/las/lasts/lasts__us_1.mp3
+last1_4|past simple|  lasted|/ˈlɑːstɪd/|uk_pron/l/las/laste/lasted__gb_1.mp3|/ˈlæstɪd/|us_pron/l/las/laste/lasted__us_1.mp3
+last1_4|past participle|  lasted|/ˈlɑːstɪd/|uk_pron/l/las/laste/lasted__gb_1.mp3|/ˈlæstɪd/|us_pron/l/las/laste/lasted__us_1.mp3
+last1_4|-ing form|  lasting|/ˈlɑːstɪŋ/|uk_pron/l/las/lasti/lasting__gb_2.mp3|/ˈlæstɪŋ/|us_pron/l/las/lasti/lasting__us_2.mp3
+see-saw_1|present simple I / you / we / they|  see-saw|/ˈsiː sɔː/|uk_pron/s/see/see_s/see_saw_1_gb_1.mp3|/ˈsiː sɔː/|us_pron/s/see/see_s/see_saw_1_us_1.mp3
+see-saw_1|he / she / it|  see-saws|/ˈsiː sɔːz/|uk_pron/s/see/see_s/see_saws_1_gb_1.mp3|/ˈsiː sɔːz/|us_pron/s/see/see_s/see_saws_1_us_1.mp3
+see-saw_1|past simple|  see-sawed|/ˈsiː sɔːd/|uk_pron/s/see/see_s/see_sawed_1_gb_1.mp3|/ˈsiː sɔːd/|us_pron/s/see/see_s/see_sawed_1_us_1.mp3
+see-saw_1|past participle|  see-sawed|/ˈsiː sɔːd/|uk_pron/s/see/see_s/see_sawed_1_gb_1.mp3|/ˈsiː sɔːd/|us_pron/s/see/see_s/see_sawed_1_us_1.mp3
+see-saw_1|-ing form|  see-sawing|/ˈsiː sɔːɪŋ/|uk_pron/s/see/see_s/see_sawing_1_gb_1.mp3|/ˈsiː sɔːɪŋ/|us_pron/s/see/see_s/see_sawing_1_us_1.mp3
+cosplay_2|present simple I / you / we / they|  cosplay|/ˈkɒspleɪ/|uk_pron/c/cos/cospl/cosplay__gb_2.mp3|/ˈkɑːspleɪ/|us_pron/c/cos/cospl/cosplay__us_2.mp3
+cosplay_2|he / she / it|  cosplays|/ˈkɒspleɪz/|uk_pron/c/cos/cospl/cosplays__gb_1.mp3|/ˈkɑːspleɪz/|us_pron/c/cos/cospl/cosplays__us_1.mp3
+cosplay_2|past simple|  cosplayed|/ˈkɒspleɪd/|uk_pron/c/cos/cospl/cosplayed__gb_1.mp3|/ˈkɑːspleɪd/|us_pron/c/cos/cospl/cosplayed__us_1.mp3
+cosplay_2|past participle|  cosplayed|/ˈkɒspleɪd/|uk_pron/c/cos/cospl/cosplayed__gb_1.mp3|/ˈkɑːspleɪd/|us_pron/c/cos/cospl/cosplayed__us_1.mp3
+cosplay_2|-ing form|  cosplaying|/ˈkɒspleɪɪŋ/|uk_pron/c/cos/cospl/cosplaying__gb_1.mp3|/ˈkɑːspleɪɪŋ/|us_pron/c/cos/cospl/cosplaying__us_1.mp3
+defund_1|present simple I / you / we / they|  defund|/ˌdiːˈfʌnd/|uk_pron/d/def/defun/defund__gb_2.mp3|/ˌdiːˈfʌnd/|us_pron/d/def/defun/defund__us_1.mp3
+defund_1|he / she / it|  defunds|/ˌdiːˈfʌndz/|uk_pron/d/def/defun/defunds__gb_1.mp3|/ˌdiːˈfʌndz/|us_pron/d/def/defun/defunds__us_1.mp3
+defund_1|past simple|  defunded|/ˌdiːˈfʌndɪd/|uk_pron/d/def/defun/defunded__gb_1.mp3|/ˌdiːˈfʌndɪd/|us_pron/d/def/defun/defunded__us_1.mp3
+defund_1|past participle|  defunded|/ˌdiːˈfʌndɪd/|uk_pron/d/def/defun/defunded__gb_1.mp3|/ˌdiːˈfʌndɪd/|us_pron/d/def/defun/defunded__us_1.mp3
+defund_1|-ing form|  defunding|/ˌdiːˈfʌndɪŋ/|uk_pron/d/def/defun/defunding__gb_2.mp3|/ˌdiːˈfʌndɪŋ/|us_pron/d/def/defun/defunding__us_2.mp3
+blag_1|present simple I / you / we / they|  blag|/blæɡ/|uk_pron/b/bla/blag_/blag__gb_2.mp3|/blæɡ/|us_pron/b/bla/blag_/blag__us_1.mp3
+blag_1|he / she / it|  blags|/blæɡz/|uk_pron/b/bla/blags/blags__gb_1.mp3|/blæɡz/|us_pron/b/bla/blags/blags__us_1.mp3
+blag_1|past simple|  blagged|/blæɡd/|uk_pron/b/bla/blagg/blagged__gb_1.mp3|/blæɡd/|us_pron/b/bla/blagg/blagged__us_1.mp3
+blag_1|past participle|  blagged|/blæɡd/|uk_pron/b/bla/blagg/blagged__gb_1.mp3|/blæɡd/|us_pron/b/bla/blagg/blagged__us_1.mp3
+blag_1|-ing form|  blagging|/ˈblæɡɪŋ/|uk_pron/b/bla/blagg/blagging__gb_1.mp3|/ˈblæɡɪŋ/|us_pron/b/bla/blagg/blagging__us_1.mp3
+misdial_1|present simple I / you / we / they|  misdial|/ˌmɪsˈdaɪəl/|uk_pron/m/mis/misdi/misdial__gb_1.mp3|/ˌmɪsˈdaɪəl/|us_pron/m/mis/misdi/misdial__us_1_rr.mp3
+misdial_1|he / she / it|  misdials|/ˌmɪsˈdaɪəlz/|uk_pron/m/mis/misdi/misdials__gb_1.mp3|/ˌmɪsˈdaɪəlz/|us_pron/m/mis/misdi/misdials__us_1.mp3
+misdial_1|past simple|  misdialled|/ˌmɪsˈdaɪəld/|uk_pron/m/mis/misdi/misdialled__gb_1.mp3|/ˌmɪsˈdaɪəld/|us_pron/m/mis/misdi/misdialled__us_1.mp3
+misdial_1|past participle|  misdialled|/ˌmɪsˈdaɪəld/|uk_pron/m/mis/misdi/misdialled__gb_1.mp3|/ˌmɪsˈdaɪəld/|us_pron/m/mis/misdi/misdialled__us_1.mp3
+misdial_1|past simple| (North American English)  misdialed|/ˌmɪsˈdaɪəld/|uk_pron/m/mis/misdi/misdialled__gb_1.mp3|/ˌmɪsˈdaɪəld/|us_pron/m/mis/misdi/misdialled__us_1.mp3
+misdial_1|past participle| (North American English)  misdialed|/ˌmɪsˈdaɪəld/|uk_pron/m/mis/misdi/misdialled__gb_1.mp3|/ˌmɪsˈdaɪəld/|us_pron/m/mis/misdi/misdialled__us_1.mp3
+misdial_1|-ing form|  misdialling|/ˌmɪsˈdaɪəlɪŋ/|uk_pron/m/mis/misdi/misdialling__gb_1.mp3|/ˌmɪsˈdaɪəlɪŋ/|us_pron/m/mis/misdi/misdialling__us_1.mp3
+misdial_1|-ing form| (North American English)  misdialing|/ˌmɪsˈdaɪəlɪŋ/|uk_pron/m/mis/misdi/misdialling__gb_1.mp3|/ˌmɪsˈdaɪəlɪŋ/|us_pron/m/mis/misdi/misdialling__us_1.mp3
+smize_1|present simple I / you / we / they|  smize|/smaɪz/|uk_pron/s/smi/smize/smize__gb_1.mp3|/smaɪz/|us_pron/s/smi/smize/smize__us_1.mp3
+smize_1|he / she / it|  smizes|/ˈsmaɪzɪz/|uk_pron/s/smi/smize/smizes__gb_1.mp3|/ˈsmaɪzɪz/|us_pron/s/smi/smize/smizes__us_1.mp3
+smize_1|past simple|  smized|/smaɪzd/|uk_pron/s/smi/smize/smized__gb_1.mp3|/smaɪzd/|us_pron/s/smi/smize/smized__us_1.mp3
+smize_1|past participle|  smized|/smaɪzd/|uk_pron/s/smi/smize/smized__gb_1.mp3|/smaɪzd/|us_pron/s/smi/smize/smized__us_1.mp3
+smize_1|-ing form|  smizing|/ˈsmaɪzɪŋ/|uk_pron/s/smi/smizi/smizing__gb_1.mp3|/ˈsmaɪzɪŋ/|us_pron/s/smi/smizi/smizing__us_1.mp3
+consummate2_1|present simple I / you / we / they|  consummate|/ˈkɒnsəmeɪt/|uk_pron/x/xco/xcons/xconsummate__gb_3.mp3|/ˈkɑːnsəmeɪt/|us_pron/x/xco/xcons/xconsummate__us_2.mp3
+consummate2_1|he / she / it|  consummates|/ˈkɒnsəmeɪts/|uk_pron/x/xco/xcons/xconsummates__gb_1.mp3|/ˈkɑːnsəmeɪts/|us_pron/x/xco/xcons/xconsummates__us_1.mp3
+consummate2_1|past simple|  consummated|/ˈkɒnsəmeɪtɪd/|uk_pron/x/xco/xcons/xconsummated__gb_1.mp3|/ˈkɑːnsəmeɪtɪd/|us_pron/x/xco/xcons/xconsummated__us_1.mp3
+consummate2_1|past participle|  consummated|/ˈkɒnsəmeɪtɪd/|uk_pron/x/xco/xcons/xconsummated__gb_1.mp3|/ˈkɑːnsəmeɪtɪd/|us_pron/x/xco/xcons/xconsummated__us_1.mp3
+consummate2_1|-ing form|  consummating|/ˈkɒnsəmeɪtɪŋ/|uk_pron/x/xco/xcons/xconsummating__gb_1.mp3|/ˈkɑːnsəmeɪtɪŋ/|us_pron/x/xco/xcons/xconsummating__us_1.mp3
+short-change_1|present simple I / you / we / they|  short-change|/ˌʃɔːt ˈtʃeɪndʒ/|uk_pron/s/sho/short/short_change_1_gb_1.mp3|/ˌʃɔːrt ˈtʃeɪndʒ/|us_pron/s/sho/short/short_change_1_us_1.mp3
+short-change_1|he / she / it|  short-changes|/ˌʃɔːt ˈtʃeɪndʒɪz/|uk_pron/s/sho/short/short_changes_1_gb_1.mp3|/ˌʃɔːrt ˈtʃeɪndʒɪz/|us_pron/s/sho/short/short_changes_1_us_1.mp3
+short-change_1|past simple|  short-changed|/ˌʃɔːt ˈtʃeɪndʒd/|uk_pron/s/sho/short/short_changed_1_gb_1.mp3|/ˌʃɔːrt ˈtʃeɪndʒd/|us_pron/s/sho/short/short_changed_1_us_1.mp3
+short-change_1|past participle|  short-changed|/ˌʃɔːt ˈtʃeɪndʒd/|uk_pron/s/sho/short/short_changed_1_gb_1.mp3|/ˌʃɔːrt ˈtʃeɪndʒd/|us_pron/s/sho/short/short_changed_1_us_1.mp3
+short-change_1|-ing form|  short-changing|/ˌʃɔːt ˈtʃeɪndʒɪŋ/|uk_pron/s/sho/short/short_changing_1_gb_1.mp3|/ˌʃɔːrt ˈtʃeɪndʒɪŋ/|us_pron/s/sho/short/short_changing_1_us_1.mp3
+rewatch_1|present simple I / you / we / they|  rewatch|/ˌriːˈwɒtʃ/|uk_pron/r/rew/rewat/rewatch__gb_5.mp3|/ˌriːˈwɑːtʃ/|us_pron/r/rew/rewat/rewatch__us_1.mp3
+rewatch_1|he / she / it|  rewatches|/ˌriːˈwɒtʃɪz/|uk_pron/r/rew/rewat/rewatches__gb_1.mp3|/ˌriːˈwɑːtʃɪz/|us_pron/r/rew/rewat/rewatches__us_1.mp3
+rewatch_1|past simple|  rewatched|/ˌriːˈwɒtʃt/|uk_pron/r/rew/rewat/rewatched__gb_1.mp3|/ˌriːˈwɑːtʃt/|us_pron/r/rew/rewat/rewatched__us_1.mp3
+rewatch_1|past participle|  rewatched|/ˌriːˈwɒtʃt/|uk_pron/r/rew/rewat/rewatched__gb_1.mp3|/ˌriːˈwɑːtʃt/|us_pron/r/rew/rewat/rewatched__us_1.mp3
+rewatch_1|-ing form|  rewatching|/ˌriːˈwɒtʃɪŋ/|uk_pron/r/rew/rewat/rewatching__gb_1.mp3|/ˌriːˈwɑːtʃɪŋ/|us_pron/r/rew/rewat/rewatching__us_1.mp3
+spam_2|present simple I / you / we / they|  spam|/spæm/|uk_pron/s/spa/spam_/spam__gb_1.mp3|/spæm/|us_pron/s/spa/spam_/spam__us_1.mp3
+spam_2|he / she / it|  spams|/spæmz/|uk_pron/s/spa/spams/spams__gb_1.mp3|/spæmz/|us_pron/s/spa/spams/spams__us_1.mp3
+spam_2|past simple|  spammed|/spæmd/|uk_pron/s/spa/spamm/spammed__gb_1.mp3|/spæmd/|us_pron/s/spa/spamm/spammed__us_1.mp3
+spam_2|past participle|  spammed|/spæmd/|uk_pron/s/spa/spamm/spammed__gb_1.mp3|/spæmd/|us_pron/s/spa/spamm/spammed__us_1.mp3
+spam_2|-ing form|  spamming|/ˈspæmɪŋ/|uk_pron/s/spa/spamm/spamming__gb_1.mp3|/ˈspæmɪŋ/|us_pron/s/spa/spamm/spamming__us_1.mp3
+have-to_1|present simple I / you / we / they|  have to|/ˈhæv tə/|uk_pron/h/hav/have_/have_to_1_gb_1.mp3|/ˈhæv tə/|us_pron/h/hav/have_/have_to_1_us_1.mp3
+have-to_1|he / she / it|  has to|/ˈhæz tə/|uk_pron/h/has/has_t/has_to_1_gb_1.mp3|/ˈhæz tə/|us_pron/h/has/has_t/has_to__us_1.mp3
+have-to_1|past simple|  had to|/ˈhæd tə/|uk_pron/h/had/had_t/had_to_1_gb_1.mp3|/ˈhæd tə/|us_pron/h/had/had_t/had_to_1_us_1_rr.mp3
+have-to_1|-ing form|  having to|/ˈhævɪŋ tə/|uk_pron/h/hav/havin/having_to_1_gb_1.mp3|/ˈhævɪŋ tə/|us_pron/h/hav/havin/having_to_1_us_1.mp3
+ring2_1|present simple I / you / we / they|  ring|/rɪŋ/|uk_pron/r/rin/ring_/ring__gb_1.mp3|/rɪŋ/|us_pron/r/rin/ring_/ring__us_1.mp3
+ring2_1|he / she / it|  rings|/rɪŋz/|uk_pron/r/rin/rings/rings__gb_1.mp3|/rɪŋz/|us_pron/r/rin/rings/rings__us_1.mp3
+ring2_1|past simple|  rang|/ræŋ/|uk_pron/r/ran/rang_/rang__gb_1.mp3|/ræŋ/|us_pron/r/ran/rang_/rang__us_1.mp3
+ring2_1|past participle|  rung|/rʌŋ/|uk_pron/r/run/rung_/rung__gb_2.mp3|/rʌŋ/|us_pron/r/run/rung_/rung__us_2.mp3
+ring2_1|-ing form|  ringing|/ˈrɪŋɪŋ/|uk_pron/r/rin/ringi/ringing__gb_1.mp3|/ˈrɪŋɪŋ/|us_pron/r/rin/ringi/ringing__us_1.mp3
+lie2_1|present simple I / you / we / they|  lie|/laɪ/|uk_pron/l/lie/lie__/lie__gb_1.mp3|/laɪ/|us_pron/l/lie/lie__/lie__us_1.mp3
+lie2_1|he / she / it|  lies|/laɪz/|uk_pron/l/lie/lies_/lies__gb_2.mp3|/laɪz/|us_pron/l/lie/lies_/lies__us_2.mp3
+lie2_1|past simple|  lied|/laɪd/|uk_pron/l/lie/lied_/lied__gb_2.mp3|/laɪd/|us_pron/l/lie/lied_/lied__us_2.mp3
+lie2_1|past participle|  lied|/laɪd/|uk_pron/l/lie/lied_/lied__gb_2.mp3|/laɪd/|us_pron/l/lie/lied_/lied__us_2.mp3
+lie2_1|-ing form|  lying|/ˈlaɪɪŋ/|uk_pron/l/lyi/lying/lying__gb_2.mp3|/ˈlaɪɪŋ/|us_pron/l/lyi/lying/lying__us_3.mp3
+sow1_1|present simple I / you / we / they|  sow|/səʊ/|uk_pron/s/sow/sow__/sow__gb_1.mp3|/səʊ/|us_pron/s/sow/sow__/sow__us_1.mp3
+sow1_1|he / she / it|  sows|/səʊz/|uk_pron/s/sow/sows_/sows__gb_1.mp3|/səʊz/|us_pron/s/sow/sows_/sows__us_1.mp3
+sow1_1|past simple|  sowed|/səʊd/|uk_pron/s/sow/sowed/sowed__gb_1.mp3|/səʊd/|us_pron/s/sow/sowed/sowed__us_1.mp3
+sow1_1|past participle|  sown|/səʊn/|uk_pron/s/sow/sown_/sown__gb_1.mp3|/səʊn/|us_pron/s/sow/sown_/sown__us_1.mp3
+sow1_1|past participle|  sowed|/səʊd/|uk_pron/s/sow/sowed/sowed__gb_1.mp3|/səʊd/|us_pron/s/sow/sowed/sowed__us_1.mp3
+sow1_1|-ing form|  sowing|/ˈsəʊɪŋ/|uk_pron/s/sow/sowin/sowing__gb_1.mp3|/ˈsəʊɪŋ/|us_pron/s/sow/sowin/sowing__us_1.mp3
+blog_2|present simple I / you / we / they|  blog|/blɒɡ/|uk_pron/b/blo/blog_/blog__gb_2.mp3|/blɑːɡ/|us_pron/b/blo/blog_/blog__us_1_rr.mp3
+blog_2|he / she / it|  blogs|/blɒɡz/|uk_pron/b/blo/blogs/blogs__gb_1.mp3|/blɑːɡz/|us_pron/b/blo/blogs/blogs__us_1.mp3
+blog_2|past simple|  blogged|/blɒɡd/|uk_pron/b/blo/blogg/blogged__gb_1.mp3|/blɑːɡd/|us_pron/b/blo/blogg/blogged__us_1.mp3
+blog_2|past participle|  blogged|/blɒɡd/|uk_pron/b/blo/blogg/blogged__gb_1.mp3|/blɑːɡd/|us_pron/b/blo/blogg/blogged__us_1.mp3
+blog_2|-ing form|  blogging|/ˈblɒɡɪŋ/|uk_pron/b/blo/blogg/blogging__gb_1.mp3|/ˈblɑːɡɪŋ/|us_pron/b/blo/blogg/blogging__us_1.mp3
+undelete_1|present simple I / you / we / they|  undelete|/ˌʌndɪˈliːt/|uk_pron/u/und/undel/undelete__gb_1.mp3|/ˌʌndɪˈliːt/|us_pron/u/und/undel/undelete__us_1.mp3
+undelete_1|he / she / it|  undeletes|/ˌʌndɪˈliːts/|uk_pron/u/und/undel/undeletes__gb_1.mp3|/ˌʌndɪˈliːts/|us_pron/u/und/undel/undeletes__us_1.mp3
+undelete_1|past simple|  undeleted|/ˌʌndɪˈliːtɪd/|uk_pron/u/und/undel/undeleted__gb_1.mp3|/ˌʌndɪˈliːtɪd/|us_pron/u/und/undel/undeleted__us_1.mp3
+undelete_1|past participle|  undeleted|/ˌʌndɪˈliːtɪd/|uk_pron/u/und/undel/undeleted__gb_1.mp3|/ˌʌndɪˈliːtɪd/|us_pron/u/und/undel/undeleted__us_1.mp3
+undelete_1|-ing form|  undeleting|/ˌʌndɪˈliːtɪŋ/|uk_pron/u/und/undel/undeleting__gb_1.mp3|/ˌʌndɪˈliːtɪŋ/|us_pron/u/und/undel/undeleting__us_1.mp3
+x-ray_1|present simple I / you / we / they|  X-ray|/ˈeks reɪ/|uk_pron/x/x_r/x_ray/x_ray_1_gb_1.mp3|/ˈeks reɪ/|us_pron/x/x_r/x_ray/x_ray_1_us_1.mp3
+x-ray_1|he / she / it|  X-rays|/ˈeks reɪz/|uk_pron/x/x_r/x_ray/x_rays_1_gb_1.mp3|/ˈeks reɪz/|us_pron/x/x_r/x_ray/x_rays_1_us_1.mp3
+x-ray_1|past simple|  X-rayed|/ˈeks reɪd/|uk_pron/x/x_r/x_ray/x_rayed_1_gb_1.mp3|/ˈeks reɪd/|us_pron/x/x_r/x_ray/x_rayed_1_us_1.mp3
+x-ray_1|past participle|  X-rayed|/ˈeks reɪd/|uk_pron/x/x_r/x_ray/x_rayed_1_gb_1.mp3|/ˈeks reɪd/|us_pron/x/x_r/x_ray/x_rayed_1_us_1.mp3
+x-ray_1|-ing form|  X-raying|/ˈeks reɪɪŋ/|uk_pron/x/x_r/x_ray/x_raying_1_gb_1.mp3|/ˈeks reɪɪŋ/|us_pron/x/x_r/x_ray/x_raying_1_us_1.mp3
+anonymize_1|present simple I / you / we / they|  anonymize|/əˈnɒnɪmaɪz/|uk_pron/a/ano/anony/anonymize__gb_1.mp3|/əˈnɑːnɪmaɪz/|us_pron/a/ano/anony/anonymize__us_1.mp3
+anonymize_1|he / she / it|  anonymizes|/əˈnɒnɪmaɪzɪz/|uk_pron/a/ano/anony/anonymizes__gb_1.mp3|/əˈnɑːnɪmaɪzɪz/|us_pron/a/ano/anony/anonymizes__us_1.mp3
+anonymize_1|past simple|  anonymized|/əˈnɒnɪmaɪzd/|uk_pron/a/ano/anony/anonymized__gb_1.mp3|/əˈnɑːnɪmaɪzd/|us_pron/a/ano/anony/anonymized__us_1.mp3
+anonymize_1|past participle|  anonymized|/əˈnɒnɪmaɪzd/|uk_pron/a/ano/anony/anonymized__gb_1.mp3|/əˈnɑːnɪmaɪzd/|us_pron/a/ano/anony/anonymized__us_1.mp3
+anonymize_1|-ing form|  anonymizing|/əˈnɒnɪmaɪzɪŋ/|uk_pron/a/ano/anony/anonymizing__gb_1.mp3|/əˈnɑːnɪmaɪzɪŋ/|us_pron/a/ano/anony/anonymizing__us_1.mp3
+chargrill_1|present simple I / you / we / they|  chargrill|/ˈtʃɑːɡrɪl/|uk_pron/c/cha/charg/chargrill__gb_1.mp3|/ˈtʃɑːrɡrɪl/|us_pron/c/cha/charg/chargrill__us_1.mp3
+chargrill_1|he / she / it|  chargrills|/ˈtʃɑːɡrɪlz/|uk_pron/c/cha/charg/chargrills__gb_1.mp3|/ˈtʃɑːrɡrɪlz/|us_pron/c/cha/charg/chargrills__us_1.mp3
+chargrill_1|past simple|  chargrilled|/ˈtʃɑːɡrɪld/|uk_pron/c/cha/charg/chargrilled__gb_1.mp3|/ˈtʃɑːrɡrɪld/|us_pron/c/cha/charg/chargrilled__us_1.mp3
+chargrill_1|past participle|  chargrilled|/ˈtʃɑːɡrɪld/|uk_pron/c/cha/charg/chargrilled__gb_1.mp3|/ˈtʃɑːrɡrɪld/|us_pron/c/cha/charg/chargrilled__us_1.mp3
+chargrill_1|-ing form|  chargrilling|/ˈtʃɑːɡrɪlɪŋ/|uk_pron/c/cha/charg/chargrilling__gb_1.mp3|/ˈtʃɑːrɡrɪlɪŋ/|us_pron/c/cha/charg/chargrilling__us_1.mp3
+retweet_1|present simple I / you / we / they|  retweet|/ˌriːˈtwiːt/|uk_pron/r/ret/retwe/retweet__gb_2.mp3|/ˌriːˈtwiːt/|us_pron/r/ret/retwe/retweet__us_2.mp3
+retweet_1|he / she / it|  retweets|/ˌriːˈtwiːts/|uk_pron/r/ret/retwe/retweets__gb_1.mp3|/ˌriːˈtwiːts/|us_pron/r/ret/retwe/retweets__us_1.mp3
+retweet_1|past simple|  retweeted|/ˌriːˈtwiːtɪd/|uk_pron/r/ret/retwe/retweeted__gb_1.mp3|/ˌriːˈtwiːtɪd/|us_pron/r/ret/retwe/retweeted__us_1.mp3
+retweet_1|past participle|  retweeted|/ˌriːˈtwiːtɪd/|uk_pron/r/ret/retwe/retweeted__gb_1.mp3|/ˌriːˈtwiːtɪd/|us_pron/r/ret/retwe/retweeted__us_1.mp3
+retweet_1|-ing form|  retweeting|/ˌriːˈtwiːtɪŋ/|uk_pron/r/ret/retwe/retweeting__gb_1.mp3|/ˌriːˈtwiːtɪŋ/|us_pron/r/ret/retwe/retweeting__us_1.mp3
+row1_2|present simple I / you / we / they|  row|/rəʊ/|uk_pron/r/row/row__/row__gb_1.mp3|/rəʊ/|us_pron/r/row/row__/row__us_1.mp3
+row1_2|he / she / it|  rows|/rəʊz/|uk_pron/r/ros/rose_/rose__gb_3.mp3|/rəʊz/|us_pron/r/row/rows_/rows__us_1.mp3
+row1_2|past simple|  rowed|/rəʊd/|uk_pron/r/row/rowed/rowed__gb_1.mp3|/rəʊd/|us_pron/r/row/rowed/rowed__us_1.mp3
+row1_2|past participle|  rowed|/rəʊd/|uk_pron/r/row/rowed/rowed__gb_1.mp3|/rəʊd/|us_pron/r/row/rowed/rowed__us_1.mp3
+row1_2|-ing form|  rowing|/ˈrəʊɪŋ/|uk_pron/r/row/rowin/rowing__gb_2.mp3|/ˈrəʊɪŋ/|us_pron/r/row/rowin/rowing__us_1.mp3
+carjack_1|present simple I / you / we / they|  carjack|/ˈkɑːdʒæk/|uk_pron/c/car/carja/carjack__gb_1.mp3|/ˈkɑːrdʒæk/|us_pron/c/car/carja/carjack__us_1.mp3
+carjack_1|he / she / it|  carjacks|/ˈkɑːdʒæks/|uk_pron/c/car/carja/carjacks__gb_1.mp3|/ˈkɑːrdʒæks/|us_pron/c/car/carja/carjacks__us_1.mp3
+carjack_1|past simple|  carjacked|/ˈkɑːdʒækt/|uk_pron/c/car/carja/carjacked__gb_1.mp3|/ˈkɑːrdʒækt/|us_pron/c/car/carja/carjacked__us_1.mp3
+carjack_1|past participle|  carjacked|/ˈkɑːdʒækt/|uk_pron/c/car/carja/carjacked__gb_1.mp3|/ˈkɑːrdʒækt/|us_pron/c/car/carja/carjacked__us_1.mp3
+carjack_1|-ing form|  carjacking|/ˈkɑːdʒækɪŋ/|uk_pron/c/car/carja/carjacking__gb_1.mp3|/ˈkɑːrdʒækɪŋ/|us_pron/c/car/carja/carjacking__us_1.mp3
+carpet-bomb_1|present simple I / you / we / they|  carpet-bomb|/ˈkɑːpɪt bɒm/|uk_pron/c/car/carpe/carpet_bomb_1_gb_1.mp3|/ˈkɑːrpɪt bɑːm/|us_pron/c/car/carpe/carpet_bomb_1_us_1.mp3
+carpet-bomb_1|he / she / it|  carpet-bombs|/ˈkɑːpɪt bɒmz/|uk_pron/c/car/carpe/carpet_bombs_1_gb_1.mp3|/ˈkɑːrpɪt bɑːmz/|us_pron/c/car/carpe/carpet_bombs_1_us_1.mp3
+carpet-bomb_1|past simple|  carpet-bombed|/ˈkɑːpɪt bɒmd/|uk_pron/c/car/carpe/carpet_bombed_1_gb_1.mp3|/ˈkɑːrpɪt bɑːmd/|us_pron/c/car/carpe/carpet_bombed_1_us_1.mp3
+carpet-bomb_1|past participle|  carpet-bombed|/ˈkɑːpɪt bɒmd/|uk_pron/c/car/carpe/carpet_bombed_1_gb_1.mp3|/ˈkɑːrpɪt bɑːmd/|us_pron/c/car/carpe/carpet_bombed_1_us_1.mp3
+carpet-bomb_1|-ing form|  carpet-bombing|/ˈkɑːpɪt bɒmɪŋ/|uk_pron/c/car/carpe/carpet_bombing_1_gb_1.mp3|/ˈkɑːrpɪt bɑːmɪŋ/|us_pron/c/car/carpe/carpet_bombing_1_us_1.mp3
+scrunch-dry_1|present simple I / you / we / they|  scrunch-dry|/ˈskrʌntʃ draɪ/|uk_pron/s/scr/scrun/scrunch_dry_1_gb_2.mp3|/ˈskrʌntʃ draɪ/|us_pron/s/scr/scrun/scrunch_dry_1_us_2.mp3
+scrunch-dry_1|he / she / it|  scrunch-dries|/ˈskrʌntʃ draɪz/|uk_pron/s/scr/scrun/scrunch_dries_1_gb_4.mp3|/ˈskrʌntʃ draɪz/|us_pron/s/scr/scrun/scrunch_dries_1_us_2.mp3
+scrunch-dry_1|past simple|  scrunch-dried|/ˈskrʌntʃ draɪd/|uk_pron/s/scr/scrun/scrunch_dried_1_gb_4.mp3|/ˈskrʌntʃ draɪd/|us_pron/s/scr/scrun/scrunch_dried_1_us_2.mp3
+scrunch-dry_1|past participle|  scrunch-dried|/ˈskrʌntʃ draɪd/|uk_pron/s/scr/scrun/scrunch_dried_1_gb_4.mp3|/ˈskrʌntʃ draɪd/|us_pron/s/scr/scrun/scrunch_dried_1_us_2.mp3
+scrunch-dry_1|-ing form|  scrunch-drying|/ˈskrʌntʃ draɪɪŋ/|uk_pron/s/scr/scrun/scrunch_drying_1_gb_3.mp3|/ˈskrʌntʃ draɪɪŋ/|us_pron/s/scr/scrun/scrunch_drying_1_us_1.mp3
+waterski_1|present simple I / you / we / they|  waterski|/ˈwɔːtəskiː/|uk_pron/w/wat/water/waterski__gb_1.mp3|/ˈwɔːtərskiː/|us_pron/w/wat/water/waterski__us_3_rr.mp3
+waterski_1|he / she / it|  waterskis|/ˈwɔːtəskiːz/|uk_pron/w/wat/water/waterskis__gb_1.mp3|/ˈwɔːtərskiːz/|us_pron/w/wat/water/waterskis__us_1.mp3
+waterski_1|past simple|  waterskied|/ˈwɔːtəskiːd/|uk_pron/w/wat/water/waterskied__gb_1.mp3|/ˈwɔːtərskiːd/|us_pron/w/wat/water/waterskied__us_1.mp3
+waterski_1|past participle|  waterskied|/ˈwɔːtəskiːd/|uk_pron/w/wat/water/waterskied__gb_1.mp3|/ˈwɔːtərskiːd/|us_pron/w/wat/water/waterskied__us_1.mp3
+waterski_1|-ing form|  waterskiing|/ˈwɔːtəskiːɪŋ/|uk_pron/w/wat/water/waterskiing__gb_1.mp3|/ˈwɔːtərskiːɪŋ/|us_pron/w/wat/water/waterskiing__us_3.mp3
+blindside_1|present simple I / you / we / they|  blindside|/ˈblaɪndsaɪd/|uk_pron/b/bli/blind/blindside__gb_2.mp3|/ˈblaɪndsaɪd/|us_pron/b/bli/blind/blindside__us_1.mp3
+blindside_1|he / she / it|  blindsides|/ˈblaɪndsaɪdz/|uk_pron/b/bli/blind/blindsides__gb_1.mp3|/ˈblaɪndsaɪdz/|us_pron/b/bli/blind/blindsides__us_1.mp3
+blindside_1|past simple|  blindsided|/ˈblaɪndsaɪdɪd/|uk_pron/b/bli/blind/blindsided__gb_1.mp3|/ˈblaɪndsaɪdɪd/|us_pron/b/bli/blind/blindsided__us_1.mp3
+blindside_1|past participle|  blindsided|/ˈblaɪndsaɪdɪd/|uk_pron/b/bli/blind/blindsided__gb_1.mp3|/ˈblaɪndsaɪdɪd/|us_pron/b/bli/blind/blindsided__us_1.mp3
+blindside_1|-ing form|  blindsiding|/ˈblaɪndsaɪdɪŋ/|uk_pron/b/bli/blind/blindsiding__gb_1.mp3|/ˈblaɪndsaɪdɪŋ/|us_pron/b/bli/blind/blindsiding__us_1.mp3
+co-author_1|present simple I / you / we / they|  co-author|/ˌkəʊ ˈɔːθə(r)/|uk_pron/c/co_/co_au/co_author_1_gb_1.mp3|/ˌkəʊ ˈɔːθər/|us_pron/c/co_/co_au/co_author_1_us_1.mp3
+co-author_1|he / she / it|  co-authors|/ˌkəʊ ˈɔːθəz/|uk_pron/c/co_/co_au/co_authors_1_gb_1.mp3|/ˌkəʊ ˈɔːθərz/|us_pron/c/co_/co_au/co_authors_1_us_1.mp3
+co-author_1|past simple|  co-authored|/ˌkəʊ ˈɔːθəd/|uk_pron/c/co_/co_au/co_authored_1_gb_1.mp3|/ˌkəʊ ˈɔːθərd/|us_pron/c/co_/co_au/co_authored_1_us_1.mp3
+co-author_1|past participle|  co-authored|/ˌkəʊ ˈɔːθəd/|uk_pron/c/co_/co_au/co_authored_1_gb_1.mp3|/ˌkəʊ ˈɔːθərd/|us_pron/c/co_/co_au/co_authored_1_us_1.mp3
+co-author_1|-ing form|  co-authoring|/ˌkəʊ ˈɔːθərɪŋ/|uk_pron/c/co_/co_au/co_authoring_1_gb_1.mp3|/ˌkəʊ ˈɔːθərɪŋ/|us_pron/c/co_/co_au/co_authoring_1_us_1.mp3
+pixelate_1|present simple I / you / we / they|  pixelate|/ˈpɪksəleɪt/|uk_pron/p/pix/pixel/pixelate__gb_1.mp3|/ˈpɪksəleɪt/|us_pron/p/pix/pixel/pixelate__us_1.mp3
+pixelate_1|he / she / it|  pixelates|/ˈpɪksəleɪts/|uk_pron/p/pix/pixel/pixelates__gb_1.mp3|/ˈpɪksəleɪts/|us_pron/p/pix/pixel/pixelates__us_1.mp3
+pixelate_1|past simple|  pixelated|/ˈpɪksəleɪtɪd/|uk_pron/p/pix/pixel/pixelated__gb_1.mp3|/ˈpɪksəleɪtɪd/|us_pron/p/pix/pixel/pixelated__us_1.mp3
+pixelate_1|past participle|  pixelated|/ˈpɪksəleɪtɪd/|uk_pron/p/pix/pixel/pixelated__gb_1.mp3|/ˈpɪksəleɪtɪd/|us_pron/p/pix/pixel/pixelated__us_1.mp3
+pixelate_1|-ing form|  pixelating|/ˈpɪksəleɪtɪŋ/|uk_pron/p/pix/pixel/pixelating__gb_1.mp3|/ˈpɪksəleɪtɪŋ/|us_pron/p/pix/pixel/pixelating__us_1.mp3
+skypetm_2|present simple I / you / we / they|  Skype|/skaɪp/|uk_pron/s/sky/skype/skype_1_gb_1.mp3|/skaɪp/|us_pron/s/sky/skype/skype_1_us_1.mp3
+skypetm_2|he / she / it|  Skypes|/skaɪps/|uk_pron/s/sky/skype/skypes__gb_1.mp3|/skaɪps/|us_pron/s/sky/skype/skypes__us_1.mp3
+skypetm_2|past simple|  Skyped|/skaɪpt/|uk_pron/s/sky/skype/skyped__gb_1.mp3|/skaɪpt/|us_pron/s/sky/skype/skyped__us_1.mp3
+skypetm_2|past participle|  Skyped|/skaɪpt/|uk_pron/s/sky/skype/skyped__gb_1.mp3|/skaɪpt/|us_pron/s/sky/skype/skyped__us_1.mp3
+skypetm_2|-ing form|  Skyping|/ˈskaɪpɪŋ/|uk_pron/s/sky/skypi/skyping__gb_1.mp3|/ˈskaɪpɪŋ/|us_pron/s/sky/skypi/skyping__us_1.mp3
+row2_2|present simple I / you / we / they|  row|/raʊ/|uk_pron/r/row/row__/row__gb_2.mp3|/raʊ/|us_pron/r/row/row__/row__us_2.mp3
+row2_2|he / she / it|  rows|/raʊz/|uk_pron/r/row/rows_/rows__gb_2.mp3|/raʊz/|us_pron/r/row/rows_/rows__us_2.mp3
+row2_2|past simple|  rowed|/raʊd/|uk_pron/r/row/rowed/rowed__gb_2.mp3|/raʊd/|us_pron/r/row/rowed/rowed__us_2.mp3
+row2_2|past participle|  rowed|/raʊd/|uk_pron/r/row/rowed/rowed__gb_2.mp3|/raʊd/|us_pron/r/row/rowed/rowed__us_2.mp3
+row2_2|-ing form|  rowing|/ˈraʊɪŋ/|uk_pron/r/row/rowin/rowing__gb_3.mp3|/ˈraʊɪŋ/|us_pron/r/row/rowin/rowing__us_3.mp3
+co-sign_1|present simple I / you / we / they|  co-sign|/ˌkəʊ ˈsaɪn/|uk_pron/c/co_/co_si/co_sign_1_gb_2.mp3|/ˌkəʊ ˈsaɪn/|us_pron/c/co_/co_si/co_sign_1_us_3.mp3
+co-sign_1|he / she / it|  co-signs|/ˌkəʊ ˈsaɪnz/|uk_pron/c/co_/co_si/co_signs_1_gb_1.mp3|/ˌkəʊ ˈsaɪnz/|us_pron/c/co_/co_si/co_signs_1_us_1.mp3
+co-sign_1|past simple|  co-signed|/ˌkəʊ ˈsaɪnd/|uk_pron/c/co_/co_si/co_signed_1_gb_1.mp3|/ˌkəʊ ˈsaɪnd/|us_pron/c/co_/co_si/co_signed_1_us_1.mp3
+co-sign_1|past participle|  co-signed|/ˌkəʊ ˈsaɪnd/|uk_pron/c/co_/co_si/co_signed_1_gb_1.mp3|/ˌkəʊ ˈsaɪnd/|us_pron/c/co_/co_si/co_signed_1_us_1.mp3
+co-sign_1|-ing form|  co-signing|/ˌkəʊ ˈsaɪnɪŋ/|uk_pron/c/co_/co_si/co_signing_1_gb_1.mp3|/ˌkəʊ ˈsaɪnɪŋ/|us_pron/c/co_/co_si/co_signing_1_us_1.mp3
+unsubscribe_1|present simple I / you / we / they|  unsubscribe|/ˌʌnsəbˈskraɪb/|uk_pron/u/uns/unsub/unsubscribe__gb_1.mp3|/ˌʌnsəbˈskraɪb/|us_pron/u/uns/unsub/unsubscribe__us_1.mp3
+unsubscribe_1|he / she / it|  unsubscribes|/ˌʌnsəbˈskraɪbz/|uk_pron/u/uns/unsub/unsubscribes__gb_1.mp3|/ˌʌnsəbˈskraɪbz/|us_pron/u/uns/unsub/unsubscribes__us_1.mp3
+unsubscribe_1|past simple|  unsubscribed|/ˌʌnsəbˈskraɪbd/|uk_pron/u/uns/unsub/unsubscribed__gb_1.mp3|/ˌʌnsəbˈskraɪbd/|us_pron/u/uns/unsub/unsubscribed__us_1.mp3
+unsubscribe_1|past participle|  unsubscribed|/ˌʌnsəbˈskraɪbd/|uk_pron/u/uns/unsub/unsubscribed__gb_1.mp3|/ˌʌnsəbˈskraɪbd/|us_pron/u/uns/unsub/unsubscribed__us_1.mp3
+unsubscribe_1|-ing form|  unsubscribing|/ˌʌnsəbˈskraɪbɪŋ/|uk_pron/u/uns/unsub/unsubscribing__gb_1.mp3|/ˌʌnsəbˈskraɪbɪŋ/|us_pron/u/uns/unsub/unsubscribing__us_1.mp3
+lower1_1|present simple I / you / we / they|  lower|/ˈləʊə(r)/|uk_pron/l/low/lower/lower__gb_1.mp3|/ˈləʊər/|us_pron/l/low/lower/lower__us_1.mp3
+lower1_1|he / she / it|  lowers|/ˈləʊəz/|uk_pron/l/low/lower/lowers__gb_1.mp3|/ˈləʊərz/|us_pron/l/low/lower/lowers__us_1.mp3
+lower1_1|past simple|  lowered|/ˈləʊəd/|uk_pron/l/low/lower/lowered__gb_1.mp3|/ˈləʊərd/|us_pron/l/low/lower/lowered__us_1.mp3
+lower1_1|past participle|  lowered|/ˈləʊəd/|uk_pron/l/low/lower/lowered__gb_1.mp3|/ˈləʊərd/|us_pron/l/low/lower/lowered__us_1.mp3
+lower1_1|-ing form|  lowering|/ˈləʊərɪŋ/|uk_pron/l/low/lower/lowering__gb_1.mp3|/ˈləʊərɪŋ/|us_pron/l/low/lower/lowering__us_1.mp3
+flatline_1|present simple I / you / we / they|  flatline|/ˈflætlaɪn/|uk_pron/f/fla/flatl/flatline__gb_1.mp3|/ˈflætlaɪn/|us_pron/f/fla/flatl/flatline__us_1.mp3
+flatline_1|he / she / it|  flatlines|/ˈflætlaɪnz/|uk_pron/f/fla/flatl/flatlines__gb_1.mp3|/ˈflætlaɪnz/|us_pron/f/fla/flatl/flatlines__us_1.mp3
+flatline_1|past simple|  flatlined|/ˈflætlaɪnd/|uk_pron/f/fla/flatl/flatlined__gb_1.mp3|/ˈflætlaɪnd/|us_pron/f/fla/flatl/flatlined__us_1.mp3
+flatline_1|past participle|  flatlined|/ˈflætlaɪnd/|uk_pron/f/fla/flatl/flatlined__gb_1.mp3|/ˈflætlaɪnd/|us_pron/f/fla/flatl/flatlined__us_1.mp3
+flatline_1|-ing form|  flatlining|/ˈflætlaɪnɪŋ/|uk_pron/f/fla/flatl/flatlining__gb_1.mp3|/ˈflætlaɪnɪŋ/|us_pron/f/fla/flatl/flatlining__us_1.mp3
+ill-treat_1|present simple I / you / we / they|  ill-treat|/ˌɪl ˈtriːt/|uk_pron/i/ill/ill_t/ill_treat_1_gb_1.mp3|/ˌɪl ˈtriːt/|us_pron/i/ill/ill_t/ill_treat_1_us_1.mp3
+ill-treat_1|he / she / it|  ill-treats|/ˌɪl ˈtriːts/|uk_pron/i/ill/ill_t/ill_treats_1_gb_1.mp3|/ˌɪl ˈtriːts/|us_pron/i/ill/ill_t/ill_treats_1_us_1.mp3
+ill-treat_1|past simple|  ill-treated|/ˌɪl ˈtriːtɪd/|uk_pron/i/ill/ill_t/ill_treated_1_gb_1.mp3|/ˌɪl ˈtriːtɪd/|us_pron/i/ill/ill_t/ill_treated_1_us_1.mp3
+ill-treat_1|past participle|  ill-treated|/ˌɪl ˈtriːtɪd/|uk_pron/i/ill/ill_t/ill_treated_1_gb_1.mp3|/ˌɪl ˈtriːtɪd/|us_pron/i/ill/ill_t/ill_treated_1_us_1.mp3
+ill-treat_1|-ing form|  ill-treating|/ˌɪl ˈtriːtɪŋ/|uk_pron/i/ill/ill_t/ill_treating_1_gb_1.mp3|/ˌɪl ˈtriːtɪŋ/|us_pron/i/ill/ill_t/ill_treating_1_us_1.mp3
+autocorrect_2|present simple I / you / we / they|  autocorrect|/ˌɔːtəʊkəˈrekt/|uk_pron/a/aut/autoc/autocorrect__gb_2.mp3|/ˌɔːtəʊkəˈrekt/|us_pron/a/aut/autoc/autocorrect__us_2.mp3
+autocorrect_2|he / she / it|  autocorrects|/ˌɔːtəʊkəˈrekts/|uk_pron/a/aut/autoc/autocorrects__gb_1.mp3|/ˌɔːtəʊkəˈrekts/|us_pron/a/aut/autoc/autocorrects__us_1.mp3
+autocorrect_2|past simple|  autocorrected|/ˌɔːtəʊkəˈrektɪd/|uk_pron/a/aut/autoc/autocorrected__gb_1.mp3|/ˌɔːtəʊkəˈrektɪd/|us_pron/a/aut/autoc/autocorrected__us_1.mp3
+autocorrect_2|past participle|  autocorrected|/ˌɔːtəʊkəˈrektɪd/|uk_pron/a/aut/autoc/autocorrected__gb_1.mp3|/ˌɔːtəʊkəˈrektɪd/|us_pron/a/aut/autoc/autocorrected__us_1.mp3
+autocorrect_2|-ing form|  autocorrecting|/ˌɔːtəʊkəˈrektɪŋ/|uk_pron/a/aut/autoc/autocorrecting__gb_1.mp3|/ˌɔːtəʊkəˈrektɪŋ/|us_pron/a/aut/autoc/autocorrecting__us_1.mp3
+upsell_2|present simple I / you / we / they|  upsell|/ˈʌpsel/|uk_pron/u/ups/upsel/upsell__gb_1.mp3|/ˈʌpsel/|us_pron/u/ups/upsel/upsell__us_1.mp3
+upsell_2|he / she / it|  upsells|/ˈʌpselz/|uk_pron/u/ups/upsel/upsells__gb_1.mp3|/ˈʌpselz/|us_pron/u/ups/upsel/upsells__us_1.mp3
+upsell_2|past simple|  upsold|/ˈʌpsəʊld/|uk_pron/u/ups/upsol/upsold__gb_1.mp3|/ˈʌpsəʊld/|us_pron/u/ups/upsol/upsold__us_1.mp3
+upsell_2|past participle|  upsold|/ˈʌpsəʊld/|uk_pron/u/ups/upsol/upsold__gb_1.mp3|/ˈʌpsəʊld/|us_pron/u/ups/upsol/upsold__us_1.mp3
+upsell_2|-ing form|  upselling|/ˈʌpselɪŋ/|uk_pron/u/ups/upsel/upselling__gb_1.mp3|/ˈʌpselɪŋ/|us_pron/u/ups/upsel/upselling__us_1.mp3
+volumize_1|present simple I / you / we / they|  volumize|/ˈvɒljəmaɪz/|uk_pron/v/vol/volum/volumize__gb_2.mp3|/ˈvɑːljəmaɪz/|us_pron/v/vol/volum/volumize__us_1.mp3
+volumize_1|he / she / it|  volumizes|/ˈvɒljəmaɪzɪz/|uk_pron/v/vol/volum/volumizes__gb_2.mp3|/ˈvɑːljəmaɪzɪz/|us_pron/v/vol/volum/volumizes__us_1.mp3
+volumize_1|past simple|  volumized|/ˈvɒljəmaɪzd/|uk_pron/v/vol/volum/volumized__gb_2.mp3|/ˈvɑːljəmaɪzd/|us_pron/v/vol/volum/volumized__us_1.mp3
+volumize_1|past participle|  volumized|/ˈvɒljəmaɪzd/|uk_pron/v/vol/volum/volumized__gb_2.mp3|/ˈvɑːljəmaɪzd/|us_pron/v/vol/volum/volumized__us_1.mp3
+volumize_1|-ing form|  volumizing|/ˈvɒljəmaɪzɪŋ/|uk_pron/v/vol/volum/volumizing__gb_2.mp3|/ˈvɑːljəmaɪzɪŋ/|us_pron/v/vol/volum/volumizing__us_1.mp3
+photoshop_1|present simple I / you / we / they|  photoshop|/ˈfəʊtəʊʃɒp/|uk_pron/p/pho/photo/photoshop__gb_1.mp3|/ˈfəʊtəʊʃɑːp/|us_pron/p/pho/photo/photoshop__us_2.mp3
+photoshop_1|he / she / it|  photoshops|/ˈfəʊtəʊʃɒps/|uk_pron/p/pho/photo/photoshops__gb_1.mp3|/ˈfəʊtəʊʃɑːps/|us_pron/p/pho/photo/photoshops__us_1.mp3
+photoshop_1|past simple|  photoshopped|/ˈfəʊtəʊʃɒpt/|uk_pron/p/pho/photo/photoshoped__gb_1.mp3|/ˈfəʊtəʊʃɑːpt/|us_pron/p/pho/photo/photoshopped__us_1.mp3
+photoshop_1|past participle|  photoshopped|/ˈfəʊtəʊʃɒpt/|uk_pron/p/pho/photo/photoshoped__gb_1.mp3|/ˈfəʊtəʊʃɑːpt/|us_pron/p/pho/photo/photoshopped__us_1.mp3
+photoshop_1|-ing form|  photoshopping|/ˈfəʊtəʊʃɒpɪŋ/|uk_pron/p/pho/photo/photoshopping__gb_1.mp3|/ˈfəʊtəʊʃɑːpɪŋ/|us_pron/p/pho/photo/photoshopping__us_1.mp3
+downvote_1|present simple I / you / we / they|  downvote|/ˈdaʊnvəʊt/|uk_pron/d/dow/downv/downvote__gb_1.mp3|/ˈdaʊnvəʊt/|us_pron/d/dow/downv/downvote__us_1.mp3
+downvote_1|he / she / it|  downvotes|/ˈdaʊnvəʊts/|uk_pron/d/dow/downv/downvotes__gb_1.mp3|/ˈdaʊnvəʊts/|us_pron/d/dow/downv/downvotes__us_1.mp3
+downvote_1|past simple|  downvoted|/ˈdaʊnvəʊtɪd/|uk_pron/d/dow/downv/downvoted__gb_1.mp3|/ˈdaʊnvəʊtɪd/|us_pron/d/dow/downv/downvoted__us_1.mp3
+downvote_1|past participle|  downvoted|/ˈdaʊnvəʊtɪd/|uk_pron/d/dow/downv/downvoted__gb_1.mp3|/ˈdaʊnvəʊtɪd/|us_pron/d/dow/downv/downvoted__us_1.mp3
+downvote_1|-ing form|  downvoting|/ˈdaʊnvəʊtɪŋ/|uk_pron/d/dow/downv/downvoting__gb_1.mp3|/ˈdaʊnvəʊtɪŋ/|us_pron/d/dow/downv/downvoting__us_1.mp3
+relay1_2|present simple I / you / we / they|  relay|/ˈriːleɪ/|uk_pron/r/rel/relay/relay__gb_1.mp3|/ˈriːleɪ/|us_pron/r/rel/relay/relay__us_1.mp3
+relay1_2|he / she / it|  relays|/ˈriːleɪz/|uk_pron/r/rel/relay/relays__gb_2.mp3|/ˈriːleɪz/|us_pron/r/rel/relay/relays__us_1.mp3
+relay1_2|past simple|  relayed|/ˈriːleɪd/|uk_pron/r/rel/relay/relayed__gb_1.mp3|/ˈriːleɪd/|us_pron/r/rel/relai/relaid__us_3.mp3
+relay1_2|past participle|  relayed|/ˈriːleɪd/|uk_pron/r/rel/relay/relayed__gb_1.mp3|/ˈriːleɪd/|us_pron/r/rel/relai/relaid__us_3.mp3
+relay1_2|-ing form|  relaying|/ˈriːleɪɪŋ/|uk_pron/r/rel/relay/relaying__gb_2.mp3|/ˈriːleɪɪŋ/|us_pron/r/rel/relay/relaying__us_1.mp3
+crash-test_2|present simple I / you / we / they|  crash-test|/ˈkræʃ test/|uk_pron/c/cra/crash/crash_test_1_gb_1.mp3|/ˈkræʃ test/|us_pron/c/cra/crash/crash_test_1_us_1.mp3
+crash-test_2|he / she / it|  crash-tests|/ˈkræʃ tests/|uk_pron/c/cra/crash/crash_tests_1_gb_1.mp3|/ˈkræʃ tests/|us_pron/c/cra/crash/crash_tests_1_us_1.mp3
+crash-test_2|past simple|  crash-tested|/ˈkræʃ testɪd/|uk_pron/c/cra/crash/crash_tested_1_gb_1.mp3|/ˈkræʃ testɪd/|us_pron/c/cra/crash/crash_tested_1_us_1.mp3
+crash-test_2|past participle|  crash-tested|/ˈkræʃ testɪd/|uk_pron/c/cra/crash/crash_tested_1_gb_1.mp3|/ˈkræʃ testɪd/|us_pron/c/cra/crash/crash_tested_1_us_1.mp3
+crash-test_2|-ing form|  crash-testing|/ˈkræʃ testɪŋ/|uk_pron/c/cra/crash/crash_testing_1_gb_1.mp3|/ˈkræʃ testɪŋ/|us_pron/c/cra/crash/crash_testing_1_us_1.mp3
+unmute_1|present simple I / you / we / they|  unmute|/ˌʌnˈmjuːt/|uk_pron/u/unm/unmut/unmute__gb_1.mp3|/ˌʌnˈmjuːt/|us_pron/u/unm/unmut/unmute__us_1.mp3
+unmute_1|he / she / it|  unmutes|/ˌʌnˈmjuːts/|uk_pron/u/unm/unmut/unmutes__gb_1.mp3|/ˌʌnˈmjuːts/|us_pron/u/unm/unmut/unmutes__us_1.mp3
+unmute_1|past simple|  unmuted|/ˌʌnˈmjuːtɪd/|uk_pron/u/unm/unmut/unmuted__gb_1.mp3|/ˌʌnˈmjuːtɪd/|us_pron/u/unm/unmut/unmuted__us_1.mp3
+unmute_1|past participle|  unmuted|/ˌʌnˈmjuːtɪd/|uk_pron/u/unm/unmut/unmuted__gb_1.mp3|/ˌʌnˈmjuːtɪd/|us_pron/u/unm/unmut/unmuted__us_1.mp3
+unmute_1|-ing form|  unmuting|/ˌʌnˈmjuːtɪŋ/|uk_pron/u/unm/unmut/unmuting__gb_1.mp3|/ˌʌnˈmjuːtɪŋ/|us_pron/u/unm/unmut/unmuting__us_1.mp3
+live-blog_2|present simple I / you / we / they|  live-blog|/ˈlaɪv blɒɡ/|uk_pron/l/liv/live_/live_blog_1_gb_2.mp3|/ˈlaɪv blɑːɡ/|us_pron/l/liv/live_/live_blog_1_us_2.mp3
+live-blog_2|he / she / it|  live-blogs|/ˈlaɪv blɒɡz/|uk_pron/l/liv/live_/live_blogs_1_gb_1.mp3|/ˈlaɪv blɑːɡz/|us_pron/l/liv/live_/live_blogs_1_us_1.mp3
+live-blog_2|past simple|  live-blogged|/ˈlaɪv blɒɡd/|uk_pron/l/liv/live_/live_blogged_1_gb_1.mp3|/ˈlaɪv blɑːɡd/|us_pron/l/liv/live_/live_blogged_1_us_1.mp3
+live-blog_2|past participle|  live-blogged|/ˈlaɪv blɒɡd/|uk_pron/l/liv/live_/live_blogged_1_gb_1.mp3|/ˈlaɪv blɑːɡd/|us_pron/l/liv/live_/live_blogged_1_us_1.mp3
+live-blog_2|-ing form|  live-blogging|/ˈlaɪv blɒɡɪŋ/|uk_pron/l/liv/live_/live_blogging_1_gb_1.mp3|/ˈlaɪv blɑːɡɪŋ/|us_pron/l/liv/live_/live_blogging_1_us_1.mp3
+grass_2|present simple I / you / we / they|  grass|/ɡrɑːs/|uk_pron/g/gra/grass/grass_1_gb_1.mp3|/ɡræs/|us_pron/g/gra/grass/grass__us_1.mp3
+grass_2|he / she / it|  grasses|/ˈɡrɑːsɪz/|uk_pron/g/gra/grass/grasses__gb_1.mp3|/ˈɡræsɪz/|us_pron/g/gra/grass/grasses__us_1.mp3
+grass_2|past simple|  grassed|/ɡrɑːst/|uk_pron/g/gra/grass/grassed__gb_1.mp3|/ɡræst/|us_pron/g/gra/grass/grassed__us_1.mp3
+grass_2|past participle|  grassed|/ɡrɑːst/|uk_pron/g/gra/grass/grassed__gb_1.mp3|/ɡræst/|us_pron/g/gra/grass/grassed__us_1.mp3
+grass_2|-ing form|  grassing|/ˈɡrɑːsɪŋ/|uk_pron/g/gra/grass/grassing__gb_1.mp3|/ˈɡræsɪŋ/|us_pron/g/gra/grass/grassing__us_1.mp3
+up-anchor_1|present simple I / you / we / they|  up-anchor|/ˌʌp ˈæŋkə(r)/|uk_pron/u/up_/up_an/up_anchor_1_gb_1.mp3|/ˌʌp ˈæŋkər/|us_pron/u/up_/up_an/up_anchor_1_us_1.mp3
+up-anchor_1|he / she / it|  up-anchors|/ˌʌp ˈæŋkəz/|uk_pron/u/up_/up_an/up_anchors_1_gb_1.mp3|/ˌʌp ˈæŋkərz/|us_pron/u/up_/up_an/up_anchors_1_us_1.mp3
+up-anchor_1|past simple|  up-anchored|/ˌʌp ˈæŋkəd/|uk_pron/u/up_/up_an/up_anchored_1_gb_1.mp3|/ˌʌp ˈæŋkərd/|us_pron/u/up_/up_an/up_anchored_1_us_1.mp3
+up-anchor_1|past participle|  up-anchored|/ˌʌp ˈæŋkəd/|uk_pron/u/up_/up_an/up_anchored_1_gb_1.mp3|/ˌʌp ˈæŋkərd/|us_pron/u/up_/up_an/up_anchored_1_us_1.mp3
+up-anchor_1|-ing form|  up-anchoring|/ˌʌp ˈæŋkərɪŋ/|uk_pron/u/up_/up_an/up_anchoring_1_gb_1.mp3|/ˌʌp ˈæŋkərɪŋ/|us_pron/u/up_/up_an/up_anchoring_1_us_1.mp3
+close1_1|present simple I / you / we / they|  close|/kləʊz/|uk_pron/c/clo/close/close__gb_1.mp3|/kləʊz/|us_pron/c/clo/close/close__us_1.mp3
+close1_1|he / she / it|  closes|/ˈkləʊzɪz/|uk_pron/c/clo/close/closes__gb_1.mp3|/ˈkləʊzɪz/|us_pron/c/clo/close/closes__us_1.mp3
+close1_1|past simple|  closed|/kləʊzd/|uk_pron/c/clo/close/closed__gb_1.mp3|/kləʊzd/|us_pron/c/clo/close/closed__us_1.mp3
+close1_1|past participle|  closed|/kləʊzd/|uk_pron/c/clo/close/closed__gb_1.mp3|/kləʊzd/|us_pron/c/clo/close/closed__us_1.mp3
+close1_1|-ing form|  closing|/ˈkləʊzɪŋ/|uk_pron/c/clo/closi/closing__gb_2.mp3|/ˈkləʊzɪŋ/|us_pron/c/clo/closi/closing__us_2.mp3
+gurn_1|present simple I / you / we / they|  gurn|/ɡɜːn/|uk_pron/g/gur/gurn_/gurn__gb_2.mp3|/ɡɜːrn/|us_pron/g/gur/gurn_/gurn__us_1.mp3
+gurn_1|he / she / it|  gurns|/ɡɜːnz/|uk_pron/g/gur/gurns/gurns__gb_1.mp3|/ɡɜːrnz/|us_pron/g/gur/gurns/gurns__us_1.mp3
+gurn_1|past simple|  gurned|/ɡɜːnd/|uk_pron/g/gur/gurne/gurned__gb_1.mp3|/ɡɜːrnd/|us_pron/g/gur/gurne/gurned__us_1.mp3
+gurn_1|past participle|  gurned|/ɡɜːnd/|uk_pron/g/gur/gurne/gurned__gb_1.mp3|/ɡɜːrnd/|us_pron/g/gur/gurne/gurned__us_1.mp3
+gurn_1|-ing form|  gurning|/ˈɡɜːnɪŋ/|uk_pron/g/gur/gurni/gurning__gb_1.mp3|/ˈɡɜːrnɪŋ/|us_pron/g/gur/gurni/gurning__us_1.mp3
+snarf_1|present simple I / you / we / they|  snarf|/snɑːf/|uk_pron/s/sna/snarf/snarf__gb_1.mp3|/snɑːrf/|us_pron/s/sna/snarf/snarf__us_1.mp3
+snarf_1|he / she / it|  snarfs|/snɑːfs/|uk_pron/s/sna/snarf/snarfs__gb_1.mp3|/snɑːrfs/|us_pron/s/sna/snarf/snarfs__us_1.mp3
+snarf_1|past simple|  snarfed|/snɑːft/|uk_pron/s/sna/snarf/snarfed__gb_1.mp3|/snɑːrft/|us_pron/s/sna/snarf/snarfed__us_1.mp3
+snarf_1|past participle|  snarfed|/snɑːft/|uk_pron/s/sna/snarf/snarfed__gb_1.mp3|/snɑːrft/|us_pron/s/sna/snarf/snarfed__us_1.mp3
+snarf_1|-ing form|  snarfing|/ˈsnɑːfɪŋ/|uk_pron/s/sna/snarf/snarfing__gb_1.mp3|/ˈsnɑːrfɪŋ/|us_pron/s/sna/snarf/snarfing__us_1.mp3
+can1_1|past simple|  could|/kəd/|uk_pron/c/cou/could/could__gb_1.mp3|/kəd/|us_pron/c/cou/could/could__us_3_rr.mp3
+bid1_2|present simple I / you / we / they|  bid|/bɪd/|uk_pron/b/bid/bid__/bid__gb_3.mp3|/bɪd/|us_pron/b/bid/bid__/bid__us_1.mp3
+bid1_2|he / she / it|  bids|/bɪdz/|uk_pron/b/bid/bids_/bids__gb_1.mp3|/bɪdz/|us_pron/b/bid/bids_/bids__us_1.mp3
+bid1_2|past simple|  bid|/bɪd/|uk_pron/b/bid/bid__/bid__gb_3.mp3|/bɪd/|us_pron/b/bid/bid__/bid__us_1.mp3
+bid1_2|past participle|  bid|/bɪd/|uk_pron/b/bid/bid__/bid__gb_3.mp3|/bɪd/|us_pron/b/bid/bid__/bid__us_1.mp3
+bid1_2|-ing form|  bidding|/ˈbɪdɪŋ/|uk_pron/b/bid/biddi/bidding__gb_4.mp3|/ˈbɪdɪŋ/|us_pron/b/bid/biddi/bidding__us_1.mp3
+tear1_1|present simple I / you / we / they|  tear|/teə(r)/|uk_pron/t/tea/tear_/tear__gb_1.mp3|/ter/|us_pron/t/tea/tear_/tear__us_1.mp3
+tear1_1|he / she / it|  tears|/teəz/|uk_pron/t/tea/tears/tears__gb_1.mp3|/terz/|us_pron/t/tea/tears/tears__us_1.mp3
+tear1_1|past simple|  tore|/tɔː(r)/|uk_pron/t/tor/tore_/tore__gb_1.mp3|/tɔːr/|us_pron/t/tor/tore_/tore__us_1.mp3
+tear1_1|past participle|  torn|/tɔːn/|uk_pron/t/tor/torn_/torn__gb_1.mp3|/tɔːrn/|us_pron/t/tor/torn_/torn__us_1.mp3
+tear1_1|-ing form|  tearing|/ˈteərɪŋ/|uk_pron/t/tea/teari/tearing__gb_1.mp3|/ˈterɪŋ/|us_pron/t/tea/teari/tearing__us_2.mp3
+wound1_2|present simple I / you / we / they|  wound|/wuːnd/|uk_pron/w/wou/wound/wound__gb_2.mp3|/wuːnd/|us_pron/w/wou/wound/wound__us_2.mp3
+wound1_2|he / she / it|  wounds|/wuːndz/|uk_pron/w/wou/wound/wounds__gb_1.mp3|/wuːndz/|us_pron/w/wou/wound/wounds__us_2.mp3
+wound1_2|past simple|  wounded|/ˈwuːndɪd/|uk_pron/w/wou/wound/wounded__gb_2.mp3|/ˈwuːndɪd/|us_pron/w/wou/wound/wounded__us_3.mp3
+wound1_2|past participle|  wounded|/ˈwuːndɪd/|uk_pron/w/wou/wound/wounded__gb_2.mp3|/ˈwuːndɪd/|us_pron/w/wou/wound/wounded__us_3.mp3
+wound1_2|-ing form|  wounding|/ˈwuːndɪŋ/|uk_pron/w/wou/wound/wounding__gb_1.mp3|/ˈwuːndɪŋ/|us_pron/w/wou/wound/wounding__us_3.mp3
+commoditize_1|present simple I / you / we / they|  commoditize|/kəˈmɒdətaɪz/|uk_pron/c/com/commo/commoditize__gb_1.mp3|/kəˈmɑːdətaɪz/|us_pron/c/com/commo/commoditize__us_1.mp3
+commoditize_1|he / she / it|  commoditizes|/kəˈmɒdətaɪzɪz/|uk_pron/c/com/commo/commoditizes__gb_1.mp3|/kəˈmɑːdətaɪzɪz/|us_pron/c/com/commo/commoditizes__us_1.mp3
+commoditize_1|past simple|  commoditized|/kəˈmɒdətaɪzd/|uk_pron/c/com/commo/commoditized__gb_1.mp3|/kəˈmɑːdətaɪzd/|us_pron/c/com/commo/commoditized__us_1.mp3
+commoditize_1|past participle|  commoditized|/kəˈmɒdətaɪzd/|uk_pron/c/com/commo/commoditized__gb_1.mp3|/kəˈmɑːdətaɪzd/|us_pron/c/com/commo/commoditized__us_1.mp3
+commoditize_1|-ing form|  commoditizing|/kəˈmɒdətaɪzɪŋ/|uk_pron/c/com/commo/commoditizing__gb_1.mp3|/kəˈmɑːdətaɪzɪŋ/|us_pron/c/com/commo/commoditizing__us_1.mp3
+underperform_1|present simple I / you / we / they|  underperform|/ˌʌndəpəˈfɔːm/|uk_pron/u/und/under/underperform__gb_1.mp3|/ˌʌndərpərˈfɔːrm/|us_pron/u/und/under/underperform__us_1.mp3
+underperform_1|he / she / it|  underperforms|/ˌʌndəpəˈfɔːmz/|uk_pron/u/und/under/underperforms__gb_1.mp3|/ˌʌndərpərˈfɔːrmz/|us_pron/u/und/under/underperforms__us_1.mp3
+underperform_1|past simple|  underperformed|/ˌʌndəpəˈfɔːmd/|uk_pron/u/und/under/underperformed__gb_1.mp3|/ˌʌndərpərˈfɔːrmd/|us_pron/u/und/under/underperformed__us_1.mp3
+underperform_1|past participle|  underperformed|/ˌʌndəpəˈfɔːmd/|uk_pron/u/und/under/underperformed__gb_1.mp3|/ˌʌndərpərˈfɔːrmd/|us_pron/u/und/under/underperformed__us_1.mp3
+underperform_1|-ing form|  underperforming|/ˌʌndəpəˈfɔːmɪŋ/|uk_pron/u/und/under/underperforming__gb_1.mp3|/ˌʌndərpərˈfɔːrmɪŋ/|us_pron/u/und/under/underperforming__us_1.mp3
+wakeboard_1|present simple I / you / we / they|  wakeboard|/ˈweɪkbɔːd/|uk_pron/w/wak/wakeb/wakeboard__gb_1.mp3|/ˈweɪkbɔːrd/|us_pron/w/wak/wakeb/wakeboard__us_1.mp3
+wakeboard_1|he / she / it|  wakeboards|/ˈweɪkbɔːdz/|uk_pron/w/wak/wakeb/wakeboards__gb_1.mp3|/ˈweɪkbɔːrdz/|us_pron/w/wak/wakeb/wakeboards__us_1.mp3
+wakeboard_1|past simple|  wakeboarded|/ˈweɪkbɔːdɪd/|uk_pron/w/wak/wakeb/wakeboarded__gb_1.mp3|/ˈweɪkbɔːrdɪd/|us_pron/w/wak/wakeb/wakeboarded__us_1.mp3
+wakeboard_1|past participle|  wakeboarded|/ˈweɪkbɔːdɪd/|uk_pron/w/wak/wakeb/wakeboarded__gb_1.mp3|/ˈweɪkbɔːrdɪd/|us_pron/w/wak/wakeb/wakeboarded__us_1.mp3
+wakeboard_1|-ing form|  wakeboarding|/ˈweɪkbɔːdɪŋ/|uk_pron/w/wak/wakeb/wakeboarding__gb_1.mp3|/ˈweɪkbɔːrdɪŋ/|us_pron/w/wak/wakeb/wakeboarding__us_1.mp3
+ebay_1|present simple I / you / we / they|  eBay|/ˈiːbeɪ/|uk_pron/e/eba/ebay_/ebay__gb_1.mp3|/ˈiːbeɪ/|us_pron/e/eba/ebay_/ebay__us_1.mp3
+ebay_1|he / she / it|  eBays|/ˈiːbeɪz/|uk_pron/e/eba/ebays/ebays_1_gb_1.mp3|/ˈiːbeɪz/|us_pron/e/eba/ebays/ebays_1_us_1.mp3
+ebay_1|past simple|  eBayed|/ˈiːbeɪd/|uk_pron/e/eba/ebaye/ebayed_1_gb_1.mp3|/ˈiːbeɪd/|us_pron/e/eba/ebaye/ebayed_1_us_1.mp3
+ebay_1|past participle|  eBayed|/ˈiːbeɪd/|uk_pron/e/eba/ebaye/ebayed_1_gb_1.mp3|/ˈiːbeɪd/|us_pron/e/eba/ebaye/ebayed_1_us_1.mp3
+ebay_1|-ing form|  eBaying|/ˈiːbeɪɪŋ/|uk_pron/e/eba/ebayi/ebaying_1_gb_1.mp3|/ˈiːbeɪɪŋ/|us_pron/e/eba/ebayi/ebaying_1_us_1.mp3
+google_1|present simple I / you / we / they|  google|/ˈɡuːɡl/|uk_pron/g/goo/googl/google__gb_3.mp3|/ˈɡuːɡl/|us_pron/g/goo/googl/google__us_1.mp3
+google_1|he / she / it|  googles|/ˈɡuːɡlz/|uk_pron/g/goo/googl/googles__gb_1.mp3|/ˈɡuːɡlz/|us_pron/g/goo/googl/googles__us_1.mp3
+google_1|past simple|  googled|/ˈɡuːɡld/|uk_pron/g/goo/googl/googled__gb_1.mp3|/ˈɡuːɡld/|us_pron/g/goo/googl/googled__us_1.mp3
+google_1|past participle|  googled|/ˈɡuːɡld/|uk_pron/g/goo/googl/googled__gb_1.mp3|/ˈɡuːɡld/|us_pron/g/goo/googl/googled__us_1.mp3
+google_1|-ing form|  googling|/ˈɡuːɡlɪŋ/|uk_pron/g/goo/googl/googling__gb_1.mp3|/ˈɡuːɡlɪŋ/|us_pron/g/goo/googl/googling__us_1.mp3
+respawn_1|present simple I / you / we / they|  respawn|/ˌriːˈspɔːn/|uk_pron/r/res/respa/respawn__gb_1.mp3|/ˌriːˈspɔːn/|us_pron/r/res/respa/respawn__us_1.mp3
+respawn_1|he / she / it|  respawns|/ˌriːˈspɔːnz/|uk_pron/r/res/respa/respawns__gb_1.mp3|/ˌriːˈspɔːnz/|us_pron/r/res/respa/respawns__us_1.mp3
+respawn_1|past simple|  respawned|/ˌriːˈspɔːnd/|uk_pron/r/res/respa/respawned__gb_1.mp3|/ˌriːˈspɔːnd/|us_pron/r/res/respa/respawned__us_1.mp3
+respawn_1|past participle|  respawned|/ˌriːˈspɔːnd/|uk_pron/r/res/respa/respawned__gb_1.mp3|/ˌriːˈspɔːnd/|us_pron/r/res/respa/respawned__us_1.mp3
+respawn_1|-ing form|  respawning|/ˌriːˈspɔːnɪŋ/|uk_pron/r/res/respa/respawning__gb_1.mp3|/ˌriːˈspɔːnɪŋ/|us_pron/r/res/respa/respawning__us_1.mp3
+breastfeed_1|present simple I / you / we / they|  breastfeed|/ˈbrestfiːd/|uk_pron/b/bre/breas/breastfeed__gb_1.mp3|/ˈbrestfiːd/|us_pron/b/bre/breas/breastfeed__us_1.mp3
+breastfeed_1|he / she / it|  breastfeeds|/ˈbrestfiːdz/|uk_pron/b/bre/breas/breastfeeds__gb_1.mp3|/ˈbrestfiːdz/|us_pron/b/bre/breas/breastfeeds__us_1.mp3
+breastfeed_1|past simple|  breastfed|/ˈbrestfed/|uk_pron/b/bre/breas/breastfed__gb_1.mp3|/ˈbrestfed/|us_pron/b/bre/breas/breastfed__us_1.mp3
+breastfeed_1|past participle|  breastfed|/ˈbrestfed/|uk_pron/b/bre/breas/breastfed__gb_1.mp3|/ˈbrestfed/|us_pron/b/bre/breas/breastfed__us_1.mp3
+breastfeed_1|-ing form|  breastfeeding|/ˈbrestfiːdɪŋ/|uk_pron/b/bre/breas/breastfeeding__gb_1.mp3|/ˈbrestfiːdɪŋ/|us_pron/b/bre/breas/breastfeeding__us_1.mp3
+retail1_3|present simple I / you / we / they|  retail|/ˈriːteɪl/|uk_pron/r/ret/retai/retail__gb_1.mp3|/ˈriːteɪl/|us_pron/r/ret/retai/retail__us_1.mp3
+retail1_3|he / she / it|  retails|/ˈriːteɪlz/|uk_pron/r/ret/retai/retails__gb_1.mp3|/ˈriːteɪlz/|us_pron/r/ret/retai/retails__us_1.mp3
+retail1_3|past simple|  retailed|/ˈriːteɪld/|uk_pron/r/ret/retai/retailed__gb_1.mp3|/ˈriːteɪld/|us_pron/r/ret/retai/retailed__us_1.mp3
+retail1_3|past participle|  retailed|/ˈriːteɪld/|uk_pron/r/ret/retai/retailed__gb_1.mp3|/ˈriːteɪld/|us_pron/r/ret/retai/retailed__us_1.mp3
+retail1_3|-ing form|  retailing|/ˈriːteɪlɪŋ/|uk_pron/r/ret/retai/retailing__gb_1.mp3|/ˈriːteɪlɪŋ/|us_pron/r/ret/retai/retailing__us_1.mp3
+test-drive_2|present simple I / you / we / they|  test-drive|/ˈtest draɪv/|uk_pron/t/tes/test_/test_drive_1_gb_1.mp3|/ˈtest draɪv/|us_pron/t/tes/test_/test_drive_1_us_1.mp3
+test-drive_2|he / she / it|  test-drives|/ˈtest draɪvz/|uk_pron/t/tes/test_/test_drives_1_gb_1.mp3|/ˈtest draɪvz/|us_pron/t/tes/test_/test_drives_1_us_1.mp3
+test-drive_2|past simple|  test-drove|/ˈtest drəʊv/|uk_pron/t/tes/test_/test_drove_1_gb_1.mp3|/ˈtest drəʊv/|us_pron/t/tes/test_/test_drove_1_us_1.mp3
+test-drive_2|past participle|  test-driven|/ˈtest drɪvn/|uk_pron/t/tes/test_/test_driven_1_gb_1.mp3|/ˈtest drɪvn/|us_pron/t/tes/test_/test_driven_1_us_1.mp3
+test-drive_2|-ing form|  test-driving|/ˈtest draɪvɪŋ/|uk_pron/t/tes/test_/test_driving_1_gb_1.mp3|/ˈtest draɪvɪŋ/|us_pron/t/tes/test_/test_driving_1_us_1.mp3
+microblog_1|present simple I / you / we / they|  microblog|/ˈmaɪkrəʊblɒɡ/|uk_pron/m/mic/micro/microblog__gb_1.mp3|/ˈmaɪkrəʊblɑːɡ/|us_pron/m/mic/micro/microblog__us_1.mp3
+microblog_1|he / she / it|  microblogs|/ˈmaɪkrəʊblɒɡz/|uk_pron/m/mic/micro/microblogs__gb_1.mp3|/ˈmaɪkrəʊblɑːɡz/|us_pron/m/mic/micro/microblogs__us_1.mp3
+microblog_1|past simple|  microblogged|/ˈmaɪkrəʊblɒɡd/|uk_pron/m/mic/micro/microblogged__gb_1.mp3|/ˈmaɪkrəʊblɑːɡd/|us_pron/m/mic/micro/microblogged__us_1.mp3
+microblog_1|past participle|  microblogged|/ˈmaɪkrəʊblɒɡd/|uk_pron/m/mic/micro/microblogged__gb_1.mp3|/ˈmaɪkrəʊblɑːɡd/|us_pron/m/mic/micro/microblogged__us_1.mp3
+microblog_1|-ing form|  microblogging|/ˈmaɪkrəʊblɒɡɪŋ/|uk_pron/m/mic/micro/microblogging__gb_1.mp3|/ˈmaɪkrəʊblɑːɡɪŋ/|us_pron/m/mic/micro/microblogging__us_1_rr.mp3
+upvote_1|present simple I / you / we / they|  upvote|/ˈʌpvəʊt/|uk_pron/u/upv/upvot/upvote__gb_1.mp3|/ˈʌpvəʊt/|us_pron/u/upv/upvot/upvote__us_1.mp3
+upvote_1|he / she / it|  upvotes|/ˈʌpvəʊts/|uk_pron/u/upv/upvot/upvotes__gb_1.mp3|/ˈʌpvəʊts/|us_pron/u/upv/upvot/upvotes__us_1.mp3
+upvote_1|past simple|  upvoted|/ˈʌpvəʊtɪd/|uk_pron/u/upv/upvot/upvoted__gb_1.mp3|/ˈʌpvəʊtɪd/|us_pron/u/upv/upvot/upvoted__us_1.mp3
+upvote_1|past participle|  upvoted|/ˈʌpvəʊtɪd/|uk_pron/u/upv/upvot/upvoted__gb_1.mp3|/ˈʌpvəʊtɪd/|us_pron/u/upv/upvot/upvoted__us_1.mp3
+upvote_1|-ing form|  upvoting|/ˈʌpvəʊtɪŋ/|uk_pron/u/upv/upvot/upvoting__gb_1.mp3|/ˈʌpvəʊtɪŋ/|us_pron/u/upv/upvot/upvoting__us_1.mp3
+do1_1|present simple I / you / we / they|  do|/duː/|uk_pron/d/do_/do__g/do__gb_3.mp3|/duː/|us_pron/d/do_/do__u/do__us_3_rr.mp3
+do1_1|he / she / it|  does|/dʌz/|uk_pron/d/doe/does_/does__gb_2.mp3|/dʌz/|us_pron/d/doe/does_/does__us_2_rr.mp3
+do1_1|past simple|  did|/dɪd/|uk_pron/d/did/did__/did__gb_1.mp3|/dɪd/|us_pron/d/did/did__/did__us_1.mp3
+do1_1|past participle|  done|/dʌn/|uk_pron/d/don/done_/done__gb_2.mp3|/dʌn/|us_pron/d/don/done_/done__us_2.mp3
+do1_1|-ing form|  doing|/ˈduːɪŋ/|uk_pron/d/doi/doing/doing__gb_1.mp3|/ˈduːɪŋ/|us_pron/d/doi/doing/doing__us_1.mp3
+feud_2|present simple I / you / we / they|  feud|/fjuːd/|uk_pron/f/feu/feud_/feud__gb_1.mp3|/fjuːd/|us_pron/f/feu/feud_/feud__us_1.mp3
+feud_2|he / she / it|  feuds|/fjuːdz/|uk_pron/f/feu/feuds/feuds__gb_1.mp3|/fjuːdz/|us_pron/f/feu/feuds/feuds__us_1.mp3
+feud_2|past simple|  feuded|/ˈfjuːdɪd/|uk_pron/f/feu/feude/feuded__gb_1.mp3|/ˈfjuːdɪd/|us_pron/f/feu/feude/feuded__us_1.mp3
+feud_2|past participle|  feuded|/ˈfjuːdɪd/|uk_pron/f/feu/feude/feuded__gb_1.mp3|/ˈfjuːdɪd/|us_pron/f/feu/feude/feuded__us_1.mp3
+feud_2|-ing form|  feuding|/ˈfjuːdɪŋ/|uk_pron/f/feu/feudi/feuding__gb_1.mp3|/ˈfjuːdɪŋ/|us_pron/f/feu/feudi/feuding__us_1.mp3
+misgender_1|present simple I / you / we / they|  misgender|/ˌmɪsˈdʒendə(r)/|uk_pron/m/mis/misge/misgender__gb_1.mp3|/ˌmɪsˈdʒendər/|us_pron/m/mis/misge/misgender__us_1.mp3
+misgender_1|he / she / it|  misgenders|/ˌmɪsˈdʒendəz/|uk_pron/m/mis/misge/misgenders__gb_1.mp3|/ˌmɪsˈdʒendərz/|us_pron/m/mis/misge/misgenders__us_1.mp3
+misgender_1|past simple|  misgendered|/ˌmɪsˈdʒendəd/|uk_pron/m/mis/misge/misgendered__gb_1.mp3|/ˌmɪsˈdʒendərd/|us_pron/m/mis/misge/misgendered__us_1.mp3
+misgender_1|past participle|  misgendered|/ˌmɪsˈdʒendəd/|uk_pron/m/mis/misge/misgendered__gb_1.mp3|/ˌmɪsˈdʒendərd/|us_pron/m/mis/misge/misgendered__us_1.mp3
+misgender_1|-ing form|  misgendering|/ˌmɪsˈdʒendərɪŋ/|uk_pron/m/mis/misge/misgendering__gb_1.mp3|/ˌmɪsˈdʒendərɪŋ/|us_pron/m/mis/misge/misgendering__us_1.mp3
+gazunder_1|present simple I / you / we / they|  gazunder|/ɡəˈzʌndə(r)/|uk_pron/g/gaz/gazun/gazunder__gb_1.mp3|/ɡəˈzʌndər/|us_pron/g/gaz/gazun/gazunder__us_2.mp3
+gazunder_1|he / she / it|  gazunders|/ɡəˈzʌndəz/|uk_pron/g/gaz/gazun/gazunders__gb_1.mp3|/ɡəˈzʌndərz/|us_pron/g/gaz/gazun/gazunders__us_1.mp3
+gazunder_1|past simple|  gazundered|/ɡəˈzʌndəd/|uk_pron/g/gaz/gazun/gazundered__gb_1.mp3|/ɡəˈzʌndərd/|us_pron/g/gaz/gazun/gazundered__us_1.mp3
+gazunder_1|past participle|  gazundered|/ɡəˈzʌndəd/|uk_pron/g/gaz/gazun/gazundered__gb_1.mp3|/ɡəˈzʌndərd/|us_pron/g/gaz/gazun/gazundered__us_1.mp3
+gazunder_1|-ing form|  gazundering|/ɡəˈzʌndərɪŋ/|uk_pron/g/gaz/gazun/gazundering__gb_1.mp3|/ɡəˈzʌndərɪŋ/|us_pron/g/gaz/gazun/gazundering__us_2.mp3
+fist-bump_2|present simple I / you / we / they|  fist-bump|/ˈfɪst bʌmp/|uk_pron/f/fis/fist_/fist_bump_1_gb_1.mp3|/ˈfɪst bʌmp/|us_pron/f/fis/fist_/fist_bump_1_us_1.mp3
+fist-bump_2|he / she / it|  fist-bumps|/ˈfɪst bʌmps/|uk_pron/f/fis/fist_/fist_bumps_1_gb_1.mp3|/ˈfɪst bʌmps/|us_pron/f/fis/fist_/fist_bumps_1_us_1.mp3
+fist-bump_2|past simple|  fist-bumped|/ˈfɪst bʌmpt/|uk_pron/f/fis/fist_/fist_bumped_1_gb_1.mp3|/ˈfɪst bʌmpt/|us_pron/f/fis/fist_/fist_bumped_1_us_1.mp3
+fist-bump_2|past participle|  fist-bumped|/ˈfɪst bʌmpt/|uk_pron/f/fis/fist_/fist_bumped_1_gb_1.mp3|/ˈfɪst bʌmpt/|us_pron/f/fis/fist_/fist_bumped_1_us_1.mp3
+fist-bump_2|-ing form|  fist-bumping|/ˈfɪst bʌmpɪŋ/|uk_pron/f/fis/fist_/fist_bumping_1_gb_1.mp3|/ˈfɪst bʌmpɪŋ/|us_pron/f/fis/fist_/fist_bumping_1_us_1.mp3
+pwn_1|present simple I / you / we / they|  pwn|/pəʊn/|uk_pron/p/pwn/pwn__/pwn__gb_1.mp3|/pəʊn/|us_pron/p/pwn/pwn__/pwn__us_1.mp3
+pwn_1|he / she / it|  pwns|/pəʊnz/|uk_pron/p/pwn/pwns_/pwns__gb_1.mp3|/pəʊnz/|us_pron/p/pwn/pwns_/pwns__us_1.mp3
+pwn_1|past simple|  pwned|/pəʊnd/|uk_pron/p/pwn/pwned/pwned__gb_1.mp3|/pəʊnd/|us_pron/p/pwn/pwned/pwned__us_1.mp3
+pwn_1|past participle|  pwned|/pəʊnd/|uk_pron/p/pwn/pwned/pwned__gb_1.mp3|/pəʊnd/|us_pron/p/pwn/pwned/pwned__us_1.mp3
+pwn_1|-ing form|  pwninɡ|/ˈpəʊnɪŋ/|uk_pron/p/pwn/pwnin/pwning__gb_1.mp3|/ˈpəʊnɪŋ/|us_pron/p/pwn/pwnin/pwning__us_1.mp3
+process1_2|present simple I / you / we / they|  process|/ˈprəʊses/|uk_pron/p/pro/proce/process__gb_3.mp3|/ˈprɑːses/|us_pron/p/pro/proce/process__us_1.mp3
+process1_2|he / she / it|  processes|/ˈprəʊsesɪz/|uk_pron/p/pro/proce/processes__gb_1.mp3|/ˈprɑːsesɪz/|us_pron/p/pro/proce/processes__us_1.mp3
+process1_2|past simple|  processed|/ˈprəʊsest/|uk_pron/p/pro/proce/processed__gb_1.mp3|/ˈprɑːsest/|us_pron/p/pro/proce/processed__us_1.mp3
+process1_2|past participle|  processed|/ˈprəʊsest/|uk_pron/p/pro/proce/processed__gb_1.mp3|/ˈprɑːsest/|us_pron/p/pro/proce/processed__us_1.mp3
+process1_2|-ing form|  processing|/ˈprəʊsesɪŋ/|uk_pron/p/pro/proce/processing__gb_1.mp3|/ˈprɑːsesɪŋ/|us_pron/p/pro/proce/processing__us_1.mp3
+spellcheck_1|present simple I / you / we / they|  spellcheck|/ˈspeltʃek/|uk_pron/s/spe/spell/spellcheck__gb_1.mp3|/ˈspeltʃek/|us_pron/s/spe/spell/spellcheck__us_1.mp3
+spellcheck_1|he / she / it|  spellchecks|/ˈspeltʃeks/|uk_pron/s/spe/spell/spellchecks__gb_1.mp3|/ˈspeltʃeks/|us_pron/s/spe/spell/spellchecks__us_1.mp3
+spellcheck_1|past simple|  spellchecked|/ˈspeltʃekt/|uk_pron/s/spe/spell/spellchecked__gb_1.mp3|/ˈspeltʃekt/|us_pron/s/spe/spell/spellchecked__us_1.mp3
+spellcheck_1|past participle|  spellchecked|/ˈspeltʃekt/|uk_pron/s/spe/spell/spellchecked__gb_1.mp3|/ˈspeltʃekt/|us_pron/s/spe/spell/spellchecked__us_1.mp3
+spellcheck_1|-ing form|  spellchecking|/ˈspeltʃekɪŋ/|uk_pron/s/spe/spell/spellchecking__gb_1.mp3|/ˈspeltʃekɪŋ/|us_pron/s/spe/spell/spellchecking__us_1.mp3
+sms_2|present simple I / you / we / they|  SMS|/ˌes em ˈes/|uk_pron/s/sms/sms__/sms__gb_1.mp3|/ˌes em ˈes/|us_pron/s/sms/sms__/sms__us_1.mp3
+sms_2|he / she / it|  SMSs|/ˌes em ˈesɪz/|uk_pron/s/sms/smss_/smss_1_gb_1.mp3|/ˌes em ˈesɪz/|us_pron/s/sms/smss_/smss_1_us_1.mp3
+sms_2|past simple|  SMSed|/ˌes em ˈest/|uk_pron/s/sms/smsed/smsed_1_gb_1.mp3|/ˌes em ˈest/|us_pron/s/sms/smsed/smsed_1_us_1.mp3
+sms_2|past participle|  SMSed|/ˌes em ˈest/|uk_pron/s/sms/smsed/smsed_1_gb_1.mp3|/ˌes em ˈest/|us_pron/s/sms/smsed/smsed_1_us_1.mp3
+sms_2|-ing form|  SMSing|/ˌes em ˈesɪŋ/|uk_pron/s/sms/smsin/smsing_1_gb_1.mp3|/ˌes em ˈesɪŋ/|us_pron/s/sms/smsin/smsing_1_us_1.mp3
+lead1_1|present simple I / you / we / they|  lead|/liːd/|uk_pron/l/lea/lead_/lead__gb_1.mp3|/liːd/|us_pron/l/lea/lead_/lead__us_1.mp3
+lead1_1|he / she / it|  leads|/liːdz/|uk_pron/l/lea/leads/leads__gb_2.mp3|/liːdz/|us_pron/l/lea/leads/leads__us_2.mp3
+lead1_1|past simple|  led|/led/|uk_pron/l/lea/lead_/lead__gb_3.mp3|/led/|us_pron/l/led/led__/led__us_3.mp3
+lead1_1|past participle|  led|/led/|uk_pron/l/lea/lead_/lead__gb_3.mp3|/led/|us_pron/l/led/led__/led__us_3.mp3
+lead1_1|-ing form|  leading|/ˈliːdɪŋ/|uk_pron/l/lea/leadi/leading__gb_4.mp3|/ˈliːdɪŋ/|us_pron/l/lea/leadi/leading__us_4.mp3
+wind2_2|present simple I / you / we / they|  wind|/waɪnd/|uk_pron/w/win/wind_/wind__gb_2.mp3|/waɪnd/|us_pron/w/win/wind_/wind__us_2.mp3
+wind2_2|he / she / it|  winds|/waɪndz/|uk_pron/w/win/winds/winds__gb_2.mp3|/waɪndz/|us_pron/w/win/winds/winds__us_4.mp3
+wind2_2|past simple|  wound|/waʊnd/|uk_pron/w/wou/wound/wound__gb_3.mp3|/waʊnd/|us_pron/w/wou/wound/wound__us_3.mp3
+wind2_2|past participle|  wound|/waʊnd/|uk_pron/w/wou/wound/wound__gb_3.mp3|/waʊnd/|us_pron/w/wou/wound/wound__us_3.mp3
+wind2_2|-ing form|  winding|/ˈwaɪndɪŋ/|uk_pron/w/win/windi/winding__gb_1.mp3|/ˈwaɪndɪŋ/|us_pron/w/win/windi/winding__us_5.mp3
+uninstall_1|present simple I / you / we / they|  uninstall|/ˌʌnɪnˈstɔːl/|uk_pron/u/uni/unins/uninstall__gb_1.mp3|/ˌʌnɪnˈstɔːl/|us_pron/u/uni/unins/uninstall__us_1.mp3
+uninstall_1|he / she / it|  uninstalls|/ˌʌnɪnˈstɔːlz/|uk_pron/u/uni/unins/uninstalls__gb_1.mp3|/ˌʌnɪnˈstɔːlz/|us_pron/u/uni/unins/uninstalls__us_1.mp3
+uninstall_1|past simple|  uninstalled|/ˌʌnɪnˈstɔːld/|uk_pron/u/uni/unins/uninstalled__gb_1.mp3|/ˌʌnɪnˈstɔːld/|us_pron/u/uni/unins/uninstalled__us_1.mp3
+uninstall_1|past participle|  uninstalled|/ˌʌnɪnˈstɔːld/|uk_pron/u/uni/unins/uninstalled__gb_1.mp3|/ˌʌnɪnˈstɔːld/|us_pron/u/uni/unins/uninstalled__us_1.mp3
+uninstall_1|-ing form|  uninstalling|/ˌʌnɪnˈstɔːlɪŋ/|uk_pron/u/uni/unins/uninstalling__gb_1.mp3|/ˌʌnɪnˈstɔːlɪŋ/|us_pron/u/uni/unins/uninstalling__us_1.mp3
+vlog_1|present simple I / you / we / they|  vlog|/vlɒɡ/|uk_pron/v/vlo/vlog_/vlog__gb_2.mp3|/vlɑːɡ/|us_pron/v/vlo/vlog_/vlog__us_2.mp3
+vlog_1|he / she / it|  vlogs|/vlɒɡz/|uk_pron/v/vlo/vlogs/vlogs__gb_1.mp3|/vlɑːɡz/|us_pron/v/vlo/vlogs/vlogs__us_1.mp3
+vlog_1|past simple|  vlogged|/vlɒɡd/|uk_pron/v/vlo/vlogg/vlogged__gb_1.mp3|/vlɑːɡd/|us_pron/v/vlo/vlogg/vlogged__us_1.mp3
+vlog_1|past participle|  vlogged|/vlɒɡd/|uk_pron/v/vlo/vlogg/vlogged__gb_1.mp3|/vlɑːɡd/|us_pron/v/vlo/vlogg/vlogged__us_1.mp3
+vlog_1|-ing form|  vlogging|/ˈvlɒɡɪŋ/|uk_pron/v/vlo/vlogg/vlogging__gb_1.mp3|/ˈvlɑːɡɪŋ/|us_pron/v/vlo/vlogg/vlogging__us_1.mp3
+homeschool_1|present simple I / you / we / they|  homeschool|/ˌhəʊmˈskuːl/|uk_pron/h/hom/homes/homeschool__gb_1.mp3|/ˌhəʊmˈskuːl/|us_pron/h/hom/homes/homeschool__us_1.mp3
+homeschool_1|he / she / it|  homeschools|/ˌhəʊmˈskuːlz/|uk_pron/h/hom/homes/homeschools__gb_1.mp3|/ˌhəʊmˈskuːlz/|us_pron/h/hom/homes/homeschools__us_1.mp3
+homeschool_1|past simple|  homeschooled|/ˌhəʊmˈskuːld/|uk_pron/h/hom/homes/homeschooled__gb_1.mp3|/ˌhəʊmˈskuːld/|us_pron/h/hom/homes/homeschooled__us_1.mp3
+homeschool_1|past participle|  homeschooled|/ˌhəʊmˈskuːld/|uk_pron/h/hom/homes/homeschooled__gb_1.mp3|/ˌhəʊmˈskuːld/|us_pron/h/hom/homes/homeschooled__us_1.mp3
+homeschool_1|-ing form|  homeschooling|/ˌhəʊmˈskuːlɪŋ/|uk_pron/h/hom/home_/home_schooling_1_gb_1.mp3|/ˌhəʊmˈskuːlɪŋ/|us_pron/h/hom/home_/home_schooling_1_us_1.mp3

@@ -11668,3 +11668,203 @@ lay, put, roll, etc. out the welcome mat (for somebody)|NA|welcome-mat_1|The cou
 (see) dollar signs|(informal)|dollar-sign_1|Many inventors with dollar signs in their eyes are eager to come up with the latest gadget.|9994915
 in old money|NA|old-money_1|The fish measured 29 centimetres (that's a foot in old money).|81096665
 it’s not brain surgery|NA|brain-surgery_1|Look, this isn't brain surgery we're doing here.|42270787
+take a/your bow|NA|bow1_2|She came back on stage to take another bow.|88415062
+take a/your bow|NA|bow1_2|The song ended and Albert took a bow.|88415062
+take a/your bow|NA|bow1_2| (figurative) The boss takes his final bow today.|88415062
+take a/your bow|NA|bow1_2| (figurative) The team's chairman takes his final bow at this match.|88415062
+lick your wounds|NA|wound1_1|Leeds are still licking their wounds after their humiliating defeat by Grimsby.|39655391
+reopen old wounds|NA|wound1_1|His comments have served only to reopen old wounds.|59766739
+be on a tear|NA|tear1_2|Business confidence has soared and the economy is on a tear.|22452579
+be on a tear|NA|tear1_2|The team has been on a tear since defeating the Red Sox in May.|22452579
+wear and tear|NA|tear1_2|The insurance policy does not cover damage caused by normal wear and tear.|95030812
+wear and tear|NA|tear1_2|The living-room carpet has to stand up to the combined wear and tear of two dogs and three children.|95030812
+a following wind|NA|wind1_1|With a generous following wind, we sped across the lake.|46674523
+a following wind|NA|wind1_1| (figurative) With a bit of luck and a following wind, the project will be completed on schedule. |46674523
+get wind of something|NA|wind1_1|She didn’t want reporters getting wind of their plans.|79912006
+in the wind|NA|wind1_1|Once again, changes are in the wind.|70070597
+like the wind|NA|wind1_1|We ran like the wind.|87273963
+put the wind up somebody|NA|wind1_1|Tell him that the police have been informed—that’ll put the wind up him.|91370420
+take the wind out of somebody’s sails|NA|wind1_1|When I agreed to his suggestion at once, it really took the wind out of his sails.|29154337
+throw/cast caution to the wind(s)|NA|wind1_1|He threw caution to the wind and dived into the water after the child.|21408681
+a wind/the winds of change|NA|wind1_1|A wind of change was blowing through the banking world.|86050680
+kick the can (down the road)|NA|can2_1|This is another attempt to kick the can down the road and leave it to the next generation.|25488338
+at long last|NA|last1_1|At long last his prayers had been answered.|85984150
+the day, week, month, etc. before last|NA|last1_1|I haven't seen him since the summer before last.|71636680
+every last…|NA|last1_1|We spent every last penny we had on the house.|11810431
+famous last words|NA|last1_1|‘Everything's under control.’ ‘Famous last words!’|75102571
+first/last thing|NA|last1_1|I need the report on my desk first thing Monday morning.|97625585
+first/last thing|NA|last1_1|I took the dog for a walk last thing before going to bed.|97625585
+have the last laugh|NA|last1_1|We'll have the last laugh if she finds out that you're the one who played the trick.|98565802
+in the final/last analysis|NA|last1_1|In the final analysis, it's a matter of personal choice.|27397923
+in the last resort|NA|last1_1|In the last resort we can always walk home.|52550418
+the last minute/moment|NA|last1_1|They changed the plans at the last minute.|88631526
+the last minute/moment|NA|last1_1|Don't leave your decision to the last moment.|88631526
+a/your last resort|NA|last1_1|I've tried everyone else and now you're my last resort.|22243036
+the last word (in something)|NA|last1_1|These apartments are the last word in luxury.|41105239
+the last/final word (on something)|NA|last1_1|He always has to have the last word in any argument.|34833878
+the last/final word (on something)|NA|last1_1|I’m willing to wait one more week, and that’s my final word on the subject.|34833878
+the last/final word (on something)|NA|last1_1|The Chairman always has the last word on financial decisions.|34833878
+to a man | to the last man|NA|last1_1|They answered ‘Yes,’ to a man.|90117956
+to a man | to the last man|NA|last1_1|They were all destroyed, to the last man.|90117956
+a week yesterday, last Monday, etc.|NA|last1_1|She started work a week yesterday.|61830031
+have another string/more strings to your bow|NA|bow2_1|The exhibition shows that he has other strings to his artistic bow.|18299048
+alarm bells ring/are ringing|NA|ring2_1|The government’s proposal has set alarm bells ringing for people on low incomes.|26369368
+ring a bell|NA|ring2_1|His name rings a bell but I can't think where we met.|91637632
+ring the changes (with something)|NA|ring2_1|Ring the changes with a new colour.|67293619
+ring in your ears/head|NA|ring2_1|His warning was still ringing in my ears.|12312776
+ring off the hook|NA|ring2_1|The phone has been ringing off the hook with offers of help.|95680146
+ring true/hollow/false|NA|ring2_1|It may seem a strange story but it rings true to me.|31177920
+ring true/hollow/false|NA|ring2_1|His expressions of support rang rather hollow.|31177920
+ring true/hollow/false|NA|ring2_1|His promise rang hollow.|31177920
+lie through your teeth|NA|lie2_1|The witness was clearly lying through his teeth.|9268513
+above/below the fold|NA|below-the-fold_1|Your ad will be placed above the fold for prominent exposure.|76249419
+above/below the fold|NA|below-the-fold_1|The images all appeared below the fold.|76249419
+sow the seeds of something|NA|sow1_1|In this way he sowed the seeds of his own success.|53694633
+sow (your) wild oats|NA|sow1_1|He wants to leave home, sow his wild oats and learn about life.|40471206
+the/a curate’s egg|NA|curate1_1|Their investment plan shows the familiar curate's egg pattern of some bits doing well and others doing badly.|51799160
+plus or minus|NA|plus1_1|The margin of error was plus or minus three percentage points.|21591110
+in the director's chair|NA|director-s-chair_1|For this fifth movie in the series, Steven Spielberg is back in the director's chair.|51611317
+turn in his/her grave|(British English)|grave1_1|My father would turn in his grave if he knew.|5494814
+dos and don’ts|NA|dos-and-don-ts_1|Here are some dos and don'ts for exercise during pregnancy.|95376665
+just a minute/moment/second|NA|second1_3|‘Is Mr Burns available?’ ‘Just a second, please, I'll check.’|40775778
+wait a minute/moment/second|NA|second1_3|Can you wait a second while I make a call?|56650918
+wait a minute/moment/second|NA|second1_3|Hey! Wait a minute! I'll come with you!|56650918
+wait a minute/moment/second|NA|second1_3|Wait a minute—this isn't the right key.|80482905
+to the gills|NA|gill1_1|I was stuffed to the gills with chocolate cake.|2862626
+on/off (the) air|NA|on-air_1|We will be back on air tomorrow morning at 7.|31949794
+on/off (the) air|NA|on-air_1|The programme was taken off the air over the summer.|31949794
+at a snail’s pace|NA|pace1_1|Traffic had slowed to a snail’s pace.|54244407
+force the pace|(especially British English)|pace1_1|The demonstrations have succeeded in forcing the pace of change.|93032996
+go through your paces | show your paces|NA|pace1_1|We watched the horses going through their paces.|92082065
+go through your paces | show your paces|NA|pace1_1|The British team showed its paces during a training session in the hotel pool.|92082065
+keep pace (with somebody/something)|NA|pace1_1|She found it hard to keep pace with him as he strode off.|2142594
+keep pace (with somebody/something)|NA|pace1_1|The younger children struggled to keep pace with the older ones.|2142594
+keep pace (with somebody/something)|NA|pace1_1|Until now, wage increases have always kept pace with inflation.|2142594
+keep pace (with somebody/something)|NA|pace1_1|The company is struggling to keep pace with changes in the market.|2142594
+off the pace|NA|pace1_1|Last year's champion is still three shots off the pace (= in golf).|7189827
+put somebody/something through their/its paces|NA|pace1_1|Youngsters will be put through their paces by qualified instructors.|43711700
+put somebody/something through their/its paces|NA|pace1_1|We sent our reporter to put Ford’s newest model through its paces.|43711700
+set the pace|NA|pace1_1|The company is no longer setting the pace in the home computer market.|36931102
+set the pace|NA|pace1_1|Willis set the pace for the first mile.|31666021
+above/below the fold|NA|above-the-fold_1|Your ad will be placed above the fold for prominent exposure.|76249419
+above/below the fold|NA|above-the-fold_1|The images all appeared below the fold.|76249419
+lower the bar|NA|lower1_1|In the current economic climate we may need to lower the bar on quotas.|78393448
+lower yourself (by doing something)|NA|lower1_1|I wouldn't lower myself by working for him.|20331497
+raise/lower your sights|NA|lower1_1|If they can’t afford such a big house, they’ll just have to lower their sights a little.|58052313
+raise/lower your sights|NA|lower1_1|After failing to get into university, he lowered his sights and got a job in a shop.|58052313
+raise/lower the temperature|NA|lower1_1|His angry refusal to agree raised the temperature of the meeting.|89621195
+raise/lower the temperature|NA|lower1_1|The government tried to lower the political temperature by agreeing to some of the demands.|89621195
+kick something into the long grass/into touch|NA|grass_1|He tends to deal with disputes by kicking them into the long grass.|55514772
+a snake (in the grass)|NA|grass_1|I came to realize that he's just a snake in the grass.|72964869
+(at) any minute (now)|NA|minute1_1|Hurry up! He'll be back any minute now.|14517244
+by the minute|NA|minute1_1|Matters grew worse by the minute.|92763251
+fifteen minutes of fame|NA|minute1_1|Everybody wants their fifteen minutes of fame.|39117785
+just a minute/moment/second|NA|minute1_1|‘Is Mr Burns available?’ ‘Just a second, please, I'll check.’|40775778
+the last minute/moment|NA|minute1_1|They changed the plans at the last minute.|88631526
+the last minute/moment|NA|minute1_1|Don't leave your decision to the last moment.|88631526
+the minute (that)…|NA|minute1_1|I want to see him the minute he arrives.|18480491
+the minute (that)…|NA|minute1_1|The minute she walked through the door I thought she looked different.|18480491
+not for a/one minute|NA|minute1_1|I don't think for a minute that she'll accept but you can ask her.|9030795
+not for a/one minute|NA|minute1_1|I never thought for a minute he'd refuse.|9030795
+this minute|NA|minute1_1|Come down this minute!|46219723
+this minute|NA|minute1_1|I don't know what I'm going to do yet—I've just this minute found out.|46219723
+this minute|NA|minute1_1|Come here this minute!|46219723
+to the minute|NA|minute1_1|The train arrived at 9.05 to the minute.|17760415
+up to the minute|(informal)|minute1_1|Her styles are always up to the minute.|87179354
+up to the minute|(informal)|minute1_1|The traffic reports are up to the minute.|59413242
+wait a minute/moment/second|NA|minute1_1|Can you wait a second while I make a call?|56650918
+wait a minute/moment/second|NA|minute1_1|Hey! Wait a minute! I'll come with you!|56650918
+wait a minute/moment/second|NA|minute1_1|Wait a minute—this isn't the right key.|80482905
+close the book on something|NA|close1_1|The police have closed the book on the case (= they have stopped trying to solve it).|31521156
+close/shut the door on something|NA|close1_1|She was careful not to close the door on the possibility of further talks.|96856851
+close its doors | close shop|NA|close1_1|The factory closed its doors for the last time in 2009.|8261804
+close its doors | close shop|NA|close1_1|The company closed shop and left the US last year.|8261804
+close ranks|NA|close1_1|It's not unusual for the police to close ranks when one of their officers is being investigated.|63420976
+shut/close your ears to something|NA|close1_1|She decided to shut her ears to all the rumours.|20018666
+shut/close your eyes to something|NA|close1_1|You can't just close your eyes to his violence.|47508086
+shut/close your eyes to something|NA|close1_1|They seem intent on shutting their eyes to the problems of pollution.|47508086
+with your eyes shut/closed|NA|close1_1|I've made this trip so often, I could do it with my eyes shut.|24662158
+go down like a lead balloon|NA|lead2_1|My suggestion went down like a lead balloon.|89459526
+swing the lead|NA|lead2_1|I don't think there's anything wrong with her—she's just swinging the lead.|51060140
+at/from close quarters|NA|close2_1|fighting at close quarters|4041180
+at/from close range|NA|close2_1|The president was shot at close range.|30879612
+at/from close range|NA|close2_1|She scored from close range.|30879612
+(close/near) at hand|NA|close2_1|Help was at hand.|45942812
+(close/near) at hand|NA|close2_1|The property is ideally located with all local amenities close at hand.|45942812
+a close call/shave|NA|close2_1|He had a close shave when his brakes failed on the mountain road.|60665503
+a close thing|NA|close2_1|We got him out in the end, but it was a close thing.|59191883
+close to home|NA|close2_1|Her remarks about me were embarrassingly close to home.|4191141
+close to home|NA|close2_1|The next year tragedy struck much closer to home.|32819908
+keep a close eye/watch on somebody/something|NA|close2_1|Over the next few months we will keep a close eye on sales.|93680605
+too close for comfort|NA|close2_1|When she leaves the stage, the fans can get a little too close for comfort.|95557911
+too close for comfort|NA|close2_1| (figurative) They got the win but it was a tight match, definitely too close for comfort.|95557911
+up close and personal|NA|close2_1|Get up close and personal with the koalas at the San Diego Zoo.|13332914
+up close and personal|NA|close2_1|For the last 30 years, I’ve been up close and personal with people whose lives were in crisis.|13332914
+can’t be doing with somebody/something | can't be doing with somebody doing something|NA|can1_1|I can't be doing with people who complain all the time.|4793049
+can’t be doing with somebody/something | can't be doing with somebody doing something|NA|can1_1|I can’t be doing with you moaning all the time.|4793049
+no can do|NA|can1_1|Sorry, no can do. I just don't have the time.|28313495
+what am I bid?|NA|bid1_2|What am I bid for this vase?|584060
+be torn (between A and B)|NA|tear1_1|I was torn between my parents and my friend.|52665904
+tear somebody/something apart, to shreds, to bits, etc.|NA|tear1_1|We tore the other team apart in the second half.|65463708
+tear somebody/something apart, to shreds, to bits, etc.|NA|tear1_1|The critics tore his last movie to shreds.|65463708
+tear your hair (out)|NA|tear1_1|She's keeping very calm—anyone else would be tearing their hair out.|55574533
+tear your hair (out)|NA|tear1_1|I felt like tearing my hair out in frustration.|55574533
+tear/rip the heart out of something|NA|tear1_1|Closing the factory tore the heart out of the community.|5620142
+in/into the stratosphere|(informal)|the-stratosphere_1|The technology boom sent share prices into the stratosphere.|45315237
+bury the lede/lead|(US English)|lead1_2|Unfortunately, he buried the lede in the last paragraph of the story.|55438014
+(not) get/have a look-in|NA|look-in_2|She talks so much that nobody else can get a look-in.|30790314
+(not) get/have a look-in|NA|look-in_2|The issue of freedom of information did not get a look-in (= it was not even discussed).|30790314
+be close to/near the mark|NA|close2_2|Such guesses are thought to be close to the mark.|83633103
+be close to/near the mark|NA|close2_2|‘The Times’ was nearer the mark when it said…|83633103
+close at hand|NA|close2_2|There are good cafes and a restaurant close at hand.|12469502
+close by (somebody/something)|NA|close2_2|Our friends live close by.|26827314
+close by (somebody/something)|NA|close2_2|The route passes close by the town.|26827314
+close on | close to|NA|close2_2|She is close on 60.|86152798
+close on | close to|NA|close2_2|It is close on midnight.|86152798
+close on | close to|NA|close2_2|a profit close to £200 million|86152798
+a close-run thing|NA|close2_2|Mr Taylor’s election defeat was a close-run thing.|84893140
+a close-run thing|NA|close2_2|The invasion never happened but it was a close-run thing.|84893140
+close to | close up | up close|NA|close2_2|The picture looks very different when you see it close to.|36722206
+close to | close up | up close|NA|close2_2|I like those silver earrings in the window. Can I see them up close?|36722206
+close up to somebody/something|NA|close2_2|She snuggled close up to him.|18583311
+come close (to something/to doing something)|NA|close2_2|He'd come close to death.|80916991
+come close (to something/to doing something)|NA|close2_2|We didn't win but we came close.|80916991
+come close (to something/to doing something)|NA|close2_2|The welfare state never came close to eliminating poverty.|80916991
+come close (to something/to doing something)|NA|close2_2|The car came perilously close to running her down.|80916991
+run somebody/something close|NA|close2_2|Germany ran Argentina very close in the final.|17690381
+the brass ring|NA|ring1_1|The girls' outdoor track team has grabbed the brass ring seven times.|30345767
+run rings around/round somebody|NA|ring1_1|I used to beat my son at chess but now he runs rings around me.|45972150
+the brass ring|NA|ring2_2|The girls' outdoor track team has grabbed the brass ring seven times.|30345767
+give somebody a ring|NA|ring2_2|I'll give you a ring tomorrow.|67012575
+give somebody a ring|NA|ring2_2|I'll give you a ring once I get home.|67012575
+a flash in the pan|NA|pan1_1|He needed to prove that his success was not just a flash in the pan.|52649470
+go down the pan|NA|pan1_1|That's another brilliant idea down the pan.|30699114
+cut your coat according to your cloth|NA|according-to_1|We wanted to buy a bigger house than this but it was a case of cutting our coat according to our cloth.|39690886
+be/have (got) nothing/not much to do with somebody/something|NA|do1_1|It's my decision—it's nothing to do with you.|9664364
+be/have (got) nothing/not much to do with somebody/something|NA|do1_1|‘How much do you earn?’ ‘What's it got to do with you?’|9664364
+be/have (got) nothing/not much to do with somebody/something|NA|do1_1|We don't have very much to do with our neighbours (= we do not speak to them very often).|9664364
+be/have (got) nothing/not much to do with somebody/something|NA|do1_1|I'd have nothing to do with him, if I were you.|9664364
+be/have to do with somebody/something | have (got) something, a lot, etc. to do with somebody/something|NA|do1_1|‘What do you want to see me about?’ ‘It's to do with that letter you sent me.’|38880755
+be/have to do with somebody/something | have (got) something, a lot, etc. to do with somebody/something|NA|do1_1|Her job has something to do with computers.|38880755
+be/have to do with somebody/something | have (got) something, a lot, etc. to do with somebody/something|NA|do1_1|Hard work has a lot to do with (= is an important reason for) her success.|38880755
+do right, well, etc. by somebody|NA|do1_1|If we cannot keep the streets safe, then we are not doing right by the people of this country.|77863354
+do right, well, etc. by somebody|NA|do1_1|We need to do better by those suffering from mental illness.|77863354
+do right, well, etc. by somebody|NA|do1_1|We have done badly by the unemployed.|77863354
+it won’t do|NA|do1_1|This is the third time you've been late this week; it simply won't do.|21839082
+not do anything/a lot/much for somebody|NA|do1_1|That hairstyle doesn't do anything for her.|58906614
+nothing doing|NA|do1_1|‘Can you lend me ten dollars?’ ‘Nothing doing!’|99155643
+no you don’t|NA|do1_1|Sharon went to get into the taxi. ‘Oh no you don't,’ said Steve.|80890308
+that does it|NA|do1_1|That does it, I'm off. I'm not having you swear at me like that.|23218880
+that’s done it|NA|do1_1|That's done it. You've completely broken it this time.|28554044
+that will do|NA|do1_1|That'll do, children—you're getting far too noisy.|91961395
+what do you do for something?|NA|do1_1|What do you do for entertainment out here?|18328183
+what is somebody/something doing…?|NA|do1_1|What are these shoes doing on my desk?|36225367
+(as) like as not|NA|like_7|She would be in bed by now, as like as not.|79104467
+hit/strike pay dirt|NA|pay-dirt_1|The band really hit pay dirt with their last album.|76133904
+lead somebody astray|NA|lead1_1|Jack's parents thought the other boys might lead him astray.|33997313
+lead the charge|NA|lead1_1|Denmark, Norway and Sweden are united in leading the charge to a cash-free economy.|17984639
+lead/live the life of Riley|NA|lead1_1|The two crooks had been living the life of Riley.|12474727
+lead/live the life of Riley|NA|lead1_1|He planned to retire early and then lead the life of Riley.|12474727
+lead (somebody) nowhere|NA|lead1_1|This discussion is leading us nowhere.|84209757
+lead (somebody) nowhere|NA|lead1_1|Often there are discoveries which lead nowhere.|84209757
+one thing leads to another|NA|lead1_1|He offered me a ride home one night, and, well, one thing led to another and now we're married!|39304421
