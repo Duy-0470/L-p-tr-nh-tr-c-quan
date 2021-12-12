@@ -3,9 +3,8 @@
     "",
     "\\Alpha",
     "\\Alpha\\Dictionary",
-    "\\Alpha\\Dictionary\\DictionaryApp",
-    "\\Alpha\\Dictionary\\DictionaryApp\\CustomControls"
+    "\\Alpha\\Dictionary\\DictionaryApp"
   ],
-  "SelectedNode": "\\Alpha\\Dictionary\\DictionaryApp\\Form1.cs",
+  "SelectedNode": "\\Alpha\\Dictionary\\DictionaryApp\\CustomControls",
   "PreviewInSolutionExplorer": false
 }

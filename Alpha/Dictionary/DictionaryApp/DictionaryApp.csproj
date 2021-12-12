@@ -656,10 +656,10 @@
     <Content Include="Database\Files\words\_words.txt" />
     <Content Include="Database\Files\words\_word_forms.txt" />
     <Content Include="DictionaryDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="DictionaryDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>DictionaryDB.mdf</DependentUpon>
     </Content>
     <None Include="Resources\icons8_home_48px.png" />
