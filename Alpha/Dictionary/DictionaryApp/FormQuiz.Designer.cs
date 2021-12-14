@@ -65,6 +65,8 @@
             this.Timer1sec = new System.Windows.Forms.Timer(this.components);
             this.LabelReady = new System.Windows.Forms.Label();
             this.TimerReady = new System.Windows.Forms.Timer(this.components);
+            this.ButtonBack = new System.Windows.Forms.Button();
+            this.ToolTipQuiz = new System.Windows.Forms.ToolTip(this.components);
             this.PanelTopic.SuspendLayout();
             this.PanelWF.SuspendLayout();
             this.PanelWM.SuspendLayout();
@@ -77,6 +79,10 @@
             // 
             // PanelTopic
             // 
+            this.PanelTopic.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelTopic.Controls.Add(this.ButtonBack);
             this.PanelTopic.Controls.Add(this.LabelChooseTP);
             this.PanelTopic.Controls.Add(this.PanelWF);
             this.PanelTopic.Controls.Add(this.PanelWM);
@@ -85,18 +91,18 @@
             this.PanelTopic.Controls.Add(this.PanelCollocations);
             this.PanelTopic.Location = new System.Drawing.Point(0, 0);
             this.PanelTopic.Name = "PanelTopic";
-            this.PanelTopic.Size = new System.Drawing.Size(837, 480);
+            this.PanelTopic.Size = new System.Drawing.Size(852, 480);
             this.PanelTopic.TabIndex = 4;
             // 
             // LabelChooseTP
             // 
             this.LabelChooseTP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelChooseTP.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelChooseTP.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelChooseTP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(174)))));
             this.LabelChooseTP.Location = new System.Drawing.Point(0, 9);
             this.LabelChooseTP.Name = "LabelChooseTP";
-            this.LabelChooseTP.Size = new System.Drawing.Size(834, 31);
+            this.LabelChooseTP.Size = new System.Drawing.Size(849, 44);
             this.LabelChooseTP.TabIndex = 10;
             this.LabelChooseTP.Text = "Choose a topic";
             this.LabelChooseTP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,16 +114,18 @@
             this.PanelWF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelWF.Controls.Add(this.LabelWFDes);
             this.PanelWF.Controls.Add(this.LabelWF);
-            this.PanelWF.Location = new System.Drawing.Point(462, 212);
+            this.PanelWF.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PanelWF.Location = new System.Drawing.Point(470, 229);
             this.PanelWF.Name = "PanelWF";
-            this.PanelWF.Size = new System.Drawing.Size(234, 72);
+            this.PanelWF.Size = new System.Drawing.Size(294, 89);
             this.PanelWF.TabIndex = 9;
             this.PanelWF.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelWF_MouseClick);
             // 
             // LabelWFDes
             // 
+            this.LabelWFDes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelWFDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelWFDes.Location = new System.Drawing.Point(-3, 33);
+            this.LabelWFDes.Location = new System.Drawing.Point(27, 41);
             this.LabelWFDes.Name = "LabelWFDes";
             this.LabelWFDes.Size = new System.Drawing.Size(237, 23);
             this.LabelWFDes.TabIndex = 3;
@@ -127,8 +135,9 @@
             // 
             // LabelWF
             // 
+            this.LabelWF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelWF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelWF.Location = new System.Drawing.Point(-2, 10);
+            this.LabelWF.Location = new System.Drawing.Point(28, 18);
             this.LabelWF.Name = "LabelWF";
             this.LabelWF.Size = new System.Drawing.Size(237, 23);
             this.LabelWF.TabIndex = 3;
@@ -143,16 +152,18 @@
             this.PanelWM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelWM.Controls.Add(this.LabelWMDes);
             this.PanelWM.Controls.Add(this.LabelWM);
-            this.PanelWM.Location = new System.Drawing.Point(459, 107);
+            this.PanelWM.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PanelWM.Location = new System.Drawing.Point(470, 105);
             this.PanelWM.Name = "PanelWM";
-            this.PanelWM.Size = new System.Drawing.Size(237, 72);
+            this.PanelWM.Size = new System.Drawing.Size(294, 89);
             this.PanelWM.TabIndex = 8;
             this.PanelWM.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelWM_MouseClick);
             // 
             // LabelWMDes
             // 
+            this.LabelWMDes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelWMDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelWMDes.Location = new System.Drawing.Point(-1, 32);
+            this.LabelWMDes.Location = new System.Drawing.Point(28, 40);
             this.LabelWMDes.Name = "LabelWMDes";
             this.LabelWMDes.Size = new System.Drawing.Size(237, 23);
             this.LabelWMDes.TabIndex = 3;
@@ -162,8 +173,9 @@
             // 
             // LabelWM
             // 
+            this.LabelWM.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelWM.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelWM.Location = new System.Drawing.Point(0, 9);
+            this.LabelWM.Location = new System.Drawing.Point(29, 17);
             this.LabelWM.Name = "LabelWM";
             this.LabelWM.Size = new System.Drawing.Size(236, 23);
             this.LabelWM.TabIndex = 3;
@@ -178,16 +190,18 @@
             this.PanelIdioms.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelIdioms.Controls.Add(this.LabelIdiomsDes);
             this.PanelIdioms.Controls.Add(this.LabelIdioms);
-            this.PanelIdioms.Location = new System.Drawing.Point(304, 333);
+            this.PanelIdioms.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PanelIdioms.Location = new System.Drawing.Point(284, 361);
             this.PanelIdioms.Name = "PanelIdioms";
-            this.PanelIdioms.Size = new System.Drawing.Size(237, 72);
+            this.PanelIdioms.Size = new System.Drawing.Size(294, 89);
             this.PanelIdioms.TabIndex = 5;
             this.PanelIdioms.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelIdioms_MouseClick);
             // 
             // LabelIdiomsDes
             // 
+            this.LabelIdiomsDes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelIdiomsDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelIdiomsDes.Location = new System.Drawing.Point(-1, 32);
+            this.LabelIdiomsDes.Location = new System.Drawing.Point(28, 40);
             this.LabelIdiomsDes.Name = "LabelIdiomsDes";
             this.LabelIdiomsDes.Size = new System.Drawing.Size(237, 23);
             this.LabelIdiomsDes.TabIndex = 3;
@@ -197,8 +211,9 @@
             // 
             // LabelIdioms
             // 
+            this.LabelIdioms.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelIdioms.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelIdioms.Location = new System.Drawing.Point(-1, 9);
+            this.LabelIdioms.Location = new System.Drawing.Point(28, 17);
             this.LabelIdioms.Name = "LabelIdioms";
             this.LabelIdioms.Size = new System.Drawing.Size(237, 23);
             this.LabelIdioms.TabIndex = 3;
@@ -213,16 +228,18 @@
             this.PanelPhrasalVerbs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelPhrasalVerbs.Controls.Add(this.LabelPVDes);
             this.PanelPhrasalVerbs.Controls.Add(this.LabelPV);
-            this.PanelPhrasalVerbs.Location = new System.Drawing.Point(145, 212);
+            this.PanelPhrasalVerbs.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PanelPhrasalVerbs.Location = new System.Drawing.Point(96, 229);
             this.PanelPhrasalVerbs.Name = "PanelPhrasalVerbs";
-            this.PanelPhrasalVerbs.Size = new System.Drawing.Size(237, 72);
+            this.PanelPhrasalVerbs.Size = new System.Drawing.Size(294, 89);
             this.PanelPhrasalVerbs.TabIndex = 6;
             this.PanelPhrasalVerbs.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelPhrasalVerbs_MouseClick);
             // 
             // LabelPVDes
             // 
+            this.LabelPVDes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelPVDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPVDes.Location = new System.Drawing.Point(-1, 32);
+            this.LabelPVDes.Location = new System.Drawing.Point(28, 40);
             this.LabelPVDes.Name = "LabelPVDes";
             this.LabelPVDes.Size = new System.Drawing.Size(237, 23);
             this.LabelPVDes.TabIndex = 3;
@@ -232,8 +249,9 @@
             // 
             // LabelPV
             // 
+            this.LabelPV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelPV.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPV.Location = new System.Drawing.Point(-1, 9);
+            this.LabelPV.Location = new System.Drawing.Point(28, 17);
             this.LabelPV.Name = "LabelPV";
             this.LabelPV.Size = new System.Drawing.Size(237, 23);
             this.LabelPV.TabIndex = 3;
@@ -248,16 +266,18 @@
             this.PanelCollocations.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelCollocations.Controls.Add(this.LabelCollocationsDes);
             this.PanelCollocations.Controls.Add(this.LabelCollocations);
-            this.PanelCollocations.Location = new System.Drawing.Point(145, 107);
+            this.PanelCollocations.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PanelCollocations.Location = new System.Drawing.Point(96, 105);
             this.PanelCollocations.Name = "PanelCollocations";
-            this.PanelCollocations.Size = new System.Drawing.Size(237, 72);
+            this.PanelCollocations.Size = new System.Drawing.Size(294, 89);
             this.PanelCollocations.TabIndex = 7;
             this.PanelCollocations.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelCollocations_MouseClick);
             // 
             // LabelCollocationsDes
             // 
+            this.LabelCollocationsDes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelCollocationsDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelCollocationsDes.Location = new System.Drawing.Point(-1, 32);
+            this.LabelCollocationsDes.Location = new System.Drawing.Point(28, 40);
             this.LabelCollocationsDes.Name = "LabelCollocationsDes";
             this.LabelCollocationsDes.Size = new System.Drawing.Size(237, 23);
             this.LabelCollocationsDes.TabIndex = 3;
@@ -267,8 +287,9 @@
             // 
             // LabelCollocations
             // 
+            this.LabelCollocations.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelCollocations.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelCollocations.Location = new System.Drawing.Point(-1, 9);
+            this.LabelCollocations.Location = new System.Drawing.Point(28, 17);
             this.LabelCollocations.Name = "LabelCollocations";
             this.LabelCollocations.Size = new System.Drawing.Size(237, 23);
             this.LabelCollocations.TabIndex = 3;
@@ -278,6 +299,9 @@
             // 
             // PanelQuiz
             // 
+            this.PanelQuiz.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelQuiz.BackColor = System.Drawing.Color.White;
             this.PanelQuiz.Controls.Add(this.ButtonQuit);
             this.PanelQuiz.Controls.Add(this.ButtonNext);
@@ -290,16 +314,17 @@
             this.PanelQuiz.Controls.Add(this.LabelQuestion);
             this.PanelQuiz.Location = new System.Drawing.Point(0, 486);
             this.PanelQuiz.Name = "PanelQuiz";
-            this.PanelQuiz.Size = new System.Drawing.Size(837, 480);
+            this.PanelQuiz.Size = new System.Drawing.Size(1316, 563);
             this.PanelQuiz.TabIndex = 5;
             this.PanelQuiz.Visible = false;
             // 
             // ButtonQuit
             // 
+            this.ButtonQuit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ButtonQuit.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonQuit.Location = new System.Drawing.Point(12, 434);
+            this.ButtonQuit.Location = new System.Drawing.Point(29, 469);
             this.ButtonQuit.Name = "ButtonQuit";
-            this.ButtonQuit.Size = new System.Drawing.Size(94, 29);
+            this.ButtonQuit.Size = new System.Drawing.Size(123, 38);
             this.ButtonQuit.TabIndex = 3;
             this.ButtonQuit.TabStop = false;
             this.ButtonQuit.Text = "Quit";
@@ -308,10 +333,11 @@
             // 
             // ButtonNext
             // 
+            this.ButtonNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonNext.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonNext.Location = new System.Drawing.Point(729, 434);
+            this.ButtonNext.Location = new System.Drawing.Point(1170, 469);
             this.ButtonNext.Name = "ButtonNext";
-            this.ButtonNext.Size = new System.Drawing.Size(94, 29);
+            this.ButtonNext.Size = new System.Drawing.Size(123, 38);
             this.ButtonNext.TabIndex = 3;
             this.ButtonNext.TabStop = false;
             this.ButtonNext.Text = "Next";
@@ -323,86 +349,90 @@
             // 
             this.LabelTimeLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelTimeLeft.AutoSize = true;
-            this.LabelTimeLeft.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTimeLeft.Location = new System.Drawing.Point(700, 35);
+            this.LabelTimeLeft.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTimeLeft.Location = new System.Drawing.Point(1147, 60);
             this.LabelTimeLeft.Name = "LabelTimeLeft";
-            this.LabelTimeLeft.Size = new System.Drawing.Size(95, 17);
+            this.LabelTimeLeft.Size = new System.Drawing.Size(126, 23);
             this.LabelTimeLeft.TabIndex = 3;
-            this.LabelTimeLeft.Text = "Time left: 30s";
+            this.LabelTimeLeft.Text = "Time left: 15s";
             // 
             // LabelScore
             // 
             this.LabelScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelScore.AutoSize = true;
-            this.LabelScore.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelScore.Location = new System.Drawing.Point(700, 9);
+            this.LabelScore.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelScore.Location = new System.Drawing.Point(1147, 25);
             this.LabelScore.Name = "LabelScore";
-            this.LabelScore.Size = new System.Drawing.Size(114, 17);
+            this.LabelScore.Size = new System.Drawing.Size(151, 23);
             this.LabelScore.TabIndex = 3;
             this.LabelScore.Text = "Your score: 0/20";
             // 
             // ButtonC
             // 
+            this.ButtonC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ButtonC.BackColor = System.Drawing.Color.White;
             this.ButtonC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonC.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonC.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonC.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonC.Location = new System.Drawing.Point(112, 317);
+            this.ButtonC.Location = new System.Drawing.Point(141, 359);
             this.ButtonC.Name = "ButtonC";
-            this.ButtonC.Size = new System.Drawing.Size(292, 66);
+            this.ButtonC.Size = new System.Drawing.Size(430, 66);
             this.ButtonC.TabIndex = 2;
             this.ButtonC.TabStop = false;
-            this.ButtonC.Text = "A";
+            this.ButtonC.Text = "C";
             this.ButtonC.UseVisualStyleBackColor = false;
             this.ButtonC.Click += new System.EventHandler(this.ButtonC_Click);
             // 
             // ButtonD
             // 
+            this.ButtonD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ButtonD.BackColor = System.Drawing.Color.White;
             this.ButtonD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonD.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonD.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonD.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonD.Location = new System.Drawing.Point(432, 317);
+            this.ButtonD.Location = new System.Drawing.Point(737, 359);
             this.ButtonD.Name = "ButtonD";
-            this.ButtonD.Size = new System.Drawing.Size(292, 66);
+            this.ButtonD.Size = new System.Drawing.Size(430, 66);
             this.ButtonD.TabIndex = 2;
             this.ButtonD.TabStop = false;
-            this.ButtonD.Text = "A";
+            this.ButtonD.Text = "D";
             this.ButtonD.UseVisualStyleBackColor = false;
             this.ButtonD.Click += new System.EventHandler(this.ButtonD_Click);
             // 
             // ButtonB
             // 
+            this.ButtonB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ButtonB.BackColor = System.Drawing.Color.White;
             this.ButtonB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonB.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonB.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonB.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonB.Location = new System.Drawing.Point(432, 220);
+            this.ButtonB.Location = new System.Drawing.Point(737, 262);
             this.ButtonB.Name = "ButtonB";
-            this.ButtonB.Size = new System.Drawing.Size(292, 65);
+            this.ButtonB.Size = new System.Drawing.Size(430, 65);
             this.ButtonB.TabIndex = 2;
             this.ButtonB.TabStop = false;
-            this.ButtonB.Text = "A";
+            this.ButtonB.Text = "B";
             this.ButtonB.UseVisualStyleBackColor = false;
             this.ButtonB.Click += new System.EventHandler(this.ButtonB_Click);
             // 
             // ButtonA
             // 
+            this.ButtonA.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ButtonA.BackColor = System.Drawing.Color.White;
             this.ButtonA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonA.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonA.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonA.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonA.Location = new System.Drawing.Point(112, 220);
+            this.ButtonA.Location = new System.Drawing.Point(141, 262);
             this.ButtonA.Name = "ButtonA";
-            this.ButtonA.Size = new System.Drawing.Size(292, 65);
+            this.ButtonA.Size = new System.Drawing.Size(430, 65);
             this.ButtonA.TabIndex = 2;
             this.ButtonA.TabStop = false;
             this.ButtonA.Text = "A";
@@ -413,16 +443,19 @@
             // 
             this.LabelQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelQuestion.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelQuestion.Location = new System.Drawing.Point(24, 71);
+            this.LabelQuestion.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelQuestion.Location = new System.Drawing.Point(24, 97);
             this.LabelQuestion.Name = "LabelQuestion";
-            this.LabelQuestion.Size = new System.Drawing.Size(790, 103);
+            this.LabelQuestion.Size = new System.Drawing.Size(1269, 103);
             this.LabelQuestion.TabIndex = 1;
             this.LabelQuestion.Text = "Question here";
             this.LabelQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PanelRules
             // 
+            this.PanelRules.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelRules.AutoScroll = true;
             this.PanelRules.Controls.Add(this.CheckBoxShowRules);
             this.PanelRules.Controls.Add(this.ButtonOKRules);
@@ -435,7 +468,7 @@
             // 
             // CheckBoxShowRules
             // 
-            this.CheckBoxShowRules.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.CheckBoxShowRules.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CheckBoxShowRules.AutoSize = true;
             this.CheckBoxShowRules.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckBoxShowRules.Location = new System.Drawing.Point(241, 264);
@@ -448,7 +481,7 @@
             // 
             // ButtonOKRules
             // 
-            this.ButtonOKRules.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ButtonOKRules.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ButtonOKRules.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonOKRules.Location = new System.Drawing.Point(492, 260);
             this.ButtonOKRules.Name = "ButtonOKRules";
@@ -460,8 +493,7 @@
             // 
             // LabelRules
             // 
-            this.LabelRules.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelRules.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelRules.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelRules.Location = new System.Drawing.Point(0, 116);
             this.LabelRules.Name = "LabelRules";
@@ -483,9 +515,9 @@
             // LabelReady
             // 
             this.LabelReady.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelReady.Location = new System.Drawing.Point(861, 486);
+            this.LabelReady.Location = new System.Drawing.Point(1764, 907);
             this.LabelReady.Name = "LabelReady";
-            this.LabelReady.Size = new System.Drawing.Size(834, 480);
+            this.LabelReady.Size = new System.Drawing.Size(90, 111);
             this.LabelReady.TabIndex = 7;
             this.LabelReady.Text = "3";
             this.LabelReady.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -496,12 +528,25 @@
             this.TimerReady.Interval = 1000;
             this.TimerReady.Tick += new System.EventHandler(this.TimerReady_Tick);
             // 
+            // ButtonBack
+            // 
+            this.ButtonBack.BackgroundImage = global::DictionaryApp.Properties.Resources.icons8_return_96px;
+            this.ButtonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonBack.Location = new System.Drawing.Point(0, 0);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(30, 30);
+            this.ButtonBack.TabIndex = 4;
+            this.ButtonBack.UseVisualStyleBackColor = true;
+            this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
+            this.ButtonBack.MouseHover += new System.EventHandler(this.ButtonBack_MouseHover);
+            // 
             // FormQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1714, 973);
+            this.ClientSize = new System.Drawing.Size(1899, 1061);
             this.Controls.Add(this.LabelReady);
             this.Controls.Add(this.PanelRules);
             this.Controls.Add(this.PanelQuiz);
@@ -566,5 +611,7 @@
         private System.Windows.Forms.Button ButtonQuit;
         private System.Windows.Forms.Label LabelReady;
         private System.Windows.Forms.Timer TimerReady;
+        private System.Windows.Forms.Button ButtonBack;
+        private System.Windows.Forms.ToolTip ToolTipQuiz;
     }
 }

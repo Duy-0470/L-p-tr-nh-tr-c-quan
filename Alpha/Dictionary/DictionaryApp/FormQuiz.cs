@@ -26,19 +26,30 @@ namespace DictionaryApp
         //private bool showrules;
         private readonly Stopwatch stopwatch = new Stopwatch();
         public static double avg_time = 0;
+        private Rectangle area;
 
         public FormQuiz()
         {
             InitializeComponent();
+            Bounds = Screen.PrimaryScreen.Bounds;
+            area = Screen.FromControl(this).WorkingArea;
         }
 
         private void FormQuiz_Load(object sender, EventArgs e)
         {
-            Width = 854;
-            Height = 520;
             PanelQuiz.Location = new Point(0, 0);
             PanelRules.Location = new Point(0, 0);
             LabelReady.Location = new Point(0, 0);
+            PanelQuiz.Size = Size;
+            PanelRules.Size = Size;
+            LabelReady.Size = Size;
+            PanelTopic.Size = Size;
+            PanelCollocations.Size = PanelWF.Size = PanelWM.Size = PanelPhrasalVerbs.Size = PanelIdioms.Size = new Size(400, 100);
+            PanelCollocations.Location = new Point(Width / 2 - PanelCollocations.Width - 100, LabelChooseTP.Location.Y + LabelChooseTP.Height + 200);
+            PanelWM.Location = new Point(Width / 2 + 100, LabelChooseTP.Location.Y + LabelChooseTP.Height + 200);
+            PanelPhrasalVerbs.Location = new Point(Width / 2 - PanelPhrasalVerbs.Width - 100, PanelCollocations.Location.Y + PanelCollocations.Height + 80);
+            PanelWF.Location = new Point(Width / 2 + 100, PanelWM.Location.Y + PanelWM.Height + 80);
+            PanelIdioms.Location = new Point((Width - PanelIdioms.Width) / 2, PanelPhrasalVerbs.Location.Y + PanelPhrasalVerbs.Height + 80);
             //Settings.Default.ShowQuizRules = true;
             //Settings.Default.Save();
             //showrules = Settings.Default.ShowQuizRules;
@@ -440,11 +451,23 @@ namespace DictionaryApp
                 FormGameResult fgr = new FormGameResult();
                 fgr.Show();
             }
-            else
+            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ButtonBack_Click"))
             {
                 FormGamesSelect fgs = new FormGamesSelect();
                 fgs.Show();
             }
+            else
+                Application.Exit();
+        }
+
+        private void ButtonBack_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void ButtonBack_MouseHover(object sender, EventArgs e)
+        {
+            ToolTipQuiz.SetToolTip(ButtonBack, "Back to Games");
         }
 
         private void ButtonQuit_Click(object sender, EventArgs e)

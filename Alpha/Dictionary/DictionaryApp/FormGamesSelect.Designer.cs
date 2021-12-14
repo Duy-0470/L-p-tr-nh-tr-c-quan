@@ -31,22 +31,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.PanelQuizzes = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.PanelQuizzesBorder = new System.Windows.Forms.Panel();
             this.LabelIntro = new System.Windows.Forms.Label();
             this.PanelGTW = new System.Windows.Forms.Panel();
             this.PanelGTWDes = new System.Windows.Forms.Panel();
             this.LabelGTWDes = new System.Windows.Forms.Label();
+            this.PictureBoxGTW = new System.Windows.Forms.PictureBox();
             this.LabelGTW = new System.Windows.Forms.Label();
             this.ButtonHome = new System.Windows.Forms.Button();
-            this.PictureBoxGTW = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelQuizzes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelQuizzesBorder.SuspendLayout();
             this.PanelGTW.SuspendLayout();
             this.PanelGTWDes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxGTW)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -85,6 +85,17 @@
             this.label3.Text = "Pick the correct answer";
             this.label3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label3_MouseClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::DictionaryApp.Properties.Resources.ABCD;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(29, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
+            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -101,7 +112,7 @@
             this.PanelQuizzesBorder.BackColor = System.Drawing.Color.Yellow;
             this.PanelQuizzesBorder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelQuizzesBorder.Controls.Add(this.PanelQuizzes);
-            this.PanelQuizzesBorder.Location = new System.Drawing.Point(88, 157);
+            this.PanelQuizzesBorder.Location = new System.Drawing.Point(91, 157);
             this.PanelQuizzesBorder.Name = "PanelQuizzesBorder";
             this.PanelQuizzesBorder.Size = new System.Drawing.Size(307, 158);
             this.PanelQuizzesBorder.TabIndex = 2;
@@ -124,7 +135,7 @@
             this.PanelGTW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.PanelGTW.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelGTW.Controls.Add(this.PanelGTWDes);
-            this.PanelGTW.Location = new System.Drawing.Point(586, 157);
+            this.PanelGTW.Location = new System.Drawing.Point(589, 157);
             this.PanelGTW.Name = "PanelGTW";
             this.PanelGTW.Size = new System.Drawing.Size(307, 158);
             this.PanelGTW.TabIndex = 2;
@@ -153,6 +164,17 @@
             this.LabelGTWDes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LabelGTWDes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label4_MouseClick);
             // 
+            // PictureBoxGTW
+            // 
+            this.PictureBoxGTW.BackgroundImage = global::DictionaryApp.Properties.Resources.icons8_literature_200px;
+            this.PictureBoxGTW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PictureBoxGTW.Location = new System.Drawing.Point(28, 55);
+            this.PictureBoxGTW.Name = "PictureBoxGTW";
+            this.PictureBoxGTW.Size = new System.Drawing.Size(60, 50);
+            this.PictureBoxGTW.TabIndex = 3;
+            this.PictureBoxGTW.TabStop = false;
+            this.PictureBoxGTW.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PictureBoxGTW_MouseClick);
+            // 
             // LabelGTW
             // 
             this.LabelGTW.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -176,28 +198,6 @@
             this.ButtonHome.UseVisualStyleBackColor = true;
             this.ButtonHome.Click += new System.EventHandler(this.ButtonHome_Click);
             // 
-            // PictureBoxGTW
-            // 
-            this.PictureBoxGTW.BackgroundImage = global::DictionaryApp.Properties.Resources.icons8_literature_200px;
-            this.PictureBoxGTW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PictureBoxGTW.Location = new System.Drawing.Point(28, 55);
-            this.PictureBoxGTW.Name = "PictureBoxGTW";
-            this.PictureBoxGTW.Size = new System.Drawing.Size(60, 50);
-            this.PictureBoxGTW.TabIndex = 3;
-            this.PictureBoxGTW.TabStop = false;
-            this.PictureBoxGTW.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PictureBoxGTW_MouseClick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::DictionaryApp.Properties.Resources.ABCD;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 50);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
-            // 
             // FormGamesSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -217,11 +217,11 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormGamesSelect_FormClosed);
             this.PanelQuizzes.ResumeLayout(false);
             this.PanelQuizzes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelQuizzesBorder.ResumeLayout(false);
             this.PanelGTW.ResumeLayout(false);
             this.PanelGTWDes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxGTW)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
