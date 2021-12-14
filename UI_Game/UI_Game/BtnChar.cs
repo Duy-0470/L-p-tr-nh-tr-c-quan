@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GuestTheWordGame
+namespace UI_Game
 {
-    class ButtonShow : Button
+    internal class BtnChar : Button
     {
-        private int iD;
+        int ID;
 
-        public int ID { get => iD; set => iD = value; }
+        public int ID1 { get => ID; set => ID = value; }
     }
 }
