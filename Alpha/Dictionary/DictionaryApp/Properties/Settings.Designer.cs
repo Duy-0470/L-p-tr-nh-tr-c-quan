@@ -56,5 +56,17 @@ namespace DictionaryApp.Properties {
                 return ((string)(this["DictionaryDBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ShowGTWRules {
+            get {
+                return ((bool)(this["ShowGTWRules"]));
+            }
+            set {
+                this["ShowGTWRules"] = value;
+            }
+        }
     }
 }

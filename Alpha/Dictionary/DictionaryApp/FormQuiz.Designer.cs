@@ -472,7 +472,7 @@
             // 
             // TimeLimit
             // 
-            this.TimeLimit.Interval = 30000;
+            this.TimeLimit.Interval = 15000;
             this.TimeLimit.Tick += new System.EventHandler(this.TimeLimit_Tick);
             // 
             // Timer1sec

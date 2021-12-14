@@ -105,7 +105,7 @@ namespace DictionaryApp.CustomControls
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 21);
             this.label2.TabIndex = 1;
-            this.label2.Text = "All Words";
+            this.label2.Text = "Alphabetical";
             // 
             // allWordsPanel
             // 

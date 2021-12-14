@@ -13,6 +13,12 @@ namespace DictionaryApp
 {
     public partial class FormGamesSelect : Form
     {
+        public enum GameType
+        {
+            Quizzes, GTW
+        }
+        public static GameType gameType;
+        
         public FormGamesSelect()
         {
             InitializeComponent();
@@ -21,57 +27,31 @@ namespace DictionaryApp
 
         private void panel1_MouseClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-                Close();
+            PanelQuizzesBorder_MouseClick(sender, e);
         }
 
         private void PanelQuizzesBorder_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
+            {
+                gameType = GameType.Quizzes;
                 Close();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            //if (e.Button == MouseButtons.Left)
-            //{
-            //    Hide();
-            //    FormQuizTopic fqt = new FormQuizTopic();
-            //    fqt.Show();
-            //}
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            //if (e.Button == MouseButtons.Left)
-            //{
-            //    Hide();
-            //    FormQuizTopic fqt = new FormQuizTopic();
-            //    fqt.Show();
-            //}
-        }
-
-        private void PanelQuizzes_Click(object sender, EventArgs e)
-        {
-
+            }
         }
 
         private void label2_MouseClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-                Close();
+            PanelQuizzesBorder_MouseClick(sender, e);
         }
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-                Close();
+            PanelQuizzesBorder_MouseClick(sender, e);
         }
 
         private void label3_MouseClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-                Close();
+            PanelQuizzesBorder_MouseClick(sender, e);
         }
 
         private void FormGamesSelect_FormClosed(object sender, FormClosedEventArgs e)
@@ -80,7 +60,7 @@ namespace DictionaryApp
         }
 
         private void ButtonHome_Click(object sender, EventArgs e)
-        {
+        {            
             Close();
         }
 
@@ -91,6 +71,12 @@ namespace DictionaryApp
             {
                 FormQuiz fq = new FormQuiz();
                 fq.Show();
+            }
+            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "PanelGTW_MouseClick" || x.GetMethod().Name == "LabelGTWDes_MouseClick"
+                || x.GetMethod().Name == "PictureBoxGTW_MouseClick" || x.GetMethod().Name == "label4_MouseClick" || x.GetMethod().Name == "PanelGTWDes_MouseClick"))
+            {
+                FormGTW fgtw = new FormGTW();
+                fgtw.Show();
             }
             else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ButtonHome_Click"))
             {
@@ -103,6 +89,35 @@ namespace DictionaryApp
                 //else
                     Application.Exit();
             }
+        }
+
+        private void PanelGTW_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                gameType = GameType.GTW;
+                Close();
+            }
+        }
+
+        private void LabelGTWDes_MouseClick(object sender, MouseEventArgs e)
+        {
+            PanelGTW_MouseClick(sender, e);
+        }
+
+        private void PictureBoxGTW_MouseClick(object sender, MouseEventArgs e)
+        {
+            PanelGTW_MouseClick(sender, e);
+        }
+
+        private void label4_MouseClick(object sender, MouseEventArgs e)
+        {
+            PanelGTW_MouseClick(sender, e);
+        }
+
+        private void PanelGTWDes_MouseClick(object sender, MouseEventArgs e)
+        {
+            PanelGTW_MouseClick(sender, e);
         }
     }
 }

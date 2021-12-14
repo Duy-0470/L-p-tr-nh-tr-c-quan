@@ -20,9 +20,17 @@ namespace DictionaryApp
 
         private void FormGameResult_Load(object sender, EventArgs e)
         {
-            LabelScore.Text = "Your score: " + FormQuiz.score.ToString() + " / 20";
-            LabelAvgTime.Text += " " + (FormQuiz.avg_time / 1000 / 20).ToString() + " seconds";
-            LabelTopic.Text = FormQuiz.q_topic.ToString();
+            if (FormGamesSelect.gameType == FormGamesSelect.GameType.Quizzes)
+            {
+                LabelScore.Text = "Your score: " + FormQuiz.score.ToString() + " / 20";
+                LabelAvgTime.Text += " " + (FormQuiz.avg_time / 1000 / 20).ToString() + " seconds";
+                LabelTopic.Text = FormQuiz.q_topic.ToString();
+            }
+            else if (FormGamesSelect.gameType == FormGamesSelect.GameType.GTW)
+            {
+                LabelScore.Text = "Your score: " + FormGTW.score.ToString() + " / 10";
+                LabelAvgTime.Text += " " + (FormGTW.avg_time / 1000 / 10).ToString() + " seconds";
+            }
             // more to be added
         }
 

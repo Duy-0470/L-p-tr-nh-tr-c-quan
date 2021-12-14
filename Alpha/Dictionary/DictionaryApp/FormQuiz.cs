@@ -22,8 +22,8 @@ namespace DictionaryApp
         private readonly Database.DatabaseHandle databaseHandle = new Database.DatabaseHandle();
         private List<Classes.Quizz> quizzes = new List<Classes.Quizz>();
         public static int score = 0;
-        private int counter = 0, timeleft = 30, ready = 3;
-        private bool showrules;
+        private int counter = 0, timeleft = 15, ready = 3;
+        //private bool showrules;
         private readonly Stopwatch stopwatch = new Stopwatch();
         public static double avg_time = 0;
 
@@ -41,7 +41,7 @@ namespace DictionaryApp
             LabelReady.Location = new Point(0, 0);
             //Settings.Default.ShowQuizRules = true;
             //Settings.Default.Save();
-            showrules = Settings.Default.ShowQuizRules;
+            //showrules = Settings.Default.ShowQuizRules;
         }
 
         private void LoadQuiz()
@@ -83,8 +83,8 @@ namespace DictionaryApp
                 PanelTopic.Visible = false;
                 q_topic = QuizTopic.Collocation;
                 LoadQuiz();
-                Debug.WriteLine("Show Rules Enabled: " + showrules.ToString());
-                if (showrules)
+                //Debug.WriteLine("Show Rules Enabled: " + Settings.Default.ShowQuizRules.ToString());
+                if (Settings.Default.ShowQuizRules)
                     PanelRules.Visible = true;
                 else
                 {
@@ -111,8 +111,8 @@ namespace DictionaryApp
                 PanelTopic.Visible = false;
                 q_topic = QuizTopic.Word_Meaning;
                 LoadQuiz();
-                Debug.WriteLine("Show Rules Enabled: " + showrules.ToString());
-                if (showrules)
+                //Debug.WriteLine("Show Rules Enabled: " + Settings.Default.ShowQuizRules.ToString());
+                if (Settings.Default.ShowQuizRules)
                     PanelRules.Visible = true;
                 else
                 {
@@ -139,8 +139,8 @@ namespace DictionaryApp
                 PanelTopic.Visible = false;
                 q_topic = QuizTopic.Phrasal_Verb;
                 LoadQuiz();
-                Debug.WriteLine("Show Rules Enabled: " + showrules.ToString());
-                if (showrules) 
+                //Debug.WriteLine("Show Rules Enabled: " + Settings.Default.ShowQuizRules.ToString());
+                if (Settings.Default.ShowQuizRules) 
                     PanelRules.Visible = true;
                 else
                 {
@@ -167,8 +167,8 @@ namespace DictionaryApp
                 PanelTopic.Visible = false;
                 q_topic = QuizTopic.Word_Form;
                 LoadQuiz();
-                Debug.WriteLine("Show Rules Enabled: " + showrules.ToString());
-                if (showrules)
+                //Debug.WriteLine("Show Rules Enabled: " + Settings.Default.ShowQuizRules.ToString());
+                if (Settings.Default.ShowQuizRules)
                     PanelRules.Visible = true;
                 else
                 {
@@ -195,8 +195,8 @@ namespace DictionaryApp
                 PanelTopic.Visible = false;
                 q_topic = QuizTopic.Idiom;
                 LoadQuiz();
-                Debug.WriteLine("Show Rules Enabled: " + showrules.ToString());
-                if (showrules)
+                //Debug.WriteLine("Show Rules Enabled: " + Settings.Default.ShowQuizRules.ToString());
+                if (Settings.Default.ShowQuizRules)
                     PanelRules.Visible = true;
                 else
                 {
@@ -429,9 +429,8 @@ namespace DictionaryApp
         {
             Screen myScreen = Screen.FromControl(this);
             Rectangle area = myScreen.WorkingArea;
-
-            Top = (area.Height - this.Height) / 2;
-            Left = (area.Width - this.Width) / 2;
+            Top = (area.Height - Height) / 2;
+            Left = (area.Width - Width) / 2;
         }
 
         private void FormQuiz_FormClosing(object sender, FormClosingEventArgs e)

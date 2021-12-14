@@ -106,3 +106,4 @@ E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\Dictionar
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.CustomControls.Topics.resources
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.CustomControls.IdiomDefinition.resources
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.CustomControls.IdiomResultPanel.resources
+E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.FormGTW.resources

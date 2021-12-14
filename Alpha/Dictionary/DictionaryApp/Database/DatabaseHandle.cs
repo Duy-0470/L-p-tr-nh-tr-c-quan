@@ -1190,7 +1190,7 @@ namespace DictionaryApp.Database
             connection.Close();
             if (numRows == 0) { return false; }
             return true;
-            connection.Close();
+            //connection.Close();
         }
         public List<Quizz> SelectNQuizzes(int number)
         {

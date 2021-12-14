@@ -119,7 +119,7 @@
   </resheader>
   <data name="LabelRules.Text" xml:space="preserve">
     <value>Pick ONE correct answer according to the question above
-You have 30 seconds for each question
+You have 15 seconds for each question
 Each correct answer earns you 1 point
 The game stops when you have answered 20 questions or your time is out</value>
   </data>
