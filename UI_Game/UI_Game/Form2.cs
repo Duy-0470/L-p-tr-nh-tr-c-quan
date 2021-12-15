@@ -136,5 +136,10 @@ namespace UI_Game
             SelectedButton[select - 1].Visible = false;
             select--;
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

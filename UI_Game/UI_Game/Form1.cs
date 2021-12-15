@@ -74,7 +74,6 @@ namespace UI_Game
                     MessageBox.Show("Chua chon kia thang ngu", "Thong bao");
                     return;
                 }
-                Controls.Remove(lb_MainMenu);
                 Controls.Remove(label1);
                 Controls.Remove(radioButton1);
                 Controls.Remove(radioButton2);
@@ -102,6 +101,34 @@ namespace UI_Game
             this.Hide();
             Form2 frm = new Form2();
             frm.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void lb_MainMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            panel1.BackgroundImage = null;
+            panel1.BackColor = Color.FromArgb(197,235,254);
+            label1.Visible = true;
+            radioButton1.Visible = true;
+            radioButton2.Visible = true;
+            radioButton3.Visible = true;
+            radioButton4.Visible = true;
+            button4.Visible = false;
+            button2.Visible = false;
+
         }
     }
 }
