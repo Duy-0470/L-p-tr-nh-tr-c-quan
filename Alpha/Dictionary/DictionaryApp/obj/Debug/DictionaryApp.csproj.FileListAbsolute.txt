@@ -75,13 +75,8 @@ E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\Dictionar
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\DictionaryApp.exe
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\DictionaryApp.pdb
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\AxInterop.WMPLib.dll
-E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\C1.C1Excel.4.dll
-E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\C1.C1Zip.4.dll
-E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\C1.Win.Bitmap.4.dll
-E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\C1.Win.C1DX.4.dll
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\NAudio.Core.dll
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\NAudio.Lame.dll
-E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\C1.Win.4.dll
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\NAudio.Lame.pdb
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.csproj.AssemblyReference.cache
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.csproj.SuggestedBindingRedirects.cache
@@ -98,7 +93,6 @@ E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\Dictionar
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.FormQuiz.resources
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.Properties.Resources.resources
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.csproj.GenerateResource.cache
-E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.exe.licenses
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.csproj.CoreCompileInputs.cache
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.csproj.CopyComplete
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.exe

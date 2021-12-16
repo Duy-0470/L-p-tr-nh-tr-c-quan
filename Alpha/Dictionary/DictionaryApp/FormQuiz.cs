@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DictionaryApp.Properties;
+using System.Xml;
+using System.IO;
 
 namespace DictionaryApp
 {
@@ -23,16 +25,14 @@ namespace DictionaryApp
         private List<Classes.Quizz> quizzes = new List<Classes.Quizz>();
         public static int score = 0;
         private int counter = 0, timeleft = 15, ready = 3;
-        //private bool showrules;
         private readonly Stopwatch stopwatch = new Stopwatch();
         public static double avg_time = 0;
-        private Rectangle area;
+        //private bool playing = false;
 
         public FormQuiz()
         {
             InitializeComponent();
             Bounds = Screen.PrimaryScreen.Bounds;
-            area = Screen.FromControl(this).WorkingArea;
         }
 
         private void FormQuiz_Load(object sender, EventArgs e)
@@ -50,9 +50,6 @@ namespace DictionaryApp
             PanelPhrasalVerbs.Location = new Point(Width / 2 - PanelPhrasalVerbs.Width - 100, PanelCollocations.Location.Y + PanelCollocations.Height + 80);
             PanelWF.Location = new Point(Width / 2 + 100, PanelWM.Location.Y + PanelWM.Height + 80);
             PanelIdioms.Location = new Point((Width - PanelIdioms.Width) / 2, PanelPhrasalVerbs.Location.Y + PanelPhrasalVerbs.Height + 80);
-            //Settings.Default.ShowQuizRules = true;
-            //Settings.Default.Save();
-            //showrules = Settings.Default.ShowQuizRules;
         }
 
         private void LoadQuiz()
@@ -94,7 +91,6 @@ namespace DictionaryApp
                 PanelTopic.Visible = false;
                 q_topic = QuizTopic.Collocation;
                 LoadQuiz();
-                //Debug.WriteLine("Show Rules Enabled: " + Settings.Default.ShowQuizRules.ToString());
                 if (Settings.Default.ShowQuizRules)
                     PanelRules.Visible = true;
                 else
@@ -122,7 +118,6 @@ namespace DictionaryApp
                 PanelTopic.Visible = false;
                 q_topic = QuizTopic.Word_Meaning;
                 LoadQuiz();
-                //Debug.WriteLine("Show Rules Enabled: " + Settings.Default.ShowQuizRules.ToString());
                 if (Settings.Default.ShowQuizRules)
                     PanelRules.Visible = true;
                 else
@@ -150,7 +145,6 @@ namespace DictionaryApp
                 PanelTopic.Visible = false;
                 q_topic = QuizTopic.Phrasal_Verb;
                 LoadQuiz();
-                //Debug.WriteLine("Show Rules Enabled: " + Settings.Default.ShowQuizRules.ToString());
                 if (Settings.Default.ShowQuizRules) 
                     PanelRules.Visible = true;
                 else
@@ -178,7 +172,6 @@ namespace DictionaryApp
                 PanelTopic.Visible = false;
                 q_topic = QuizTopic.Word_Form;
                 LoadQuiz();
-                //Debug.WriteLine("Show Rules Enabled: " + Settings.Default.ShowQuizRules.ToString());
                 if (Settings.Default.ShowQuizRules)
                     PanelRules.Visible = true;
                 else
@@ -206,7 +199,6 @@ namespace DictionaryApp
                 PanelTopic.Visible = false;
                 q_topic = QuizTopic.Idiom;
                 LoadQuiz();
-                //Debug.WriteLine("Show Rules Enabled: " + Settings.Default.ShowQuizRules.ToString());
                 if (Settings.Default.ShowQuizRules)
                     PanelRules.Visible = true;
                 else
@@ -358,7 +350,7 @@ namespace DictionaryApp
             if (counter < 20)
             {
                 Debug.WriteLine(counter.ToString() + " " + quizzes[counter].rightAnswer);
-                timeleft = 30;
+                timeleft = 15;
                 LabelTimeLeft.ForeColor = Color.Black;
                 LabelQuestion.Text = quizzes[counter].question;
                 ButtonA.Text = quizzes[counter].A;
@@ -368,16 +360,283 @@ namespace DictionaryApp
                 ButtonNext.Visible = false;
                 ButtonA.BackColor = ButtonB.BackColor = ButtonC.BackColor = ButtonD.BackColor = Color.White;
                 ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = true;
-                LabelTimeLeft.Text = "Time left: 30s";
+                LabelTimeLeft.Text = "Time left: 15s";
                 TimeLimit.Start();
                 Timer1sec.Start();
                 stopwatch.Reset();
                 stopwatch.Start();
-                if (counter == 18)
+                if (counter == 19)
                     ButtonNext.Text = "Finish";
             }
             else
+            {
+                SaveProgress();
                 Close();
+            }
+        }
+
+        private void SaveProgress()
+        {
+            XmlDocument xmlDocument = new XmlDocument();
+            if (!File.Exists(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\quiz.xml"))
+            {
+                XmlElement root = xmlDocument.DocumentElement;
+
+                // main node
+                XmlDeclaration xmlDeclaration = xmlDocument.CreateXmlDeclaration("1.0", "UTF-8", null);
+                xmlDocument.InsertBefore(xmlDeclaration, root);
+
+                XmlElement mainElement = xmlDocument.CreateElement(string.Empty, "MainInfo", string.Empty);
+                mainElement.InnerText = "Do not modify the contents of this file, or risk losing your saved progress!";
+                xmlDocument.AppendChild(mainElement);
+
+                // best score
+                XmlElement bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
+                mainElement.AppendChild(bestScore);
+
+                XmlElement bestScoreCol = xmlDocument.CreateElement(string.Empty, "Col", string.Empty);
+                bestScore.AppendChild(bestScoreCol);
+
+                XmlElement bestScoreWM = xmlDocument.CreateElement(string.Empty, "WM", string.Empty);
+                bestScore.AppendChild(bestScoreWM);
+
+                XmlElement bestScorePV = xmlDocument.CreateElement(string.Empty, "PV", string.Empty);
+                bestScore.AppendChild(bestScorePV);
+
+                XmlElement bestScoreWF = xmlDocument.CreateElement(string.Empty, "WF", string.Empty);
+                bestScore.AppendChild(bestScoreWF);
+
+                XmlElement bestScoreIdiom = xmlDocument.CreateElement(string.Empty, "Idiom", string.Empty);
+                bestScore.AppendChild(bestScoreIdiom);
+
+                // best average time
+                XmlElement bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
+                mainElement.AppendChild(bestTime);
+
+                XmlElement bestTimeCol = xmlDocument.CreateElement(string.Empty, "Col", string.Empty);
+                bestTime.AppendChild(bestTimeCol);
+
+                XmlElement bestTimeWM = xmlDocument.CreateElement(string.Empty, "WM", string.Empty);
+                bestTime.AppendChild(bestTimeWM);
+
+                XmlElement bestTimePV = xmlDocument.CreateElement(string.Empty, "PV", string.Empty);
+                bestTime.AppendChild(bestTimePV);
+
+                XmlElement bestTimeWF = xmlDocument.CreateElement(string.Empty, "WF", string.Empty);
+                bestTime.AppendChild(bestTimeWF);
+
+                XmlElement bestTimeIdiom = xmlDocument.CreateElement(string.Empty, "Idiom", string.Empty);
+                bestTime.AppendChild(bestTimeIdiom);
+
+                switch (q_topic)
+                {
+                    case QuizTopic.Collocation:
+                        bestScoreCol.InnerText = score.ToString();
+                        bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();
+                        break;
+                    case QuizTopic.Phrasal_Verb:
+                        bestScorePV.InnerText = score.ToString();
+                        bestTimePV.InnerText = (avg_time / 1000 / 20).ToString();
+                        break;
+                    case QuizTopic.Idiom:
+                        bestScoreIdiom.InnerText = score.ToString();
+                        bestTimeIdiom.InnerText = (avg_time / 1000 / 20).ToString();
+                        break;
+                    case QuizTopic.Word_Meaning:
+                        bestScoreWM.InnerText = score.ToString();
+                        bestTimeWM.InnerText = (avg_time / 1000 / 20).ToString();
+                        break;
+                    case QuizTopic.Word_Form:
+                        bestScoreWF.InnerText = score.ToString();
+                        bestTimeWF.InnerText = (avg_time / 1000 / 20).ToString();
+                        break;
+                }
+            }
+            else
+            {
+                bool success = true;
+                try
+                {                    
+                    xmlDocument.LoadXml(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\quiz.xml");
+                }
+                catch (XmlException exception)
+                {
+                    success = false;
+                    Debug.WriteLine(exception.Message);
+                }
+                if (success)
+                {
+                    switch (q_topic)
+                    {
+                        case QuizTopic.Collocation:
+                            XmlNode bestScoreCol = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/Col");
+                            if (int.TryParse(bestScoreCol.InnerText, out int sCol))
+                            {
+                                if (score > sCol)
+                                    bestScoreCol.InnerText = score.ToString();
+                            }
+                            else
+                                bestScoreCol.InnerText = score.ToString();
+                            XmlNode bestTimeCol = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime/Col");
+                            if (double.TryParse(bestTimeCol.InnerText, out double tCol))
+                            {
+                                if (avg_time < tCol)
+                                    bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();
+                            }
+                            else
+                                bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();
+                            break;
+                        case QuizTopic.Phrasal_Verb:
+                            XmlNode bestScorePV = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/PV");
+                            if (int.TryParse(bestScorePV.InnerText, out int sPV))
+                            {
+                                if (score > sPV)
+                                    bestScorePV.InnerText = score.ToString();
+                            }
+                            else
+                                bestScorePV.InnerText = score.ToString();
+                            XmlNode bestTimePV = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime/PV");
+                            if (double.TryParse(bestTimePV.InnerText, out double tPV))
+                            {
+                                if (avg_time < tPV)
+                                    bestTimePV.InnerText = (avg_time / 1000 / 20).ToString();
+                            }
+                            else
+                                bestTimePV.InnerText = (avg_time / 1000 / 20).ToString();
+                            break;
+                        case QuizTopic.Idiom:
+                            XmlNode bestScoreIdiom = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/Idiom");
+                            if (int.TryParse(bestScoreIdiom.InnerText, out int sIdiom))
+                            {
+                                if (score > sIdiom)
+                                    bestScoreIdiom.InnerText = score.ToString();
+                            }
+                            else
+                                bestScoreIdiom.InnerText = score.ToString();
+                            XmlNode bestTimeIdiom = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime/Idiom");
+                            if (double.TryParse(bestTimeIdiom.InnerText, out double tIdiom))
+                            {
+                                if (avg_time < tIdiom)
+                                    bestTimeIdiom.InnerText = (avg_time / 1000 / 20).ToString();
+                            }
+                            else
+                                bestTimeIdiom.InnerText = (avg_time / 1000 / 20).ToString();
+                            break;
+                        case QuizTopic.Word_Meaning:
+                            XmlNode bestScoreWM = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/WM");
+                            if (int.TryParse(bestScoreWM.InnerText, out int sWM))
+                            {
+                                if (score > sWM)
+                                    bestScoreWM.InnerText = score.ToString();
+                            }
+                            else
+                                bestScoreWM.InnerText = score.ToString();
+                            XmlNode bestTimeWM = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime/WM");
+                            if (double.TryParse(bestTimeWM.InnerText, out double tWM))
+                            {
+                                if (avg_time < tWM)
+                                    bestTimeWM.InnerText = (avg_time / 1000 / 20).ToString();
+                            }
+                            else
+                                bestTimeWM.InnerText = (avg_time / 1000 / 20).ToString();
+                            break;
+                        case QuizTopic.Word_Form:
+                            XmlNode bestScoreWF = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/WF");
+                            if (int.TryParse(bestScoreWF.InnerText, out int sWF))
+                            {
+                                if (score > sWF)
+                                    bestScoreWF.InnerText = score.ToString();
+                            }
+                            else
+                                bestScoreWF.InnerText = score.ToString();
+                            XmlNode bestTimeWF = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime/WF");
+                            if (double.TryParse(bestTimeWF.InnerText, out double tWF))
+                            {
+                                if (avg_time < tWF)
+                                    bestTimeWF.InnerText = (avg_time / 1000 / 20).ToString();
+                            }
+                            else
+                                bestTimeWF.InnerText = (avg_time / 1000 / 20).ToString();
+                            break;
+                    }
+                }
+                else
+                {
+                    XmlElement root = xmlDocument.DocumentElement;
+
+                    // main node
+                    XmlDeclaration xmlDeclaration = xmlDocument.CreateXmlDeclaration("1.0", "UTF-8", null);
+                    xmlDocument.InsertBefore(xmlDeclaration, root);
+
+                    XmlElement mainElement = xmlDocument.CreateElement(string.Empty, "MainInfo", string.Empty);
+                    mainElement.InnerText = "Do not modify the contents of this file, or risk losing your saved progress!";
+                    xmlDocument.AppendChild(mainElement);
+
+                    // best score
+                    XmlElement bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
+                    mainElement.AppendChild(bestScore);
+
+                    XmlElement bestScoreCol = xmlDocument.CreateElement(string.Empty, "Col", string.Empty);
+                    bestScore.AppendChild(bestScoreCol);
+
+                    XmlElement bestScoreWM = xmlDocument.CreateElement(string.Empty, "WM", string.Empty);
+                    bestScore.AppendChild(bestScoreWM);
+
+                    XmlElement bestScorePV = xmlDocument.CreateElement(string.Empty, "PV", string.Empty);
+                    bestScore.AppendChild(bestScorePV);
+
+                    XmlElement bestScoreWF = xmlDocument.CreateElement(string.Empty, "WF", string.Empty);
+                    bestScore.AppendChild(bestScoreWF);
+
+                    XmlElement bestScoreIdiom = xmlDocument.CreateElement(string.Empty, "Idiom", string.Empty);
+                    bestScore.AppendChild(bestScoreIdiom);
+
+                    // best average time
+                    XmlElement bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
+                    mainElement.AppendChild(bestTime);
+
+                    XmlElement bestTimeCol = xmlDocument.CreateElement(string.Empty, "Col", string.Empty);
+                    bestTime.AppendChild(bestTimeCol);
+
+                    XmlElement bestTimeWM = xmlDocument.CreateElement(string.Empty, "WM", string.Empty);
+                    bestTime.AppendChild(bestTimeWM);
+
+                    XmlElement bestTimePV = xmlDocument.CreateElement(string.Empty, "PV", string.Empty);
+                    bestTime.AppendChild(bestTimePV);
+
+                    XmlElement bestTimeWF = xmlDocument.CreateElement(string.Empty, "WF", string.Empty);
+                    bestTime.AppendChild(bestTimeWF);
+
+                    XmlElement bestTimeIdiom = xmlDocument.CreateElement(string.Empty, "Idiom", string.Empty);
+                    bestTime.AppendChild(bestTimeIdiom);
+
+                    switch (q_topic)
+                    {
+                        case QuizTopic.Collocation:
+                            bestScoreCol.InnerText = score.ToString();
+                            bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();
+                            break;
+                        case QuizTopic.Phrasal_Verb:
+                            bestScorePV.InnerText = score.ToString();
+                            bestTimePV.InnerText = (avg_time / 1000 / 20).ToString();
+                            break;
+                        case QuizTopic.Idiom:
+                            bestScoreIdiom.InnerText = score.ToString();
+                            bestTimeIdiom.InnerText = (avg_time / 1000 / 20).ToString();
+                            break;
+                        case QuizTopic.Word_Meaning:
+                            bestScoreWM.InnerText = score.ToString();
+                            bestTimeWM.InnerText = (avg_time / 1000 / 20).ToString();
+                            break;
+                        case QuizTopic.Word_Form:
+                            bestScoreWF.InnerText = score.ToString();
+                            bestTimeWF.InnerText = (avg_time / 1000 / 20).ToString();
+                            break;
+                    }
+                }
+            }
+
+            xmlDocument.Save(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\quiz.xml");
         }
 
         private void TimeLimit_Tick(object sender, EventArgs e)
@@ -433,15 +692,13 @@ namespace DictionaryApp
                 Timer1sec.Start();
                 TimeLimit.Start();
                 stopwatch.Start();
+                //playing = true;
             }
         }
 
         private void FormQuiz_Resize(object sender, EventArgs e)
         {
-            Screen myScreen = Screen.FromControl(this);
-            Rectangle area = myScreen.WorkingArea;
-            Top = (area.Height - Height) / 2;
-            Left = (area.Width - Width) / 2;
+
         }
 
         private void FormQuiz_FormClosing(object sender, FormClosingEventArgs e)
@@ -456,6 +713,13 @@ namespace DictionaryApp
                 FormGamesSelect fgs = new FormGamesSelect();
                 fgs.Show();
             }
+            //else if (playing)
+            //{
+            //    if (MessageBox.Show("Quit now? You will lose any unsaved progress", "Alert", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            //        Application.Exit();
+            //    else
+            //        e.Cancel = true;
+            //}
             else
                 Application.Exit();
         }

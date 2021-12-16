@@ -21,7 +21,9 @@ namespace DictionaryApp
         private readonly Stopwatch stopwatch = new Stopwatch();
         public static double avg_time = 0;
         private bool submitted = false;
-        List<Button> letters = new List<Button>();
+        private readonly List<Button> letters = new List<Button>();
+        private readonly Dictionary<string, Button> ltr = new Dictionary<string, Button>();
+        private readonly Dictionary<string, Button> ans = new Dictionary<string, Button>();
 
         public FormGTW()
         {
@@ -42,11 +44,25 @@ namespace DictionaryApp
         private void LoadQuestion() // to be modified
         {
             submitted = false;            
-            meaning = "The act of....HAPPINESS";
-            answer = shuffle = "suffering";      // testing purposes
+            meaning = "The state of....HAPPINESS";
+            answer = shuffle = "suffering";      // testing purposes only
+            ltr.Clear();
+            ans.Clear();
+            //for (int i = 0; i < answer.Length; i++)
+            //{
+            //    Button rans = new Button
+            //    {
+            //        Size = new Size(60, 60),
+            //        Font = new Font(new Font("Verdana", 14), FontStyle.Regular),
+            //        Cursor = Cursors.Hand,
+            //        TabStop = false,
+            //        Visible = false
+            //    };
+            //    ans.Add(i, rans);
+            //}
             LabelMeaning.Text = meaning;
             shuffle = new string(shuffle.ToCharArray().OrderBy(s => (rand.Next(2) % 2) == 0).ToArray());
-            Debug.WriteLine(shuffle);
+            //Debug.WriteLine(shuffle);
             if (shuffle.Length % 2 == 0)
             {
                 for (int i = 0; i < shuffle.Length; i++)
@@ -66,6 +82,7 @@ namespace DictionaryApp
                     letter.Click += new EventHandler(Letter_Click);
                     Controls.Add(letter);
                     letters.Add(letter);
+                    ltr.Add("l" + i, letter);
                 }
             }
             else
@@ -82,6 +99,7 @@ namespace DictionaryApp
                 firstletter.Click += new EventHandler(Letter_Click);
                 Controls.Add(firstletter);
                 letters.Add(firstletter);
+                ltr.Add("l0", firstletter);
 
                 for (int i = 1; i < shuffle.Length; i++)
                 {
@@ -100,6 +118,7 @@ namespace DictionaryApp
                     letter.Click += new EventHandler(Letter_Click);
                     Controls.Add(letter);
                     letters.Add(letter);
+                    ltr.Add("l" + i, letter);
                 }
             }
         }
@@ -107,8 +126,32 @@ namespace DictionaryApp
         private void Letter_Click(object sender, EventArgs e)
         {
             Button selected = sender as Button;
-            selected.Visible = false;
+            Button button = new Button();
+            button = selected;           
             LabelAnswer.Text += selected.Text.ToString();
+            try
+            {
+                if (ltr.ContainsValue(selected) && !ans.ContainsValue(selected))
+                {
+                    selected.Visible = false;
+                    button.Visible = true;
+                    button.Location = new Point(selected.Location.X, selected.Location.Y + 30);
+                    ans.Add("a" + ltr.FirstOrDefault(x => x.Value == selected).Key.Last(), button);
+                    Controls.Add(button);
+                }
+            }
+            catch (Exception) { }
+            try
+            {
+                if (ans.ContainsValue(selected))
+                {
+                    ltr["l" + ans.FirstOrDefault(x => x.Value == selected).Key].Visible = true;
+                    Controls.Remove(selected);
+                }
+            }
+            catch (Exception) { }
+            
+            Debug.WriteLine(ltr.Count.ToString() + " " + ans.Count.ToString());
         }
 
         private void ButtonOKGTWRules_Click(object sender, EventArgs e)
@@ -199,6 +242,7 @@ namespace DictionaryApp
                 ButtonSubmit.Text = "Submit";
                 ButtonSubmit.Visible = false;
                 LabelCorrectAns.Visible = false;
+                LabelAnswer.ForeColor = Color.Black;
                 timeleft = 20;
                 LabelTimeLeft.ForeColor = Color.Black;
                 LabelTimeLeft.Text = "Time left: " + timeleft + "s";
@@ -209,7 +253,7 @@ namespace DictionaryApp
             {
                 FormGameResult fgs = new FormGameResult();
                 fgs.Show();
-            }          
+            }
         }
 
         private void LabelTimeLeft_Click(object sender, EventArgs e)

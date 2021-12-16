@@ -117,13 +117,12 @@
             // 
             // LabelAnswer
             // 
-            this.LabelAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelAnswer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LabelAnswer.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelAnswer.Location = new System.Drawing.Point(180, 710);
+            this.LabelAnswer.Location = new System.Drawing.Point(24, 710);
             this.LabelAnswer.Name = "LabelAnswer";
-            this.LabelAnswer.Size = new System.Drawing.Size(1182, 91);
+            this.LabelAnswer.Size = new System.Drawing.Size(1863, 91);
             this.LabelAnswer.TabIndex = 8;
             this.LabelAnswer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LabelAnswer.Visible = false;

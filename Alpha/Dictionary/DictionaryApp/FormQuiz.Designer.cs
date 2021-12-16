@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQuiz));
             this.PanelTopic = new System.Windows.Forms.Panel();
+            this.ButtonBack = new System.Windows.Forms.Button();
             this.LabelChooseTP = new System.Windows.Forms.Label();
             this.PanelWF = new System.Windows.Forms.Panel();
             this.LabelWFDes = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@
             this.Timer1sec = new System.Windows.Forms.Timer(this.components);
             this.LabelReady = new System.Windows.Forms.Label();
             this.TimerReady = new System.Windows.Forms.Timer(this.components);
-            this.ButtonBack = new System.Windows.Forms.Button();
             this.ToolTipQuiz = new System.Windows.Forms.ToolTip(this.components);
             this.PanelTopic.SuspendLayout();
             this.PanelWF.SuspendLayout();
@@ -93,6 +93,19 @@
             this.PanelTopic.Name = "PanelTopic";
             this.PanelTopic.Size = new System.Drawing.Size(852, 480);
             this.PanelTopic.TabIndex = 4;
+            // 
+            // ButtonBack
+            // 
+            this.ButtonBack.BackgroundImage = global::DictionaryApp.Properties.Resources.icons8_return_96px;
+            this.ButtonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonBack.Location = new System.Drawing.Point(0, 0);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(30, 30);
+            this.ButtonBack.TabIndex = 4;
+            this.ButtonBack.UseVisualStyleBackColor = true;
+            this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
+            this.ButtonBack.MouseHover += new System.EventHandler(this.ButtonBack_MouseHover);
             // 
             // LabelChooseTP
             // 
@@ -322,9 +335,9 @@
             // 
             this.ButtonQuit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ButtonQuit.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonQuit.Location = new System.Drawing.Point(29, 469);
+            this.ButtonQuit.Location = new System.Drawing.Point(40, 459);
             this.ButtonQuit.Name = "ButtonQuit";
-            this.ButtonQuit.Size = new System.Drawing.Size(123, 38);
+            this.ButtonQuit.Size = new System.Drawing.Size(152, 48);
             this.ButtonQuit.TabIndex = 3;
             this.ButtonQuit.TabStop = false;
             this.ButtonQuit.Text = "Quit";
@@ -335,9 +348,9 @@
             // 
             this.ButtonNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonNext.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonNext.Location = new System.Drawing.Point(1170, 469);
+            this.ButtonNext.Location = new System.Drawing.Point(1141, 459);
             this.ButtonNext.Name = "ButtonNext";
-            this.ButtonNext.Size = new System.Drawing.Size(123, 38);
+            this.ButtonNext.Size = new System.Drawing.Size(152, 48);
             this.ButtonNext.TabIndex = 3;
             this.ButtonNext.TabStop = false;
             this.ButtonNext.Text = "Next";
@@ -350,7 +363,7 @@
             this.LabelTimeLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelTimeLeft.AutoSize = true;
             this.LabelTimeLeft.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTimeLeft.Location = new System.Drawing.Point(1147, 60);
+            this.LabelTimeLeft.Location = new System.Drawing.Point(1124, 61);
             this.LabelTimeLeft.Name = "LabelTimeLeft";
             this.LabelTimeLeft.Size = new System.Drawing.Size(126, 23);
             this.LabelTimeLeft.TabIndex = 3;
@@ -361,7 +374,7 @@
             this.LabelScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelScore.AutoSize = true;
             this.LabelScore.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelScore.Location = new System.Drawing.Point(1147, 25);
+            this.LabelScore.Location = new System.Drawing.Point(1124, 26);
             this.LabelScore.Name = "LabelScore";
             this.LabelScore.Size = new System.Drawing.Size(151, 23);
             this.LabelScore.TabIndex = 3;
@@ -527,19 +540,6 @@
             // 
             this.TimerReady.Interval = 1000;
             this.TimerReady.Tick += new System.EventHandler(this.TimerReady_Tick);
-            // 
-            // ButtonBack
-            // 
-            this.ButtonBack.BackgroundImage = global::DictionaryApp.Properties.Resources.icons8_return_96px;
-            this.ButtonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonBack.Location = new System.Drawing.Point(0, 0);
-            this.ButtonBack.Name = "ButtonBack";
-            this.ButtonBack.Size = new System.Drawing.Size(30, 30);
-            this.ButtonBack.TabIndex = 4;
-            this.ButtonBack.UseVisualStyleBackColor = true;
-            this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
-            this.ButtonBack.MouseHover += new System.EventHandler(this.ButtonBack_MouseHover);
             // 
             // FormQuiz
             // 

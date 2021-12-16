@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Tw+xAFFzPcuDfw4nDUZVlV6x666MVZEQXbFbckEHosvlfI7u3WvZjvuacFXiR+ZbvQJpmmptrye44iRVWiuVHw==",
+  "dgSpecHash": "fKEeP2a76G2GIfs6NSlBD/OyyyRZxf90Zt00UFJ0D4cGium/lVorK7qXKbV8kZMc9haWt5Um2V5HcGeeHOKFQg==",
   "success": true,
   "projectFilePath": "E:\\CODING\\GIT VP Project\\HEAD\\main5\\Visual-Progamming\\Alpha\\Dictionary\\Dictionary\\Dictionary.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\duyha\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512",
+    "C:\\Users\\duyha\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512",
     "C:\\Users\\duyha\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
     "C:\\Users\\duyha\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
     "C:\\Users\\duyha\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"

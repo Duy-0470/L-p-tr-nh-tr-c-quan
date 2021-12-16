@@ -91,7 +91,7 @@
             this.LabelTopic.Name = "LabelTopic";
             this.LabelTopic.Size = new System.Drawing.Size(813, 36);
             this.LabelTopic.TabIndex = 0;
-            this.LabelTopic.Text = "Topic";
+            this.LabelTopic.Text = "Game type";
             this.LabelTopic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FormGameResult
