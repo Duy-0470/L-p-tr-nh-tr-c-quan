@@ -15,7 +15,7 @@ namespace DictionaryApp
     {
         public enum GameType
         {
-            Quizzes, GTW
+            Quizzes, GTW, Hangman
         }
         public static GameType gameType;
         
@@ -78,6 +78,12 @@ namespace DictionaryApp
                 FormGTW fgtw = new FormGTW();
                 fgtw.Show();
             }
+            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "PanelHangman_MouseClick" || x.GetMethod().Name == "PanelHangmanDes_MouseClick"
+                || x.GetMethod().Name == "LabelHangmanDes_MouseClick" || x.GetMethod().Name == "LabelHangman_MouseClick" || x.GetMethod().Name == "PictureBoxHangman_MouseClick"))
+            {
+                FormHangman fh = new FormHangman();
+                fh.Show();
+            }
             else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ButtonHome_Click"))
             {
                 Form1.GetInstance().Show();
@@ -118,6 +124,35 @@ namespace DictionaryApp
         private void PanelGTWDes_MouseClick(object sender, MouseEventArgs e)
         {
             PanelGTW_MouseClick(sender, e);
+        }
+
+        private void PanelHangman_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                gameType = GameType.Hangman;
+                Close();
+            }
+        }
+
+        private void PanelHangmanDes_MouseClick(object sender, MouseEventArgs e)
+        {
+            PanelHangman_MouseClick(sender, e);
+        }
+
+        private void LabelHangmanDes_MouseClick(object sender, MouseEventArgs e)
+        {
+            PanelHangman_MouseClick(sender, e);
+        }
+
+        private void LabelHangman_MouseClick(object sender, MouseEventArgs e)
+        {
+            PanelHangman_MouseClick(sender, e);
+        }
+
+        private void PictureBoxHangman_MouseClick(object sender, MouseEventArgs e)
+        {
+            PanelHangman_MouseClick(sender, e);
         }
     }
 }

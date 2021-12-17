@@ -16,6 +16,7 @@ namespace DictionaryApp
         public FormGameResult()
         {
             InitializeComponent();
+            Bounds = Screen.PrimaryScreen.Bounds;
         }
 
         private void FormGameResult_Load(object sender, EventArgs e)

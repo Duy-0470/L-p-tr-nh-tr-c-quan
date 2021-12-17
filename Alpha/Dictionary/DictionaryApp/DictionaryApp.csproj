@@ -237,6 +237,12 @@
     <Compile Include="FormGTW.Designer.cs">
       <DependentUpon>FormGTW.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHangman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHangman.Designer.cs">
+      <DependentUpon>FormHangman.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormQuiz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,6 +292,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGTW.resx">
       <DependentUpon>FormGTW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHangman.resx">
+      <DependentUpon>FormHangman.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormQuiz.resx">
       <DependentUpon>FormQuiz.cs</DependentUpon>
@@ -666,6 +675,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>DictionaryDB.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\hangman6.png" />
+    <None Include="Resources\hangman5.png" />
+    <None Include="Resources\hangman4.png" />
+    <None Include="Resources\hangman3.png" />
+    <None Include="Resources\hangman2.png" />
+    <None Include="Resources\hangman1.png" />
+    <None Include="Resources\hangman0.png" />
+    <None Include="Resources\favpng_hangman-free-hangman-classic-free-android-word-game.png" />
     <None Include="Resources\icons8_return_96px.png" />
     <None Include="Resources\icons8_literature_200px.png" />
     <None Include="Resources\icons8_home_48px.png" />
