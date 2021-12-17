@@ -144,6 +144,10 @@ namespace DictionaryApp.CustomControls
                     wl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     wl.Location = new System.Drawing.Point(20, 8);
                     wl.Text = char.ToUpper(word.name[0]) + word.name.Substring(1).ToLower();
+                    string w = word.name.Split(' ')[word.name.Split(' ').Length - 2];
+                    wl.Text = char.ToUpper(w[0]) + w.Substring(1).ToLower(); ;
+                    wl.Name = word.link;
+
                     wl.Name = word.link;
                     wl.BackColor = Color.Transparent;
                     p.MouseEnter += new System.EventHandler(this.OnMouseEnterButton);

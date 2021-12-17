@@ -101,6 +101,7 @@ namespace DictionaryApp
             this.review1.SetPanel(null, DatabaseHandle.GetDataHandle().GetMarkedWord(), DatabaseHandle.GetDataHandle().LoadHistory());
             this.review1.Location = new Point((int)(this.Size.Width - this.review1.PreferredSize.Width) / 2, 150);
             this.topics.Visible = false;
+            this.idiomResultPanel.Visible=false;
 
         }
 

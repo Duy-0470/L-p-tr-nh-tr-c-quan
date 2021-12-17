@@ -2,7 +2,9 @@
 using DictionaryApp.Classes;
 using DictionaryApp.CustomControls;
 using DictionaryApp.Database;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -175,15 +177,23 @@ namespace DictionaryApp
             // 
             // appNamePanel
             // 
+            this.appNamePanel.Size = new System.Drawing.Size(1990, 68);
+
+            this.appNamePanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.appNamePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(69)))), ((int)(((byte)(144)))));
+
             this.appNamePanel.AutoSize = true;
-            this.appNamePanel.BackColor = System.Drawing.Color.Transparent;
+
             this.appNamePanel.Controls.Add(this.appName);
             this.appNamePanel.Font = new System.Drawing.Font("Times New Roman", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.appNamePanel.Location = new System.Drawing.Point(11, 0);
+            this.appNamePanel.Location = new System.Drawing.Point(0, 0);
             this.appNamePanel.Name = "appNamePanel";
-            this.appNamePanel.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.appNamePanel.Size = new System.Drawing.Size(237, 48);
+            this.appNamePanel.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            // this.appNamePanel.Size = new System.Drawing.Size(237, 48);
             this.appNamePanel.TabIndex = 0;
+            // this.appNamePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(174)))));
+
             // 
             // appName
             // 
@@ -197,6 +207,7 @@ namespace DictionaryApp
             this.appName.Size = new System.Drawing.Size(186, 28);
             this.appName.TabIndex = 0;
             this.appName.Text = "Your Dictionaries";
+            this.appName.ForeColor = Color.White;
             // 
             // panel1
             // 
@@ -412,6 +423,8 @@ namespace DictionaryApp
             // 
             // SearchBar
             // 
+            this.SearchBar.Size = new System.Drawing.Size(1990, 68);
+
             this.SearchBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SearchBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(69)))), ((int)(((byte)(144)))));
@@ -470,6 +483,7 @@ namespace DictionaryApp
             this.SearchInput.TabIndex = 10;
             this.SearchInput.Text = "Search";
             this.SearchInput.Click += new System.EventHandler(this.ClickAtSearchArea);
+            this.SearchInput.KeyPress += SearchInput_KeyPress;
             // 
             // TypeSelectionButton
             // 
@@ -653,7 +667,7 @@ namespace DictionaryApp
             this.Controls.Add(this.TypePanelBorder);
             this.Controls.Add(this.dictionariesOptionBorder);
             this.Controls.Add(this.SearchBar);
-            this.Controls.Add(this.panel5);
+            // this.Controls.Add(this.panel5);
             this.Controls.Add(this.ButtonBarBorder);
             this.Controls.Add(this.topBar);
             this.Controls.Add(this.topics);
@@ -687,6 +701,47 @@ namespace DictionaryApp
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void SearchInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+            if(e.KeyChar == (char)Keys.Enter)
+            {
+                if (this.TypeSelectionButton.Text.Contains("English"))
+                {
+                    if (this.SearchInput.ForeColor != Color.FromArgb(Convert.ToInt32("d9d9d9", 16)) && this.SearchInput.Text != "")
+                    {
+                        List<Word> mw = new List<Word>();
+                        List<string> mm = new List<string>(), saw = new List<string>();
+                        Word w = DatabaseHandle.GetDataHandle().Find(this.SearchInput.Text.Replace(' ', '-'), ref mw, ref mm, ref saw);
+                        Debug.WriteLine(w);
+                        Debug.WriteLine(mw);
+                        Debug.WriteLine(mm);
+                        Debug.WriteLine(saw);
+                        this.wordResultPanel.SetPanel(w, mw, mm, saw);
+                    }
+
+                    this.wordResultPanel.Location = new Point((int)(this.Size.Width - this.wordResultPanel.PreferredSize.Width) / 2, 180);
+
+                    this.SearchInput.ForeColor = Color.FromArgb(Convert.ToInt32("d9d9d9", 16));
+                    this.SearchInput.Text = "Search";
+                }
+                else
+                {
+                    if (this.SearchInput.ForeColor != Color.FromArgb(Convert.ToInt32("d9d9d9", 16)) && this.SearchInput.Text != "")
+                    {
+                        this.idiomResultPanel.SetPanel(
+                            DatabaseHandle.GetDataHandle().GetIdiomsGivenWord(this.SearchInput.Text.Replace(' ', '-')),
+                            DatabaseHandle.GetDataHandle().GetAlspMatchingIdioms(this.SearchInput.Text.Replace(' ', '-')));
+                    }
+
+                    this.idiomResultPanel.Location = new Point((int)(this.Size.Width - this.idiomResultPanel.PreferredSize.Width) / 2, 180);
+
+                    this.SearchInput.ForeColor = Color.FromArgb(Convert.ToInt32("d9d9d9", 16));
+                    this.SearchInput.Text = "Search";
+                }
+            }
         }
 
 

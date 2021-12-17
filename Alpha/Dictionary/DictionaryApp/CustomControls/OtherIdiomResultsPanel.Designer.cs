@@ -74,6 +74,7 @@ namespace DictionaryApp.CustomControls
             this.allMatchesHeaderPanel.Name = "allMatchesHeaderPanel";
             this.allMatchesHeaderPanel.Size = new System.Drawing.Size(250, 45);
             this.allMatchesHeaderPanel.TabIndex = 2;
+            this.label2.Click += this.OpenOrHidePanels;
 
             // 
             // allMatchesButton

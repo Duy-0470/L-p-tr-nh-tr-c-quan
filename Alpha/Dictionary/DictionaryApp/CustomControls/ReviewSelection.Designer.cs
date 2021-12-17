@@ -80,6 +80,7 @@ namespace DictionaryApp.CustomControls
             this.markedWordsHeaderPanel.Name = "markedWordsHeaderPanel";
             this.markedWordsHeaderPanel.Size = new System.Drawing.Size(250, 45);
             this.markedWordsHeaderPanel.TabIndex = 2;
+            this.label2.Click += this.OpenOrHidePanels;
 
             PictureBox pictureBox3 = new PictureBox();
             string pa = System.IO.Directory.GetCurrentDirectory();
@@ -251,6 +252,8 @@ namespace DictionaryApp.CustomControls
             this.historyHeaderPanel.Controls.Add(pictureBox2);
             this.historyHeaderPanel.Controls.Add(this.label3);
             this.historyHeaderPanel.Controls.Add(this.historyButton);
+            this.label3.Click += this.OpenOrHidePanels;
+
             // 
             // label3
             // 

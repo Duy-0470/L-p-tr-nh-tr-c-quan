@@ -48,21 +48,45 @@ namespace DictionaryApp.CustomControls
         public void OpenOrHidePanels(object sender, EventArgs eventArgs)
         {
             Debug.WriteLine("Hello");
-            if((sender as Panel).Name.Contains("seeAlsoHeaderPanel"))
+            if((sender as Label) != null)
             {
+                if (((sender as Label).Parent as Panel).Name.Contains("seeAlsoHeaderPanel"))
+                {
 
-                
-            }else if ((sender as Panel).Name.Contains("mainMeaningsHeaderPanel"))
-            {
-                this.mainMeaningsButton.Text = this.mainMeaningsButton.Text == "+" ? "-" : "+";
-                this.allMatchesButton.Text = "-";
 
+                }
+                else if (((sender as Label).Parent as Panel).Name.Contains("mainMeaningsHeaderPanel"))
+                {
+                    this.mainMeaningsButton.Text = this.mainMeaningsButton.Text == "+" ? "-" : "+";
+                    this.allMatchesButton.Text = "-";
+
+                }
+                else if (((sender as Label).Parent as Panel).Name.Contains("allMatchesHeaderPanel"))
+                {
+                    this.allMatchesButton.Text = this.allMatchesButton.Text == "+" ? "-" : "+";
+                    this.mainMeaningsButton.Text = "-";
+                }
             }
-            else if ((sender as Panel).Name.Contains("allMatchesHeaderPanel"))
+            else
             {
-                this.allMatchesButton.Text = this.allMatchesButton.Text == "+" ? "-" : "+";
-                this.mainMeaningsButton.Text = "-";
+                if ((sender as Panel).Name.Contains("seeAlsoHeaderPanel"))
+                {
+
+
+                }
+                else if ((sender as Panel).Name.Contains("mainMeaningsHeaderPanel"))
+                {
+                    this.mainMeaningsButton.Text = this.mainMeaningsButton.Text == "+" ? "-" : "+";
+                    this.allMatchesButton.Text = "-";
+
+                }
+                else if ((sender as Panel).Name.Contains("allMatchesHeaderPanel"))
+                {
+                    this.allMatchesButton.Text = this.allMatchesButton.Text == "+" ? "-" : "+";
+                    this.mainMeaningsButton.Text = "-";
+                }
             }
+            
             RefreshPanels();
         }
         private void OnMouseEnterButton(object sender, EventArgs e)
@@ -175,6 +199,7 @@ namespace DictionaryApp.CustomControls
                         p.Controls.Add(wl);
                         wl.AutoSize = true;
                         wl.Click += wordclick;
+                        p.Click += wordpanel_click;
 
                         this.mainMeaningPanel.Controls.Add(p);
                     }
@@ -187,6 +212,10 @@ namespace DictionaryApp.CustomControls
         private void wordclick(object sender, EventArgs e)
         {
             Form1.GetInstance().SetTopicResultPanelGivenId((sender as Label).Name);
+        }
+        private void wordpanel_click(object sender, EventArgs e)
+        {
+            Form1.GetInstance().SetTopicResultPanelGivenId(((sender as Panel).Controls[0] as Label).Name);
         }
 
         private void LevelLabel_Click(object sender, EventArgs e)

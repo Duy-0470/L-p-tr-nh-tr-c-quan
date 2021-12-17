@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Alpha",
-    "\\Alpha\\Dictionary",
-    "\\Alpha\\Dictionary\\DictionaryApp"
+    "\\Alpha\\Dictionary"
   ],
+  "SelectedNode": "\\Alpha\\Dictionary\\DictionaryApp",
   "PreviewInSolutionExplorer": false
 }

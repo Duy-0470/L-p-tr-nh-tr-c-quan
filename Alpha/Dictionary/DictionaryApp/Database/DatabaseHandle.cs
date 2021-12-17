@@ -28,6 +28,10 @@ namespace DictionaryApp.Database
             {
                 handle = new DatabaseHandle();
             }
+            /*Word i = handle.RandomWord();
+            Debug.WriteLine(i.wordHeader.word);
+            Debug.WriteLine(i.senses[0].meaning);
+*/
             return handle;
         }
         public List<String> FindWordsMatchingSearch(string search)
@@ -38,7 +42,7 @@ namespace DictionaryApp.Database
             command.Connection = connection;
             command.CommandText = "select * from Vocabulary where id LIKE '%@id%'";
             command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = search;
-            connection.Close();connection.Open();
+            connection.Close(); connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             if (reader.HasRows)
             {
@@ -50,6 +54,122 @@ namespace DictionaryApp.Database
             connection.Close();
             return matches;
         }
+        public MyImage RandomImage()
+        {
+            SqlCommand command = new SqlCommand();
+            command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select distinct word from Image_Word";
+            connection.Close(); connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            List<string> ids = new List<string>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    ids.Add(reader.GetString(0));
+                }
+            }
+            int r = new Random().Next() % ids.Count;
+            MyImage theW = null;
+            command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Image_Word where word = @word";
+            command.Parameters.Add("@word", System.Data.SqlDbType.NVarChar).Value = ids[r];
+            connection.Close(); connection.Open();
+            reader = command.ExecuteReader();
+            if (reader.HasRows)
+            {
+                reader.Read();
+                theW = new MyImage(reader.GetString(2), reader.GetString(1));
+                connection.Close();
+
+            }
+            connection.Close();
+            return theW;
+        }
+        
+        public Word GetWordGivenId(string id)
+        {
+            Word theW = null;
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Vocabulary where id = @id";
+            command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = id;
+            connection.Close(); connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            if (reader.HasRows)
+            {
+                reader.Read();
+                string wid = reader.GetString(0);
+                WordHeader wordHeader = new WordHeader(reader.GetString(1), reader.GetString(2), "a1",
+                    reader.GetString(3), reader.GetString(5), reader.GetString(4), reader.GetString(6), reader.GetInt32(7), reader.GetString(0));
+
+                connection.Close();
+                Debug.WriteLine(wid);
+
+                List<Sense> senses = this.GetSenses(wid);
+                /*List<WordForm> wordForms = this.GetWordForms(wid);
+                List<Shortcut> shortcuts = this.GetShortcuts(wid);*/
+                // wordHeader.AddWordForms(wordForms);
+                connection.Close();
+                theW = new Word(wordHeader,
+                                wid,
+                                senses,
+                                null,
+                                null);
+            }
+            connection.Close();
+            return theW;
+        }
+        public Word RandomWord() {
+            SqlCommand command;
+            command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select id from Vocabulary";
+            connection.Close(); connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            List<string> ids = new List<string>();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    ids.Add(reader.GetString(0));
+                }
+            }
+            int r = new Random().Next() % ids.Count;
+            Word theW = null;
+            command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = "select * from Vocabulary where id = @id";
+            command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = ids[r];
+            connection.Close(); connection.Open();
+            reader = command.ExecuteReader();
+            if (reader.HasRows)
+            {
+                reader.Read();
+                string wid = reader.GetString(0);
+                WordHeader wordHeader = new WordHeader(reader.GetString(1), reader.GetString(2), "a1",
+                    reader.GetString(3), reader.GetString(5), reader.GetString(4), reader.GetString(6), reader.GetInt32(7), reader.GetString(0));
+
+                connection.Close();
+                Debug.WriteLine(wid);
+
+                List<Sense> senses = this.GetSenses(wid);
+                /*List<WordForm> wordForms = this.GetWordForms(wid);
+                List<Shortcut> shortcuts = this.GetShortcuts(wid);*/
+                // wordHeader.AddWordForms(wordForms);
+                connection.Close();
+                theW = new Word(wordHeader,
+                                wid,
+                                senses,
+                                null,
+                                null);
+            }
+            connection.Close();
+            return theW;
+        }
+
         public Word FindGivenId(string search, ref List<Word> mw, ref List<string> mm, ref List<string> saw)
         {
             SqlCommand command = new SqlCommand();
@@ -238,7 +358,7 @@ namespace DictionaryApp.Database
             return mw;
 
         }
-        public Word GetWordGivenId(string id)
+        /*public Word GetWordGivenId(string id)
         {
             Word theW = null;
 
@@ -277,7 +397,7 @@ namespace DictionaryApp.Database
 
             }
             return theW;
-        }
+        }*/
         public Word Find(string search, ref List<Word> mw, ref List<string> mm, ref List<string> saw)
         {
             Debug.WriteLine(search.ToLower().Replace(" ", "/_"));

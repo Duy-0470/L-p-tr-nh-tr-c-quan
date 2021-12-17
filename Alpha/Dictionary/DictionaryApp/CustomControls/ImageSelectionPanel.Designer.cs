@@ -1,5 +1,6 @@
 ﻿
 using DictionaryApp.Classes;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -300,6 +301,10 @@ namespace DictionaryApp.CustomControls
             {
                 foreach (MyImage word in others)
                 {
+                    if (word.name.Length < 2)
+                    {
+                        continue;
+                    }
                     Panel p = new Panel();
                     p.BackColor = Color.White;
                     p.Size = new Size(allWordsPanel.Size.Width, 35);
@@ -312,8 +317,15 @@ namespace DictionaryApp.CustomControls
                     wl.ForeColor = System.Drawing.Color.Black;
                     wl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     wl.Location = new System.Drawing.Point(20, 8);
-                    wl.Text = char.ToUpper(word.name[0]) + word.name.Substring(1).ToLower(); ;
+                    string w = word.name.Split(' ')[word.name.Split(' ').Length - 2];
+                    Debug.WriteLine(word);
+                    Debug.WriteLine(w);
+                    wl.Text = char.ToUpper(w[0]) + w.Substring(1).ToLower(); ;
                     wl.Name = word.link;
+
+                    Debug.WriteLine(word.name);
+                    Debug.WriteLine(word.link);
+
                     wl.BackColor = Color.Transparent;
                     p.MouseEnter += new System.EventHandler(this.OnMouseEnterButton);
                     p.MouseLeave += new System.EventHandler(this.OnMouseLeaveButton);

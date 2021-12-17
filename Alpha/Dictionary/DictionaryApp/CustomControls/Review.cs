@@ -105,7 +105,7 @@ namespace DictionaryApp.CustomControls
             }
             else
             {
-                this.text = new System.Windows.Forms.TextBox();
+                /*this.text = new System.Windows.Forms.TextBox();
                 this.text.BackColor = System.Drawing.Color.White;
                 this.text.Location = new System.Drawing.Point(300, 80);
                 this.text.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -118,6 +118,7 @@ namespace DictionaryApp.CustomControls
                 this.text.TabIndex = 11;
                 this.text.Text = "Oops, no tracked word is found";
                 this.text.ForeColor = Color.FromArgb(150, 150, 150);
+                this.text.Visible = true;*/
                 this.text.Visible = true;
                 if(wordDefinition!=null)
                     this.wordDefinition.Visible = false;

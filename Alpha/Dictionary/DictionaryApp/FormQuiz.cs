@@ -660,9 +660,7 @@ namespace DictionaryApp
         private void Timer1sec_Tick(object sender, EventArgs e)
         {
             if (timeleft <= 5)
-            {
                 LabelTimeLeft.ForeColor = Color.Red;
-            }
             if (timeleft > 0)
             {
                 timeleft--;

@@ -34,17 +34,38 @@ namespace DictionaryApp.CustomControls
         public void OpenOrHidePanels(object sender, EventArgs eventArgs)
         {
             Debug.WriteLine("Hello");
-            if((sender as Panel).Name.Contains("seeAlsoHeaderPanel"))
+            if((sender as Label) != null)
             {
-                this.allMatchesButton.Text = "-";
-            }else if ((sender as Panel).Name.Contains("mainMeaningsHeaderPanel"))
-            {
-                this.allMatchesButton.Text = "-";
+                if (((sender as Label).Parent as Panel).Name.Contains("seeAlsoHeaderPanel"))
+                {
+                    this.allMatchesButton.Text = "-";
+                }
+                else if (((sender as Label).Parent as Panel).Name.Contains("mainMeaningsHeaderPanel"))
+                {
+                    this.allMatchesButton.Text = "-";
+                }
+                else if (((sender as Label).Parent as Panel).Name.Contains("allMatchesHeaderPanel"))
+                {
+                    this.allMatchesButton.Text = this.allMatchesButton.Text == "+" ? "-" : "+";
+                }
             }
-            else if ((sender as Panel).Name.Contains("allMatchesHeaderPanel"))
+            else
             {
-                this.allMatchesButton.Text = this.allMatchesButton.Text == "+" ? "-" : "+";
+                if ((sender as Panel).Name.Contains("seeAlsoHeaderPanel"))
+                {
+                    this.allMatchesButton.Text = "-";
+                }
+                else if ((sender as Panel).Name.Contains("mainMeaningsHeaderPanel"))
+                {
+                    this.allMatchesButton.Text = "-";
+                }
+                else if ((sender as Panel).Name.Contains("allMatchesHeaderPanel"))
+                {
+                    this.allMatchesButton.Text = this.allMatchesButton.Text == "+" ? "-" : "+";
+                }
+
             }
+            
             RefreshPanels();
         }
         private void OnMouseEnterButton(object sender, EventArgs e)
@@ -96,6 +117,7 @@ namespace DictionaryApp.CustomControls
                     wl.MouseLeave += new System.EventHandler(this.OnMouseLeaveButton);
                     p.Controls.Add(wl);
                     wl.Click += MW_Click;
+                    p.Click += MWPanel_Click;
                     this.allMatchesPanel.Controls.Add(p);
                 }
 
@@ -111,6 +133,10 @@ namespace DictionaryApp.CustomControls
         private void MW_Click(object sender, EventArgs e)
         {
             Form1.GetInstance().SetIdiomResultPanelGivenId((sender as Label).Name);
+        }
+        private void MWPanel_Click(object sender, EventArgs e)
+        {
+            Form1.GetInstance().SetIdiomResultPanelGivenId((sender as Panel).Controls[0].Name);
         }
     }
 }

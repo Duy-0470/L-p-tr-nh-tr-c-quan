@@ -23,6 +23,7 @@ namespace DictionaryApp
         {
             InitializeComponent();
             ButtonHome.FlatAppearance.BorderSize = 0;
+            Bounds = Screen.PrimaryScreen.Bounds;
         }
 
         private void panel1_MouseClick(object sender, MouseEventArgs e)

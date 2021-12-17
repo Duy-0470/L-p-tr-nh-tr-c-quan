@@ -64,6 +64,7 @@
       <HintPath>..\packages\NAudio.Lame.2.0.0\lib\netstandard2.0\NAudio.Lame.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -343,6 +344,13 @@
     <Content Include="Database\Files\images\close.png" />
     <Content Include="Database\Files\images\delete.png" />
     <Content Include="Database\Files\images\eraser.png" />
+    <Content Include="Database\Files\images\hangman0.png" />
+    <Content Include="Database\Files\images\hangman1.png" />
+    <Content Include="Database\Files\images\hangman2.png" />
+    <Content Include="Database\Files\images\hangman3.png" />
+    <Content Include="Database\Files\images\hangman4.png" />
+    <Content Include="Database\Files\images\hangman5.png" />
+    <Content Include="Database\Files\images\hangman6.png" />
     <Content Include="Database\Files\images\images.txt" />
     <Content Include="Database\Files\images\images\_fullsize_a_acc_accor_accordion_concertina.png" />
     <Content Include="Database\Files\images\images\_fullsize_a_air_airli_airliner.png" />

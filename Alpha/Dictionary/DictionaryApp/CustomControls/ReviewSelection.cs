@@ -41,23 +41,51 @@ namespace DictionaryApp.CustomControls
         public void OpenOrHidePanels(object sender, EventArgs eventArgs)
         {
             Debug.WriteLine("Hello");
-            if((sender as Panel).Name.Contains("seeAlsoHeaderPanel"))
+            if(sender as Label != null)
             {
-                
-                // this.seeAlsoButton.Text = // this.seeAlsoButton.Text == "+" ? "-" : "+";
-                this.historyButton.Text = "-";
-                this.markedWordsButton.Text = "-";
-            }else if ((sender as Panel).Name.Contains("historyHeaderPanel"))
-            {
-                this.historyButton.Text = this.historyButton.Text == "+" ? "-" : "+";
-                // this.seeAlsoButton.Text = "-";
-                this.markedWordsButton.Text = "-";
+
+                if (((sender as Label).Parent as Panel).Name.Contains("seeAlsoHeaderPanel"))
+                {
+
+                    // this.seeAlsoButton.Text = // this.seeAlsoButton.Text == "+" ? "-" : "+";
+                    this.historyButton.Text = "-";
+                    this.markedWordsButton.Text = "-";
+                }
+                else if (((sender as Label).Parent as Panel).Name.Contains("historyHeaderPanel"))
+                {
+                    this.historyButton.Text = this.historyButton.Text == "+" ? "-" : "+";
+                    // this.seeAlsoButton.Text = "-";
+                    this.markedWordsButton.Text = "-";
+                }
+                else if (((sender as Label).Parent as Panel).Name.Contains("markedWordsHeaderPanel"))
+                {
+                    this.markedWordsButton.Text = this.markedWordsButton.Text == "+" ? "-" : "+";
+                    // this.seeAlsoButton.Text = "-";
+                    this.historyButton.Text = "-";
+                }
             }
-            else if ((sender as Panel).Name.Contains("markedWordsHeaderPanel"))
+            else
             {
-                this.markedWordsButton.Text = this.markedWordsButton.Text == "+" ? "-" : "+";
-                // this.seeAlsoButton.Text = "-";
-                this.historyButton.Text = "-";
+
+                if ((sender as Panel).Name.Contains("seeAlsoHeaderPanel"))
+                {
+
+                    // this.seeAlsoButton.Text = // this.seeAlsoButton.Text == "+" ? "-" : "+";
+                    this.historyButton.Text = "-";
+                    this.markedWordsButton.Text = "-";
+                }
+                else if ((sender as Panel).Name.Contains("historyHeaderPanel"))
+                {
+                    this.historyButton.Text = this.historyButton.Text == "+" ? "-" : "+";
+                    // this.seeAlsoButton.Text = "-";
+                    this.markedWordsButton.Text = "-";
+                }
+                else if ((sender as Panel).Name.Contains("markedWordsHeaderPanel"))
+                {
+                    this.markedWordsButton.Text = this.markedWordsButton.Text == "+" ? "-" : "+";
+                    // this.seeAlsoButton.Text = "-";
+                    this.historyButton.Text = "-";
+                }
             }
             RefreshPanels();
         }
@@ -141,6 +169,7 @@ namespace DictionaryApp.CustomControls
                     wl.MouseLeave += new System.EventHandler(this.OnMouseLeaveButton);
                     p.Controls.Add(wl);
                     wl.Click += MW_Click;
+                    p.Click += MWPanel_Click;
                     this.markedWordsPanel.Controls.Add(p);
                 }
 
@@ -202,6 +231,7 @@ namespace DictionaryApp.CustomControls
                     wl.MouseLeave += new System.EventHandler(this.OnMouseLeaveButton);
                     p.Controls.Add(wl);
                     wl.Click += SA_Click;
+                    p.Click += SAPanel_Click;
 
                     this.historyPanel.Controls.Add(p);
                 }
@@ -221,6 +251,15 @@ namespace DictionaryApp.CustomControls
         private void MW_Click(object sender, EventArgs e)
         {
             (this.Parent as Review).SetWordPanel(DatabaseHandle.GetDataHandle().GetWordGivenId((sender as Label).Name));
+        }
+        private void SAPanel_Click(object sender, EventArgs e)
+        {
+            (this.Parent as Review).SetWordPanel(DatabaseHandle.GetDataHandle().GetWordGivenId((sender as Panel).Controls[0].Name));
+        }
+
+        private void MWPanel_Click(object sender, EventArgs e)
+        {
+            (this.Parent as Review).SetWordPanel(DatabaseHandle.GetDataHandle().GetWordGivenId((sender as Panel).Controls[0].Name));
         }
         private void FlipMarkedWords(object sender, EventArgs e)
         {

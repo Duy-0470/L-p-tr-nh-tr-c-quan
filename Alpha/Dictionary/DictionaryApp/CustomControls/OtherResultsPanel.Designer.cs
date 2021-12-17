@@ -84,7 +84,7 @@ namespace DictionaryApp.CustomControls
             this.allMatchesHeaderPanel.Name = "allMatchesHeaderPanel";
             this.allMatchesHeaderPanel.Size = new System.Drawing.Size(250, 45);
             this.allMatchesHeaderPanel.TabIndex = 2;
-
+            this.label2.Click += this.OpenOrHidePanels;
             // 
             // allMatchesButton
             // 
@@ -213,6 +213,8 @@ namespace DictionaryApp.CustomControls
             this.mainMeaningsHeaderPanel.Name = "mainMeaningsHeaderPanel";
             this.mainMeaningsHeaderPanel.Size = new System.Drawing.Size(250, 45);
             this.mainMeaningsHeaderPanel.TabIndex = 4;
+            this.label3.Click += this.OpenOrHidePanels;
+
             // 
             // label3
             // 
@@ -284,6 +286,8 @@ namespace DictionaryApp.CustomControls
             this.seeAlsoHeaderPanel.Name = "seeAlsoHeaderPanel";
             this.seeAlsoHeaderPanel.Size = new System.Drawing.Size(250, 45);
             this.seeAlsoHeaderPanel.TabIndex = 7;
+            this.label5.Click += this.OpenOrHidePanels;
+
             // 
             // label5
             // 

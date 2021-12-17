@@ -25,6 +25,7 @@ namespace DictionaryApp.CustomControls
         {
             InitializeComponent();
             this.seeAlsoHeaderPanel.Click += new System.EventHandler(this.OpenOrHidePanels);
+   
             this.mainMeaningsHeaderPanel.Click += new System.EventHandler(this.OpenOrHidePanels);
             this.allMatchesHeaderPanel.Click += new System.EventHandler(this.OpenOrHidePanels);
         }
@@ -50,38 +51,79 @@ namespace DictionaryApp.CustomControls
         public void OpenOrHidePanels(object sender, EventArgs eventArgs)
         {
             Debug.WriteLine("Hello");
-            if((sender as Panel).Name.Contains("seeAlsoHeaderPanel"))
+            if ((sender as Label) != null)
             {
-                if(DatabaseHandle.GetDataHandle().CheckTopicandSubtopic(topic, subtopic))
+                if (((sender as Label).Parent as Panel).Name.Contains("seeAlsoHeaderPanel"))
                 {
-                    this.seeAlsoButton.Text = this.seeAlsoButton.Text == "+" ? "-" : "+";
-                    this.mainMeaningsButton.Text = "-";
-                    this.allMatchesButton.Text = "-";
+                    if (DatabaseHandle.GetDataHandle().CheckTopicandSubtopic(topic, subtopic))
+                    {
+                        this.seeAlsoButton.Text = this.seeAlsoButton.Text == "+" ? "-" : "+";
+                        this.mainMeaningsButton.Text = "-";
+                        this.allMatchesButton.Text = "-";
+                    }
+                    else
+                    {
+                        this.seeAlsoButton.Text = "-";
+                    }
+
                 }
-                else
+                else if (((sender as Label).Parent as Panel).Name.Contains("mainMeaningsHeaderPanel"))
                 {
+                    if (topic != "")
+                    {
+                        this.mainMeaningsButton.Text = this.mainMeaningsButton.Text == "+" ? "-" : "+";
+                        this.seeAlsoButton.Text = "-";
+                        this.allMatchesButton.Text = "-";
+                    }
+                    else
+                    {
+                        this.mainMeaningsButton.Text = "-";
+                    }
+
+                }
+                else if (((sender as Label).Parent as Panel).Name.Contains("allMatchesHeaderPanel"))
+                {
+                    this.allMatchesButton.Text = this.allMatchesButton.Text == "+" ? "-" : "+";
                     this.seeAlsoButton.Text = "-";
-                }
-                
-            }else if ((sender as Panel).Name.Contains("mainMeaningsHeaderPanel"))
-            {
-                if (topic != "")
-                {
-                    this.mainMeaningsButton.Text = this.mainMeaningsButton.Text == "+" ? "-" : "+";
-                    this.seeAlsoButton.Text = "-";
-                    this.allMatchesButton.Text = "-";
-                }
-                else
-                {
                     this.mainMeaningsButton.Text = "-";
                 }
-                
             }
-            else if ((sender as Panel).Name.Contains("allMatchesHeaderPanel"))
+            else
             {
-                this.allMatchesButton.Text = this.allMatchesButton.Text == "+" ? "-" : "+";
-                this.seeAlsoButton.Text = "-";
-                this.mainMeaningsButton.Text = "-";
+                if ((sender as Panel).Name.Contains("seeAlsoHeaderPanel"))
+                {
+                    if (DatabaseHandle.GetDataHandle().CheckTopicandSubtopic(topic, subtopic))
+                    {
+                        this.seeAlsoButton.Text = this.seeAlsoButton.Text == "+" ? "-" : "+";
+                        this.mainMeaningsButton.Text = "-";
+                        this.allMatchesButton.Text = "-";
+                    }
+                    else
+                    {
+                        this.seeAlsoButton.Text = "-";
+                    }
+
+                }
+                else if ((sender as Panel).Name.Contains("mainMeaningsHeaderPanel"))
+                {
+                    if (topic != "")
+                    {
+                        this.mainMeaningsButton.Text = this.mainMeaningsButton.Text == "+" ? "-" : "+";
+                        this.seeAlsoButton.Text = "-";
+                        this.allMatchesButton.Text = "-";
+                    }
+                    else
+                    {
+                        this.mainMeaningsButton.Text = "-";
+                    }
+
+                }
+                else if ((sender as Panel).Name.Contains("allMatchesHeaderPanel"))
+                {
+                    this.allMatchesButton.Text = this.allMatchesButton.Text == "+" ? "-" : "+";
+                    this.seeAlsoButton.Text = "-";
+                    this.mainMeaningsButton.Text = "-";
+                }
             }
             RefreshPanels();
         }
@@ -138,6 +180,7 @@ namespace DictionaryApp.CustomControls
                     wl.MouseLeave += new System.EventHandler(this.OnMouseLeaveButton);
                     p.Controls.Add(wl);
                     wl.Click += Topic_Click;
+                    p.Click += TopicPanel_Click;
                     this.allMatchesPanel.Controls.Add(p);
                 }
 
@@ -171,6 +214,7 @@ namespace DictionaryApp.CustomControls
                     p.Controls.Add(wl);
                     wl.AutoSize = true;
                     wl.Click += Subtopic_Click;
+                    p.Click += SubtopicPanel_Click;
 
                     this.mainMeaningPanel.Controls.Add(p);
                 }
@@ -205,6 +249,7 @@ namespace DictionaryApp.CustomControls
                     p.Controls.Add(wl);
                     wl.AutoSize = true;
                     wl.Click += SA_Click;
+                    p.Click += SAPanel_Click;
                     this.seeAlsoPanel.Controls.Add(p);
                 }
             }
@@ -213,6 +258,11 @@ namespace DictionaryApp.CustomControls
         private void SA_Click(object sender, EventArgs e)
         {
             (this.Parent as Topics).SetWordList(DatabaseHandle.GetDataHandle().GetWordsGivenTopic(topic, subtopic, (sender as Label).Name));
+        }
+        private void SAPanel_Click(object sender, EventArgs e)
+        {
+            (this.Parent as Topics).SetWordList(DatabaseHandle.GetDataHandle().GetWordsGivenTopic
+                (topic, subtopic, ((sender as Panel).Controls[0] as Label).Name));
         }
 
         private void MW_Click(object sender, EventArgs e)
@@ -231,9 +281,31 @@ namespace DictionaryApp.CustomControls
             RefreshPanels();
 
         }
+        private void TopicPanel_Click(object sender, EventArgs e)
+        {
+            this.topic = ((sender as Panel).Controls[0] as Label).Name;
+            mainMeanings = DatabaseHandle.GetDataHandle().GetSubTopics(this.topic);
+            this.mainMeaningsButton.Text = "+";
+            this.seeAlsoButton.Text = "-";
+            this.allMatchesButton.Text = "-";
+
+            RefreshPanels();
+
+        }
         private void Subtopic_Click(object sender, EventArgs e)
         {
             this.subtopic = (sender as Label).Name;
+            seeAlsoWords = DatabaseHandle.GetDataHandle().GetSubsubTopics(this.topic, this.subtopic);
+            this.mainMeaningsButton.Text = "-";
+            this.seeAlsoButton.Text = "+";
+            this.allMatchesButton.Text = "-";
+
+            RefreshPanels();
+
+        }
+        private void SubtopicPanel_Click(object sender, EventArgs e)
+        {
+            this.subtopic = ((sender as Panel).Controls[0] as Label).Name;
             seeAlsoWords = DatabaseHandle.GetDataHandle().GetSubsubTopics(this.topic, this.subtopic);
             this.mainMeaningsButton.Text = "-";
             this.seeAlsoButton.Text = "+";
