@@ -3,8 +3,8 @@
 3. The tomatoes we ate at their house were home-_____.|A. made|B. produced|C. done|D. grown 
 4. Turn up to page 24 to find out at a _____ which courses are available to you.|A. look|B. stare|C. glance|D. glimpse 
 5. The boys have gone on a fishing _____ with their father.|A. trip|B. journey|C. trek|D. hike 
-6. I like that photo very much. Could you make an _____ for me?_A. increase|B. expansion|C. extension|D. enlargement 
-7. Why don’t you save the money you _____ from your Saturday job?_A. pay|B. earn|C. win|D. gain 
+6. I like that photo very much. Could you make an _____ for me?|A. increase|B. expansion|C. extension|D. enlargement 
+7. Why don’t you save the money you _____ from your Saturday job?|A. pay|B. earn|C. win|D. gain 
 8. I think you need a jacket, there’s a breeze _____ blowing outside.|A. chilly|B.frosty|C. frigid|D. glacial 
 9. There is a strong movement supporting the abolition of the death _____ .|A. condemnation|B. punishment|C. penalty|D. discipline 
 10. I am hoping that if I get enough experience in the sales team, for my next job. I’ll be able to apply for a post as a sales _____.A. manager|B. organizer|C. controller|D. conductor 
@@ -36,9 +36,9 @@
 36. I enjoy taking a _____ bath as soon as I get home from work.|A. restful|B. soothing|C. gentle|D. mild 
 37. The fastest runner took the _____ just five meters before the finishing line.|A. lead|B. head|C. advance|D. place 
 38. The drunken couple did nothing to keep the flat clean and tidy and lived in the utmost _____.|A. contamination|B. decay|C. squalor|D. pollution 
-39. What kind of _____ is your dog?_A. mark|B. race|C. breed|D. family 
+39. What kind of _____ is your dog?|A. mark|B. race|C. breed|D. family 
 40. There’s a _____ of blackbirds at the bottom of the garden.|A. house|B. home|C. cage|D. nest 
-41. What a(n) _____ thing to say! what gave you that idea?_A. unique|B. scarce|C. unreal|D. peculiar 
+41. What a(n) _____ thing to say! what gave you that idea?|A. unique|B. scarce|C. unreal|D. peculiar 
 42. Mrs. Robinson _____ great pride in her cooking.|A. gets|B. finds|C. has|D. takes 
 43. I think you’d be _____ to leave now. It looks like there’s going to be trouble.|A. realistic|B. intelligent|C. shrewd|D. wise 
 44. More than thirty people _____ evidence to the court during the four week trial.|A. produced|B. explained|C. gave|D. grant 
@@ -65,7 +65,7 @@
 65. My grandmother’s house is full of valuable _____.|A. antiques|B. antiquities|C. ancients|D. antiquarians 
 66. She couldn’t see herself in the mirror because of the _____ rising from the bath.|A. fog|B. mist|C. steam|D. smoke 
 67. If you do not repay the money we will, as a last _____, take you to court.|A. resort|B. attempt|C. act|D. measure 
-68. A. the party conference, the Prime Minister backing for his new policies.|A. had|B. got|C. won|D. held 
+68. At the party conference, the Prime Minister _____ backing for his new policies.|A. had|B. got|C. won|D. held 
 69. They received a ten-year sentence for _____ armed robbery.|A. making|B. committing|C. doing|D. practicing 
 70. The doctor’s announcement has _____ a shocked reaction.|A. led|B. resulted|C. made|D. provoked 
 71. I think that I have a lot in _____ with you.|A. common|B. connection|C. same|D. similar 
@@ -74,9 +74,9 @@
 74. The main argument _____ in the report is correct.|A. primarily|B. up to a point|C. fundamentally|D. supposedly 
 75. We decided not to go camping because of the rain.|A. great|B. heavy|C. extra|D. amount 
 76. People who suffer from lung _____ should not smoke.|A. disease|B. sickness|C. illness|D. ill heath 
-77. My grandma's _____ a course in creative writing. She’s 78, you know!_A. doing|B. going|C. playing|D. making 
+77. My grandma's _____ a course in creative writing. She’s 78, you know!|A. doing|B. going|C. playing|D. making 
 78. We decided to _____ a coin to see who would be the first.|A. throw|B. pitch|C. roll|D. toss 
-79. Most people would _____ at the chance of working for that company_A. dive|B. grab|C. jump|D. seize 
+79. Most people would _____ at the chance of working for that company|A. dive|B. grab|C. jump|D. seize 
 80. I’m glad I _____ my plane! I’ve just heard that it’s been hijacked.|A. missed|B. refused|C. lost|D. altered 
 81. He was awarded a medal in _____ of his services to the Queen.|A. view|B. regard|C. recognition|D. light 
 82. We had planned to spend the summer in Greece, but _____ had obviously decided otherwise.|A. destination|B. fortune|C. chance|D. fate 
@@ -147,7 +147,7 @@
 147. Schoolchildren are gifted at _____ nicknames for their teachers.|A. developing|B. hinting|C. defining|D. coining 
 148. I can’t stop you going mountain climbing, but it’s entirely at your own _____.|A. risk|B. chance|C. danger|D. trouble 
 149. She’s decided not to work overseas after all. In any _____, she doesn’t like cold weather.|A. matter|B. situation|C. case|D. condition 
-150. Could I have a _____ copy of the issue of the “National Geographic”, please?_A. actual|B. latest|C. circulating|D. recent 
+150. Could I have a _____ copy of the issue of the “National Geographic”, please?|A. actual|B. latest|C. circulating|D. recent 
 151. Public figures, such as actors, are often reluctant to talk about their _____ lives.|A. private|B. particular|C. personal|D. individual 
 152. My binoculars were not actually broken, they just needed _____.|A. repairing|B. curing|C. mending|D. adjusting 
 153. _____ attempts were made to search those buried beneath the rubble of the collapsed building.|A. Strong|B. Exhausting|C. Energetic|D. Strenuous 
@@ -181,11 +181,11 @@
 181. I am bored with doing the _____ chores.|A. household|B. house|C. housework|D. homework 
 182. We _____ lots of photos when we went to Singapore last year.|A. made|B. took|C. did|D. caught 
 183. I _____ my hand to draw her attention but she took no _____ of me.|A. waved/ attention|B. shook/ noticed|C. waved/ notice|D. shook/ attention 
-184. Stop fighting you two! Shake hands and _____ your peace with each other!_A. do|B. set|C. bring|D. make 
+184. Stop fighting you two! Shake hands and _____ your peace with each other!|A. do|B. set|C. bring|D. make 
 185. The water supply of our home city has failed to _____ average purity requirements.|A. own|B. hold|C. meet|D. see 
 186. The tennis match tomorrow afternoon will be broadcast _____ on TV and radio.|A. jointly|B. communally|C. uniformly|D. simultaneously 
-187. Tidy your room, and stop _____ excuses!”_A. having|B. making|C. doing|D. taking 
-188. ‘Excuse me. Where is the _____ office of UNICEF Viet Nam located?”_A. leading|B. head|C. summit|D. central 
+187. Tidy your room, and stop _____ excuses!”|A. having|B. making|C. doing|D. taking 
+188. ‘Excuse me. Where is the _____ office of UNICEF Viet Nam located?”|A. leading|B. head|C. summit|D. central 
 189. Scientists have discovered a close _____ between smoking and several serious diseases.|A. union|B. connection|C. action|D. combination 
 190. Amelia Earhart _____ history in 1928 when she became the first woman to fly across the Atlantic.|A. fixed|B. made|C. prepared|D. did 
 191. Meg had a _____ escape when she was hang-gliding yesterday.|A. narrow|B. close|C. near|D. tender 
@@ -225,7 +225,7 @@
 225. I’m sorry for such _____ a fuss about the unfruitful plan.|A. making|B. paying|C. doing|D. taking 
 226. In a formal interview, it is essential to maintain good eye _____ with the interviewers.|A. link|B. connection|C. touch|D. contact 
 227. We often take this small road home to avoid heavy _____ on the main streets.|A. cars|B. traffic|C. vehicles|D. movement 
-228. Do you think you can meet the _____ given by our teacher?_A. deadline|B. line|C. dead|D. face 
+228. Do you think you can meet the _____ given by our teacher?|A. deadline|B. line|C. dead|D. face 
 229. The government should take _____ to reduce the current high unemployment rate.|A. solutions|B. changes|C. steps|D. measures 
 230. The players’ protests _____ no difference to the referees decision at all.|A. did|B. made|C. caused|D. created 
 231. You thought I did wrong, but the results _____ my action.|A. agreed|B. corrected|C. justified|D. approved 

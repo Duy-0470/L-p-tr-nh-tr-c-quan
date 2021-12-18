@@ -23,13 +23,13 @@ namespace DictionaryApp
         {
             if (FormGamesSelect.gameType == FormGamesSelect.GameType.Quizzes)
             {
-                LabelScore.Text = "Your score: " + FormQuiz.score.ToString() + " / 20";
+                LabelScore.Text = "Your score: " + FormQuiz.score.ToString();
                 LabelAvgTime.Text += " " + (FormQuiz.avg_time / 1000 / 20).ToString() + " seconds";
                 LabelTopic.Text = "Quizzes - " + FormQuiz.q_topic.ToString().Replace('_', ' ');
             }
             else if (FormGamesSelect.gameType == FormGamesSelect.GameType.GTW)
             {
-                LabelScore.Text = "Your score: " + FormGTW.score.ToString() + " / 10";
+                LabelScore.Text = "Your score: " + FormGTW.score.ToString();
                 LabelAvgTime.Text += " " + (FormGTW.avg_time / 1000 / 10).ToString() + " seconds";
                 LabelTopic.Text = "Word Scrambler";
             }

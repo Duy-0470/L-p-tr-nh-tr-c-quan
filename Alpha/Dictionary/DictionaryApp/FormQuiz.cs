@@ -51,8 +51,8 @@ namespace DictionaryApp
             PanelWF.Location = new Point(Width / 2 + 100, PanelWM.Location.Y + PanelWM.Height + 80);
             PanelIdioms.Location = new Point((Width - PanelIdioms.Width) / 2, PanelPhrasalVerbs.Location.Y + PanelPhrasalVerbs.Height + 80);
             ButtonBack.FlatAppearance.BorderSize = 0;
-            LabelQuestion.Width = Width;
-            LabelQuestion.Location = new Point(0, Height * 30 / 100);
+            LabelQuestion.Width = Width - 40;
+            LabelQuestion.Location = new Point((Width - LabelQuestion.Width) / 2, Height * 30 / 100);
         }
 
         private void LoadQuiz()
@@ -237,12 +237,14 @@ namespace DictionaryApp
 
         private void ButtonA_Click(object sender, EventArgs e)
         {
+            Timer1sec.Stop();
+            stopwatch.Stop();
             ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = false;
             if (quizzes[counter].rightAnswer == 1)
             {
                 ButtonA.BackColor = Color.Green;
-                score++;
-                LabelScore.Text = "Your score: " + score.ToString() + " / 20";
+                score += (15 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
+                LabelScore.Text = "Your score: " + score.ToString();
             }
             else
             {
@@ -253,10 +255,7 @@ namespace DictionaryApp
                     ButtonC.BackColor = Color.Green;
                 if (quizzes[counter].rightAnswer == 4)
                     ButtonD.BackColor = Color.Green;
-            }
-            TimeLimit.Stop();
-            Timer1sec.Stop();
-            stopwatch.Stop();
+            }            
             Debug.WriteLine(stopwatch.ElapsedMilliseconds);
             avg_time += Convert.ToDouble(stopwatch.ElapsedMilliseconds);
             ButtonNext.Visible = true;
@@ -265,12 +264,14 @@ namespace DictionaryApp
 
         private void ButtonB_Click(object sender, EventArgs e)
         {
+            Timer1sec.Stop();
+            stopwatch.Stop();
             ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = false;
             if (quizzes[counter].rightAnswer == 2)
             {
                 ButtonB.BackColor = Color.Green;
-                score++;
-                LabelScore.Text = "Your score: " + score.ToString() + " / 20";
+                score += (15 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
+                LabelScore.Text = "Your score: " + score.ToString();
             }
             else
             {
@@ -281,10 +282,7 @@ namespace DictionaryApp
                     ButtonC.BackColor = Color.Green;
                 if (quizzes[counter].rightAnswer == 4)
                     ButtonD.BackColor = Color.Green;
-            }
-            TimeLimit.Stop();
-            Timer1sec.Stop();
-            stopwatch.Stop();
+            }            
             Debug.WriteLine(stopwatch.ElapsedMilliseconds);
             avg_time += Convert.ToDouble(stopwatch.ElapsedMilliseconds);
             ButtonNext.Visible = true;
@@ -293,12 +291,14 @@ namespace DictionaryApp
 
         private void ButtonC_Click(object sender, EventArgs e)
         {
+            Timer1sec.Stop();
+            stopwatch.Stop();
             ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = false;
             if (quizzes[counter].rightAnswer == 3)
             {
                 ButtonC.BackColor = Color.Green;
-                score++;
-                LabelScore.Text = "Your score: " + score.ToString() + " / 20";
+                score += (15 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
+                LabelScore.Text = "Your score: " + score.ToString();
             }
             else
             {
@@ -309,10 +309,7 @@ namespace DictionaryApp
                     ButtonB.BackColor = Color.Green;
                 if (quizzes[counter].rightAnswer == 4)
                     ButtonD.BackColor = Color.Green;
-            }
-            TimeLimit.Stop();
-            Timer1sec.Stop();
-            stopwatch.Stop();
+            }            
             Debug.WriteLine(stopwatch.ElapsedMilliseconds);
             avg_time += Convert.ToDouble(stopwatch.ElapsedMilliseconds);
             ButtonNext.Visible = true;
@@ -321,12 +318,14 @@ namespace DictionaryApp
 
         private void ButtonD_Click(object sender, EventArgs e)
         {
+            Timer1sec.Stop();
+            stopwatch.Stop();
             ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = false;
             if (quizzes[counter].rightAnswer == 4)
             {
                 ButtonD.BackColor = Color.Green;
-                score++;
-                LabelScore.Text = "Your score: " + score.ToString() + " / 20";
+                score += (15 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
+                LabelScore.Text = "Your score: " + score.ToString();
             }
             else
             {
@@ -338,9 +337,6 @@ namespace DictionaryApp
                 if (quizzes[counter].rightAnswer == 3)
                     ButtonC.BackColor = Color.Green;
             }
-            TimeLimit.Stop();
-            Timer1sec.Stop();
-            stopwatch.Stop();
             Debug.WriteLine(stopwatch.ElapsedMilliseconds);
             avg_time += Convert.ToDouble(stopwatch.ElapsedMilliseconds);
             ButtonNext.Visible = true;
@@ -365,7 +361,6 @@ namespace DictionaryApp
                 ButtonA.BackColor = ButtonB.BackColor = ButtonC.BackColor = ButtonD.BackColor = Color.White;
                 ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = true;
                 LabelTimeLeft.Text = "Time left: 15s";
-                TimeLimit.Start();
                 Timer1sec.Start();
                 stopwatch.Reset();
                 stopwatch.Start();
@@ -643,29 +638,11 @@ namespace DictionaryApp
             xmlDocument.Save(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\quiz.xml");
         }
 
-        private void TimeLimit_Tick(object sender, EventArgs e)
-        {
-            TimeLimit.Stop();
-            ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = false;
-
-            if (quizzes[counter].rightAnswer == 1)
-                ButtonA.BackColor = Color.Green;
-            if (quizzes[counter].rightAnswer == 2)
-                ButtonB.BackColor = Color.Green;
-            if (quizzes[counter].rightAnswer == 3)
-                ButtonC.BackColor = Color.Green;
-            if (quizzes[counter].rightAnswer == 4)
-                ButtonD.BackColor = Color.Green;
-
-            ButtonNext.Visible = true;
-        }
-
-
         private void Timer1sec_Tick(object sender, EventArgs e)
         {
-            if (timeleft <= 5)
+            if (timeleft <= 6)
                 LabelTimeLeft.ForeColor = Color.Red;
-            if (timeleft > 0)
+            if (timeleft > 1)
             {
                 timeleft--;
                 LabelTimeLeft.Text = "Time left: " + timeleft.ToString() + "s";
@@ -674,6 +651,16 @@ namespace DictionaryApp
             {
                 LabelTimeLeft.Text = "Time left: 0s";
                 Timer1sec.Stop();
+                ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = false;
+                if (quizzes[counter].rightAnswer == 1)
+                    ButtonA.BackColor = Color.Green;
+                if (quizzes[counter].rightAnswer == 2)
+                    ButtonB.BackColor = Color.Green;
+                if (quizzes[counter].rightAnswer == 3)
+                    ButtonC.BackColor = Color.Green;
+                if (quizzes[counter].rightAnswer == 4)
+                    ButtonD.BackColor = Color.Green;
+                ButtonNext.Visible = true;
             }
         }
 
@@ -692,9 +679,7 @@ namespace DictionaryApp
                 LabelReady.Visible = false;
                 PanelQuiz.Visible = true;
                 Timer1sec.Start();
-                TimeLimit.Start();
                 stopwatch.Start();
-                //playing = true;
             }
         }
 
@@ -738,14 +723,25 @@ namespace DictionaryApp
 
         private void ButtonQuit_Click(object sender, EventArgs e)
         {
-            PanelQuiz.Visible = false;
-            counter = score = 0;
-            timeleft = 30;
-            ready = 3;
-            quizzes.Clear();
             Timer1sec.Stop();
-            TimeLimit.Stop();
-            PanelTopic.Visible = true;
+            stopwatch.Stop();
+            if (MessageBox.Show("Quiat now? You will lose any unsaved progress", "Alert", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                PanelQuiz.Visible = false;
+                counter = score = 0;
+                timeleft = 15;
+                LabelTimeLeft.Text = "Time left: 15s";
+                ready = 3;
+                LabelReady.Text = ready.ToString();
+                quizzes.Clear();
+                Timer1sec.Stop();
+                PanelTopic.Visible = true;
+            }
+            else
+            {
+                Timer1sec.Start();
+                stopwatch.Start();
+            }
         }
 
         private void FormQuiz_FormClosed(object sender, FormClosedEventArgs e)

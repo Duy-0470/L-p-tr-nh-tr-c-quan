@@ -44,7 +44,7 @@
             this.LabelScore.Name = "LabelScore";
             this.LabelScore.Size = new System.Drawing.Size(814, 56);
             this.LabelScore.TabIndex = 0;
-            this.LabelScore.Text = "Your score: 0 / 20";
+            this.LabelScore.Text = "Your score: 0";
             this.LabelScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelAvgTime
@@ -52,15 +52,16 @@
             this.LabelAvgTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelAvgTime.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelAvgTime.Location = new System.Drawing.Point(13, 152);
+            this.LabelAvgTime.Location = new System.Drawing.Point(12, 152);
             this.LabelAvgTime.Name = "LabelAvgTime";
-            this.LabelAvgTime.Size = new System.Drawing.Size(813, 36);
+            this.LabelAvgTime.Size = new System.Drawing.Size(814, 36);
             this.LabelAvgTime.TabIndex = 0;
             this.LabelAvgTime.Text = "Average time spent on a question:";
             this.LabelAvgTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ButtonRetry
             // 
+            this.ButtonRetry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ButtonRetry.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonRetry.Location = new System.Drawing.Point(12, 432);
             this.ButtonRetry.Name = "ButtonRetry";
@@ -72,6 +73,7 @@
             // 
             // ButtonBackToGames
             // 
+            this.ButtonBackToGames.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonBackToGames.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonBackToGames.Location = new System.Drawing.Point(681, 432);
             this.ButtonBackToGames.Name = "ButtonBackToGames";

@@ -103,7 +103,7 @@
             this.PanelLetters.Controls.Add(this.ButtonB);
             this.PanelLetters.Controls.Add(this.ButtonC);
             this.PanelLetters.Controls.Add(this.ButtonA);
-            this.PanelLetters.Location = new System.Drawing.Point(66, 641);
+            this.PanelLetters.Location = new System.Drawing.Point(64, 677);
             this.PanelLetters.Name = "PanelLetters";
             this.PanelLetters.Size = new System.Drawing.Size(782, 306);
             this.PanelLetters.TabIndex = 2;
@@ -451,7 +451,7 @@
             // 
             this.PictureBoxHangman.BackgroundImage = global::DictionaryApp.Properties.Resources.hangman0;
             this.PictureBoxHangman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PictureBoxHangman.Location = new System.Drawing.Point(165, 172);
+            this.PictureBoxHangman.Location = new System.Drawing.Point(237, 246);
             this.PictureBoxHangman.Name = "PictureBoxHangman";
             this.PictureBoxHangman.Size = new System.Drawing.Size(301, 353);
             this.PictureBoxHangman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -464,7 +464,7 @@
             this.PictureBoxHint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PictureBoxHint.Location = new System.Drawing.Point(540, 23);
             this.PictureBoxHint.Name = "PictureBoxHint";
-            this.PictureBoxHint.Size = new System.Drawing.Size(781, 448);
+            this.PictureBoxHint.Size = new System.Drawing.Size(781, 547);
             this.PictureBoxHint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBoxHint.TabIndex = 0;
             this.PictureBoxHint.TabStop = false;
@@ -488,7 +488,7 @@
             // 
             this.LabelGuess.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelGuess.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelGuess.Location = new System.Drawing.Point(0, 555);
+            this.LabelGuess.Location = new System.Drawing.Point(0, 602);
             this.LabelGuess.Name = "LabelGuess";
             this.LabelGuess.Size = new System.Drawing.Size(1839, 55);
             this.LabelGuess.TabIndex = 5;

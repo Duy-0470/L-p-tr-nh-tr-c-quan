@@ -52,6 +52,7 @@
             this.ButtonQuit = new System.Windows.Forms.Button();
             this.ButtonNext = new System.Windows.Forms.Button();
             this.LabelTimeLeft = new System.Windows.Forms.Label();
+            this.LabelQuesNum = new System.Windows.Forms.Label();
             this.LabelScore = new System.Windows.Forms.Label();
             this.ButtonC = new System.Windows.Forms.Button();
             this.ButtonD = new System.Windows.Forms.Button();
@@ -62,12 +63,10 @@
             this.CheckBoxShowRules = new System.Windows.Forms.CheckBox();
             this.ButtonOKRules = new System.Windows.Forms.Button();
             this.LabelRules = new System.Windows.Forms.Label();
-            this.TimeLimit = new System.Windows.Forms.Timer(this.components);
             this.Timer1sec = new System.Windows.Forms.Timer(this.components);
             this.LabelReady = new System.Windows.Forms.Label();
             this.TimerReady = new System.Windows.Forms.Timer(this.components);
             this.ToolTipQuiz = new System.Windows.Forms.ToolTip(this.components);
-            this.LabelQuesNum = new System.Windows.Forms.Label();
             this.PanelTopic.SuspendLayout();
             this.PanelWF.SuspendLayout();
             this.PanelWM.SuspendLayout();
@@ -365,22 +364,35 @@
             this.LabelTimeLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelTimeLeft.AutoSize = true;
             this.LabelTimeLeft.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTimeLeft.Location = new System.Drawing.Point(1095, 104);
+            this.LabelTimeLeft.Location = new System.Drawing.Point(1107, 104);
             this.LabelTimeLeft.Name = "LabelTimeLeft";
             this.LabelTimeLeft.Size = new System.Drawing.Size(143, 27);
             this.LabelTimeLeft.TabIndex = 3;
             this.LabelTimeLeft.Text = "Time left: 15s";
+            this.LabelTimeLeft.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // LabelQuesNum
+            // 
+            this.LabelQuesNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelQuesNum.AutoSize = true;
+            this.LabelQuesNum.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelQuesNum.Location = new System.Drawing.Point(1095, 28);
+            this.LabelQuesNum.Name = "LabelQuesNum";
+            this.LabelQuesNum.Size = new System.Drawing.Size(165, 27);
+            this.LabelQuesNum.TabIndex = 3;
+            this.LabelQuesNum.Text = "Question: 1 / 20";
             // 
             // LabelScore
             // 
             this.LabelScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelScore.AutoSize = true;
+            this.LabelScore.BackColor = System.Drawing.Color.Transparent;
             this.LabelScore.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelScore.Location = new System.Drawing.Point(1095, 66);
+            this.LabelScore.Location = new System.Drawing.Point(12, 66);
             this.LabelScore.Name = "LabelScore";
-            this.LabelScore.Size = new System.Drawing.Size(183, 27);
+            this.LabelScore.Size = new System.Drawing.Size(1248, 27);
             this.LabelScore.TabIndex = 3;
-            this.LabelScore.Text = "Your score: 0 / 20";
+            this.LabelScore.Text = "Your score: 0";
+            this.LabelScore.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ButtonC
             // 
@@ -459,7 +471,7 @@
             this.LabelQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelQuestion.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelQuestion.Location = new System.Drawing.Point(3, 131);
+            this.LabelQuestion.Location = new System.Drawing.Point(4, 131);
             this.LabelQuestion.Name = "LabelQuestion";
             this.LabelQuestion.Size = new System.Drawing.Size(1313, 103);
             this.LabelQuestion.TabIndex = 1;
@@ -517,11 +529,6 @@
             this.LabelRules.Text = resources.GetString("LabelRules.Text");
             this.LabelRules.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TimeLimit
-            // 
-            this.TimeLimit.Interval = 15000;
-            this.TimeLimit.Tick += new System.EventHandler(this.TimeLimit_Tick);
-            // 
             // Timer1sec
             // 
             this.Timer1sec.Interval = 1000;
@@ -542,17 +549,6 @@
             // 
             this.TimerReady.Interval = 1000;
             this.TimerReady.Tick += new System.EventHandler(this.TimerReady_Tick);
-            // 
-            // LabelQuesNum
-            // 
-            this.LabelQuesNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelQuesNum.AutoSize = true;
-            this.LabelQuesNum.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelQuesNum.Location = new System.Drawing.Point(1095, 28);
-            this.LabelQuesNum.Name = "LabelQuesNum";
-            this.LabelQuesNum.Size = new System.Drawing.Size(165, 27);
-            this.LabelQuesNum.TabIndex = 3;
-            this.LabelQuesNum.Text = "Question: 1 / 20";
             // 
             // FormQuiz
             // 
@@ -619,7 +615,6 @@
         private System.Windows.Forms.CheckBox CheckBoxShowRules;
         private System.Windows.Forms.Button ButtonOKRules;
         private System.Windows.Forms.Label LabelRules;
-        private System.Windows.Forms.Timer TimeLimit;
         private System.Windows.Forms.Timer Timer1sec;
         private System.Windows.Forms.Button ButtonQuit;
         private System.Windows.Forms.Label LabelReady;
