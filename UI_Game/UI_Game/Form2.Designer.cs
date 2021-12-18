@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btn_Submit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.lb_Question = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lb_TimeLeft = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -110,6 +112,11 @@
             this.lb_TimeLeft.TabIndex = 7;
             this.lb_TimeLeft.Text = "0";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -142,5 +149,6 @@
         private System.Windows.Forms.Label lb_Question;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lb_TimeLeft;
+        private System.Windows.Forms.Timer timer1;
     }
 }
