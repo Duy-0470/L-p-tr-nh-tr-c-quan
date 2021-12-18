@@ -67,6 +67,7 @@
             this.LabelReady = new System.Windows.Forms.Label();
             this.TimerReady = new System.Windows.Forms.Timer(this.components);
             this.ToolTipQuiz = new System.Windows.Forms.ToolTip(this.components);
+            this.LabelQuesNum = new System.Windows.Forms.Label();
             this.PanelTopic.SuspendLayout();
             this.PanelWF.SuspendLayout();
             this.PanelWM.SuspendLayout();
@@ -111,11 +112,11 @@
             // 
             this.LabelChooseTP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelChooseTP.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelChooseTP.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelChooseTP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(174)))));
-            this.LabelChooseTP.Location = new System.Drawing.Point(0, 9);
+            this.LabelChooseTP.Location = new System.Drawing.Point(0, 0);
             this.LabelChooseTP.Name = "LabelChooseTP";
-            this.LabelChooseTP.Size = new System.Drawing.Size(849, 44);
+            this.LabelChooseTP.Size = new System.Drawing.Size(849, 62);
             this.LabelChooseTP.TabIndex = 10;
             this.LabelChooseTP.Text = "Choose a topic";
             this.LabelChooseTP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -137,10 +138,10 @@
             // LabelWFDes
             // 
             this.LabelWFDes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelWFDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelWFDes.Location = new System.Drawing.Point(27, 41);
+            this.LabelWFDes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelWFDes.Location = new System.Drawing.Point(-1, 44);
             this.LabelWFDes.Name = "LabelWFDes";
-            this.LabelWFDes.Size = new System.Drawing.Size(237, 23);
+            this.LabelWFDes.Size = new System.Drawing.Size(294, 23);
             this.LabelWFDes.TabIndex = 3;
             this.LabelWFDes.Text = "Variants of words";
             this.LabelWFDes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -149,7 +150,7 @@
             // LabelWF
             // 
             this.LabelWF.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelWF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelWF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelWF.Location = new System.Drawing.Point(28, 18);
             this.LabelWF.Name = "LabelWF";
             this.LabelWF.Size = new System.Drawing.Size(237, 23);
@@ -175,10 +176,10 @@
             // LabelWMDes
             // 
             this.LabelWMDes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelWMDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelWMDes.Location = new System.Drawing.Point(28, 40);
+            this.LabelWMDes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelWMDes.Location = new System.Drawing.Point(-1, 45);
             this.LabelWMDes.Name = "LabelWMDes";
-            this.LabelWMDes.Size = new System.Drawing.Size(237, 23);
+            this.LabelWMDes.Size = new System.Drawing.Size(294, 23);
             this.LabelWMDes.TabIndex = 3;
             this.LabelWMDes.Text = "Test your vocabulary";
             this.LabelWMDes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -187,10 +188,10 @@
             // LabelWM
             // 
             this.LabelWM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelWM.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelWM.Location = new System.Drawing.Point(29, 17);
+            this.LabelWM.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelWM.Location = new System.Drawing.Point(-1, 17);
             this.LabelWM.Name = "LabelWM";
-            this.LabelWM.Size = new System.Drawing.Size(236, 23);
+            this.LabelWM.Size = new System.Drawing.Size(294, 23);
             this.LabelWM.TabIndex = 3;
             this.LabelWM.Text = "Word Meaning";
             this.LabelWM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -213,10 +214,10 @@
             // LabelIdiomsDes
             // 
             this.LabelIdiomsDes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelIdiomsDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelIdiomsDes.Location = new System.Drawing.Point(28, 40);
+            this.LabelIdiomsDes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelIdiomsDes.Location = new System.Drawing.Point(-1, 43);
             this.LabelIdiomsDes.Name = "LabelIdiomsDes";
-            this.LabelIdiomsDes.Size = new System.Drawing.Size(237, 23);
+            this.LabelIdiomsDes.Size = new System.Drawing.Size(294, 23);
             this.LabelIdiomsDes.TabIndex = 3;
             this.LabelIdiomsDes.Text = "Other ways to express";
             this.LabelIdiomsDes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -225,10 +226,10 @@
             // LabelIdioms
             // 
             this.LabelIdioms.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelIdioms.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelIdioms.Location = new System.Drawing.Point(28, 17);
+            this.LabelIdioms.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelIdioms.Location = new System.Drawing.Point(-1, 17);
             this.LabelIdioms.Name = "LabelIdioms";
-            this.LabelIdioms.Size = new System.Drawing.Size(237, 23);
+            this.LabelIdioms.Size = new System.Drawing.Size(294, 23);
             this.LabelIdioms.TabIndex = 3;
             this.LabelIdioms.Text = "Idioms";
             this.LabelIdioms.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -251,10 +252,10 @@
             // LabelPVDes
             // 
             this.LabelPVDes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelPVDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPVDes.Location = new System.Drawing.Point(28, 40);
+            this.LabelPVDes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPVDes.Location = new System.Drawing.Point(-1, 43);
             this.LabelPVDes.Name = "LabelPVDes";
-            this.LabelPVDes.Size = new System.Drawing.Size(237, 23);
+            this.LabelPVDes.Size = new System.Drawing.Size(294, 23);
             this.LabelPVDes.TabIndex = 3;
             this.LabelPVDes.Text = "Different combinations of words";
             this.LabelPVDes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -263,10 +264,10 @@
             // LabelPV
             // 
             this.LabelPV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelPV.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPV.Location = new System.Drawing.Point(28, 17);
+            this.LabelPV.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPV.Location = new System.Drawing.Point(-1, 17);
             this.LabelPV.Name = "LabelPV";
-            this.LabelPV.Size = new System.Drawing.Size(237, 23);
+            this.LabelPV.Size = new System.Drawing.Size(294, 23);
             this.LabelPV.TabIndex = 3;
             this.LabelPV.Text = "Phrasal Verbs";
             this.LabelPV.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,10 +290,10 @@
             // LabelCollocationsDes
             // 
             this.LabelCollocationsDes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelCollocationsDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelCollocationsDes.Location = new System.Drawing.Point(28, 40);
+            this.LabelCollocationsDes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelCollocationsDes.Location = new System.Drawing.Point(-1, 45);
             this.LabelCollocationsDes.Name = "LabelCollocationsDes";
-            this.LabelCollocationsDes.Size = new System.Drawing.Size(237, 23);
+            this.LabelCollocationsDes.Size = new System.Drawing.Size(294, 23);
             this.LabelCollocationsDes.TabIndex = 3;
             this.LabelCollocationsDes.Text = "How words work together";
             this.LabelCollocationsDes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -301,10 +302,10 @@
             // LabelCollocations
             // 
             this.LabelCollocations.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelCollocations.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelCollocations.Location = new System.Drawing.Point(28, 17);
+            this.LabelCollocations.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelCollocations.Location = new System.Drawing.Point(-1, 17);
             this.LabelCollocations.Name = "LabelCollocations";
-            this.LabelCollocations.Size = new System.Drawing.Size(237, 23);
+            this.LabelCollocations.Size = new System.Drawing.Size(294, 23);
             this.LabelCollocations.TabIndex = 3;
             this.LabelCollocations.Text = "Collocations";
             this.LabelCollocations.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -319,6 +320,7 @@
             this.PanelQuiz.Controls.Add(this.ButtonQuit);
             this.PanelQuiz.Controls.Add(this.ButtonNext);
             this.PanelQuiz.Controls.Add(this.LabelTimeLeft);
+            this.PanelQuiz.Controls.Add(this.LabelQuesNum);
             this.PanelQuiz.Controls.Add(this.LabelScore);
             this.PanelQuiz.Controls.Add(this.ButtonC);
             this.PanelQuiz.Controls.Add(this.ButtonD);
@@ -334,7 +336,7 @@
             // ButtonQuit
             // 
             this.ButtonQuit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.ButtonQuit.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonQuit.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonQuit.Location = new System.Drawing.Point(40, 459);
             this.ButtonQuit.Name = "ButtonQuit";
             this.ButtonQuit.Size = new System.Drawing.Size(152, 48);
@@ -347,8 +349,8 @@
             // ButtonNext
             // 
             this.ButtonNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonNext.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonNext.Location = new System.Drawing.Point(1141, 459);
+            this.ButtonNext.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonNext.Location = new System.Drawing.Point(1126, 459);
             this.ButtonNext.Name = "ButtonNext";
             this.ButtonNext.Size = new System.Drawing.Size(152, 48);
             this.ButtonNext.TabIndex = 3;
@@ -362,10 +364,10 @@
             // 
             this.LabelTimeLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelTimeLeft.AutoSize = true;
-            this.LabelTimeLeft.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTimeLeft.Location = new System.Drawing.Point(1124, 61);
+            this.LabelTimeLeft.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTimeLeft.Location = new System.Drawing.Point(1095, 104);
             this.LabelTimeLeft.Name = "LabelTimeLeft";
-            this.LabelTimeLeft.Size = new System.Drawing.Size(126, 23);
+            this.LabelTimeLeft.Size = new System.Drawing.Size(143, 27);
             this.LabelTimeLeft.TabIndex = 3;
             this.LabelTimeLeft.Text = "Time left: 15s";
             // 
@@ -373,12 +375,12 @@
             // 
             this.LabelScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelScore.AutoSize = true;
-            this.LabelScore.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelScore.Location = new System.Drawing.Point(1124, 26);
+            this.LabelScore.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelScore.Location = new System.Drawing.Point(1095, 66);
             this.LabelScore.Name = "LabelScore";
-            this.LabelScore.Size = new System.Drawing.Size(151, 23);
+            this.LabelScore.Size = new System.Drawing.Size(183, 27);
             this.LabelScore.TabIndex = 3;
-            this.LabelScore.Text = "Your score: 0/20";
+            this.LabelScore.Text = "Your score: 0 / 20";
             // 
             // ButtonC
             // 
@@ -387,7 +389,7 @@
             this.ButtonC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonC.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonC.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ButtonC.Location = new System.Drawing.Point(141, 359);
             this.ButtonC.Name = "ButtonC";
@@ -405,7 +407,7 @@
             this.ButtonD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonD.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonD.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonD.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ButtonD.Location = new System.Drawing.Point(737, 359);
             this.ButtonD.Name = "ButtonD";
@@ -423,7 +425,7 @@
             this.ButtonB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonB.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonB.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonB.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ButtonB.Location = new System.Drawing.Point(737, 262);
             this.ButtonB.Name = "ButtonB";
@@ -441,7 +443,7 @@
             this.ButtonA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonA.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonA.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonA.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ButtonA.Location = new System.Drawing.Point(141, 262);
             this.ButtonA.Name = "ButtonA";
@@ -456,10 +458,10 @@
             // 
             this.LabelQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelQuestion.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelQuestion.Location = new System.Drawing.Point(24, 97);
+            this.LabelQuestion.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelQuestion.Location = new System.Drawing.Point(3, 131);
             this.LabelQuestion.Name = "LabelQuestion";
-            this.LabelQuestion.Size = new System.Drawing.Size(1269, 103);
+            this.LabelQuestion.Size = new System.Drawing.Size(1313, 103);
             this.LabelQuestion.TabIndex = 1;
             this.LabelQuestion.Text = "Question here";
             this.LabelQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -483,10 +485,10 @@
             // 
             this.CheckBoxShowRules.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CheckBoxShowRules.AutoSize = true;
-            this.CheckBoxShowRules.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBoxShowRules.Location = new System.Drawing.Point(241, 264);
+            this.CheckBoxShowRules.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckBoxShowRules.Location = new System.Drawing.Point(226, 298);
             this.CheckBoxShowRules.Name = "CheckBoxShowRules";
-            this.CheckBoxShowRules.Size = new System.Drawing.Size(149, 20);
+            this.CheckBoxShowRules.Size = new System.Drawing.Size(166, 21);
             this.CheckBoxShowRules.TabIndex = 2;
             this.CheckBoxShowRules.Text = "Don\'t show this again";
             this.CheckBoxShowRules.UseVisualStyleBackColor = true;
@@ -496,9 +498,9 @@
             // 
             this.ButtonOKRules.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ButtonOKRules.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonOKRules.Location = new System.Drawing.Point(492, 260);
+            this.ButtonOKRules.Location = new System.Drawing.Point(494, 293);
             this.ButtonOKRules.Name = "ButtonOKRules";
-            this.ButtonOKRules.Size = new System.Drawing.Size(98, 27);
+            this.ButtonOKRules.Size = new System.Drawing.Size(114, 30);
             this.ButtonOKRules.TabIndex = 1;
             this.ButtonOKRules.Text = "OK";
             this.ButtonOKRules.UseVisualStyleBackColor = true;
@@ -507,8 +509,8 @@
             // LabelRules
             // 
             this.LabelRules.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelRules.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelRules.Location = new System.Drawing.Point(0, 116);
+            this.LabelRules.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelRules.Location = new System.Drawing.Point(0, 126);
             this.LabelRules.Name = "LabelRules";
             this.LabelRules.Size = new System.Drawing.Size(838, 106);
             this.LabelRules.TabIndex = 0;
@@ -540,6 +542,17 @@
             // 
             this.TimerReady.Interval = 1000;
             this.TimerReady.Tick += new System.EventHandler(this.TimerReady_Tick);
+            // 
+            // LabelQuesNum
+            // 
+            this.LabelQuesNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelQuesNum.AutoSize = true;
+            this.LabelQuesNum.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelQuesNum.Location = new System.Drawing.Point(1095, 28);
+            this.LabelQuesNum.Name = "LabelQuesNum";
+            this.LabelQuesNum.Size = new System.Drawing.Size(165, 27);
+            this.LabelQuesNum.TabIndex = 3;
+            this.LabelQuesNum.Text = "Question: 1 / 20";
             // 
             // FormQuiz
             // 
@@ -613,5 +626,6 @@
         private System.Windows.Forms.Timer TimerReady;
         private System.Windows.Forms.Button ButtonBack;
         private System.Windows.Forms.ToolTip ToolTipQuiz;
+        private System.Windows.Forms.Label LabelQuesNum;
     }
 }

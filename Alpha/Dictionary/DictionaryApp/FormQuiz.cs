@@ -50,6 +50,9 @@ namespace DictionaryApp
             PanelPhrasalVerbs.Location = new Point(Width / 2 - PanelPhrasalVerbs.Width - 100, PanelCollocations.Location.Y + PanelCollocations.Height + 80);
             PanelWF.Location = new Point(Width / 2 + 100, PanelWM.Location.Y + PanelWM.Height + 80);
             PanelIdioms.Location = new Point((Width - PanelIdioms.Width) / 2, PanelPhrasalVerbs.Location.Y + PanelPhrasalVerbs.Height + 80);
+            ButtonBack.FlatAppearance.BorderSize = 0;
+            LabelQuestion.Width = Width;
+            LabelQuestion.Location = new Point(0, Height * 30 / 100);
         }
 
         private void LoadQuiz()
@@ -239,7 +242,7 @@ namespace DictionaryApp
             {
                 ButtonA.BackColor = Color.Green;
                 score++;
-                LabelScore.Text = "Your score: " + score.ToString() + @"\20";
+                LabelScore.Text = "Your score: " + score.ToString() + " / 20";
             }
             else
             {
@@ -267,7 +270,7 @@ namespace DictionaryApp
             {
                 ButtonB.BackColor = Color.Green;
                 score++;
-                LabelScore.Text = "Your score: " + score.ToString() + @"\20";
+                LabelScore.Text = "Your score: " + score.ToString() + " / 20";
             }
             else
             {
@@ -295,7 +298,7 @@ namespace DictionaryApp
             {
                 ButtonC.BackColor = Color.Green;
                 score++;
-                LabelScore.Text = "Your score: " + score.ToString() + @"\20";
+                LabelScore.Text = "Your score: " + score.ToString() + " / 20";
             }
             else
             {
@@ -323,7 +326,7 @@ namespace DictionaryApp
             {
                 ButtonD.BackColor = Color.Green;
                 score++;
-                LabelScore.Text = "Your score: " + score.ToString() + @"\20";
+                LabelScore.Text = "Your score: " + score.ToString() + " / 20";
             }
             else
             {
@@ -349,6 +352,7 @@ namespace DictionaryApp
             counter++;
             if (counter < 20)
             {
+                LabelQuesNum.Text = "Question: " + (counter + 1).ToString() + " / 20";
                 Debug.WriteLine(counter.ToString() + " " + quizzes[counter].rightAnswer);
                 timeleft = 15;
                 LabelTimeLeft.ForeColor = Color.Black;
@@ -742,7 +746,6 @@ namespace DictionaryApp
             Timer1sec.Stop();
             TimeLimit.Stop();
             PanelTopic.Visible = true;
-            Close();
         }
 
         private void FormQuiz_FormClosed(object sender, FormClosedEventArgs e)

@@ -123,4 +123,12 @@
   <metadata name="TimerReady.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>122, 17</value>
   </metadata>
+  <data name="LabelRules.Text" xml:space="preserve">
+    <value>The correct word is based on the hint given by the picture
+You have to guess one letter at a time by clicking on one of the letters
+The total time limit is 30 seconds
+One correct guess grants you 5 extra seconds
+One incorrect guess grants you one step closer to being hung
+The game ends when you have correctly guessed all the letter, incorrectly guessed 6 times, or ran out of time</value>
+  </data>
 </root>

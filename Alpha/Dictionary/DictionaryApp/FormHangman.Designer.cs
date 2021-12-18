@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHangman));
             this.PanelLetters = new System.Windows.Forms.Panel();
             this.ButtonZ = new System.Windows.Forms.Button();
             this.ButtonY = new System.Windows.Forms.Button();
@@ -64,9 +65,14 @@
             this.LabelTimeLeft = new System.Windows.Forms.Label();
             this.LabelReady = new System.Windows.Forms.Label();
             this.TimerReady = new System.Windows.Forms.Timer(this.components);
+            this.LabelRules = new System.Windows.Forms.Label();
+            this.PanelRules = new System.Windows.Forms.Panel();
+            this.CheckBoxShowRules = new System.Windows.Forms.CheckBox();
+            this.ButtonOKRules = new System.Windows.Forms.Button();
             this.PanelLetters.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHangman)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHint)).BeginInit();
+            this.PanelRules.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelLetters
@@ -97,7 +103,7 @@
             this.PanelLetters.Controls.Add(this.ButtonB);
             this.PanelLetters.Controls.Add(this.ButtonC);
             this.PanelLetters.Controls.Add(this.ButtonA);
-            this.PanelLetters.Location = new System.Drawing.Point(508, 691);
+            this.PanelLetters.Location = new System.Drawing.Point(66, 641);
             this.PanelLetters.Name = "PanelLetters";
             this.PanelLetters.Size = new System.Drawing.Size(782, 306);
             this.PanelLetters.TabIndex = 2;
@@ -505,7 +511,7 @@
             this.LabelTimeLeft.Name = "LabelTimeLeft";
             this.LabelTimeLeft.Size = new System.Drawing.Size(143, 27);
             this.LabelTimeLeft.TabIndex = 6;
-            this.LabelTimeLeft.Text = "Time left: 30s";
+            this.LabelTimeLeft.Text = "Time left: 60s";
             this.LabelTimeLeft.Visible = false;
             // 
             // LabelReady
@@ -517,11 +523,59 @@
             this.LabelReady.TabIndex = 8;
             this.LabelReady.Text = "3";
             this.LabelReady.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LabelReady.Visible = false;
             // 
             // TimerReady
             // 
             this.TimerReady.Interval = 1000;
             this.TimerReady.Tick += new System.EventHandler(this.TimerReady_Tick);
+            // 
+            // LabelRules
+            // 
+            this.LabelRules.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelRules.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelRules.Location = new System.Drawing.Point(3, 71);
+            this.LabelRules.Name = "LabelRules";
+            this.LabelRules.Size = new System.Drawing.Size(942, 181);
+            this.LabelRules.TabIndex = 9;
+            this.LabelRules.Text = resources.GetString("LabelRules.Text");
+            this.LabelRules.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PanelRules
+            // 
+            this.PanelRules.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PanelRules.Controls.Add(this.CheckBoxShowRules);
+            this.PanelRules.Controls.Add(this.ButtonOKRules);
+            this.PanelRules.Controls.Add(this.LabelRules);
+            this.PanelRules.Location = new System.Drawing.Point(891, 678);
+            this.PanelRules.Name = "PanelRules";
+            this.PanelRules.Size = new System.Drawing.Size(948, 383);
+            this.PanelRules.TabIndex = 10;
+            this.PanelRules.Visible = false;
+            // 
+            // CheckBoxShowRules
+            // 
+            this.CheckBoxShowRules.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CheckBoxShowRules.AutoSize = true;
+            this.CheckBoxShowRules.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckBoxShowRules.Location = new System.Drawing.Point(265, 297);
+            this.CheckBoxShowRules.Name = "CheckBoxShowRules";
+            this.CheckBoxShowRules.Size = new System.Drawing.Size(166, 21);
+            this.CheckBoxShowRules.TabIndex = 11;
+            this.CheckBoxShowRules.Text = "Don\'t show this again";
+            this.CheckBoxShowRules.UseVisualStyleBackColor = true;
+            // 
+            // ButtonOKRules
+            // 
+            this.ButtonOKRules.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ButtonOKRules.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonOKRules.Location = new System.Drawing.Point(535, 292);
+            this.ButtonOKRules.Name = "ButtonOKRules";
+            this.ButtonOKRules.Size = new System.Drawing.Size(114, 30);
+            this.ButtonOKRules.TabIndex = 10;
+            this.ButtonOKRules.Text = "OK";
+            this.ButtonOKRules.UseVisualStyleBackColor = true;
+            this.ButtonOKRules.Click += new System.EventHandler(this.ButtonOKRules_Click);
             // 
             // FormHangman
             // 
@@ -530,6 +584,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1839, 1061);
+            this.Controls.Add(this.PanelRules);
             this.Controls.Add(this.LabelReady);
             this.Controls.Add(this.LabelTimeLeft);
             this.Controls.Add(this.LabelGuess);
@@ -544,6 +599,8 @@
             this.PanelLetters.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHangman)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHint)).EndInit();
+            this.PanelRules.ResumeLayout(false);
+            this.PanelRules.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -586,5 +643,9 @@
         private System.Windows.Forms.Label LabelTimeLeft;
         private System.Windows.Forms.Label LabelReady;
         private System.Windows.Forms.Timer TimerReady;
+        private System.Windows.Forms.Label LabelRules;
+        private System.Windows.Forms.Panel PanelRules;
+        private System.Windows.Forms.CheckBox CheckBoxShowRules;
+        private System.Windows.Forms.Button ButtonOKRules;
     }
 }

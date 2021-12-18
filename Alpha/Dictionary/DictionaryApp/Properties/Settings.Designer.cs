@@ -68,5 +68,17 @@ namespace DictionaryApp.Properties {
                 this["ShowGTWRules"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ShowHMRules {
+            get {
+                return ((bool)(this["ShowHMRules"]));
+            }
+            set {
+                this["ShowHMRules"] = value;
+            }
+        }
     }
 }

@@ -15,7 +15,7 @@ namespace DictionaryApp
     public partial class FormHangman : Form
     {
         private string answer = "";
-        private int incorrect = 0, correct = 0, timelimit = 30, ready = 3;
+        private int incorrect = 0, correct = 0, timelimit = 60, ready = 3;
         private readonly Database.DatabaseHandle databaseHandle = new Database.DatabaseHandle();
         private Classes.MyImage hintImage = new Classes.MyImage();
         private readonly Stopwatch stopwatch = new Stopwatch();
@@ -29,6 +29,8 @@ namespace DictionaryApp
             LabelGuess.Location = new Point(0, (Height - LabelGuess.Height) / 2);
             LabelGuess.Text = "";
             LabelReady.Location = new Point((Width - LabelReady.Width) / 2, (Height - LabelReady.Height) / 2);
+            PanelRules.Location = new Point(0, 0);
+            PanelRules.Size = Size;
         }
 
         private void FormHangman_FormClosed(object sender, FormClosedEventArgs e)
@@ -69,7 +71,7 @@ namespace DictionaryApp
                     else
                         LabelGuess.Text += " ";
                 }
-                LabelGuess.Text += " - ";
+                LabelGuess.Text += "   ";
                 for (int i = 0; i < part[1].Length * 2; i++)
                 {
                     if (i % 2 != 0)
@@ -87,7 +89,11 @@ namespace DictionaryApp
             button.Enabled = false;
             if (answer.Contains(button.Name.Last()))
             {
-                timelimit += 5;
+                if (correct < answer.Length)
+                {
+                    timelimit += 5;
+                    LabelTimeLeft.Text = "Time left: " + timelimit + "s";
+                }
                 for (int i = 0; i < answer.Length; i++)
                 {
                     if (answer[i] == button.Name.Last())
@@ -105,9 +111,10 @@ namespace DictionaryApp
                     PanelLetters.Controls.Clear();
                     Label result = new Label()
                     {
-                        Text = "You win!",
+                        Text = "You won! You escaped.",
                         Font = new Font(new Font("Times New Roman", 28), FontStyle.Regular),
-                        AutoSize = true
+                        AutoSize = true,
+                        TextAlign = ContentAlignment.MiddleCenter
                     };
                     PanelLetters.Controls.Add(result);
                     result.Location = new Point((PanelLetters.Width - result.Width) / 2, (PanelLetters.Height - result.Height) / 2 - 30);
@@ -129,9 +136,10 @@ namespace DictionaryApp
                     PanelLetters.Controls.Clear();
                     Label result = new Label()
                     {
-                        Text = "You are hung",
+                        Text = "You lost. You were hung",
                         Font = new Font(new Font("Times New Roman", 28), FontStyle.Regular),
-                        AutoSize = true
+                        AutoSize = true,
+                        TextAlign = ContentAlignment.MiddleCenter
                     };
                     PanelLetters.Controls.Add(result);
                     result.Location = new Point((PanelLetters.Width - result.Width) / 2, (PanelLetters.Height - result.Height) / 2 - 30);
@@ -152,23 +160,35 @@ namespace DictionaryApp
                 PictureBoxHint.Visible = true;
                 LabelGuess.Visible = true;
                 LabelTimeLeft.Visible = true;
+                ButtonQuit.Visible = true;
                 TimeLimit.Start();
                 stopwatch.Start();
             }
         }
 
-        //private void EnabledPanelContents(Panel panel, bool enabled)
-        //{
-        //    foreach (Control ctrl in panel.Controls)
-        //    {
-        //        ctrl.Enabled = enabled;
-        //    }
-        //}
+        private void ButtonOKRules_Click(object sender, EventArgs e)
+        {
+            if (CheckBoxShowRules.Checked)
+            {
+                Properties.Settings.Default.ShowHMRules = false;
+                Properties.Settings.Default.Save();
+            }
+            PanelRules.Visible = false;
+            LabelReady.Visible = true;
+            ButtonQuit.Visible = true;
+            TimerReady.Start();
+        }
 
         private void FormHangman_Load(object sender, EventArgs e)
         {
             LoadQuestion();
-            TimerReady.Start();
+            if (Properties.Settings.Default.ShowHMRules)
+                PanelRules.Visible = true;
+            else
+            {
+                LabelReady.Visible = true;
+                TimerReady.Start();
+            }
         }
 
         private void TimeLimit_Tick(object sender, EventArgs e)
@@ -187,6 +207,24 @@ namespace DictionaryApp
             {
                 LabelTimeLeft.Text = "Time left: 0s";
                 TimeLimit.Stop();
+                stopwatch.Stop();
+                PanelLetters.Controls.Clear();
+                Label result = new Label()
+                {
+                    Text = "You ran out of time\nYou were hung",
+                    Font = new Font(new Font("Times New Roman", 28), FontStyle.Regular),
+                    AutoSize = true,
+                    TextAlign = ContentAlignment.MiddleCenter
+                };
+                PanelLetters.Controls.Add(result);
+                result.Location = new Point((PanelLetters.Width - result.Width) / 2, (PanelLetters.Height - result.Height) / 2 - 30);
+                PictureBoxHangman.Load(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Database\\Files\\images\\hangman6.png");
+                LabelGuess.Text = "";
+                LabelGuess.ForeColor = Color.Red;
+                for (int i = 0; i < answer.Length; i++)
+                {
+                    LabelGuess.Text += answer[i] + " ";
+                }
             }
         }
 
