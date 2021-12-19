@@ -60,18 +60,19 @@ namespace DictionaryApp.CustomControls
 
         private void Sound(object sender, EventArgs e)
         {
-            Debug.WriteLine((sender as Button).Name);
+            //Debug.WriteLine((sender as Button).Name);
             string p;
             if ((sender as Button).Name.Contains("uk"))
             {
-                p = System.IO.Directory.GetCurrentDirectory().Substring(0, 71) + "\\Database\\Files\\sounds\\british\\" + (sender as Button).Name.Replace("/","_");
-
+                p = System.IO.Directory.GetCurrentDirectory().Substring(0, System.IO.Directory.GetCurrentDirectory().Length - 9) + "\\Database\\Files\\sounds\\british\\" + (sender as Button).Name.Replace("/","_");
+                
             }
             else
             {
-                p = System.IO.Directory.GetCurrentDirectory().Substring(0, 71) + "\\Database\\Files\\sounds\\north_america\\" + (sender as Button).Name.Replace("/", "_");
+                p = System.IO.Directory.GetCurrentDirectory().Substring(0, System.IO.Directory.GetCurrentDirectory().Length - 9) + "\\Database\\Files\\sounds\\north_america\\" + (sender as Button).Name.Replace("/", "_");
 
             }
+            //Debug.WriteLine(p);
             player.URL = p;
             player.controls.play();
         }
