@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGamesSelect));
             this.LabelYourGames = new System.Windows.Forms.Label();
             this.PanelQuizzes = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -98,7 +99,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackgroundImage = global::DictionaryApp.Properties.Resources.ABCD;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(29, 55);
             this.pictureBox1.Name = "pictureBox1";
@@ -266,9 +267,9 @@
             // 
             // ButtonHome
             // 
-            this.ButtonHome.BackgroundImage = global::DictionaryApp.Properties.Resources.icons8_home_48px;
             this.ButtonHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ButtonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonHome.Image = global::DictionaryApp.Properties.Resources.icons8_home_24px;
             this.ButtonHome.Location = new System.Drawing.Point(1, 1);
             this.ButtonHome.Name = "ButtonHome";
             this.ButtonHome.Size = new System.Drawing.Size(30, 30);

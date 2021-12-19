@@ -368,7 +368,7 @@
             this.LabelTimeLeft.Name = "LabelTimeLeft";
             this.LabelTimeLeft.Size = new System.Drawing.Size(143, 27);
             this.LabelTimeLeft.TabIndex = 3;
-            this.LabelTimeLeft.Text = "Time left: 15s";
+            this.LabelTimeLeft.Text = "Time left: 20s";
             this.LabelTimeLeft.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // LabelQuesNum

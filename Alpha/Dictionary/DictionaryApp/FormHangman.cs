@@ -22,6 +22,7 @@ namespace DictionaryApp
         private readonly Stopwatch stopwatch = new Stopwatch();
         private string[] ansPart;
         private bool finished = false;
+        public static int score = 60000;
 
         public FormHangman()
         {
@@ -108,6 +109,7 @@ namespace DictionaryApp
                             showletter[i * 2] = answer[i];
                             LabelGuess.Text = showletter.ToString();
                             correct++;
+                            score += 10000;
                         }
                     }
                 }
@@ -123,6 +125,7 @@ namespace DictionaryApp
                                 showletter[i * 2] = ansPart[0][i];
                                 LabelGuess.Text = showletter.ToString();
                                 correct++;
+                                score += 10000;
                             }
                         }
                     }
@@ -136,6 +139,7 @@ namespace DictionaryApp
                                 showletter[ansPart[0].Length * 2 + 3 + i * 2] = ansPart[1][i];
                                 LabelGuess.Text = showletter.ToString();
                                 correct++;
+                                score += 10000;
                             }
                         }
                     }
@@ -162,6 +166,7 @@ namespace DictionaryApp
             else
             {
                 incorrect++;
+                score -= 5000;
                 PictureBoxHangman.Load(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Database\\Files\\images\\hangman" + incorrect + ".png");
                 if (incorrect == 6)
                 {
@@ -201,6 +206,10 @@ namespace DictionaryApp
                 mainElement.InnerText = "Do not modify the contents of this file, or risk losing your saved progress!";
                 xmlDocument.AppendChild(mainElement);
 
+                XmlElement bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
+                bestScore.InnerText = score.ToString();
+                mainElement.AppendChild(bestScore);
+
                 XmlElement bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
                 bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
                 mainElement.AppendChild(bestTime);
@@ -210,7 +219,7 @@ namespace DictionaryApp
                 bool success = true;
                 try
                 {
-                    xmlDocument.LoadXml(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\hangman.xml");
+                    xmlDocument.Load(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\hangman.xml");
                 }
                 catch (XmlException exception)
                 {
@@ -219,6 +228,15 @@ namespace DictionaryApp
                 }
                 if (success)
                 {
+                    XmlNode bestScore = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime");
+                    if (double.TryParse(bestScore.InnerText, out double s))
+                    {
+                        if (score > s)
+                            bestScore.InnerText = score.ToString();
+                    }
+                    else
+                        bestScore.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
+
                     XmlNode bestTime = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime");
                     if (double.TryParse(bestTime.InnerText, out double t))
                     {
@@ -238,6 +256,10 @@ namespace DictionaryApp
                     XmlElement mainElement = xmlDocument.CreateElement(string.Empty, "MainInfo", string.Empty);
                     mainElement.InnerText = "Do not modify the contents of this file, or risk losing your saved progress!";
                     xmlDocument.AppendChild(mainElement);
+
+                    XmlElement bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
+                    bestScore.InnerText = score.ToString();
+                    mainElement.AppendChild(bestScore);
 
                     XmlElement bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
                     bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
@@ -299,7 +321,8 @@ namespace DictionaryApp
 
             if (timelimit > 1)
             {
-                timelimit--;                
+                timelimit--;
+                score -= 1000;
                 LabelTimeLeft.Text = "Time left: " + timelimit.ToString() + "s";
             }
             else

@@ -1524,9 +1524,12 @@ namespace DictionaryApp.Database
 
             foreach (string tp in topics)
             {
+                Debug.WriteLine("Reading" + tp);
                 // read files -Answers and -Quizzes
                 string ansFile = DataDirectories + "quizzes\\" + tp + "-Answers.txt";
+                Debug.WriteLine(DataDirectories + "quizzes\\" + tp + "-Answers.txt");
                 string quzFile = DataDirectories + "quizzes\\" + tp + "-Quizzes.txt";
+                Debug.WriteLine(DataDirectories + "quizzes\\" + tp + "-Quizzes.txt");
 
 
                 // read -Answer file first
@@ -1564,9 +1567,10 @@ namespace DictionaryApp.Database
             }
             foreach (string tp in topics)
             {
+                Debug.WriteLine("Adding" + tp);
                 foreach (string key in quizzDictionary.Keys.ToList())
                 {
-                    if (quizzDictionary[key].Count != 6 || key.Contains(tp))
+                    if (quizzDictionary[key].Count != 6/* || key.Contains(tp)*/)
                     {
                         continue;
                     }
@@ -1575,6 +1579,7 @@ namespace DictionaryApp.Database
                     command.CommandText = @"INSERT INTO Quizzes (question, topic, ans1, ans2, ans3, ans4, rans) VALUES (@question, @topic, @ans1, @ans2, @ans3, @ans4, @rans)";
                     command.Parameters.Add("@question", SqlDbType.NVarChar).Value = quizzDictionary[key][1];
                     command.Parameters.Add("@topic", SqlDbType.NVarChar).Value = tp;
+                    Debug.WriteLine(tp);
                     command.Parameters.Add("@ans1", SqlDbType.NVarChar).Value = quizzDictionary[key][2];
                     command.Parameters.Add("@ans2", SqlDbType.NVarChar).Value = quizzDictionary[key][3];
                     command.Parameters.Add("@ans3", SqlDbType.NVarChar).Value = quizzDictionary[key][4];

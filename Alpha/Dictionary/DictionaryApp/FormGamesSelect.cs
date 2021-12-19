@@ -87,9 +87,7 @@ namespace DictionaryApp
                 fh.Show();
             }
             else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ButtonHome_Click"))
-            {
                 Form1.GetInstance().Show();
-            }
             else
             {
                 //if (MessageBox.Show("Quit the app now?", "Alert", MessageBoxButtons.YesNo) == DialogResult.No)

@@ -115,7 +115,7 @@
 115. Legend _____ it that Robin Rood fired an arrow from his death-bed and was buried where the arrow landed.|A. has|B. does|C. says|D. tells 
 116. Do you think this hat _____ me? I’m not sure if it is a good color for me.|A. matches|B. fits|C. suits|D. goes with 
 117. The police asked the kidnappers to _____ the deadline by six hours.|A. prolong|B. delay|C. extend|D. lengthen 
-118. You might get better but this medicine will do you .|A. harm|B. danger|C. worst|D. illness 
+118. You might get better but this medicine will do you _____.|A. harm|B. danger|C. worst|D. illness 
 119. Extra blankets will be supplied on _____.|A. demand|B. request|C. asking|D. need 
 120. A _____ family consists of parents and their children.|A. nuclear|B. single|C. solid|D. concentrated 
 121. Grandma says there wasn’t a _____ of truth in that story Granddad told last night about being a war hero.|A. speck|B. grain|C. dot|D. crumb 
@@ -240,6 +240,6 @@
 240. English is understood more _____ than any other language.|A. largely|B. broadly|C. immensely|D. widely 
 241. I am sorry, but we have to _____ the discussion. We have no more time.|A. make room for|B. put effort into|C. take advantage of|D. put an end to 
 242. My mother knows the traditional _____ of the Southwest.|A. cuisine|B. cook|C. cooking|D. cookery 
-243. Sue was in the accident; meanwhile her sister had only minor injuries.|A. badly injured|B. seriously ill|C. seriously hurt|D. bad hurt 
+243. Sue was _____ in the accident; meanwhile her sister had only minor injuries.|A. badly injured|B. seriously ill|C. seriously hurt|D. bad hurt 
 244. You must _____ your duty; otherwise the boss will get angry.|A. make|B. carry|C. do|D. begin 
 245. In your revision, you should _____ priority to tenses.|A. take|B. give|C. have|D. bring 

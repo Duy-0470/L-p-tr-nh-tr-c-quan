@@ -24,10 +24,9 @@ namespace DictionaryApp
         private readonly Database.DatabaseHandle databaseHandle = new Database.DatabaseHandle();
         private List<Classes.Quizz> quizzes = new List<Classes.Quizz>();
         public static int score = 0;
-        private int counter = 0, timeleft = 15, ready = 3;
+        private int counter = 0, timeleft = 20, ready = 3;
         private readonly Stopwatch stopwatch = new Stopwatch();
-        public static double avg_time = 0;
-        //private bool playing = false;
+        public static double avg_time = 0, correct = 0;
 
         public FormQuiz()
         {
@@ -245,6 +244,7 @@ namespace DictionaryApp
                 ButtonA.BackColor = Color.Green;
                 score += (15 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
                 LabelScore.Text = "Your score: " + score.ToString();
+                correct++;
             }
             else
             {
@@ -272,6 +272,7 @@ namespace DictionaryApp
                 ButtonB.BackColor = Color.Green;
                 score += (15 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
                 LabelScore.Text = "Your score: " + score.ToString();
+                correct++;
             }
             else
             {
@@ -299,6 +300,7 @@ namespace DictionaryApp
                 ButtonC.BackColor = Color.Green;
                 score += (15 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
                 LabelScore.Text = "Your score: " + score.ToString();
+                correct++;
             }
             else
             {
@@ -326,6 +328,7 @@ namespace DictionaryApp
                 ButtonD.BackColor = Color.Green;
                 score += (15 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
                 LabelScore.Text = "Your score: " + score.ToString();
+                correct++;
             }
             else
             {
@@ -350,7 +353,7 @@ namespace DictionaryApp
             {
                 LabelQuesNum.Text = "Question: " + (counter + 1).ToString() + " / 20";
                 Debug.WriteLine(counter.ToString() + " " + quizzes[counter].rightAnswer);
-                timeleft = 15;
+                timeleft = 20;
                 LabelTimeLeft.ForeColor = Color.Black;
                 LabelQuestion.Text = quizzes[counter].question;
                 ButtonA.Text = quizzes[counter].A;
@@ -360,7 +363,7 @@ namespace DictionaryApp
                 ButtonNext.Visible = false;
                 ButtonA.BackColor = ButtonB.BackColor = ButtonC.BackColor = ButtonD.BackColor = Color.White;
                 ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = true;
-                LabelTimeLeft.Text = "Time left: 15s";
+                LabelTimeLeft.Text = "Time left: 20s";
                 Timer1sec.Start();
                 stopwatch.Reset();
                 stopwatch.Start();
@@ -394,18 +397,23 @@ namespace DictionaryApp
                 mainElement.AppendChild(bestScore);
 
                 XmlElement bestScoreCol = xmlDocument.CreateElement(string.Empty, "Col", string.Empty);
+                bestScoreCol.InnerText = 0.ToString();
                 bestScore.AppendChild(bestScoreCol);
 
                 XmlElement bestScoreWM = xmlDocument.CreateElement(string.Empty, "WM", string.Empty);
+                bestScoreWM.InnerText = 0.ToString();
                 bestScore.AppendChild(bestScoreWM);
 
                 XmlElement bestScorePV = xmlDocument.CreateElement(string.Empty, "PV", string.Empty);
+                bestScorePV.InnerText = 0.ToString();
                 bestScore.AppendChild(bestScorePV);
 
                 XmlElement bestScoreWF = xmlDocument.CreateElement(string.Empty, "WF", string.Empty);
+                bestScoreWF.InnerText = 0.ToString();
                 bestScore.AppendChild(bestScoreWF);
 
                 XmlElement bestScoreIdiom = xmlDocument.CreateElement(string.Empty, "Idiom", string.Empty);
+                bestScoreIdiom.InnerText = 0.ToString();
                 bestScore.AppendChild(bestScoreIdiom);
 
                 // best average time
@@ -413,18 +421,23 @@ namespace DictionaryApp
                 mainElement.AppendChild(bestTime);
 
                 XmlElement bestTimeCol = xmlDocument.CreateElement(string.Empty, "Col", string.Empty);
+                bestTimeCol.InnerText = 0.ToString();
                 bestTime.AppendChild(bestTimeCol);
 
                 XmlElement bestTimeWM = xmlDocument.CreateElement(string.Empty, "WM", string.Empty);
+                bestTimeWM.InnerText = 0.ToString();
                 bestTime.AppendChild(bestTimeWM);
 
                 XmlElement bestTimePV = xmlDocument.CreateElement(string.Empty, "PV", string.Empty);
+                bestTimePV.InnerText = 0.ToString();
                 bestTime.AppendChild(bestTimePV);
 
                 XmlElement bestTimeWF = xmlDocument.CreateElement(string.Empty, "WF", string.Empty);
+                bestTimeWF.InnerText = 0.ToString();
                 bestTime.AppendChild(bestTimeWF);
 
                 XmlElement bestTimeIdiom = xmlDocument.CreateElement(string.Empty, "Idiom", string.Empty);
+                bestTimeIdiom.InnerText = 0.ToString();
                 bestTime.AppendChild(bestTimeIdiom);
 
                 switch (q_topic)
@@ -456,7 +469,7 @@ namespace DictionaryApp
                 bool success = true;
                 try
                 {                    
-                    xmlDocument.LoadXml(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\quiz.xml");
+                    xmlDocument.Load(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\quiz.xml");
                 }
                 catch (XmlException exception)
                 {
@@ -576,18 +589,23 @@ namespace DictionaryApp
                     mainElement.AppendChild(bestScore);
 
                     XmlElement bestScoreCol = xmlDocument.CreateElement(string.Empty, "Col", string.Empty);
+                    bestScoreCol.InnerText = 0.ToString();
                     bestScore.AppendChild(bestScoreCol);
 
                     XmlElement bestScoreWM = xmlDocument.CreateElement(string.Empty, "WM", string.Empty);
+                    bestScoreWM.InnerText = 0.ToString();
                     bestScore.AppendChild(bestScoreWM);
 
                     XmlElement bestScorePV = xmlDocument.CreateElement(string.Empty, "PV", string.Empty);
+                    bestScorePV.InnerText = 0.ToString();
                     bestScore.AppendChild(bestScorePV);
 
                     XmlElement bestScoreWF = xmlDocument.CreateElement(string.Empty, "WF", string.Empty);
+                    bestScoreWF.InnerText = 0.ToString();
                     bestScore.AppendChild(bestScoreWF);
 
                     XmlElement bestScoreIdiom = xmlDocument.CreateElement(string.Empty, "Idiom", string.Empty);
+                    bestScoreIdiom.InnerText = 0.ToString();
                     bestScore.AppendChild(bestScoreIdiom);
 
                     // best average time
@@ -595,18 +613,23 @@ namespace DictionaryApp
                     mainElement.AppendChild(bestTime);
 
                     XmlElement bestTimeCol = xmlDocument.CreateElement(string.Empty, "Col", string.Empty);
+                    bestTimeCol.InnerText = 0.ToString();
                     bestTime.AppendChild(bestTimeCol);
 
                     XmlElement bestTimeWM = xmlDocument.CreateElement(string.Empty, "WM", string.Empty);
+                    bestTimeWM.InnerText = 0.ToString();
                     bestTime.AppendChild(bestTimeWM);
 
                     XmlElement bestTimePV = xmlDocument.CreateElement(string.Empty, "PV", string.Empty);
+                    bestTimePV.InnerText = 0.ToString();
                     bestTime.AppendChild(bestTimePV);
 
                     XmlElement bestTimeWF = xmlDocument.CreateElement(string.Empty, "WF", string.Empty);
+                    bestTimeWF.InnerText = 0.ToString();
                     bestTime.AppendChild(bestTimeWF);
 
                     XmlElement bestTimeIdiom = xmlDocument.CreateElement(string.Empty, "Idiom", string.Empty);
+                    bestTimeIdiom.InnerText = 0.ToString();
                     bestTime.AppendChild(bestTimeIdiom);
 
                     switch (q_topic)
@@ -700,13 +723,6 @@ namespace DictionaryApp
                 FormGamesSelect fgs = new FormGamesSelect();
                 fgs.Show();
             }
-            //else if (playing)
-            //{
-            //    if (MessageBox.Show("Quit now? You will lose any unsaved progress", "Alert", MessageBoxButtons.OKCancel) == DialogResult.OK)
-            //        Application.Exit();
-            //    else
-            //        e.Cancel = true;
-            //}
             else
                 Application.Exit();
         }
