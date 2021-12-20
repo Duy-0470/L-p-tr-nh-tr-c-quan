@@ -104,7 +104,7 @@
             this.PanelLetters.Controls.Add(this.ButtonB);
             this.PanelLetters.Controls.Add(this.ButtonC);
             this.PanelLetters.Controls.Add(this.ButtonA);
-            this.PanelLetters.Location = new System.Drawing.Point(77, 431);
+            this.PanelLetters.Location = new System.Drawing.Point(0, 656);
             this.PanelLetters.Name = "PanelLetters";
             this.PanelLetters.Size = new System.Drawing.Size(782, 306);
             this.PanelLetters.TabIndex = 2;
@@ -452,7 +452,7 @@
             // 
             this.PictureBoxHangman.BackgroundImage = global::DictionaryApp.Properties.Resources.hangman0;
             this.PictureBoxHangman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PictureBoxHangman.Location = new System.Drawing.Point(237, 246);
+            this.PictureBoxHangman.Location = new System.Drawing.Point(233, 232);
             this.PictureBoxHangman.Name = "PictureBoxHangman";
             this.PictureBoxHangman.Size = new System.Drawing.Size(301, 353);
             this.PictureBoxHangman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -475,7 +475,7 @@
             // 
             this.ButtonQuit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ButtonQuit.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonQuit.Location = new System.Drawing.Point(39, 677);
+            this.ButtonQuit.Location = new System.Drawing.Point(39, 989);
             this.ButtonQuit.Name = "ButtonQuit";
             this.ButtonQuit.Size = new System.Drawing.Size(113, 39);
             this.ButtonQuit.TabIndex = 4;
@@ -489,9 +489,9 @@
             // 
             this.LabelGuess.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelGuess.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelGuess.Location = new System.Drawing.Point(0, 446);
+            this.LabelGuess.Location = new System.Drawing.Point(0, 588);
             this.LabelGuess.Name = "LabelGuess";
-            this.LabelGuess.Size = new System.Drawing.Size(846, 55);
+            this.LabelGuess.Size = new System.Drawing.Size(1922, 55);
             this.LabelGuess.TabIndex = 5;
             this.LabelGuess.Text = "_ _ _ _ _ _ _ _";
             this.LabelGuess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -508,7 +508,7 @@
             this.LabelTimeLeft.AutoSize = true;
             this.LabelTimeLeft.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelTimeLeft.ForeColor = System.Drawing.Color.Black;
-            this.LabelTimeLeft.Location = new System.Drawing.Point(1169, 42);
+            this.LabelTimeLeft.Location = new System.Drawing.Point(1723, 42);
             this.LabelTimeLeft.Name = "LabelTimeLeft";
             this.LabelTimeLeft.Size = new System.Drawing.Size(143, 27);
             this.LabelTimeLeft.TabIndex = 6;
@@ -518,7 +518,7 @@
             // LabelReady
             // 
             this.LabelReady.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelReady.Location = new System.Drawing.Point(1592, 310);
+            this.LabelReady.Location = new System.Drawing.Point(1483, 107);
             this.LabelReady.Name = "LabelReady";
             this.LabelReady.Size = new System.Drawing.Size(90, 111);
             this.LabelReady.TabIndex = 8;
@@ -548,7 +548,7 @@
             this.PanelRules.Controls.Add(this.CheckBoxShowRules);
             this.PanelRules.Controls.Add(this.ButtonOKRules);
             this.PanelRules.Controls.Add(this.LabelRules);
-            this.PanelRules.Location = new System.Drawing.Point(879, 576);
+            this.PanelRules.Location = new System.Drawing.Point(788, 666);
             this.PanelRules.Name = "PanelRules";
             this.PanelRules.Size = new System.Drawing.Size(948, 383);
             this.PanelRules.TabIndex = 10;
@@ -582,7 +582,7 @@
             // 
             this.ButtonCont.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonCont.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonCont.Location = new System.Drawing.Point(1643, 989);
+            this.ButtonCont.Location = new System.Drawing.Point(1739, 989);
             this.ButtonCont.Name = "ButtonCont";
             this.ButtonCont.Size = new System.Drawing.Size(138, 39);
             this.ButtonCont.TabIndex = 4;
@@ -598,9 +598,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1924, 1061);
             this.Controls.Add(this.PanelLetters);
-            this.Controls.Add(this.LabelGuess);
             this.Controls.Add(this.PanelRules);
             this.Controls.Add(this.LabelReady);
             this.Controls.Add(this.LabelTimeLeft);

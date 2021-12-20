@@ -48,7 +48,7 @@
             // 
             // LabelScore
             // 
-            this.LabelScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelScore.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelScore.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelScore.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LabelScore.Location = new System.Drawing.Point(103, 125);
@@ -60,7 +60,7 @@
             // 
             // LabelSpeed
             // 
-            this.LabelSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelSpeed.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelSpeed.Location = new System.Drawing.Point(103, 182);
             this.LabelSpeed.Name = "LabelSpeed";
@@ -183,7 +183,7 @@
             // 
             // LabelAccuracy
             // 
-            this.LabelAccuracy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelAccuracy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelAccuracy.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelAccuracy.Location = new System.Drawing.Point(103, 241);
             this.LabelAccuracy.Name = "LabelAccuracy";
@@ -195,17 +195,19 @@
             // 
             // LabelScoreNum
             // 
+            this.LabelScoreNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelScoreNum.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelScoreNum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LabelScoreNum.Location = new System.Drawing.Point(768, 125);
             this.LabelScoreNum.Name = "LabelScoreNum";
-            this.LabelScoreNum.Size = new System.Drawing.Size(718, 32);
+            this.LabelScoreNum.Size = new System.Drawing.Size(768, 32);
             this.LabelScoreNum.TabIndex = 0;
             this.LabelScoreNum.Text = "000";
             this.LabelScoreNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LabelSpeedNum
             // 
+            this.LabelSpeedNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelSpeedNum.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelSpeedNum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LabelSpeedNum.Location = new System.Drawing.Point(768, 182);
@@ -217,6 +219,7 @@
             // 
             // LabelAccNum
             // 
+            this.LabelAccNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelAccNum.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelAccNum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LabelAccNum.Location = new System.Drawing.Point(768, 241);

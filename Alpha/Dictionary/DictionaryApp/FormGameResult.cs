@@ -93,8 +93,21 @@ namespace DictionaryApp
             }
             else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ButtonRetry_Click" || x.GetMethod().Name == "ButtonSubReplay_Click"))
             {
-                FormQuiz fq = new FormQuiz();
-                fq.Show();
+                if (FormGamesSelect.gameType == FormGamesSelect.GameType.Quizzes)
+                {
+                    FormQuiz fq = new FormQuiz();
+                    fq.Show();
+                }
+                else if (FormGamesSelect.gameType == FormGamesSelect.GameType.GTW)
+                {
+                    FormSWSettings sw = new FormSWSettings();
+                    sw.Show();
+                }
+                else if (FormGamesSelect.gameType == FormGamesSelect.GameType.Hangman)
+                {
+                    FormHangman fh = new FormHangman();
+                    fh.Show();
+                }
             }
             else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ButtonHome_Click" || x.GetMethod().Name == "ButtonSubHome_Click"))
                 Form1.GetInstance().Show();

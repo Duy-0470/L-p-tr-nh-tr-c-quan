@@ -131,4 +131,7 @@ One correct guess grants you 5 extra seconds
 One incorrect guess grants you one step closer to being hung
 The game ends when you have correctly guessed all the letter, incorrectly guessed 6 times, or ran out of time</value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>84</value>
+  </metadata>
 </root>

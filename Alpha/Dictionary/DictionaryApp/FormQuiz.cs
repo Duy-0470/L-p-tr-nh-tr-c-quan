@@ -482,21 +482,39 @@ namespace DictionaryApp
                     {
                         case QuizTopic.Collocation:
                             XmlNode bestScoreCol = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/Col");
-                            if (int.TryParse(bestScoreCol.InnerText, out int sCol))
+                            if (bestScoreCol != null)
                             {
-                                if (score > sCol)
+                                if (int.TryParse(bestScoreCol.InnerText, out int sCol))
+                                {
+                                    if (score > sCol)
+                                        bestScoreCol.InnerText = score.ToString();
+                                }
+                                else
                                     bestScoreCol.InnerText = score.ToString();
                             }
                             else
-                                bestScoreCol.InnerText = score.ToString();
-                            XmlNode bestTimeCol = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime/Col");
-                            if (double.TryParse(bestTimeCol.InnerText, out double tCol))
                             {
-                                if (avg_time < tCol)
-                                    bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();
+                                XmlNode main = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo");
+                                bestScoreCol.InnerText = score.ToString();
+                                main.AppendChild(bestScoreCol);
+                            }
+                            XmlNode bestTimeCol = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime/Col");
+                            if (bestTimeCol != null)
+                            {
+                                if (double.TryParse(bestTimeCol.InnerText, out double tCol))
+                                {
+                                    if (avg_time < tCol)
+                                        bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();
+                                }
+                                else
+                                    bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();                              
                             }
                             else
+                            {
+                                XmlNode main = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo");
                                 bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();
+                                main.AppendChild(bestTimeCol);
+                            }
                             break;
                         case QuizTopic.Phrasal_Verb:
                             XmlNode bestScorePV = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/PV");

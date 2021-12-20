@@ -14,27 +14,34 @@ namespace DictionaryApp
     {
         private readonly Database.DatabaseHandle databaseHandle = new Database.DatabaseHandle();
         private Classes.Word GetWord = new Classes.Word();
-        private string meaning = "meaning";
-        private string word = "word1l";
+        private string meaning = "";
+        private string word = "";
         private string shuffle;
         private int select;
         private int desX, desY, disX, disY;
         private int move = 0;
-        private int time, number_question;
-        private int count_question;
+        private int time, count_time;
+        private int number_question, count_question;
         private CustomControls.BtnChar tempBtnChar;
         private List<CustomControls.BtnChar> listBtn;
         private List<CustomControls.BtnChar> listAnswer;
         private readonly Random random = new Random();
+        public static int total;
 
         public FormSW()
         {
             InitializeComponent();
             Bounds = Screen.PrimaryScreen.Bounds;
-            richTextBox1.Text = meaning;
+            lb_Meaning.Location = new Point((Width - lb_Meaning.Width) / 2, Height * 30 / 100);
+            GetWord = databaseHandle.RandomWord();
+            word = GetWord.wordHeader.word;
+            meaning = GetWord.senses[0].meaning;
+            lb_Meaning.Text = meaning;
             count_question = 1;
-            time = FormSWSettings.time;
+            count_time = time = FormSWSettings.time;          
             number_question = FormSWSettings.number_question;
+            lb_TimeLeft.Text = count_time.ToString();
+            timer2.Start();
             Init();
         }
 
@@ -42,6 +49,7 @@ namespace DictionaryApp
         {
             Application.Exit();
         }
+
         void Init()
         {
             InitListButton();
@@ -97,6 +105,66 @@ namespace DictionaryApp
             }
         }
 
+        private void Submit()
+        {
+            timer2.Stop();
+            string answer = "";
+
+            if (select == word.Length)
+            {
+                for (int i = 0; i < word.Length; i++)
+                {
+                    answer += listAnswer[i].Text;
+                }
+                if (answer == word)
+                {
+                    int score = (int)(count_time * (double)(100 / time));
+                    lb_Score.Text = (int.Parse(lb_Score.Text) + score).ToString();
+                    AnswerCorrect();
+                }
+                else
+                {
+                    AnswerIncorrect();
+                }
+            }
+            else
+            {
+                AnswerIncorrect();
+            }
+
+            lb_Question.Text = (int.Parse(lb_Question.Text) + 1).ToString();
+            count_question++;
+            if (count_question == 20)
+            {
+                btn_Submit.Text = "Finish";
+            }
+
+            if (count_question <= 20)
+            {
+                listAnswer.Clear();
+                lb_TimeLeft.Text = FormSWSettings.time.ToString();
+                for (int i = 0; i < word.Length; i++)
+                {
+                    Controls.Remove(listBtn[i]);
+                }
+                listBtn.Clear();
+                GetWord = databaseHandle.RandomWord();
+                word = GetWord.wordHeader.word;
+                meaning = GetWord.senses[0].meaning;
+                lb_Meaning.Text = meaning;
+                count_time = time;
+                timer2.Start();
+                Init();
+            }
+            else
+            {
+                total = int.Parse(lb_Score.Text);
+                this.Close();
+                FormGameResult formGameResult = new FormGameResult();
+                formGameResult.ShowDialog();
+            }
+        }
+
         void InitListButton()
         {
             listBtn = new List<CustomControls.BtnChar>();
@@ -107,6 +175,18 @@ namespace DictionaryApp
             }
             listAnswer = new List<CustomControls.BtnChar>();
         }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {            
+            count_time--;
+            lb_TimeLeft.Text = count_time.ToString();
+            if (count_time == 0)
+            {
+                timer2.Stop();
+                Submit();               
+            }
+        }
+
         void InitlistBtn()
         {
             shuffle = new string(word.ToCharArray().OrderBy(s => (random.Next(2) % 2) == 0).ToArray());
@@ -137,47 +217,17 @@ namespace DictionaryApp
         }
         private void btn_Submit_Click(object sender, EventArgs e)
         {
-            string answer = "";
-            if (select != word.Length)
-            {
-                lb_Question.Text = (int.Parse(lb_Question.Text) + 1).ToString();
-                count_question++;
-                return;
-            }
-            for (int i = 0; i < word.Length; i++)
-            {
-                answer += listAnswer[i].Text;
-            }
-            if (answer == word)
-            {
-                lb_Score.Text = (int.Parse(lb_Score.Text) + 1000).ToString();
-            }
-            lb_Question.Text = (int.Parse(lb_Question.Text) + 1).ToString();
-            if (count_question == 20)
-            {
-                btn_Submit.Text = "Finish";
-            }
-            if (count_question <= 20)
-            {
-                listAnswer.Clear();
-                for (int i = 0; i < word.Length; i++)
-                {
-                    Controls.Remove(listBtn[i]);
-                }
-                listBtn.Clear();
-                GetWord = databaseHandle.RandomWord();
-                word = GetWord.wordHeader.word;
-                meaning = GetWord.senses[0].meaning;
-                Init();
-            }
-            else
-            {
-                this.Close();
-                FormGameResult formGameResult = new FormGameResult();
-                formGameResult.ShowDialog();
-            }
+            Submit();           
         }
 
+        private void AnswerCorrect()
+        {
+            MessageBox.Show("Your correct!");
+        }
+        private void AnswerIncorrect()
+        {
+            MessageBox.Show("The correct answer is: " + word);
+        }
         private void Form2_Load(object sender, EventArgs e)
         {
 
