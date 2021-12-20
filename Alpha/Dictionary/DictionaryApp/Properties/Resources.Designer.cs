@@ -63,6 +63,16 @@ namespace DictionaryApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5a3a4de27fced4_21032862151377046652355359 {
+            get {
+                object obj = ResourceManager.GetObject("_5a3a4de27fced4_21032862151377046652355359", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ABCD {
             get {
                 object obj = ResourceManager.GetObject("ABCD", resourceCulture);
@@ -73,9 +83,39 @@ namespace DictionaryApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back_30px {
+            get {
+                object obj = ResourceManager.GetObject("back_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_window_30px {
+            get {
+                object obj = ResourceManager.GetObject("close_window_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap favpng_hangman_free_hangman_classic_free_android_word_game {
             get {
                 object obj = ResourceManager.GetObject("favpng_hangman-free-hangman-classic-free-android-word-game", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap game_controller_30px {
+            get {
+                object obj = ResourceManager.GetObject("game_controller_30px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,6 +193,16 @@ namespace DictionaryApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap help_50px {
+            get {
+                object obj = ResourceManager.GetObject("help_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_back_24px {
             get {
                 object obj = ResourceManager.GetObject("icons8_back_24px", resourceCulture);
@@ -196,6 +246,46 @@ namespace DictionaryApp.Properties {
         internal static System.Drawing.Bitmap icons8_rotate_26px {
             get {
                 object obj = ResourceManager.GetObject("icons8_rotate_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maximize_window_30px {
+            get {
+                object obj = ResourceManager.GetObject("maximize_window_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize_window_30px {
+            get {
+                object obj = ResourceManager.GetObject("minimize_window_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undo_30px {
+            get {
+                object obj = ResourceManager.GetObject("undo_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Word_Scrambler_696x392 {
+            get {
+                object obj = ResourceManager.GetObject("Word_Scrambler_696x392", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -77,8 +77,8 @@ namespace DictionaryApp
             else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "PanelGTW_MouseClick" || x.GetMethod().Name == "LabelGTWDes_MouseClick"
                 || x.GetMethod().Name == "PictureBoxGTW_MouseClick" || x.GetMethod().Name == "label4_MouseClick" || x.GetMethod().Name == "PanelGTWDes_MouseClick"))
             {
-                FormGTW fgtw = new FormGTW();
-                fgtw.Show();
+                FormSWSettings fss = new FormSWSettings();
+                fss.Show();
             }
             else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "PanelHangman_MouseClick" || x.GetMethod().Name == "PanelHangmanDes_MouseClick"
                 || x.GetMethod().Name == "LabelHangmanDes_MouseClick" || x.GetMethod().Name == "LabelHangman_MouseClick" || x.GetMethod().Name == "PictureBoxHangman_MouseClick"))
