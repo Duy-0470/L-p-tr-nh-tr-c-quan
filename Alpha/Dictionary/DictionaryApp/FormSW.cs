@@ -12,12 +12,16 @@ namespace DictionaryApp
 {
     public partial class FormSW : Form
     {
+        private readonly Database.DatabaseHandle databaseHandle = new Database.DatabaseHandle();
+        private Classes.Word GetWord = new Classes.Word();
         private string meaning = "meaning";
-        private string word = "word1";
+        private string word = "word1l";
         private string shuffle;
         private int select;
         private int desX, desY, disX, disY;
         private int move = 0;
+        private int time, number_question;
+        private int count_question;
         private CustomControls.BtnChar tempBtnChar;
         private List<CustomControls.BtnChar> listBtn;
         private List<CustomControls.BtnChar> listAnswer;
@@ -26,7 +30,11 @@ namespace DictionaryApp
         public FormSW()
         {
             InitializeComponent();
+            Bounds = Screen.PrimaryScreen.Bounds;
             richTextBox1.Text = meaning;
+            count_question = 1;
+            time = FormSWSettings.time;
+            number_question = FormSWSettings.number_question;
             Init();
         }
 
@@ -36,7 +44,6 @@ namespace DictionaryApp
         }
         void Init()
         {
-            richTextBox1.Text = meaning;
             InitListButton();
             InitlistBtn();
             select = 0;
@@ -49,14 +56,18 @@ namespace DictionaryApp
             if (btn.X == btn.Location.X && btn.Y == btn.Location.Y)
             {
                 desX = (Width - btn.Width) / 2 - ((mid - select) * 2 - 1) * btn.Width;
-                ///// Day nua ne ----------------------------------------------------
-                desY = Height * 20 / 100;
+                desY = Height * 60 / 100;
                 disX = Math.Abs(desX - btn.Location.X);
                 disY = Math.Abs(desY - btn.Location.Y);
                 btn.Selected = select;
                 listAnswer.Add(btn);
                 select++;
                 move = 1;
+                for (int i = 0; i < listBtn.Count; i++)
+                {
+                    listBtn[i].Enabled = false;
+                    listBtn[i].BackColor = Color.Yellow;
+                }
                 timer1.Start();
             }
             else
@@ -66,7 +77,7 @@ namespace DictionaryApp
                 {
                     listAnswer[i].Selected = i;
                     int x = (Width - btn.Width) / 2 - ((mid - i) * 2 - 1) * btn.Width;
-                    int y = Height * 20 / 100;
+                    int y = Height * 60 / 100;
                     listAnswer[i].Location = new Point(x, y);
                 }
                 desX = btn.X;
@@ -77,6 +88,11 @@ namespace DictionaryApp
                 select--;
                 move = -1;
                 tempBtnChar = btn;
+                for (int i = 0; i < listBtn.Count; i++)
+                {
+                    listBtn[i].Enabled = false;
+                    listBtn[i].BackColor = Color.Yellow;
+                }
                 timer1.Start();
             }
         }
@@ -98,8 +114,10 @@ namespace DictionaryApp
             for (int i = 0; i < shuffle.Length; i++)
             {
                 listBtn[i].Text = shuffle[i].ToString();
-                listBtn[i].Height = 30;
-                listBtn[i].Width = 30;
+                listBtn[i].Height = 60;
+                listBtn[i].Width = 60;
+                listBtn[i].BackColor = Color.Yellow;
+                listBtn[i].Font = new Font("Mongolian Baiti", 20, FontStyle.Bold);
                 listBtn[i].ID1 = i;
                 if (word.Length % 2 == 0)
                 {
@@ -123,6 +141,7 @@ namespace DictionaryApp
             if (select != word.Length)
             {
                 lb_Question.Text = (int.Parse(lb_Question.Text) + 1).ToString();
+                count_question++;
                 return;
             }
             for (int i = 0; i < word.Length; i++)
@@ -134,6 +153,29 @@ namespace DictionaryApp
                 lb_Score.Text = (int.Parse(lb_Score.Text) + 1000).ToString();
             }
             lb_Question.Text = (int.Parse(lb_Question.Text) + 1).ToString();
+            if (count_question == 20)
+            {
+                btn_Submit.Text = "Finish";
+            }
+            if (count_question <= 20)
+            {
+                listAnswer.Clear();
+                for (int i = 0; i < word.Length; i++)
+                {
+                    Controls.Remove(listBtn[i]);
+                }
+                listBtn.Clear();
+                GetWord = databaseHandle.RandomWord();
+                word = GetWord.wordHeader.word;
+                meaning = GetWord.senses[0].meaning;
+                Init();
+            }
+            else
+            {
+                this.Close();
+                FormGameResult formGameResult = new FormGameResult();
+                formGameResult.ShowDialog();
+            }
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -143,8 +185,8 @@ namespace DictionaryApp
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            int x = disX / 20;
-            int y = disY / 20;
+            int x = disX / 15;
+            int y = disY / 15;
             if (move > 0)
             {
                 int X, Y;
@@ -169,6 +211,10 @@ namespace DictionaryApp
                 {
                     listAnswer[select - 1].Location = new Point(desX, desY);
                     move = 0;
+                    for (int i = 0; i < listBtn.Count; i++)
+                    {
+                        listBtn[i].Enabled = true;
+                    }
                     timer1.Stop();
                 }
             }
@@ -196,6 +242,10 @@ namespace DictionaryApp
                 {
                     tempBtnChar.Location = new Point(desX, desY);
                     move = 0;
+                    for (int i = 0; i < listBtn.Count; i++)
+                    {
+                        listBtn[i].Enabled = true;
+                    }
                     timer1.Stop();
                 }
             }

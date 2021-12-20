@@ -104,7 +104,7 @@
             this.PanelLetters.Controls.Add(this.ButtonB);
             this.PanelLetters.Controls.Add(this.ButtonC);
             this.PanelLetters.Controls.Add(this.ButtonA);
-            this.PanelLetters.Location = new System.Drawing.Point(64, 677);
+            this.PanelLetters.Location = new System.Drawing.Point(77, 431);
             this.PanelLetters.Name = "PanelLetters";
             this.PanelLetters.Size = new System.Drawing.Size(782, 306);
             this.PanelLetters.TabIndex = 2;
@@ -475,7 +475,7 @@
             // 
             this.ButtonQuit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ButtonQuit.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonQuit.Location = new System.Drawing.Point(39, 989);
+            this.ButtonQuit.Location = new System.Drawing.Point(39, 677);
             this.ButtonQuit.Name = "ButtonQuit";
             this.ButtonQuit.Size = new System.Drawing.Size(113, 39);
             this.ButtonQuit.TabIndex = 4;
@@ -489,7 +489,7 @@
             // 
             this.LabelGuess.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelGuess.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelGuess.Location = new System.Drawing.Point(0, 602);
+            this.LabelGuess.Location = new System.Drawing.Point(0, 446);
             this.LabelGuess.Name = "LabelGuess";
             this.LabelGuess.Size = new System.Drawing.Size(846, 55);
             this.LabelGuess.TabIndex = 5;
@@ -508,7 +508,7 @@
             this.LabelTimeLeft.AutoSize = true;
             this.LabelTimeLeft.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelTimeLeft.ForeColor = System.Drawing.Color.Black;
-            this.LabelTimeLeft.Location = new System.Drawing.Point(1638, 42);
+            this.LabelTimeLeft.Location = new System.Drawing.Point(1169, 42);
             this.LabelTimeLeft.Name = "LabelTimeLeft";
             this.LabelTimeLeft.Size = new System.Drawing.Size(143, 27);
             this.LabelTimeLeft.TabIndex = 6;
@@ -598,7 +598,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1839, 1061);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.PanelLetters);
+            this.Controls.Add(this.LabelGuess);
             this.Controls.Add(this.PanelRules);
             this.Controls.Add(this.LabelReady);
             this.Controls.Add(this.LabelTimeLeft);
@@ -606,7 +608,6 @@
             this.Controls.Add(this.ButtonCont);
             this.Controls.Add(this.ButtonQuit);
             this.Controls.Add(this.PictureBoxHangman);
-            this.Controls.Add(this.PanelLetters);
             this.Controls.Add(this.PictureBoxHint);
             this.Name = "FormHangman";
             this.Text = "Your Dictionaries";

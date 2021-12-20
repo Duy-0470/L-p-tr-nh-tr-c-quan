@@ -18,9 +18,14 @@ namespace DictionaryApp
         public FormSWSettings()
         {
             InitializeComponent();
-            btn_Submit.Visible = false;
-            btn_Start.Visible = false;
             Bounds = Screen.PrimaryScreen.Bounds;
+            btn_Next.Visible = false;
+            btn_Start.Visible = false;
+            pictureBox1.Location = new Point((ClientSize.Width / 2) - (pictureBox1.Width / 2), (ClientSize.Height / 2) - (pictureBox1.Height / 2));
+            pictureBox1.Anchor = AnchorStyles.None;
+            //btn_Back.Location = new Point(0, Height - btn_Back.Height);
+            btn_Start.Location = new Point((Width / 2) - (btn_Start.Width / 2), (Height / 2) - (btn_Start.Height / 2));
+            btn_Next.Location = new Point(Width - btn_Next.Width, Height - btn_Next.Height);
         }
 
         private void btn_Submit_Click(object sender, EventArgs e)
@@ -57,7 +62,7 @@ namespace DictionaryApp
                 radioButton2.Text = "15 sec";
                 radioButton3.Text = "20 sec";
                 radioButton4.Text = "30 sec";
-                btn_Submit.Visible = false;
+                btn_Next.Visible = false;
                 choose1 = true;
             }
             else
@@ -80,7 +85,7 @@ namespace DictionaryApp
                 Controls.Remove(radioButton2);
                 Controls.Remove(radioButton3);
                 Controls.Remove(radioButton4);
-                Controls.Remove(btn_Submit);
+                Controls.Remove(btn_Next);
                 pictureBox3.Visible = false;
                 panel1.Visible = false;
                 btn_Start.Visible = true;
@@ -90,13 +95,13 @@ namespace DictionaryApp
         private void radioButton_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
-                btn_Submit.Visible = true;
+                btn_Next.Visible = true;
             if (radioButton2.Checked)
-                btn_Submit.Visible = true;
+                btn_Next.Visible = true;
             if (radioButton3.Checked)
-                btn_Submit.Visible = true;
+                btn_Next.Visible = true;
             if (radioButton4.Checked)
-                btn_Submit.Visible = true;
+                btn_Next.Visible = true;
         }
 
         private void btn_Start_Click(object sender, EventArgs e)
@@ -130,14 +135,19 @@ namespace DictionaryApp
             radioButton2.Visible = true;
             radioButton3.Visible = true;
             radioButton4.Visible = true;
-            button4.Visible = false;
-            button2.Visible = false;
-
+            btn_Play.Visible = false;
+            btn_Back.Visible = false;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+            panel1.Location = new Point(ClientSize.Width / 2 - panel1.Size.Width / 2, ClientSize.Height / 2 - panel1.Size.Height / 2);
+            panel1.Anchor = AnchorStyles.None;  
+        }
 
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
-}
+  }
