@@ -27,6 +27,7 @@ namespace DictionaryApp
         {
             InitializeComponent();
             richTextBox1.Text = meaning;
+            Bounds = Screen.PrimaryScreen.Bounds;
             Init();
         }
 

@@ -20,6 +20,9 @@ namespace DictionaryApp
             InitializeComponent();
             btn_Submit.Visible = false;
             btn_Start.Visible = false;
+            pictureBox1.Location = new Point((ClientSize.Width / 2) - (pictureBox1.Width / 2), (ClientSize.Height / 2) - (pictureBox1.Height / 2));
+            pictureBox1.Anchor = AnchorStyles.None;
+            //btn_Start.Location = new Point((ClientSize.Width / 2) - (btn_Start.Width / 2)), (ClientSize.Height / 2) - (btn_Start.Height / 2));
             Bounds = Screen.PrimaryScreen.Bounds;
         }
 
@@ -132,12 +135,12 @@ namespace DictionaryApp
             radioButton4.Visible = true;
             button4.Visible = false;
             button2.Visible = false;
-
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
-        }
+            panel1.Location = new Point(ClientSize.Width / 2 - panel1.Size.Width / 2, ClientSize.Height / 2 - panel1.Size.Height / 2);
+            panel1.Anchor = AnchorStyles.None;  
+        }    
     }
-}
+  }

@@ -417,6 +417,9 @@
     <EmbeddedResource Include="FormQuiz.resx">
       <DependentUpon>FormQuiz.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSW.resx">
+      <DependentUpon>FormSW.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSWSettings.resx">
       <DependentUpon>FormSWSettings.cs</DependentUpon>
     </EmbeddedResource>

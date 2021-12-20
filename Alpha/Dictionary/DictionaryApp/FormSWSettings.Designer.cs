@@ -51,9 +51,10 @@
             // 
             // radioButton1
             // 
+            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(4, 143);
+            this.radioButton1.Location = new System.Drawing.Point(55, 144);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(122, 77);
             this.radioButton1.TabIndex = 1;
@@ -64,9 +65,10 @@
             // 
             // radioButton2
             // 
+            this.radioButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(4, 254);
+            this.radioButton2.Location = new System.Drawing.Point(55, 255);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(122, 77);
             this.radioButton2.TabIndex = 1;
@@ -79,9 +81,9 @@
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(234)))), ((int)(((byte)(118)))));
             this.label1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(397, 76);
+            this.label1.Location = new System.Drawing.Point(114, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(617, 142);
+            this.label1.Size = new System.Drawing.Size(521, 142);
             this.label1.TabIndex = 2;
             this.label1.Text = "Select the number of question";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -89,9 +91,10 @@
             // 
             // radioButton3
             // 
+            this.radioButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(3, 362);
+            this.radioButton3.Location = new System.Drawing.Point(55, 363);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(122, 77);
             this.radioButton3.TabIndex = 1;
@@ -102,9 +105,10 @@
             // 
             // radioButton4
             // 
+            this.radioButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(4, 465);
+            this.radioButton4.Location = new System.Drawing.Point(55, 480);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(122, 77);
             this.radioButton4.TabIndex = 1;
@@ -119,7 +123,7 @@
             this.btn_Start.FlatAppearance.BorderSize = 0;
             this.btn_Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Start.Font = new System.Drawing.Font("Century Gothic", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Start.Location = new System.Drawing.Point(507, 250);
+            this.btn_Start.Location = new System.Drawing.Point(485, 250);
             this.btn_Start.Name = "btn_Start";
             this.btn_Start.Size = new System.Drawing.Size(401, 211);
             this.btn_Start.TabIndex = 4;
@@ -152,7 +156,7 @@
             this.btn_Submit.FlatAppearance.BorderSize = 0;
             this.btn_Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Submit.Location = new System.Drawing.Point(551, 622);
+            this.btn_Submit.Location = new System.Drawing.Point(1092, 614);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(279, 135);
             this.btn_Submit.TabIndex = 3;
@@ -167,7 +171,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(125, 315);
+            this.button4.Location = new System.Drawing.Point(-1, 153);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(133, 94);
             this.button4.TabIndex = 8;
@@ -183,9 +187,10 @@
             this.panel1.Controls.Add(this.radioButton3);
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Location = new System.Drawing.Point(354, 76);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(403, 76);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(774, 547);
+            this.panel1.Size = new System.Drawing.Size(725, 596);
             this.panel1.TabIndex = 12;
             this.panel1.Visible = false;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
@@ -215,9 +220,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(235)))), ((int)(((byte)(254)))));
             this.pictureBox1.Image = global::DictionaryApp.Properties.Resources.Word_Scrambler_696x392;
-            this.pictureBox1.Location = new System.Drawing.Point(125, -144);
+            this.pictureBox1.Location = new System.Drawing.Point(84, -60);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1147, 1039);
+            this.pictureBox1.Size = new System.Drawing.Size(1147, 885);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
@@ -228,12 +233,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(235)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btn_Submit);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_Start);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
