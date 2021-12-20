@@ -63,6 +63,16 @@ namespace UI_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5a3a4de27fced4_21032862151377046652355359 {
+            get {
+                object obj = ResourceManager.GetObject("_5a3a4de27fced4_21032862151377046652355359", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap back_30px {
             get {
                 object obj = ResourceManager.GetObject("back_30px", resourceCulture);

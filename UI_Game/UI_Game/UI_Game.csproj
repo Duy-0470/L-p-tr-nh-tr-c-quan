@@ -219,5 +219,8 @@
   <ItemGroup>
     <None Include="Icon\Word-Scrambler-696x392.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a3a4de27fced4.21032862151377046652355359.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

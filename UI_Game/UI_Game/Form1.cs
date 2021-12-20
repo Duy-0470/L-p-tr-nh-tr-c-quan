@@ -19,7 +19,8 @@ namespace UI_Game
         {
             InitializeComponent();
             btn_Submit.Visible = false;
-            btn_Start.Visible = false;
+            btn_Start.Visible = false;           
+            Bounds = Screen.PrimaryScreen.Bounds;
         }
 
         private void btn_Submit_Click(object sender, EventArgs e)
@@ -80,6 +81,8 @@ namespace UI_Game
                 Controls.Remove(radioButton3);
                 Controls.Remove(radioButton4);
                 Controls.Remove(btn_Submit);
+                pictureBox3.Visible = false;
+                panel1.Visible = false;
                 btn_Start.Visible = true;
             }
         }
@@ -119,8 +122,9 @@ namespace UI_Game
 
         private void button4_Click(object sender, EventArgs e)
         {
-            panel1.BackgroundImage = null;
-            panel1.BackColor = Color.FromArgb(197,235,254);
+            pictureBox1.Image = null;
+            pictureBox3.Visible = true;
+            panel1.Visible = true;
             label1.Visible = true;
             radioButton1.Visible = true;
             radioButton2.Visible = true;
@@ -128,6 +132,11 @@ namespace UI_Game
             radioButton4.Visible = true;
             button4.Visible = false;
             button2.Visible = false;
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
