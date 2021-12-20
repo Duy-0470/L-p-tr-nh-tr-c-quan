@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace UI_Game
 {
-    public partial class Form1 : Form
+    public partial class FormSWSettings : Form
     {
         public static int number_question;
         public static int time;
         bool choose1 = false;
-        public Form1()
+        public FormSWSettings()
         {
             InitializeComponent();
             btn_Submit.Visible = false;
@@ -102,7 +102,7 @@ namespace UI_Game
         private void btn_Start_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 frm = new Form2();
+            FormSW frm = new FormSW();
             frm.ShowDialog();
         }
 

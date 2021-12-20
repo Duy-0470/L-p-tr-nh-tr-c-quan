@@ -855,7 +855,7 @@ namespace DictionaryApp.Database
                     reader.Read();
                     string l = reader.GetString(0);
                     MyImage myImage = new MyImage();
-                    myImage.name = l.Substring(123).Replace("_", " ").Replace(".png", " ").ToUpper();
+                    myImage.name = l.Substring(l.IndexOf('_') + 10).Replace("_", " ").Replace(".png", " ").ToUpper();
                     myImage.link = l;
                     images.Add(myImage);
                 }
@@ -881,7 +881,7 @@ namespace DictionaryApp.Database
                     reader.Read();
                     string l = reader.GetString(0);
                     MyImage myImage = new MyImage();
-                    myImage.name = l.Substring(123).Replace("_", " ").Replace(".png", " ").ToUpper();
+                    myImage.name = l.Substring(l.IndexOf('_') + 10).Replace("_", " ").Replace(".png", " ").ToUpper();
                     myImage.link = l;
                     images.Add(myImage);
                 }
@@ -1034,10 +1034,10 @@ namespace DictionaryApp.Database
                 {
                 
                     string l = reader.GetString(0);
-                    /*                    Debug.WriteLine(l.Substring(123));
-                    */
+                    Debug.WriteLine(l.Substring(l.IndexOf('_') + 10));
+
                     MyImage myImage = new MyImage();
-                    myImage.name = l.Substring(123).Replace("_", " ").Replace(".png", " ").ToUpper();
+                    myImage.name = l.Substring(l.IndexOf('_') + 10).Replace("_", " ").Replace(".png", " ").ToUpper();
                     myImage.link = l;
                     images.Add(myImage);
                     // topics.Add(l);

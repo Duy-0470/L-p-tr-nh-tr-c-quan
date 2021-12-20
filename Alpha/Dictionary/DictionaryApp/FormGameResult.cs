@@ -26,6 +26,7 @@ namespace DictionaryApp
             ButtonReplay.Location = new Point(PanelResultMenu.Width, 861);
             ButtonBackToGames.Location = new Point(PanelResultMenu.Width, 921);
             ButtonHome.Location = new Point(PanelResultMenu.Width, 981);
+            
         }
 
         private void FormGameResult_Load(object sender, EventArgs e)
@@ -55,7 +56,22 @@ namespace DictionaryApp
                 LabelSpeed.Text += " " + (FormGTW.avg_time / 1000 / 10).ToString() + " seconds";
                 LabelTopic.Text = "Word Scrambler";
             }
-            // more to be added
+            else if (FormGamesSelect.gameType == FormGamesSelect.GameType.Hangman)
+            {
+                LabelAccuracy.Visible = false;
+                LabelAccNum.Visible = false;
+                LabelScoreNum.Text = FormHangman.score.ToString();
+                LabelSpeedNum.Text = FormHangman.time.ToString();
+                LabelSpeed.Text = "Time (s):";
+                if (FormHangman.score >= 50000)
+                    LabelComment.Text = "Congratulations! You escaped the hang with ease.";
+                else if (FormHangman.score < 50000 && FormHangman.score >= 10000)
+                    LabelComment.Text = "Congratulations! You struggled a bit but escaped eventually.";
+                else if (FormHangman.score < 10000 && FormHangman.score > 0)
+                    LabelComment.Text = "Congratulations! You barely escaped death, but ultimstely, a win is a win";
+                else if (FormHangman.score == 0)
+                    LabelComment.Text = "Unfortunately, you were not able to escape the hang.\nBut it is not over. Come back if you want to improve";
+            }
         }
 
         private void ButtonBackToGames_Click(object sender, EventArgs e)

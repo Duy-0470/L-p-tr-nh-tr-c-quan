@@ -23,6 +23,7 @@ namespace DictionaryApp
         private string[] ansPart;
         private bool finished = false;
         public static int score = 60000;
+        public static double time = 0;
 
         public FormHangman()
         {
@@ -31,6 +32,7 @@ namespace DictionaryApp
             PanelLetters.Location = new Point((Width - PanelLetters.Width) / 2, Height - PanelLetters.Height - 80);
             PictureBoxHint.Location = new Point((Width - PictureBoxHint.Width) / 2, 10);
             LabelGuess.Text = "";
+            LabelGuess.Width = Width;
             LabelReady.Location = new Point((Width - LabelReady.Width) / 2, (Height - LabelReady.Height) / 2);
             PanelRules.Location = new Point(0, 0);
             PanelRules.Size = Size;
@@ -41,6 +43,11 @@ namespace DictionaryApp
             if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ButtonQuit_Click"))
             {
                 FormGamesSelect fgs = new FormGamesSelect();
+                fgs.Show();
+            }
+            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ButtonCont_Click"))
+            {
+                FormGameResult fgs = new FormGameResult();
                 fgs.Show();
             }
             else
@@ -149,6 +156,7 @@ namespace DictionaryApp
                     finished = true;
                     TimeLimit.Stop();
                     stopwatch.Stop();
+                    time = Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000;
                     LabelGuess.ForeColor = Color.Green;
                     PanelLetters.Controls.Clear();
                     Label result = new Label()
@@ -161,6 +169,7 @@ namespace DictionaryApp
                     PanelLetters.Controls.Add(result);
                     result.Location = new Point((PanelLetters.Width - result.Width) / 2, (PanelLetters.Height - result.Height) / 2 - 30);
                     SaveProgress();
+                    ButtonCont.Visible = true;
                 }
             }
             else
@@ -171,8 +180,11 @@ namespace DictionaryApp
                 if (incorrect == 6)
                 {
                     TimeLimit.Stop();
+                    stopwatch.Stop();
+                    time = Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000;
                     LabelGuess.Text = "";
                     LabelGuess.ForeColor = Color.Red;
+                    score = 0;
                     for (int i = 0; i < answer.Length; i++)
                     {
                         LabelGuess.Text += answer[i] + " ";
@@ -188,6 +200,7 @@ namespace DictionaryApp
                     };
                     PanelLetters.Controls.Add(result);
                     result.Location = new Point((PanelLetters.Width - result.Width) / 2, (PanelLetters.Height - result.Height) / 2 - 30);
+                    ButtonCont.Visible = true;
                 }
             }
         }
@@ -228,23 +241,38 @@ namespace DictionaryApp
                 }
                 if (success)
                 {
-                    XmlNode bestScore = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime");
-                    if (double.TryParse(bestScore.InnerText, out double s))
-                    {
-                        if (score > s)
-                            bestScore.InnerText = score.ToString();
-                    }
-                    else
-                        bestScore.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
-
+                    XmlNode bestScore = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore");
                     XmlNode bestTime = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime");
-                    if (double.TryParse(bestTime.InnerText, out double t))
+                    if (bestScore != null && bestTime != null)
                     {
-                        if ((Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000) < t)
+                        if (double.TryParse(bestScore.InnerText, out double s))
+                        {
+                            if (score > s)
+                                bestScore.InnerText = score.ToString();
+                        }
+                        else
+                            bestScore.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
+
+                        if (double.TryParse(bestTime.InnerText, out double t))
+                        {
+                            if ((Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000) < t)
+                                bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
+                        }
+                        else
                             bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
                     }
                     else
+                    {
+                        XmlNode mainElement = xmlDocument.SelectSingleNode("/MainInfo");
+
+                        bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
+                        bestScore.InnerText = score.ToString();
+                        mainElement.AppendChild(bestScore);
+
+                        bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
                         bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
+                        mainElement.AppendChild(bestTime);
+                    }
                 }
                 else
                 {
@@ -298,6 +326,11 @@ namespace DictionaryApp
             PanelRules.Visible = false;
             LabelReady.Visible = true;
             TimerReady.Start();
+        }
+
+        private void ButtonCont_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         private void FormHangman_Load(object sender, EventArgs e)

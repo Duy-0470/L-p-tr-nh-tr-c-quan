@@ -1,6 +1,6 @@
 ﻿namespace UI_Game
 {
-    partial class Form2
+    partial class FormSW
     {
         /// <summary>
         /// Required designer variable.

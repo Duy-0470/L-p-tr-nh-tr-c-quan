@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace UI_Game
 {
-    public partial class Form2 : Form
+    public partial class FormSW : Form
     {
         string meaning = "meaning";
         string word = "word1";
@@ -22,7 +22,7 @@ namespace UI_Game
         List<BtnChar> listBtn;
         List<BtnChar> listAnswer;
         Random random = new Random();
-        public Form2()
+        public FormSW()
         {
             InitializeComponent();
             richTextBox1.Text = meaning;

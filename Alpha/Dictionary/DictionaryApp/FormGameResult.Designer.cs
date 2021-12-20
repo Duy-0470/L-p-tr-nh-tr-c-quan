@@ -48,26 +48,26 @@
             // 
             // LabelScore
             // 
-            this.LabelScore.AutoSize = true;
+            this.LabelScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelScore.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelScore.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LabelScore.Location = new System.Drawing.Point(594, 125);
+            this.LabelScore.Location = new System.Drawing.Point(103, 125);
             this.LabelScore.Name = "LabelScore";
-            this.LabelScore.Size = new System.Drawing.Size(168, 32);
+            this.LabelScore.Size = new System.Drawing.Size(659, 32);
             this.LabelScore.TabIndex = 0;
             this.LabelScore.Text = "Your score:";
-            this.LabelScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LabelScore.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // LabelSpeed
             // 
-            this.LabelSpeed.AutoSize = true;
+            this.LabelSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelSpeed.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelSpeed.Location = new System.Drawing.Point(295, 185);
+            this.LabelSpeed.Location = new System.Drawing.Point(103, 182);
             this.LabelSpeed.Name = "LabelSpeed";
-            this.LabelSpeed.Size = new System.Drawing.Size(467, 29);
+            this.LabelSpeed.Size = new System.Drawing.Size(659, 32);
             this.LabelSpeed.TabIndex = 0;
             this.LabelSpeed.Text = "Average time spent on a question (s):";
-            this.LabelSpeed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LabelSpeed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LabelSpeed.Click += new System.EventHandler(this.LabelAvgTime_Click);
             // 
             // ButtonReplay
@@ -183,48 +183,45 @@
             // 
             // LabelAccuracy
             // 
-            this.LabelAccuracy.AutoSize = true;
+            this.LabelAccuracy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelAccuracy.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelAccuracy.Location = new System.Drawing.Point(574, 244);
+            this.LabelAccuracy.Location = new System.Drawing.Point(103, 241);
             this.LabelAccuracy.Name = "LabelAccuracy";
-            this.LabelAccuracy.Size = new System.Drawing.Size(188, 29);
+            this.LabelAccuracy.Size = new System.Drawing.Size(659, 32);
             this.LabelAccuracy.TabIndex = 0;
             this.LabelAccuracy.Text = "Accuracy (%):";
-            this.LabelAccuracy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LabelAccuracy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LabelAccuracy.Click += new System.EventHandler(this.LabelAvgTime_Click);
             // 
             // LabelScoreNum
             // 
-            this.LabelScoreNum.AutoSize = true;
             this.LabelScoreNum.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelScoreNum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LabelScoreNum.Location = new System.Drawing.Point(768, 125);
             this.LabelScoreNum.Name = "LabelScoreNum";
-            this.LabelScoreNum.Size = new System.Drawing.Size(65, 32);
+            this.LabelScoreNum.Size = new System.Drawing.Size(718, 32);
             this.LabelScoreNum.TabIndex = 0;
             this.LabelScoreNum.Text = "000";
             this.LabelScoreNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LabelSpeedNum
             // 
-            this.LabelSpeedNum.AutoSize = true;
             this.LabelSpeedNum.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelSpeedNum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LabelSpeedNum.Location = new System.Drawing.Point(768, 182);
             this.LabelSpeedNum.Name = "LabelSpeedNum";
-            this.LabelSpeedNum.Size = new System.Drawing.Size(65, 32);
+            this.LabelSpeedNum.Size = new System.Drawing.Size(718, 32);
             this.LabelSpeedNum.TabIndex = 0;
             this.LabelSpeedNum.Text = "000";
             this.LabelSpeedNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LabelAccNum
             // 
-            this.LabelAccNum.AutoSize = true;
             this.LabelAccNum.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelAccNum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LabelAccNum.Location = new System.Drawing.Point(768, 241);
             this.LabelAccNum.Name = "LabelAccNum";
-            this.LabelAccNum.Size = new System.Drawing.Size(65, 32);
+            this.LabelAccNum.Size = new System.Drawing.Size(718, 32);
             this.LabelAccNum.TabIndex = 0;
             this.LabelAccNum.Text = "000";
             this.LabelAccNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -234,7 +231,7 @@
             // 
             this.LabelComment.AutoSize = true;
             this.LabelComment.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelComment.Location = new System.Drawing.Point(295, 431);
+            this.LabelComment.Location = new System.Drawing.Point(295, 449);
             this.LabelComment.Name = "LabelComment";
             this.LabelComment.Size = new System.Drawing.Size(125, 29);
             this.LabelComment.TabIndex = 4;

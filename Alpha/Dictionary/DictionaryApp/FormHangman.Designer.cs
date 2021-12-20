@@ -69,6 +69,7 @@
             this.PanelRules = new System.Windows.Forms.Panel();
             this.CheckBoxShowRules = new System.Windows.Forms.CheckBox();
             this.ButtonOKRules = new System.Windows.Forms.Button();
+            this.ButtonCont = new System.Windows.Forms.Button();
             this.PanelLetters.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHangman)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHint)).BeginInit();
@@ -490,7 +491,7 @@
             this.LabelGuess.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelGuess.Location = new System.Drawing.Point(0, 602);
             this.LabelGuess.Name = "LabelGuess";
-            this.LabelGuess.Size = new System.Drawing.Size(1839, 55);
+            this.LabelGuess.Size = new System.Drawing.Size(846, 55);
             this.LabelGuess.TabIndex = 5;
             this.LabelGuess.Text = "_ _ _ _ _ _ _ _";
             this.LabelGuess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -547,7 +548,7 @@
             this.PanelRules.Controls.Add(this.CheckBoxShowRules);
             this.PanelRules.Controls.Add(this.ButtonOKRules);
             this.PanelRules.Controls.Add(this.LabelRules);
-            this.PanelRules.Location = new System.Drawing.Point(891, 678);
+            this.PanelRules.Location = new System.Drawing.Point(879, 576);
             this.PanelRules.Name = "PanelRules";
             this.PanelRules.Size = new System.Drawing.Size(948, 383);
             this.PanelRules.TabIndex = 10;
@@ -577,6 +578,20 @@
             this.ButtonOKRules.UseVisualStyleBackColor = true;
             this.ButtonOKRules.Click += new System.EventHandler(this.ButtonOKRules_Click);
             // 
+            // ButtonCont
+            // 
+            this.ButtonCont.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonCont.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonCont.Location = new System.Drawing.Point(1643, 989);
+            this.ButtonCont.Name = "ButtonCont";
+            this.ButtonCont.Size = new System.Drawing.Size(138, 39);
+            this.ButtonCont.TabIndex = 4;
+            this.ButtonCont.TabStop = false;
+            this.ButtonCont.Text = "Continue";
+            this.ButtonCont.UseVisualStyleBackColor = true;
+            this.ButtonCont.Visible = false;
+            this.ButtonCont.Click += new System.EventHandler(this.ButtonCont_Click);
+            // 
             // FormHangman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -588,6 +603,7 @@
             this.Controls.Add(this.LabelReady);
             this.Controls.Add(this.LabelTimeLeft);
             this.Controls.Add(this.LabelGuess);
+            this.Controls.Add(this.ButtonCont);
             this.Controls.Add(this.ButtonQuit);
             this.Controls.Add(this.PictureBoxHangman);
             this.Controls.Add(this.PanelLetters);
@@ -647,5 +663,6 @@
         private System.Windows.Forms.Panel PanelRules;
         private System.Windows.Forms.CheckBox CheckBoxShowRules;
         private System.Windows.Forms.Button ButtonOKRules;
+        private System.Windows.Forms.Button ButtonCont;
     }
 }

@@ -319,6 +319,11 @@
       <DependentUpon>WordResultPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Database\DatabaseHandle.cs" />
+    <Compile Include="DictionaryDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DictionaryDBDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -430,6 +435,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DictionaryDBDataSet1.xsc">
+      <DependentUpon>DictionaryDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DictionaryDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DictionaryDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DictionaryDBDataSet1.xss">
+      <DependentUpon>DictionaryDBDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -779,6 +795,16 @@
     <Content Include="Database\Files\images\sort.png" />
     <Content Include="Database\Files\images\two-arrows.png" />
     <Content Include="Database\Files\images\unmarked.png" />
+    <Content Include="Database\Files\quizzes\Collocation-Answers.txt" />
+    <Content Include="Database\Files\quizzes\Collocation-Quizzes.txt" />
+    <Content Include="Database\Files\quizzes\Idiom-Answers.txt" />
+    <Content Include="Database\Files\quizzes\Idiom-Quizzes.txt" />
+    <Content Include="Database\Files\quizzes\Phrasal-Verbs-Answers.txt" />
+    <Content Include="Database\Files\quizzes\Phrasal-Verbs-Quizzes.txt" />
+    <Content Include="Database\Files\quizzes\Word-Form-Answers.txt" />
+    <Content Include="Database\Files\quizzes\Word-Form-Quizzes.txt" />
+    <Content Include="Database\Files\quizzes\Word-Meaning-Answers.txt" />
+    <Content Include="Database\Files\quizzes\Word-Meaning-Quizzes.txt" />
     <Content Include="Database\Files\topics.txt" />
     <Content Include="Database\Files\words\examples.txt" />
     <Content Include="Database\Files\words\extra_list.txt" />

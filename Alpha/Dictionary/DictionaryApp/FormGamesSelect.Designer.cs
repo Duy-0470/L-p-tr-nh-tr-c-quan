@@ -201,7 +201,7 @@
             this.LabelGTW.Name = "LabelGTW";
             this.LabelGTW.Size = new System.Drawing.Size(259, 23);
             this.LabelGTW.TabIndex = 3;
-            this.LabelGTW.Text = "Guess the word";
+            this.LabelGTW.Text = "Scrambled Words";
             this.LabelGTW.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LabelGTW.MouseClick += new System.Windows.Forms.MouseEventHandler(this.LabelGTWDes_MouseClick);
             // 

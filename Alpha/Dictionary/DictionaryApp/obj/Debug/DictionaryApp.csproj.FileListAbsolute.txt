@@ -169,3 +169,4 @@ E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\Dictionar
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+E:\CODING\GIT VP Project\HEAD\main5\Visual-Progamming\Alpha\Dictionary\DictionaryApp\obj\Debug\DictionaryApp.FormSWSettings.resources
