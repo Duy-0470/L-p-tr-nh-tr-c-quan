@@ -223,9 +223,9 @@ namespace DictionaryApp
                 bestScore.InnerText = score.ToString();
                 mainElement.AppendChild(bestScore);
 
-                XmlElement bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
-                bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
-                mainElement.AppendChild(bestTime);
+                //XmlElement bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
+                //bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
+                //mainElement.AppendChild(bestTime);
             }
             else
             {
@@ -242,8 +242,8 @@ namespace DictionaryApp
                 if (success)
                 {
                     XmlNode bestScore = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore");
-                    XmlNode bestTime = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime");
-                    if (bestScore != null && bestTime != null)
+                    //XmlNode bestTime = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime");
+                    if (bestScore != null/* && bestTime != null*/)
                     {
                         if (double.TryParse(bestScore.InnerText, out double s))
                         {
@@ -251,15 +251,15 @@ namespace DictionaryApp
                                 bestScore.InnerText = score.ToString();
                         }
                         else
-                            bestScore.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
+                            bestScore.InnerText = score.ToString();
 
-                        if (double.TryParse(bestTime.InnerText, out double t))
-                        {
-                            if ((Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000) < t)
-                                bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
-                        }
-                        else
-                            bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
+                        //if (double.TryParse(bestTime.InnerText, out double t))
+                        //{
+                        //    if ((Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000) < t)
+                        //        bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
+                        //}
+                        //else
+                        //    bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
                     }
                     else
                     {
@@ -269,9 +269,9 @@ namespace DictionaryApp
                         bestScore.InnerText = score.ToString();
                         mainElement.AppendChild(bestScore);
 
-                        bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
-                        bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
-                        mainElement.AppendChild(bestTime);
+                        ////bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
+                        ////bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
+                        ////mainElement.AppendChild(bestTime);
                     }
                 }
                 else
@@ -289,9 +289,9 @@ namespace DictionaryApp
                     bestScore.InnerText = score.ToString();
                     mainElement.AppendChild(bestScore);
 
-                    XmlElement bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
-                    bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
-                    mainElement.AppendChild(bestTime);
+                    //XmlElement bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
+                    //bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
+                    //mainElement.AppendChild(bestTime);
                 }
             }
             xmlDocument.Save(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\hangman.xml");
