@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace DictionaryApp
 {
@@ -21,36 +24,45 @@ namespace DictionaryApp
         private int desX, desY, disX, disY;
         private int move = 0;
         private int time, count_time;
-        private int number_question, count_question;
+        public static int number_question;
+        private int count_question;
         private CustomControls.BtnChar tempBtnChar;
         private List<CustomControls.BtnChar> listBtn;
         private List<CustomControls.BtnChar> listAnswer;
         private readonly Random random = new Random();
-        public static int total;
+        public static int total = 0, correct = 0;
+        public static double avg_time = 0;
+        private readonly Stopwatch stopwatch = new Stopwatch();
+        private bool submitted = false;
 
         public FormSW()
         {
             InitializeComponent();
             Bounds = Screen.PrimaryScreen.Bounds;
             lb_Meaning.Location = new Point((Width - lb_Meaning.Width) / 2, Height * 30 / 100);
-            GetWord = databaseHandle.RandomWord();
-            word = GetWord.wordHeader.word;
-            meaning = GetWord.senses[0].meaning;
+            do
+            {
+                GetWord = databaseHandle.RandomWord();
+                word = GetWord.wordHeader.word;
+            } while (word.Length >= 15);
+            Debug.WriteLine(word);
+            meaning = GetWord.senses[random.Next(0, GetWord.senses.Count)].meaning.Replace("=", string.Empty);
+            meaning = meaning[0].ToString().ToUpper() + meaning.Substring(1);
             lb_Meaning.Text = meaning;
             count_question = 1;
             count_time = time = FormSWSettings.time;          
             number_question = FormSWSettings.number_question;
-            lb_TimeLeft.Text = count_time.ToString();
+            lb_TimeLeftNum.Text = count_time.ToString();
             timer2.Start();
             Init();
         }
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            
         }
 
-        void Init()
+        private void Init()
         {
             InitListButton();
             InitlistBtn();
@@ -108,64 +120,84 @@ namespace DictionaryApp
         private void Submit()
         {
             timer2.Stop();
+            stopwatch.Stop();
+            avg_time += stopwatch.ElapsedMilliseconds;
             string answer = "";
 
-            if (select == word.Length)
+            if (!submitted && count_question < FormSWSettings.number_question)
             {
-                for (int i = 0; i < word.Length; i++)
+                submitted = true;
+                btn_Submit.Text = "Next";
+                if (select == word.Length)
                 {
-                    answer += listAnswer[i].Text;
-                }
-                if (answer == word)
-                {
-                    int score = (int)(count_time * (double)(100 / time));
-                    lb_Score.Text = (int.Parse(lb_Score.Text) + score).ToString();
-                    AnswerCorrect();
+                    for (int i = 0; i < word.Length; i++)
+                    {
+                        answer += listAnswer[i].Text;
+                    }
+                    if (answer == word)
+                    {
+                        correct++;
+                        int score = (int)(count_time * (double)(100 / time));
+                        lb_Score.Text = (int.Parse(lb_Score.Text) + score).ToString();
+                        AnswerCorrect();
+                    }
+                    else
+                    {
+                        AnswerIncorrect();
+                    }
                 }
                 else
                 {
                     AnswerIncorrect();
                 }
-            }
-            else
-            {
-                AnswerIncorrect();
+
+                if (count_question == FormSWSettings.number_question)
+                {
+                    btn_Submit.Text = "Finish";
+                }
+
+                return;
             }
 
-            lb_Question.Text = (int.Parse(lb_Question.Text) + 1).ToString();
-            count_question++;
-            if (count_question == 20)
+            if (submitted && count_question < FormSWSettings.number_question)
             {
-                btn_Submit.Text = "Finish";
-            }
-
-            if (count_question <= 20)
-            {
+                btn_Submit.Text = "Submit";
+                count_question++;
+                lb_TimeLeftNum.ForeColor = Color.Black;
+                LabelTimeLeft.ForeColor = Color.Black;
+                LabelResult.Visible = false;
+                lb_Question.Text = (int.Parse(lb_Question.Text) + 1).ToString();
                 listAnswer.Clear();
-                lb_TimeLeft.Text = FormSWSettings.time.ToString();
+                lb_TimeLeftNum.Text = FormSWSettings.time.ToString();
                 for (int i = 0; i < word.Length; i++)
                 {
                     Controls.Remove(listBtn[i]);
                 }
                 listBtn.Clear();
-                GetWord = databaseHandle.RandomWord();
-                word = GetWord.wordHeader.word;
-                meaning = GetWord.senses[0].meaning;
+                do
+                {
+                    GetWord = databaseHandle.RandomWord();
+                    word = GetWord.wordHeader.word;
+                } while (word.Length >= 15);
+                meaning = GetWord.senses[random.Next(0, GetWord.senses.Count)].meaning.Replace("=", string.Empty); ;
+                meaning = meaning[0].ToString().ToUpper() + meaning.Substring(1);
                 lb_Meaning.Text = meaning;
                 count_time = time;
                 timer2.Start();
+                stopwatch.Reset();
+                stopwatch.Start();
                 Init();
+                submitted = false;
             }
             else
             {
                 total = int.Parse(lb_Score.Text);
+                SaveProgress();
                 this.Close();
-                FormGameResult formGameResult = new FormGameResult();
-                formGameResult.ShowDialog();
             }
         }
 
-        void InitListButton()
+        private void InitListButton()
         {
             listBtn = new List<CustomControls.BtnChar>();
             for (int i = 0; i < word.Length; i++)
@@ -179,20 +211,29 @@ namespace DictionaryApp
         private void timer2_Tick(object sender, EventArgs e)
         {            
             count_time--;
-            lb_TimeLeft.Text = count_time.ToString();
+            lb_TimeLeftNum.Text = count_time.ToString() + "s";
+            if (count_time <= 5)
+            {
+                lb_TimeLeftNum.ForeColor = Color.Red;
+                LabelTimeLeft.ForeColor = Color.Red;
+            }
             if (count_time == 0)
             {
                 timer2.Stop();
-                Submit();               
+                Submit();       
             }
         }
 
-        void InitlistBtn()
+        private void InitlistBtn()
         {
+            Debug.WriteLine(word);
             shuffle = new string(word.ToCharArray().OrderBy(s => (random.Next(2) % 2) == 0).ToArray());
+            //Debug.WriteLine(shuffle);
             int mid = shuffle.Length / 2;
             for (int i = 0; i < shuffle.Length; i++)
             {
+                listBtn[i].FlatStyle = FlatStyle.Flat;
+                listBtn[i].TabStop = false;
                 listBtn[i].Text = shuffle[i].ToString();
                 listBtn[i].Height = 60;
                 listBtn[i].Width = 60;
@@ -220,13 +261,45 @@ namespace DictionaryApp
             Submit();           
         }
 
+        private void FormSW_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "btn_Submit_Click"))
+            {
+                FormGameResult fgr = new FormGameResult();
+                fgr.Show();
+            }
+            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ButtonQuit_Click"))
+            {
+                FormGamesSelect fgr = new FormGamesSelect();
+                fgr.Show();
+            }
+            else
+                Application.Exit();
+        }
+
+        private void ButtonQuit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         private void AnswerCorrect()
         {
-            MessageBox.Show("Your correct!");
+            for (int i = 0; i < listBtn.Count; i++)
+            {
+                listBtn[i].BackColor = Color.Green;
+            }
+            LabelResult.Visible = true;
+            LabelResult.Text = "Correct!";
         }
+
         private void AnswerIncorrect()
         {
-            MessageBox.Show("The correct answer is: " + word);
+            for (int i = 0; i < listBtn.Count; i++)
+            {
+                listBtn[i].BackColor = Color.Red;
+            }
+            LabelResult.Visible = true;
+            LabelResult.Text = "The correct answer is " + word;
         }
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -299,6 +372,76 @@ namespace DictionaryApp
                     timer1.Stop();
                 }
             }
+        }
+
+        private void SaveProgress()
+        {
+            XmlDocument xmlDocument = new XmlDocument();
+            if (!File.Exists(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\sw.xml"))
+            {
+                XmlElement root = xmlDocument.DocumentElement;
+
+                XmlDeclaration xmlDeclaration = xmlDocument.CreateXmlDeclaration("1.0", "UTF-8", null);
+                xmlDocument.InsertBefore(xmlDeclaration, root);
+
+                XmlElement mainElement = xmlDocument.CreateElement(string.Empty, "MainInfo", string.Empty);
+                mainElement.InnerText = "Do not modify the contents of this file, or risk losing your saved progress!";
+                xmlDocument.AppendChild(mainElement);
+
+                XmlElement bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
+                bestScore.InnerText = total.ToString();
+                mainElement.AppendChild(bestScore);
+            }
+            else
+            {
+                bool success = true;
+                try
+                {
+                    xmlDocument.Load(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\sw.xml");
+                }
+                catch (XmlException exception)
+                {
+                    success = false;
+                    Debug.WriteLine(exception.Message);
+                }
+                if (success)
+                {
+                    XmlNode bestScore = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore");
+                    if (bestScore != null)
+                    {
+                        if (double.TryParse(bestScore.InnerText, out double s))
+                        {
+                            if (total > s)
+                                bestScore.InnerText = total.ToString();
+                        }
+                        else
+                            bestScore.InnerText = total.ToString();
+                    }
+                    else
+                    {
+                        XmlNode mainElement = xmlDocument.SelectSingleNode("/MainInfo");
+                        bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
+                        bestScore.InnerText = total.ToString();
+                        mainElement.AppendChild(bestScore);
+                    }
+                }
+                else
+                {
+                    XmlElement root = xmlDocument.DocumentElement;
+
+                    XmlDeclaration xmlDeclaration = xmlDocument.CreateXmlDeclaration("1.0", "UTF-8", null);
+                    xmlDocument.InsertBefore(xmlDeclaration, root);
+
+                    XmlElement mainElement = xmlDocument.CreateElement(string.Empty, "MainInfo", string.Empty);
+                    mainElement.InnerText = "Do not modify the contents of this file, or risk losing your saved progress!";
+                    xmlDocument.AppendChild(mainElement);
+
+                    XmlElement bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
+                    bestScore.InnerText = total.ToString();
+                    mainElement.AppendChild(bestScore);
+                }
+            }
+            xmlDocument.Save(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\sw.xml");
         }
     }
 }

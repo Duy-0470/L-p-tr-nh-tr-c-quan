@@ -15,7 +15,7 @@ namespace DictionaryApp
     {
         public enum GameType
         {
-            Quizzes, GTW, Hangman
+            Quizzes, SW, Hangman
         }
         public static GameType gameType;
         
@@ -101,7 +101,7 @@ namespace DictionaryApp
         {
             if (e.Button == MouseButtons.Left)
             {
-                gameType = GameType.GTW;
+                gameType = GameType.SW;
                 Close();
             }
         }

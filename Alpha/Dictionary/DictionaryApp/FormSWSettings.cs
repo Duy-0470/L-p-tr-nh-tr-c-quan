@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -106,9 +107,7 @@ namespace DictionaryApp
 
         private void btn_Start_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormSW frm = new FormSW();
-            frm.ShowDialog();
+            this.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -148,6 +147,20 @@ namespace DictionaryApp
         private void btn_Back_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FormSWSettings_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "btn_Back_Click"))
+            {
+                FormGamesSelect fgs = new FormGamesSelect();
+                fgs.Show();
+            }
+            else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "btn_Start_Click"))
+            {
+                FormSW fsw = new FormSW();
+                fsw.Show();
+            }
         }
     }
   }

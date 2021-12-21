@@ -50,14 +50,16 @@ namespace DictionaryApp
                     LabelComment.Text = "Your speed was above average, yet your accuracy was not.\nYou were reasonably fast but that would not be enough, slow down to try to improve your accuracy";
 
             }
-            else if (FormGamesSelect.gameType == FormGamesSelect.GameType.GTW)
+            else if (FormGamesSelect.gameType == FormGamesSelect.GameType.SW)
             {
-                LabelScore.Text = "Your score: " + FormGTW.score.ToString();
-                LabelSpeed.Text += " " + (FormGTW.avg_time / 1000 / 10).ToString() + " seconds";
-                LabelTopic.Text = "Word Scrambler";
+                LabelScoreNum.Text = FormSW.total.ToString();
+                LabelSpeedNum.Text = (FormSW.avg_time / 1000 / FormSW.number_question).ToString();
+                LabelAccNum.Text = (FormSW.correct / FormSW.number_question * 100).ToString();
+
             }
             else if (FormGamesSelect.gameType == FormGamesSelect.GameType.Hangman)
             {
+                LabelComment.Visible = true;
                 LabelAccuracy.Visible = false;
                 LabelAccNum.Visible = false;
                 LabelScoreNum.Text = FormHangman.score.ToString();
@@ -68,7 +70,7 @@ namespace DictionaryApp
                 else if (FormHangman.score < 50000 && FormHangman.score >= 10000)
                     LabelComment.Text = "Congratulations! You struggled a bit but escaped eventually.";
                 else if (FormHangman.score < 10000 && FormHangman.score > 0)
-                    LabelComment.Text = "Congratulations! You barely escaped death, but ultimstely, a win is a win";
+                    LabelComment.Text = "Congratulations! You barely escaped death, but ultimately, a win is a win";
                 else if (FormHangman.score == 0)
                     LabelComment.Text = "Unfortunately, you were not able to escape the hang.\nBut it is not over. Come back if you want to improve";
             }
@@ -76,12 +78,12 @@ namespace DictionaryApp
 
         private void ButtonBackToGames_Click(object sender, EventArgs e)
         {
-            Close();            
+            Close();
         }
 
         private void ButtonRetry_Click(object sender, EventArgs e)
         {
-            Close();            
+            Close();
         }
 
         private void FormGameResult_FormClosing(object sender, FormClosingEventArgs e)
@@ -98,7 +100,7 @@ namespace DictionaryApp
                     FormQuiz fq = new FormQuiz();
                     fq.Show();
                 }
-                else if (FormGamesSelect.gameType == FormGamesSelect.GameType.GTW)
+                else if (FormGamesSelect.gameType == FormGamesSelect.GameType.SW)
                 {
                     FormSWSettings sw = new FormSWSettings();
                     sw.Show();
