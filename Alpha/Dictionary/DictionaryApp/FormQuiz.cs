@@ -416,51 +416,22 @@ namespace DictionaryApp
                 bestScoreIdiom.InnerText = 0.ToString();
                 bestScore.AppendChild(bestScoreIdiom);
 
-                // best average time
-                //XmlElement bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
-                //mainElement.AppendChild(bestTime);
-
-                //XmlElement bestTimeCol = xmlDocument.CreateElement(string.Empty, "Col", string.Empty);
-                //bestTimeCol.InnerText = 0.ToString();
-                //bestTime.AppendChild(bestTimeCol);
-
-                //XmlElement bestTimeWM = xmlDocument.CreateElement(string.Empty, "WM", string.Empty);
-                //bestTimeWM.InnerText = 0.ToString();
-                //bestTime.AppendChild(bestTimeWM);
-
-                //XmlElement bestTimePV = xmlDocument.CreateElement(string.Empty, "PV", string.Empty);
-                //bestTimePV.InnerText = 0.ToString();
-                //bestTime.AppendChild(bestTimePV);
-
-                //XmlElement bestTimeWF = xmlDocument.CreateElement(string.Empty, "WF", string.Empty);
-                //bestTimeWF.InnerText = 0.ToString();
-                //bestTime.AppendChild(bestTimeWF);
-
-                //XmlElement bestTimeIdiom = xmlDocument.CreateElement(string.Empty, "Idiom", string.Empty);
-                //bestTimeIdiom.InnerText = 0.ToString();
-                //bestTime.AppendChild(bestTimeIdiom);
-
                 switch (q_topic)
                 {
                     case QuizTopic.Collocation:
                         bestScoreCol.InnerText = score.ToString();
-                        //bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();
                         break;
                     case QuizTopic.Phrasal_Verb:
                         bestScorePV.InnerText = score.ToString();
-                        //bestTimePV.InnerText = (avg_time / 1000 / 20).ToString();
                         break;
                     case QuizTopic.Idiom:
                         bestScoreIdiom.InnerText = score.ToString();
-                        //bestTimeIdiom.InnerText = (avg_time / 1000 / 20).ToString();
                         break;
                     case QuizTopic.Word_Meaning:
                         bestScoreWM.InnerText = score.ToString();
-                        //bestTimeWM.InnerText = (avg_time / 1000 / 20).ToString();
                         break;
                     case QuizTopic.Word_Form:
                         bestScoreWF.InnerText = score.ToString();
-                        //bestTimeWF.InnerText = (avg_time / 1000 / 20).ToString();
                         break;
                 }
             }
@@ -482,8 +453,7 @@ namespace DictionaryApp
                     if (main != null)
                     {
                         XmlNode bestScore = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore");
-                        //XmlNode bestTime = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime");
-                        if (bestScore != null/* && bestTime != null*/)
+                        if (bestScore != null)
                         {
                             switch (q_topic)
                             {
@@ -505,23 +475,6 @@ namespace DictionaryApp
                                         bestScoreCol.InnerText = score.ToString();
                                         bestScore.AppendChild(bestScoreCol);
                                     }
-                                    //XmlNode bestTimeCol = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime/Col");
-                                    //if (bestTimeCol != null)
-                                    //{
-                                    //    if (double.TryParse(bestTimeCol.InnerText, out double tCol))
-                                    //    {
-                                    //        if (avg_time < tCol)
-                                    //            bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //    }
-                                    //    else
-                                    //        bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //}
-                                    //else
-                                    //{                                       
-                                    //    bestTimeCol = xmlDocument.CreateElement(string.Empty, "Col", string.Empty);
-                                    //    bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //    bestTime.AppendChild(bestTimeCol);
-                                    //}
                                     break;
                                 case QuizTopic.Phrasal_Verb:
                                     XmlNode bestScorePV = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/PV");
@@ -540,24 +493,7 @@ namespace DictionaryApp
                                         bestScorePV = xmlDocument.CreateElement(string.Empty, "PV", string.Empty);
                                         bestScorePV.InnerText = score.ToString();
                                         main.AppendChild(bestScorePV);
-                                    }
-                                    //XmlNode bestTimePV = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime/PV");
-                                    //if (bestTimePV != null)
-                                    //{
-                                    //    if (double.TryParse(bestTimePV.InnerText, out double tPV))
-                                    //    {
-                                    //        if (avg_time < tPV)
-                                    //            bestTimePV.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //    }
-                                    //    else
-                                    //        bestTimePV.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //}
-                                    //else
-                                    //{
-                                    //    bestTimePV = xmlDocument.CreateElement(string.Empty, "PV", string.Empty);
-                                    //    bestTimePV.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //    bestTime.AppendChild(bestTimePV);
-                                    //}
+                                    }                                  
                                     break;
                                 case QuizTopic.Idiom:                                   
                                     XmlNode bestScoreIdiom = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/Idiom");
@@ -577,23 +513,6 @@ namespace DictionaryApp
                                         bestScoreIdiom.InnerText = score.ToString();
                                         bestScore.AppendChild(bestScoreIdiom);
                                     }
-                                    //XmlNode bestTimeIdiom = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime/Idiom");
-                                    //if (bestTimeIdiom != null)
-                                    //{
-                                    //    if (double.TryParse(bestTimeIdiom.InnerText, out double tIdiom))
-                                    //    {
-                                    //        if (avg_time < tIdiom)
-                                    //            bestTimeIdiom.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //    }
-                                    //    else
-                                    //        bestTimeIdiom.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //}
-                                    //else
-                                    //{
-                                    //    bestTimeIdiom = xmlDocument.CreateElement(string.Empty, "Idiom", string.Empty);
-                                    //    bestTimeIdiom.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //    bestTime.AppendChild(bestTimeIdiom);
-                                    //}
                                     break;
                                 case QuizTopic.Word_Meaning:
                                     XmlNode bestScoreWM = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/WM");
@@ -613,23 +532,6 @@ namespace DictionaryApp
                                         bestScoreWM.InnerText = score.ToString();
                                         bestScore.AppendChild(bestScoreWM);
                                     }
-                                    //XmlNode bestTimeWM = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime/WM");
-                                    //if (bestTimeWM != null)
-                                    //{
-                                    //    if (double.TryParse(bestTimeWM.InnerText, out double tWM))
-                                    //    {
-                                    //        if (avg_time < tWM)
-                                    //            bestTimeWM.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //    }
-                                    //    else
-                                    //        bestTimeWM.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //}
-                                    //else
-                                    //{
-                                    //    bestTimeWM = xmlDocument.CreateElement(string.Empty, "WM", string.Empty);
-                                    //    bestTimeWM.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //    bestTime.AppendChild(bestTimeWM);
-                                    //}
                                     break;
                                 case QuizTopic.Word_Form:
                                     XmlNode bestScoreWF = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/WF");
@@ -649,23 +551,6 @@ namespace DictionaryApp
                                         bestScoreWF.InnerText = score.ToString();
                                         bestScore.AppendChild(bestScoreWF);
                                     }
-                                    //XmlNode bestTimeWF = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime/WF");
-                                    //if (bestTimeWF != null)
-                                    //{
-                                    //    if (double.TryParse(bestTimeWF.InnerText, out double tWF))
-                                    //    {
-                                    //        if (avg_time < tWF)
-                                    //            bestTimeWF.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //    }
-                                    //    else
-                                    //        bestTimeWF.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //}
-                                    //else
-                                    //{
-                                    //    bestTimeWF = xmlDocument.CreateElement(string.Empty, "WF", string.Empty);
-                                    //    bestTimeWF.InnerText = (avg_time / 1000 / 20).ToString();
-                                    //    bestTime.AppendChild(bestTimeWF);
-                                    //}
                                     break;
                             }
                         }
@@ -705,51 +590,22 @@ namespace DictionaryApp
                             bestScoreIdiom.InnerText = 0.ToString();
                             bestScore.AppendChild(bestScoreIdiom);
 
-                            // best average time
-                            //bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
-                            //mainElement.AppendChild(bestTime);
-
-                            //XmlElement bestTimeCol = xmlDocument.CreateElement(string.Empty, "Col", string.Empty);
-                            //bestTimeCol.InnerText = 0.ToString();
-                            //bestTime.AppendChild(bestTimeCol);
-
-                            //XmlElement bestTimeWM = xmlDocument.CreateElement(string.Empty, "WM", string.Empty);
-                            //bestTimeWM.InnerText = 0.ToString();
-                            //bestTime.AppendChild(bestTimeWM);
-
-                            //XmlElement bestTimePV = xmlDocument.CreateElement(string.Empty, "PV", string.Empty);
-                            //bestTimePV.InnerText = 0.ToString();
-                            //bestTime.AppendChild(bestTimePV);
-
-                            //XmlElement bestTimeWF = xmlDocument.CreateElement(string.Empty, "WF", string.Empty);
-                            //bestTimeWF.InnerText = 0.ToString();
-                            //bestTime.AppendChild(bestTimeWF);
-
-                            //XmlElement bestTimeIdiom = xmlDocument.CreateElement(string.Empty, "Idiom", string.Empty);
-                            //bestTimeIdiom.InnerText = 0.ToString();
-                            //bestTime.AppendChild(bestTimeIdiom);
-
                             switch (q_topic)
                             {
                                 case QuizTopic.Collocation:
                                     bestScoreCol.InnerText = score.ToString();
-                                    //bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();
                                     break;
                                 case QuizTopic.Phrasal_Verb:
                                     bestScorePV.InnerText = score.ToString();
-                                    //bestTimePV.InnerText = (avg_time / 1000 / 20).ToString();
                                     break;
                                 case QuizTopic.Idiom:
                                     bestScoreIdiom.InnerText = score.ToString();
-                                    //bestTimeIdiom.InnerText = (avg_time / 1000 / 20).ToString();
                                     break;
                                 case QuizTopic.Word_Meaning:
                                     bestScoreWM.InnerText = score.ToString();
-                                    //bestTimeWM.InnerText = (avg_time / 1000 / 20).ToString();
                                     break;
                                 case QuizTopic.Word_Form:
                                     bestScoreWF.InnerText = score.ToString();
-                                    //bestTimeWF.InnerText = (avg_time / 1000 / 20).ToString();
                                     break;
                             }
                         }
@@ -791,51 +647,22 @@ namespace DictionaryApp
                     bestScoreIdiom.InnerText = 0.ToString();
                     bestScore.AppendChild(bestScoreIdiom);
 
-                    // best average time
-                    //XmlElement bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
-                    //mainElement.AppendChild(bestTime);
-
-                    //XmlElement bestTimeCol = xmlDocument.CreateElement(string.Empty, "Col", string.Empty);
-                    //bestTimeCol.InnerText = 0.ToString();
-                    //bestTime.AppendChild(bestTimeCol);
-
-                    //XmlElement bestTimeWM = xmlDocument.CreateElement(string.Empty, "WM", string.Empty);
-                    //bestTimeWM.InnerText = 0.ToString();
-                    //bestTime.AppendChild(bestTimeWM);
-
-                    //XmlElement bestTimePV = xmlDocument.CreateElement(string.Empty, "PV", string.Empty);
-                    //bestTimePV.InnerText = 0.ToString();
-                    //bestTime.AppendChild(bestTimePV);
-
-                    //XmlElement bestTimeWF = xmlDocument.CreateElement(string.Empty, "WF", string.Empty);
-                    //bestTimeWF.InnerText = 0.ToString();
-                    //bestTime.AppendChild(bestTimeWF);
-
-                    //XmlElement bestTimeIdiom = xmlDocument.CreateElement(string.Empty, "Idiom", string.Empty);
-                    //bestTimeIdiom.InnerText = 0.ToString();
-                    //bestTime.AppendChild(bestTimeIdiom);
-
                     switch (q_topic)
                     {
                         case QuizTopic.Collocation:
                             bestScoreCol.InnerText = score.ToString();
-                            //bestTimeCol.InnerText = (avg_time / 1000 / 20).ToString();
                             break;
                         case QuizTopic.Phrasal_Verb:
                             bestScorePV.InnerText = score.ToString();
-                            //bestTimePV.InnerText = (avg_time / 1000 / 20).ToString();
                             break;
                         case QuizTopic.Idiom:
                             bestScoreIdiom.InnerText = score.ToString();
-                            //bestTimeIdiom.InnerText = (avg_time / 1000 / 20).ToString();
                             break;
                         case QuizTopic.Word_Meaning:
                             bestScoreWM.InnerText = score.ToString();
-                            //bestTimeWM.InnerText = (avg_time / 1000 / 20).ToString();
                             break;
                         case QuizTopic.Word_Form:
                             bestScoreWF.InnerText = score.ToString();
-                            //bestTimeWF.InnerText = (avg_time / 1000 / 20).ToString();
                             break;
                     }
                 }

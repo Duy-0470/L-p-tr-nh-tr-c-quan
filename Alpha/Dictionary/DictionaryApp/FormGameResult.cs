@@ -54,8 +54,7 @@ namespace DictionaryApp
             {
                 LabelScoreNum.Text = FormSW.total.ToString();
                 LabelSpeedNum.Text = (FormSW.avg_time / 1000 / FormSW.number_question).ToString();
-                LabelAccNum.Text = (FormSW.correct / FormSW.number_question * 100).ToString();
-
+                LabelAccNum.Text = Convert.ToDouble(FormSW.correct / FormSW.number_question * 100).ToString();
             }
             else if (FormGamesSelect.gameType == FormGamesSelect.GameType.Hangman)
             {
@@ -129,7 +128,7 @@ namespace DictionaryApp
 
         private void ButtonReplay_MouseEnter(object sender, EventArgs e)
         {
-            ButtonSubReplay.BackColor = SystemColors.ButtonHighlight;
+            ButtonSubReplay.BackColor = Color.FromArgb(200, 200, 200);
         }
 
         private void ButtonReplay_MouseLeave(object sender, EventArgs e)
@@ -139,7 +138,7 @@ namespace DictionaryApp
 
         private void ButtonBackToGames_MouseEnter(object sender, EventArgs e)
         {
-            ButtonSubBack.BackColor = SystemColors.ButtonHighlight;
+            ButtonSubBack.BackColor = Color.FromArgb(200, 200, 200);
         }
 
         private void ButtonBackToGames_MouseLeave(object sender, EventArgs e)
@@ -149,7 +148,7 @@ namespace DictionaryApp
 
         private void ButtonHome_MouseEnter(object sender, EventArgs e)
         {
-            ButtonSubHome.BackColor = SystemColors.ButtonHighlight;
+            ButtonSubHome.BackColor = Color.FromArgb(200, 200, 200);
         }
 
         private void ButtonHome_MouseLeave(object sender, EventArgs e)
@@ -159,7 +158,7 @@ namespace DictionaryApp
 
         private void ButtonSubReplay_MouseEnter(object sender, EventArgs e)
         {
-            ButtonReplay.BackColor = SystemColors.ButtonHighlight;
+            ButtonReplay.BackColor = Color.FromArgb(200, 200, 200);
         }
 
         private void ButtonSubReplay_MouseLeave(object sender, EventArgs e)
@@ -169,7 +168,7 @@ namespace DictionaryApp
 
         private void ButtonSubBack_MouseEnter(object sender, EventArgs e)
         {
-            ButtonBackToGames.BackColor = SystemColors.ButtonHighlight;
+            ButtonBackToGames.BackColor = Color.FromArgb(200, 200, 200);
         }
 
         private void ButtonSubBack_MouseLeave(object sender, EventArgs e)
@@ -179,7 +178,7 @@ namespace DictionaryApp
 
         private void ButtonSubHome_MouseEnter(object sender, EventArgs e)
         {
-            ButtonHome.BackColor = SystemColors.ButtonHighlight;
+            ButtonHome.BackColor = Color.FromArgb(200, 200, 200);
         }
 
         private void ButtonSubHome_MouseLeave(object sender, EventArgs e)

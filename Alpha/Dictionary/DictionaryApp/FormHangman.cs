@@ -24,6 +24,7 @@ namespace DictionaryApp
         private bool finished = false;
         public static int score = 60000;
         public static double time = 0;
+        public static bool highscore = false;
 
         public FormHangman()
         {
@@ -222,10 +223,6 @@ namespace DictionaryApp
                 XmlElement bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
                 bestScore.InnerText = score.ToString();
                 mainElement.AppendChild(bestScore);
-
-                //XmlElement bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
-                //bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
-                //mainElement.AppendChild(bestTime);
             }
             else
             {
@@ -242,8 +239,7 @@ namespace DictionaryApp
                 if (success)
                 {
                     XmlNode bestScore = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore");
-                    //XmlNode bestTime = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestTime");
-                    if (bestScore != null/* && bestTime != null*/)
+                    if (bestScore != null)
                     {
                         if (double.TryParse(bestScore.InnerText, out double s))
                         {
@@ -252,14 +248,6 @@ namespace DictionaryApp
                         }
                         else
                             bestScore.InnerText = score.ToString();
-
-                        //if (double.TryParse(bestTime.InnerText, out double t))
-                        //{
-                        //    if ((Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000) < t)
-                        //        bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
-                        //}
-                        //else
-                        //    bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
                     }
                     else
                     {
@@ -268,10 +256,6 @@ namespace DictionaryApp
                         bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
                         bestScore.InnerText = score.ToString();
                         mainElement.AppendChild(bestScore);
-
-                        ////bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
-                        ////bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
-                        ////mainElement.AppendChild(bestTime);
                     }
                 }
                 else
@@ -288,10 +272,6 @@ namespace DictionaryApp
                     XmlElement bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
                     bestScore.InnerText = score.ToString();
                     mainElement.AppendChild(bestScore);
-
-                    //XmlElement bestTime = xmlDocument.CreateElement(string.Empty, "BestTime", string.Empty);
-                    //bestTime.InnerText = (Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000).ToString();
-                    //mainElement.AppendChild(bestTime);
                 }
             }
             xmlDocument.Save(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\hangman.xml");

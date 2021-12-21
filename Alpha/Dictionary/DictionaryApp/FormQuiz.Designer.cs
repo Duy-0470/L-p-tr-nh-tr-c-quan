@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQuiz));
             this.PanelTopic = new System.Windows.Forms.Panel();
+            this.ButtonBack = new System.Windows.Forms.Button();
             this.LabelChooseTP = new System.Windows.Forms.Label();
             this.PanelWF = new System.Windows.Forms.Panel();
             this.LabelWFDes = new System.Windows.Forms.Label();
@@ -66,7 +67,6 @@
             this.LabelReady = new System.Windows.Forms.Label();
             this.TimerReady = new System.Windows.Forms.Timer(this.components);
             this.ToolTipQuiz = new System.Windows.Forms.ToolTip(this.components);
-            this.ButtonBack = new System.Windows.Forms.Button();
             this.PanelTopic.SuspendLayout();
             this.PanelWF.SuspendLayout();
             this.PanelWM.SuspendLayout();
@@ -91,8 +91,21 @@
             this.PanelTopic.Controls.Add(this.PanelCollocations);
             this.PanelTopic.Location = new System.Drawing.Point(0, 0);
             this.PanelTopic.Name = "PanelTopic";
-            this.PanelTopic.Size = new System.Drawing.Size(804, 453);
+            this.PanelTopic.Size = new System.Drawing.Size(1338, 745);
             this.PanelTopic.TabIndex = 4;
+            // 
+            // ButtonBack
+            // 
+            this.ButtonBack.BackgroundImage = global::DictionaryApp.Properties.Resources.icons8_return_96px;
+            this.ButtonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonBack.Location = new System.Drawing.Point(0, 0);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(30, 30);
+            this.ButtonBack.TabIndex = 4;
+            this.ButtonBack.UseVisualStyleBackColor = true;
+            this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
+            this.ButtonBack.MouseHover += new System.EventHandler(this.ButtonBack_MouseHover);
             // 
             // LabelChooseTP
             // 
@@ -102,7 +115,7 @@
             this.LabelChooseTP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
             this.LabelChooseTP.Location = new System.Drawing.Point(0, 0);
             this.LabelChooseTP.Name = "LabelChooseTP";
-            this.LabelChooseTP.Size = new System.Drawing.Size(801, 62);
+            this.LabelChooseTP.Size = new System.Drawing.Size(1335, 62);
             this.LabelChooseTP.TabIndex = 10;
             this.LabelChooseTP.Text = "Choose a topic";
             this.LabelChooseTP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -115,7 +128,7 @@
             this.PanelWF.Controls.Add(this.LabelWFDes);
             this.PanelWF.Controls.Add(this.LabelWF);
             this.PanelWF.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PanelWF.Location = new System.Drawing.Point(446, 215);
+            this.PanelWF.Location = new System.Drawing.Point(713, 361);
             this.PanelWF.Name = "PanelWF";
             this.PanelWF.Size = new System.Drawing.Size(294, 89);
             this.PanelWF.TabIndex = 9;
@@ -153,7 +166,7 @@
             this.PanelWM.Controls.Add(this.LabelWMDes);
             this.PanelWM.Controls.Add(this.LabelWM);
             this.PanelWM.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PanelWM.Location = new System.Drawing.Point(446, 91);
+            this.PanelWM.Location = new System.Drawing.Point(713, 237);
             this.PanelWM.Name = "PanelWM";
             this.PanelWM.Size = new System.Drawing.Size(294, 89);
             this.PanelWM.TabIndex = 8;
@@ -191,7 +204,7 @@
             this.PanelIdioms.Controls.Add(this.LabelIdiomsDes);
             this.PanelIdioms.Controls.Add(this.LabelIdioms);
             this.PanelIdioms.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PanelIdioms.Location = new System.Drawing.Point(260, 347);
+            this.PanelIdioms.Location = new System.Drawing.Point(527, 493);
             this.PanelIdioms.Name = "PanelIdioms";
             this.PanelIdioms.Size = new System.Drawing.Size(294, 89);
             this.PanelIdioms.TabIndex = 5;
@@ -229,7 +242,7 @@
             this.PanelPhrasalVerbs.Controls.Add(this.LabelPVDes);
             this.PanelPhrasalVerbs.Controls.Add(this.LabelPV);
             this.PanelPhrasalVerbs.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PanelPhrasalVerbs.Location = new System.Drawing.Point(72, 215);
+            this.PanelPhrasalVerbs.Location = new System.Drawing.Point(339, 361);
             this.PanelPhrasalVerbs.Name = "PanelPhrasalVerbs";
             this.PanelPhrasalVerbs.Size = new System.Drawing.Size(294, 89);
             this.PanelPhrasalVerbs.TabIndex = 6;
@@ -267,7 +280,7 @@
             this.PanelCollocations.Controls.Add(this.LabelCollocationsDes);
             this.PanelCollocations.Controls.Add(this.LabelCollocations);
             this.PanelCollocations.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PanelCollocations.Location = new System.Drawing.Point(72, 91);
+            this.PanelCollocations.Location = new System.Drawing.Point(339, 237);
             this.PanelCollocations.Name = "PanelCollocations";
             this.PanelCollocations.Size = new System.Drawing.Size(294, 89);
             this.PanelCollocations.TabIndex = 7;
@@ -315,7 +328,7 @@
             this.PanelQuiz.Controls.Add(this.LabelQuestion);
             this.PanelQuiz.Location = new System.Drawing.Point(0, 486);
             this.PanelQuiz.Name = "PanelQuiz";
-            this.PanelQuiz.Size = new System.Drawing.Size(787, 251);
+            this.PanelQuiz.Size = new System.Drawing.Size(1321, 543);
             this.PanelQuiz.TabIndex = 5;
             this.PanelQuiz.Visible = false;
             // 
@@ -323,7 +336,7 @@
             // 
             this.ButtonQuit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ButtonQuit.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonQuit.Location = new System.Drawing.Point(40, 147);
+            this.ButtonQuit.Location = new System.Drawing.Point(40, 439);
             this.ButtonQuit.Name = "ButtonQuit";
             this.ButtonQuit.Size = new System.Drawing.Size(152, 48);
             this.ButtonQuit.TabIndex = 3;
@@ -336,7 +349,7 @@
             // 
             this.ButtonNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonNext.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonNext.Location = new System.Drawing.Point(597, 147);
+            this.ButtonNext.Location = new System.Drawing.Point(1131, 439);
             this.ButtonNext.Name = "ButtonNext";
             this.ButtonNext.Size = new System.Drawing.Size(152, 48);
             this.ButtonNext.TabIndex = 3;
@@ -351,7 +364,7 @@
             this.LabelTimeLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelTimeLeft.AutoSize = true;
             this.LabelTimeLeft.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTimeLeft.Location = new System.Drawing.Point(578, 104);
+            this.LabelTimeLeft.Location = new System.Drawing.Point(1112, 104);
             this.LabelTimeLeft.Name = "LabelTimeLeft";
             this.LabelTimeLeft.Size = new System.Drawing.Size(143, 27);
             this.LabelTimeLeft.TabIndex = 3;
@@ -363,7 +376,7 @@
             this.LabelQuesNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelQuesNum.AutoSize = true;
             this.LabelQuesNum.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelQuesNum.Location = new System.Drawing.Point(566, 28);
+            this.LabelQuesNum.Location = new System.Drawing.Point(1100, 28);
             this.LabelQuesNum.Name = "LabelQuesNum";
             this.LabelQuesNum.Size = new System.Drawing.Size(165, 27);
             this.LabelQuesNum.TabIndex = 3;
@@ -374,7 +387,7 @@
             this.LabelScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelScore.BackColor = System.Drawing.Color.Transparent;
             this.LabelScore.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelScore.Location = new System.Drawing.Point(-517, 66);
+            this.LabelScore.Location = new System.Drawing.Point(17, 66);
             this.LabelScore.Name = "LabelScore";
             this.LabelScore.Size = new System.Drawing.Size(1248, 27);
             this.LabelScore.TabIndex = 3;
@@ -390,7 +403,7 @@
             this.ButtonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonC.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonC.Location = new System.Drawing.Point(-124, 203);
+            this.ButtonC.Location = new System.Drawing.Point(143, 349);
             this.ButtonC.Name = "ButtonC";
             this.ButtonC.Size = new System.Drawing.Size(430, 66);
             this.ButtonC.TabIndex = 2;
@@ -408,7 +421,7 @@
             this.ButtonD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonD.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonD.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonD.Location = new System.Drawing.Point(472, 203);
+            this.ButtonD.Location = new System.Drawing.Point(739, 349);
             this.ButtonD.Name = "ButtonD";
             this.ButtonD.Size = new System.Drawing.Size(430, 66);
             this.ButtonD.TabIndex = 2;
@@ -426,7 +439,7 @@
             this.ButtonB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonB.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonB.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonB.Location = new System.Drawing.Point(472, 106);
+            this.ButtonB.Location = new System.Drawing.Point(739, 252);
             this.ButtonB.Name = "ButtonB";
             this.ButtonB.Size = new System.Drawing.Size(430, 65);
             this.ButtonB.TabIndex = 2;
@@ -444,7 +457,7 @@
             this.ButtonA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonA.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonA.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonA.Location = new System.Drawing.Point(-124, 106);
+            this.ButtonA.Location = new System.Drawing.Point(143, 252);
             this.ButtonA.Name = "ButtonA";
             this.ButtonA.Size = new System.Drawing.Size(430, 65);
             this.ButtonA.TabIndex = 2;
@@ -460,7 +473,7 @@
             this.LabelQuestion.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelQuestion.Location = new System.Drawing.Point(4, 131);
             this.LabelQuestion.Name = "LabelQuestion";
-            this.LabelQuestion.Size = new System.Drawing.Size(784, 103);
+            this.LabelQuestion.Size = new System.Drawing.Size(1318, 103);
             this.LabelQuestion.TabIndex = 1;
             this.LabelQuestion.Text = "Question here";
             this.LabelQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -474,9 +487,9 @@
             this.PanelRules.Controls.Add(this.CheckBoxShowRules);
             this.PanelRules.Controls.Add(this.ButtonOKRules);
             this.PanelRules.Controls.Add(this.LabelRules);
-            this.PanelRules.Location = new System.Drawing.Point(863, 0);
+            this.PanelRules.Location = new System.Drawing.Point(928, 0);
             this.PanelRules.Name = "PanelRules";
-            this.PanelRules.Size = new System.Drawing.Size(495, 168);
+            this.PanelRules.Size = new System.Drawing.Size(964, 463);
             this.PanelRules.TabIndex = 6;
             this.PanelRules.Visible = false;
             // 
@@ -485,7 +498,7 @@
             this.CheckBoxShowRules.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CheckBoxShowRules.AutoSize = true;
             this.CheckBoxShowRules.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBoxShowRules.Location = new System.Drawing.Point(55, 142);
+            this.CheckBoxShowRules.Location = new System.Drawing.Point(290, 289);
             this.CheckBoxShowRules.Name = "CheckBoxShowRules";
             this.CheckBoxShowRules.Size = new System.Drawing.Size(166, 21);
             this.CheckBoxShowRules.TabIndex = 2;
@@ -497,7 +510,7 @@
             // 
             this.ButtonOKRules.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ButtonOKRules.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonOKRules.Location = new System.Drawing.Point(323, 137);
+            this.ButtonOKRules.Location = new System.Drawing.Point(558, 284);
             this.ButtonOKRules.Name = "ButtonOKRules";
             this.ButtonOKRules.Size = new System.Drawing.Size(114, 30);
             this.ButtonOKRules.TabIndex = 1;
@@ -509,7 +522,7 @@
             // 
             this.LabelRules.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelRules.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelRules.Location = new System.Drawing.Point(-171, -30);
+            this.LabelRules.Location = new System.Drawing.Point(64, 117);
             this.LabelRules.Name = "LabelRules";
             this.LabelRules.Size = new System.Drawing.Size(838, 106);
             this.LabelRules.TabIndex = 0;
@@ -537,25 +550,12 @@
             this.TimerReady.Interval = 1000;
             this.TimerReady.Tick += new System.EventHandler(this.TimerReady_Tick);
             // 
-            // ButtonBack
-            // 
-            this.ButtonBack.BackgroundImage = global::DictionaryApp.Properties.Resources.icons8_return_96px;
-            this.ButtonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonBack.Location = new System.Drawing.Point(0, 0);
-            this.ButtonBack.Name = "ButtonBack";
-            this.ButtonBack.Size = new System.Drawing.Size(30, 30);
-            this.ButtonBack.TabIndex = 4;
-            this.ButtonBack.UseVisualStyleBackColor = true;
-            this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
-            this.ButtonBack.MouseHover += new System.EventHandler(this.ButtonBack_MouseHover);
-            // 
             // FormQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.LabelReady);
             this.Controls.Add(this.PanelRules);
             this.Controls.Add(this.PanelQuiz);

@@ -34,11 +34,13 @@ namespace DictionaryApp
         public static double avg_time = 0;
         private readonly Stopwatch stopwatch = new Stopwatch();
         private bool submitted = false;
+        public static bool highscore = false;
 
         public FormSW()
         {
             InitializeComponent();
             Bounds = Screen.PrimaryScreen.Bounds;
+            Debug.WriteLine(FormSWSettings.number_question);
             lb_Meaning.Location = new Point((Width - lb_Meaning.Width) / 2, Height * 30 / 100);
             do
             {
@@ -122,12 +124,18 @@ namespace DictionaryApp
             timer2.Stop();
             stopwatch.Stop();
             avg_time += stopwatch.ElapsedMilliseconds;
+            for (int i = 0; i < listBtn.Count; i++)
+            {
+                listBtn[i].Enabled = false;
+            }
             string answer = "";
 
-            if (!submitted && count_question < FormSWSettings.number_question)
+            if (!submitted && count_question <= FormSWSettings.number_question)
             {
                 submitted = true;
+                count_question++;
                 btn_Submit.Text = "Next";
+                
                 if (select == word.Length)
                 {
                     for (int i = 0; i < word.Length; i++)
@@ -150,23 +158,20 @@ namespace DictionaryApp
                 {
                     AnswerIncorrect();
                 }
-
-                if (count_question == FormSWSettings.number_question)
+                if (count_question == FormSWSettings.number_question + 1)
                 {
                     btn_Submit.Text = "Finish";
                 }
-
                 return;
             }
-
-            if (submitted && count_question < FormSWSettings.number_question)
+            else if (submitted && count_question <= FormSWSettings.number_question)
             {
-                btn_Submit.Text = "Submit";
-                count_question++;
+                btn_Submit.Text = "Submit";              
+                Debug.WriteLine(count_question.ToString());
                 lb_TimeLeftNum.ForeColor = Color.Black;
                 LabelTimeLeft.ForeColor = Color.Black;
                 LabelResult.Visible = false;
-                lb_Question.Text = (int.Parse(lb_Question.Text) + 1).ToString();
+                lb_Question.Text = count_question.ToString();
                 listAnswer.Clear();
                 lb_TimeLeftNum.Text = FormSWSettings.time.ToString();
                 for (int i = 0; i < word.Length; i++)
@@ -189,7 +194,7 @@ namespace DictionaryApp
                 Init();
                 submitted = false;
             }
-            else
+            else if (count_question > FormSWSettings.number_question)
             {
                 total = int.Parse(lb_Score.Text);
                 SaveProgress();
@@ -219,8 +224,12 @@ namespace DictionaryApp
             }
             if (count_time == 0)
             {
-                timer2.Stop();
-                Submit();       
+                timer1.Stop();
+                for (int i = 0; i < listBtn.Count; i++)
+                {
+                    listBtn[i].Enabled = false;
+                }
+                Submit();
             }
         }
 
@@ -228,7 +237,6 @@ namespace DictionaryApp
         {
             Debug.WriteLine(word);
             shuffle = new string(word.ToCharArray().OrderBy(s => (random.Next(2) % 2) == 0).ToArray());
-            //Debug.WriteLine(shuffle);
             int mid = shuffle.Length / 2;
             for (int i = 0; i < shuffle.Length; i++)
             {
@@ -263,7 +271,7 @@ namespace DictionaryApp
 
         private void FormSW_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "btn_Submit_Click"))
+            if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "Submit"))
             {
                 FormGameResult fgr = new FormGameResult();
                 fgr.Show();
@@ -299,7 +307,7 @@ namespace DictionaryApp
                 listBtn[i].BackColor = Color.Red;
             }
             LabelResult.Visible = true;
-            LabelResult.Text = "The correct answer is " + word;
+            LabelResult.Text = "The correct answer is: " + word;
         }
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -389,8 +397,78 @@ namespace DictionaryApp
                 xmlDocument.AppendChild(mainElement);
 
                 XmlElement bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
-                bestScore.InnerText = total.ToString();
                 mainElement.AppendChild(bestScore);
+
+                XmlElement mode1010 = xmlDocument.CreateElement(string.Empty, "mode1010", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode1010);
+
+                XmlElement mode1015 = xmlDocument.CreateElement(string.Empty, "mode1015", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode1015);
+
+                XmlElement mode1020 = xmlDocument.CreateElement(string.Empty, "mode1020", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode1020);
+
+                XmlElement mode1030 = xmlDocument.CreateElement(string.Empty, "mode1015", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode1030);
+
+                XmlElement mode1510 = xmlDocument.CreateElement(string.Empty, "mode1510", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode1510);
+
+                XmlElement mode1515 = xmlDocument.CreateElement(string.Empty, "mode1515", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode1515);
+
+                XmlElement mode1520 = xmlDocument.CreateElement(string.Empty, "mode1520", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode1520);
+
+                XmlElement mode1530 = xmlDocument.CreateElement(string.Empty, "mode1530", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode1530);
+
+                XmlElement mode2010 = xmlDocument.CreateElement(string.Empty, "mode2010", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode2010);
+
+                XmlElement mode2015 = xmlDocument.CreateElement(string.Empty, "mode2015", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode2015);
+
+                XmlElement mode2020 = xmlDocument.CreateElement(string.Empty, "mode2020", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode2020);
+
+                XmlElement mode2030 = xmlDocument.CreateElement(string.Empty, "mode2030", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode2030);
+
+                XmlElement mode2050 = xmlDocument.CreateElement(string.Empty, "mode2050", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode2050);
+
+                XmlElement mode5010 = xmlDocument.CreateElement(string.Empty, "mode5010", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode5010);
+
+                XmlElement mode5015 = xmlDocument.CreateElement(string.Empty, "mode5015", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode5015);
+
+                XmlElement mode5020 = xmlDocument.CreateElement(string.Empty, "mode5020", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode5020);
+
+                XmlElement mode5050 = xmlDocument.CreateElement(string.Empty, "mode5050", string.Empty);
+                mode1010.InnerText = 0.ToString();
+                bestScore.AppendChild(mode5050);
+
+                XmlNode mode = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/mode" + FormSWSettings.number_question.ToString() + FormSWSettings.time.ToString());
+                mode.InnerText = total.ToString();
             }
             else
             {
@@ -406,23 +484,115 @@ namespace DictionaryApp
                 }
                 if (success)
                 {
-                    XmlNode bestScore = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore");
-                    if (bestScore != null)
+                    XmlNode main = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo");
+                    XmlNode bs = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore");
+                    if (main != null && bs != null)
                     {
-                        if (double.TryParse(bestScore.InnerText, out double s))
+                        XmlNode bestScore = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/mode" + FormSWSettings.number_question.ToString() + FormSWSettings.time.ToString());
+                        if (bestScore != null)
                         {
-                            if (total > s)
+                            if (int.TryParse(bestScore.InnerText, out int s))
+                            {
+                                if (total > s)
+                                {
+                                    bestScore.InnerText = total.ToString();
+                                    highscore = true;
+                                }
+                            }
+                            else
                                 bestScore.InnerText = total.ToString();
                         }
                         else
+                        {
+                            bestScore = xmlDocument.CreateElement(string.Empty, "mode" + FormSWSettings.number_question.ToString() + FormSWSettings.time.ToString(), string.Empty);
                             bestScore.InnerText = total.ToString();
+                            bs.AppendChild(bestScore);
+                        }
                     }
                     else
                     {
-                        XmlNode mainElement = xmlDocument.SelectSingleNode("/MainInfo");
-                        bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
-                        bestScore.InnerText = total.ToString();
+                        XmlElement root = xmlDocument.DocumentElement;
+
+                        XmlDeclaration xmlDeclaration = xmlDocument.CreateXmlDeclaration("1.0", "UTF-8", null);
+                        xmlDocument.InsertBefore(xmlDeclaration, root);
+
+                        XmlElement mainElement = xmlDocument.CreateElement(string.Empty, "MainInfo", string.Empty);
+                        mainElement.InnerText = "Do not modify the contents of this file, or risk losing your saved progress!";
+                        xmlDocument.AppendChild(mainElement);
+
+                        XmlElement bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
                         mainElement.AppendChild(bestScore);
+
+                        XmlElement mode1010 = xmlDocument.CreateElement(string.Empty, "mode1010", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode1010);
+
+                        XmlElement mode1015 = xmlDocument.CreateElement(string.Empty, "mode1015", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode1015);
+
+                        XmlElement mode1020 = xmlDocument.CreateElement(string.Empty, "mode1020", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode1020);
+
+                        XmlElement mode1030 = xmlDocument.CreateElement(string.Empty, "mode1015", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode1030);
+
+                        XmlElement mode1510 = xmlDocument.CreateElement(string.Empty, "mode1510", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode1510);
+
+                        XmlElement mode1515 = xmlDocument.CreateElement(string.Empty, "mode1515", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode1515);
+
+                        XmlElement mode1520 = xmlDocument.CreateElement(string.Empty, "mode1520", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode1520);
+
+                        XmlElement mode1530 = xmlDocument.CreateElement(string.Empty, "mode1530", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode1530);
+
+                        XmlElement mode2010 = xmlDocument.CreateElement(string.Empty, "mode2010", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode2010);
+
+                        XmlElement mode2015 = xmlDocument.CreateElement(string.Empty, "mode2015", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode2015);
+
+                        XmlElement mode2020 = xmlDocument.CreateElement(string.Empty, "mode2020", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode2020);
+
+                        XmlElement mode2030 = xmlDocument.CreateElement(string.Empty, "mode2030", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode2030);
+
+                        XmlElement mode2050 = xmlDocument.CreateElement(string.Empty, "mode2050", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode2050);
+
+                        XmlElement mode5010 = xmlDocument.CreateElement(string.Empty, "mode5010", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode5010);
+
+                        XmlElement mode5015 = xmlDocument.CreateElement(string.Empty, "mode5015", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode5015);
+
+                        XmlElement mode5020 = xmlDocument.CreateElement(string.Empty, "mode5020", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode5020);
+
+                        XmlElement mode5050 = xmlDocument.CreateElement(string.Empty, "mode5050", string.Empty);
+                        mode1010.InnerText = 0.ToString();
+                        bestScore.AppendChild(mode5050);
+
+                        XmlNode mode = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/mode" + FormSWSettings.number_question.ToString() + FormSWSettings.time.ToString());
+                        mode.InnerText = total.ToString();
                     }
                 }
                 else
@@ -437,10 +607,80 @@ namespace DictionaryApp
                     xmlDocument.AppendChild(mainElement);
 
                     XmlElement bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
-                    bestScore.InnerText = total.ToString();
                     mainElement.AppendChild(bestScore);
+
+                    XmlElement mode1010 = xmlDocument.CreateElement(string.Empty, "mode1010", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode1010);
+
+                    XmlElement mode1015 = xmlDocument.CreateElement(string.Empty, "mode1015", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode1015);
+
+                    XmlElement mode1020 = xmlDocument.CreateElement(string.Empty, "mode1020", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode1020);
+
+                    XmlElement mode1030 = xmlDocument.CreateElement(string.Empty, "mode1015", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode1030);
+
+                    XmlElement mode1510 = xmlDocument.CreateElement(string.Empty, "mode1510", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode1510);
+
+                    XmlElement mode1515 = xmlDocument.CreateElement(string.Empty, "mode1515", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode1515);
+
+                    XmlElement mode1520 = xmlDocument.CreateElement(string.Empty, "mode1520", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode1520);
+
+                    XmlElement mode1530 = xmlDocument.CreateElement(string.Empty, "mode1530", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode1530);
+
+                    XmlElement mode2010 = xmlDocument.CreateElement(string.Empty, "mode2010", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode2010);
+
+                    XmlElement mode2015 = xmlDocument.CreateElement(string.Empty, "mode2015", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode2015);
+
+                    XmlElement mode2020 = xmlDocument.CreateElement(string.Empty, "mode2020", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode2020);
+
+                    XmlElement mode2030 = xmlDocument.CreateElement(string.Empty, "mode2030", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode2030);
+
+                    XmlElement mode2050 = xmlDocument.CreateElement(string.Empty, "mode2050", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode2050);
+
+                    XmlElement mode5010 = xmlDocument.CreateElement(string.Empty, "mode5010", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode5010);
+
+                    XmlElement mode5015 = xmlDocument.CreateElement(string.Empty, "mode5015", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode5015);
+
+                    XmlElement mode5020 = xmlDocument.CreateElement(string.Empty, "mode5020", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode5020);
+
+                    XmlElement mode5050 = xmlDocument.CreateElement(string.Empty, "mode5050", string.Empty);
+                    mode1010.InnerText = 0.ToString();
+                    bestScore.AppendChild(mode5050);
+
+                    XmlNode mode = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore/mode" + FormSWSettings.number_question.ToString() + FormSWSettings.time.ToString());
+                    mode.InnerText = total.ToString();
                 }
-            }
+            }           
             xmlDocument.Save(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\sw.xml");
         }
     }
