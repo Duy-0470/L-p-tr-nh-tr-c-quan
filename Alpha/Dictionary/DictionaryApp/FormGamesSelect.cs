@@ -23,8 +23,7 @@ namespace DictionaryApp
         {
             InitializeComponent();
             ButtonHome.FlatAppearance.BorderSize = 0;
-            Bounds = Screen.PrimaryScreen.Bounds;
-            
+            Bounds = Screen.PrimaryScreen.Bounds;            
         }
 
         private void panel1_MouseClick(object sender, MouseEventArgs e)
@@ -90,10 +89,7 @@ namespace DictionaryApp
                 Form1.GetInstance().Show();
             else
             {
-                //if (MessageBox.Show("Quit the app now?", "Alert", MessageBoxButtons.YesNo) == DialogResult.No)
-                //    e.Cancel = true;
-                //else
-                    Application.Exit();
+                Application.Exit();
             }
         }
 
@@ -153,6 +149,156 @@ namespace DictionaryApp
         private void PictureBoxHangman_MouseClick(object sender, MouseEventArgs e)
         {
             PanelHangman_MouseClick(sender, e);
+        }
+
+        private void PanelQuizzesBorder_MouseEnter(object sender, EventArgs e)
+        {
+            PanelQuizzesBorder.BackColor = Color.OrangeRed;
+        }
+
+        private void PanelQuizzes_MouseEnter(object sender, EventArgs e)
+        {
+            PanelQuizzesBorder.BackColor = Color.OrangeRed;
+        }
+
+        private void label2_MouseEnter(object sender, EventArgs e)
+        {
+            PanelQuizzesBorder.BackColor = Color.OrangeRed;
+        }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            PanelQuizzesBorder.BackColor = Color.OrangeRed;
+        }
+
+        private void label3_MouseEnter(object sender, EventArgs e)
+        {
+            PanelQuizzesBorder.BackColor = Color.OrangeRed;
+        }
+
+        private void PanelGTW_MouseEnter(object sender, EventArgs e)
+        {
+            PanelWS.BackColor = Color.OrangeRed;
+        }
+
+        private void LabelGTW_MouseLeave(object sender, EventArgs e)
+        {
+            PanelWS.BackColor = Color.FromArgb(137, 181, 175);
+        }
+
+        private void PictureBoxWS_MouseEnter(object sender, EventArgs e)
+        {
+            PanelWS.BackColor = Color.OrangeRed;
+        }
+
+        private void LabelWSDes_MouseEnter(object sender, EventArgs e)
+        {
+            PanelWS.BackColor = Color.OrangeRed;
+        }
+
+        private void PanelWSDes_MouseEnter(object sender, EventArgs e)
+        {
+            PanelWS.BackColor = Color.OrangeRed;
+        }
+
+        private void PanelHangman_MouseEnter(object sender, EventArgs e)
+        {
+            PanelHangman.BackColor = Color.OrangeRed;
+        }
+
+        private void LabelHangman_MouseEnter(object sender, EventArgs e)
+        {
+            PanelHangman.BackColor = Color.OrangeRed;
+        }
+
+        private void PictureBoxHangman_MouseEnter(object sender, EventArgs e)
+        {
+            PanelHangman.BackColor = Color.OrangeRed;
+        }
+
+        private void LabelHangmanDes_MouseEnter(object sender, EventArgs e)
+        {
+            PanelHangman.BackColor = Color.OrangeRed;
+        }
+
+        private void PanelHangmanDes_MouseEnter(object sender, EventArgs e)
+        {
+            PanelHangman.BackColor = Color.OrangeRed;
+        }
+
+        private void PanelQuizzesBorder_MouseLeave(object sender, EventArgs e)
+        {
+            PanelQuizzesBorder.BackColor = Color.FromArgb(150, 199, 193);
+        }
+
+        private void label2_MouseLeave(object sender, EventArgs e)
+        {
+            PanelQuizzesBorder.BackColor = Color.FromArgb(150, 199, 193);
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            PanelQuizzesBorder.BackColor = Color.FromArgb(150, 199, 193);
+        }
+
+        private void label3_MouseLeave(object sender, EventArgs e)
+        {
+            PanelQuizzesBorder.BackColor = Color.FromArgb(150, 199, 193);
+        }
+
+        private void PanelQuizzes_MouseLeave(object sender, EventArgs e)
+        {
+            PanelQuizzesBorder.BackColor = Color.FromArgb(150, 199, 193);
+        }
+
+        private void PanelGTW_MouseLeave(object sender, EventArgs e)
+        {
+            PanelWS.BackColor = Color.FromArgb(137, 181, 175);
+        }
+
+        private void LabelGTW_MouseEnter(object sender, EventArgs e)
+        {
+            PanelWS.BackColor = Color.OrangeRed;
+        }
+
+        private void PictureBoxWS_MouseLeave(object sender, EventArgs e)
+        {
+            PanelWS.BackColor = Color.FromArgb(137, 181, 175);
+        }
+
+        private void LabelWSDes_MouseLeave(object sender, EventArgs e)
+        {
+            PanelWS.BackColor = Color.FromArgb(137, 181, 175);
+        }
+
+        private void PanelWSDes_MouseLeave(object sender, EventArgs e)
+        {
+            PanelWS.BackColor = Color.FromArgb(137, 181, 175);
+        }
+
+        private void PanelHangman_MouseLeave(object sender, EventArgs e)
+        {
+            PanelHangman.BackColor = Color.FromArgb(208, 202, 178);
+        }
+
+        private void LabelHangman_MouseLeave(object sender, EventArgs e)
+        {
+            PanelHangman.BackColor = Color.FromArgb(208, 202, 178);
+        }
+
+        private void PictureBoxHangman_MouseLeave(object sender, EventArgs e)
+        {
+            PanelHangman.BackColor = Color.FromArgb(208, 202, 178);
+        }
+
+        private void LabelHangmanDes_MouseLeave(object sender, EventArgs e)
+        {
+            PanelHangman.BackColor = Color.FromArgb(208, 202, 178);
+        }
+
+        private void PanelHangmanDes_MouseLeave(object sender, EventArgs e)
+        {
+            PanelHangman.BackColor = Color.FromArgb(208, 202, 178);
         }
     }
 }

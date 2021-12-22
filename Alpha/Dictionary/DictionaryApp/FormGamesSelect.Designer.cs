@@ -35,10 +35,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.PanelQuizzesBorder = new System.Windows.Forms.Panel();
             this.LabelIntro = new System.Windows.Forms.Label();
-            this.PanelGTW = new System.Windows.Forms.Panel();
-            this.PanelGTWDes = new System.Windows.Forms.Panel();
-            this.LabelGTWDes = new System.Windows.Forms.Label();
-            this.PictureBoxGTW = new System.Windows.Forms.PictureBox();
+            this.PanelWS = new System.Windows.Forms.Panel();
+            this.PanelWSDes = new System.Windows.Forms.Panel();
+            this.LabelWSDes = new System.Windows.Forms.Label();
+            this.PictureBoxWS = new System.Windows.Forms.PictureBox();
             this.LabelGTW = new System.Windows.Forms.Label();
             this.PanelHangman = new System.Windows.Forms.Panel();
             this.PanelHangmanDes = new System.Windows.Forms.Panel();
@@ -49,9 +49,9 @@
             this.PanelQuizzes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelQuizzesBorder.SuspendLayout();
-            this.PanelGTW.SuspendLayout();
-            this.PanelGTWDes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxGTW)).BeginInit();
+            this.PanelWS.SuspendLayout();
+            this.PanelWSDes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxWS)).BeginInit();
             this.PanelHangman.SuspendLayout();
             this.PanelHangmanDes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHangman)).BeginInit();
@@ -61,11 +61,11 @@
             // 
             this.LabelYourGames.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelYourGames.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelYourGames.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelYourGames.ForeColor = System.Drawing.Color.DarkRed;
             this.LabelYourGames.Location = new System.Drawing.Point(1, 9);
             this.LabelYourGames.Name = "LabelYourGames";
-            this.LabelYourGames.Size = new System.Drawing.Size(991, 31);
+            this.LabelYourGames.Size = new System.Drawing.Size(991, 51);
             this.LabelYourGames.TabIndex = 0;
             this.LabelYourGames.Text = "Your Games";
             this.LabelYourGames.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -82,6 +82,8 @@
             this.PanelQuizzes.Size = new System.Drawing.Size(265, 130);
             this.PanelQuizzes.TabIndex = 1;
             this.PanelQuizzes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseClick);
+            this.PanelQuizzes.MouseEnter += new System.EventHandler(this.PanelQuizzes_MouseEnter);
+            this.PanelQuizzes.MouseLeave += new System.EventHandler(this.PanelQuizzes_MouseLeave);
             // 
             // label3
             // 
@@ -94,6 +96,8 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Pick the correct answer";
             this.label3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label3_MouseClick);
+            this.label3.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            this.label3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
             // 
             // pictureBox1
             // 
@@ -107,6 +111,8 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
+            this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
+            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
             // 
             // label2
             // 
@@ -119,6 +125,8 @@
             this.label2.Text = "Quizzes";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label2_MouseClick);
+            this.label2.MouseEnter += new System.EventHandler(this.label2_MouseEnter);
+            this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
             // 
             // PanelQuizzesBorder
             // 
@@ -131,67 +139,77 @@
             this.PanelQuizzesBorder.Size = new System.Drawing.Size(307, 158);
             this.PanelQuizzesBorder.TabIndex = 2;
             this.PanelQuizzesBorder.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelQuizzesBorder_MouseClick);
+            this.PanelQuizzesBorder.MouseEnter += new System.EventHandler(this.PanelQuizzesBorder_MouseEnter);
+            this.PanelQuizzesBorder.MouseLeave += new System.EventHandler(this.PanelQuizzesBorder_MouseLeave);
             // 
             // LabelIntro
             // 
             this.LabelIntro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelIntro.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelIntro.Location = new System.Drawing.Point(12, 60);
+            this.LabelIntro.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelIntro.Location = new System.Drawing.Point(12, 63);
             this.LabelIntro.Name = "LabelIntro";
             this.LabelIntro.Size = new System.Drawing.Size(968, 35);
             this.LabelIntro.TabIndex = 4;
             this.LabelIntro.Text = "Improve your English with these sets of games";
             this.LabelIntro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // PanelGTW
+            // PanelWS
             // 
-            this.PanelGTW.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PanelGTW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(181)))), ((int)(((byte)(175)))));
-            this.PanelGTW.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanelGTW.Controls.Add(this.PanelGTWDes);
-            this.PanelGTW.Location = new System.Drawing.Point(589, 136);
-            this.PanelGTW.Name = "PanelGTW";
-            this.PanelGTW.Size = new System.Drawing.Size(307, 158);
-            this.PanelGTW.TabIndex = 2;
-            this.PanelGTW.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelGTW_MouseClick);
+            this.PanelWS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PanelWS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(181)))), ((int)(((byte)(175)))));
+            this.PanelWS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelWS.Controls.Add(this.PanelWSDes);
+            this.PanelWS.Location = new System.Drawing.Point(589, 136);
+            this.PanelWS.Name = "PanelWS";
+            this.PanelWS.Size = new System.Drawing.Size(307, 158);
+            this.PanelWS.TabIndex = 2;
+            this.PanelWS.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelGTW_MouseClick);
+            this.PanelWS.MouseEnter += new System.EventHandler(this.PanelGTW_MouseEnter);
+            this.PanelWS.MouseLeave += new System.EventHandler(this.PanelGTW_MouseLeave);
             // 
-            // PanelGTWDes
+            // PanelWSDes
             // 
-            this.PanelGTWDes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PanelGTWDes.BackColor = System.Drawing.Color.White;
-            this.PanelGTWDes.Controls.Add(this.LabelGTWDes);
-            this.PanelGTWDes.Controls.Add(this.PictureBoxGTW);
-            this.PanelGTWDes.Controls.Add(this.LabelGTW);
-            this.PanelGTWDes.Location = new System.Drawing.Point(21, 13);
-            this.PanelGTWDes.Name = "PanelGTWDes";
-            this.PanelGTWDes.Size = new System.Drawing.Size(265, 130);
-            this.PanelGTWDes.TabIndex = 1;
-            this.PanelGTWDes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelGTWDes_MouseClick);
+            this.PanelWSDes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PanelWSDes.BackColor = System.Drawing.Color.White;
+            this.PanelWSDes.Controls.Add(this.LabelWSDes);
+            this.PanelWSDes.Controls.Add(this.PictureBoxWS);
+            this.PanelWSDes.Controls.Add(this.LabelGTW);
+            this.PanelWSDes.Location = new System.Drawing.Point(21, 13);
+            this.PanelWSDes.Name = "PanelWSDes";
+            this.PanelWSDes.Size = new System.Drawing.Size(265, 130);
+            this.PanelWSDes.TabIndex = 1;
+            this.PanelWSDes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelGTWDes_MouseClick);
+            this.PanelWSDes.MouseEnter += new System.EventHandler(this.PanelWSDes_MouseEnter);
+            this.PanelWSDes.MouseLeave += new System.EventHandler(this.PanelWSDes_MouseLeave);
             // 
-            // LabelGTWDes
+            // LabelWSDes
             // 
-            this.LabelGTWDes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelGTWDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelGTWDes.Location = new System.Drawing.Point(113, 55);
-            this.LabelGTWDes.Name = "LabelGTWDes";
-            this.LabelGTWDes.Size = new System.Drawing.Size(139, 48);
-            this.LabelGTWDes.TabIndex = 3;
-            this.LabelGTWDes.Text = "Put your vocabulary to the test";
-            this.LabelGTWDes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LabelGTWDes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label4_MouseClick);
+            this.LabelWSDes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LabelWSDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelWSDes.Location = new System.Drawing.Point(113, 55);
+            this.LabelWSDes.Name = "LabelWSDes";
+            this.LabelWSDes.Size = new System.Drawing.Size(139, 48);
+            this.LabelWSDes.TabIndex = 3;
+            this.LabelWSDes.Text = "Put your vocabulary to the test";
+            this.LabelWSDes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LabelWSDes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label4_MouseClick);
+            this.LabelWSDes.MouseEnter += new System.EventHandler(this.LabelWSDes_MouseEnter);
+            this.LabelWSDes.MouseLeave += new System.EventHandler(this.LabelWSDes_MouseLeave);
             // 
-            // PictureBoxGTW
+            // PictureBoxWS
             // 
-            this.PictureBoxGTW.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PictureBoxGTW.BackgroundImage = global::DictionaryApp.Properties.Resources.icons8_literature_200px;
-            this.PictureBoxGTW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PictureBoxGTW.Location = new System.Drawing.Point(28, 55);
-            this.PictureBoxGTW.Name = "PictureBoxGTW";
-            this.PictureBoxGTW.Size = new System.Drawing.Size(60, 50);
-            this.PictureBoxGTW.TabIndex = 3;
-            this.PictureBoxGTW.TabStop = false;
-            this.PictureBoxGTW.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PictureBoxGTW_MouseClick);
+            this.PictureBoxWS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PictureBoxWS.BackgroundImage = global::DictionaryApp.Properties.Resources.icons8_literature_200px;
+            this.PictureBoxWS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PictureBoxWS.Location = new System.Drawing.Point(28, 55);
+            this.PictureBoxWS.Name = "PictureBoxWS";
+            this.PictureBoxWS.Size = new System.Drawing.Size(60, 50);
+            this.PictureBoxWS.TabIndex = 3;
+            this.PictureBoxWS.TabStop = false;
+            this.PictureBoxWS.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PictureBoxGTW_MouseClick);
+            this.PictureBoxWS.MouseEnter += new System.EventHandler(this.PictureBoxWS_MouseEnter);
+            this.PictureBoxWS.MouseLeave += new System.EventHandler(this.PictureBoxWS_MouseLeave);
             // 
             // LabelGTW
             // 
@@ -204,6 +222,8 @@
             this.LabelGTW.Text = "Word Scrambler";
             this.LabelGTW.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LabelGTW.MouseClick += new System.Windows.Forms.MouseEventHandler(this.LabelGTWDes_MouseClick);
+            this.LabelGTW.MouseEnter += new System.EventHandler(this.LabelGTW_MouseEnter);
+            this.LabelGTW.MouseLeave += new System.EventHandler(this.LabelGTW_MouseLeave);
             // 
             // PanelHangman
             // 
@@ -216,6 +236,8 @@
             this.PanelHangman.Size = new System.Drawing.Size(307, 158);
             this.PanelHangman.TabIndex = 2;
             this.PanelHangman.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelHangman_MouseClick);
+            this.PanelHangman.MouseEnter += new System.EventHandler(this.PanelHangman_MouseEnter);
+            this.PanelHangman.MouseLeave += new System.EventHandler(this.PanelHangman_MouseLeave);
             // 
             // PanelHangmanDes
             // 
@@ -228,6 +250,8 @@
             this.PanelHangmanDes.Size = new System.Drawing.Size(265, 130);
             this.PanelHangmanDes.TabIndex = 1;
             this.PanelHangmanDes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelHangmanDes_MouseClick);
+            this.PanelHangmanDes.MouseEnter += new System.EventHandler(this.PanelHangmanDes_MouseEnter);
+            this.PanelHangmanDes.MouseLeave += new System.EventHandler(this.PanelHangmanDes_MouseLeave);
             // 
             // LabelHangmanDes
             // 
@@ -240,6 +264,8 @@
             this.LabelHangmanDes.Text = "The classic hangman game";
             this.LabelHangmanDes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LabelHangmanDes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.LabelHangmanDes_MouseClick);
+            this.LabelHangmanDes.MouseEnter += new System.EventHandler(this.LabelHangmanDes_MouseEnter);
+            this.LabelHangmanDes.MouseLeave += new System.EventHandler(this.LabelHangmanDes_MouseLeave);
             // 
             // PictureBoxHangman
             // 
@@ -253,6 +279,8 @@
             this.PictureBoxHangman.TabIndex = 3;
             this.PictureBoxHangman.TabStop = false;
             this.PictureBoxHangman.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PictureBoxHangman_MouseClick);
+            this.PictureBoxHangman.MouseEnter += new System.EventHandler(this.PictureBoxHangman_MouseEnter);
+            this.PictureBoxHangman.MouseLeave += new System.EventHandler(this.PictureBoxHangman_MouseLeave);
             // 
             // LabelHangman
             // 
@@ -265,6 +293,8 @@
             this.LabelHangman.Text = "Hangman";
             this.LabelHangman.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LabelHangman.MouseClick += new System.Windows.Forms.MouseEventHandler(this.LabelHangman_MouseClick);
+            this.LabelHangman.MouseEnter += new System.EventHandler(this.LabelHangman_MouseEnter);
+            this.LabelHangman.MouseLeave += new System.EventHandler(this.LabelHangman_MouseLeave);
             // 
             // ButtonHome
             // 
@@ -287,7 +317,7 @@
             this.Controls.Add(this.ButtonHome);
             this.Controls.Add(this.LabelIntro);
             this.Controls.Add(this.PanelHangman);
-            this.Controls.Add(this.PanelGTW);
+            this.Controls.Add(this.PanelWS);
             this.Controls.Add(this.PanelQuizzesBorder);
             this.Controls.Add(this.LabelYourGames);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -300,9 +330,9 @@
             this.PanelQuizzes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelQuizzesBorder.ResumeLayout(false);
-            this.PanelGTW.ResumeLayout(false);
-            this.PanelGTWDes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxGTW)).EndInit();
+            this.PanelWS.ResumeLayout(false);
+            this.PanelWSDes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxWS)).EndInit();
             this.PanelHangman.ResumeLayout(false);
             this.PanelHangmanDes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHangman)).EndInit();
@@ -320,10 +350,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label LabelIntro;
         private System.Windows.Forms.Button ButtonHome;
-        private System.Windows.Forms.Panel PanelGTW;
-        private System.Windows.Forms.Panel PanelGTWDes;
-        private System.Windows.Forms.Label LabelGTWDes;
-        private System.Windows.Forms.PictureBox PictureBoxGTW;
+        private System.Windows.Forms.Panel PanelWS;
+        private System.Windows.Forms.Panel PanelWSDes;
+        private System.Windows.Forms.Label LabelWSDes;
+        private System.Windows.Forms.PictureBox PictureBoxWS;
         private System.Windows.Forms.Label LabelGTW;
         private System.Windows.Forms.Panel PanelHangman;
         private System.Windows.Forms.Panel PanelHangmanDes;
