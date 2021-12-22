@@ -27,6 +27,8 @@ namespace DictionaryApp
         private int counter = 0, timeleft = 20, ready = 3;
         private readonly Stopwatch stopwatch = new Stopwatch();
         public static double avg_time = 0, correct = 0;
+        public static bool highscore = false;
+        private bool finished = false;
 
         public FormQuiz()
         {
@@ -238,6 +240,7 @@ namespace DictionaryApp
         {
             Timer1sec.Stop();
             stopwatch.Stop();
+            finished = true;
             ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = false;
             if (quizzes[counter].rightAnswer == 1)
             {
@@ -266,6 +269,7 @@ namespace DictionaryApp
         {
             Timer1sec.Stop();
             stopwatch.Stop();
+            finished = true;
             ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = false;
             if (quizzes[counter].rightAnswer == 2)
             {
@@ -294,6 +298,7 @@ namespace DictionaryApp
         {
             Timer1sec.Stop();
             stopwatch.Stop();
+            finished = true;
             ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = false;
             if (quizzes[counter].rightAnswer == 3)
             {
@@ -322,6 +327,7 @@ namespace DictionaryApp
         {
             Timer1sec.Stop();
             stopwatch.Stop();
+            finished = true;
             ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = false;
             if (quizzes[counter].rightAnswer == 4)
             {
@@ -351,6 +357,7 @@ namespace DictionaryApp
             counter++;
             if (counter < 20)
             {
+                finished = false;
                 LabelQuesNum.Text = "Question: " + (counter + 1).ToString() + " / 20";
                 Debug.WriteLine(counter.ToString() + " " + quizzes[counter].rightAnswer);
                 timeleft = 20;
@@ -450,9 +457,9 @@ namespace DictionaryApp
                 if (success)
                 {
                     XmlNode main = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo");
-                    if (main != null)
-                    {
-                        XmlNode bestScore = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore");
+                    XmlNode bestScore = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore");
+                    if (main != null && bestScore != null)
+                    {                       
                         if (bestScore != null)
                         {
                             switch (q_topic)
@@ -464,7 +471,10 @@ namespace DictionaryApp
                                         if (int.TryParse(bestScoreCol.InnerText, out int sCol))
                                         {
                                             if (score > sCol)
+                                            {
+                                                highscore = true;
                                                 bestScoreCol.InnerText = score.ToString();
+                                            }
                                         }
                                         else
                                             bestScoreCol.InnerText = score.ToString();
@@ -483,7 +493,10 @@ namespace DictionaryApp
                                         if (int.TryParse(bestScorePV.InnerText, out int sPV))
                                         {
                                             if (score > sPV)
+                                            {
+                                                highscore = true;
                                                 bestScorePV.InnerText = score.ToString();
+                                            }
                                         }
                                         else
                                             bestScorePV.InnerText = score.ToString();
@@ -502,7 +515,10 @@ namespace DictionaryApp
                                         if (int.TryParse(bestScoreIdiom.InnerText, out int sIdiom))
                                         {
                                             if (score > sIdiom)
+                                            {
+                                                highscore = true;
                                                 bestScoreIdiom.InnerText = score.ToString();
+                                            }
                                         }
                                         else
                                             bestScoreIdiom.InnerText = score.ToString();
@@ -521,7 +537,10 @@ namespace DictionaryApp
                                         if (int.TryParse(bestScoreWM.InnerText, out int sWM))
                                         {
                                             if (score > sWM)
+                                            {
+                                                highscore = true;
                                                 bestScoreWM.InnerText = score.ToString();
+                                            }
                                         }
                                         else
                                             bestScoreWM.InnerText = score.ToString();
@@ -540,7 +559,10 @@ namespace DictionaryApp
                                         if (int.TryParse(bestScoreWF.InnerText, out int sWF))
                                         {
                                             if (score > sWF)
+                                            {
+                                                highscore = true;
                                                 bestScoreWF.InnerText = score.ToString();
+                                            }
                                         }
                                         else
                                             bestScoreWF.InnerText = score.ToString();
@@ -751,7 +773,7 @@ namespace DictionaryApp
         {
             Timer1sec.Stop();
             stopwatch.Stop();
-            if (MessageBox.Show("Quiat now? You will lose any unsaved progress", "Alert", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show("Quit now? You will lose any unsaved progress", "Alert", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 PanelQuiz.Visible = false;
                 counter = score = 0;
@@ -762,11 +784,16 @@ namespace DictionaryApp
                 quizzes.Clear();
                 Timer1sec.Stop();
                 PanelTopic.Visible = true;
+                ButtonA.Enabled = ButtonB.Enabled = ButtonC.Enabled = ButtonD.Enabled = true;
+                ButtonA.BackColor = ButtonB.BackColor = ButtonC.BackColor = ButtonD.BackColor = Color.White;
             }
             else
             {
-                Timer1sec.Start();
-                stopwatch.Start();
+                if (!finished)
+                {
+                    Timer1sec.Start();
+                    stopwatch.Start();
+                }
             }
         }
 

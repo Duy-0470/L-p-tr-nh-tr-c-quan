@@ -26,7 +26,7 @@ namespace DictionaryApp
             ButtonReplay.Location = new Point(PanelResultMenu.Width, 861);
             ButtonBackToGames.Location = new Point(PanelResultMenu.Width, 921);
             ButtonHome.Location = new Point(PanelResultMenu.Width, 981);
-            
+            LabelComment.Text = "";
         }
 
         private void FormGameResult_Load(object sender, EventArgs e)
@@ -41,13 +41,15 @@ namespace DictionaryApp
                 if (FormQuiz.avg_time / 1000 / 20 < 3 && FormQuiz.correct < 4)
                     LabelComment.Text = "Your accuracy was below average, yet you spent very little time on a question.\nYou were too hasty in making decisions. Try to be more careful";
                 else if (FormQuiz.avg_time / 1000 / 20 > 12 && FormQuiz.correct >= 12)
-                    LabelComment.Text = "Your accuracy was above average, yet your speed was not.\n";
+                    LabelComment.Text = "Your accuracy was above average, yet your speed was not.\nWhile being careful is always a good thing, you would still need the speed to be perfect";
                 else if (FormQuiz.avg_time / 1000 / 20 > 12 && FormQuiz.correct < 12)
                     LabelComment.Text = "Both of your speed and accuracy were below average, but they can still be improved over time.";
                 else if (FormQuiz.avg_time / 1000 / 20 <= 12 && FormQuiz.correct >= 12)
-                    LabelComment.Text = "Well done! Both of your speed and accuracy was above average.";
+                    LabelComment.Text = "Well done! Both of your speed and accuracy was above average.\nPerfection was never impossible";
                 else if (FormQuiz.avg_time / 1000 / 20 <= 12 && FormQuiz.correct < 12)
                     LabelComment.Text = "Your speed was above average, yet your accuracy was not.\nYou were reasonably fast but that would not be enough, slow down to try to improve your accuracy";
+                if (FormQuiz.highscore)
+                    PictureBoxHS.Visible = true;
 
             }
             else if (FormGamesSelect.gameType == FormGamesSelect.GameType.SW)
@@ -55,15 +57,28 @@ namespace DictionaryApp
                 LabelScoreNum.Text = FormSW.total.ToString();
                 LabelSpeedNum.Text = (FormSW.avg_time / 1000 / FormSW.number_question).ToString();
                 LabelAccNum.Text = Convert.ToDouble(FormSW.correct / FormSW.number_question * 100).ToString();
+                LabelSpeed.Text = LabelSpeed.Text.Replace("question", "round");
+                if (FormSW.highscore)
+                    PictureBoxHS.Visible = true;
+                if (FormSW.avg_time / 1000 / FormSW.number_question <= 3 && Convert.ToDouble(FormSW.correct / FormSW.number_question * 100) < 30)
+                    LabelComment.Text = "Your accuracy was very low, unlike your speed.\nSeems like rushing is not always a good idea";
+                else if (FormSW.avg_time / 1000 / FormSW.number_question > 7 && Convert.ToDouble(FormSW.correct / FormSW.number_question * 100) < 50)
+                    LabelComment.Text = "Both of your speed and accuracy was below average.\nMaybe you should try raising the time limit a bit and comeback when you are better";
+                else if (FormSW.avg_time / 1000 / FormSW.number_question > 7 && Convert.ToDouble(FormSW.correct / FormSW.number_question * 100) > 50)
+                    LabelComment.Text = "You sacraficed speed for accuracy.\nThere is nothing wrong in being careful, but the lack of speed might prevent you from being perfect";
+                else if (FormSW.avg_time / 1000 / FormSW.number_question < 7 && Convert.ToDouble(FormSW.correct / FormSW.number_question * 100) > 50)
+                    LabelComment.Text = "Well done! Both of your speed and accuracy was above average.\nPerfection was never impossible";
+                else if (FormSW.avg_time / 1000 / FormSW.number_question > 7 && Convert.ToDouble(FormSW.correct / FormSW.number_question * 100) < 50)
+                    LabelComment.Text = "Find yourself struggling? Try increasing the time limit and the number of question";
+
             }
             else if (FormGamesSelect.gameType == FormGamesSelect.GameType.Hangman)
             {
                 LabelComment.Visible = true;
-                LabelAccuracy.Visible = false;
-                LabelAccNum.Visible = false;
+                LabelAccNum.Text = FormHangman.accuracy.ToString();
                 LabelScoreNum.Text = FormHangman.score.ToString();
                 LabelSpeedNum.Text = FormHangman.time.ToString();
-                LabelSpeed.Text = "Time (s):";
+                LabelSpeed.Text = LabelSpeed.Text.Replace("question", "round");
                 if (FormHangman.score >= 50000)
                     LabelComment.Text = "Congratulations! You escaped the hang with ease.";
                 else if (FormHangman.score < 50000 && FormHangman.score >= 10000)
@@ -72,6 +87,8 @@ namespace DictionaryApp
                     LabelComment.Text = "Congratulations! You barely escaped death, but ultimately, a win is a win";
                 else if (FormHangman.score == 0)
                     LabelComment.Text = "Unfortunately, you were not able to escape the hang.\nBut it is not over. Come back if you want to improve";
+                if (FormHangman.highscore)
+                    PictureBoxHS.Visible = true;
             }
         }
 
@@ -114,16 +131,6 @@ namespace DictionaryApp
                 Form1.GetInstance().Show();
             else
                 Application.Exit();
-        }
-
-        private void LabelAvgTime_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LabelAccNum_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void ButtonReplay_MouseEnter(object sender, EventArgs e)

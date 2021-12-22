@@ -126,4 +126,11 @@
   <metadata name="bunifuElipse3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>265, 17</value>
   </metadata>
+  <data name="LabelRules.Text" xml:space="preserve">
+    <value>You have to reorganize the letters by clicking on the letters in the correct order within the time limit
+Click on it again to remove it from the order
+The letters must form a word or a phrase corresponding to the given meaning
+Each correct answer increases your score
+You can choose the number of rounds and the time limit for each round</value>
+  </data>
 </root>

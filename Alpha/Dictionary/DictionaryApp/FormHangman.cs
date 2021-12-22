@@ -22,21 +22,28 @@ namespace DictionaryApp
         private readonly Stopwatch stopwatch = new Stopwatch();
         private string[] ansPart;
         private bool finished = false;
-        public static int score = 60000;
+        public static int score = 60000, accuracy = 0;
         public static double time = 0;
         public static bool highscore = false;
+        private Classes.Word getWord = new Classes.Word();
+        //private readonly Random rand = new Random();
+        private int round = 0;
+        private int choose = 0;
 
         public FormHangman()
         {
             InitializeComponent();
             Bounds = Screen.PrimaryScreen.Bounds;
             PanelLetters.Location = new Point((Width - PanelLetters.Width) / 2, Height - PanelLetters.Height - 80);
-            PictureBoxHint.Location = new Point((Width - PictureBoxHint.Width) / 2, 10);
+            PictureBoxHint.Location = new Point((Width - PictureBoxHint.Width) / 2, LabelMeaning.Location.Y + LabelMeaning.Height + 20);
             LabelGuess.Text = "";
             LabelGuess.Width = Width;
             LabelReady.Location = new Point((Width - LabelReady.Width) / 2, (Height - LabelReady.Height) / 2);
             PanelRules.Location = new Point(0, 0);
             PanelRules.Size = Size;
+            LabelMeaning.Location = new Point((Width - LabelMeaning.Width) / 2, 25);
+            LabelResult.Location = new Point(PanelLetters.Location.X + PanelLetters.Width / 2 - LabelResult.Width / 2, PanelLetters.Location.Y + PanelLetters.Height / 2 - LabelResult.Height / 2);
+            LabelResult.Width = PanelLetters.Width;
         }
 
         private void FormHangman_FormClosed(object sender, FormClosedEventArgs e)
@@ -63,6 +70,9 @@ namespace DictionaryApp
             answer = hintImage.name.Substring(0, hintImage.name.IndexOf('_')).ToUpper();
             PictureBoxHint.Load(hintImage.link);
             PictureBoxHint.SizeMode = PictureBoxSizeMode.Zoom;
+            getWord = databaseHandle.FindWord(hintImage.name);
+            LabelMeaning.Text = getWord.senses[0/*rand.Next(0, getWord.senses.Count())*/].meaning.Replace("=", string.Empty);
+            LabelMeaning.Text = LabelMeaning.Text[0].ToString().ToUpper() + LabelMeaning.Text.Substring(1);
             Debug.WriteLine(answer + " " + hintImage.link);
             if (!answer.Contains('-'))
             {
@@ -97,11 +107,13 @@ namespace DictionaryApp
 
         private void ButtonLettersClick(object sender, EventArgs e)
         {
+            choose++;
             Button button = (Button)sender;
             Debug.WriteLine(button.Name.Last().ToString());
             button.Enabled = false;
             if (answer.Contains(button.Name.Last()))
             {
+                accuracy++;
                 if (correct < answer.Length)
                 {
                     timelimit += 5;
@@ -155,21 +167,15 @@ namespace DictionaryApp
                 if ((!answer.Contains('-') && correct == answer.Length) || (answer.Contains('-') && correct == answer.Length - 1))
                 {
                     finished = true;
+                    PictureBoxHint.Visible = true;
                     TimeLimit.Stop();
                     stopwatch.Stop();
-                    time = Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000;
+                    time += Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000;
                     LabelGuess.ForeColor = Color.Green;
-                    PanelLetters.Controls.Clear();
-                    Label result = new Label()
-                    {
-                        Text = "You won! You escaped.",
-                        Font = new Font(new Font("Times New Roman", 28), FontStyle.Regular),
-                        AutoSize = true,
-                        TextAlign = ContentAlignment.MiddleCenter
-                    };
-                    PanelLetters.Controls.Add(result);
-                    result.Location = new Point((PanelLetters.Width - result.Width) / 2, (PanelLetters.Height - result.Height) / 2 - 30);
-                    SaveProgress();
+                    PanelLetters.Visible = false;
+                    LabelResult.Visible = true;
+                    LabelResult.Text = "Correct! You avoided the hang (for now)";
+                    LabelScore.Text = "Score: " + score.ToString();
                     ButtonCont.Visible = true;
                 }
             }
@@ -182,25 +188,20 @@ namespace DictionaryApp
                 {
                     TimeLimit.Stop();
                     stopwatch.Stop();
-                    time = Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000;
+                    finished = true;
+                    PictureBoxHint.Visible = true;
+                    time += Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000;
                     LabelGuess.Text = "";
                     LabelGuess.ForeColor = Color.Red;
-                    score = 0;
                     for (int i = 0; i < answer.Length; i++)
                     {
                         LabelGuess.Text += answer[i] + " ";
                     }
                     LabelGuess.Text = LabelGuess.Text.Replace('-', ' ');
-                    PanelLetters.Controls.Clear();
-                    Label result = new Label()
-                    {
-                        Text = "You lost. You were hung",
-                        Font = new Font(new Font("Times New Roman", 28), FontStyle.Regular),
-                        AutoSize = true,
-                        TextAlign = ContentAlignment.MiddleCenter
-                    };
-                    PanelLetters.Controls.Add(result);
-                    result.Location = new Point((PanelLetters.Width - result.Width) / 2, (PanelLetters.Height - result.Height) / 2 - 30);
+                    PanelLetters.Visible = false;
+                    LabelResult.Visible = true;
+                    LabelResult.Text = "You lost. You were hung";
+                    LabelScore.Text = "Score: " + score.ToString();
                     ButtonCont.Visible = true;
                 }
             }
@@ -238,8 +239,9 @@ namespace DictionaryApp
                 }
                 if (success)
                 {
+                    XmlNode mainElement = xmlDocument.SelectSingleNode("/MainInfo");
                     XmlNode bestScore = xmlDocument.DocumentElement.SelectSingleNode("/MainInfo/BestScore");
-                    if (bestScore != null)
+                    if (bestScore != null && mainElement != null)
                     {
                         if (double.TryParse(bestScore.InnerText, out double s))
                         {
@@ -251,7 +253,14 @@ namespace DictionaryApp
                     }
                     else
                     {
-                        XmlNode mainElement = xmlDocument.SelectSingleNode("/MainInfo");
+                        XmlElement root = xmlDocument.DocumentElement;
+
+                        XmlDeclaration xmlDeclaration = xmlDocument.CreateXmlDeclaration("1.0", "UTF-8", null);
+                        xmlDocument.InsertBefore(xmlDeclaration, root);
+
+                        mainElement = xmlDocument.CreateElement(string.Empty, "MainInfo", string.Empty);
+                        mainElement.InnerText = "Do not modify the contents of this file, or risk losing your saved progress!";
+                        xmlDocument.AppendChild(mainElement);
 
                         bestScore = xmlDocument.CreateElement(string.Empty, "BestScore", string.Empty);
                         bestScore.InnerText = score.ToString();
@@ -287,10 +296,12 @@ namespace DictionaryApp
                 LabelReady.Visible = false;
                 PanelLetters.Visible = true;
                 PictureBoxHangman.Visible = true;
-                PictureBoxHint.Visible = true;
                 LabelGuess.Visible = true;
                 LabelTimeLeft.Visible = true;
+                LabelMeaning.Visible = true;
+                LabelRound.Visible = true;
                 ButtonQuit.Visible = true;
+                LabelScore.Visible = true;
                 TimeLimit.Start();
                 stopwatch.Start();
             }
@@ -310,7 +321,37 @@ namespace DictionaryApp
 
         private void ButtonCont_Click(object sender, EventArgs e)
         {
-            Close();
+            round++;
+            if (round < 5)
+            {               
+                LabelGuess.Text = "";
+                LoadQuestion();
+                finished = false;
+                PanelLetters.Visible = true;
+                foreach (Button button in PanelLetters.Controls)
+                {
+                    button.Enabled = true;
+                }
+                LabelGuess.ForeColor = Color.Black;
+                LabelResult.Visible = false;
+                PictureBoxHint.Visible = false;                
+                PictureBoxHangman.Load(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Database\\Files\\images\\hangman0.png");
+                LabelTimeLeft.Text = "Time left: " + timelimit.ToString();
+                LabelRound.Text = "Round: " + (round + 1).ToString();
+                if (round == 4)
+                    ButtonCont.Text = "Finish";
+                TimeLimit.Start();
+                stopwatch.Reset();
+                stopwatch.Start();
+                ButtonCont.Visible = false;
+            }
+            else
+            {
+                time = time / 1000 / 5;
+                accuracy = accuracy / choose * 100;
+                SaveProgress();
+                Close();
+            }
         }
 
         private void FormHangman_Load(object sender, EventArgs e)
@@ -343,14 +384,16 @@ namespace DictionaryApp
                 LabelTimeLeft.Text = "Time left: 0s";
                 TimeLimit.Stop();
                 stopwatch.Stop();
-                PanelLetters.Controls.Clear();
+                PanelLetters.Visible = false;
                 Label result = new Label()
                 {
                     Text = "You ran out of time\nYou were hung",
                     Font = new Font(new Font("Times New Roman", 28), FontStyle.Regular),
-                    AutoSize = true,
-                    TextAlign = ContentAlignment.MiddleCenter
+                    Size = PanelLetters.Size,
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    Location = PanelLetters.Location
                 };
+                PictureBoxHint.Visible = true;
                 PanelLetters.Controls.Add(result);
                 result.Location = new Point((PanelLetters.Width - result.Width) / 2, (PanelLetters.Height - result.Height) / 2 - 30);
                 PictureBoxHangman.Load(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Database\\Files\\images\\hangman6.png");
@@ -368,18 +411,16 @@ namespace DictionaryApp
         {
             TimeLimit.Stop();
             stopwatch.Stop();
-            if (!finished)
+            if (MessageBox.Show("Quit now? You will lose any unsaved your progress", "Alert", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                Close();
+            else
             {
-                if (MessageBox.Show("Quit now? You will lose any unsaved your progress", "Alert", MessageBoxButtons.OKCancel) == DialogResult.OK)
-                    Close();
-                else
+                if (!finished)
                 {
                     TimeLimit.Start();
                     stopwatch.Start();
                 }
             }
-            else
-                Close();
         }
     }
 }

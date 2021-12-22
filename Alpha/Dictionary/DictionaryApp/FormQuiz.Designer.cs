@@ -521,10 +521,10 @@
             // LabelRules
             // 
             this.LabelRules.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelRules.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelRules.Location = new System.Drawing.Point(64, 117);
+            this.LabelRules.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelRules.Location = new System.Drawing.Point(0, 105);
             this.LabelRules.Name = "LabelRules";
-            this.LabelRules.Size = new System.Drawing.Size(838, 106);
+            this.LabelRules.Size = new System.Drawing.Size(961, 146);
             this.LabelRules.TabIndex = 0;
             this.LabelRules.Text = resources.GetString("LabelRules.Text");
             this.LabelRules.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

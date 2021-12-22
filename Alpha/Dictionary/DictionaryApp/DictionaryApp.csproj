@@ -344,12 +344,6 @@
     <Compile Include="FormGamesSelect.Designer.cs">
       <DependentUpon>FormGamesSelect.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGTW.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGTW.Designer.cs">
-      <DependentUpon>FormGTW.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormHangman.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -414,9 +408,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGamesSelect.resx">
       <DependentUpon>FormGamesSelect.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormGTW.resx">
-      <DependentUpon>FormGTW.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHangman.resx">
       <DependentUpon>FormHangman.cs</DependentUpon>
@@ -825,6 +816,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>DictionaryDB.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\highscore.png" />
     <None Include="Resources\Word-Scrambler-696x392.jpg" />
     <None Include="Resources\undo_30px.png" />
     <None Include="Resources\minimize_window_30px.png" />

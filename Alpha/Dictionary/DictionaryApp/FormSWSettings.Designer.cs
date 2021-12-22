@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSWSettings));
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,9 +45,14 @@
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PanelRules = new System.Windows.Forms.Panel();
+            this.CheckBoxShowRules = new System.Windows.Forms.CheckBox();
+            this.ButtonOKRules = new System.Windows.Forms.Button();
+            this.LabelRules = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PanelRules.SuspendLayout();
             this.SuspendLayout();
             // 
             // radioButton1
@@ -83,9 +89,9 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(114, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(521, 142);
+            this.label1.Size = new System.Drawing.Size(521, 131);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Select the number of question";
+            this.label1.Text = "Select the number of rounds";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Visible = false;
             // 
@@ -144,7 +150,7 @@
             this.btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Back.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Back.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_Back.Location = new System.Drawing.Point(116, 254);
+            this.btn_Back.Location = new System.Drawing.Point(391, 420);
             this.btn_Back.Name = "btn_Back";
             this.btn_Back.Size = new System.Drawing.Size(133, 94);
             this.btn_Back.TabIndex = 8;
@@ -174,7 +180,7 @@
             this.btn_Play.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Play.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Play.ForeColor = System.Drawing.Color.Black;
-            this.btn_Play.Location = new System.Drawing.Point(116, 106);
+            this.btn_Play.Location = new System.Drawing.Point(391, 272);
             this.btn_Play.Name = "btn_Play";
             this.btn_Play.Size = new System.Drawing.Size(133, 94);
             this.btn_Play.TabIndex = 8;
@@ -230,12 +236,59 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // PanelRules
+            // 
+            this.PanelRules.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PanelRules.Controls.Add(this.CheckBoxShowRules);
+            this.PanelRules.Controls.Add(this.ButtonOKRules);
+            this.PanelRules.Controls.Add(this.LabelRules);
+            this.PanelRules.Location = new System.Drawing.Point(1237, 11);
+            this.PanelRules.Name = "PanelRules";
+            this.PanelRules.Size = new System.Drawing.Size(671, 382);
+            this.PanelRules.TabIndex = 13;
+            // 
+            // CheckBoxShowRules
+            // 
+            this.CheckBoxShowRules.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CheckBoxShowRules.AutoSize = true;
+            this.CheckBoxShowRules.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckBoxShowRules.Location = new System.Drawing.Point(139, 281);
+            this.CheckBoxShowRules.Name = "CheckBoxShowRules";
+            this.CheckBoxShowRules.Size = new System.Drawing.Size(174, 22);
+            this.CheckBoxShowRules.TabIndex = 13;
+            this.CheckBoxShowRules.Text = "Don\'t show this again";
+            this.CheckBoxShowRules.UseVisualStyleBackColor = true;
+            // 
+            // ButtonOKRules
+            // 
+            this.ButtonOKRules.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ButtonOKRules.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonOKRules.Location = new System.Drawing.Point(410, 273);
+            this.ButtonOKRules.Name = "ButtonOKRules";
+            this.ButtonOKRules.Size = new System.Drawing.Size(125, 36);
+            this.ButtonOKRules.TabIndex = 12;
+            this.ButtonOKRules.Text = "OK";
+            this.ButtonOKRules.UseVisualStyleBackColor = true;
+            this.ButtonOKRules.Click += new System.EventHandler(this.ButtonOKRules_Click);
+            // 
+            // LabelRules
+            // 
+            this.LabelRules.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelRules.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelRules.Location = new System.Drawing.Point(0, 85);
+            this.LabelRules.Name = "LabelRules";
+            this.LabelRules.Size = new System.Drawing.Size(1569, 140);
+            this.LabelRules.TabIndex = 0;
+            this.LabelRules.Text = resources.GetString("LabelRules.Text");
+            this.LabelRules.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormSWSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(235)))), ((int)(((byte)(254)))));
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.PanelRules);
             this.Controls.Add(this.btn_Play);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btn_Next);
@@ -253,6 +306,8 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.PanelRules.ResumeLayout(false);
+            this.PanelRules.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -273,6 +328,10 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
+        private System.Windows.Forms.Panel PanelRules;
+        private System.Windows.Forms.Label LabelRules;
+        private System.Windows.Forms.CheckBox CheckBoxShowRules;
+        private System.Windows.Forms.Button ButtonOKRules;
     }
 }
 

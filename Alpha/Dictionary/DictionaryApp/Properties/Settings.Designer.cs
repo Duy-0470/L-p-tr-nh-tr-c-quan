@@ -60,24 +60,24 @@ namespace DictionaryApp.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool ShowGTWRules {
-            get {
-                return ((bool)(this["ShowGTWRules"]));
-            }
-            set {
-                this["ShowGTWRules"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool ShowHMRules {
             get {
                 return ((bool)(this["ShowHMRules"]));
             }
             set {
                 this["ShowHMRules"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ShowWSRules {
+            get {
+                return ((bool)(this["ShowWSRules"]));
+            }
+            set {
+                this["ShowWSRules"] = value;
             }
         }
     }

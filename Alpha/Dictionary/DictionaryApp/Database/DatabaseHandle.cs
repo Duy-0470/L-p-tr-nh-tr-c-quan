@@ -856,6 +856,12 @@ namespace DictionaryApp.Database
                     string l = reader.GetString(0);
                     MyImage myImage = new MyImage();
                     myImage.name = l.Substring(l.IndexOf('_') + 10).Replace("_", " ").Replace(".png", " ").ToUpper();
+                    string[] split = myImage.name.Split(' ');
+                    //for (int i = 0; i < split.Length; i++)
+                    //{
+                    //    Debug.WriteLine(split[i]);
+                    //}
+                    myImage.name = split[split.Length - 2];
                     myImage.link = l;
                     images.Add(myImage);
                 }

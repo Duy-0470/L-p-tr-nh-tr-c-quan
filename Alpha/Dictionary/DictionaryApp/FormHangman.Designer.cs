@@ -70,6 +70,10 @@
             this.CheckBoxShowRules = new System.Windows.Forms.CheckBox();
             this.ButtonOKRules = new System.Windows.Forms.Button();
             this.ButtonCont = new System.Windows.Forms.Button();
+            this.LabelMeaning = new System.Windows.Forms.Label();
+            this.LabelRound = new System.Windows.Forms.Label();
+            this.LabelScore = new System.Windows.Forms.Label();
+            this.LabelResult = new System.Windows.Forms.Label();
             this.PanelLetters.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHangman)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHint)).BeginInit();
@@ -452,7 +456,7 @@
             // 
             this.PictureBoxHangman.BackgroundImage = global::DictionaryApp.Properties.Resources.hangman0;
             this.PictureBoxHangman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PictureBoxHangman.Location = new System.Drawing.Point(233, 232);
+            this.PictureBoxHangman.Location = new System.Drawing.Point(243, 232);
             this.PictureBoxHangman.Name = "PictureBoxHangman";
             this.PictureBoxHangman.Size = new System.Drawing.Size(301, 353);
             this.PictureBoxHangman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -463,9 +467,9 @@
             // PictureBoxHint
             // 
             this.PictureBoxHint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PictureBoxHint.Location = new System.Drawing.Point(540, 23);
+            this.PictureBoxHint.Location = new System.Drawing.Point(665, 204);
             this.PictureBoxHint.Name = "PictureBoxHint";
-            this.PictureBoxHint.Size = new System.Drawing.Size(781, 547);
+            this.PictureBoxHint.Size = new System.Drawing.Size(671, 366);
             this.PictureBoxHint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBoxHint.TabIndex = 0;
             this.PictureBoxHint.TabStop = false;
@@ -489,7 +493,7 @@
             // 
             this.LabelGuess.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelGuess.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelGuess.Location = new System.Drawing.Point(0, 588);
+            this.LabelGuess.Location = new System.Drawing.Point(0, 599);
             this.LabelGuess.Name = "LabelGuess";
             this.LabelGuess.Size = new System.Drawing.Size(1922, 55);
             this.LabelGuess.TabIndex = 5;
@@ -508,7 +512,7 @@
             this.LabelTimeLeft.AutoSize = true;
             this.LabelTimeLeft.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelTimeLeft.ForeColor = System.Drawing.Color.Black;
-            this.LabelTimeLeft.Location = new System.Drawing.Point(1723, 42);
+            this.LabelTimeLeft.Location = new System.Drawing.Point(1721, 99);
             this.LabelTimeLeft.Name = "LabelTimeLeft";
             this.LabelTimeLeft.Size = new System.Drawing.Size(143, 27);
             this.LabelTimeLeft.TabIndex = 6;
@@ -518,7 +522,7 @@
             // LabelReady
             // 
             this.LabelReady.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelReady.Location = new System.Drawing.Point(1483, 107);
+            this.LabelReady.Location = new System.Drawing.Point(1752, 204);
             this.LabelReady.Name = "LabelReady";
             this.LabelReady.Size = new System.Drawing.Size(90, 111);
             this.LabelReady.TabIndex = 8;
@@ -534,10 +538,10 @@
             // LabelRules
             // 
             this.LabelRules.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelRules.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelRules.Location = new System.Drawing.Point(3, 71);
+            this.LabelRules.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelRules.Location = new System.Drawing.Point(3, 0);
             this.LabelRules.Name = "LabelRules";
-            this.LabelRules.Size = new System.Drawing.Size(942, 181);
+            this.LabelRules.Size = new System.Drawing.Size(942, 289);
             this.LabelRules.TabIndex = 9;
             this.LabelRules.Text = resources.GetString("LabelRules.Text");
             this.LabelRules.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -558,10 +562,10 @@
             // 
             this.CheckBoxShowRules.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CheckBoxShowRules.AutoSize = true;
-            this.CheckBoxShowRules.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBoxShowRules.Location = new System.Drawing.Point(265, 297);
+            this.CheckBoxShowRules.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckBoxShowRules.Location = new System.Drawing.Point(266, 323);
             this.CheckBoxShowRules.Name = "CheckBoxShowRules";
-            this.CheckBoxShowRules.Size = new System.Drawing.Size(166, 21);
+            this.CheckBoxShowRules.Size = new System.Drawing.Size(174, 22);
             this.CheckBoxShowRules.TabIndex = 11;
             this.CheckBoxShowRules.Text = "Don\'t show this again";
             this.CheckBoxShowRules.UseVisualStyleBackColor = true;
@@ -569,10 +573,10 @@
             // ButtonOKRules
             // 
             this.ButtonOKRules.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ButtonOKRules.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonOKRules.Location = new System.Drawing.Point(535, 292);
+            this.ButtonOKRules.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonOKRules.Location = new System.Drawing.Point(537, 315);
             this.ButtonOKRules.Name = "ButtonOKRules";
-            this.ButtonOKRules.Size = new System.Drawing.Size(114, 30);
+            this.ButtonOKRules.Size = new System.Drawing.Size(125, 36);
             this.ButtonOKRules.TabIndex = 10;
             this.ButtonOKRules.Text = "OK";
             this.ButtonOKRules.UseVisualStyleBackColor = true;
@@ -592,6 +596,56 @@
             this.ButtonCont.Visible = false;
             this.ButtonCont.Click += new System.EventHandler(this.ButtonCont_Click);
             // 
+            // LabelMeaning
+            // 
+            this.LabelMeaning.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelMeaning.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelMeaning.Location = new System.Drawing.Point(475, 25);
+            this.LabelMeaning.Name = "LabelMeaning";
+            this.LabelMeaning.Size = new System.Drawing.Size(1051, 176);
+            this.LabelMeaning.TabIndex = 11;
+            this.LabelMeaning.Text = "meaning";
+            this.LabelMeaning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LabelMeaning.Visible = false;
+            // 
+            // LabelRound
+            // 
+            this.LabelRound.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelRound.AutoSize = true;
+            this.LabelRound.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelRound.Location = new System.Drawing.Point(1721, 25);
+            this.LabelRound.Name = "LabelRound";
+            this.LabelRound.Size = new System.Drawing.Size(100, 27);
+            this.LabelRound.TabIndex = 12;
+            this.LabelRound.Text = "Round: 1";
+            this.LabelRound.Visible = false;
+            // 
+            // LabelScore
+            // 
+            this.LabelScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelScore.AutoSize = true;
+            this.LabelScore.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelScore.ForeColor = System.Drawing.Color.Black;
+            this.LabelScore.Location = new System.Drawing.Point(1721, 62);
+            this.LabelScore.Name = "LabelScore";
+            this.LabelScore.Size = new System.Drawing.Size(90, 27);
+            this.LabelScore.TabIndex = 6;
+            this.LabelScore.Text = "Score: 0";
+            this.LabelScore.Visible = false;
+            // 
+            // LabelResult
+            // 
+            this.LabelResult.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelResult.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelResult.Location = new System.Drawing.Point(1342, 396);
+            this.LabelResult.Name = "LabelResult";
+            this.LabelResult.Size = new System.Drawing.Size(782, 46);
+            this.LabelResult.TabIndex = 13;
+            this.LabelResult.Text = "result";
+            this.LabelResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LabelResult.Visible = false;
+            // 
             // FormHangman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -599,9 +653,13 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1924, 1061);
+            this.Controls.Add(this.LabelResult);
+            this.Controls.Add(this.LabelRound);
+            this.Controls.Add(this.LabelMeaning);
             this.Controls.Add(this.PanelLetters);
             this.Controls.Add(this.PanelRules);
             this.Controls.Add(this.LabelReady);
+            this.Controls.Add(this.LabelScore);
             this.Controls.Add(this.LabelTimeLeft);
             this.Controls.Add(this.LabelGuess);
             this.Controls.Add(this.ButtonCont);
@@ -664,5 +722,9 @@
         private System.Windows.Forms.CheckBox CheckBoxShowRules;
         private System.Windows.Forms.Button ButtonOKRules;
         private System.Windows.Forms.Button ButtonCont;
+        private System.Windows.Forms.Label LabelMeaning;
+        private System.Windows.Forms.Label LabelRound;
+        private System.Windows.Forms.Label LabelScore;
+        private System.Windows.Forms.Label LabelResult;
     }
 }

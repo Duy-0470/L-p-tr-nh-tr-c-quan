@@ -20,6 +20,9 @@ namespace DictionaryApp
         {
             InitializeComponent();
             Bounds = Screen.PrimaryScreen.Bounds;
+            PanelRules.Location = new Point(0, 0);
+            PanelRules.Size = Size;
+            LabelRules.Width = PanelRules.Width;
             btn_Next.Visible = false;
             btn_Start.Visible = false;
             pictureBox1.Location = new Point((ClientSize.Width / 2) - (pictureBox1.Width / 2), (ClientSize.Height / 2) - (pictureBox1.Height / 2));
@@ -27,6 +30,26 @@ namespace DictionaryApp
             //btn_Back.Location = new Point(0, Height - btn_Back.Height);
             btn_Start.Location = new Point((Width / 2) - (btn_Start.Width / 2), (Height / 2) - (btn_Start.Height / 2));
             btn_Next.Location = new Point(Width - btn_Next.Width, Height - btn_Next.Height);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.ShowWSRules)
+            {
+                PanelRules.Visible = true;
+                pictureBox1.Visible = false;
+                pictureBox3.Visible = false;
+                btn_Play.Visible = false;
+                btn_Back.Visible = false;
+            }
+            else
+            {
+                PanelRules.Visible = false;
+                pictureBox1.Visible = true;
+                pictureBox3.Visible = true;
+                btn_Play.Visible = true;
+                btn_Back.Visible = true;
+            }
         }
 
         private void btn_Submit_Click(object sender, EventArgs e)
@@ -119,10 +142,6 @@ namespace DictionaryApp
         {
 
         }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -162,5 +181,19 @@ namespace DictionaryApp
                 fsw.Show();
             }
         }
+
+        private void ButtonOKRules_Click(object sender, EventArgs e)
+        {
+            PanelRules.Visible = false;
+            pictureBox1.Visible = true;
+            pictureBox3.Visible = true;
+            btn_Play.Visible = true;
+            btn_Back.Visible = true;
+            if (CheckBoxShowRules.Checked)
+            {
+                Properties.Settings.Default.ShowWSRules = false;
+                Properties.Settings.Default.Save();
+            }
+        }
     }
-  }
+}

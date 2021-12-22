@@ -35,6 +35,7 @@ namespace DictionaryApp
         private readonly Stopwatch stopwatch = new Stopwatch();
         private bool submitted = false;
         public static bool highscore = false;
+        private bool finished = false;
 
         public FormSW()
         {
@@ -123,6 +124,7 @@ namespace DictionaryApp
         {
             timer2.Stop();
             stopwatch.Stop();
+            finished = true;
             avg_time += stopwatch.ElapsedMilliseconds;
             for (int i = 0; i < listBtn.Count; i++)
             {
@@ -166,6 +168,7 @@ namespace DictionaryApp
             }
             else if (submitted && count_question <= FormSWSettings.number_question)
             {
+                finished = false;
                 btn_Submit.Text = "Submit";              
                 Debug.WriteLine(count_question.ToString());
                 lb_TimeLeftNum.ForeColor = Color.Black;
@@ -184,7 +187,7 @@ namespace DictionaryApp
                     GetWord = databaseHandle.RandomWord();
                     word = GetWord.wordHeader.word;
                 } while (word.Length >= 15);
-                meaning = GetWord.senses[random.Next(0, GetWord.senses.Count)].meaning.Replace("=", string.Empty); ;
+                meaning = GetWord.senses[random.Next(0, GetWord.senses.Count)].meaning.Replace("=", string.Empty);
                 meaning = meaning[0].ToString().ToUpper() + meaning.Substring(1);
                 lb_Meaning.Text = meaning;
                 count_time = time;
@@ -287,7 +290,18 @@ namespace DictionaryApp
 
         private void ButtonQuit_Click(object sender, EventArgs e)
         {
-            Close();
+            timer2.Stop();
+            stopwatch.Stop();
+            if (MessageBox.Show("Quit now? You will lose any unsaved progress", "Alert", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                Close();
+            else
+            {
+                if (!finished)
+                {
+                    timer2.Start();
+                    stopwatch.Start();
+                }
+            }
         }
 
         private void AnswerCorrect()
