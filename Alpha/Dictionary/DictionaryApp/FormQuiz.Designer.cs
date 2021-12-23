@@ -113,11 +113,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelChooseTP.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelChooseTP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
-            this.LabelChooseTP.Location = new System.Drawing.Point(0, 0);
+            this.LabelChooseTP.Location = new System.Drawing.Point(0, 1);
             this.LabelChooseTP.Name = "LabelChooseTP";
-            this.LabelChooseTP.Size = new System.Drawing.Size(1335, 62);
+            this.LabelChooseTP.Size = new System.Drawing.Size(1335, 79);
             this.LabelChooseTP.TabIndex = 10;
-            this.LabelChooseTP.Text = "Choose a topic";
+            this.LabelChooseTP.Text = "Please choose a topic";
             this.LabelChooseTP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PanelWF
@@ -284,7 +284,9 @@
             this.PanelCollocations.Name = "PanelCollocations";
             this.PanelCollocations.Size = new System.Drawing.Size(294, 89);
             this.PanelCollocations.TabIndex = 7;
+            this.PanelCollocations.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelCollocations_Paint);
             this.PanelCollocations.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelCollocations_MouseClick);
+            this.PanelCollocations.MouseEnter += new System.EventHandler(this.PanelCollocations_MouseEnter);
             // 
             // LabelCollocationsDes
             // 
@@ -326,7 +328,7 @@
             this.PanelQuiz.Controls.Add(this.ButtonB);
             this.PanelQuiz.Controls.Add(this.ButtonA);
             this.PanelQuiz.Controls.Add(this.LabelQuestion);
-            this.PanelQuiz.Location = new System.Drawing.Point(0, 486);
+            this.PanelQuiz.Location = new System.Drawing.Point(0, 751);
             this.PanelQuiz.Name = "PanelQuiz";
             this.PanelQuiz.Size = new System.Drawing.Size(1321, 543);
             this.PanelQuiz.TabIndex = 5;
@@ -487,7 +489,7 @@
             this.PanelRules.Controls.Add(this.CheckBoxShowRules);
             this.PanelRules.Controls.Add(this.ButtonOKRules);
             this.PanelRules.Controls.Add(this.LabelRules);
-            this.PanelRules.Location = new System.Drawing.Point(928, 0);
+            this.PanelRules.Location = new System.Drawing.Point(1373, 12);
             this.PanelRules.Name = "PanelRules";
             this.PanelRules.Size = new System.Drawing.Size(964, 463);
             this.PanelRules.TabIndex = 6;

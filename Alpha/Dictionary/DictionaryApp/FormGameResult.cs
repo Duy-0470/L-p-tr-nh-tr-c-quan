@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace DictionaryApp
 {
@@ -36,7 +38,7 @@ namespace DictionaryApp
                 LabelScoreNum.Text = FormQuiz.score.ToString();
                 LabelSpeedNum.Text = (FormQuiz.avg_time / 1000 / 20).ToString();
                 LabelAccNum.Text = Convert.ToDouble(FormQuiz.correct / 20 * 100).ToString();
-                LabelTopic.Text = "Quizzes - " + FormQuiz.q_topic.ToString().Replace('_', ' ');
+                LabelTopic.Text = "   Quizzes - " + FormQuiz.q_topic.ToString().Replace('_', ' ');
                 LabelComment.Visible = true;
                 if (FormQuiz.avg_time / 1000 / 20 < 3 && FormQuiz.correct < 4)
                     LabelComment.Text = "Your accuracy was below average, yet you spent very little time on a question.\nYou were too hasty in making decisions. Try to be more careful";
@@ -50,16 +52,28 @@ namespace DictionaryApp
                     LabelComment.Text = "Your speed was above average, yet your accuracy was not.\nYou were reasonably fast but that would not be enough, slow down to try to improve your accuracy";
                 if (FormQuiz.highscore)
                     PictureBoxHS.Visible = true;
-
+                else
+                {
+                    LabelPB.Visible = true;
+                    LabelPBNum.Visible = true;
+                    LabelPBNum.Text = FormQuiz.pb.ToString();
+                }
             }
             else if (FormGamesSelect.gameType == FormGamesSelect.GameType.SW)
             {
+                LabelTopic.Text = "   Word Scrambler";
                 LabelScoreNum.Text = FormSW.total.ToString();
                 LabelSpeedNum.Text = (FormSW.avg_time / 1000 / FormSW.number_question).ToString();
                 LabelAccNum.Text = Convert.ToDouble(FormSW.correct / FormSW.number_question * 100).ToString();
                 LabelSpeed.Text = LabelSpeed.Text.Replace("question", "round");
                 if (FormSW.highscore)
                     PictureBoxHS.Visible = true;
+                else
+                {
+                    LabelPB.Visible = true;
+                    LabelPBNum.Visible = true;
+                    LabelPBNum.Text = FormSW.pb.ToString();
+                }
                 if (FormSW.avg_time / 1000 / FormSW.number_question <= 3 && Convert.ToDouble(FormSW.correct / FormSW.number_question * 100) < 30)
                     LabelComment.Text = "Your accuracy was very low, unlike your speed.\nSeems like rushing is not always a good idea";
                 else if (FormSW.avg_time / 1000 / FormSW.number_question > 7 && Convert.ToDouble(FormSW.correct / FormSW.number_question * 100) < 50)
@@ -74,6 +88,7 @@ namespace DictionaryApp
             }
             else if (FormGamesSelect.gameType == FormGamesSelect.GameType.Hangman)
             {
+                LabelTopic.Text = "   Hangman";
                 LabelComment.Visible = true;
                 LabelAccNum.Text = FormHangman.accuracy.ToString();
                 LabelScoreNum.Text = FormHangman.score.ToString();
@@ -89,8 +104,15 @@ namespace DictionaryApp
                     LabelComment.Text = "Unfortunately, you were not able to escape the hang.\nBut it is not over. Come back if you want to improve";
                 if (FormHangman.highscore)
                     PictureBoxHS.Visible = true;
+                else
+                {
+                    LabelPB.Visible = true;
+                    LabelPBNum.Visible = true;
+                    LabelPBNum.Text = FormHangman.pb.ToString();
+                }
             }
         }
+
 
         private void ButtonBackToGames_Click(object sender, EventArgs e)
         {

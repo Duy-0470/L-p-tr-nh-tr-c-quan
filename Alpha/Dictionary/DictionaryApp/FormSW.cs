@@ -31,7 +31,7 @@ namespace DictionaryApp
         private List<CustomControls.BtnChar> listAnswer;
         private readonly Random random = new Random();
         public static int total = 0, correct = 0;
-        public static double avg_time = 0;
+        public static double avg_time = 0, pb = 0;
         private readonly Stopwatch stopwatch = new Stopwatch();
         private bool submitted = false;
         public static bool highscore = false;
@@ -512,6 +512,8 @@ namespace DictionaryApp
                                     bestScore.InnerText = total.ToString();
                                     highscore = true;
                                 }
+                                else
+                                    pb = s;
                             }
                             else
                                 bestScore.InnerText = total.ToString();

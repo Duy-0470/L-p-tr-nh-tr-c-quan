@@ -22,13 +22,14 @@ namespace DictionaryApp
         private readonly Stopwatch stopwatch = new Stopwatch();
         private string[] ansPart;
         private bool finished = false;
-        public static int score = 60000, accuracy = 0;
-        public static double time = 0;
+        public static int score = 0, accuracy = 0;
+        public static double time = 0, pb = 0;
         public static bool highscore = false;
         private Classes.Word getWord = new Classes.Word();
         //private readonly Random rand = new Random();
         private int round = 0;
         private int choose = 0;
+        private int[] roundscore = new int[5];
 
         public FormHangman()
         {
@@ -44,6 +45,10 @@ namespace DictionaryApp
             LabelMeaning.Location = new Point((Width - LabelMeaning.Width) / 2, 25);
             LabelResult.Location = new Point(PanelLetters.Location.X + PanelLetters.Width / 2 - LabelResult.Width / 2, PanelLetters.Location.Y + PanelLetters.Height / 2 - LabelResult.Height / 2);
             LabelResult.Width = PanelLetters.Width;
+            for (int i = 0; i < roundscore.Length; i++)
+            {
+                roundscore[i] = 60000;
+            }
         }
 
         private void FormHangman_FormClosed(object sender, FormClosedEventArgs e)
@@ -129,7 +134,7 @@ namespace DictionaryApp
                             showletter[i * 2] = answer[i];
                             LabelGuess.Text = showletter.ToString();
                             correct++;
-                            score += 10000;
+                            roundscore[round] += 10000;
                         }
                     }
                 }
@@ -145,7 +150,7 @@ namespace DictionaryApp
                                 showletter[i * 2] = ansPart[0][i];
                                 LabelGuess.Text = showletter.ToString();
                                 correct++;
-                                score += 10000;
+                                roundscore[round] += 10000;
                             }
                         }
                     }
@@ -159,7 +164,7 @@ namespace DictionaryApp
                                 showletter[ansPart[0].Length * 2 + 3 + i * 2] = ansPart[1][i];
                                 LabelGuess.Text = showletter.ToString();
                                 correct++;
-                                score += 10000;
+                                roundscore[round] += 10000;
                             }
                         }
                     }
@@ -174,7 +179,8 @@ namespace DictionaryApp
                     LabelGuess.ForeColor = Color.Green;
                     PanelLetters.Visible = false;
                     LabelResult.Visible = true;
-                    LabelResult.Text = "Correct! You avoided the hang (for now)";
+                    LabelResult.Text = "Correct! You avoided the hang";
+                    score += roundscore[round];
                     LabelScore.Text = "Score: " + score.ToString();
                     ButtonCont.Visible = true;
                 }
@@ -182,12 +188,14 @@ namespace DictionaryApp
             else
             {
                 incorrect++;
-                score -= 5000;
+                if (roundscore[round] > 0)
+                    roundscore[round] -= 5000;
                 PictureBoxHangman.Load(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Database\\Files\\images\\hangman" + incorrect + ".png");
                 if (incorrect == 6)
                 {
                     TimeLimit.Stop();
                     stopwatch.Stop();
+                    roundscore[round] = 0;
                     finished = true;
                     PictureBoxHint.Visible = true;
                     time += Convert.ToDouble(stopwatch.ElapsedMilliseconds) / 1000;
@@ -201,6 +209,7 @@ namespace DictionaryApp
                     PanelLetters.Visible = false;
                     LabelResult.Visible = true;
                     LabelResult.Text = "You lost. You were hung";
+                    score += roundscore[round];
                     LabelScore.Text = "Score: " + score.ToString();
                     ButtonCont.Visible = true;
                 }
@@ -246,7 +255,12 @@ namespace DictionaryApp
                         if (double.TryParse(bestScore.InnerText, out double s))
                         {
                             if (score > s)
+                            {
+                                highscore = true;
                                 bestScore.InnerText = score.ToString();
+                            }
+                            else
+                                pb = s;
                         }
                         else
                             bestScore.InnerText = score.ToString();
@@ -376,7 +390,8 @@ namespace DictionaryApp
             if (timelimit > 1)
             {
                 timelimit--;
-                score -= 1000;
+                if (roundscore[round] > 0)
+                    roundscore[round] -= 1000;
                 LabelTimeLeft.Text = "Time left: " + timelimit.ToString() + "s";
             }
             else

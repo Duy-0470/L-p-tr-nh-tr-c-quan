@@ -26,7 +26,7 @@ namespace DictionaryApp
         public static int score = 0;
         private int counter = 0, timeleft = 20, ready = 3;
         private readonly Stopwatch stopwatch = new Stopwatch();
-        public static double avg_time = 0, correct = 0;
+        public static double avg_time = 0, correct = 0, pb = 0;
         public static bool highscore = false;
         private bool finished = false;
 
@@ -475,6 +475,8 @@ namespace DictionaryApp
                                                 highscore = true;
                                                 bestScoreCol.InnerText = score.ToString();
                                             }
+                                            else
+                                                pb = sCol;
                                         }
                                         else
                                             bestScoreCol.InnerText = score.ToString();
@@ -497,6 +499,8 @@ namespace DictionaryApp
                                                 highscore = true;
                                                 bestScorePV.InnerText = score.ToString();
                                             }
+                                            else
+                                                pb = sPV;
                                         }
                                         else
                                             bestScorePV.InnerText = score.ToString();
@@ -519,6 +523,8 @@ namespace DictionaryApp
                                                 highscore = true;
                                                 bestScoreIdiom.InnerText = score.ToString();
                                             }
+                                            else
+                                                pb = sIdiom;
                                         }
                                         else
                                             bestScoreIdiom.InnerText = score.ToString();
@@ -541,6 +547,8 @@ namespace DictionaryApp
                                                 highscore = true;
                                                 bestScoreWM.InnerText = score.ToString();
                                             }
+                                            else
+                                                pb = sWM;
                                         }
                                         else
                                             bestScoreWM.InnerText = score.ToString();
@@ -563,6 +571,8 @@ namespace DictionaryApp
                                                 highscore = true;
                                                 bestScoreWF.InnerText = score.ToString();
                                             }
+                                            else
+                                                pb = sWF;
                                         }
                                         else
                                             bestScoreWF.InnerText = score.ToString();
@@ -762,6 +772,19 @@ namespace DictionaryApp
         private void ButtonBack_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void PanelCollocations_MouseEnter(object sender, EventArgs e)
+        {
+            PanelCollocations.Padding = new Padding(3, 3, 3, 3);
+        }
+
+        private void PanelCollocations_Paint(object sender, PaintEventArgs e)
+        {
+            //Color col = Color.DarkBlue;
+            //ButtonBorderStyle bbs = ButtonBorderStyle.Solid;
+            //int thickness = 4;
+            //ControlPaint.DrawBorder(e.Graphics, this.PanelCollocations.ClientRectangle, col, thickness, bbs, col, thickness, bbs, col, thickness, bbs, col, thickness, bbs);
         }
 
         private void ButtonBack_MouseHover(object sender, EventArgs e)
