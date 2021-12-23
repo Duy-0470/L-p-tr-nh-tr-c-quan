@@ -162,7 +162,7 @@ namespace DictionaryApp
 
         private void ButtonReplay_MouseLeave(object sender, EventArgs e)
         {
-            ButtonSubReplay.BackColor = Color.LightSkyBlue;
+            ButtonSubReplay.BackColor = Color.FromArgb(153, 167, 153);
         }
 
         private void ButtonBackToGames_MouseEnter(object sender, EventArgs e)
@@ -172,7 +172,7 @@ namespace DictionaryApp
 
         private void ButtonBackToGames_MouseLeave(object sender, EventArgs e)
         {
-            ButtonSubBack.BackColor = Color.LightSkyBlue;
+            ButtonSubBack.BackColor = Color.FromArgb(153, 167, 153);
         }
 
         private void ButtonHome_MouseEnter(object sender, EventArgs e)
@@ -182,7 +182,7 @@ namespace DictionaryApp
 
         private void ButtonHome_MouseLeave(object sender, EventArgs e)
         {
-            ButtonSubHome.BackColor = Color.LightSkyBlue;
+            ButtonSubHome.BackColor = Color.FromArgb(153, 167, 153);
         }
 
         private void ButtonSubReplay_MouseEnter(object sender, EventArgs e)

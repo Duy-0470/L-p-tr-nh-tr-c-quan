@@ -106,7 +106,7 @@
             // 
             this.LabelTopic.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelTopic.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.LabelTopic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(194)))), ((int)(((byte)(169)))));
             this.LabelTopic.Font = new System.Drawing.Font("Times New Roman", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelTopic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(174)))));
             this.LabelTopic.Location = new System.Drawing.Point(0, -1);
@@ -118,7 +118,7 @@
             // 
             // PanelResultMenu
             // 
-            this.PanelResultMenu.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.PanelResultMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(167)))), ((int)(((byte)(153)))));
             this.PanelResultMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PanelResultMenu.Controls.Add(this.ButtonSubHome);
             this.PanelResultMenu.Controls.Add(this.ButtonSubBack);
