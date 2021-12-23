@@ -401,6 +401,7 @@ namespace DictionaryApp
             XmlDocument xmlDocument = new XmlDocument();
             if (!File.Exists(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\sw.xml"))
             {
+                highscore = true;
                 XmlElement root = xmlDocument.DocumentElement;
 
                 XmlDeclaration xmlDeclaration = xmlDocument.CreateXmlDeclaration("1.0", "UTF-8", null);

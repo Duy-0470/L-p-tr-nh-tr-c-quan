@@ -43,6 +43,7 @@ namespace DictionaryApp
             LabelReady.Location = new Point(0, 0);
             PanelQuiz.Size = Size;
             PanelRules.Size = Size;
+            LabelRules.Width = PanelRules.Width;
             LabelReady.Size = Size;
             PanelTopic.Size = Size;
             PanelCollocations.Size = PanelWF.Size = PanelWM.Size = PanelPhrasalVerbs.Size = PanelIdioms.Size = new Size(400, 100);
@@ -389,6 +390,7 @@ namespace DictionaryApp
             XmlDocument xmlDocument = new XmlDocument();
             if (!File.Exists(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Saved\\quiz.xml"))
             {
+                highscore = true;
                 XmlElement root = xmlDocument.DocumentElement;
 
                 // main node

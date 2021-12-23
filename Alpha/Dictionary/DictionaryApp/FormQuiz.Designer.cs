@@ -482,9 +482,7 @@
             // 
             // PanelRules
             // 
-            this.PanelRules.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelRules.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PanelRules.AutoScroll = true;
             this.PanelRules.Controls.Add(this.CheckBoxShowRules);
             this.PanelRules.Controls.Add(this.ButtonOKRules);
@@ -522,11 +520,11 @@
             // 
             // LabelRules
             // 
-            this.LabelRules.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LabelRules.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelRules.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelRules.Location = new System.Drawing.Point(0, 105);
+            this.LabelRules.Location = new System.Drawing.Point(0, 49);
             this.LabelRules.Name = "LabelRules";
-            this.LabelRules.Size = new System.Drawing.Size(961, 146);
+            this.LabelRules.Size = new System.Drawing.Size(961, 208);
             this.LabelRules.TabIndex = 0;
             this.LabelRules.Text = resources.GetString("LabelRules.Text");
             this.LabelRules.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
