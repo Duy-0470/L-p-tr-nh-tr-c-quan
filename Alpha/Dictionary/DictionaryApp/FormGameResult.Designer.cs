@@ -46,8 +46,10 @@
             this.PictureBoxHS = new System.Windows.Forms.PictureBox();
             this.LabelPB = new System.Windows.Forms.Label();
             this.LabelPBNum = new System.Windows.Forms.Label();
+            this.PanelInfo = new System.Windows.Forms.Panel();
             this.PanelResultMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHS)).BeginInit();
+            this.PanelInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // LabelScore
@@ -55,7 +57,7 @@
             this.LabelScore.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelScore.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelScore.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LabelScore.Location = new System.Drawing.Point(221, 194);
+            this.LabelScore.Location = new System.Drawing.Point(202, 103);
             this.LabelScore.Name = "LabelScore";
             this.LabelScore.Size = new System.Drawing.Size(659, 32);
             this.LabelScore.TabIndex = 0;
@@ -66,7 +68,7 @@
             // 
             this.LabelSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelSpeed.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelSpeed.Location = new System.Drawing.Point(221, 251);
+            this.LabelSpeed.Location = new System.Drawing.Point(202, 160);
             this.LabelSpeed.Name = "LabelSpeed";
             this.LabelSpeed.Size = new System.Drawing.Size(659, 32);
             this.LabelSpeed.TabIndex = 0;
@@ -188,7 +190,7 @@
             // 
             this.LabelAccuracy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelAccuracy.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelAccuracy.Location = new System.Drawing.Point(221, 310);
+            this.LabelAccuracy.Location = new System.Drawing.Point(202, 219);
             this.LabelAccuracy.Name = "LabelAccuracy";
             this.LabelAccuracy.Size = new System.Drawing.Size(659, 32);
             this.LabelAccuracy.TabIndex = 0;
@@ -200,7 +202,7 @@
             this.LabelScoreNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelScoreNum.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelScoreNum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LabelScoreNum.Location = new System.Drawing.Point(886, 194);
+            this.LabelScoreNum.Location = new System.Drawing.Point(867, 103);
             this.LabelScoreNum.Name = "LabelScoreNum";
             this.LabelScoreNum.Size = new System.Drawing.Size(768, 32);
             this.LabelScoreNum.TabIndex = 0;
@@ -212,7 +214,7 @@
             this.LabelSpeedNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelSpeedNum.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelSpeedNum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LabelSpeedNum.Location = new System.Drawing.Point(886, 251);
+            this.LabelSpeedNum.Location = new System.Drawing.Point(867, 160);
             this.LabelSpeedNum.Name = "LabelSpeedNum";
             this.LabelSpeedNum.Size = new System.Drawing.Size(718, 32);
             this.LabelSpeedNum.TabIndex = 0;
@@ -224,7 +226,7 @@
             this.LabelAccNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelAccNum.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelAccNum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LabelAccNum.Location = new System.Drawing.Point(886, 310);
+            this.LabelAccNum.Location = new System.Drawing.Point(867, 219);
             this.LabelAccNum.Name = "LabelAccNum";
             this.LabelAccNum.Size = new System.Drawing.Size(718, 32);
             this.LabelAccNum.TabIndex = 0;
@@ -233,22 +235,21 @@
             // 
             // LabelComment
             // 
-            this.LabelComment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.LabelComment.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelComment.AutoSize = true;
             this.LabelComment.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelComment.Location = new System.Drawing.Point(502, 533);
+            this.LabelComment.Location = new System.Drawing.Point(404, 502);
             this.LabelComment.Name = "LabelComment";
             this.LabelComment.Size = new System.Drawing.Size(125, 29);
             this.LabelComment.TabIndex = 4;
             this.LabelComment.Text = "comment";
-            this.LabelComment.Visible = false;
             // 
             // PictureBoxHS
             // 
             this.PictureBoxHS.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PictureBoxHS.BackgroundImage = global::DictionaryApp.Properties.Resources.highscore;
             this.PictureBoxHS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PictureBoxHS.Location = new System.Drawing.Point(1164, 170);
+            this.PictureBoxHS.Location = new System.Drawing.Point(1145, 80);
             this.PictureBoxHS.Name = "PictureBoxHS";
             this.PictureBoxHS.Size = new System.Drawing.Size(271, 78);
             this.PictureBoxHS.TabIndex = 5;
@@ -260,7 +261,7 @@
             this.LabelPB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelPB.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelPB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LabelPB.Location = new System.Drawing.Point(221, 403);
+            this.LabelPB.Location = new System.Drawing.Point(185, 312);
             this.LabelPB.Name = "LabelPB";
             this.LabelPB.Size = new System.Drawing.Size(659, 32);
             this.LabelPB.TabIndex = 0;
@@ -273,7 +274,7 @@
             this.LabelPBNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelPBNum.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelPBNum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LabelPBNum.Location = new System.Drawing.Point(886, 403);
+            this.LabelPBNum.Location = new System.Drawing.Point(850, 312);
             this.LabelPBNum.Name = "LabelPBNum";
             this.LabelPBNum.Size = new System.Drawing.Size(768, 32);
             this.LabelPBNum.TabIndex = 0;
@@ -281,27 +282,35 @@
             this.LabelPBNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LabelPBNum.Visible = false;
             // 
+            // PanelInfo
+            // 
+            this.PanelInfo.Controls.Add(this.LabelScore);
+            this.PanelInfo.Controls.Add(this.LabelComment);
+            this.PanelInfo.Controls.Add(this.PictureBoxHS);
+            this.PanelInfo.Controls.Add(this.LabelPB);
+            this.PanelInfo.Controls.Add(this.LabelScoreNum);
+            this.PanelInfo.Controls.Add(this.LabelPBNum);
+            this.PanelInfo.Controls.Add(this.LabelSpeedNum);
+            this.PanelInfo.Controls.Add(this.LabelAccNum);
+            this.PanelInfo.Controls.Add(this.LabelSpeed);
+            this.PanelInfo.Controls.Add(this.LabelAccuracy);
+            this.PanelInfo.Location = new System.Drawing.Point(103, 71);
+            this.PanelInfo.Name = "PanelInfo";
+            this.PanelInfo.Size = new System.Drawing.Size(1729, 735);
+            this.PanelInfo.TabIndex = 6;
+            // 
             // FormGameResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1833, 1061);
-            this.Controls.Add(this.PictureBoxHS);
-            this.Controls.Add(this.LabelComment);
+            this.Controls.Add(this.PanelInfo);
             this.Controls.Add(this.PanelResultMenu);
             this.Controls.Add(this.ButtonBackToGames);
             this.Controls.Add(this.ButtonHome);
             this.Controls.Add(this.ButtonReplay);
             this.Controls.Add(this.LabelTopic);
-            this.Controls.Add(this.LabelAccuracy);
-            this.Controls.Add(this.LabelSpeed);
-            this.Controls.Add(this.LabelAccNum);
-            this.Controls.Add(this.LabelSpeedNum);
-            this.Controls.Add(this.LabelPBNum);
-            this.Controls.Add(this.LabelScoreNum);
-            this.Controls.Add(this.LabelPB);
-            this.Controls.Add(this.LabelScore);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormGameResult";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -310,8 +319,9 @@
             this.Load += new System.EventHandler(this.FormGameResult_Load);
             this.PanelResultMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHS)).EndInit();
+            this.PanelInfo.ResumeLayout(false);
+            this.PanelInfo.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -335,5 +345,6 @@
         private System.Windows.Forms.PictureBox PictureBoxHS;
         private System.Windows.Forms.Label LabelPB;
         private System.Windows.Forms.Label LabelPBNum;
+        private System.Windows.Forms.Panel PanelInfo;
     }
 }

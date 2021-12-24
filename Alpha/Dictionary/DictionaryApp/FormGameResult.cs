@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
 
 namespace DictionaryApp
 {
@@ -33,6 +26,7 @@ namespace DictionaryApp
             ButtonReplay.Location = new Point(PanelResultMenu.Width, ButtonSubReplay.Location.Y + LabelTopic.Height);
             ButtonBackToGames.Location = new Point(PanelResultMenu.Width, ButtonSubBack.Location.Y + LabelTopic.Height);
             ButtonHome.Location = new Point(PanelResultMenu.Width, ButtonSubHome.Location.Y + LabelTopic.Height);
+            
             LabelComment.Text = "";
         }
 
@@ -59,9 +53,12 @@ namespace DictionaryApp
                     PictureBoxHS.Visible = true;
                 else
                 {
-                    LabelPB.Visible = true;
-                    LabelPBNum.Visible = true;
-                    LabelPBNum.Text = FormQuiz.pb.ToString();
+                    if (FormQuiz.pb > 0)
+                    {
+                        LabelPB.Visible = true;
+                        LabelPBNum.Visible = true;
+                        LabelPBNum.Text = FormQuiz.pb.ToString();
+                    }
                 }
             }
             else if (FormGamesSelect.gameType == FormGamesSelect.GameType.SW)
@@ -75,9 +72,12 @@ namespace DictionaryApp
                     PictureBoxHS.Visible = true;
                 else
                 {
-                    LabelPB.Visible = true;
-                    LabelPBNum.Visible = true;
-                    LabelPBNum.Text = FormSW.pb.ToString();
+                    if (FormSW.pb > 0)
+                    {
+                        LabelPB.Visible = true;
+                        LabelPBNum.Visible = true;
+                        LabelPBNum.Text = FormSW.pb.ToString();
+                    }
                 }
                 if (FormSW.avg_time / 1000 / FormSW.number_question <= 3 && Convert.ToDouble(FormSW.correct / FormSW.number_question * 100) < 30)
                     LabelComment.Text = "Your accuracy was very low, unlike your speed.\nSeems like rushing is not always a good idea";
@@ -111,9 +111,12 @@ namespace DictionaryApp
                     PictureBoxHS.Visible = true;
                 else
                 {
-                    LabelPB.Visible = true;
-                    LabelPBNum.Visible = true;
-                    LabelPBNum.Text = FormHangman.pb.ToString();
+                    if (FormHangman.pb > 0)
+                    {
+                        LabelPB.Visible = true;
+                        LabelPBNum.Visible = true;
+                        LabelPBNum.Text = FormHangman.pb.ToString();
+                    }
                 }
             }
         }

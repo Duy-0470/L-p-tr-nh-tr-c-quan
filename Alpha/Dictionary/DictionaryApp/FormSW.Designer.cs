@@ -194,6 +194,7 @@
             this.Controls.Add(this.btn_Submit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormSW";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Your Dictionaries";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormSW_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
