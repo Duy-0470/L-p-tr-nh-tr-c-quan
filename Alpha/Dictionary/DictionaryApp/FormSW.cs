@@ -43,6 +43,7 @@ namespace DictionaryApp
             Bounds = Screen.PrimaryScreen.Bounds;
             Debug.WriteLine(FormSWSettings.number_question);
             lb_Meaning.Location = new Point((Width - lb_Meaning.Width) / 2, Height * 30 / 100);
+            LabelResult.Location = new Point((Width - LabelResult.Width) / 2, lb_Meaning.Location.Y + lb_Meaning.Height + 40);
             do
             {
                 GetWord = databaseHandle.RandomWord();

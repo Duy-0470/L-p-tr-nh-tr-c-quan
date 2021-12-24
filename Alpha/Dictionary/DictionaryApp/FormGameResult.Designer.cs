@@ -109,7 +109,7 @@
             this.LabelTopic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(194)))), ((int)(((byte)(169)))));
             this.LabelTopic.Font = new System.Drawing.Font("Times New Roman", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelTopic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(174)))));
-            this.LabelTopic.Location = new System.Drawing.Point(0, -1);
+            this.LabelTopic.Location = new System.Drawing.Point(0, 0);
             this.LabelTopic.Name = "LabelTopic";
             this.LabelTopic.Size = new System.Drawing.Size(1832, 71);
             this.LabelTopic.TabIndex = 0;

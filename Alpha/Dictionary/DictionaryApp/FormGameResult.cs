@@ -25,9 +25,14 @@ namespace DictionaryApp
             ButtonSubBack.FlatAppearance.BorderSize = 0;
             ButtonSubHome.FlatAppearance.BorderSize = 0;
             ButtonSubReplay.FlatAppearance.BorderSize = 0;
-            ButtonReplay.Location = new Point(PanelResultMenu.Width, 861);
-            ButtonBackToGames.Location = new Point(PanelResultMenu.Width, 921);
-            ButtonHome.Location = new Point(PanelResultMenu.Width, 981);
+            PanelResultMenu.Height = Height - LabelTopic.Height;
+            PanelResultMenu.Location = new Point(0, LabelTopic.Height);
+            ButtonSubReplay.Location = new Point(0, PanelResultMenu.Height - 240);
+            ButtonSubBack.Location = new Point(0, PanelResultMenu.Height - 180);
+            ButtonSubHome.Location = new Point(0, PanelResultMenu.Height - 120);
+            ButtonReplay.Location = new Point(PanelResultMenu.Width, ButtonSubReplay.Location.Y + LabelTopic.Height);
+            ButtonBackToGames.Location = new Point(PanelResultMenu.Width, ButtonSubBack.Location.Y + LabelTopic.Height);
+            ButtonHome.Location = new Point(PanelResultMenu.Width, ButtonSubHome.Location.Y + LabelTopic.Height);
             LabelComment.Text = "";
         }
 

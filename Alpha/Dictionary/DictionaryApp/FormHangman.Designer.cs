@@ -454,6 +454,8 @@
             // 
             // PictureBoxHangman
             // 
+            this.PictureBoxHangman.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PictureBoxHangman.BackgroundImage = global::DictionaryApp.Properties.Resources.hangman0;
             this.PictureBoxHangman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PictureBoxHangman.Location = new System.Drawing.Point(243, 232);
@@ -466,10 +468,11 @@
             // 
             // PictureBoxHint
             // 
+            this.PictureBoxHint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.PictureBoxHint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PictureBoxHint.Location = new System.Drawing.Point(665, 204);
+            this.PictureBoxHint.Location = new System.Drawing.Point(665, 163);
             this.PictureBoxHint.Name = "PictureBoxHint";
-            this.PictureBoxHint.Size = new System.Drawing.Size(671, 366);
+            this.PictureBoxHint.Size = new System.Drawing.Size(671, 376);
             this.PictureBoxHint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBoxHint.TabIndex = 0;
             this.PictureBoxHint.TabStop = false;
@@ -491,7 +494,8 @@
             // 
             // LabelGuess
             // 
-            this.LabelGuess.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelGuess.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelGuess.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelGuess.Location = new System.Drawing.Point(0, 599);
             this.LabelGuess.Name = "LabelGuess";
@@ -603,7 +607,7 @@
             this.LabelMeaning.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelMeaning.Location = new System.Drawing.Point(475, 25);
             this.LabelMeaning.Name = "LabelMeaning";
-            this.LabelMeaning.Size = new System.Drawing.Size(1051, 176);
+            this.LabelMeaning.Size = new System.Drawing.Size(1051, 135);
             this.LabelMeaning.TabIndex = 11;
             this.LabelMeaning.Text = "meaning";
             this.LabelMeaning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
