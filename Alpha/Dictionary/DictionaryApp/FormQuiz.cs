@@ -246,7 +246,7 @@ namespace DictionaryApp
             if (quizzes[counter].rightAnswer == 1)
             {
                 ButtonA.BackColor = Color.Green;
-                score += (15 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
+                score += (20 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
                 LabelScore.Text = "Your score: " + score.ToString();
                 correct++;
             }
@@ -275,7 +275,7 @@ namespace DictionaryApp
             if (quizzes[counter].rightAnswer == 2)
             {
                 ButtonB.BackColor = Color.Green;
-                score += (15 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
+                score += (20 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
                 LabelScore.Text = "Your score: " + score.ToString();
                 correct++;
             }
@@ -304,7 +304,7 @@ namespace DictionaryApp
             if (quizzes[counter].rightAnswer == 3)
             {
                 ButtonC.BackColor = Color.Green;
-                score += (15 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
+                score += (20 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
                 LabelScore.Text = "Your score: " + score.ToString();
                 correct++;
             }
@@ -333,7 +333,7 @@ namespace DictionaryApp
             if (quizzes[counter].rightAnswer == 4)
             {
                 ButtonD.BackColor = Color.Green;
-                score += (15 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
+                score += (20 - unchecked((int)stopwatch.ElapsedMilliseconds) / 1000) * 1000;
                 LabelScore.Text = "Your score: " + score.ToString();
                 correct++;
             }
@@ -778,15 +778,12 @@ namespace DictionaryApp
 
         private void PanelCollocations_MouseEnter(object sender, EventArgs e)
         {
-            PanelCollocations.Padding = new Padding(3, 3, 3, 3);
+            
         }
 
         private void PanelCollocations_Paint(object sender, PaintEventArgs e)
         {
-            //Color col = Color.DarkBlue;
-            //ButtonBorderStyle bbs = ButtonBorderStyle.Solid;
-            //int thickness = 4;
-            //ControlPaint.DrawBorder(e.Graphics, this.PanelCollocations.ClientRectangle, col, thickness, bbs, col, thickness, bbs, col, thickness, bbs, col, thickness, bbs);
+            
         }
 
         private void ButtonBack_MouseHover(object sender, EventArgs e)
@@ -802,7 +799,7 @@ namespace DictionaryApp
             {
                 PanelQuiz.Visible = false;
                 counter = score = 0;
-                timeleft = 15;
+                timeleft = 20;
                 LabelTimeLeft.Text = "Time left: 15s";
                 ready = 3;
                 LabelReady.Text = ready.ToString();

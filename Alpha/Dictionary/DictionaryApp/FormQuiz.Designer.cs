@@ -127,6 +127,7 @@
             this.PanelWF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelWF.Controls.Add(this.LabelWFDes);
             this.PanelWF.Controls.Add(this.LabelWF);
+            this.PanelWF.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelWF.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelWF.Location = new System.Drawing.Point(713, 361);
             this.PanelWF.Name = "PanelWF";
@@ -165,6 +166,7 @@
             this.PanelWM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelWM.Controls.Add(this.LabelWMDes);
             this.PanelWM.Controls.Add(this.LabelWM);
+            this.PanelWM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelWM.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelWM.Location = new System.Drawing.Point(713, 237);
             this.PanelWM.Name = "PanelWM";
@@ -203,6 +205,7 @@
             this.PanelIdioms.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelIdioms.Controls.Add(this.LabelIdiomsDes);
             this.PanelIdioms.Controls.Add(this.LabelIdioms);
+            this.PanelIdioms.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelIdioms.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelIdioms.Location = new System.Drawing.Point(527, 493);
             this.PanelIdioms.Name = "PanelIdioms";
@@ -241,6 +244,7 @@
             this.PanelPhrasalVerbs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelPhrasalVerbs.Controls.Add(this.LabelPVDes);
             this.PanelPhrasalVerbs.Controls.Add(this.LabelPV);
+            this.PanelPhrasalVerbs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelPhrasalVerbs.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelPhrasalVerbs.Location = new System.Drawing.Point(339, 361);
             this.PanelPhrasalVerbs.Name = "PanelPhrasalVerbs";
@@ -279,6 +283,7 @@
             this.PanelCollocations.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelCollocations.Controls.Add(this.LabelCollocationsDes);
             this.PanelCollocations.Controls.Add(this.LabelCollocations);
+            this.PanelCollocations.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelCollocations.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelCollocations.Location = new System.Drawing.Point(339, 237);
             this.PanelCollocations.Name = "PanelCollocations";
