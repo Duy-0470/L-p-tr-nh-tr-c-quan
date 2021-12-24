@@ -35,10 +35,11 @@ namespace DictionaryApp
         {
             InitializeComponent();
             Bounds = Screen.PrimaryScreen.Bounds;
-            PanelLetters.Location = new Point((Width - PanelLetters.Width) / 2, Height - PanelLetters.Height - 80);
-            PictureBoxHint.Location = new Point((Width - PictureBoxHint.Width) / 2, LabelMeaning.Location.Y + LabelMeaning.Height + 20);
+            PictureBoxHint.Location = new Point((Width - PictureBoxHint.Width) / 2, LabelMeaning.Location.Y + LabelMeaning.Height);
             LabelGuess.Text = "";
             LabelGuess.Width = Width;
+            LabelGuess.Location = new Point((Width - LabelGuess.Width) / 2, (Height - LabelGuess.Height) / 2 + 40);
+            PanelLetters.Location = new Point((Width - PanelLetters.Width) / 2, LabelGuess.Location.Y + LabelGuess.Height + 60);
             LabelReady.Location = new Point((Width - LabelReady.Width) / 2, (Height - LabelReady.Height) / 2);
             PanelRules.Location = new Point(0, 0);
             PanelRules.Size = Size;
@@ -70,12 +71,15 @@ namespace DictionaryApp
         private void LoadQuestion()
         {
             incorrect = correct = 0;
-            timelimit = 60;
-            hintImage = databaseHandle.RandomImage();
-            answer = hintImage.name.Substring(0, hintImage.name.IndexOf('_')).ToUpper();
-            PictureBoxHint.Load(hintImage.link);
+            timelimit = 60;                      
             PictureBoxHint.SizeMode = PictureBoxSizeMode.Zoom;
-            getWord = databaseHandle.FindWord(hintImage.name);
+            do
+            {
+                hintImage = databaseHandle.RandomImage();
+                getWord = databaseHandle.FindWord(hintImage.name);
+            } while (getWord == null);
+            answer = hintImage.name.Substring(0, hintImage.name.IndexOf('_')).ToUpper();
+            PictureBoxHint.Image = Image.FromFile(hintImage.link);
             LabelMeaning.Text = getWord.senses[0/*rand.Next(0, getWord.senses.Count())*/].meaning.Replace("=", string.Empty);
             LabelMeaning.Text = LabelMeaning.Text[0].ToString().ToUpper() + LabelMeaning.Text.Substring(1);
             Debug.WriteLine(answer + " " + hintImage.link);

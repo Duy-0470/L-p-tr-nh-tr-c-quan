@@ -18,12 +18,15 @@ namespace DictionaryApp
             Quizzes, SW, Hangman
         }
         public static GameType gameType;
+        //public static bool maximized = false;
         
         public FormGamesSelect()
         {
             InitializeComponent();
             ButtonHome.FlatAppearance.BorderSize = 0;
-            Bounds = Screen.PrimaryScreen.Bounds;            
+            Bounds = Screen.PrimaryScreen.Bounds;
+            //if (Form1.maximized)
+            //    WindowState = FormWindowState.Maximized;
         }
 
         private void panel1_MouseClick(object sender, MouseEventArgs e)
