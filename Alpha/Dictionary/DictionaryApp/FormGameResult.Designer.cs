@@ -237,13 +237,13 @@
             // LabelComment
             // 
             this.LabelComment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelComment.AutoSize = true;
             this.LabelComment.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelComment.Location = new System.Drawing.Point(404, 502);
+            this.LabelComment.Location = new System.Drawing.Point(0, 458);
             this.LabelComment.Name = "LabelComment";
-            this.LabelComment.Size = new System.Drawing.Size(125, 29);
+            this.LabelComment.Size = new System.Drawing.Size(1726, 63);
             this.LabelComment.TabIndex = 4;
             this.LabelComment.Text = "comment";
+            this.LabelComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PictureBoxHS
             // 
@@ -323,7 +323,6 @@
             this.PanelResultMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHS)).EndInit();
             this.PanelInfo.ResumeLayout(false);
-            this.PanelInfo.PerformLayout();
             this.ResumeLayout(false);
 
         }

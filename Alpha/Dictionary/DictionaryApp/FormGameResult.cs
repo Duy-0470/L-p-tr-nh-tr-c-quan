@@ -37,7 +37,7 @@ namespace DictionaryApp
             {
                 LabelScoreNum.Text = FormQuiz.score.ToString();
                 LabelSpeedNum.Text = (FormQuiz.avg_time / 1000 / 20).ToString();
-                LabelAccNum.Text = Convert.ToDouble(FormQuiz.correct / 20 * 100).ToString();
+                LabelAccNum.Text = Convert.ToDouble((double)FormQuiz.correct / 20 * 100).ToString();
                 LabelTopic.Text = "   Quizzes - " + FormQuiz.q_topic.ToString().Replace('_', ' ');
                 LabelComment.Visible = true;
                 if (FormQuiz.avg_time / 1000 / 20 < 3 && FormQuiz.correct < 4)
@@ -67,7 +67,7 @@ namespace DictionaryApp
                 LabelTopic.Text = "   Word Scrambler";
                 LabelScoreNum.Text = FormSW.total.ToString();
                 LabelSpeedNum.Text = (FormSW.avg_time / 1000 / FormSW.number_question).ToString();
-                LabelAccNum.Text = Convert.ToDouble(FormSW.correct / FormSW.number_question * 100).ToString();
+                LabelAccNum.Text = Convert.ToDouble((double)FormSW.correct / FormSW.number_question * 100).ToString();
                 LabelSpeed.Text = LabelSpeed.Text.Replace("question", "round");
                 if (FormSW.highscore)
                     PictureBoxHS.Visible = true;
@@ -80,17 +80,16 @@ namespace DictionaryApp
                         LabelPBNum.Text = FormSW.pb.ToString();
                     }
                 }
-                if (FormSW.avg_time / 1000 / FormSW.number_question <= 3 && Convert.ToDouble(FormSW.correct / FormSW.number_question * 100) < 30)
+                if (FormSW.avg_time / 1000 / FormSW.number_question <= 3 && (double)FormSW.correct / FormSW.number_question * 100 < 30)
                     LabelComment.Text = "Your accuracy was very low, unlike your speed.\nSeems like rushing is not always a good idea";
-                else if (FormSW.avg_time / 1000 / FormSW.number_question > 7 && Convert.ToDouble(FormSW.correct / FormSW.number_question * 100) < 50)
+                else if (FormSW.avg_time / 1000 / FormSW.number_question > 7 && (double)FormSW.correct / FormSW.number_question * 100 < 50)
                     LabelComment.Text = "Both of your speed and accuracy was below average.\nMaybe you should try raising the time limit a bit and comeback when you are better";
-                else if (FormSW.avg_time / 1000 / FormSW.number_question > 7 && Convert.ToDouble(FormSW.correct / FormSW.number_question * 100) > 50)
+                else if (FormSW.avg_time / 1000 / FormSW.number_question > 7 && (double)FormSW.correct / FormSW.number_question * 100 > 50)
                     LabelComment.Text = "You sacraficed speed for accuracy.\nThere is nothing wrong in being careful, but the lack of speed might prevent you from being perfect";
-                else if (FormSW.avg_time / 1000 / FormSW.number_question < 7 && Convert.ToDouble(FormSW.correct / FormSW.number_question * 100) > 50)
+                else if (FormSW.avg_time / 1000 / FormSW.number_question < 7 && (double)FormSW.correct / FormSW.number_question * 100 > 50)
                     LabelComment.Text = "Well done! Both of your speed and accuracy was above average.\nPerfection was never impossible";
-                else if (FormSW.avg_time / 1000 / FormSW.number_question > 7 && Convert.ToDouble(FormSW.correct / FormSW.number_question * 100) < 50)
+                else if (FormSW.avg_time / 1000 / FormSW.number_question < 7 && (double)FormSW.correct / FormSW.number_question * 100 < 50)
                     LabelComment.Text = "Find yourself struggling? Try increasing the time limit and the number of question";
-
             }
             else if (FormGamesSelect.gameType == FormGamesSelect.GameType.Hangman)
             {

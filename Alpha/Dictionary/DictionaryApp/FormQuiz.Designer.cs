@@ -91,7 +91,7 @@
             this.PanelTopic.Controls.Add(this.PanelCollocations);
             this.PanelTopic.Location = new System.Drawing.Point(0, 0);
             this.PanelTopic.Name = "PanelTopic";
-            this.PanelTopic.Size = new System.Drawing.Size(1338, 745);
+            this.PanelTopic.Size = new System.Drawing.Size(937, 745);
             this.PanelTopic.TabIndex = 4;
             // 
             // ButtonBack
@@ -101,7 +101,7 @@
             this.ButtonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonBack.Location = new System.Drawing.Point(0, 0);
             this.ButtonBack.Name = "ButtonBack";
-            this.ButtonBack.Size = new System.Drawing.Size(30, 30);
+            this.ButtonBack.Size = new System.Drawing.Size(50, 50);
             this.ButtonBack.TabIndex = 4;
             this.ButtonBack.UseVisualStyleBackColor = true;
             this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
@@ -115,7 +115,7 @@
             this.LabelChooseTP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
             this.LabelChooseTP.Location = new System.Drawing.Point(0, 69);
             this.LabelChooseTP.Name = "LabelChooseTP";
-            this.LabelChooseTP.Size = new System.Drawing.Size(1335, 79);
+            this.LabelChooseTP.Size = new System.Drawing.Size(934, 79);
             this.LabelChooseTP.TabIndex = 10;
             this.LabelChooseTP.Text = "Please choose a topic";
             this.LabelChooseTP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -129,7 +129,7 @@
             this.PanelWF.Controls.Add(this.LabelWF);
             this.PanelWF.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelWF.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PanelWF.Location = new System.Drawing.Point(713, 361);
+            this.PanelWF.Location = new System.Drawing.Point(512, 361);
             this.PanelWF.Name = "PanelWF";
             this.PanelWF.Size = new System.Drawing.Size(294, 89);
             this.PanelWF.TabIndex = 9;
@@ -168,7 +168,7 @@
             this.PanelWM.Controls.Add(this.LabelWM);
             this.PanelWM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelWM.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PanelWM.Location = new System.Drawing.Point(713, 237);
+            this.PanelWM.Location = new System.Drawing.Point(512, 237);
             this.PanelWM.Name = "PanelWM";
             this.PanelWM.Size = new System.Drawing.Size(294, 89);
             this.PanelWM.TabIndex = 8;
@@ -207,7 +207,7 @@
             this.PanelIdioms.Controls.Add(this.LabelIdioms);
             this.PanelIdioms.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelIdioms.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PanelIdioms.Location = new System.Drawing.Point(527, 493);
+            this.PanelIdioms.Location = new System.Drawing.Point(326, 493);
             this.PanelIdioms.Name = "PanelIdioms";
             this.PanelIdioms.Size = new System.Drawing.Size(294, 89);
             this.PanelIdioms.TabIndex = 5;
@@ -246,7 +246,7 @@
             this.PanelPhrasalVerbs.Controls.Add(this.LabelPV);
             this.PanelPhrasalVerbs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelPhrasalVerbs.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PanelPhrasalVerbs.Location = new System.Drawing.Point(339, 361);
+            this.PanelPhrasalVerbs.Location = new System.Drawing.Point(138, 361);
             this.PanelPhrasalVerbs.Name = "PanelPhrasalVerbs";
             this.PanelPhrasalVerbs.Size = new System.Drawing.Size(294, 89);
             this.PanelPhrasalVerbs.TabIndex = 6;
@@ -285,7 +285,7 @@
             this.PanelCollocations.Controls.Add(this.LabelCollocations);
             this.PanelCollocations.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelCollocations.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PanelCollocations.Location = new System.Drawing.Point(339, 237);
+            this.PanelCollocations.Location = new System.Drawing.Point(138, 237);
             this.PanelCollocations.Name = "PanelCollocations";
             this.PanelCollocations.Size = new System.Drawing.Size(294, 89);
             this.PanelCollocations.TabIndex = 7;
@@ -491,7 +491,7 @@
             this.PanelRules.Controls.Add(this.CheckBoxShowRules);
             this.PanelRules.Controls.Add(this.ButtonOKRules);
             this.PanelRules.Controls.Add(this.LabelRules);
-            this.PanelRules.Location = new System.Drawing.Point(1373, 12);
+            this.PanelRules.Location = new System.Drawing.Point(955, 0);
             this.PanelRules.Name = "PanelRules";
             this.PanelRules.Size = new System.Drawing.Size(964, 463);
             this.PanelRules.TabIndex = 6;
@@ -501,10 +501,10 @@
             // 
             this.CheckBoxShowRules.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CheckBoxShowRules.AutoSize = true;
-            this.CheckBoxShowRules.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBoxShowRules.Location = new System.Drawing.Point(290, 289);
+            this.CheckBoxShowRules.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckBoxShowRules.Location = new System.Drawing.Point(253, 299);
             this.CheckBoxShowRules.Name = "CheckBoxShowRules";
-            this.CheckBoxShowRules.Size = new System.Drawing.Size(166, 21);
+            this.CheckBoxShowRules.Size = new System.Drawing.Size(189, 25);
             this.CheckBoxShowRules.TabIndex = 2;
             this.CheckBoxShowRules.Text = "Don\'t show this again";
             this.CheckBoxShowRules.UseVisualStyleBackColor = true;
@@ -513,10 +513,10 @@
             // ButtonOKRules
             // 
             this.ButtonOKRules.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ButtonOKRules.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonOKRules.Location = new System.Drawing.Point(558, 284);
+            this.ButtonOKRules.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonOKRules.Location = new System.Drawing.Point(558, 290);
             this.ButtonOKRules.Name = "ButtonOKRules";
-            this.ButtonOKRules.Size = new System.Drawing.Size(114, 30);
+            this.ButtonOKRules.Size = new System.Drawing.Size(130, 42);
             this.ButtonOKRules.TabIndex = 1;
             this.ButtonOKRules.Text = "OK";
             this.ButtonOKRules.UseVisualStyleBackColor = true;

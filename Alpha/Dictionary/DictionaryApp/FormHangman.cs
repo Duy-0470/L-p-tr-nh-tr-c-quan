@@ -18,7 +18,8 @@ namespace DictionaryApp
         private readonly Stopwatch stopwatch = new Stopwatch();
         private string[] ansPart;
         private bool finished = false;
-        public static int score = 0, accuracy = 0;
+        public static int score = 0;
+        public static double accuracy = 0;
         public static double time = 0, pb = 0;
         public static bool highscore = false;
         private Classes.Word getWord = new Classes.Word();
@@ -364,7 +365,7 @@ namespace DictionaryApp
             }
             else
             {
-                time = time / 1000 / 5;
+                time = time / 5;
                 accuracy = accuracy / choose * 100;
                 SaveProgress();
                 Close();

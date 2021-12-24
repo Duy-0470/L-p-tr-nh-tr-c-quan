@@ -565,10 +565,10 @@
             // 
             this.CheckBoxShowRules.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CheckBoxShowRules.AutoSize = true;
-            this.CheckBoxShowRules.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckBoxShowRules.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckBoxShowRules.Location = new System.Drawing.Point(266, 323);
             this.CheckBoxShowRules.Name = "CheckBoxShowRules";
-            this.CheckBoxShowRules.Size = new System.Drawing.Size(174, 22);
+            this.CheckBoxShowRules.Size = new System.Drawing.Size(189, 25);
             this.CheckBoxShowRules.TabIndex = 11;
             this.CheckBoxShowRules.Text = "Don\'t show this again";
             this.CheckBoxShowRules.UseVisualStyleBackColor = true;
@@ -576,10 +576,10 @@
             // ButtonOKRules
             // 
             this.ButtonOKRules.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ButtonOKRules.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonOKRules.Location = new System.Drawing.Point(537, 315);
+            this.ButtonOKRules.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonOKRules.Location = new System.Drawing.Point(536, 311);
             this.ButtonOKRules.Name = "ButtonOKRules";
-            this.ButtonOKRules.Size = new System.Drawing.Size(125, 36);
+            this.ButtonOKRules.Size = new System.Drawing.Size(137, 41);
             this.ButtonOKRules.TabIndex = 10;
             this.ButtonOKRules.Text = "OK";
             this.ButtonOKRules.UseVisualStyleBackColor = true;
