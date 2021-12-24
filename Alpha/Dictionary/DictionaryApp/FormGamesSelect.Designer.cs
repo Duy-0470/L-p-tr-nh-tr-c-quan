@@ -61,9 +61,9 @@
             // 
             this.LabelYourGames.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelYourGames.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelYourGames.Font = new System.Drawing.Font("Times New Roman", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelYourGames.ForeColor = System.Drawing.Color.DarkRed;
-            this.LabelYourGames.Location = new System.Drawing.Point(1, 9);
+            this.LabelYourGames.Location = new System.Drawing.Point(1, 46);
             this.LabelYourGames.Name = "LabelYourGames";
             this.LabelYourGames.Size = new System.Drawing.Size(991, 51);
             this.LabelYourGames.TabIndex = 0;
@@ -135,7 +135,7 @@
             this.PanelQuizzesBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(199)))), ((int)(((byte)(193)))));
             this.PanelQuizzesBorder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelQuizzesBorder.Controls.Add(this.PanelQuizzes);
-            this.PanelQuizzesBorder.Location = new System.Drawing.Point(91, 136);
+            this.PanelQuizzesBorder.Location = new System.Drawing.Point(91, 163);
             this.PanelQuizzesBorder.Name = "PanelQuizzesBorder";
             this.PanelQuizzesBorder.Size = new System.Drawing.Size(307, 158);
             this.PanelQuizzesBorder.TabIndex = 2;
@@ -147,8 +147,8 @@
             // 
             this.LabelIntro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelIntro.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelIntro.Location = new System.Drawing.Point(12, 63);
+            this.LabelIntro.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelIntro.Location = new System.Drawing.Point(12, 106);
             this.LabelIntro.Name = "LabelIntro";
             this.LabelIntro.Size = new System.Drawing.Size(968, 35);
             this.LabelIntro.TabIndex = 4;
@@ -161,7 +161,7 @@
             this.PanelWS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(181)))), ((int)(((byte)(175)))));
             this.PanelWS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelWS.Controls.Add(this.PanelWSDes);
-            this.PanelWS.Location = new System.Drawing.Point(589, 136);
+            this.PanelWS.Location = new System.Drawing.Point(589, 163);
             this.PanelWS.Name = "PanelWS";
             this.PanelWS.Size = new System.Drawing.Size(307, 158);
             this.PanelWS.TabIndex = 2;
@@ -232,7 +232,7 @@
             this.PanelHangman.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(202)))), ((int)(((byte)(178)))));
             this.PanelHangman.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelHangman.Controls.Add(this.PanelHangmanDes);
-            this.PanelHangman.Location = new System.Drawing.Point(343, 394);
+            this.PanelHangman.Location = new System.Drawing.Point(343, 421);
             this.PanelHangman.Name = "PanelHangman";
             this.PanelHangman.Size = new System.Drawing.Size(307, 158);
             this.PanelHangman.TabIndex = 2;
@@ -304,7 +304,7 @@
             this.ButtonHome.Image = global::DictionaryApp.Properties.Resources.icons8_home_24px;
             this.ButtonHome.Location = new System.Drawing.Point(1, 1);
             this.ButtonHome.Name = "ButtonHome";
-            this.ButtonHome.Size = new System.Drawing.Size(30, 30);
+            this.ButtonHome.Size = new System.Drawing.Size(50, 50);
             this.ButtonHome.TabIndex = 5;
             this.ButtonHome.UseVisualStyleBackColor = true;
             this.ButtonHome.Click += new System.EventHandler(this.ButtonHome_Click);

@@ -113,7 +113,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelChooseTP.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelChooseTP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
-            this.LabelChooseTP.Location = new System.Drawing.Point(0, 1);
+            this.LabelChooseTP.Location = new System.Drawing.Point(0, 69);
             this.LabelChooseTP.Name = "LabelChooseTP";
             this.LabelChooseTP.Size = new System.Drawing.Size(1335, 79);
             this.LabelChooseTP.TabIndex = 10;

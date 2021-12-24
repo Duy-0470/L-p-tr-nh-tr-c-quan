@@ -403,17 +403,9 @@ namespace DictionaryApp
                 TimeLimit.Stop();
                 stopwatch.Stop();
                 PanelLetters.Visible = false;
-                Label result = new Label()
-                {
-                    Text = "You ran out of time\nYou were hung",
-                    Font = new Font(new Font("Times New Roman", 28), FontStyle.Regular),
-                    Size = PanelLetters.Size,
-                    TextAlign = ContentAlignment.MiddleCenter,
-                    Location = PanelLetters.Location
-                };
+                ButtonCont.Visible = true;
+                LabelResult.Visible = true;
                 PictureBoxHint.Visible = true;
-                PanelLetters.Controls.Add(result);
-                result.Location = new Point((PanelLetters.Width - result.Width) / 2, (PanelLetters.Height - result.Height) / 2 - 30);
                 PictureBoxHangman.Load(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 9) + "Database\\Files\\images\\hangman6.png");
                 LabelGuess.Text = "";
                 LabelGuess.ForeColor = Color.Red;

@@ -47,7 +47,7 @@ namespace DictionaryApp
                 {
                     GetWord = databaseHandle.RandomWord();
                     word = GetWord.wordHeader.word;
-                } while (word.Length >= 10);
+                } while (word.Length >= 10 || GetWord.senses.Count == 0 || word.Any(c => char.IsDigit(c)));
             }
             else
             {
@@ -55,7 +55,7 @@ namespace DictionaryApp
                 {
                     GetWord = databaseHandle.RandomWord();
                     word = GetWord.wordHeader.word;
-                } while (word.Length >= 15);
+                } while (word.Length >= 15 || GetWord.senses.Count == 0 || word.Any(c => char.IsDigit(c)));
             }
             Debug.WriteLine(word);
             meaning = GetWord.senses[random.Next(0, GetWord.senses.Count)].meaning.Replace("=", string.Empty);
@@ -87,7 +87,10 @@ namespace DictionaryApp
             int mid = word.Length / 2;
             if (btn.X == btn.Location.X && btn.Y == btn.Location.Y)
             {
-                desX = (Width - btn.Width) / 2 - ((mid - select) * 2 - 1) * btn.Width;
+                if (word.Length % 2 == 0)
+                    desX = (Width - btn.Width) / 2 - ((mid - select) * 2 - 1) * btn.Width;
+                else
+                    desX = (Width - btn.Width) / 2 - ((mid - select) * 2) * btn.Width;
                 desY = Height * 60 / 100;
                 disX = Math.Abs(desX - btn.Location.X);
                 disY = Math.Abs(desY - btn.Location.Y);
@@ -95,10 +98,13 @@ namespace DictionaryApp
                 listAnswer.Add(btn);
                 select++;
                 move = 1;
-                for (int i = 0; i < listBtn.Count; i++)
+                if (count_time > 0)
                 {
-                    listBtn[i].Enabled = false;
-                    listBtn[i].BackColor = Color.Yellow;
+                    for (int i = 0; i < listBtn.Count; i++)
+                    {
+                        listBtn[i].Enabled = false;
+                        listBtn[i].BackColor = Color.Yellow;
+                    }
                 }
                 timer1.Start();
             }
@@ -108,8 +114,12 @@ namespace DictionaryApp
                 for (int i = btn.Selected; i < listAnswer.Count; i++)
                 {
                     listAnswer[i].Selected = i;
-                    int x = (Width - btn.Width) / 2 - ((mid - i) * 2 - 1) * btn.Width;
-                    int y = Height * 60 / 100;
+                    int x, y;
+                    if (word.Length % 2 == 0)
+                        x = (Width - btn.Width) / 2 - ((mid - i) * 2 - 1) * btn.Width;
+                    else
+                        x = (Width - btn.Width) / 2 - ((mid - i) * 2) * btn.Width;
+                    y = Height * 60 / 100;
                     listAnswer[i].Location = new Point(x, y);
                 }
                 desX = btn.X;
@@ -120,10 +130,13 @@ namespace DictionaryApp
                 select--;
                 move = -1;
                 tempBtnChar = btn;
-                for (int i = 0; i < listBtn.Count; i++)
+                if (count_time > 0)
                 {
-                    listBtn[i].Enabled = false;
-                    listBtn[i].BackColor = Color.Yellow;
+                    for (int i = 0; i < listBtn.Count; i++)
+                    {
+                        listBtn[i].Enabled = false;
+                        listBtn[i].BackColor = Color.Yellow;
+                    }
                 }
                 timer1.Start();
             }
@@ -138,7 +151,7 @@ namespace DictionaryApp
             for (int i = 0; i < listBtn.Count; i++)
             {
                 listBtn[i].Enabled = false;
-            }
+            }           
             string answer = "";
 
             if (!submitted && count_question <= FormSWSettings.number_question)
@@ -156,7 +169,7 @@ namespace DictionaryApp
                     if (answer == word)
                     {
                         correct++;
-                        int score = (int)(count_time * (double)(100 / time));
+                        int score = (int)(count_time * (double)(100 / time)) * 200;
                         lb_Score.Text = (int.Parse(lb_Score.Text) + score).ToString();
                         AnswerCorrect();
                     }
@@ -197,7 +210,7 @@ namespace DictionaryApp
                     {
                         GetWord = databaseHandle.RandomWord();
                         word = GetWord.wordHeader.word;
-                    } while (word.Length >= 10);
+                    } while (word.Length >= 10 || GetWord.senses.Count == 0 || word.Any(c => char.IsDigit(c)));
                 }
                 else
                 {
@@ -205,7 +218,7 @@ namespace DictionaryApp
                     {
                         GetWord = databaseHandle.RandomWord();
                         word = GetWord.wordHeader.word;
-                    } while (word.Length >= 15);
+                    } while (word.Length >= 15 || GetWord.senses.Count == 0 || word.Any(c => char.IsDigit(c)));
                 }
                 meaning = GetWord.senses[random.Next(0, GetWord.senses.Count)].meaning.Replace("=", string.Empty);
                 meaning = meaning[0].ToString().ToUpper() + meaning.Substring(1);
@@ -246,12 +259,12 @@ namespace DictionaryApp
                 LabelTimeLeft.ForeColor = Color.Red;
             }
             if (count_time == 0)
-            {
-                timer1.Stop();
+            {               
                 for (int i = 0; i < listBtn.Count; i++)
                 {
                     listBtn[i].Enabled = false;
                 }
+                //timer1.Stop();
                 Submit();
             }
         }
@@ -278,7 +291,7 @@ namespace DictionaryApp
                 }
                 else
                 {
-                    listBtn[i].X = (Width - listBtn[i].Width) / 2 - ((mid - i) * 2 - 1) * listBtn[i].Width;
+                    listBtn[i].X = (Width - listBtn[i].Width) / 2 - ((mid - i) * 2) * listBtn[i].Width;
                     listBtn[i].Y = Height * 80 / 100;
                 }
                 listBtn[i].Location = new Point(listBtn[i].X, listBtn[i].Y);
@@ -376,11 +389,14 @@ namespace DictionaryApp
                 {
                     listAnswer[select - 1].Location = new Point(desX, desY);
                     move = 0;
-                    for (int i = 0; i < listBtn.Count; i++)
-                    {
-                        listBtn[i].Enabled = true;
-                    }
                     timer1.Stop();
+                    if (count_time > 0)
+                    {
+                        for (int i = 0; i < listBtn.Count; i++)
+                        {
+                            listBtn[i].Enabled = true;
+                        }
+                    }                    
                 }
             }
             if (move < 0)
@@ -407,11 +423,14 @@ namespace DictionaryApp
                 {
                     tempBtnChar.Location = new Point(desX, desY);
                     move = 0;
-                    for (int i = 0; i < listBtn.Count; i++)
-                    {
-                        listBtn[i].Enabled = true;
-                    }
                     timer1.Stop();
+                    if (count_time > 0)
+                    {
+                        for (int i = 0; i < listBtn.Count; i++)
+                        {
+                            listBtn[i].Enabled = true;
+                        }
+                    }
                 }
             }
         }
