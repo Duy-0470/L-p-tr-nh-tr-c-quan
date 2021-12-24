@@ -17,16 +17,17 @@ namespace DictionaryApp
             ButtonHome.FlatAppearance.BorderSize = 0;
             ButtonSubBack.FlatAppearance.BorderSize = 0;
             ButtonSubHome.FlatAppearance.BorderSize = 0;
-            ButtonSubReplay.FlatAppearance.BorderSize = 0;
-            PanelResultMenu.Height = Height - LabelTopic.Height;
+            ButtonSubReplay.FlatAppearance.BorderSize = 0;                     
             PanelResultMenu.Location = new Point(0, LabelTopic.Height);
+            PanelResultMenu.Height = Height - LabelTopic.Height;
+            Debug.WriteLine(PanelResultMenu.Location.ToString() + "\n" + PanelResultMenu.Size.ToString());
+            PanelInfo.Location = new Point(PanelResultMenu.Width, LabelTopic.Height);
             ButtonSubReplay.Location = new Point(0, PanelResultMenu.Height - 240);
             ButtonSubBack.Location = new Point(0, PanelResultMenu.Height - 180);
             ButtonSubHome.Location = new Point(0, PanelResultMenu.Height - 120);
             ButtonReplay.Location = new Point(PanelResultMenu.Width, ButtonSubReplay.Location.Y + LabelTopic.Height);
             ButtonBackToGames.Location = new Point(PanelResultMenu.Width, ButtonSubBack.Location.Y + LabelTopic.Height);
-            ButtonHome.Location = new Point(PanelResultMenu.Width, ButtonSubHome.Location.Y + LabelTopic.Height);
-            
+            ButtonHome.Location = new Point(PanelResultMenu.Width, ButtonSubHome.Location.Y + LabelTopic.Height);          
             LabelComment.Text = "";
         }
 
@@ -134,9 +135,9 @@ namespace DictionaryApp
 
         private void FormGameResult_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ButtonBackToGames_Click"))
+            if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ButtonBackToGames_Click" || x.GetMethod().Name == "ButtonSubBack_Click"))
             {
-                FormGameResult fgs = new FormGameResult();
+                FormGamesSelect fgs = new FormGamesSelect();
                 fgs.Show();
             }
             else if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "ButtonRetry_Click" || x.GetMethod().Name == "ButtonSubReplay_Click"))
@@ -234,6 +235,11 @@ namespace DictionaryApp
         }
 
         private void ButtonSubReplay_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void ButtonSubBack_Click(object sender, EventArgs e)
         {
             Close();
         }

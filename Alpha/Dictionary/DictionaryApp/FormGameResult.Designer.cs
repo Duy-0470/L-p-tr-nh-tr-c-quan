@@ -154,6 +154,7 @@
             this.ButtonSubBack.Size = new System.Drawing.Size(103, 46);
             this.ButtonSubBack.TabIndex = 4;
             this.ButtonSubBack.UseVisualStyleBackColor = true;
+            this.ButtonSubBack.Click += new System.EventHandler(this.ButtonSubBack_Click);
             this.ButtonSubBack.MouseEnter += new System.EventHandler(this.ButtonSubBack_MouseEnter);
             this.ButtonSubBack.MouseLeave += new System.EventHandler(this.ButtonSubBack_MouseLeave);
             // 
@@ -235,7 +236,7 @@
             // 
             // LabelComment
             // 
-            this.LabelComment.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LabelComment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelComment.AutoSize = true;
             this.LabelComment.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelComment.Location = new System.Drawing.Point(404, 502);
@@ -284,6 +285,8 @@
             // 
             // PanelInfo
             // 
+            this.PanelInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelInfo.Controls.Add(this.LabelScore);
             this.PanelInfo.Controls.Add(this.LabelComment);
             this.PanelInfo.Controls.Add(this.PictureBoxHS);
@@ -314,7 +317,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormGameResult";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Your Dictionaries";
+            this.Text = "MyDictionary";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormGameResult_FormClosing);
             this.Load += new System.EventHandler(this.FormGameResult_Load);
             this.PanelResultMenu.ResumeLayout(false);

@@ -25,13 +25,15 @@ namespace DictionaryApp
         //private readonly Random rand = new Random();
         private int round = 0;
         private int choose = 0;
-        private int[] roundscore = new int[5];
+        private readonly int[] roundscore = new int[5];
 
         public FormHangman()
         {
             InitializeComponent();
             Bounds = Screen.PrimaryScreen.Bounds;
             PictureBoxHint.Location = new Point((Width - PictureBoxHint.Width) / 2, LabelMeaning.Location.Y + LabelMeaning.Height);
+            PictureBoxHangman.Location = new Point(PictureBoxHint.Width - 40 - PictureBoxHangman.Width, LabelGuess.Location.Y - 20 - PictureBoxHangman.Height);
+            Debug.WriteLine(PictureBoxHangman.Location.ToString());
             LabelGuess.Text = "";
             LabelGuess.Width = Width;
             LabelGuess.Location = new Point((Width - LabelGuess.Width) / 2, (Height - LabelGuess.Height) / 2 + 40);
@@ -41,7 +43,7 @@ namespace DictionaryApp
             PanelRules.Size = Size;
             LabelMeaning.Location = new Point((Width - LabelMeaning.Width) / 2, 25);
             LabelResult.Location = new Point(PanelLetters.Location.X + PanelLetters.Width / 2 - LabelResult.Width / 2, PanelLetters.Location.Y + PanelLetters.Height / 2 - LabelResult.Height / 2);
-            LabelResult.Width = PanelLetters.Width;
+            LabelResult.Width = PanelLetters.Width;           
             for (int i = 0; i < roundscore.Length; i++)
             {
                 roundscore[i] = 60000;

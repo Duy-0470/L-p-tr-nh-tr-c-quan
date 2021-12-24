@@ -454,11 +454,10 @@
             // 
             // PictureBoxHangman
             // 
-            this.PictureBoxHangman.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PictureBoxHangman.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PictureBoxHangman.BackgroundImage = global::DictionaryApp.Properties.Resources.hangman0;
             this.PictureBoxHangman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PictureBoxHangman.Location = new System.Drawing.Point(243, 232);
+            this.PictureBoxHangman.Location = new System.Drawing.Point(281, 204);
             this.PictureBoxHangman.Name = "PictureBoxHangman";
             this.PictureBoxHangman.Size = new System.Drawing.Size(301, 353);
             this.PictureBoxHangman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -671,7 +670,7 @@
             this.Controls.Add(this.PictureBoxHangman);
             this.Controls.Add(this.PictureBoxHint);
             this.Name = "FormHangman";
-            this.Text = "Your Dictionaries";
+            this.Text = "MyDictionary";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormHangman_FormClosed);
             this.Load += new System.EventHandler(this.FormHangman_Load);
             this.PanelLetters.ResumeLayout(false);

@@ -27,7 +27,9 @@ namespace DictionaryApp
             btn_Start.Visible = false;
             pictureBox1.Location = new Point((ClientSize.Width / 2) - (pictureBox1.Width / 2), (ClientSize.Height / 2) - (pictureBox1.Height / 2));
             pictureBox1.Anchor = AnchorStyles.None;
-            //btn_Back.Location = new Point(0, Height - btn_Back.Height);
+            panel1.Location = new Point((Width - panel1.Width) / 2 , (Height - panel1.Height) / 2);
+            btn_Play.Location = new Point(panel1.Location.X - btn_Play.Width, panel1.Location.Y + 30);
+            btn_Back.Location = new Point(btn_Play.Location.X, btn_Play.Location.Y + btn_Play.Height + 30);
             btn_Start.Location = new Point((Width / 2) - (btn_Start.Width / 2), (Height / 2) - (btn_Start.Height / 2));
             btn_Next.Location = new Point(Width - btn_Next.Width, Height - btn_Next.Height);
         }

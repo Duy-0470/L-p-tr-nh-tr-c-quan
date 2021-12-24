@@ -16,6 +16,7 @@ namespace DictionaryApp
     public partial class Form1 : Form
     {
         private static Form1 instance;
+        
         public static Form1 GetInstance()
         {
             return instance;
@@ -23,8 +24,8 @@ namespace DictionaryApp
         public Form1()
         {
             InitializeComponent();
-            Text = "Your Dictionaries";
-
+            Text = "MyDictionary";
+            appName.Text = "MyDictionary";
             DatabaseHandle.GetDataHandle();
             instance = this;
 

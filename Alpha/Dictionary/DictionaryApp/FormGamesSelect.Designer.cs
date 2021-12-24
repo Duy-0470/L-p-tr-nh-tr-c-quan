@@ -87,7 +87,7 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(109, 74);
@@ -95,6 +95,7 @@
             this.label3.Size = new System.Drawing.Size(142, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "Pick the correct answer";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label3_MouseClick);
             this.label3.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
             this.label3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
@@ -185,7 +186,7 @@
             // 
             // LabelWSDes
             // 
-            this.LabelWSDes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LabelWSDes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelWSDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelWSDes.Location = new System.Drawing.Point(113, 55);
             this.LabelWSDes.Name = "LabelWSDes";
@@ -199,7 +200,7 @@
             // 
             // PictureBoxWS
             // 
-            this.PictureBoxWS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PictureBoxWS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.PictureBoxWS.BackgroundImage = global::DictionaryApp.Properties.Resources.icons8_literature_200px;
             this.PictureBoxWS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBoxWS.Location = new System.Drawing.Point(28, 55);
@@ -213,7 +214,7 @@
             // 
             // LabelGTW
             // 
-            this.LabelGTW.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LabelGTW.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelGTW.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelGTW.Location = new System.Drawing.Point(3, 12);
             this.LabelGTW.Name = "LabelGTW";
@@ -255,7 +256,7 @@
             // 
             // LabelHangmanDes
             // 
-            this.LabelHangmanDes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LabelHangmanDes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelHangmanDes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelHangmanDes.Location = new System.Drawing.Point(113, 55);
             this.LabelHangmanDes.Name = "LabelHangmanDes";
@@ -269,7 +270,7 @@
             // 
             // PictureBoxHangman
             // 
-            this.PictureBoxHangman.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PictureBoxHangman.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.PictureBoxHangman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBoxHangman.Image = global::DictionaryApp.Properties.Resources.hangman_game;
             this.PictureBoxHangman.Location = new System.Drawing.Point(26, 53);
@@ -284,7 +285,7 @@
             // 
             // LabelHangman
             // 
-            this.LabelHangman.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LabelHangman.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelHangman.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelHangman.Location = new System.Drawing.Point(3, 12);
             this.LabelHangman.Name = "LabelHangman";
@@ -323,7 +324,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormGamesSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Your Dictionaries";
+            this.Text = "MyDictionary";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormGamesSelect_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormGamesSelect_FormClosed);
             this.PanelQuizzes.ResumeLayout(false);

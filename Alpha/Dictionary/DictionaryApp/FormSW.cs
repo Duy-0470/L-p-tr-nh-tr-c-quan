@@ -41,11 +41,22 @@ namespace DictionaryApp
             Debug.WriteLine(FormSWSettings.number_question);
             lb_Meaning.Location = new Point((Width - lb_Meaning.Width) / 2, Height * 30 / 100);
             LabelResult.Location = new Point((Width - LabelResult.Width) / 2, lb_Meaning.Location.Y + lb_Meaning.Height + 40);
-            do
+            if (FormSWSettings.time == 10)
             {
-                GetWord = databaseHandle.RandomWord();
-                word = GetWord.wordHeader.word;
-            } while (word.Length >= 15);
+                do
+                {
+                    GetWord = databaseHandle.RandomWord();
+                    word = GetWord.wordHeader.word;
+                } while (word.Length >= 10);
+            }
+            else
+            {
+                do
+                {
+                    GetWord = databaseHandle.RandomWord();
+                    word = GetWord.wordHeader.word;
+                } while (word.Length >= 15);
+            }
             Debug.WriteLine(word);
             meaning = GetWord.senses[random.Next(0, GetWord.senses.Count)].meaning.Replace("=", string.Empty);
             meaning = meaning[0].ToString().ToUpper() + meaning.Substring(1);
@@ -180,11 +191,22 @@ namespace DictionaryApp
                     Controls.Remove(listBtn[i]);
                 }
                 listBtn.Clear();
-                do
+                if (FormSWSettings.time == 10)
                 {
-                    GetWord = databaseHandle.RandomWord();
-                    word = GetWord.wordHeader.word;
-                } while (word.Length >= 15);
+                    do
+                    {
+                        GetWord = databaseHandle.RandomWord();
+                        word = GetWord.wordHeader.word;
+                    } while (word.Length >= 10);
+                }
+                else
+                {
+                    do
+                    {
+                        GetWord = databaseHandle.RandomWord();
+                        word = GetWord.wordHeader.word;
+                    } while (word.Length >= 15);
+                }
                 meaning = GetWord.senses[random.Next(0, GetWord.senses.Count)].meaning.Replace("=", string.Empty);
                 meaning = meaning[0].ToString().ToUpper() + meaning.Substring(1);
                 lb_Meaning.Text = meaning;

@@ -369,11 +369,10 @@
             // LabelTimeLeft
             // 
             this.LabelTimeLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelTimeLeft.AutoSize = true;
             this.LabelTimeLeft.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTimeLeft.Location = new System.Drawing.Point(1112, 104);
+            this.LabelTimeLeft.Location = new System.Drawing.Point(12, 104);
             this.LabelTimeLeft.Name = "LabelTimeLeft";
-            this.LabelTimeLeft.Size = new System.Drawing.Size(143, 27);
+            this.LabelTimeLeft.Size = new System.Drawing.Size(1253, 27);
             this.LabelTimeLeft.TabIndex = 3;
             this.LabelTimeLeft.Text = "Time left: 20s";
             this.LabelTimeLeft.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -381,13 +380,13 @@
             // LabelQuesNum
             // 
             this.LabelQuesNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelQuesNum.AutoSize = true;
             this.LabelQuesNum.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelQuesNum.Location = new System.Drawing.Point(1100, 28);
+            this.LabelQuesNum.Location = new System.Drawing.Point(22, 28);
             this.LabelQuesNum.Name = "LabelQuesNum";
-            this.LabelQuesNum.Size = new System.Drawing.Size(165, 27);
+            this.LabelQuesNum.Size = new System.Drawing.Size(1243, 27);
             this.LabelQuesNum.TabIndex = 3;
             this.LabelQuesNum.Text = "Question: 1 / 20";
+            this.LabelQuesNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // LabelScore
             // 
@@ -569,7 +568,7 @@
             this.MaximizeBox = false;
             this.Name = "FormQuiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Your Dictionaries";
+            this.Text = "MyDictionary";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormQuiz_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormQuiz_FormClosed);
             this.Load += new System.EventHandler(this.FormQuiz_Load);
@@ -581,7 +580,6 @@
             this.PanelPhrasalVerbs.ResumeLayout(false);
             this.PanelCollocations.ResumeLayout(false);
             this.PanelQuiz.ResumeLayout(false);
-            this.PanelQuiz.PerformLayout();
             this.PanelRules.ResumeLayout(false);
             this.PanelRules.PerformLayout();
             this.ResumeLayout(false);

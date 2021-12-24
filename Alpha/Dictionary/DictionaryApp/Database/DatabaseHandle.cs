@@ -400,12 +400,20 @@ namespace DictionaryApp.Database
         }*/
         public Word Find(string search, ref List<Word> mw, ref List<string> mm, ref List<string> saw)
         {
-            Debug.WriteLine(search.ToLower().Replace(" ", "/_"));
+            Debug.WriteLine(search.ToLower().Replace(" ", "-"));
             mw.Clear();
             SqlCommand command = new SqlCommand();
             command.Connection = connection;
-            command.CommandText = "select * from Vocabulary where id LIKE @id + '%'";
-            command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = search.ToLower().Replace(" ", "/_");
+            command.CommandText = "SELECT COUNT(*) FROM Vocabulary";
+            connection.Close(); connection.Open();
+
+            int numRows = (Int32)command.ExecuteScalar();
+            connection.Close();
+            Debug.WriteLine(numRows);
+
+            command.Connection = connection;
+            command.CommandText = "select * from Vocabulary where id LIKE '@id%'";
+            command.Parameters.Add("@id", System.Data.SqlDbType.NVarChar).Value = search.ToLower().Replace(" ", "-");
             connection.Close(); connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             Debug.WriteLine("find also matching");
@@ -1065,7 +1073,8 @@ namespace DictionaryApp.Database
 
 
             string pa = Directory.GetCurrentDirectory();
-            DataDirectories =  pa.Substring(0, pa.Length - 9) + "Database\\Files\\";
+            DataDirectories = pa.Substring(0, pa.Length - 9) + "\\Database\\Files\\";
+            //DataDirectories =  pa + "\\Database\\Files\\";
 
 
             // AddVocabulary();

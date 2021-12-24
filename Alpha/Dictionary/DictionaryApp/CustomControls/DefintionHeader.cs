@@ -42,10 +42,13 @@ namespace DictionaryApp.CustomControls
             if (header.starred == 1)
             {
                 path = System.IO.Directory.GetCurrentDirectory().Substring(0, System.IO.Directory.GetCurrentDirectory().Length - 9) + "Database\\Files\\images\\marked.png";
+                //path = System.IO.Directory.GetCurrentDirectory() + "\\Database\\Files\\images\\marked.png"; // setup path
             }
             else
             {
                 path = System.IO.Directory.GetCurrentDirectory().Substring(0, System.IO.Directory.GetCurrentDirectory().Length - 9) + "Database\\Files\\images\\unmarked.png";
+
+                //path = System.IO.Directory.GetCurrentDirectory()+ "\\Database\\Files\\images\\unmarked.png"; // setup path
 
             }
             Bitmap picture = new Bitmap(new Bitmap(path), new Size(50, 50));
@@ -64,12 +67,12 @@ namespace DictionaryApp.CustomControls
             string p;
             if ((sender as Button).Name.Contains("uk"))
             {
-                p = System.IO.Directory.GetCurrentDirectory().Substring(0, System.IO.Directory.GetCurrentDirectory().Length - 9) + "\\Database\\Files\\sounds\\british\\" + (sender as Button).Name.Replace("/","_");
-                
+                p = System.IO.Directory.GetCurrentDirectory()+ "\\Database\\Files\\sounds\\british\\" + (sender as Button).Name.Replace("/","_"); // setup path
+
             }
             else
             {
-                p = System.IO.Directory.GetCurrentDirectory().Substring(0, System.IO.Directory.GetCurrentDirectory().Length - 9) + "\\Database\\Files\\sounds\\north_america\\" + (sender as Button).Name.Replace("/", "_");
+                p = System.IO.Directory.GetCurrentDirectory() + "\\Database\\Files\\sounds\\north_america\\" + (sender as Button).Name.Replace("/", "_"); // setup path
 
             }
             //Debug.WriteLine(p);
